@@ -20,3 +20,5 @@ data/private/
 # each value's source URL and retrievedAt. Re-download any time with --refresh.
 data/raw/**/*.html
 data/raw/**/*.html.meta.json
+data/raw/census/*.zip
+data/raw/census/*.txt

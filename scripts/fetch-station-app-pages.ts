@@ -39,6 +39,8 @@ export interface StationAppLinks {
   id: string;
   retrievedAt: string;
   homepage?: { requested: string; final: string }; // final differs when the site redirected
+  donate?: { url: string; text: string };     // best "Donate" link on the homepage
+  livestream?: { url: string; text: string }; // best "Watch live" link on the homepage
   pagesRead: string[];
   links: FoundLink[];
   problems: string[];
@@ -99,6 +101,26 @@ function guessTv(platform: Platform, context: string): { platform: Platform; con
   if (platform === 'ios' && /apple ?tv|tvos/i.test(context)) return { platform: 'appletv', confidence: 'low' };
   if (platform === 'android' && /\b(android tv|google tv)\b/i.test(context)) return { platform: 'androidtv', confidence: 'low' };
   return { platform, confidence: 'high' };
+}
+
+// "Donate" and "Watch live" links on a homepage, best match first. Text patterns are
+// ordered by how specific they are; the first pattern that matches any link wins.
+const DONATE = [/^donate( now| today)?$/i, /\bdonate\b/i, /^give( now)?$/i, /\b(become a member|join|support us)\b/i];
+const LIVESTREAM = [/^(watch )?live( tv| stream)?$/i, /\b(live ?stream|watch live|live tv)\b/i];
+function bestLink($: cheerio.CheerioAPI, base: string, patterns: RegExp[]): { url: string; text: string } | undefined {
+  const links = $('a[href]').toArray().map((a) => ({ text: $(a).text().replace(/\s+/g, ' ').trim(), href: $(a).attr('href')! }));
+  for (const p of patterns) {
+    for (const l of links) {
+      if (!l.text || l.text.length > 40 || !p.test(l.text)) continue;
+      try {
+        const u = new URL(l.href, base);
+        if (u.protocol !== 'https:' || /pbs[-_.]?kids/i.test(u.href)) continue;
+        u.hash = '';
+        return { url: u.href, text: l.text };
+      } catch { /* bad href */ }
+    }
+  }
+  return undefined;
 }
 
 // Links on a homepage that probably lead to the station's apps page.
@@ -173,6 +195,8 @@ for (const org of orgs) {
     const home = await read(org.website, 'home', 'homepage');
     if (home) {
       r.homepage = { requested: org.website, final: home.url };
+      r.donate = bestLink(home.$, home.url, DONATE);
+      r.livestream = bestLink(home.$, home.url, LIVESTREAM);
       const candidates = appPageCandidates(home.$, home.url).filter((u) => u !== manual);
       for (const [i, url] of candidates.entries()) await read(url, `candidate-${i + 1}`, 'discovered-page');
     }

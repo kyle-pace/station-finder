@@ -9,13 +9,14 @@
 //   manual/merges.yaml                 stations to fold into another (relays, satellites)
 //   manual/overrides.yaml              corrections to any station field (always win)
 //
-// Outputs (public/data/): organizations.json, facilities.json, national.json
+// Outputs (public/data/): organizations.json, facilities.json, national.json, search.json,
+//   zip/<3-digit prefix>.json
 //
 // Manual files are applied last, so a re-run never undoes a manual fix. Safe to re-run:
 // it only reads data/ and overwrites its own output files.
 // Run with: npm run build-data
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from 'yaml';
 import type { ExtractedRow, InfoboxFields } from './fetch-wikipedia.ts';
@@ -409,6 +410,20 @@ for (const site of scraped) {
   }
 }
 
+// Donate and livestream links found on station homepages (unverified until reviewed;
+// overrides.yaml can set or correct them).
+const foundLinks = section('Donate/livestream links found on homepages (check they are right)');
+for (const site of scraped) {
+  const d = byId.get(site.id);
+  if (!d) continue;
+  for (const [field, link] of [['donateUrl', site.donate], ['livestreamUrl', site.livestream]] as const) {
+    if (!link || d.org[field] || !isUrl(link.url)) continue;
+    d.org[field] = link.url;
+    d.org.sources[field] = { source: `${site.homepage?.final ?? 'homepage'} (link "${link.text}")`, retrievedAt: site.retrievedAt };
+    foundLinks.push(`${d.org.id}: ${field === 'donateUrl' ? 'donate' : 'livestream'} "${link.text}" → ${link.url}`);
+  }
+}
+
 const excluded = new Set(stationApps.flatMap((e) => (Array.isArray(e.exclude) ? (e.exclude as string[]) : [])));
 for (const site of scraped) {
   const d = byId.get(site.id);
@@ -422,7 +437,7 @@ for (const site of scraped) {
       if (existing.url !== l.url) lowConfidence.push(`${d.org.id}: more than one ${l.platform} link on its site; using ${existing.url}, not ${l.url}`);
       continue;
     }
-    d.org.apps.push({ platform: l.platform, url: l.url, source: l.foundOn, retrievedAt: site.retrievedAt, verified: l.how === 'manual-page' && l.confidence === 'high' });
+    d.org.apps.push({ platform: l.platform, url: l.url, source: l.foundOn, retrievedAt: site.retrievedAt, verified: false }); // scraped: unverified until a person adds it to station-apps.yaml
     if (l.confidence === 'low') lowConfidence.push(`${d.org.id}: ${l.platform} guessed from link text "${l.linkText}" — ${l.url}`);
     else if (l.how !== 'manual-page') lowConfidence.push(`${d.org.id}: ${l.platform} link found on ${l.foundOn} — check it's the station's own app`);
   }
@@ -481,6 +496,40 @@ write('organizations.json', organizations);
 write('facilities.json', facilities);
 write('national.json', nationalOut);
 
+// --- ZIP shards and search index for the browser ---------------------------------
+// ZIP centroids are split by 3-digit prefix (public/data/zip/981.json) so a search
+// downloads only a few KB. The search index is everything search needs in one small file.
+const zctaPath = join(RAW, 'census', 'zcta.json');
+if (existsSync(zctaPath)) {
+  const zcta = JSON.parse(readFileSync(zctaPath, 'utf8')) as { zips: Record<string, [number, number]> };
+  const shards = new Map<string, Record<string, [number, number]>>();
+  for (const [zip, ll] of Object.entries(zcta.zips)) {
+    const k = zip.slice(0, 3);
+    if (!shards.has(k)) shards.set(k, {});
+    shards.get(k)![zip] = ll;
+  }
+  rmSync(join(OUT, 'zip'), { recursive: true, force: true });
+  mkdirSync(join(OUT, 'zip'), { recursive: true });
+  for (const [k, zips] of shards) writeFileSync(join(OUT, 'zip', `${k}.json`), JSON.stringify(zips));
+} else {
+  console.warn('build-data: data/raw/census/zcta.json missing — ZIP search files not written (npm run build-zcta)');
+}
+const facById = new Map(facilities.map((f) => [f.id, f]));
+const searchIndex = organizations.map((o) => ({
+  id: o.id,
+  name: o.name,
+  city: o.city,
+  state: o.state,
+  calls: o.facilityIds.map((id) => facById.get(id)!.callSign),
+  tx: o.facilityIds.map((id) => [facById.get(id)!.lat, facById.get(id)!.lng]),
+  network: o.networks.join(', '),
+  media: o.mediaTypes,
+  hasApps: o.apps.some((a) => a.platform !== 'web'),
+  live: o.livestreamUrl ?? null,
+  donate: o.donateUrl ?? null,
+}));
+writeFileSync(join(OUT, 'search.json'), JSON.stringify(searchIndex));
+
 // --- Report (printed, and saved to data/build-report.txt for review in PRs) ----
 const noApps = organizations.filter((o) => o.apps.length === 0);
 const noWebsite = organizations.filter((o) => !o.website);
@@ -502,4 +551,4 @@ const full = process.argv.includes('--ids') || process.argv.includes('--full');
 console.log('\n' + (full ? lines : lines.slice(0, 6)).join('\n'));
 for (const s of report) if (s.lines.length && !full) console.log(`  ${s.title}: ${s.lines.length}`);
 console.log('\n  full report: data/build-report.txt');
-console.log('\n  wrote public/data/organizations.json, facilities.json, national.json\n');
+console.log('\n  wrote public/data/organizations.json, facilities.json, national.json, search.json, zip/*.json\n');

@@ -12,6 +12,7 @@
     "build": "npm run build-data && astro check && astro build",
     "preview": "astro preview",
     "build-data": "node scripts/build-data.ts",
+    "build-zcta": "node scripts/build-zcta.ts",
     "fetch-wikipedia": "node scripts/fetch-wikipedia.ts",
     "fetch-station-app-pages": "node scripts/fetch-station-app-pages.ts",
     "refresh-data": "npm run fetch-wikipedia && npm run build-data && npm run fetch-station-app-pages && npm run build-data"

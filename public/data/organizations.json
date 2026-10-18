@@ -31,8 +31,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Alaska_Public_Media",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://alaskapublic.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://alaskapublic.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://alaskapublic.secureallegiance.com/kska/WebModule/Donate.aspx?P=EVERGREEN&PAGETYPE=PLG&CHECK=fDgcXUoUwCrtseNZ4lnc261gzMC6uhq5nDjkJobrCdg%3d",
+    "livestreamUrl": "https://video.alaskapublic.org/livestream/"
   },
   {
     "id": "kuac",
@@ -71,8 +81,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KUAC-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://kuac.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://kuac.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kuac.org/kuac-friends-group/",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "alabama-public-television",
@@ -119,8 +139,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Alabama_Public_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://aptv.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://aptv.org/donation/"
   },
   {
     "id": "arkansas-tv",
@@ -164,8 +189,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Arkansas_TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.arkansastv.gov/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.arkansastv.gov/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://arkansaspbs.secureallegiance.com/aetn/WebModule/Donate.aspx?P=WEBDONATE&PAGETYPE=PLG&CHECK=j1fhyXY5YRJPRoE1kiSpcK1gzMC6uhq5nDjkJobrCdg%3d",
+    "livestreamUrl": "https://www.arkansastv.gov/live"
   },
   {
     "id": "kvzk",
@@ -252,8 +287,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KAET",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://azpbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/?campaign=B4C43EB1-8A32-4121-A75B-E72E7DC46532&source=MWZZA"
   },
   {
     "id": "azpm",
@@ -322,8 +362,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KEET",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.keet.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.keet.org/support/givenow/"
   },
   {
     "id": "kixe",
@@ -362,8 +407,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KIXE-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kixe.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kixe.allyrafundraising.com/campaigns/10693-passport/contribute"
   },
   {
     "id": "klcs",
@@ -402,8 +452,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KLCS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://klcs.org/ (link \"Become a Member\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://klcs.org/ (link \"watch.klcs.org/livestream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://klcs.org/membership/",
+    "livestreamUrl": "https://watch.klcs.org/livestream/"
   },
   {
     "id": "kpbs",
@@ -464,8 +524,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KPBS_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kpbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kpbs.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kpbs.pledgecart.org/?campaign=A1B4C0F1-7456-4C67-BF61-35FAEB6AB65B&source=KPBSWEBCTA2506",
+    "livestreamUrl": "https://www.kpbs.org/watch-live"
   },
   {
     "id": "kqed-and-kqeh",
@@ -513,8 +583,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KQED_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kqed.org/tv (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kqed.org/tv (link \"Livestream KQED 9\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.kqed.org/givetoday",
+    "livestreamUrl": "https://www.kqed.org/livetv?fr=navbar"
   },
   {
     "id": "kvcr-dt",
@@ -553,8 +633,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KVCR-DT",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://kvcr.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://kvcr.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kvcr.org/support",
+    "livestreamUrl": "https://kvcr.org/tv/live"
   },
   {
     "id": "kvie",
@@ -575,21 +665,21 @@
         "url": "https://www.amazon.com/dp/B0F5XB6BQL",
         "source": "https://www.kvie.org/kvie-plus/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/ccf90dd41f8e5518e9d6a1082486e7ef:5e8ea1044757b549d4a4e3e4843bed4d/kvie-pbs-kvie",
         "source": "https://www.kvie.org/kvie-plus/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1268909",
         "source": "https://www.kvie.org/kvie-plus/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -622,8 +712,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KVIE",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kvie.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kvie.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.kvie.org/donate/",
+    "livestreamUrl": "https://www.kvie.org/live/"
   },
   {
     "id": "northern-california-public-media",
@@ -708,8 +808,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KOCE-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbssocal.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbssocal.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pbssocal.org/support/donate",
+    "livestreamUrl": "https://www.pbssocal.org/live"
   },
   {
     "id": "valley-pbs",
@@ -763,8 +873,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KVPT",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://valleypbs.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://valleypbs.org/ (link \"WATCH LIVE\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://valleypbs.org/donate",
+    "livestreamUrl": "https://video.valleypbs.org/livestream/?_ga=2.29010556.1785486690.1678723916-728915228.1664839299"
   },
   {
     "id": "kbdi",
@@ -818,8 +938,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KBDI-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbs12.org/ (link \"donate now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbs12.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pbs12.org/",
+    "livestreamUrl": "https://www.pbs12.org/livestream"
   },
   {
     "id": "rocky-mountain-pbs",
@@ -840,14 +970,14 @@
         "url": "https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876",
         "source": "https://www.rmpbs.org/watch/rmpbs-plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.krma",
         "source": "https://www.rmpbs.org/watch/rmpbs-plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -861,7 +991,7 @@
         "url": "https://www.amazon.com/dp/B0DLBTLJ7B",
         "source": "https://www.rmpbs.org/watch/rmpbs-plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "androidtv",
@@ -875,14 +1005,14 @@
         "url": "https://channelstore.roku.com/details/0875518a556facf58849ba719e7edf36:6d256d82db92a35b3602265aa715ce20/rmpbs-rocky-mountain-pbs",
         "source": "https://www.rmpbs.org/watch/rmpbs-plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/appSearch",
         "source": "https://www.rmpbs.org/watch/rmpbs-plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -918,8 +1048,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Rocky_Mountain_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.rmpbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.rmpbs.org/ (link \"Live tv\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.rmpbs.org/rmpbs/donate?utm_source=website&utm_medium=button&utm_term=main",
+    "livestreamUrl": "https://www.rmpbs.org/live/rmpbs"
   },
   {
     "id": "connecticut-public-television",
@@ -961,8 +1101,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Connecticut_Public_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.ctpublic.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.ctpublic.org/ (link \"WNPR Radio Livestream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/home?campaign=D96DA8FA-E41D-4D48-85D0-64B00D996345",
+    "livestreamUrl": "https://www.ctpublic.org/listen/radio/livestream"
   },
   {
     "id": "weta",
@@ -983,14 +1133,14 @@
         "url": "https://apps.apple.com/us/app/weta/id6740541547",
         "source": "https://weta.org/wetaplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.weta",
         "source": "https://weta.org/wetaplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -1004,21 +1154,21 @@
         "url": "https://www.amazon.com/dp/B0DTRDNXXP",
         "source": "https://weta.org/wetaplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/2ecc8f8b5306bfcf72dac56e6a6a10bd:e3336a2ea2166d0d7e89aed5c45816d2/weta-pbs",
         "source": "https://weta.org/wetaplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
         "source": "https://weta.org/wetaplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -1051,8 +1201,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WETA-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://weta.org/watch (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://weta.org/watch (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://go.weta.org/donatesupport",
+    "livestreamUrl": "https://weta.org/live"
   },
   {
     "id": "whut",
@@ -1091,8 +1251,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WHUT-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.whut.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.whut.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.whut.org/whut/donate",
+    "livestreamUrl": "https://video.whut.org/livestream/"
   },
   {
     "id": "south-florida-pbs",
@@ -1163,8 +1333,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WEDU",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wedu.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wedu.org/ (link \"Watch Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wedu.org/support/donate/",
+    "livestreamUrl": "https://video.wedu.org/livestream/"
   },
   {
     "id": "wfsu",
@@ -1203,8 +1383,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WFSU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://wfsu.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://wfsu.org/donate"
   },
   {
     "id": "wgcu",
@@ -1243,8 +1428,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WGCU_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wgcu.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wgcu.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/home?campaign=7B97EBB9-82F1-4718-B6FC-C8F7FBFC383C",
+    "livestreamUrl": "https://www.wgcu.org/live-tv"
   },
   {
     "id": "wjct",
@@ -1312,8 +1507,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WJCT_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wjct.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wjct.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://secure3.convio.net/wjct/site/Donation2?df_id=6009&6009.donation=form1&mfc_pref=T",
+    "livestreamUrl": "https://www.wjct.org/jaxpbs/watchlive/"
   },
   {
     "id": "wlrn",
@@ -1367,8 +1572,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WLRN-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wlrn.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wlrn.org/donate-and-support"
   },
   {
     "id": "wucf",
@@ -1407,8 +1617,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WUCF-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wucf.org/ (link \"♥ DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wucf.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/home?campaign=70AC2DCE-4812-4529-B840-F0ADC1A0C22E&source=",
+    "livestreamUrl": "https://www.wucf.org/live"
   },
   {
     "id": "wuft",
@@ -1462,8 +1682,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WUFT_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wuft.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wuft.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wuft.org/donate",
+    "livestreamUrl": "https://www.wuft.org/watchlive"
   },
   {
     "id": "georgia-public-broadcasting",
@@ -1525,8 +1755,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Georgia_Public_Broadcasting",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.gpb.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.gpb.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.gpb.org/give-now?utm_source=georgiapublicbroadcasting&utm_medium=referral&utm_campaign=gpbWebDonations&utm_content=content_sitewide_donate_button",
+    "livestreamUrl": "https://www.gpb.org/television/live"
   },
   {
     "id": "wabe",
@@ -1580,8 +1820,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WABE-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wabe.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wabe.org/wabe/donate"
   },
   {
     "id": "pbs-guam",
@@ -1620,8 +1865,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KGTF",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbsguam.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbsguam.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pbsguam.org/support/",
+    "livestreamUrl": "https://video.pbsguam.org/livestream/"
   },
   {
     "id": "pbs-hawai-i",
@@ -1660,8 +1915,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KHET",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbshawaii.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbshawaii.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://secure3.convio.net/pbshi/site/Donation2?df_id=1983&mfc_pref=T&1983.donation=form1",
+    "livestreamUrl": "https://www.pbs.org/"
   },
   {
     "id": "iowa-pbs",
@@ -1708,8 +1973,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Iowa_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.iowapbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.iowapbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://iowapbsfoundation.tfaforms.net/f/donation",
+    "livestreamUrl": "https://www.iowapbs.org/watch/live"
   },
   {
     "id": "idaho-public-television",
@@ -1752,8 +2027,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Idaho_Public_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.idahoptv.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.idahoptv.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://idahoptv.secureallegiance.com/kaid/WebModule/Donate.aspx?P=GENERAL&PAGETYPE=PLG&CHECK=cJcNO7RHzAQcngTWOhBJK%2bzWDeZ%2beA1M",
+    "livestreamUrl": "https://www.idahoptv.org/watch/streaming/"
   },
   {
     "id": "illinois-public-media",
@@ -1822,8 +2107,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WQPT-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wqpt.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wqpt.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wqpt.org/wqpt/donate",
+    "livestreamUrl": "https://video.wqpt.org/livestream/"
   },
   {
     "id": "wsiu-and-wusi",
@@ -1880,8 +2175,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WSIU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wsiu.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wsiu.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.nprstations.org/wsiu/main-donation",
+    "livestreamUrl": "https://www.wsiu.org/live-tv"
   },
   {
     "id": "wttw-and-wyin",
@@ -1921,8 +2226,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WTTW",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wttw.com/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wttw.com/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://secure.wttw.com/",
+    "livestreamUrl": "https://www.wttw.com/wttw-live-stream"
   },
   {
     "id": "wtvp",
@@ -1961,8 +2276,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WTVP",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wtvp.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wtvp.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wtvp.org/donate-header",
+    "livestreamUrl": "https://video.wtvp.org/livestream/"
   },
   {
     "id": "ball-state-pbs",
@@ -2001,8 +2326,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WIPB",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://ballstatepbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://ballstatepbs.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/home?campaign=B92C4E37-E4C0-4A2E-BA4A-1FA1E2A34A7E&source=",
+    "livestreamUrl": "https://ballstatepbs.org/livestream/"
   },
   {
     "id": "lakeshore-pbs",
@@ -2039,8 +2374,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WYIN",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.lakeshorepublicmedia.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.lakeshorepublicmedia.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.lakeshorepublicmedia.org/wyin/donate",
+    "livestreamUrl": "https://www.lakeshorepublicmedia.org/livestream"
   },
   {
     "id": "michiana-pbs",
@@ -2079,8 +2424,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WNIT_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wnit.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wnit.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wnit.org/support/pledge.html",
+    "livestreamUrl": "https://www.wnit.org/live"
   },
   {
     "id": "pbs-fort-wayne",
@@ -2141,8 +2496,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WFWA",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbsfortwayne.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbsfortwayne.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pbs.org/donation/?station_id=3f02e9df-66c8-4f3d-8f51-a76c7255a45d&campaign=passport",
+    "livestreamUrl": "https://www.pbsfortwayne.org/schedule/watch-live/"
   },
   {
     "id": "wfyi",
@@ -2181,8 +2546,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WFYI_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wfyi.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wfyi.org/wfyi/give?utm_source=wfyi&utm_medium=direct&utm_campaign=header"
   },
   {
     "id": "wnin",
@@ -2221,8 +2591,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WNIN_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wnin.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wnin.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wnin.org/member/",
+    "livestreamUrl": "https://player.pbs.org/ga-livestream-partnerplayer/?station_id=b7b39443-4f87-4569-85f9-ad0594029964"
   },
   {
     "id": "wtiu",
@@ -2283,8 +2663,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WTIU",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.ipm.org/tv/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.ipm.org/tv/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.ipm.org/Support/donate",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "ktwu",
@@ -2323,8 +2713,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KTWU",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://ktwu.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://ktwu.org/ (link \"Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://ktwu.org/donate/",
+    "livestreamUrl": "https://watch.ktwu.org/livestream/"
   },
   {
     "id": "pbs-kansas",
@@ -2363,8 +2763,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KPTS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kpts.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kpts.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kpts-web.memsys.com/index.php?formid=1",
+    "livestreamUrl": "https://www.kpts.org/programming/kpts-live/"
   },
   {
     "id": "smoky-hills-pbs",
@@ -2421,8 +2831,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Smoky_Hills_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.smokyhillspbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.smokyhillspbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.smokyhillspbs.org/donate/",
+    "livestreamUrl": "https://video.smokyhillstv.org/livestream/"
   },
   {
     "id": "kentucky-educational-television",
@@ -2491,8 +2911,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Kentucky_Educational_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://ket.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://ket.org/ (link \"Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://ket.org/donate",
+    "livestreamUrl": "https://ket.org/live/"
   },
   {
     "id": "wku-pbs",
@@ -2531,8 +2961,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WKYU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wkyupbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wkyupbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://form-renderer-app.donorperfect.io/give/wkyu-public-radio-and-tv/wku-public-media-web-default-copy-3",
+    "livestreamUrl": "https://video.wkyupbs.org/livestream/"
   },
   {
     "id": "louisiana-public-broadcasting",
@@ -2591,8 +3031,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Louisiana_Public_Broadcasting",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.lpb.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.lpb.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.lpb.org/donate",
+    "livestreamUrl": "https://video.lpb.org/livestream/"
   },
   {
     "id": "wyes",
@@ -2631,8 +3081,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WYES-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wyes.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wyes.org/ (link \"Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://secure.wyes.org/pledgeform/",
+    "livestreamUrl": "https://www.wyes.org/live/"
   },
   {
     "id": "gbh",
@@ -2687,8 +3147,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WGBH-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wgbh.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wgbh.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wgbh.org/wgbh/radio-pledge",
+    "livestreamUrl": "https://www.wgbh.org/tv-shows/gbh-channel-2"
   },
   {
     "id": "new-england-public-media",
@@ -2767,8 +3237,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Maryland_Public_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.mpt.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.mpt.org/ (link \"WATCH LIVE\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.mpt.org/donate",
+    "livestreamUrl": "https://www.mpt.org/showcase/"
   },
   {
     "id": "maine-public-broadcasting-network",
@@ -2833,8 +3313,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Maine_Public_Broadcasting_Network",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.mainepublic.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.mainepublic.org/ (link \"Live TV stream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://mainepublic.pledgecart.org/?campaign=5F1E1E79-8E80-4A97-B184-250154BF59FB&utm_source=header&utm_medium=website",
+    "livestreamUrl": "https://www.mainepublic.org/watch-maine-public-television-live-stream"
   },
   {
     "id": "cmu-public-television",
@@ -2891,8 +3381,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WCMU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wcmu.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wcmu.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wcmu.org/donate",
+    "livestreamUrl": "https://www.wcmu.org/WCMUPBSLive"
   },
   {
     "id": "delta-college-public-media",
@@ -2931,8 +3431,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WDCQ-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.deltapublicmedia.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.deltapublicmedia.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.deltapublicmedia.org/donate/",
+    "livestreamUrl": "https://www.deltapublicmedia.org/watch/"
   },
   {
     "id": "detroit-pbs",
@@ -2971,8 +3481,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WTVS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.detroitpbs.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.detroitpbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.detroitpbs.org/detroitpbs/donate",
+    "livestreamUrl": "https://www.detroitpbs.org/live-tv/wtvs-hdtv/"
   },
   {
     "id": "wgvu-public-media",
@@ -3011,8 +3531,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WGVU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wgvu.org/television/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wgvu.org/television/ (link \"NPR 88.5 live stream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wgvu.org/donate/",
+    "livestreamUrl": "https://www.wgvu.org/fm-live/"
   },
   {
     "id": "wkar",
@@ -3051,8 +3581,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WKAR-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://tv.wkar.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://wkar.secureallegiance.com/wkar/Webmodule/Donate.aspx?P=WTVMAIN&PAGETYPE=PLG&CHECK=qaJgp2lRA0iB30noQ8KlKezWDeZ%2beA1M"
   },
   {
     "id": "wnmu",
@@ -3091,8 +3626,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WNMU_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://wnmutv.nmu.edu/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://wnmutv.nmu.edu/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://wnmu.secureallegiance.com/wnmu/WebModule/Donate.aspx?P=TVMAIN&PAGETYPE=PLG&CHECK=BCs59zC6yW2CpDRh%2bWheQRiCxtaFReuS&_gl=1*1wor6wb*_gcl_au*Nzg3MjE0NjAyLjE3ODM0NDUxMzk.*_ga*MTQ3Nzc4MjE0Ny4xNjcwOTQ0NjAx*_ga_G6BY9KM5JT*czE3ODM0NDUxMzkkbzI2JGcxJHQxNzgzNDQ1MTgzJGoxNiRsMCRoMA..*_ga_LPQ05N0W35*czE3ODM0NDUxMzkkbzI2JGcxJHQxNzgzNDQ1MTgzJGoxNiRsMCRoMA..",
+    "livestreamUrl": "https://wnmuvideo.nmu.edu/livestream/"
   },
   {
     "id": "ksmq",
@@ -3131,8 +3676,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KSMQ-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.minnesotapbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.minnesotapbs.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://minnesotapbs.pledgecart.org/home?campaign=BD14C84D-7561-43EB-8438-6968F97C358D",
+    "livestreamUrl": "https://minnesotapbs.org/pages/live-tv"
   },
   {
     "id": "lakeland-pbs",
@@ -3186,8 +3741,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Lakeland_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://lptv.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://lptv.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://lptv.org/donate/",
+    "livestreamUrl": "https://lptv.org/livestream/"
   },
   {
     "id": "minnesota-pbs",
@@ -3226,8 +3791,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Minnesota_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.minnesotapbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.minnesotapbs.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://minnesotapbs.pledgecart.org/home?campaign=BD14C84D-7561-43EB-8438-6968F97C358D",
+    "livestreamUrl": "https://minnesotapbs.org/pages/live-tv"
   },
   {
     "id": "pbs-north",
@@ -3266,8 +3841,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WDSE_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://pbsnorth.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://pbsnorth.org/ (link \"Live Stream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://pbsnorth.org/support/",
+    "livestreamUrl": "https://www.thenorth1033.org/"
   },
   {
     "id": "pioneer-pbs",
@@ -3310,8 +3895,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KWCM-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pioneer.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pioneer.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://pioneer.secureallegiance.com/pioneer/WebModule/Donate.aspx?P=GENERALWEB&PAGETYPE=PLG&CHECK=cJcNO7RHzASZPS5qhJfdub1YhDw50SikSh2nq0qouhg%3d",
+    "livestreamUrl": "https://www.pioneer.org/live/"
   },
   {
     "id": "kansas-city-pbs",
@@ -3350,8 +3945,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KCPT",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kansascitypbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kansascitypbs.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.kansascitypbs.org/donate/",
+    "livestreamUrl": "https://www.kansascitypbs.org/kansas-city-pbs-livestream/"
   },
   {
     "id": "ketc",
@@ -3390,8 +3995,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KETC",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.ninepbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.ninepbs.org/ninepbs/donate"
   },
   {
     "id": "kmos",
@@ -3430,8 +4040,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KMOS-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kmos.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kmos.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kmos.pledgecart.org/home?campaign=6F51FA10-ECFB-44A4-89A7-CD820D397EA2&source=",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "ozarks-public-television",
@@ -3470,8 +4090,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Ozarks_Public_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.optv.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.optv.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/home?campaign=F2E8356B-0DDE-478F-99E0-6CAD48CD7168&source=",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "mississippi-public-broadcasting",
@@ -3525,8 +4155,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Mississippi_Public_Broadcasting",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.mpbonline.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.mpbonline.org/ (link \"Watch Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.mpbfoundation.org/mspb/donate",
+    "livestreamUrl": "https://www.mpbonline.org/television/livestream/"
   },
   {
     "id": "montana-pbs",
@@ -3572,8 +4212,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Montana_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.montanapbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.montanapbs.org/ (link \"Live Stream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.montanapbs.org/kusm/donate",
+    "livestreamUrl": "https://watch.montanapbs.org/livestream/"
   },
   {
     "id": "pbs-charlotte",
@@ -3612,8 +4262,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WTVI",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wtvi.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wtvi.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wtvi.org/wtvi/donate?_gl=1*xba1bi*_gcl_au*MTc3Njc5MzcwNC4xNzcyNzE1Njgx",
+    "livestreamUrl": "https://www.wtvi.org/watch-live/"
   },
   {
     "id": "pbs-north-carolina",
@@ -3671,8 +4331,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/PBS_North_Carolina",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbsnc.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbsnc.org/ (link \"PBS Livestream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.pbsnc.org/site/Donation2?1640.donation=form1&df_id=1640&mfc_pref=T",
+    "livestreamUrl": "https://www.pbsnc.org/watch/pbs-nc-livestreams/"
   },
   {
     "id": "prairie-public-television",
@@ -3719,8 +4389,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Prairie_Public_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.prairiepublic.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.prairiepublic.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://prairiepublic.pledgecart.org/9951/",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "nebraska-public-media",
@@ -3782,8 +4462,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Nebraska_Public_Media",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://nebraskapublicmedia.org/en/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://nebraskapublicmedia.org/en/ (link \"Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://nebraskapublicmedia.org/donate/",
+    "livestreamUrl": "https://nebraskapublicmedia.org/en/schedules/"
   },
   {
     "id": "new-hampshire-pbs",
@@ -3826,8 +4516,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/New_Hampshire_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://nhpbs.org/ (link \"Donate a Car\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://nhpbs.org/ (link \"WATCH LIVE\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://nhpbs.org/vehicle/",
+    "livestreamUrl": "https://nhpbs.org/livestream/?selected=ga-main"
   },
   {
     "id": "nj-pbs",
@@ -3872,8 +4572,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/NJ_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://njpbs.org/ (link \"Donate (opens in new tab)\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://njpbs.org/ (link \"Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pbs.org/donation/?station_id=63b643e1-1a13-4dd9-9bab-ff6f7527715f&campaign=passport",
+    "livestreamUrl": "https://njpbs.org/live/"
   },
   {
     "id": "wnet",
@@ -3992,8 +4702,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KRWG-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.krwg.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.krwg.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://supportkrwg.nmsu.edu/",
+    "livestreamUrl": "https://www.krwg.org/live-tv"
   },
   {
     "id": "new-mexico-pbs",
@@ -4033,8 +4753,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KNME-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.newmexicopbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.newmexicopbs.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/?campaign=C3043A00-7D9F-46C6-B681-1902908A5DA8&source=",
+    "livestreamUrl": "https://portal.knme.org/livestream/"
   },
   {
     "id": "pbs-reno",
@@ -4073,8 +4803,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KNPB",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbsreno.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbsreno.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.pbsreno.org/pbsreno/donate",
+    "livestreamUrl": "https://www.pbsreno.org/livestream/"
   },
   {
     "id": "vegas-pbs",
@@ -4113,8 +4853,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KLVX",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.vegaspbs.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.vegaspbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.vegaspbs.org/vegaspbs/donate",
+    "livestreamUrl": "https://www.vegaspbs.org/watch/livetv/"
   },
   {
     "id": "buffalo-toronto-public-media",
@@ -4135,14 +4885,14 @@
         "url": "https://apps.apple.com/us/app/btpm/id6752734865",
         "source": "https://www.btpm.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wned",
         "source": "https://www.btpm.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -4156,14 +4906,14 @@
         "url": "https://www.amazon.com/dp/B0G224WRG5",
         "source": "https://www.btpm.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/d6b5213277d31cd6baeb6cef3d880d3c:9713be84041f47ae656407d348f2a4f1/btpm",
         "source": "https://www.btpm.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -4196,8 +4946,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WNED-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.btpm.org/watch/pbs (link \"Give Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.btpm.org/watch/pbs (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.btpm.org/donate",
+    "livestreamUrl": "https://www.btpm.org/watch/pbs"
   },
   {
     "id": "mountain-lake-pbs",
@@ -4236,8 +4996,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WCFE-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.mountainlake.org/ (link \"Donate today\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.mountainlake.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.mountainlake.org/support/watch-party-collection/",
+    "livestreamUrl": "https://video.mountainlake.org/livestream/"
   },
   {
     "id": "wcny",
@@ -4276,8 +5046,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WCNY-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wcny.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wcny.org/ (link \"Livestream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wcny.org/wcny/donate",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "wliw",
@@ -4356,8 +5136,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WMHT_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wmht.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wmht.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wmht.org/wmht/donate",
+    "livestreamUrl": "https://www.wmht.org/live/"
   },
   {
     "id": "wpbs-and-wnpi-dt",
@@ -4411,8 +5201,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WPBS-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wpbstv.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wpbstv.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wpbstv.org/donate",
+    "livestreamUrl": "https://www.wpbstv.org/"
   },
   {
     "id": "wskg",
@@ -4451,8 +5251,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WSKG-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://wskg.org/ (link \"Give Now\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://wskg.secureallegiance.com//wskg/WebModule/Donate.aspx?P=NEWDEF8&PAGETYPE=PLG&CHECK=J4LH61wP7oNX0kk6qku3bOzWDeZ%2beA1M"
   },
   {
     "id": "wxxi",
@@ -4491,8 +5296,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WXXI-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wxxi.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wxxi.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wxxi.org/wxxi/donate",
+    "livestreamUrl": "https://video.wxxi.org/livestream/"
   },
   {
     "id": "ideastream-public-media",
@@ -4542,8 +5357,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Ideastream",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.ideastream.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.ideastream.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.ideastream.org/ideastream-donate",
+    "livestreamUrl": "https://www.ideastream.org/wviz-livestream"
   },
   {
     "id": "pbs-western-reserve",
@@ -4582,8 +5407,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WNEO",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbswesternreserve.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbswesternreserve.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://westernreserve.secureallegiance.com/west/WebModule/Donate.aspx?P=GENPLG&PAGETYPE=PLG&CHECK=BLWSGqDvEIVirnhqggI3XhiCxtaFReuS",
+    "livestreamUrl": "https://www.pbswesternreserve.org/live-tv/"
   },
   {
     "id": "think-tv",
@@ -4638,8 +5473,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WPTD",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://thinktv.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/?campaign=70ECAE71-D2F2-47EC-A701-6FB256D0F176&source="
   },
   {
     "id": "wbgu",
@@ -4733,8 +5573,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WCET_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.cetconnect.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/?campaign=1A81B84F-889F-4BDF-A20C-3DE4D0E60118&source="
   },
   {
     "id": "wgte",
@@ -4788,8 +5633,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WGTE-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wgte.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wgte.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wgte.org/node/110293",
+    "livestreamUrl": "https://player.pbs.org/ga-livestream-partnerplayer/?station_id=2bff28d0-08be-43a9-9dc0-6d3584e278d6"
   },
   {
     "id": "wosu",
@@ -4843,8 +5698,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WOSU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wosu.org/television/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wosu.org/television/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://wosu.org/pledge/",
+    "livestreamUrl": "https://www.wosu.org/television/wosu-tv-livestream"
   },
   {
     "id": "woub-and-wouc",
@@ -4883,8 +5748,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WOUB-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://woub.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.woub.org/woub/donate"
   },
   {
     "id": "oklahoma-educational-television-authority",
@@ -4926,8 +5796,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Oklahoma_Educational_Television_Authority",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.oeta.tv/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.oeta.tv/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://oeta.tv/donate",
+    "livestreamUrl": "https://www.oeta.tv/live"
   },
   {
     "id": "oregon-public-broadcasting",
@@ -4970,8 +5850,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Oregon_Public_Broadcasting",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.opb.org/ (link \"donate now\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.opb.org/give/"
   },
   {
     "id": "southern-oregon-pbs",
@@ -5010,8 +5895,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Southern_Oregon_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.sopbs.org/ (link \"Donate a Vehicle\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.sopbs.org/ (link \"WATCH LIVE\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://sopbs.careasy.org/home",
+    "livestreamUrl": "https://www.sopbs.org/live/"
   },
   {
     "id": "pbs-39",
@@ -5059,8 +5954,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WLVT-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wlvt.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wlvt.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wlvt.org/wlvt/together",
+    "livestreamUrl": "https://video.wlvt.org/livestream/"
   },
   {
     "id": "whyy",
@@ -5081,14 +5986,14 @@
         "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
         "source": "https://whyy.org/whyy-watch-app/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whyy",
         "source": "https://whyy.org/whyy-watch-app/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -5102,21 +6007,21 @@
         "url": "https://www.amazon.com/dp/B0DX4GG2V9",
         "source": "https://whyy.org/whyy-watch-app/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/bf40c4e8dc6ecde6d0a9a0ea22af9fae:3d91c874584177eb45373c475768b197/whyy-watch",
         "source": "https://whyy.org/whyy-watch-app/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1261252",
         "source": "https://whyy.org/whyy-watch-app/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -5149,8 +6054,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WHYY-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://whyy.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://whyy.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://support.whyy.org/page/12775/donate/1",
+    "livestreamUrl": "https://whyy.org/watch-now/"
   },
   {
     "id": "witf",
@@ -5204,8 +6119,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WITF-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.witf.org/ (link \"DONATE AND WATCH\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.witf.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.witf.org/programs/witf-passport/?utm_source=homepage&utm_medium=cta&utm_campaign=passport",
+    "livestreamUrl": "https://www.witf.org/watch/"
   },
   {
     "id": "wpsu",
@@ -5244,8 +6169,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WPSU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://wpsu.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://wpsu.org/donate/pledge"
   },
   {
     "id": "wqed",
@@ -5266,14 +6196,14 @@
         "url": "https://apps.apple.com/us/app/wqed/id6752442766",
         "source": "https://www.wqed.org/plus/activate/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
         "source": "https://www.wqed.org/plus/activate/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -5287,7 +6217,7 @@
         "url": "https://www.amazon.com/dp/B0FVNC82N1",
         "source": "https://www.wqed.org/plus/activate/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "androidtv",
@@ -5301,14 +6231,14 @@
         "url": "https://channelstore.roku.com/details/4d3e3d0302ed8d8d66ed623af6ede419:a6afc2cc55e97c38bbd9adaea7f9e6bd/wqed",
         "source": "https://www.wqed.org/plus/activate/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1283074",
         "source": "https://www.wqed.org/plus/activate/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -5341,8 +6271,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WQED_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wqed.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wqed.org/ (link \"WATCH LIVE\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wqed.org/wqed/donate",
+    "livestreamUrl": "https://www.wqed.org/livestream/"
   },
   {
     "id": "wqln",
@@ -5396,8 +6336,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WQLN_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wqln.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wqln.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wqln.org/wqln/donate",
+    "livestreamUrl": "https://www.wqln.org/watch-live-tv"
   },
   {
     "id": "wvia",
@@ -5451,8 +6401,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WVIA-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wvia.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wvia.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wvia.org/wvia/donate",
+    "livestreamUrl": "https://www.wvia.org/wvia-live-tv"
   },
   {
     "id": "sistema-tv",
@@ -5466,7 +6426,7 @@
     "city": "San Juan",
     "state": "PR",
     "owner": "Ana G. Méndez University(Sistema Universitario Ana G. Méndez, Inc.)",
-    "website": "https://sistematv.com/",
+    "website": "https://sistematv.uagm.net/",
     "apps": [],
     "facilityIds": [
       "fcc-2174"
@@ -5489,7 +6449,7 @@
         "retrievedAt": "2026-10-18"
       },
       "website": {
-        "source": "https://en.wikipedia.org/wiki/WMTJ",
+        "source": "redirect from https://sistematv.com/ (station website)",
         "retrievedAt": "2026-10-18"
       }
     }
@@ -5531,8 +6491,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Ocean_State_Media",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.oceanstatemedia.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.oceanstatemedia.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.oceanstatemedia.org/oceanstatemedia/donate",
+    "livestreamUrl": "https://watch.ripbs.org/livestream/?_gl=1*9eqqks*_gcl_au*MTQ2MjI5MDI0MC4xNzQ1NTA2Njc3*_ga*MjYwMzM4MDMwLjE3NDEzNzA1Mjk.*_ga_GKQ2VKKG7S*czE3NTIxNjkyODIkbzM5NyRnMSR0MTc1MjE2OTI4NSRqNTckbDAkaDA."
   },
   {
     "id": "south-carolina-educational-television",
@@ -5553,14 +6523,14 @@
         "url": "https://apps.apple.com/us/app/scetv/id6772544565",
         "source": "https://www.scetv.org/scetvplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wrlk",
         "source": "https://www.scetv.org/scetvplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -5574,14 +6544,14 @@
         "url": "https://www.amazon.com/dp/B0H3YY4X4T",
         "source": "https://www.scetv.org/scetvplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "roku",
         "url": "https://my.roku.com/account/add/SCETVPLUS",
         "source": "https://www.scetv.org/scetvplus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -5624,8 +6594,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/South_Carolina_Educational_Television",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.scetv.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.scetv.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://etvendowment.thankyou4caring.org/m-general-donation-form-scetv",
+    "livestreamUrl": "https://www.scetv.org/watch-scetv-live"
   },
   {
     "id": "south-dakota-public-broadcasting",
@@ -5687,8 +6667,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/South_Dakota_Public_Broadcasting",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.sdpb.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.sdpb.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.sdpb.org/donate/",
+    "livestreamUrl": "https://www.sdpb.org/live"
   },
   {
     "id": "east-tennessee-pbs",
@@ -5727,8 +6717,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WETP-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.easttennesseepbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.easttennesseepbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://easttennesseepbs.allyrafundraising.com/",
+    "livestreamUrl": "https://watch.easttennesseepbs.org/livestream/"
   },
   {
     "id": "nashville-pbs",
@@ -5782,8 +6782,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WNPT",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wnpt.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wnpt.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wnpt.org/wnpt/donate",
+    "livestreamUrl": "https://wnpt.tv/wnpt-livestream"
   },
   {
     "id": "wcte",
@@ -5822,8 +6832,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WCTE",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wcte.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wcte.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.wcte.org/wcte/donate-0",
+    "livestreamUrl": "https://video.wcte.tv/livestream/"
   },
   {
     "id": "west-tn-pbs",
@@ -5862,8 +6882,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WLJT",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.westtnpbs.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.westtnpbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.westtnpbs.org/wljt/donate",
+    "livestreamUrl": "https://video.westtnpbs.org/livestream/"
   },
   {
     "id": "wkno",
@@ -5902,8 +6932,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WKNO_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wkno.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wkno.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://afg.secureallegiance.com/wkno/Load/WknoTV.aspx",
+    "livestreamUrl": "https://video.wkno.org/livestream/"
   },
   {
     "id": "wtci",
@@ -5942,8 +6982,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WTCI",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wtcitv.org/ (link \"DONATE NOW\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wtcitv.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pbs.org/donation/?station_id=50833393-c4b6-4c79-9d6d-24a7e30dc19e&campaign=WTCIMAINPAGE",
+    "livestreamUrl": "https://www.wtcitv.org/watchlive/"
   },
   {
     "id": "austin-pbs",
@@ -5982,8 +7032,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KLRU",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://austinpbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://austinpbs.org/ (link \"PBS Livestream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://austinpbs.org/donate",
+    "livestreamUrl": "https://video.austinpbs.org/livestream/"
   },
   {
     "id": "basin-pbs",
@@ -6022,8 +7082,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KPBT-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.basinpbs.org/ (link \"donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://basinpbs.secureallegiance.com/kpbt/WebModule/Donate.aspx?P=GENERAL&PAGETYPE=PLG&CHECK=cJcNO7RHzAQcngTWOhBJK%2bzWDeZ%2beA1M"
   },
   {
     "id": "houston-public-media",
@@ -6051,7 +7116,7 @@
         "url": "https://www.amazon.com/dp/B0G3XYR4HJ",
         "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "androidtv",
@@ -6065,14 +7130,14 @@
         "url": "https://channelstore.roku.com/details/d3e1be932ab615fd04c7f9a16951f130:7d176e27bfd7d91af4741125088ff7be/hpm-pbs",
         "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1286640",
         "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       }
     ],
     "facilityIds": [
@@ -6098,8 +7163,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KUHT",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.houstonpublicmedia.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.houstonpublicmedia.org/donate"
   },
   {
     "id": "kamu",
@@ -6138,8 +7208,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KAMU-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://kamu.tamu.edu/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://kamu.tamu.edu/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kamu.tamu.edu/support/make-a-donation/",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "kedt",
@@ -6186,8 +7266,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KEDT",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kedt.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kedt.org/ (link \"KEDT-TV Livestream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.kedt.org/donate",
+    "livestreamUrl": "https://www.kedt.org/kedt-tv-live-stream"
   },
   {
     "id": "kera",
@@ -6226,8 +7316,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KERA-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kera.org/2003/01/27/tv-ads-a-lot-of-money-but-is-it-worth-it/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kera.org/2003/01/27/tv-ads-a-lot-of-money-but-is-it-worth-it/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.kera.org/donate",
+    "livestreamUrl": "https://video.kera.org/livestream/"
   },
   {
     "id": "klrn",
@@ -6266,8 +7366,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KLRN",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.klrn.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.klrn.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.klrn.org/klrn/donate",
+    "livestreamUrl": "https://video.klrn.org/livestream/"
   },
   {
     "id": "panhandle-pbs",
@@ -6306,8 +7416,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KACV-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.panhandlepbs.org/ (link \"Donate Now\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.panhandlepbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://panhandlepbs.allyrafundraising.com/",
+    "livestreamUrl": "https://www.panhandlepbs.org/livestream"
   },
   {
     "id": "pbs-el-paso",
@@ -6346,8 +7466,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KCOS_(TV)",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kcostv.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.kcostv.org/kcos/donate"
   },
   {
     "id": "pbs-rio-grande-valley",
@@ -6419,8 +7544,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KTTZ-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://tv.kttz.org/ (link \"Donate Today\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://donate.kttz.org/kttz/passport"
   },
   {
     "id": "pbs-utah",
@@ -6461,8 +7591,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KUED",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbsutah.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbsutah.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pbsutah.org/donate",
+    "livestreamUrl": "https://www.pbsutah.org/watch/pbs-utah-live-tv/"
   },
   {
     "id": "blue-ridge-pbs",
@@ -6518,8 +7658,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WBRA-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.blueridgepbs.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.blueridgepbs.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.callswithoutwalls.com/pledgeCart3/?campaign=58CAE05C-0D7D-4D78-838C-556584A9603A&source",
+    "livestreamUrl": "https://www.blueridgepbs.org/livestream/"
   },
   {
     "id": "pbs-appalachia-virginia",
@@ -6564,8 +7714,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/PBS_Appalachia_Virginia",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.pbsavirginia.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.pbsavirginia.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/home?campaign=F8879358-7E67-46E9-8E42-08770E44CA13&source=",
+    "livestreamUrl": "https://www.pbsavirginia.org/watchpbsa/"
   },
   {
     "id": "vpm-pbs",
@@ -6621,14 +7781,14 @@
         "url": "https://apps.apple.com/us/app/whro-public-media/id6741328420",
         "source": "https://www.whro.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whro",
         "source": "https://www.whro.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -6642,21 +7802,21 @@
         "url": "https://www.amazon.com/dp/B0DW58FRQM",
         "source": "https://www.whro.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/080e9d0af7016729020119014eb29a50:05d8367f6dd508559e51dd7d89bd9ef1/whro-public-media",
         "source": "https://www.whro.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1262422",
         "source": "https://www.whro.org/plus",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "web",
@@ -6689,8 +7849,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WHRO-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.whro.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.whro.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://secure.whro.org/site/Donation2?1400.donation=form1&df_id=1400&set.custom.Package=RedPledgeButton",
+    "livestreamUrl": "https://video.whro.org/live/whro-tv15/"
   },
   {
     "id": "wtjx",
@@ -6729,8 +7899,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/WTJX-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wtjx.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wtjx.org/ (link \"LIVE TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.wtjx.org/donate/",
+    "livestreamUrl": "https://www.wtjx.org/live-tv/"
   },
   {
     "id": "vermont-public",
@@ -6768,8 +7948,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Vermont_Public",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.vermontpublic.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.vermontpublic.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.vermontpublic.org/donate?utm_source=website&utm_medium=donate_button&utm_campaign=homepage",
+    "livestreamUrl": "https://video.vermontpublic.org/livestream/"
   },
   {
     "id": "cascade-pbs",
@@ -6783,21 +7973,21 @@
     "city": "Seattle",
     "state": "WA",
     "owner": "Cascade Public Media",
-    "website": "https://www.kcts9.org/",
+    "website": "https://www.cascadepbs.org/",
     "apps": [
       {
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/cascade-pbs/id1578709872",
         "source": "https://www.cascadepbs.org/apps/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.kcts9.android",
         "source": "https://www.cascadepbs.org/apps/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "appletv",
@@ -6811,21 +8001,21 @@
         "url": "https://www.amazon.com/dp/B09M2NVYDX",
         "source": "https://www.cascadepbs.org/apps/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/61407c76b4b4502c06b257788018e39e:ee2e27f9f6f191ed1e2b469f47cf13ff/cascade-pbs",
         "source": "https://www.cascadepbs.org/apps/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1253684",
         "source": "https://www.cascadepbs.org/apps/",
         "retrievedAt": "2026-10-18",
-        "verified": true
+        "verified": false
       }
     ],
     "facilityIds": [
@@ -6849,10 +8039,20 @@
         "retrievedAt": "2026-10-18"
       },
       "website": {
-        "source": "https://en.wikipedia.org/wiki/KCTS-TV",
+        "source": "redirect from https://www.kcts9.org/ (station website)",
+        "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.cascadepbs.org/ (link \"Become a member\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.cascadepbs.org/ (link \"Live\")",
         "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://secure.cascadepublicmedia.org/page/133995/donate/1",
+    "livestreamUrl": "https://www.cascadepbs.org/live/"
   },
   {
     "id": "kbtc-and-kcka",
@@ -6881,13 +8081,6 @@
         "source": "https://www.kbtc.org/watch-on-demand/kbtc-app/",
         "retrievedAt": "2026-10-18",
         "verified": false
-      },
-      {
-        "platform": "firetv",
-        "url": "https://www.amazon.com/dp/B008Z2NVGK",
-        "source": "https://www.kbtc.org/watch-on-demand/pbs-app/",
-        "retrievedAt": "2026-10-18",
-        "verified": false
       }
     ],
     "facilityIds": [
@@ -6913,8 +8106,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KBTC-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.kbtc.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.kbtc.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://kbtc.secureallegiance.com/kbtc/WebModule/Donate.aspx?P=WEBSEP26&PAGETYPE=PLG&CHECK=UTtbB%2b%2fZ7gA6M90vmjW8rG3L5BYddGq6PVAl6UEf65g%3d",
+    "livestreamUrl": "https://www.pbs.org/livestream/"
   },
   {
     "id": "ksps",
@@ -6953,8 +8156,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/KSPS-TV",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.ksps.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.ksps.org/ (link \"KSPS PBS Live TV - US\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/pledgeCart3/?campaign=7CCBABA9-BA8D-4321-B9E8-4FC05F288BD3&source=",
+    "livestreamUrl": "https://video.ksps.org/livestream/"
   },
   {
     "id": "northwest-public-broadcasting",
@@ -7008,8 +8221,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Northwest_Public_Broadcasting",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.nwpb.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.nwpb.org/donate"
   },
   {
     "id": "milwaukee-pbs",
@@ -7048,8 +8266,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Milwaukee_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.milwaukeepbs.org/ (link \"DONATE\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.milwaukeepbs.org/ (link \"Watch Live\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://www.pledgecart.org/home?campaign=F4E53C24-3F99-458D-BB69-B2E1448628A3&source=",
+    "livestreamUrl": "https://www.milwaukeepbs.org/watch-live"
   },
   {
     "id": "pbs-wisconsin",
@@ -7093,8 +8321,18 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/PBS_Wisconsin",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://pbswisconsin.org/ (link \"Donate\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://pbswisconsin.org/ (link \"Live TV\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://pbswisconsin.org/donate/",
+    "livestreamUrl": "https://pbswisconsin.org/livetv/"
   },
   {
     "id": "west-virginia-public-broadcasting",
@@ -7150,8 +8388,13 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/West_Virginia_Public_Broadcasting",
         "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://wvpublic.org/ (link \"WVPB Live Stream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "livestreamUrl": "https://video.wvpublic.org/livestream/"
   },
   {
     "id": "wyoming-pbs",
@@ -7200,7 +8443,17 @@
       "website": {
         "source": "https://en.wikipedia.org/wiki/Wyoming_PBS",
         "retrievedAt": "2026-10-18"
+      },
+      "donateUrl": {
+        "source": "https://www.wyomingpbs.org/ (link \"Donate Your Vehicle\")",
+        "retrievedAt": "2026-10-18"
+      },
+      "livestreamUrl": {
+        "source": "https://www.wyomingpbs.org/ (link \"How to Livestream\")",
+        "retrievedAt": "2026-10-18"
       }
-    }
+    },
+    "donateUrl": "https://wyomingpbs.careasy.org/home",
+    "livestreamUrl": "https://www.wyomingpbs.org/app/"
   }
 ]
