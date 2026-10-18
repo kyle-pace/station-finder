@@ -11,16 +11,42 @@ import { correctionUrl, REPO } from '../lib/site';
       <h1>About</h1>
       <p>
         Station App Finder helps anyone find their local public media station and every way
-        to watch and listen: the station's own apps, livestream, website, and donate page.
-        It's an independent prototype.
+        to watch it: the station's own apps for phone, tablet, and TV, its livestream, and its
+        website. It's an independent prototype.
       </p>
+    </section>
+
+    <section id="why" class="stack gap-12">
+      <h2>Why this exists</h2>
+      <p>
+        Local public media stations make and share programs for their own communities: local
+        news and public affairs, arts and culture, history, and learning for every age. They're
+        free to watch over the air, and they're run by local nonprofits, universities, and public
+        agencies that answer to the people they serve.
+      </p>
+      <p>
+        Most stations now have their own apps, but they're hard to find. They're spread across
+        many app stores and devices, often under names that don't match what people call their
+        station, and many people don't know which station is theirs. This site puts every
+        station's apps in one place, for every device, so it takes seconds to find your own.
+      </p>
+    </section>
+
+    <section class="stack gap-12">
+      <h2>Why the station's own app</h2>
+      <ul class="stack gap-8">
+        <li><strong>The best experience.</strong> A station's app brings together its livestream, its local shows, and its schedule, built for your phone, tablet, or TV.</li>
+        <li><strong>Everything your station makes.</strong> National apps are great for national programs, but your station's app is where its local work lives.</li>
+        <li><strong>A stronger local station.</strong> Watching in the station's own app keeps a direct connection between the station and its audience, and gives it a clearer picture of what its community values.</li>
+      </ul>
+      <p>When a station doesn't have an app for your device yet, we point you to the PBS app instead, so you can still watch.</p>
     </section>
 
     <section class="stack gap-12">
       <h2>How we list stations</h2>
       <ul class="stack gap-8">
         <li><strong>Neutral.</strong> Every station is listed and shown the same way. Results are ordered by distance or how well they match your search, nothing else.</li>
-        <li><strong>Station first.</strong> A station's own apps and links come before the national apps.</li>
+        <li><strong>Station first.</strong> We link a station's own apps. The PBS app appears only for devices the station doesn't have an app for yet.</li>
         <li><strong>No endorsement.</strong> We aren't affiliated with or endorsed by PBS or NPR, and we use their names as text only.</li>
       </ul>
     </section>
@@ -35,7 +61,7 @@ import { correctionUrl, REPO } from '../lib/site';
           <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. We extract and
           combine fields from those articles; the station data we publish is shared under the same license.
         </li>
-        <li>App, donate, and livestream links: each station's own website. We don't scrape app stores.</li>
+        <li>App and livestream links: each station's own website. We don't scrape app stores.</li>
         <li>ZIP code locations: U.S. Census Bureau ZCTA Gazetteer (public domain).</li>
         <li>Every field records where it came from and when. The data and code are public at <a href={REPO}>GitHub</a>.</li>
       </ul>

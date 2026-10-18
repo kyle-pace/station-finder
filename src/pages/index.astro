@@ -10,7 +10,7 @@ import { url } from '../lib/site';
   <section class="band-lg">
     <div class="wrap narrow stack gap-16">
       <h1 class="display">Find your local public media station</h1>
-      <p class="muted">Every way to watch and listen: your station's own apps, livestream, website, and donate page.</p>
+      <p class="muted">Every way to watch your local public media station: its own apps for your phone, tablet, and TV, its livestream, and its website.</p>
       <SearchForm />
       <div class="location" hidden data-location>
         <button class="btn btn-quiet" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
@@ -30,9 +30,38 @@ import { url } from '../lib/site';
     </div>
   </section>
 
+  <section class="band" aria-labelledby="why">
+    <div class="wrap stack gap-24">
+      <div class="stack gap-8">
+        <h2 id="why">Why your local station matters</h2>
+        <p class="muted">Public media is one of the few places on TV that's made for your community, by people who live in it.</p>
+      </div>
+      <ul class="points">
+        <li><p class="body-strong">Made where you live</p><p class="small muted">Local stations make and choose programs for their own communities: local news and public affairs, arts, history, and learning you won't find on national channels.</p></li>
+        <li><p class="body-strong">Free and open to everyone</p><p class="small muted">Public television is free to watch over the air, and stations share much of what they make online and in their apps.</p></li>
+        <li><p class="body-strong">Rooted in the community</p><p class="small muted">Stations are local nonprofits, universities, and public agencies, answerable to the people they serve rather than to advertisers.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band band-surface" aria-labelledby="apps-why">
+    <div class="wrap stack gap-24">
+      <div class="stack gap-8">
+        <h2 id="apps-why">Why use your station's own app</h2>
+        <p class="muted">Watching through your station's app is the best way to see everything it offers, and it helps the station too.</p>
+      </div>
+      <ul class="points">
+        <li><p class="body-strong">Everything local in one place</p><p class="small muted">Your station's livestream, its local shows, and its schedule, not just the national lineup.</p></li>
+        <li><p class="body-strong">Made for your screen</p><p class="small muted">Apps are built for your phone, tablet, or TV, so it's quicker to start watching than on a website.</p></li>
+        <li><p class="body-strong">A direct line to your station</p><p class="small muted">When you watch in its own app, your station keeps a direct connection with its audience and a clearer picture of what its community values.</p></li>
+      </ul>
+      <p><a class="label" href={url('/about/#why')}>Why we built this →</a></p>
+    </div>
+  </section>
+
   <section class="band" aria-labelledby="states">
     <div class="wrap stack gap-16">
-      <h2 id="states">Or browse by state</h2>
+      <h2 id="states">Browse by state</h2>
       <ul class="row-wrap" role="list" style="list-style:none;margin:0;padding:0">
         {statesWithStations.map((s) => (
           <li><a class="chip" href={url(`/state/${s.code.toLowerCase()}/`)}>{s.name}</a></li>
@@ -65,6 +94,9 @@ import { url } from '../lib/site';
 </script>
 
 <style>
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-16); }
+  @media (min-width: 701px) { .points { grid-template-columns: repeat(3, 1fr); gap: var(--space-24); } }
+  .points li { display: flex; flex-direction: column; gap: var(--space-4); }
   .location { display: flex; flex-direction: column; gap: var(--space-4); align-items: flex-start; }
   @media (min-width: 701px) { .location { flex-direction: row; align-items: center; gap: var(--space-12); } }
 </style>
