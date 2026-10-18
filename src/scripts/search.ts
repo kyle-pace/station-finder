@@ -22,7 +22,6 @@ interface Entry {
   media: ('tv' | 'radio')[];
   hasApps: boolean;
   live: string | null;
-  donate: string | null;
 }
 interface Result { entry: Entry; miles?: number }
 
@@ -105,11 +104,9 @@ function renderCards(container: HTMLElement, results: Result[]): void {
     if (entry.live) live.href = entry.live; else live.remove();
     const app = card.querySelector<HTMLAnchorElement>('[data-app]')!;
     if (entry.hasApps) app.href = `${BASE}/station/${entry.id}/#apps`; else app.remove();
-    const donate = card.querySelector<HTMLAnchorElement>('[data-donate]')!;
-    if (entry.donate) donate.href = entry.donate; else donate.remove();
     const site = card.querySelector<HTMLAnchorElement>('[data-site]')!;
     site.href = `${BASE}/station/${entry.id}/`;
-    if (entry.live || entry.hasApps || entry.donate) site.remove();
+    if (entry.live || entry.hasApps) site.remove();
     container.append(card);
   }
 }

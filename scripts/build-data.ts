@@ -65,7 +65,6 @@ interface Organization {
   state: string;
   owner?: string;
   website?: string;
-  donateUrl?: string;
   livestreamUrl?: string;
   apps: App[];
   facilityIds: string[];
@@ -201,7 +200,7 @@ for (const entry of mergesFile) {
   if (entry.id === entry.into) errors.push(`${where}: can't merge a station into itself`);
 }
 
-const OVERRIDABLE = ['id', 'name', 'city', 'website', 'donateUrl', 'livestreamUrl', 'owner'];
+const OVERRIDABLE = ['id', 'name', 'city', 'website', 'livestreamUrl', 'owner'];
 const overrides = checkList('overrides.yaml', readYaml(MANUAL, 'overrides.yaml'));
 for (const entry of overrides) {
   const where = `overrides.yaml [${entry.id ?? '?'}]`;
@@ -212,7 +211,7 @@ for (const entry of overrides) {
     continue;
   }
   checkFields(`${where} set`, entry.set as Record<string, unknown>, OVERRIDABLE);
-  for (const k of ['website', 'donateUrl', 'livestreamUrl'] as const) {
+  for (const k of ['website', 'livestreamUrl'] as const) {
     const v = (entry.set as Record<string, unknown>)[k];
     if (v !== undefined && !isUrl(v)) errors.push(`${where}: ${k} must be a full https:// link`);
     if (isPbsKids(v)) errors.push(`${where}: PBS KIDS links are not allowed (${v})`);
@@ -410,17 +409,18 @@ for (const site of scraped) {
   }
 }
 
-// Donate and livestream links found on station homepages (unverified until reviewed;
-// overrides.yaml can set or correct them).
-const foundLinks = section('Donate/livestream links found on homepages (check they are right)');
+// Livestream links found on station homepages (unverified until reviewed; overrides.yaml
+// can set or correct them). Donate links are also noted by the fetch, but not published
+// for now (decided 2026-10-18).
+const foundLinks = section('Livestream links found on homepages (check they are right)');
 for (const site of scraped) {
   const d = byId.get(site.id);
   if (!d) continue;
-  for (const [field, link] of [['donateUrl', site.donate], ['livestreamUrl', site.livestream]] as const) {
+  for (const [field, link] of [['livestreamUrl', site.livestream]] as const) {
     if (!link || d.org[field] || !isUrl(link.url)) continue;
     d.org[field] = link.url;
     d.org.sources[field] = { source: `${site.homepage?.final ?? 'homepage'} (link "${link.text}")`, retrievedAt: site.retrievedAt };
-    foundLinks.push(`${d.org.id}: ${field === 'donateUrl' ? 'donate' : 'livestream'} "${link.text}" → ${link.url}`);
+    foundLinks.push(`${d.org.id}: livestream "${link.text}" → ${link.url}`);
   }
 }
 
@@ -526,7 +526,6 @@ const searchIndex = organizations.map((o) => ({
   media: o.mediaTypes,
   hasApps: o.apps.some((a) => a.platform !== 'web'),
   live: o.livestreamUrl ?? null,
-  donate: o.donateUrl ?? null,
 }));
 writeFileSync(join(OUT, 'search.json'), JSON.stringify(searchIndex));
 

@@ -5,9 +5,9 @@
 #
 # Example:
 # - id: example
-#   note: Station moved its donate page (emailed by station, 2026-10-18)
+#   note: Station moved its livestream page (station website, 2026-10-18)
 #   set:
-#     donateUrl: https://example.org/give
+#     livestreamUrl: https://example.org/live
 #     website: https://example.org/
 
 []

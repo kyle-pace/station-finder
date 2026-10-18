@@ -17,7 +17,6 @@ export interface Organization {
   state: string;
   owner?: string;
   website?: string;
-  donateUrl?: string;
   livestreamUrl?: string;
   apps: App[];
   facilityIds: string[];
