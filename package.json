@@ -1,0 +1,25 @@
+{
+  "name": "station-finder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A neutral directory for finding your local public media station and every way to watch and listen.",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run build-data && astro check && astro build",
+    "preview": "astro preview",
+    "build-data": "node scripts/build-data.ts"
+  },
+  "dependencies": {
+    "astro": "^7.4.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^26.6.5",
+    "typescript": "^6.0.3"
+  }
+}

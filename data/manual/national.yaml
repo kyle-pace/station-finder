@@ -1,0 +1,79 @@
+# National fallback apps, shown below every search result.
+# Hand-maintained. Every link records where it came from (source) and when (retrievedAt).
+#
+# Link kinds:
+#   store — opens the app's page in that platform's store
+#   help  — the network's own install instructions (used when no direct store link is published)
+#
+# Network names are text only. Do not add PBS/NPR logos (no endorsement implied).
+# Do not add PBS KIDS apps or links (project rule; the build rejects them).
+
+- id: pbs
+  name: PBS
+  description: Watch PBS shows, documentaries, and your local station's livestream.
+  apps:
+    - platform: ios
+      kind: store
+      url: https://apps.apple.com/us/app/pbs-watch-tv-documentaries/id398349296
+      source: https://www.pbs.org/pbs-app/ (via Apple iTunes Search API)
+      retrievedAt: 2026-10-18
+    - platform: android
+      kind: store
+      url: https://play.google.com/store/apps/details?id=com.pbs.video
+      source: https://www.pbs.org/pbs-app/
+      retrievedAt: 2026-10-18
+    - platform: appletv
+      kind: help
+      url: https://help.pbs.org/support/solutions/articles/12000084210-how-do-i-download-the-pbs-app-on-apple-tv-
+      source: https://www.pbs.org/pbs-app/
+      retrievedAt: 2026-10-18
+    - platform: firetv
+      kind: help
+      url: https://help.pbs.org/support/solutions/articles/12000095640-how-to-use-the-pbs-app-on-android-tv-
+      source: https://www.pbs.org/pbs-app/ (PBS uses one help link for Fire TV and Android TV)
+      retrievedAt: 2026-10-18
+    - platform: androidtv
+      kind: help
+      url: https://help.pbs.org/support/solutions/articles/12000095640-how-to-use-the-pbs-app-on-android-tv-
+      source: https://www.pbs.org/pbs-app/
+      retrievedAt: 2026-10-18
+    - platform: roku
+      kind: store
+      url: https://channelstore.roku.com/details/2926d0a0c976db9bfcc86d2364ff9dbc/pbs
+      source: https://www.pbs.org/pbs-app/
+      retrievedAt: 2026-10-18
+    - platform: samsung
+      kind: help
+      url: https://help.pbs.org/support/solutions/articles/12000059656-is-the-pbs-app-available-on-my-samsung-smart-tv-
+      source: https://www.pbs.org/pbs-app/
+      retrievedAt: 2026-10-18
+    - platform: lg
+      kind: help
+      url: https://help.pbs.org/support/solutions/articles/12000108270-how-to-install-the-pbs-app-on-lg-tv-
+      source: https://www.pbs.org/pbs-app/
+      retrievedAt: 2026-10-18
+    - platform: web
+      kind: store
+      url: https://www.pbs.org/
+      source: https://www.pbs.org/pbs-app/
+      retrievedAt: 2026-10-18
+
+- id: npr
+  name: NPR
+  description: Listen to NPR news, podcasts, and your local station's live stream.
+  apps:
+    - platform: ios
+      kind: store
+      url: https://apps.apple.com/us/app/npr-national-local-news/id324906251
+      source: Apple iTunes Search API (developer "NPR")
+      retrievedAt: 2026-10-18
+    - platform: android
+      kind: store
+      url: https://play.google.com/store/apps/details?id=org.npr.android.news
+      source: https://www.npr.org/app ("Get the app" link, npr.app/1NKi/getapp)
+      retrievedAt: 2026-10-18
+    - platform: web
+      kind: store
+      url: https://www.npr.org/
+      source: https://www.npr.org/app
+      retrievedAt: 2026-10-18

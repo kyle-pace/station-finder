@@ -1,0 +1,13 @@
+# Corrections — hand-maintained fixes to any station field. Always wins over every
+# other source, and a pipeline re-run will never undo it.
+#
+# Each entry names a station id and the fields to replace. Add a note saying why.
+#
+# Example:
+# - id: example
+#   note: Station moved its donate page (emailed by station, 2026-10-18)
+#   set:
+#     donateUrl: https://example.org/give
+#     website: https://example.org/
+
+[]

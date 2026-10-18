@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const siteName = 'Station App Finder';
+const {
+  title,
+  description = 'Find your local public media station and every way to watch and listen.',
+} = Astro.props;
+const pageTitle = title ? `${title} · ${siteName}` : siteName;
+// BASE_URL is '/station-finder' on GitHub Pages; strip any trailing slash before joining.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container">
+      <main id="main">
+        <slot />
+      </main>
+      <footer>
+        <p>
+          A prototype by Local Public, a public benefit corporation. Not affiliated with or
+          endorsed by PBS or NPR.
+        </p>
+        <p>
+          Station information is drawn in part from Wikipedia, used under{' '}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and from
+          public FCC and U.S. Census data.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+# Station apps — hand-maintained app links for ANY station (PBS, NPR, or independent).
+#
+# This file is public. It lists apps a station offers, nothing else. It does not say
+# who built an app or whether a station works with Local Public, and nothing here
+# changes how a station is ranked or displayed.
+#
+# Entries here win over scraped data. To add a station, copy the example block below,
+# remove the leading "# ", and fill in only the platforms the station is actually on.
+#
+# id:          the station's id on the site (a short lowercase name, e.g. "kxyz").
+#              Until station data exists (Phase 2), pick the obvious short name;
+#              the build report will flag any id it can't match.
+# platform:    ios, android, appletv, firetv, androidtv, roku, samsung, lg, web
+# url:         the store page (or the station's own "get our app" page)
+# source:      where you found the link (e.g. "station website", "store listing")
+# retrievedAt: the date you checked it (YYYY-MM-DD)
+#
+# Example:
+# - id: example
+#   apps:
+#     - platform: ios
+#       url: https://apps.apple.com/us/app/...
+#       source: station website
+#       retrievedAt: 2026-10-18
+
+[]
