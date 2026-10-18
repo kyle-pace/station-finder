@@ -15,7 +15,7 @@
     - platform: ios
       kind: store
       url: https://apps.apple.com/us/app/pbs-watch-tv-documentaries/id398349296
-      source: https://www.pbs.org/pbs-app/ (via Apple iTunes Search API)
+      source: https://www.pbs.org/pbs-app/ (iOS link to.pbs.org/3MG3yF3 → App Store id398349296)
       retrievedAt: 2026-10-18
     - platform: android
       kind: store
@@ -65,7 +65,7 @@
     - platform: ios
       kind: store
       url: https://apps.apple.com/us/app/npr-national-local-news/id324906251
-      source: Apple iTunes Search API (developer "NPR")
+      source: https://www.npr.org/app ("Get the app" link npr.app/1NKi/getapp → App Store id324906251)
       retrievedAt: 2026-10-18
     - platform: android
       kind: store

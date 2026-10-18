@@ -3975,7 +3975,15 @@
     "state": "NC",
     "owner": "Central Piedmont Community College",
     "website": "https://www.wtvi.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "roku",
+        "url": "https://my.roku.com/account/add/HPDZRHL",
+        "source": "hand-checked (published Roku channel link)",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
     "facilityIds": [
       "fcc-10645"
     ],

@@ -31,4 +31,9 @@
 #   exclude:
 #     - https://apps.apple.com/us/app/some-other-app/id123
 
-[]
+- id: pbs-charlotte
+  apps:
+    - platform: roku
+      url: https://my.roku.com/account/add/HPDZRHL
+      source: hand-checked (published Roku channel link)
+      retrievedAt: 2026-10-18

@@ -59,7 +59,7 @@ ZIP lookup: Census ZCTA centroids, sharded by 3-digit ZIP prefix (`public/data/z
 | Owner, website, FCC facility ID, transmitter coordinates | Each station's Wikipedia article (infobox); state network articles' transmitter tables | CC BY-SA. Coordinates are editor-entered; gaps are fixed in `overrides.yaml`. |
 | Station app store links | Each station's own "get our app" page, listed in `data/manual/station-app-pages.yaml` | Station's own website. |
 | ZIP → lat/lng | Census ZCTA Gazetteer file | Public domain. |
-| iOS apps (stations not in station-apps.yaml) | Apple iTunes Search API (no key) | Keep only matches that pass a name/developer check; mark `verified: false` until reviewed. |
+| iOS apps (stations not in station-apps.yaml) | ~~Apple iTunes Search API~~ — its robots.txt disallows `/search` (found 2026-10-18), so Phase 6 needs another approach | Until then: stations' own websites, and hand-entered links. |
 | Hand-verified station apps (all 9 platforms) | `data/manual/station-apps.yaml` | Hand-maintained by Kyle; any station, no partner flag. |
 | Other stores (Play, TV platforms) | Manual, or the station's own website | Do not scrape the stores. |
 | Corrections | `data/manual/overrides.yaml` | Always wins. |
@@ -93,13 +93,38 @@ Search runs client-side over static JSON (e.g. a small fuzzy-search library).
 - UTM-tag outbound links to station websites and livestreams: `utm_source=<site>&utm_medium=referral&utm_campaign=station-finder`. Don't tag app store links.
 - Correction link opens a simple form (a Google Form is fine for v1) prefilled with the station id.
 
-## 8. Analytics (cookieless)
-Use Plausible or Fathom (ask Kyle which). Custom events:
-- `search`: input type (zip/name/callsign), result count, ZIP **3-digit prefix only**
-- `outbound_click`: organization id, link type (app/web/livestream), platform
-- `no_results`
+## 8. Analytics: anonymous, aggregate-only, non-tracking
+**Principle: count events, never people.** Nothing is collected that could identify, follow, or link the actions of an individual. This is a design guarantee, not just a policy.
 
-No IPs, full ZIPs, or identifiers stored by us.
+**Aggregate at collection time.** Individual events are never stored. The browser sends a tiny anonymous payload; a small counting endpoint (e.g. a serverless function, since GitHub Pages can't run one) only increments a counter for that bucket and discards the request. No raw event log exists anywhere. Example stored row: `2026-10-18 · search · zip3=981 · device=phone · results=some → 412`.
+
+**Allowed fields (the complete list):**
+| Event | Fields |
+|---|---|
+| `search` | input type (zip / name / callsign / state), result bucket (none / 1–3 / 4+), ZIP **3-digit prefix** or state, device class |
+| `outbound_click` | organization id, link type (app / web / livestream), platform, device class |
+| `no_results` | input type, ZIP 3-digit prefix or state, device class |
+| `pageview` | page type (home / search / station / state / about), device class |
+
+Device class is only `phone`, `tablet`, `desktop`, `other`. Dates are stored at **daily** granularity.
+
+**Never collected, sent, or stored:**
+- Search text (people type addresses and names)
+- Full ZIP, coordinates, IP address (the counter must not log or store IPs)
+- Full user agent, screen size, language, or any other fingerprinting signal
+- Cookies, localStorage/sessionStorage IDs, session IDs, unique visitor IDs, or anything that links two events to the same person
+- Precise timestamps
+- Referrer beyond the referring domain
+
+**Guardrails:**
+- No third-party embeds or requests: self-host fonts; no embedded maps, video, social widgets, ad/social pixels, or session replay.
+- "Use my location" (if offered) computes nearest stations in the browser; coordinates are never sent.
+- Respect Global Privacy Control and Do Not Track: if either is set, send nothing.
+- Small-number suppression: never display, export, or share any bucket with a count under 10.
+- Hosting logs: the static host keeps short-lived access logs with IPs. Don't export, query, or retain them; note this on the privacy page.
+- No consent banner needed, because nothing personal is collected. If any proposed change would require one, stop and ask Kyle.
+- Privacy page in plain language listing exactly what is counted (this table) and what is never collected.
+- Any new field or event requires Kyle's explicit approval and an update to this section first.
 
 ## 9. Tech
 - Astro (static output) + TypeScript; minimal CSS, accessible (WCAG AA), fast on mobile
@@ -112,12 +137,12 @@ No IPs, full ZIPs, or identifiers stored by us.
 3. **Search and pages:** ZIP shards, search, results, station and state pages, national fallback on station pages without apps.
 4. **Ship v0:** about page, analytics, UTM tagging, correction form, deploy publicly.
 5. **Radio:** Wikipedia NPR list and station articles.
-6. **iOS matching:** iTunes Search API with review report.
+6. **iOS matching:** needs a new approach (the iTunes Search API is disallowed by robots.txt).
 7. **Refresh automation:** monthly GitHub Action PR.
 
 ## 11. Open questions for Kyle
 - Site name and domain? (Decided 2026-10-18: don't name the publishing organization anywhere for now.)
-- Analytics: Plausible or Fathom?
+- Analytics counter: which host for the counting endpoint (e.g. a Cloudflare Worker)? It must meet Section 8 exactly; no off-the-shelf analytics tool unless it can be configured to match.
 - Correction intake: Google Form, or email to start?
 - ~~Include independent stations in v1?~~ Decided: PBS only for now; NPR in Phase 5.
 - PBS KIDS block: should it also cover stations' own PBS KIDS pages, or only national PBS KIDS (pbskids.org and its apps)? For now the build blocks anything with "pbs-kids"/"pbskids" in the link.

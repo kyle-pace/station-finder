@@ -1,9 +1,9 @@
 build-data report
   organizations:  150 (147 with transmitter coordinates)
   facilities:     331
-  with apps:      53 (12 with a verified app)   without apps: 97
+  with apps:      54 (13 with a verified app)   without apps: 96
   without website: 5 (azpm, northern-california-public-media, south-florida-pbs, illinois-public-media, pbs-rio-grande-valley)
-  manual: 1 overrides, 3 merges, 43 app pages, 0 station-apps entries
+  manual: 1 overrides, 3 merges, 43 app pages, 1 station-apps entries
 
   Rows with no transmitter coordinates (not findable by ZIP until fixed): 1
     - pbs-appalachia-virginia (PBS Appalachia Virginia, VA)
