@@ -3,7 +3,6 @@
 // and fills in the results in the browser.
 import Base from '../layouts/Base.astro';
 import SearchForm from '../components/SearchForm.astro';
-import NationalApps from '../components/NationalApps.astro';
 import Icon from '../components/Icon.astro';
 import { url } from '../lib/site';
 ---
@@ -14,7 +13,7 @@ import { url } from '../lib/site';
   </section>
 
   <div class="wrap band">
-    <div class="two-col">
+    <div class="narrow-col">
       <section class="stack gap-16" aria-labelledby="results-heading">
         <div class="stack gap-4">
           <h1 id="results-heading">Searching…</h1>
@@ -27,7 +26,6 @@ import { url } from '../lib/site';
           <p><a class="chip" href={url('/state/')}>All states →</a></p>
         </div>
       </section>
-      <aside><NationalApps /></aside>
     </div>
   </div>
 

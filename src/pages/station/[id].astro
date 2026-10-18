@@ -68,12 +68,15 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
               </div>
             ))
           ) : (
-            <div class="stack gap-8">
-              <h2>Apps</h2>
-              <p class="muted">
-                We haven't found {org.name}'s own apps yet. Check the station's website, or try the
-                national apps — many stations' shows and livestreams are there too.
-              </p>
+            <div class="stack gap-16">
+              <div class="stack gap-8">
+                <h2>Apps</h2>
+                <p class="muted">
+                  We haven't found {org.name}'s own apps yet. You can watch and listen in the
+                  national apps, where many stations' shows and livestreams are available.
+                </p>
+              </div>
+              <NationalApps />
             </div>
           )}
         </section>
@@ -90,7 +93,6 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
             </p>
           </div>
         </div>
-        <NationalApps />
       </aside>
     </div>
   </div>

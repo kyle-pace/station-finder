@@ -1,5 +1,6 @@
 ---
-// Fallback block shown below every result: PBS and NPR only, names as text, no logos,
+// Fallback shown only on the page of a station with no apps of its own (station first:
+// we never advertise the national apps next to a station's own). PBS and NPR only, names as text, no logos,
 // no PBS KIDS. Each button points at the web version by default; the device script swaps
 // in the App Store or Google Play link for phone visitors.
 import Icon from './Icon.astro';
@@ -17,7 +18,6 @@ const brands = national.map((b) => {
 <section class="panel" aria-labelledby="national-heading">
   <div class="stack gap-4">
     <h2 id="national-heading" class="h3">National apps</h2>
-    <p class="small muted">Many local stations' shows and livestreams are also in the national apps.</p>
   </div>
   {brands.map((b) => (
     <div class="panel-row">

@@ -1,7 +1,6 @@
 ---
 // One page per state/territory: every station there, A–Z.
 import Base from '../../layouts/Base.astro';
-import NationalApps from '../../components/NationalApps.astro';
 import Icon from '../../components/Icon.astro';
 import { organizations, statesWithStations, metaLine } from '../../lib/data';
 import { url } from '../../lib/site';
@@ -16,7 +15,7 @@ const stations = organizations.filter((o) => o.state === code).sort((a, b) => a.
 
 <Base title={`Public media in ${name}`} description={`Every public media station in ${name} and every way to watch and listen.`}>
   <div class="wrap band">
-    <div class="two-col">
+    <div class="narrow-col">
       <section class="stack gap-16">
         <div class="stack gap-4">
           <a class="label back" href={url('/state/')}>← All states</a>
@@ -37,11 +36,11 @@ const stations = organizations.filter((o) => o.state === code).sort((a, b) => a.
           ))}
         </ul>
       </section>
-      <aside><NationalApps /></aside>
     </div>
   </div>
 </Base>
 
 <style>
   .back { text-decoration: none; }
+  .narrow-col { max-width: var(--narrow); }
 </style>
