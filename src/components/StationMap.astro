@@ -1,0 +1,176 @@
+---
+// Map of every station transmitter, drawn as plain SVG at build time: no map tiles and no
+// requests to any other server. State outlines come from the us-atlas package (U.S.
+// Census cartographic boundaries, pre-projected to Albers USA, 975×610). Every dot looks
+// the same and links to its station's page. Click a state to zoom in.
+//
+// Places outside the Albers USA projection (Puerto Rico and other territories) are
+// listed under the map instead.
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { feature, mesh } from 'topojson-client';
+import { geoAlbersUsa, geoPath } from 'd3-geo';
+import type { Topology, GeometryCollection } from 'topojson-specification';
+import { organizations, facilities, STATE_NAMES } from '../lib/data';
+import { url } from '../lib/site';
+
+const topo = JSON.parse(readFileSync(join(process.cwd(), 'node_modules', 'us-atlas', 'states-albers-10m.json'), 'utf8')) as Topology;
+const statesObj = topo.objects.states as GeometryCollection<{ name: string }>;
+const path = geoPath().digits(1); // shapes are already projected
+const projection = geoAlbersUsa().scale(1300).translate([487.5, 305]); // matches us-atlas *-albers files
+const codeByName = Object.fromEntries(Object.entries(STATE_NAMES).map(([code, name]) => [name, code]));
+const orgById = new Map(organizations.map((o) => [o.id, o]));
+const countByState = new Map<string, number>();
+for (const o of organizations) countByState.set(o.state, (countByState.get(o.state) ?? 0) + 1);
+
+const states = feature(topo, statesObj).features.map((f) => {
+  const code = codeByName[f.properties.name] ?? '';
+  const [[x0, y0], [x1, y1]] = path.bounds(f);
+  return { code, name: f.properties.name, d: path(f) ?? '', box: [x0, y0, x1 - x0, y1 - y0].map((n) => Math.round(n)).join(' '), count: countByState.get(code) ?? 0 };
+});
+const borders = path(mesh(topo, statesObj, (a, b) => a !== b)) ?? '';
+
+const dots: { x: number; y: number; org: string; name: string; label: string }[] = [];
+const offMap = new Map<string, { code: string; name: string }>();
+for (const f of facilities) {
+  const org = orgById.get(f.organizationId);
+  if (!org) continue;
+  const p = projection([f.lng, f.lat]);
+  if (!p) { offMap.set(org.state, { code: org.state, name: STATE_NAMES[org.state] ?? org.state }); continue; }
+  dots.push({ x: Math.round(p[0] * 10) / 10, y: Math.round(p[1] * 10) / 10, org: org.id, name: org.name, label: `${org.name} · ${f.callSign}${f.city ? `, ${f.city}` : ''}` });
+}
+const stationCount = new Set(dots.map((d) => d.org)).size;
+---
+<div class="station-map" data-map>
+  <div class="map-bar">
+    <p class="small muted" data-map-status>{stationCount} stations, {dots.length} transmitters. Tap a state to zoom in, then a dot to open that station.</p>
+    <button class="btn btn-quiet" type="button" data-map-reset hidden>← All of the US</button>
+  </div>
+  <div class="map-frame">
+    <svg viewBox="0 0 975 610" data-full="0 0 975 610" role="group" aria-label="Map of public media stations in the United States">
+      <g class="states">
+        {states.map((s) => (
+          <path d={s.d} data-state={s.code} data-name={s.name} data-box={s.box} data-count={s.count}><title>{s.name}</title></path>
+        ))}
+      </g>
+      <path class="borders" d={borders} />
+      <g class="dots">
+        {dots.map((d) => (
+          <a href={url(`/station/${d.org}/`)} aria-label={d.label}>
+            <circle cx={d.x} cy={d.y} r="4" data-label={d.label} />
+          </a>
+        ))}
+      </g>
+    </svg>
+    <p class="map-tip caption" data-map-tip hidden></p>
+  </div>
+  <a class="label" data-map-state-link hidden href="#"></a>
+  {offMap.size > 0 && (
+    <p class="small muted">
+      Not shown on the map:{' '}
+      {[...offMap.values()].map((s, i) => <>{i > 0 && ', '}<a href={url(`/state/${s.code.toLowerCase()}/`)}>{s.name}</a></>)}
+    </p>
+  )}
+</div>
+
+<script>
+  // Hover/focus labels for dots, and click-a-state zoom (animates the SVG viewBox).
+  import { STATE_NAMES } from '../lib/states';
+  for (const root of document.querySelectorAll<HTMLElement>('[data-map]')) {
+    const svg = root.querySelector('svg')!;
+    const tip = root.querySelector<HTMLElement>('[data-map-tip]')!;
+    const reset = root.querySelector<HTMLButtonElement>('[data-map-reset]')!;
+    const status = root.querySelector<HTMLElement>('[data-map-status]')!;
+    const stateLink = root.querySelector<HTMLAnchorElement>('[data-map-state-link]')!;
+    const initialStatus = status.textContent;
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+    let box = svg.getAttribute('data-full')!.split(' ').map(Number);
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Dots stay the same size on screen (big enough to tap) at any zoom or screen width.
+    const sizeDots = () => {
+      const pxPerUnit = svg.getBoundingClientRect().width / box[2] || 1;
+      const zoomed = svg.classList.contains('zoomed');
+      const dotPx = zoomed ? 6 : innerWidth < 700 ? 2.25 : 3.5;
+      svg.style.setProperty('--dot-r', String(dotPx / pxPerUnit));
+      svg.style.setProperty('--stroke', String(1 / pxPerUnit));
+    };
+    addEventListener('resize', sizeDots);
+    const animateTo = (target: number[]) => {
+      tip.hidden = true;
+      const from = box.slice();
+      const start = performance.now();
+      const step = (now: number) => {
+        const t = reduceMotion ? 1 : Math.min(1, (now - start) / 350);
+        const e = t * (2 - t);
+        box = from.map((v, i) => v + (target[i] - v) * e);
+        svg.setAttribute('viewBox', box.join(' '));
+        sizeDots();
+        if (t < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+
+    const showTip = (circle: SVGCircleElement) => {
+      tip.textContent = circle.dataset.label ?? '';
+      tip.hidden = false;
+      const r = circle.getBoundingClientRect();
+      const frame = tip.parentElement!.getBoundingClientRect();
+      tip.style.left = `${Math.min(r.left - frame.left + r.width / 2, frame.width - 8)}px`;
+      tip.style.top = `${r.top - frame.top}px`;
+    };
+    svg.addEventListener('pointerover', (e) => { if (e.target instanceof SVGCircleElement) showTip(e.target); });
+    svg.addEventListener('focusin', (e) => { const c = (e.target as Element).querySelector?.('circle'); if (c) showTip(c); });
+    svg.addEventListener('pointerout', () => { tip.hidden = true; });
+    svg.addEventListener('focusout', () => { tip.hidden = true; });
+
+    svg.addEventListener('click', (e) => {
+      const state = (e.target as Element).closest<SVGPathElement>('path[data-state]');
+      if (!state) return;
+      const [x, y, w, h] = state.dataset.box!.split(' ').map(Number);
+      // Pad the state's bounds and keep the map's aspect ratio.
+      const pad = Math.max(w, h) * 0.15;
+      let bw = w + 2 * pad, bh = h + 2 * pad;
+      if (bw / bh > 975 / 610) bh = bw * 610 / 975; else bw = bh * 975 / 610;
+      animateTo([x + w / 2 - bw / 2, y + h / 2 - bh / 2, bw, bh]);
+      for (const p of svg.querySelectorAll('path[data-state]')) p.classList.toggle('active', p === state);
+      svg.classList.add('zoomed');
+      reset.hidden = false;
+      const code = state.dataset.state!;
+      const count = Number(state.dataset.count);
+      status.textContent = `${STATE_NAMES[code] ?? state.dataset.name}: ${count} station${count === 1 ? '' : 's'}`;
+      stateLink.hidden = !code;
+      stateLink.href = `${base}/state/${code.toLowerCase()}/`;
+      stateLink.textContent = `See every station in ${STATE_NAMES[code] ?? state.dataset.name} →`;
+    });
+    reset.addEventListener('click', () => {
+      animateTo(svg.getAttribute('data-full')!.split(' ').map(Number));
+      for (const p of svg.querySelectorAll('path.active')) p.classList.remove('active');
+      svg.classList.remove('zoomed');
+      reset.hidden = true;
+      stateLink.hidden = true;
+      status.textContent = initialStatus;
+    });
+    sizeDots();
+  }
+</script>
+
+<style>
+  .station-map { display: flex; flex-direction: column; gap: var(--space-12); }
+  .map-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--space-12); min-height: 44px; }
+  .map-frame { position: relative; }
+  svg { width: 100%; height: auto; display: block; touch-action: manipulation; }
+  .states path { fill: var(--surface); stroke: none; cursor: pointer; }
+  .states path:hover, .states path.active { fill: var(--accent-subtle); }
+  .borders { fill: none; stroke: var(--border); stroke-width: var(--stroke, 1); stroke-linejoin: round; pointer-events: none; }
+  circle { r: calc(var(--dot-r, 4) * 1px); fill: var(--accent); stroke: var(--bg); stroke-width: calc(var(--stroke, 1) * 1px); }
+  .dots a:hover circle, .dots a:focus-visible circle { fill: var(--text); }
+  .dots a:focus-visible { outline: none; }
+  /* On touch screens, the zoomed-out map is for picking a state: taps go to the state. */
+  @media (pointer: coarse) { svg:not(.zoomed) .dots { pointer-events: none; } }
+  .map-tip {
+    position: absolute; transform: translate(-50%, calc(-100% - 8px)); pointer-events: none;
+    background: var(--text); color: var(--bg); padding: var(--space-4) var(--space-8);
+    border-radius: var(--radius-sm); white-space: nowrap; max-width: 80vw; overflow: hidden; text-overflow: ellipsis;
+  }
+</style>

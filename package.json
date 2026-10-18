@@ -14,8 +14,9 @@
     "build-data": "node scripts/build-data.ts",
     "build-zcta": "node scripts/build-zcta.ts",
     "fetch-wikipedia": "node scripts/fetch-wikipedia.ts",
+    "fetch-wikipedia-npr": "node scripts/fetch-wikipedia-npr.ts",
     "fetch-station-app-pages": "node scripts/fetch-station-app-pages.ts",
-    "refresh-data": "npm run fetch-wikipedia && npm run build-data && npm run fetch-station-app-pages && npm run build-data"
+    "refresh-data": "npm run fetch-wikipedia && npm run fetch-wikipedia-npr && npm run build-data && npm run fetch-station-app-pages && npm run build-data"
   },
   "dependencies": {
     "astro": "^7.4.0",
@@ -23,8 +24,13 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@types/d3-geo": "^3.1.1",
     "@types/node": "^26.6.5",
+    "@types/topojson-client": "^3.1.5",
     "cheerio": "^1.2.0",
-    "typescript": "^6.0.3"
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "typescript": "^6.0.3",
+    "us-atlas": "^3.0.1"
   }
 }
