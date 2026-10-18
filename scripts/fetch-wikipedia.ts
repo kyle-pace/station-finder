@@ -26,7 +26,9 @@ export interface Coords { lat: number; lng: number }
 
 export interface InfoboxFields {
   title: string;          // article title after redirects
+  requested?: string;     // the title we linked to (differs when Wikipedia redirected)
   url: string;
+  callSigns?: string[];   // from the infobox caption, e.g. "KAWE and KAWB"
   retrievedAt: string;
   branding?: string;
   owner?: string;
@@ -121,8 +123,15 @@ function parseList($: CheerioAPI): Omit<ExtractedRow, 'primary' | 'stations' | '
 // --- Article pages ---------------------------------------------------------------
 
 function parseInfobox($: CheerioAPI, url: string, retrievedAt: string): InfoboxFields {
+  // Wikipedia serves redirects in place (no HTTP redirect), so the canonical link is the
+  // only reliable way to know which article we actually got (e.g. KQET → KQED).
+  const canonical = $('link[rel="canonical"]').attr('href');
+  if (canonical?.startsWith(WIKI)) url = canonical;
   const fields: InfoboxFields = { title: titleFromUrl(url), url, retrievedAt };
-  $('table.infobox').first().find('tr').each((_, tr) => {
+  const box = $('table.infobox').first();
+  const captionCalls = [...clean(box.find('caption').first().text()).matchAll(/\b[KW][A-Z]{2,3}(?:-(?:TV|DT|CD|LD))?\b/g)].map((m) => m[0]);
+  if (captionCalls.length) fields.callSigns = captionCalls;
+  box.find('tr').each((_, tr) => {
     const label = clean($(tr).children('th').first().text()).toLowerCase();
     const td = $(tr).children('td').first();
     if (!label || !td.length) return;
@@ -179,7 +188,7 @@ const fileFor = (title: string) => `articles/${title.replace(/[^A-Za-z0-9._()-]+
 async function fetchArticle(title: string, url: string) {
   const page = await fetchCached('wikipedia', fileFor(title), url);
   const $ = cheerio.load(page.body);
-  return { $, info: parseInfobox($, page.url, page.retrievedAt) };
+  return { $, info: { ...parseInfobox($, page.url, page.retrievedAt), requested: title } };
 }
 
 // --- Main ------------------------------------------------------------------------

@@ -107,7 +107,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "APT PBS",
         "owner": "Alabama Educational Television Commission",
-        "website": "https://www.aptv.org/"
+        "website": "https://www.aptv.org/",
+        "requested": "Alabama Public Television"
       }
     },
     {
@@ -134,6 +135,9 @@
           "title": "KAKM",
           "url": "https://en.wikipedia.org/wiki/KAKM",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KAKM"
+          ],
           "branding": "Alaska Public Media",
           "owner": "Alaska Public Media(Alaska Public Telecommunications, Inc.)",
           "facilityId": 804,
@@ -141,7 +145,8 @@
             "lat": 61.422167,
             "lng": -149.874389
           },
-          "website": "https://www.alaskapublic.org/"
+          "website": "https://www.alaskapublic.org/",
+          "requested": "KAKM"
         }
       ],
       "transmitters": [],
@@ -149,7 +154,8 @@
         "title": "Alaska Public Media",
         "url": "https://en.wikipedia.org/wiki/Alaska_Public_Media",
         "retrievedAt": "2026-10-18",
-        "website": "http://alaskapublic.org"
+        "website": "http://alaskapublic.org",
+        "requested": "Alaska Public Media"
       }
     },
     {
@@ -171,6 +177,9 @@
           "title": "KUAC-TV",
           "url": "https://en.wikipedia.org/wiki/KUAC-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KUAC-TV"
+          ],
           "branding": "KUAC TV 9",
           "owner": "University of Alaska Fairbanks",
           "facilityId": 69315,
@@ -178,7 +187,8 @@
             "lat": 64.91111,
             "lng": -147.77972
           },
-          "website": "https://kuac.org/"
+          "website": "https://kuac.org/",
+          "requested": "KUAC-TV"
         }
       ],
       "transmitters": [],
@@ -186,6 +196,9 @@
         "title": "KUAC-TV",
         "url": "https://en.wikipedia.org/wiki/KUAC-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KUAC-TV"
+        ],
         "branding": "KUAC TV 9",
         "owner": "University of Alaska Fairbanks",
         "facilityId": 69315,
@@ -193,7 +206,8 @@
           "lat": 64.91111,
           "lng": -147.77972
         },
-        "website": "https://kuac.org/"
+        "website": "https://kuac.org/",
+        "requested": "KUAC-TV"
       }
     },
     {
@@ -215,12 +229,16 @@
           "title": "KVZK-TV",
           "url": "https://en.wikipedia.org/wiki/KVZK-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KVZK-TV"
+          ],
           "owner": "Office of Public Information (Government of American Samoa)",
           "coords": {
             "lat": -14.265139,
             "lng": -170.687361
           },
-          "website": "https://www.kvzktv.com/"
+          "website": "https://www.kvzktv.com/",
+          "requested": "KVZK-TV"
         }
       ],
       "transmitters": [],
@@ -228,12 +246,16 @@
         "title": "KVZK-TV",
         "url": "https://en.wikipedia.org/wiki/KVZK-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KVZK-TV"
+        ],
         "owner": "Office of Public Information (Government of American Samoa)",
         "coords": {
           "lat": -14.265139,
           "lng": -170.687361
         },
-        "website": "https://www.kvzktv.com/"
+        "website": "https://www.kvzktv.com/",
+        "requested": "KVZK-TV"
       }
     },
     {
@@ -255,6 +277,9 @@
           "title": "KAET",
           "url": "https://en.wikipedia.org/wiki/KAET",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KAET"
+          ],
           "branding": "Arizona PBS",
           "owner": "Arizona State University(Arizona Board of Regents for Arizona State University)",
           "facilityId": 2728,
@@ -262,7 +287,8 @@
             "lat": 33.333,
             "lng": -112.064278
           },
-          "website": "http://www.azpbs.org/"
+          "website": "http://www.azpbs.org/",
+          "requested": "KAET"
         }
       ],
       "transmitters": [],
@@ -270,6 +296,9 @@
         "title": "KAET",
         "url": "https://en.wikipedia.org/wiki/KAET",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KAET"
+        ],
         "branding": "Arizona PBS",
         "owner": "Arizona State University(Arizona Board of Regents for Arizona State University)",
         "facilityId": 2728,
@@ -277,7 +306,8 @@
           "lat": 33.333,
           "lng": -112.064278
         },
-        "website": "http://www.azpbs.org/"
+        "website": "http://www.azpbs.org/",
+        "requested": "KAET"
       }
     },
     {
@@ -304,6 +334,10 @@
           "title": "KUAT-TV",
           "url": "https://en.wikipedia.org/wiki/KUAT-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KUAT-TV",
+            "KUAS-TV"
+          ],
           "branding": "PBS 6; AZPM",
           "owner": "University of Arizona(Arizona Board of Regents for the benefit of the University of Arizona)",
           "facilityId": 2731,
@@ -311,14 +345,16 @@
             "lat": 32.415389,
             "lng": -110.715056
           },
-          "website": "https://www.azpm.org/"
+          "website": "https://www.azpm.org/",
+          "requested": "KUAT-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "AZPM",
-        "url": "https://en.wikipedia.org/wiki/AZPM",
-        "retrievedAt": "2026-10-18"
+        "title": "Arizona Public Media",
+        "url": "https://en.wikipedia.org/wiki/Arizona_Public_Media",
+        "retrievedAt": "2026-10-18",
+        "requested": "AZPM"
       }
     },
     {
@@ -398,7 +434,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "Arkansas TV",
         "owner": "Arkansas Educational Television Commission",
-        "website": "https://www.arkansastv.gov/"
+        "website": "https://www.arkansastv.gov/",
+        "requested": "Arkansas TV"
       }
     },
     {
@@ -420,6 +457,9 @@
           "title": "KIXE-TV",
           "url": "https://en.wikipedia.org/wiki/KIXE-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KIXE-TV"
+          ],
           "branding": "KIXE PBS",
           "owner": "Northern California Educational Television Association, Inc.",
           "facilityId": 47285,
@@ -427,7 +467,8 @@
             "lat": 40.602361,
             "lng": -122.65139
           },
-          "website": "https://www.kixe.org/"
+          "website": "https://www.kixe.org/",
+          "requested": "KIXE-TV"
         }
       ],
       "transmitters": [],
@@ -435,6 +476,9 @@
         "title": "KIXE-TV",
         "url": "https://en.wikipedia.org/wiki/KIXE-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KIXE-TV"
+        ],
         "branding": "KIXE PBS",
         "owner": "Northern California Educational Television Association, Inc.",
         "facilityId": 47285,
@@ -442,7 +486,8 @@
           "lat": 40.602361,
           "lng": -122.65139
         },
-        "website": "https://www.kixe.org/"
+        "website": "https://www.kixe.org/",
+        "requested": "KIXE-TV"
       }
     },
     {
@@ -464,6 +509,9 @@
           "title": "KEET",
           "url": "https://en.wikipedia.org/wiki/KEET",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KEET"
+          ],
           "branding": "KEET PBS",
           "owner": "Redwood Empire Public Television, Inc.",
           "facilityId": 55435,
@@ -471,7 +519,8 @@
             "lat": 40.728306,
             "lng": -123.972639
           },
-          "website": "https://www.keet.org/"
+          "website": "https://www.keet.org/",
+          "requested": "KEET"
         }
       ],
       "transmitters": [],
@@ -479,6 +528,9 @@
         "title": "KEET",
         "url": "https://en.wikipedia.org/wiki/KEET",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KEET"
+        ],
         "branding": "KEET PBS",
         "owner": "Redwood Empire Public Television, Inc.",
         "facilityId": 55435,
@@ -486,7 +538,8 @@
           "lat": 40.728306,
           "lng": -123.972639
         },
-        "website": "https://www.keet.org/"
+        "website": "https://www.keet.org/",
+        "requested": "KEET"
       }
     },
     {
@@ -513,6 +566,9 @@
           "title": "KVPT",
           "url": "https://en.wikipedia.org/wiki/KVPT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KVPT"
+          ],
           "branding": "Valley PBS",
           "owner": "Valley Public Television, Inc.",
           "facilityId": 69733,
@@ -520,14 +576,18 @@
             "lat": 36.745889,
             "lng": -119.284
           },
-          "website": "https://valleypbs.org/"
+          "website": "https://valleypbs.org/",
+          "requested": "KVPT"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Valley PBS",
-        "url": "https://en.wikipedia.org/wiki/Valley_PBS",
+        "title": "KVPT",
+        "url": "https://en.wikipedia.org/wiki/KVPT",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KVPT"
+        ],
         "branding": "Valley PBS",
         "owner": "Valley Public Television, Inc.",
         "facilityId": 69733,
@@ -535,7 +595,8 @@
           "lat": 36.745889,
           "lng": -119.284
         },
-        "website": "https://valleypbs.org/"
+        "website": "https://valleypbs.org/",
+        "requested": "Valley PBS"
       }
     },
     {
@@ -562,6 +623,9 @@
           "title": "KOCE-TV",
           "url": "https://en.wikipedia.org/wiki/KOCE-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KOCE-TV"
+          ],
           "branding": "PBS SoCal",
           "owner": "Public Media Group of Southern California",
           "facilityId": 4328,
@@ -569,12 +633,16 @@
             "lat": 34.213306,
             "lng": -118.062306
           },
-          "website": "http://pbssocal.org"
+          "website": "http://pbssocal.org",
+          "requested": "KOCE-TV"
         },
         {
           "title": "KCET",
           "url": "https://en.wikipedia.org/wiki/KCET",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KCET"
+          ],
           "branding": "PBS SoCal Plus",
           "owner": "Public Media Group of Southern California",
           "facilityId": 13058,
@@ -582,7 +650,8 @@
             "lat": 34.22389,
             "lng": -118.06306
           },
-          "website": "https://www.pbssocal.org/"
+          "website": "https://www.pbssocal.org/",
+          "requested": "KCET"
         }
       ],
       "transmitters": [],
@@ -590,6 +659,9 @@
         "title": "KOCE-TV",
         "url": "https://en.wikipedia.org/wiki/KOCE-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KOCE-TV"
+        ],
         "branding": "PBS SoCal",
         "owner": "Public Media Group of Southern California",
         "facilityId": 4328,
@@ -597,7 +669,8 @@
           "lat": 34.213306,
           "lng": -118.062306
         },
-        "website": "http://pbssocal.org"
+        "website": "http://pbssocal.org",
+        "requested": "KOCE-TV"
       }
     },
     {
@@ -619,6 +692,9 @@
           "title": "KLCS",
           "url": "https://en.wikipedia.org/wiki/KLCS",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KLCS"
+          ],
           "branding": "KLCS Public Media PBS",
           "owner": "Los Angeles Unified School District",
           "facilityId": 38430,
@@ -626,7 +702,8 @@
             "lat": 34.22389,
             "lng": -118.06306
           },
-          "website": "http://www.klcs.org/"
+          "website": "http://www.klcs.org/",
+          "requested": "KLCS"
         }
       ],
       "transmitters": [],
@@ -634,6 +711,9 @@
         "title": "KLCS",
         "url": "https://en.wikipedia.org/wiki/KLCS",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KLCS"
+        ],
         "branding": "KLCS Public Media PBS",
         "owner": "Los Angeles Unified School District",
         "facilityId": 38430,
@@ -641,7 +721,8 @@
           "lat": 34.22389,
           "lng": -118.06306
         },
-        "website": "http://www.klcs.org/"
+        "website": "http://www.klcs.org/",
+        "requested": "KLCS"
       }
     },
     {
@@ -660,9 +741,13 @@
       "problems": [],
       "stations": [
         {
-          "title": "KQET",
-          "url": "https://en.wikipedia.org/wiki/KQET",
+          "title": "KQED (TV)",
+          "url": "https://en.wikipedia.org/wiki/KQED_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KQED",
+            "KQET"
+          ],
           "branding": "KQED",
           "owner": "KQED Inc.",
           "facilityId": 35500,
@@ -670,14 +755,19 @@
             "lat": 37.75528,
             "lng": -122.45278
           },
-          "website": "https://www.kqed.org/tv/"
+          "website": "https://www.kqed.org/tv/",
+          "requested": "KQET"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "KQET",
-        "url": "https://en.wikipedia.org/wiki/KQET",
+        "title": "KQED (TV)",
+        "url": "https://en.wikipedia.org/wiki/KQED_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KQED",
+          "KQET"
+        ],
         "branding": "KQED",
         "owner": "KQED Inc.",
         "facilityId": 35500,
@@ -685,7 +775,8 @@
           "lat": 37.75528,
           "lng": -122.45278
         },
-        "website": "https://www.kqed.org/tv/"
+        "website": "https://www.kqed.org/tv/",
+        "requested": "KQET"
       }
     },
     {
@@ -707,6 +798,9 @@
           "title": "KVIE",
           "url": "https://en.wikipedia.org/wiki/KVIE",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KVIE"
+          ],
           "branding": "PBS KVIE",
           "owner": "KVIE, Inc.",
           "facilityId": 35855,
@@ -714,7 +808,8 @@
             "lat": 38.27167,
             "lng": -121.505
           },
-          "website": "https://www.kvie.org/"
+          "website": "https://www.kvie.org/",
+          "requested": "KVIE"
         }
       ],
       "transmitters": [],
@@ -722,6 +817,9 @@
         "title": "KVIE",
         "url": "https://en.wikipedia.org/wiki/KVIE",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KVIE"
+        ],
         "branding": "PBS KVIE",
         "owner": "KVIE, Inc.",
         "facilityId": 35855,
@@ -729,7 +827,8 @@
           "lat": 38.27167,
           "lng": -121.505
         },
-        "website": "https://www.kvie.org/"
+        "website": "https://www.kvie.org/",
+        "requested": "KVIE"
       }
     },
     {
@@ -751,6 +850,9 @@
           "title": "KVCR-DT",
           "url": "https://en.wikipedia.org/wiki/KVCR-DT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KVCR-DT"
+          ],
           "branding": "KVCR PBS",
           "owner": "San Bernardino Community College District",
           "facilityId": 58795,
@@ -758,7 +860,8 @@
             "lat": 33.965944,
             "lng": -117.285861
           },
-          "website": "https://www.kvcr.org/"
+          "website": "https://www.kvcr.org/",
+          "requested": "KVCR-DT"
         }
       ],
       "transmitters": [],
@@ -766,6 +869,9 @@
         "title": "KVCR-DT",
         "url": "https://en.wikipedia.org/wiki/KVCR-DT",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KVCR-DT"
+        ],
         "branding": "KVCR PBS",
         "owner": "San Bernardino Community College District",
         "facilityId": 58795,
@@ -773,7 +879,8 @@
           "lat": 33.965944,
           "lng": -117.285861
         },
-        "website": "https://www.kvcr.org/"
+        "website": "https://www.kvcr.org/",
+        "requested": "KVCR-DT"
       }
     },
     {
@@ -795,6 +902,9 @@
           "title": "KPBS (TV)",
           "url": "https://en.wikipedia.org/wiki/KPBS_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KPBS"
+          ],
           "branding": "KPBS",
           "owner": "San Diego State University(The Board of Trustees of the California State University for San Diego State University)",
           "facilityId": 6124,
@@ -802,7 +912,8 @@
             "lat": 32.697972,
             "lng": -116.935083
           },
-          "website": "https://www.kpbs.org/"
+          "website": "https://www.kpbs.org/",
+          "requested": "KPBS (TV)"
         }
       ],
       "transmitters": [],
@@ -810,6 +921,9 @@
         "title": "KPBS (TV)",
         "url": "https://en.wikipedia.org/wiki/KPBS_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KPBS"
+        ],
         "branding": "KPBS",
         "owner": "San Diego State University(The Board of Trustees of the California State University for San Diego State University)",
         "facilityId": 6124,
@@ -817,7 +931,8 @@
           "lat": 32.697972,
           "lng": -116.935083
         },
-        "website": "https://www.kpbs.org/"
+        "website": "https://www.kpbs.org/",
+        "requested": "KPBS (TV)"
       }
     },
     {
@@ -844,6 +959,10 @@
           "title": "KQED (TV)",
           "url": "https://en.wikipedia.org/wiki/KQED_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KQED",
+            "KQET"
+          ],
           "branding": "KQED",
           "owner": "KQED Inc.",
           "facilityId": 35500,
@@ -851,12 +970,16 @@
             "lat": 37.75528,
             "lng": -122.45278
           },
-          "website": "https://www.kqed.org/tv/"
+          "website": "https://www.kqed.org/tv/",
+          "requested": "KQED (TV)"
         },
         {
           "title": "KQEH",
           "url": "https://en.wikipedia.org/wiki/KQEH",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KQEH"
+          ],
           "branding": "KQED Plus",
           "owner": "KQED Inc.",
           "facilityId": 35663,
@@ -864,7 +987,8 @@
             "lat": 37.75528,
             "lng": -122.45278
           },
-          "website": "https://www.kqed.org/tv"
+          "website": "https://www.kqed.org/tv",
+          "requested": "KQEH"
         }
       ],
       "transmitters": [],
@@ -872,6 +996,10 @@
         "title": "KQED (TV)",
         "url": "https://en.wikipedia.org/wiki/KQED_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KQED",
+          "KQET"
+        ],
         "branding": "KQED",
         "owner": "KQED Inc.",
         "facilityId": 35500,
@@ -879,7 +1007,8 @@
           "lat": 37.75528,
           "lng": -122.45278
         },
-        "website": "https://www.kqed.org/tv/"
+        "website": "https://www.kqed.org/tv/",
+        "requested": "KQED (TV)"
       }
     },
     {
@@ -906,6 +1035,9 @@
           "title": "KRCB (TV)",
           "url": "https://en.wikipedia.org/wiki/KRCB_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KRCB"
+          ],
           "branding": "KRCB",
           "owner": "Northern California Public Media(Rural California Broadcasting Corporation)",
           "facilityId": 57945,
@@ -913,14 +1045,16 @@
             "lat": 37.75528,
             "lng": -122.45278
           },
-          "website": "https://norcalpublicmedia.org/"
+          "website": "https://norcalpublicmedia.org/",
+          "requested": "KRCB (TV)"
         }
       ],
       "transmitters": [],
       "primary": {
         "title": "Northern California Public Media",
         "url": "https://en.wikipedia.org/wiki/Northern_California_Public_Media",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-18",
+        "requested": "Northern California Public Media"
       }
     },
     {
@@ -982,7 +1116,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "Rocky Mountain PBS",
         "owner": "Rocky Mountain Public Media, Inc.",
-        "website": "http://www.rmpbs.org/"
+        "website": "http://www.rmpbs.org/",
+        "requested": "Rocky Mountain PBS"
       }
     },
     {
@@ -1004,6 +1139,9 @@
           "title": "KBDI-TV",
           "url": "https://en.wikipedia.org/wiki/KBDI-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KBDI-TV"
+          ],
           "branding": "PBS12",
           "owner": "Colorado Public Television, Inc.",
           "facilityId": 22685,
@@ -1011,7 +1149,8 @@
             "lat": 39.68196,
             "lng": -105.49757
           },
-          "website": "https://www.pbs12.org/"
+          "website": "https://www.pbs12.org/",
+          "requested": "KBDI-TV"
         }
       ],
       "transmitters": [],
@@ -1019,6 +1158,9 @@
         "title": "KBDI-TV",
         "url": "https://en.wikipedia.org/wiki/KBDI-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KBDI-TV"
+        ],
         "branding": "PBS12",
         "owner": "Colorado Public Television, Inc.",
         "facilityId": 22685,
@@ -1026,7 +1168,8 @@
           "lat": 39.68196,
           "lng": -105.49757
         },
-        "website": "https://www.pbs12.org/"
+        "website": "https://www.pbs12.org/",
+        "requested": "KBDI-TV"
       }
     },
     {
@@ -1087,7 +1230,8 @@
         "url": "https://en.wikipedia.org/wiki/Connecticut_Public_Television",
         "retrievedAt": "2026-10-18",
         "owner": "Connecticut Public Broadcasting, Inc.",
-        "website": "https://www.ctpublic.org/"
+        "website": "https://www.ctpublic.org/",
+        "requested": "Connecticut Public Television"
       }
     },
     {
@@ -1106,9 +1250,13 @@
       "problems": [],
       "stations": [
         {
-          "title": "WDPB",
-          "url": "https://en.wikipedia.org/wiki/WDPB",
+          "title": "WHYY-TV",
+          "url": "https://en.wikipedia.org/wiki/WHYY-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WHYY-TV",
+            "WDPB"
+          ],
           "branding": "PBS WHYY",
           "owner": "WHYY, Inc.",
           "facilityId": 72338,
@@ -1116,14 +1264,19 @@
             "lat": 40.041917,
             "lng": -75.239417
           },
-          "website": "https://www.whyy.org/"
+          "website": "https://www.whyy.org/",
+          "requested": "WDPB"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "WDPB",
-        "url": "https://en.wikipedia.org/wiki/WDPB",
+        "title": "WHYY-TV",
+        "url": "https://en.wikipedia.org/wiki/WHYY-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WHYY-TV",
+          "WDPB"
+        ],
         "branding": "PBS WHYY",
         "owner": "WHYY, Inc.",
         "facilityId": 72338,
@@ -1131,7 +1284,8 @@
           "lat": 40.041917,
           "lng": -75.239417
         },
-        "website": "https://www.whyy.org/"
+        "website": "https://www.whyy.org/",
+        "requested": "WDPB"
       }
     },
     {
@@ -1153,6 +1307,9 @@
           "title": "WETA-TV",
           "url": "https://en.wikipedia.org/wiki/WETA-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WETA-TV"
+          ],
           "branding": "WETA",
           "owner": "Greater Washington Educational Telecommunications Association",
           "facilityId": 65670,
@@ -1160,7 +1317,8 @@
             "lat": 38.95028,
             "lng": -77.07944
           },
-          "website": "https://weta.org/watch"
+          "website": "https://weta.org/watch",
+          "requested": "WETA-TV"
         }
       ],
       "transmitters": [],
@@ -1168,6 +1326,9 @@
         "title": "WETA-TV",
         "url": "https://en.wikipedia.org/wiki/WETA-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WETA-TV"
+        ],
         "branding": "WETA",
         "owner": "Greater Washington Educational Telecommunications Association",
         "facilityId": 65670,
@@ -1175,7 +1336,8 @@
           "lat": 38.95028,
           "lng": -77.07944
         },
-        "website": "https://weta.org/watch"
+        "website": "https://weta.org/watch",
+        "requested": "WETA-TV"
       }
     },
     {
@@ -1197,6 +1359,9 @@
           "title": "WHUT-TV",
           "url": "https://en.wikipedia.org/wiki/WHUT-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WHUT-TV"
+          ],
           "branding": "WHUT",
           "owner": "Howard University",
           "facilityId": 27772,
@@ -1204,7 +1369,8 @@
             "lat": 38.95028,
             "lng": -77.07944
           },
-          "website": "https://www.whut.org/"
+          "website": "https://www.whut.org/",
+          "requested": "WHUT-TV"
         }
       ],
       "transmitters": [],
@@ -1212,6 +1378,9 @@
         "title": "WHUT-TV",
         "url": "https://en.wikipedia.org/wiki/WHUT-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WHUT-TV"
+        ],
         "branding": "WHUT",
         "owner": "Howard University",
         "facilityId": 27772,
@@ -1219,7 +1388,8 @@
           "lat": 38.95028,
           "lng": -77.07944
         },
-        "website": "https://www.whut.org/"
+        "website": "https://www.whut.org/",
+        "requested": "WHUT-TV"
       }
     },
     {
@@ -1241,6 +1411,9 @@
           "title": "WGCU (TV)",
           "url": "https://en.wikipedia.org/wiki/WGCU_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WGCU"
+          ],
           "branding": "WGCU PBS",
           "owner": "Board of Trustees, Florida Gulf Coast University",
           "facilityId": 62388,
@@ -1248,7 +1421,8 @@
             "lat": 26.81528,
             "lng": -81.76167
           },
-          "website": "https://wgcu.org/"
+          "website": "https://wgcu.org/",
+          "requested": "WGCU (TV)"
         }
       ],
       "transmitters": [],
@@ -1256,6 +1430,9 @@
         "title": "WGCU (TV)",
         "url": "https://en.wikipedia.org/wiki/WGCU_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WGCU"
+        ],
         "branding": "WGCU PBS",
         "owner": "Board of Trustees, Florida Gulf Coast University",
         "facilityId": 62388,
@@ -1263,7 +1440,8 @@
           "lat": 26.81528,
           "lng": -81.76167
         },
-        "website": "https://wgcu.org/"
+        "website": "https://wgcu.org/",
+        "requested": "WGCU (TV)"
       }
     },
     {
@@ -1285,6 +1463,9 @@
           "title": "WUFT (TV)",
           "url": "https://en.wikipedia.org/wiki/WUFT_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WUFT"
+          ],
           "branding": "PBS WUFT; WUFT News",
           "owner": "University of Florida(Board of Trustees, University of Florida)",
           "facilityId": 69440,
@@ -1292,7 +1473,8 @@
             "lat": 29.709833,
             "lng": -82.39475
           },
-          "website": "https://www.wuft.org/"
+          "website": "https://www.wuft.org/",
+          "requested": "WUFT (TV)"
         }
       ],
       "transmitters": [],
@@ -1300,6 +1482,9 @@
         "title": "WUFT (TV)",
         "url": "https://en.wikipedia.org/wiki/WUFT_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WUFT"
+        ],
         "branding": "PBS WUFT; WUFT News",
         "owner": "University of Florida(Board of Trustees, University of Florida)",
         "facilityId": 69440,
@@ -1307,7 +1492,8 @@
           "lat": 29.709833,
           "lng": -82.39475
         },
-        "website": "https://www.wuft.org/"
+        "website": "https://www.wuft.org/",
+        "requested": "WUFT (TV)"
       }
     },
     {
@@ -1329,6 +1515,9 @@
           "title": "WJCT (TV)",
           "url": "https://en.wikipedia.org/wiki/WJCT_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WJCT"
+          ],
           "branding": "Jax PBS",
           "owner": "WJCT, Inc.",
           "facilityId": 73130,
@@ -1336,7 +1525,8 @@
             "lat": 30.281083,
             "lng": -81.570056
           },
-          "website": "https://www.wjct.org/"
+          "website": "https://www.wjct.org/",
+          "requested": "WJCT (TV)"
         }
       ],
       "transmitters": [],
@@ -1344,6 +1534,9 @@
         "title": "WJCT (TV)",
         "url": "https://en.wikipedia.org/wiki/WJCT_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WJCT"
+        ],
         "branding": "Jax PBS",
         "owner": "WJCT, Inc.",
         "facilityId": 73130,
@@ -1351,7 +1544,8 @@
           "lat": 30.281083,
           "lng": -81.570056
         },
-        "website": "https://www.wjct.org/"
+        "website": "https://www.wjct.org/",
+        "requested": "WJCT (TV)"
       }
     },
     {
@@ -1378,6 +1572,9 @@
           "title": "WPBT",
           "url": "https://en.wikipedia.org/wiki/WPBT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WPBT"
+          ],
           "branding": "South Florida PBS WPBT",
           "owner": "South Florida PBS, Inc.",
           "facilityId": 13456,
@@ -1385,14 +1582,16 @@
             "lat": 25.95861,
             "lng": -80.21194
           },
-          "website": "https://www.wpbt2.org/"
+          "website": "https://www.wpbt2.org/",
+          "requested": "WPBT"
         }
       ],
       "transmitters": [],
       "primary": {
         "title": "South Florida PBS",
         "url": "https://en.wikipedia.org/wiki/South_Florida_PBS",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-18",
+        "requested": "South Florida PBS"
       }
     },
     {
@@ -1414,6 +1613,9 @@
           "title": "WLRN-TV",
           "url": "https://en.wikipedia.org/wiki/WLRN-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WLRN-TV"
+          ],
           "branding": "WLRN; WLRN Public Television",
           "owner": "Miami-Dade County Public Schools(The School Board of Miami-Dade County, Florida)",
           "facilityId": 66358,
@@ -1421,7 +1623,8 @@
             "lat": 25.97972,
             "lng": -80.19583
           },
-          "website": "https://www.wlrn.org/"
+          "website": "https://www.wlrn.org/",
+          "requested": "WLRN-TV"
         }
       ],
       "transmitters": [],
@@ -1429,6 +1632,9 @@
         "title": "WLRN-TV",
         "url": "https://en.wikipedia.org/wiki/WLRN-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WLRN-TV"
+        ],
         "branding": "WLRN; WLRN Public Television",
         "owner": "Miami-Dade County Public Schools(The School Board of Miami-Dade County, Florida)",
         "facilityId": 66358,
@@ -1436,7 +1642,8 @@
           "lat": 25.97972,
           "lng": -80.19583
         },
-        "website": "https://www.wlrn.org/"
+        "website": "https://www.wlrn.org/",
+        "requested": "WLRN-TV"
       }
     },
     {
@@ -1458,6 +1665,9 @@
           "title": "WUCF-TV",
           "url": "https://en.wikipedia.org/wiki/WUCF-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WUCF-TV"
+          ],
           "branding": "WUCF PBS",
           "owner": "University of Central Florida(University of Central Florida Board of Trustees)",
           "facilityId": 12855,
@@ -1465,7 +1675,8 @@
             "lat": 28.60222,
             "lng": -81.09333
           },
-          "website": "https://www.wucf.org/"
+          "website": "https://www.wucf.org/",
+          "requested": "WUCF-TV"
         }
       ],
       "transmitters": [],
@@ -1473,6 +1684,9 @@
         "title": "WUCF-TV",
         "url": "https://en.wikipedia.org/wiki/WUCF-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WUCF-TV"
+        ],
         "branding": "WUCF PBS",
         "owner": "University of Central Florida(University of Central Florida Board of Trustees)",
         "facilityId": 12855,
@@ -1480,7 +1694,8 @@
           "lat": 28.60222,
           "lng": -81.09333
         },
-        "website": "https://www.wucf.org/"
+        "website": "https://www.wucf.org/",
+        "requested": "WUCF-TV"
       }
     },
     {
@@ -1499,9 +1714,13 @@
       "problems": [],
       "stations": [
         {
-          "title": "WFSG",
-          "url": "https://en.wikipedia.org/wiki/WFSG",
+          "title": "WFSU-TV",
+          "url": "https://en.wikipedia.org/wiki/WFSU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WFSU-TV",
+            "WFSG"
+          ],
           "branding": "WFSU Public Media PBS",
           "owner": "Florida State University",
           "facilityId": 21801,
@@ -1509,14 +1728,19 @@
             "lat": 30.358806,
             "lng": -84.610472
           },
-          "website": "https://wfsu.org/"
+          "website": "https://wfsu.org/",
+          "requested": "WFSG"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "WFSG",
-        "url": "https://en.wikipedia.org/wiki/WFSG",
+        "title": "WFSU-TV",
+        "url": "https://en.wikipedia.org/wiki/WFSU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WFSU-TV",
+          "WFSG"
+        ],
         "branding": "WFSU Public Media PBS",
         "owner": "Florida State University",
         "facilityId": 21801,
@@ -1524,7 +1748,8 @@
           "lat": 30.358806,
           "lng": -84.610472
         },
-        "website": "https://wfsu.org/"
+        "website": "https://wfsu.org/",
+        "requested": "WFSG"
       }
     },
     {
@@ -1546,6 +1771,10 @@
           "title": "WFSU-TV",
           "url": "https://en.wikipedia.org/wiki/WFSU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WFSU-TV",
+            "WFSG"
+          ],
           "branding": "WFSU Public Media PBS",
           "owner": "Florida State University",
           "facilityId": 21801,
@@ -1553,7 +1782,8 @@
             "lat": 30.358806,
             "lng": -84.610472
           },
-          "website": "https://wfsu.org/"
+          "website": "https://wfsu.org/",
+          "requested": "WFSU-TV"
         }
       ],
       "transmitters": [],
@@ -1561,6 +1791,10 @@
         "title": "WFSU-TV",
         "url": "https://en.wikipedia.org/wiki/WFSU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WFSU-TV",
+          "WFSG"
+        ],
         "branding": "WFSU Public Media PBS",
         "owner": "Florida State University",
         "facilityId": 21801,
@@ -1568,7 +1802,8 @@
           "lat": 30.358806,
           "lng": -84.610472
         },
-        "website": "https://wfsu.org/"
+        "website": "https://wfsu.org/",
+        "requested": "WFSU-TV"
       }
     },
     {
@@ -1595,6 +1830,9 @@
           "title": "WEDU",
           "url": "https://en.wikipedia.org/wiki/WEDU",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WEDU"
+          ],
           "branding": "WEDU PBS",
           "owner": "Florida West Coast Public Broadcasting, Inc.",
           "facilityId": 21808,
@@ -1602,19 +1840,24 @@
             "lat": 27.847639,
             "lng": -82.263722
           },
-          "website": "https://www.wedu.org/"
+          "website": "https://www.wedu.org/",
+          "requested": "WEDU"
         },
         {
           "title": "WEDQ",
           "url": "https://en.wikipedia.org/wiki/WEDQ",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WEDQ"
+          ],
           "branding": "WEDQ PBS",
           "owner": "Florida West Coast Public Broadcasting, Inc.",
           "facilityId": 69338,
           "coords": {
             "lat": 27.847639,
             "lng": -82.263722
-          }
+          },
+          "requested": "WEDQ"
         }
       ],
       "transmitters": [],
@@ -1622,6 +1865,9 @@
         "title": "WEDU",
         "url": "https://en.wikipedia.org/wiki/WEDU",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WEDU"
+        ],
         "branding": "WEDU PBS",
         "owner": "Florida West Coast Public Broadcasting, Inc.",
         "facilityId": 21808,
@@ -1629,7 +1875,8 @@
           "lat": 27.847639,
           "lng": -82.263722
         },
-        "website": "https://www.wedu.org/"
+        "website": "https://www.wedu.org/",
+        "requested": "WEDU"
       }
     },
     {
@@ -1651,6 +1898,9 @@
           "title": "WXEL-TV",
           "url": "https://en.wikipedia.org/wiki/WXEL-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WXEL-TV"
+          ],
           "branding": "South Florida PBS WXEL",
           "owner": "South Florida PBS, Inc.",
           "facilityId": 61084,
@@ -1658,7 +1908,8 @@
             "lat": 25.95861,
             "lng": -80.21194
           },
-          "website": "https://www.wxel.org/"
+          "website": "https://www.wxel.org/",
+          "requested": "WXEL-TV"
         }
       ],
       "transmitters": [],
@@ -1666,6 +1917,9 @@
         "title": "WXEL-TV",
         "url": "https://en.wikipedia.org/wiki/WXEL-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WXEL-TV"
+        ],
         "branding": "South Florida PBS WXEL",
         "owner": "South Florida PBS, Inc.",
         "facilityId": 61084,
@@ -1673,7 +1927,8 @@
           "lat": 25.95861,
           "lng": -80.21194
         },
-        "website": "https://www.wxel.org/"
+        "website": "https://www.wxel.org/",
+        "requested": "WXEL-TV"
       }
     },
     {
@@ -1780,7 +2035,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "GPB",
         "owner": "Georgia Public Telecommunications Commission",
-        "website": "http://www.gpb.org/"
+        "website": "http://www.gpb.org/",
+        "requested": "Georgia Public Broadcasting"
       }
     },
     {
@@ -1802,6 +2058,9 @@
           "title": "WABE-TV",
           "url": "https://en.wikipedia.org/wiki/WABE-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WABE-TV"
+          ],
           "branding": "WABE",
           "owner": "Atlanta Public Schools(Board of Education of the City of Atlanta)",
           "facilityId": 4190,
@@ -1809,7 +2068,8 @@
             "lat": 33.759,
             "lng": -84.33528
           },
-          "website": "http://wabe.org"
+          "website": "http://wabe.org",
+          "requested": "WABE-TV"
         }
       ],
       "transmitters": [],
@@ -1817,6 +2077,9 @@
         "title": "WABE-TV",
         "url": "https://en.wikipedia.org/wiki/WABE-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WABE-TV"
+        ],
         "branding": "WABE",
         "owner": "Atlanta Public Schools(Board of Education of the City of Atlanta)",
         "facilityId": 4190,
@@ -1824,7 +2087,8 @@
           "lat": 33.759,
           "lng": -84.33528
         },
-        "website": "http://wabe.org"
+        "website": "http://wabe.org",
+        "requested": "WABE-TV"
       }
     },
     {
@@ -1846,6 +2110,9 @@
           "title": "KGTF",
           "url": "https://en.wikipedia.org/wiki/KGTF",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KGTF"
+          ],
           "branding": "PBS Guam",
           "owner": "Guam Educational Telecommunications Corporation",
           "facilityId": 25511,
@@ -1853,7 +2120,8 @@
             "lat": 13.48944,
             "lng": 144.82944
           },
-          "website": "https://pbsguam.org/"
+          "website": "https://pbsguam.org/",
+          "requested": "KGTF"
         }
       ],
       "transmitters": [],
@@ -1861,6 +2129,9 @@
         "title": "KGTF",
         "url": "https://en.wikipedia.org/wiki/KGTF",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KGTF"
+        ],
         "branding": "PBS Guam",
         "owner": "Guam Educational Telecommunications Corporation",
         "facilityId": 25511,
@@ -1868,7 +2139,8 @@
           "lat": 13.48944,
           "lng": 144.82944
         },
-        "website": "https://pbsguam.org/"
+        "website": "https://pbsguam.org/",
+        "requested": "KGTF"
       }
     },
     {
@@ -1895,6 +2167,10 @@
           "title": "KHET",
           "url": "https://en.wikipedia.org/wiki/KHET",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KHET",
+            "KMEB"
+          ],
           "branding": "PBS Hawai'i",
           "owner": "Hawaii Public Television Foundation",
           "facilityId": 26431,
@@ -1902,14 +2178,19 @@
             "lat": 21.40083,
             "lng": -158.10278
           },
-          "website": "http://www.pbshawaii.org"
+          "website": "http://www.pbshawaii.org",
+          "requested": "KHET"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "PBS Hawai'i",
-        "url": "https://en.wikipedia.org/wiki/PBS_Hawai'i",
+        "title": "KHET",
+        "url": "https://en.wikipedia.org/wiki/KHET",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KHET",
+          "KMEB"
+        ],
         "branding": "PBS Hawai'i",
         "owner": "Hawaii Public Television Foundation",
         "facilityId": 26431,
@@ -1917,7 +2198,8 @@
           "lat": 21.40083,
           "lng": -158.10278
         },
-        "website": "http://www.pbshawaii.org"
+        "website": "http://www.pbshawaii.org",
+        "requested": "PBS Hawai'i"
       }
     },
     {
@@ -1988,7 +2270,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "Idaho Public Television PBS",
         "owner": "State of Idaho",
-        "website": "https://www.idahoptv.org/"
+        "website": "https://www.idahoptv.org/",
+        "requested": "Idaho Public Television"
       }
     },
     {
@@ -2015,6 +2298,10 @@
           "title": "WSIU-TV",
           "url": "https://en.wikipedia.org/wiki/WSIU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WSIU-TV",
+            "WUSI-TV"
+          ],
           "branding": "PBS WSIU",
           "owner": "Southern Illinois University(Board of Trustees of Southern Illinois University)",
           "facilityId": 4297,
@@ -2022,20 +2309,8 @@
             "lat": 38.10306,
             "lng": -89.24444
           },
-          "website": "https://www.wsiu.org/"
-        },
-        {
-          "title": "WUSI-TV",
-          "url": "https://en.wikipedia.org/wiki/WUSI-TV",
-          "retrievedAt": "2026-10-18",
-          "branding": "PBS WSIU",
-          "owner": "Southern Illinois University(Board of Trustees of Southern Illinois University)",
-          "facilityId": 4297,
-          "coords": {
-            "lat": 38.10306,
-            "lng": -89.24444
-          },
-          "website": "https://www.wsiu.org/"
+          "website": "https://www.wsiu.org/",
+          "requested": "WSIU-TV"
         }
       ],
       "transmitters": [
@@ -2052,6 +2327,10 @@
         "title": "WSIU-TV",
         "url": "https://en.wikipedia.org/wiki/WSIU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WSIU-TV",
+          "WUSI-TV"
+        ],
         "branding": "PBS WSIU",
         "owner": "Southern Illinois University(Board of Trustees of Southern Illinois University)",
         "facilityId": 4297,
@@ -2059,7 +2338,8 @@
           "lat": 38.10306,
           "lng": -89.24444
         },
-        "website": "https://www.wsiu.org/"
+        "website": "https://www.wsiu.org/",
+        "requested": "WSIU-TV"
       }
     },
     {
@@ -2086,6 +2366,9 @@
           "title": "WILL-TV",
           "url": "https://en.wikipedia.org/wiki/WILL-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WILL-TV"
+          ],
           "branding": "PBS WILL",
           "owner": "University of Illinois Urbana-Champaign(The Board of Trustees of the University of Illinois)",
           "facilityId": 68939,
@@ -2093,14 +2376,16 @@
             "lat": 40.03833,
             "lng": -88.66944
           },
-          "website": "https://will.illinois.edu/"
+          "website": "https://will.illinois.edu/",
+          "requested": "WILL-TV"
         }
       ],
       "transmitters": [],
       "primary": {
         "title": "Illinois Public Media",
         "url": "https://en.wikipedia.org/wiki/Illinois_Public_Media",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-18",
+        "requested": "Illinois Public Media"
       }
     },
     {
@@ -2127,6 +2412,9 @@
           "title": "WTTW",
           "url": "https://en.wikipedia.org/wiki/WTTW",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WTTW"
+          ],
           "branding": "WTTW",
           "owner": "Window to the World Communications, Inc.",
           "facilityId": 10802,
@@ -2134,12 +2422,16 @@
             "lat": 41.878917,
             "lng": -87.636167
           },
-          "website": "http://www.wttw.com"
+          "website": "http://www.wttw.com",
+          "requested": "WTTW"
         },
         {
           "title": "WYIN",
           "url": "https://en.wikipedia.org/wiki/WYIN",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WYIN"
+          ],
           "branding": "Lakeshore PBS",
           "owner": "Northwest Indiana Public Broadcasting, Inc.",
           "facilityId": 49803,
@@ -2147,7 +2439,8 @@
             "lat": 41.34889,
             "lng": -87.40056
           },
-          "website": "https://www.lakeshorepublicmedia.org"
+          "website": "https://www.lakeshorepublicmedia.org",
+          "requested": "WYIN"
         }
       ],
       "transmitters": [],
@@ -2155,6 +2448,9 @@
         "title": "WTTW",
         "url": "https://en.wikipedia.org/wiki/WTTW",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WTTW"
+        ],
         "branding": "WTTW",
         "owner": "Window to the World Communications, Inc.",
         "facilityId": 10802,
@@ -2162,7 +2458,8 @@
           "lat": 41.878917,
           "lng": -87.636167
         },
-        "website": "http://www.wttw.com"
+        "website": "http://www.wttw.com",
+        "requested": "WTTW"
       }
     },
     {
@@ -2184,9 +2481,13 @@
           "title": "WSEC",
           "url": "https://en.wikipedia.org/wiki/WSEC",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WSEC"
+          ],
           "branding": "PBS WSIU",
           "owner": "Southern Illinois University",
-          "website": "https://www.wsiu.org/"
+          "website": "https://www.wsiu.org/",
+          "requested": "WSEC"
         }
       ],
       "transmitters": [
@@ -2222,9 +2523,13 @@
         "title": "WSEC",
         "url": "https://en.wikipedia.org/wiki/WSEC",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WSEC"
+        ],
         "branding": "PBS WSIU",
         "owner": "Southern Illinois University",
-        "website": "https://www.wsiu.org/"
+        "website": "https://www.wsiu.org/",
+        "requested": "WSEC"
       }
     },
     {
@@ -2243,12 +2548,16 @@
       "problems": [],
       "stations": [
         {
-          "title": "WMEC (TV)",
-          "url": "https://en.wikipedia.org/wiki/WMEC_(TV)",
+          "title": "WSEC",
+          "url": "https://en.wikipedia.org/wiki/WSEC",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WSEC"
+          ],
           "branding": "PBS WSIU",
           "owner": "Southern Illinois University",
-          "website": "https://www.wsiu.org/"
+          "website": "https://www.wsiu.org/",
+          "requested": "WMEC (TV)"
         }
       ],
       "transmitters": [
@@ -2281,12 +2590,16 @@
         }
       ],
       "primary": {
-        "title": "WMEC (TV)",
-        "url": "https://en.wikipedia.org/wiki/WMEC_(TV)",
+        "title": "WSEC",
+        "url": "https://en.wikipedia.org/wiki/WSEC",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WSEC"
+        ],
         "branding": "PBS WSIU",
         "owner": "Southern Illinois University",
-        "website": "https://www.wsiu.org/"
+        "website": "https://www.wsiu.org/",
+        "requested": "WMEC (TV)"
       }
     },
     {
@@ -2308,6 +2621,9 @@
           "title": "WQPT-TV",
           "url": "https://en.wikipedia.org/wiki/WQPT-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WQPT-TV"
+          ],
           "branding": "WQPT PBS",
           "owner": "Western Illinois University",
           "facilityId": 5468,
@@ -2315,7 +2631,8 @@
             "lat": 41.312361,
             "lng": -90.3795
           },
-          "website": "https://www.wqpt.org/"
+          "website": "https://www.wqpt.org/",
+          "requested": "WQPT-TV"
         }
       ],
       "transmitters": [],
@@ -2323,6 +2640,9 @@
         "title": "WQPT-TV",
         "url": "https://en.wikipedia.org/wiki/WQPT-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WQPT-TV"
+        ],
         "branding": "WQPT PBS",
         "owner": "Western Illinois University",
         "facilityId": 5468,
@@ -2330,7 +2650,8 @@
           "lat": 41.312361,
           "lng": -90.3795
         },
-        "website": "https://www.wqpt.org/"
+        "website": "https://www.wqpt.org/",
+        "requested": "WQPT-TV"
       }
     },
     {
@@ -2352,6 +2673,9 @@
           "title": "WTVP",
           "url": "https://en.wikipedia.org/wiki/WTVP",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WTVP"
+          ],
           "branding": "WTVP PBS",
           "owner": "Illinois Valley Public Telecommunications Corporation",
           "facilityId": 28311,
@@ -2359,7 +2683,8 @@
             "lat": 40.6292,
             "lng": -89.5703
           },
-          "website": "https://www.wtvp.org/"
+          "website": "https://www.wtvp.org/",
+          "requested": "WTVP"
         }
       ],
       "transmitters": [],
@@ -2367,6 +2692,9 @@
         "title": "WTVP",
         "url": "https://en.wikipedia.org/wiki/WTVP",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WTVP"
+        ],
         "branding": "WTVP PBS",
         "owner": "Illinois Valley Public Telecommunications Corporation",
         "facilityId": 28311,
@@ -2374,7 +2702,8 @@
           "lat": 40.6292,
           "lng": -89.5703
         },
-        "website": "https://www.wtvp.org/"
+        "website": "https://www.wtvp.org/",
+        "requested": "WTVP"
       }
     },
     {
@@ -2393,12 +2722,16 @@
       "problems": [],
       "stations": [
         {
-          "title": "WQEC",
-          "url": "https://en.wikipedia.org/wiki/WQEC",
+          "title": "WSEC",
+          "url": "https://en.wikipedia.org/wiki/WSEC",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WSEC"
+          ],
           "branding": "PBS WSIU",
           "owner": "Southern Illinois University",
-          "website": "https://www.wsiu.org/"
+          "website": "https://www.wsiu.org/",
+          "requested": "WQEC"
         }
       ],
       "transmitters": [
@@ -2431,12 +2764,16 @@
         }
       ],
       "primary": {
-        "title": "WQEC",
-        "url": "https://en.wikipedia.org/wiki/WQEC",
+        "title": "WSEC",
+        "url": "https://en.wikipedia.org/wiki/WSEC",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WSEC"
+        ],
         "branding": "PBS WSIU",
         "owner": "Southern Illinois University",
-        "website": "https://www.wsiu.org/"
+        "website": "https://www.wsiu.org/",
+        "requested": "WQEC"
       }
     },
     {
@@ -2458,13 +2795,17 @@
           "title": "WTIU",
           "url": "https://en.wikipedia.org/wiki/WTIU",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WTIU"
+          ],
           "owner": "Indiana University(The Trustees of Indiana University)",
           "facilityId": 66536,
           "coords": {
             "lat": 39.14194,
             "lng": -86.49525
           },
-          "website": "https://ipm.org/tv/"
+          "website": "https://ipm.org/tv/",
+          "requested": "WTIU"
         }
       ],
       "transmitters": [],
@@ -2472,13 +2813,17 @@
         "title": "WTIU",
         "url": "https://en.wikipedia.org/wiki/WTIU",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WTIU"
+        ],
         "owner": "Indiana University(The Trustees of Indiana University)",
         "facilityId": 66536,
         "coords": {
           "lat": 39.14194,
           "lng": -86.49525
         },
-        "website": "https://ipm.org/tv/"
+        "website": "https://ipm.org/tv/",
+        "requested": "WTIU"
       }
     },
     {
@@ -2500,6 +2845,9 @@
           "title": "WNIN (TV)",
           "url": "https://en.wikipedia.org/wiki/WNIN_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WNIN"
+          ],
           "branding": "WNIN PBS",
           "owner": "WNIN Tri-State Public Media, Inc.",
           "facilityId": 67802,
@@ -2507,7 +2855,8 @@
             "lat": 37.98361,
             "lng": -87.27028
           },
-          "website": "https://www.wnin.org/"
+          "website": "https://www.wnin.org/",
+          "requested": "WNIN (TV)"
         }
       ],
       "transmitters": [],
@@ -2515,6 +2864,9 @@
         "title": "WNIN (TV)",
         "url": "https://en.wikipedia.org/wiki/WNIN_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WNIN"
+        ],
         "branding": "WNIN PBS",
         "owner": "WNIN Tri-State Public Media, Inc.",
         "facilityId": 67802,
@@ -2522,7 +2874,8 @@
           "lat": 37.98361,
           "lng": -87.27028
         },
-        "website": "https://www.wnin.org/"
+        "website": "https://www.wnin.org/",
+        "requested": "WNIN (TV)"
       }
     },
     {
@@ -2544,6 +2897,9 @@
           "title": "WFWA",
           "url": "https://en.wikipedia.org/wiki/WFWA",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WFWA"
+          ],
           "branding": "PBS Fort Wayne",
           "owner": "Fort Wayne Public Television, Inc.",
           "facilityId": 22108,
@@ -2551,7 +2907,8 @@
             "lat": 41.10361,
             "lng": -85.19111
           },
-          "website": "https://www.pbsfortwayne.org/"
+          "website": "https://www.pbsfortwayne.org/",
+          "requested": "WFWA"
         }
       ],
       "transmitters": [],
@@ -2559,6 +2916,9 @@
         "title": "WFWA",
         "url": "https://en.wikipedia.org/wiki/WFWA",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WFWA"
+        ],
         "branding": "PBS Fort Wayne",
         "owner": "Fort Wayne Public Television, Inc.",
         "facilityId": 22108,
@@ -2566,7 +2926,8 @@
           "lat": 41.10361,
           "lng": -85.19111
         },
-        "website": "https://www.pbsfortwayne.org/"
+        "website": "https://www.pbsfortwayne.org/",
+        "requested": "WFWA"
       }
     },
     {
@@ -2593,6 +2954,9 @@
           "title": "WYIN",
           "url": "https://en.wikipedia.org/wiki/WYIN",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WYIN"
+          ],
           "branding": "Lakeshore PBS",
           "owner": "Northwest Indiana Public Broadcasting, Inc.",
           "facilityId": 49803,
@@ -2600,14 +2964,18 @@
             "lat": 41.34889,
             "lng": -87.40056
           },
-          "website": "https://www.lakeshorepublicmedia.org"
+          "website": "https://www.lakeshorepublicmedia.org",
+          "requested": "WYIN"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Lakeshore PBS",
-        "url": "https://en.wikipedia.org/wiki/Lakeshore_PBS",
+        "title": "WYIN",
+        "url": "https://en.wikipedia.org/wiki/WYIN",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WYIN"
+        ],
         "branding": "Lakeshore PBS",
         "owner": "Northwest Indiana Public Broadcasting, Inc.",
         "facilityId": 49803,
@@ -2615,7 +2983,8 @@
           "lat": 41.34889,
           "lng": -87.40056
         },
-        "website": "https://www.lakeshorepublicmedia.org"
+        "website": "https://www.lakeshorepublicmedia.org",
+        "requested": "Lakeshore PBS"
       }
     },
     {
@@ -2637,13 +3006,17 @@
           "title": "WFYI (TV)",
           "url": "https://en.wikipedia.org/wiki/WFYI_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WFYI"
+          ],
           "owner": "Metropolitan Indianapolis Public Media, Inc.",
           "facilityId": 41397,
           "coords": {
             "lat": 39.899139,
             "lng": -86.200667
           },
-          "website": "http://www.wfyi.org"
+          "website": "http://www.wfyi.org",
+          "requested": "WFYI (TV)"
         }
       ],
       "transmitters": [],
@@ -2651,13 +3024,17 @@
         "title": "WFYI (TV)",
         "url": "https://en.wikipedia.org/wiki/WFYI_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WFYI"
+        ],
         "owner": "Metropolitan Indianapolis Public Media, Inc.",
         "facilityId": 41397,
         "coords": {
           "lat": 39.899139,
           "lng": -86.200667
         },
-        "website": "http://www.wfyi.org"
+        "website": "http://www.wfyi.org",
+        "requested": "WFYI (TV)"
       }
     },
     {
@@ -2679,6 +3056,9 @@
           "title": "WIPB",
           "url": "https://en.wikipedia.org/wiki/WIPB",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WIPB"
+          ],
           "branding": "Ball State PBS",
           "owner": "Ball State University",
           "facilityId": 3646,
@@ -2686,7 +3066,8 @@
             "lat": 40.09361,
             "lng": -85.39222
           },
-          "website": "https://ballstatepbs.org/"
+          "website": "https://ballstatepbs.org/",
+          "requested": "WIPB"
         }
       ],
       "transmitters": [],
@@ -2694,6 +3075,9 @@
         "title": "WIPB",
         "url": "https://en.wikipedia.org/wiki/WIPB",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WIPB"
+        ],
         "branding": "Ball State PBS",
         "owner": "Ball State University",
         "facilityId": 3646,
@@ -2701,7 +3085,8 @@
           "lat": 40.09361,
           "lng": -85.39222
         },
-        "website": "https://ballstatepbs.org/"
+        "website": "https://ballstatepbs.org/",
+        "requested": "WIPB"
       }
     },
     {
@@ -2723,6 +3108,9 @@
           "title": "WNIT (TV)",
           "url": "https://en.wikipedia.org/wiki/WNIT_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WNIT"
+          ],
           "branding": "PBS Michiana",
           "owner": "Michiana Public Broadcasting Corporation",
           "facilityId": 41671,
@@ -2730,7 +3118,8 @@
             "lat": 41.613667,
             "lng": -86.18889
           },
-          "website": "https://www.wnit.org/"
+          "website": "https://www.wnit.org/",
+          "requested": "WNIT (TV)"
         }
       ],
       "transmitters": [],
@@ -2738,6 +3127,9 @@
         "title": "WNIT (TV)",
         "url": "https://en.wikipedia.org/wiki/WNIT_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WNIT"
+        ],
         "branding": "PBS Michiana",
         "owner": "Michiana Public Broadcasting Corporation",
         "facilityId": 41671,
@@ -2745,7 +3137,8 @@
           "lat": 41.613667,
           "lng": -86.18889
         },
-        "website": "https://www.wnit.org/"
+        "website": "https://www.wnit.org/",
+        "requested": "WNIT (TV)"
       }
     },
     {
@@ -2851,7 +3244,8 @@
         "url": "https://en.wikipedia.org/wiki/Iowa_PBS",
         "retrievedAt": "2026-10-18",
         "owner": "Iowa Public Broadcasting Board",
-        "website": "http://www.iowapbs.org/"
+        "website": "http://www.iowapbs.org/",
+        "requested": "Iowa PBS"
       }
     },
     {
@@ -2912,7 +3306,8 @@
         "url": "https://en.wikipedia.org/wiki/Smoky_Hills_PBS",
         "retrievedAt": "2026-10-18",
         "owner": "Smoky Hills Public Television Corporation",
-        "website": "https://www.smokyhillspbs.org/"
+        "website": "https://www.smokyhillspbs.org/",
+        "requested": "Smoky Hills PBS"
       }
     },
     {
@@ -2934,6 +3329,9 @@
           "title": "KTWU",
           "url": "https://en.wikipedia.org/wiki/KTWU",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KTWU"
+          ],
           "branding": "KTWU PBS",
           "owner": "Washburn University(Washburn University of Topeka)",
           "facilityId": 70938,
@@ -2941,7 +3339,8 @@
             "lat": 39.06389,
             "lng": -95.76389
           },
-          "website": "https://www.ktwu.org/"
+          "website": "https://www.ktwu.org/",
+          "requested": "KTWU"
         }
       ],
       "transmitters": [],
@@ -2949,6 +3348,9 @@
         "title": "KTWU",
         "url": "https://en.wikipedia.org/wiki/KTWU",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KTWU"
+        ],
         "branding": "KTWU PBS",
         "owner": "Washburn University(Washburn University of Topeka)",
         "facilityId": 70938,
@@ -2956,7 +3358,8 @@
           "lat": 39.06389,
           "lng": -95.76389
         },
-        "website": "https://www.ktwu.org/"
+        "website": "https://www.ktwu.org/",
+        "requested": "KTWU"
       }
     },
     {
@@ -2983,6 +3386,9 @@
           "title": "KPTS",
           "url": "https://en.wikipedia.org/wiki/KPTS",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KPTS"
+          ],
           "branding": "PBS Kansas Public Television (general)PBS Kansas (alternate)",
           "owner": "Kansas Public Telecommunications Service, Inc.",
           "facilityId": 33345,
@@ -2990,14 +3396,18 @@
             "lat": 38.055944,
             "lng": -97.776694
           },
-          "website": "https://www.kpts.org/"
+          "website": "https://www.kpts.org/",
+          "requested": "KPTS"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "PBS Kansas",
-        "url": "https://en.wikipedia.org/wiki/PBS_Kansas",
+        "title": "KPTS",
+        "url": "https://en.wikipedia.org/wiki/KPTS",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KPTS"
+        ],
         "branding": "PBS Kansas Public Television (general)PBS Kansas (alternate)",
         "owner": "Kansas Public Telecommunications Service, Inc.",
         "facilityId": 33345,
@@ -3005,7 +3415,8 @@
           "lat": 38.055944,
           "lng": -97.776694
         },
-        "website": "https://www.kpts.org/"
+        "website": "https://www.kpts.org/",
+        "requested": "PBS Kansas"
       }
     },
     {
@@ -3174,7 +3585,8 @@
         "url": "https://en.wikipedia.org/wiki/Kentucky_Educational_Television",
         "retrievedAt": "2026-10-18",
         "owner": "Kentucky Authority for Educational Television",
-        "website": "https://www.ket.org/"
+        "website": "https://www.ket.org/",
+        "requested": "Kentucky Educational Television"
       }
     },
     {
@@ -3201,6 +3613,9 @@
           "title": "WKYU-TV",
           "url": "https://en.wikipedia.org/wiki/WKYU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WKYU-TV"
+          ],
           "branding": "WKU PBS",
           "owner": "Western Kentucky University",
           "facilityId": 71861,
@@ -3208,14 +3623,18 @@
             "lat": 37.063667,
             "lng": -86.435194
           },
-          "website": "http://www.wkyupbs.org/"
+          "website": "http://www.wkyupbs.org/",
+          "requested": "WKYU-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "WKU PBS",
-        "url": "https://en.wikipedia.org/wiki/WKU_PBS",
+        "title": "WKYU-TV",
+        "url": "https://en.wikipedia.org/wiki/WKYU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WKYU-TV"
+        ],
         "branding": "WKU PBS",
         "owner": "Western Kentucky University",
         "facilityId": 71861,
@@ -3223,7 +3642,8 @@
           "lat": 37.063667,
           "lng": -86.435194
         },
-        "website": "http://www.wkyupbs.org/"
+        "website": "http://www.wkyupbs.org/",
+        "requested": "WKU PBS"
       }
     },
     {
@@ -3303,7 +3723,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "LPB PBSLouisiana Public Broadcasting (productions until early-mid 2000s)",
         "owner": "Louisiana Educational Television Authority",
-        "website": "http://www.lpb.org"
+        "website": "http://www.lpb.org",
+        "requested": "Louisiana Public Broadcasting"
       }
     },
     {
@@ -3325,6 +3746,9 @@
           "title": "WYES-TV",
           "url": "https://en.wikipedia.org/wiki/WYES-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WYES-TV"
+          ],
           "branding": "WYES PBS",
           "owner": "Greater New Orleans Educational Television Foundation",
           "facilityId": 25090,
@@ -3332,7 +3756,8 @@
             "lat": 29.95389,
             "lng": -89.94944
           },
-          "website": "https://www.wyes.org/"
+          "website": "https://www.wyes.org/",
+          "requested": "WYES-TV"
         }
       ],
       "transmitters": [],
@@ -3340,6 +3765,9 @@
         "title": "WYES-TV",
         "url": "https://en.wikipedia.org/wiki/WYES-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WYES-TV"
+        ],
         "branding": "WYES PBS",
         "owner": "Greater New Orleans Educational Television Foundation",
         "facilityId": 25090,
@@ -3347,7 +3775,8 @@
           "lat": 29.95389,
           "lng": -89.94944
         },
-        "website": "https://www.wyes.org/"
+        "website": "https://www.wyes.org/",
+        "requested": "WYES-TV"
       }
     },
     {
@@ -3418,7 +3847,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "Maine Public",
         "owner": "Maine Public Broadcasting Corporation",
-        "website": "https://www.mainepublic.org/"
+        "website": "https://www.mainepublic.org/",
+        "requested": "Maine Public Broadcasting Network"
       }
     },
     {
@@ -3498,7 +3928,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "MPT",
         "owner": "Maryland Public Broadcasting Commission",
-        "website": "http://mpt.org"
+        "website": "http://mpt.org",
+        "requested": "Maryland Public Television"
       }
     },
     {
@@ -3525,6 +3956,9 @@
           "title": "WGBH-TV",
           "url": "https://en.wikipedia.org/wiki/WGBH-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WGBH-TV"
+          ],
           "branding": "GBH 2",
           "owner": "WGBH Educational Foundation",
           "facilityId": 72099,
@@ -3532,12 +3966,16 @@
             "lat": 42.302972,
             "lng": -71.218028
           },
-          "website": "https://www.wgbh.org/"
+          "website": "https://www.wgbh.org/",
+          "requested": "WGBH-TV"
         },
         {
           "title": "WGBX-TV",
           "url": "https://en.wikipedia.org/wiki/WGBX-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WGBX-TV"
+          ],
           "branding": "GBH 44",
           "owner": "WGBH Educational Foundation",
           "facilityId": 72098,
@@ -3545,7 +3983,8 @@
             "lat": 42.31028,
             "lng": -71.23667
           },
-          "website": "https://www.wgbh.org/"
+          "website": "https://www.wgbh.org/",
+          "requested": "WGBX-TV"
         }
       ],
       "transmitters": [],
@@ -3553,6 +3992,9 @@
         "title": "WGBH-TV",
         "url": "https://en.wikipedia.org/wiki/WGBH-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WGBH-TV"
+        ],
         "branding": "GBH 2",
         "owner": "WGBH Educational Foundation",
         "facilityId": 72099,
@@ -3560,7 +4002,8 @@
           "lat": 42.302972,
           "lng": -71.218028
         },
-        "website": "https://www.wgbh.org/"
+        "website": "https://www.wgbh.org/",
+        "requested": "WGBH-TV"
       }
     },
     {
@@ -3587,6 +4030,9 @@
           "title": "WGBY-TV",
           "url": "https://en.wikipedia.org/wiki/WGBY-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WGBY-TV"
+          ],
           "branding": "New England Public Media",
           "owner": "WGBH Educational Foundation",
           "facilityId": 72096,
@@ -3594,7 +4040,8 @@
             "lat": 42.241528,
             "lng": -72.648361
           },
-          "website": "http://nepm.org/"
+          "website": "http://nepm.org/",
+          "requested": "WGBY-TV"
         }
       ],
       "transmitters": [],
@@ -3602,7 +4049,8 @@
         "title": "New England Public Media",
         "url": "https://en.wikipedia.org/wiki/New_England_Public_Media",
         "retrievedAt": "2026-10-18",
-        "website": "http://nepm.org"
+        "website": "http://nepm.org",
+        "requested": "New England Public Media"
       }
     },
     {
@@ -3629,6 +4077,9 @@
           "title": "WTVS",
           "url": "https://en.wikipedia.org/wiki/WTVS",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WTVS"
+          ],
           "branding": "Detroit PBS",
           "owner": "Detroit Public Media",
           "facilityId": 16817,
@@ -3636,14 +4087,18 @@
             "lat": 42.447917,
             "lng": -83.173083
           },
-          "website": "https://www.detroitpbs.org/"
+          "website": "https://www.detroitpbs.org/",
+          "requested": "WTVS"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Detroit PBS",
-        "url": "https://en.wikipedia.org/wiki/Detroit_PBS",
+        "title": "WTVS",
+        "url": "https://en.wikipedia.org/wiki/WTVS",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WTVS"
+        ],
         "branding": "Detroit PBS",
         "owner": "Detroit Public Media",
         "facilityId": 16817,
@@ -3651,7 +4106,8 @@
           "lat": 42.447917,
           "lng": -83.173083
         },
-        "website": "https://www.detroitpbs.org/"
+        "website": "https://www.detroitpbs.org/",
+        "requested": "Detroit PBS"
       }
     },
     {
@@ -3673,6 +4129,9 @@
           "title": "WKAR-TV",
           "url": "https://en.wikipedia.org/wiki/WKAR-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WKAR-TV"
+          ],
           "branding": "PBS WKAR",
           "owner": "Michigan State University(Board of Trustees, Michigan State University)",
           "facilityId": 6104,
@@ -3680,7 +4139,8 @@
             "lat": 42.701917,
             "lng": -84.413278
           },
-          "website": "http://tv.wkar.org"
+          "website": "http://tv.wkar.org",
+          "requested": "WKAR-TV"
         }
       ],
       "transmitters": [],
@@ -3688,6 +4148,9 @@
         "title": "WKAR-TV",
         "url": "https://en.wikipedia.org/wiki/WKAR-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WKAR-TV"
+        ],
         "branding": "PBS WKAR",
         "owner": "Michigan State University(Board of Trustees, Michigan State University)",
         "facilityId": 6104,
@@ -3695,7 +4158,8 @@
           "lat": 42.701917,
           "lng": -84.413278
         },
-        "website": "http://tv.wkar.org"
+        "website": "http://tv.wkar.org",
+        "requested": "WKAR-TV"
       }
     },
     {
@@ -3717,6 +4181,9 @@
           "title": "WDCQ-TV",
           "url": "https://en.wikipedia.org/wiki/WDCQ-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WDCQ-TV"
+          ],
           "branding": "Delta College Public Media PBS",
           "owner": "Delta College",
           "facilityId": 16530,
@@ -3724,7 +4191,8 @@
             "lat": 43.5425,
             "lng": -83.66028
           },
-          "website": "https://www.deltapublicmedia.org/"
+          "website": "https://www.deltapublicmedia.org/",
+          "requested": "WDCQ-TV"
         }
       ],
       "transmitters": [],
@@ -3732,6 +4200,9 @@
         "title": "WDCQ-TV",
         "url": "https://en.wikipedia.org/wiki/WDCQ-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WDCQ-TV"
+        ],
         "branding": "Delta College Public Media PBS",
         "owner": "Delta College",
         "facilityId": 16530,
@@ -3739,7 +4210,8 @@
           "lat": 43.5425,
           "lng": -83.66028
         },
-        "website": "https://www.deltapublicmedia.org/"
+        "website": "https://www.deltapublicmedia.org/",
+        "requested": "WDCQ-TV"
       }
     },
     {
@@ -3761,6 +4233,10 @@
           "title": "WGVU-TV",
           "url": "https://en.wikipedia.org/wiki/WGVU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WGVU-TV",
+            "WGVK"
+          ],
           "branding": "PBS WGVU Public Media",
           "owner": "Grand Valley State University",
           "facilityId": 24784,
@@ -3768,7 +4244,8 @@
             "lat": 42.959639,
             "lng": -85.895806
           },
-          "website": "https://www.wgvu.org/television/"
+          "website": "https://www.wgvu.org/television/",
+          "requested": "WGVU-TV"
         }
       ],
       "transmitters": [],
@@ -3776,6 +4253,10 @@
         "title": "WGVU-TV",
         "url": "https://en.wikipedia.org/wiki/WGVU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WGVU-TV",
+          "WGVK"
+        ],
         "branding": "PBS WGVU Public Media",
         "owner": "Grand Valley State University",
         "facilityId": 24784,
@@ -3783,7 +4264,8 @@
           "lat": 42.959639,
           "lng": -85.895806
         },
-        "website": "https://www.wgvu.org/television/"
+        "website": "https://www.wgvu.org/television/",
+        "requested": "WGVU-TV"
       }
     },
     {
@@ -3805,6 +4287,9 @@
           "title": "WNMU (TV)",
           "url": "https://en.wikipedia.org/wiki/WNMU_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WNMU"
+          ],
           "branding": "WNMU-TV PBS",
           "owner": "Northern Michigan University(Board of Control, Northern Michigan University)",
           "facilityId": 4318,
@@ -3812,7 +4297,8 @@
             "lat": 46.35278,
             "lng": -87.85417
           },
-          "website": "https://wnmutv.nmu.edu/"
+          "website": "https://wnmutv.nmu.edu/",
+          "requested": "WNMU (TV)"
         }
       ],
       "transmitters": [],
@@ -3820,6 +4306,9 @@
         "title": "WNMU (TV)",
         "url": "https://en.wikipedia.org/wiki/WNMU_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WNMU"
+        ],
         "branding": "WNMU-TV PBS",
         "owner": "Northern Michigan University(Board of Control, Northern Michigan University)",
         "facilityId": 4318,
@@ -3827,7 +4316,8 @@
           "lat": 46.35278,
           "lng": -87.85417
         },
-        "website": "https://wnmutv.nmu.edu/"
+        "website": "https://wnmutv.nmu.edu/",
+        "requested": "WNMU (TV)"
       }
     },
     {
@@ -3875,9 +4365,12 @@
         }
       ],
       "primary": {
-        "title": "CMU Public Television",
-        "url": "https://en.wikipedia.org/wiki/CMU_Public_Television",
+        "title": "WCMU-TV",
+        "url": "https://en.wikipedia.org/wiki/WCMU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WCMU-TV"
+        ],
         "branding": "WCMU Public Television",
         "owner": "Central Michigan University",
         "facilityId": 9908,
@@ -3885,7 +4378,8 @@
           "lat": 43.751417,
           "lng": -85.212833
         },
-        "website": "http://www.wcmu.org/"
+        "website": "http://www.wcmu.org/",
+        "requested": "CMU Public Television"
       }
     },
     {
@@ -3942,9 +4436,13 @@
         }
       ],
       "primary": {
-        "title": "Pioneer PBS",
-        "url": "https://en.wikipedia.org/wiki/Pioneer_PBS",
+        "title": "KWCM-TV",
+        "url": "https://en.wikipedia.org/wiki/KWCM-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KWCM-TV",
+          "KSMN"
+        ],
         "branding": "Pioneer PBS",
         "owner": "West Central Minnesota Educational TV Corp.",
         "facilityId": 71549,
@@ -3952,7 +4450,8 @@
           "lat": 45.1675,
           "lng": -96.00056
         },
-        "website": "https://www.pioneer.org/"
+        "website": "https://www.pioneer.org/",
+        "requested": "Pioneer PBS"
       }
     },
     {
@@ -3975,6 +4474,10 @@
         "title": "Lakeland PBS",
         "url": "https://en.wikipedia.org/wiki/Lakeland_PBS",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KAWE",
+          "KAWB"
+        ],
         "branding": "Lakeland PBS",
         "owner": "Northern Minnesota Public Television, Inc.",
         "facilityId": 49578,
@@ -3982,7 +4485,8 @@
           "lat": 47.70083,
           "lng": -94.4875
         },
-        "website": "https://lptv.org/"
+        "website": "https://lptv.org/",
+        "requested": "Lakeland PBS"
       }
     },
     {
@@ -4002,9 +4506,13 @@
       "stations": [],
       "transmitters": [],
       "primary": {
-        "title": "PBS North",
-        "url": "https://en.wikipedia.org/wiki/PBS_North",
+        "title": "WDSE (TV)",
+        "url": "https://en.wikipedia.org/wiki/WDSE_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WDSE",
+          "WRPT"
+        ],
         "branding": "PBS North",
         "owner": "Duluth–Superior Area Educational Television Corporation",
         "facilityId": 17726,
@@ -4012,7 +4520,8 @@
           "lat": 46.791583,
           "lng": -92.122611
         },
-        "website": "https://pbsnorth.org/"
+        "website": "https://pbsnorth.org/",
+        "requested": "PBS North"
       }
     },
     {
@@ -4035,6 +4544,10 @@
         "title": "Minnesota PBS",
         "url": "https://en.wikipedia.org/wiki/Minnesota_PBS",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KTCA-TV",
+          "KTCI-TV"
+        ],
         "branding": "Minnesota PBS",
         "owner": "Twin Cities Public Television, Inc.",
         "facilityId": 68594,
@@ -4042,7 +4555,8 @@
           "lat": 45.05833,
           "lng": -93.12444
         },
-        "website": "https://www.minnesotapbs.org/"
+        "website": "https://www.minnesotapbs.org/",
+        "requested": "Minnesota PBS"
       }
     },
     {
@@ -4064,6 +4578,9 @@
           "title": "KSMQ-TV",
           "url": "https://en.wikipedia.org/wiki/KSMQ-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KSMQ-TV"
+          ],
           "branding": "Minnesota PBS",
           "owner": "KSMQ Public Service Media, Inc.",
           "facilityId": 28510,
@@ -4071,7 +4588,8 @@
             "lat": 43.64278,
             "lng": -92.52667
           },
-          "website": "https://www.minnesotapbs.org/"
+          "website": "https://www.minnesotapbs.org/",
+          "requested": "KSMQ-TV"
         }
       ],
       "transmitters": [],
@@ -4079,6 +4597,9 @@
         "title": "KSMQ-TV",
         "url": "https://en.wikipedia.org/wiki/KSMQ-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KSMQ-TV"
+        ],
         "branding": "Minnesota PBS",
         "owner": "KSMQ Public Service Media, Inc.",
         "facilityId": 28510,
@@ -4086,7 +4607,8 @@
           "lat": 43.64278,
           "lng": -92.52667
         },
-        "website": "https://www.minnesotapbs.org/"
+        "website": "https://www.minnesotapbs.org/",
+        "requested": "KSMQ-TV"
       }
     },
     {
@@ -4184,7 +4706,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "MPB",
         "owner": "Mississippi Authority for Educational Television",
-        "website": "http://www.mpbonline.org/"
+        "website": "http://www.mpbonline.org/",
+        "requested": "Mississippi Public Broadcasting"
       }
     },
     {
@@ -4207,6 +4730,10 @@
         "title": "Ozarks Public Television",
         "url": "https://en.wikipedia.org/wiki/Ozarks_Public_Television",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KOZK",
+          "KOZJ"
+        ],
         "branding": "Ozarks Public Television",
         "owner": "Missouri State University(Board of Governors of Missouri State University)",
         "facilityId": 51102,
@@ -4214,7 +4741,8 @@
           "lat": 37.17389,
           "lng": -92.941139
         },
-        "website": "https://www.optv.org/"
+        "website": "https://www.optv.org/",
+        "requested": "Ozarks Public Television"
       }
     },
     {
@@ -4236,6 +4764,9 @@
           "title": "KMOS-TV",
           "url": "https://en.wikipedia.org/wiki/KMOS-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KMOS-TV"
+          ],
           "branding": "KMOS PBSKMOS Emerge (6.3)",
           "owner": "University of Central Missouri",
           "facilityId": 4326,
@@ -4243,7 +4774,8 @@
             "lat": 38.62667,
             "lng": -92.86778
           },
-          "website": "https://www.kmos.org/"
+          "website": "https://www.kmos.org/",
+          "requested": "KMOS-TV"
         }
       ],
       "transmitters": [],
@@ -4251,6 +4783,9 @@
         "title": "KMOS-TV",
         "url": "https://en.wikipedia.org/wiki/KMOS-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KMOS-TV"
+        ],
         "branding": "KMOS PBSKMOS Emerge (6.3)",
         "owner": "University of Central Missouri",
         "facilityId": 4326,
@@ -4258,7 +4793,8 @@
           "lat": 38.62667,
           "lng": -92.86778
         },
-        "website": "https://www.kmos.org/"
+        "website": "https://www.kmos.org/",
+        "requested": "KMOS-TV"
       }
     },
     {
@@ -4285,6 +4821,9 @@
           "title": "KCPT",
           "url": "https://en.wikipedia.org/wiki/KCPT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KCPT"
+          ],
           "branding": "Kansas City PBS",
           "owner": "Public Television 19, Inc.",
           "facilityId": 53843,
@@ -4292,14 +4831,18 @@
             "lat": 39.082972,
             "lng": -94.480583
           },
-          "website": "https://www.kansascitypbs.org/"
+          "website": "https://www.kansascitypbs.org/",
+          "requested": "KCPT"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Kansas City PBS",
-        "url": "https://en.wikipedia.org/wiki/Kansas_City_PBS",
+        "title": "KCPT",
+        "url": "https://en.wikipedia.org/wiki/KCPT",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KCPT"
+        ],
         "branding": "Kansas City PBS",
         "owner": "Public Television 19, Inc.",
         "facilityId": 53843,
@@ -4307,7 +4850,8 @@
           "lat": 39.082972,
           "lng": -94.480583
         },
-        "website": "https://www.kansascitypbs.org/"
+        "website": "https://www.kansascitypbs.org/",
+        "requested": "Kansas City PBS"
       }
     },
     {
@@ -4329,6 +4873,9 @@
           "title": "KETC",
           "url": "https://en.wikipedia.org/wiki/KETC",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KETC"
+          ],
           "branding": "Nine PBS",
           "owner": "St. Louis Regional Public Media, Inc.",
           "facilityId": 62182,
@@ -4336,7 +4883,8 @@
             "lat": 38.48222,
             "lng": -90.39806
           },
-          "website": "https://www.ninepbs.org/"
+          "website": "https://www.ninepbs.org/",
+          "requested": "KETC"
         }
       ],
       "transmitters": [],
@@ -4344,6 +4892,9 @@
         "title": "KETC",
         "url": "https://en.wikipedia.org/wiki/KETC",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KETC"
+        ],
         "branding": "Nine PBS",
         "owner": "St. Louis Regional Public Media, Inc.",
         "facilityId": 62182,
@@ -4351,7 +4902,8 @@
           "lat": 38.48222,
           "lng": -90.39806
         },
-        "website": "https://www.ninepbs.org/"
+        "website": "https://www.ninepbs.org/",
+        "requested": "KETC"
       }
     },
     {
@@ -4448,7 +5000,8 @@
         "url": "https://en.wikipedia.org/wiki/Montana_PBS",
         "retrievedAt": "2026-10-18",
         "owner": "Montana State UniversityUniversity of Montana",
-        "website": "http://www.montanapbs.org"
+        "website": "http://www.montanapbs.org",
+        "requested": "Montana PBS"
       }
     },
     {
@@ -4554,7 +5107,8 @@
         "url": "https://en.wikipedia.org/wiki/Nebraska_Public_Media",
         "retrievedAt": "2026-10-18",
         "owner": "KUON: University of Nebraska–LincolnOthers: Nebraska Educational Telecommunications Commission",
-        "website": "https://nebraskapublicmedia.org/"
+        "website": "https://nebraskapublicmedia.org/",
+        "requested": "Nebraska Public Media"
       }
     },
     {
@@ -4581,6 +5135,9 @@
           "title": "KLVX",
           "url": "https://en.wikipedia.org/wiki/KLVX",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KLVX"
+          ],
           "branding": "Vegas PBS",
           "owner": "KLVX Communications Group(Clark County School District)",
           "facilityId": 11683,
@@ -4588,14 +5145,18 @@
             "lat": 36.007472,
             "lng": -115.007472
           },
-          "website": "https://www.vegaspbs.org/"
+          "website": "https://www.vegaspbs.org/",
+          "requested": "KLVX"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Vegas PBS",
-        "url": "https://en.wikipedia.org/wiki/Vegas_PBS",
+        "title": "KLVX",
+        "url": "https://en.wikipedia.org/wiki/KLVX",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KLVX"
+        ],
         "branding": "Vegas PBS",
         "owner": "KLVX Communications Group(Clark County School District)",
         "facilityId": 11683,
@@ -4603,7 +5164,8 @@
           "lat": 36.007472,
           "lng": -115.007472
         },
-        "website": "https://www.vegaspbs.org/"
+        "website": "https://www.vegaspbs.org/",
+        "requested": "Vegas PBS"
       }
     },
     {
@@ -4630,6 +5192,9 @@
           "title": "KNPB",
           "url": "https://en.wikipedia.org/wiki/KNPB",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KNPB"
+          ],
           "branding": "PBS Reno",
           "owner": "Channel 5 Public Broadcasting, Inc.",
           "facilityId": 10228,
@@ -4637,14 +5202,18 @@
             "lat": 39.583778,
             "lng": -119.799611
           },
-          "website": "https://www.pbsreno.org/"
+          "website": "https://www.pbsreno.org/",
+          "requested": "KNPB"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "PBS Reno",
-        "url": "https://en.wikipedia.org/wiki/PBS_Reno",
+        "title": "KNPB",
+        "url": "https://en.wikipedia.org/wiki/KNPB",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KNPB"
+        ],
         "branding": "PBS Reno",
         "owner": "Channel 5 Public Broadcasting, Inc.",
         "facilityId": 10228,
@@ -4652,7 +5221,8 @@
           "lat": 39.583778,
           "lng": -119.799611
         },
-        "website": "https://www.pbsreno.org/"
+        "website": "https://www.pbsreno.org/",
+        "requested": "PBS Reno"
       }
     },
     {
@@ -4727,7 +5297,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "NHPBS",
         "owner": "New Hampshire Public Broadcasting",
-        "website": "https://nhpbs.org/"
+        "website": "https://nhpbs.org/",
+        "requested": "New Hampshire PBS"
       }
     },
     {
@@ -4816,7 +5387,8 @@
         "retrievedAt": "2026-10-18",
         "branding": ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}NJ PBS (general)NJ PBS News (newscasts)",
         "owner": "New Jersey Public Broadcasting Authority",
-        "website": "https://www.njpbs.org/"
+        "website": "https://www.njpbs.org/",
+        "requested": "NJ PBS"
       }
     },
     {
@@ -4838,6 +5410,9 @@
           "title": "WNET",
           "url": "https://en.wikipedia.org/wiki/WNET",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WNET"
+          ],
           "branding": "THIRTEEN",
           "owner": "The WNET Group(WNET)",
           "facilityId": 18795,
@@ -4845,7 +5420,8 @@
             "lat": 40.713,
             "lng": -74.013139
           },
-          "website": "https://www.thirteen.org/"
+          "website": "https://www.thirteen.org/",
+          "requested": "WNET"
         }
       ],
       "transmitters": [],
@@ -4853,6 +5429,9 @@
         "title": "WNET",
         "url": "https://en.wikipedia.org/wiki/WNET",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WNET"
+        ],
         "branding": "THIRTEEN",
         "owner": "The WNET Group(WNET)",
         "facilityId": 18795,
@@ -4860,7 +5439,8 @@
           "lat": 40.713,
           "lng": -74.013139
         },
-        "website": "https://www.thirteen.org/"
+        "website": "https://www.thirteen.org/",
+        "requested": "WNET"
       }
     },
     {
@@ -4892,6 +5472,9 @@
           "title": "KNME-TV",
           "url": "https://en.wikipedia.org/wiki/KNME-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KNME-TV"
+          ],
           "branding": "NM PBS",
           "owner": "University of New MexicoAlbuquerque Public Schools(The Regents of the University of New Mexico & the Board of Education of the City of Albuquerque, New Mexico)",
           "facilityId": 55528,
@@ -4899,12 +5482,16 @@
             "lat": 35.213833,
             "lng": -106.450917
           },
-          "website": "https://www.newmexicopbs.org/"
+          "website": "https://www.newmexicopbs.org/",
+          "requested": "KNME-TV"
         },
         {
           "title": "KNMD-TV",
           "url": "https://en.wikipedia.org/wiki/KNMD-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KNMD-TV"
+          ],
           "branding": "NM PBS",
           "owner": "University of New Mexico(The Regents of the University of New Mexico)",
           "facilityId": 84215,
@@ -4912,14 +5499,18 @@
             "lat": 35.21225,
             "lng": -106.44972
           },
-          "website": "https://www.newmexicopbs.org/"
+          "website": "https://www.newmexicopbs.org/",
+          "requested": "KNMD-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "New Mexico PBS",
-        "url": "https://en.wikipedia.org/wiki/New_Mexico_PBS",
+        "title": "KNME-TV",
+        "url": "https://en.wikipedia.org/wiki/KNME-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KNME-TV"
+        ],
         "branding": "NM PBS",
         "owner": "University of New MexicoAlbuquerque Public Schools(The Regents of the University of New Mexico & the Board of Education of the City of Albuquerque, New Mexico)",
         "facilityId": 55528,
@@ -4927,7 +5518,8 @@
           "lat": 35.213833,
           "lng": -106.450917
         },
-        "website": "https://www.newmexicopbs.org/"
+        "website": "https://www.newmexicopbs.org/",
+        "requested": "New Mexico PBS"
       }
     },
     {
@@ -4949,6 +5541,9 @@
           "title": "KRWG-TV",
           "url": "https://en.wikipedia.org/wiki/KRWG-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KRWG-TV"
+          ],
           "branding": "KRWG Public Media",
           "owner": "Regents of New Mexico State University",
           "facilityId": 55516,
@@ -4956,7 +5551,8 @@
             "lat": 32.292611,
             "lng": -106.6975
           },
-          "website": "https://www.krwg.org/"
+          "website": "https://www.krwg.org/",
+          "requested": "KRWG-TV"
         }
       ],
       "transmitters": [],
@@ -4964,6 +5560,9 @@
         "title": "KRWG-TV",
         "url": "https://en.wikipedia.org/wiki/KRWG-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KRWG-TV"
+        ],
         "branding": "KRWG Public Media",
         "owner": "Regents of New Mexico State University",
         "facilityId": 55516,
@@ -4971,7 +5570,8 @@
           "lat": 32.292611,
           "lng": -106.6975
         },
-        "website": "https://www.krwg.org/"
+        "website": "https://www.krwg.org/",
+        "requested": "KRWG-TV"
       }
     },
     {
@@ -4993,6 +5593,9 @@
           "title": "KENW (TV)",
           "url": "https://en.wikipedia.org/wiki/KENW_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KENW"
+          ],
           "branding": "KENW PBS New Mexico",
           "owner": "Eastern New Mexico University",
           "facilityId": 18338,
@@ -5000,7 +5603,8 @@
             "lat": 34.252333,
             "lng": -103.239556
           },
-          "website": "http://kenw.org/"
+          "website": "http://kenw.org/",
+          "requested": "KENW (TV)"
         }
       ],
       "transmitters": [
@@ -5072,6 +5676,9 @@
         "title": "KENW (TV)",
         "url": "https://en.wikipedia.org/wiki/KENW_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KENW"
+        ],
         "branding": "KENW PBS New Mexico",
         "owner": "Eastern New Mexico University",
         "facilityId": 18338,
@@ -5079,7 +5686,8 @@
           "lat": 34.252333,
           "lng": -103.239556
         },
-        "website": "http://kenw.org/"
+        "website": "http://kenw.org/",
+        "requested": "KENW (TV)"
       }
     },
     {
@@ -5101,6 +5709,9 @@
           "title": "WMHT (TV)",
           "url": "https://en.wikipedia.org/wiki/WMHT_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WMHT"
+          ],
           "branding": "WMHT",
           "owner": "WMHT Educational Telecommunications",
           "facilityId": 73263,
@@ -5108,7 +5719,8 @@
             "lat": 42.625361,
             "lng": -74.010194
           },
-          "website": "https://www.wmht.org/"
+          "website": "https://www.wmht.org/",
+          "requested": "WMHT (TV)"
         }
       ],
       "transmitters": [],
@@ -5116,6 +5728,9 @@
         "title": "WMHT (TV)",
         "url": "https://en.wikipedia.org/wiki/WMHT_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WMHT"
+        ],
         "branding": "WMHT",
         "owner": "WMHT Educational Telecommunications",
         "facilityId": 73263,
@@ -5123,7 +5738,8 @@
           "lat": 42.625361,
           "lng": -74.010194
         },
-        "website": "https://www.wmht.org/"
+        "website": "https://www.wmht.org/",
+        "requested": "WMHT (TV)"
       }
     },
     {
@@ -5145,6 +5761,10 @@
           "title": "WSKG-TV",
           "url": "https://en.wikipedia.org/wiki/WSKG-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WSKG-TV",
+            "WSKA"
+          ],
           "branding": "WSKG PBS",
           "owner": "WSKG Public Telecommunications Council",
           "facilityId": 74034,
@@ -5152,7 +5772,8 @@
             "lat": 42.0609,
             "lng": -75.9463
           },
-          "website": "http://wskg.org/"
+          "website": "http://wskg.org/",
+          "requested": "WSKG-TV"
         }
       ],
       "transmitters": [],
@@ -5160,6 +5781,10 @@
         "title": "WSKG-TV",
         "url": "https://en.wikipedia.org/wiki/WSKG-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WSKG-TV",
+          "WSKA"
+        ],
         "branding": "WSKG PBS",
         "owner": "WSKG Public Telecommunications Council",
         "facilityId": 74034,
@@ -5167,7 +5792,8 @@
           "lat": 42.0609,
           "lng": -75.9463
         },
-        "website": "http://wskg.org/"
+        "website": "http://wskg.org/",
+        "requested": "WSKG-TV"
       }
     },
     {
@@ -5194,6 +5820,9 @@
           "title": "WNED-TV",
           "url": "https://en.wikipedia.org/wiki/WNED-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WNED-TV"
+          ],
           "branding": "BTPM PBS",
           "owner": "Buffalo Toronto Public Media(Western NY Public Broadcasting Association)",
           "facilityId": 71928,
@@ -5201,14 +5830,18 @@
             "lat": 43.030056,
             "lng": -78.920583
           },
-          "website": "https://www.btpm.org/watch/pbs"
+          "website": "https://www.btpm.org/watch/pbs",
+          "requested": "WNED-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Buffalo Toronto Public Media",
-        "url": "https://en.wikipedia.org/wiki/Buffalo_Toronto_Public_Media",
+        "title": "WNED-TV",
+        "url": "https://en.wikipedia.org/wiki/WNED-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WNED-TV"
+        ],
         "branding": "BTPM PBS",
         "owner": "Buffalo Toronto Public Media(Western NY Public Broadcasting Association)",
         "facilityId": 71928,
@@ -5216,7 +5849,8 @@
           "lat": 43.030056,
           "lng": -78.920583
         },
-        "website": "https://www.btpm.org/watch/pbs"
+        "website": "https://www.btpm.org/watch/pbs",
+        "requested": "Buffalo Toronto Public Media"
       }
     },
     {
@@ -5235,9 +5869,13 @@
       "problems": [],
       "stations": [
         {
-          "title": "WSKA",
-          "url": "https://en.wikipedia.org/wiki/WSKA",
+          "title": "WSKG-TV",
+          "url": "https://en.wikipedia.org/wiki/WSKG-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WSKG-TV",
+            "WSKA"
+          ],
           "branding": "WSKG PBS",
           "owner": "WSKG Public Telecommunications Council",
           "facilityId": 74034,
@@ -5245,14 +5883,19 @@
             "lat": 42.0609,
             "lng": -75.9463
           },
-          "website": "http://wskg.org/"
+          "website": "http://wskg.org/",
+          "requested": "WSKA"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "WSKA",
-        "url": "https://en.wikipedia.org/wiki/WSKA",
+        "title": "WSKG-TV",
+        "url": "https://en.wikipedia.org/wiki/WSKG-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WSKG-TV",
+          "WSKA"
+        ],
         "branding": "WSKG PBS",
         "owner": "WSKG Public Telecommunications Council",
         "facilityId": 74034,
@@ -5260,7 +5903,8 @@
           "lat": 42.0609,
           "lng": -75.9463
         },
-        "website": "http://wskg.org/"
+        "website": "http://wskg.org/",
+        "requested": "WSKA"
       }
     },
     {
@@ -5282,6 +5926,9 @@
           "title": "WLIW (TV)",
           "url": "https://en.wikipedia.org/wiki/WLIW_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WLIW"
+          ],
           "branding": "WLIW 21",
           "owner": "The WNET Group(WNET)",
           "facilityId": 38336,
@@ -5289,7 +5936,8 @@
             "lat": 40.713,
             "lng": -74.013139
           },
-          "website": "https://www.wliw.org/"
+          "website": "https://www.wliw.org/",
+          "requested": "WLIW (TV)"
         }
       ],
       "transmitters": [],
@@ -5297,6 +5945,9 @@
         "title": "WLIW (TV)",
         "url": "https://en.wikipedia.org/wiki/WLIW_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WLIW"
+        ],
         "branding": "WLIW 21",
         "owner": "The WNET Group(WNET)",
         "facilityId": 38336,
@@ -5304,7 +5955,8 @@
           "lat": 40.713,
           "lng": -74.013139
         },
-        "website": "https://www.wliw.org/"
+        "website": "https://www.wliw.org/",
+        "requested": "WLIW (TV)"
       }
     },
     {
@@ -5331,6 +5983,9 @@
           "title": "WCFE-TV",
           "url": "https://en.wikipedia.org/wiki/WCFE-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WCFE-TV"
+          ],
           "branding": "Mountain Lake PBSMountain Lake Journal (newscasts)",
           "owner": "Mountain Lake Public Telecommunications Council",
           "facilityId": 46755,
@@ -5338,14 +5993,18 @@
             "lat": 44.69528,
             "lng": -73.88306
           },
-          "website": "https://mountainlake.org/"
+          "website": "https://mountainlake.org/",
+          "requested": "WCFE-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Mountain Lake PBS",
-        "url": "https://en.wikipedia.org/wiki/Mountain_Lake_PBS",
+        "title": "WCFE-TV",
+        "url": "https://en.wikipedia.org/wiki/WCFE-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WCFE-TV"
+        ],
         "branding": "Mountain Lake PBSMountain Lake Journal (newscasts)",
         "owner": "Mountain Lake Public Telecommunications Council",
         "facilityId": 46755,
@@ -5353,7 +6012,8 @@
           "lat": 44.69528,
           "lng": -73.88306
         },
-        "website": "https://mountainlake.org/"
+        "website": "https://mountainlake.org/",
+        "requested": "Mountain Lake PBS"
       }
     },
     {
@@ -5375,6 +6035,9 @@
           "title": "WXXI-TV",
           "url": "https://en.wikipedia.org/wiki/WXXI-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WXXI-TV"
+          ],
           "branding": "WXXI",
           "owner": "WXXI Public Broadcasting Council",
           "facilityId": 57274,
@@ -5382,7 +6045,8 @@
             "lat": 43.13528,
             "lng": -77.58389
           },
-          "website": "https://www.wxxi.org/"
+          "website": "https://www.wxxi.org/",
+          "requested": "WXXI-TV"
         }
       ],
       "transmitters": [],
@@ -5390,6 +6054,9 @@
         "title": "WXXI-TV",
         "url": "https://en.wikipedia.org/wiki/WXXI-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WXXI-TV"
+        ],
         "branding": "WXXI",
         "owner": "WXXI Public Broadcasting Council",
         "facilityId": 57274,
@@ -5397,7 +6064,8 @@
           "lat": 43.13528,
           "lng": -77.58389
         },
-        "website": "https://www.wxxi.org/"
+        "website": "https://www.wxxi.org/",
+        "requested": "WXXI-TV"
       }
     },
     {
@@ -5419,6 +6087,9 @@
           "title": "WCNY-TV",
           "url": "https://en.wikipedia.org/wiki/WCNY-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WCNY-TV"
+          ],
           "branding": "WCNY Connected",
           "owner": "The Public Broadcasting Council of Central New York, Inc.",
           "facilityId": 53734,
@@ -5426,7 +6097,8 @@
             "lat": 42.944944,
             "lng": -76.118389
           },
-          "website": "http://www.wcny.org/"
+          "website": "http://www.wcny.org/",
+          "requested": "WCNY-TV"
         }
       ],
       "transmitters": [
@@ -5444,6 +6116,9 @@
         "title": "WCNY-TV",
         "url": "https://en.wikipedia.org/wiki/WCNY-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WCNY-TV"
+        ],
         "branding": "WCNY Connected",
         "owner": "The Public Broadcasting Council of Central New York, Inc.",
         "facilityId": 53734,
@@ -5451,7 +6126,8 @@
           "lat": 42.944944,
           "lng": -76.118389
         },
-        "website": "http://www.wcny.org/"
+        "website": "http://www.wcny.org/",
+        "requested": "WCNY-TV"
       }
     },
     {
@@ -5478,6 +6154,10 @@
           "title": "WPBS-TV",
           "url": "https://en.wikipedia.org/wiki/WPBS-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WPBS-TV",
+            "WNPI-DT"
+          ],
           "branding": "WPBS PBS",
           "owner": "St. Lawrence Valley Educational TV Council, Inc.",
           "facilityId": 62136,
@@ -5485,20 +6165,8 @@
             "lat": 43.86278,
             "lng": -75.72722
           },
-          "website": "https://www.wpbstv.org/"
-        },
-        {
-          "title": "WNPI-DT",
-          "url": "https://en.wikipedia.org/wiki/WNPI-DT",
-          "retrievedAt": "2026-10-18",
-          "branding": "WPBS PBS",
-          "owner": "St. Lawrence Valley Educational TV Council, Inc.",
-          "facilityId": 62136,
-          "coords": {
-            "lat": 43.86278,
-            "lng": -75.72722
-          },
-          "website": "https://www.wpbstv.org/"
+          "website": "https://www.wpbstv.org/",
+          "requested": "WPBS-TV"
         }
       ],
       "transmitters": [],
@@ -5506,6 +6174,10 @@
         "title": "WPBS-TV",
         "url": "https://en.wikipedia.org/wiki/WPBS-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WPBS-TV",
+          "WNPI-DT"
+        ],
         "branding": "WPBS PBS",
         "owner": "St. Lawrence Valley Educational TV Council, Inc.",
         "facilityId": 62136,
@@ -5513,7 +6185,8 @@
           "lat": 43.86278,
           "lng": -75.72722
         },
-        "website": "https://www.wpbstv.org/"
+        "website": "https://www.wpbstv.org/",
+        "requested": "WPBS-TV"
       }
     },
     {
@@ -5647,7 +6320,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "PBS North Carolina",
         "owner": "University of North Carolina",
-        "website": "http://www.pbsnc.org/"
+        "website": "http://www.pbsnc.org/",
+        "requested": "PBS North Carolina"
       }
     },
     {
@@ -5669,6 +6343,9 @@
           "title": "WTVI",
           "url": "https://en.wikipedia.org/wiki/WTVI",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WTVI"
+          ],
           "branding": "PBS Charlotte",
           "owner": "Central Piedmont Community College",
           "facilityId": 10645,
@@ -5676,7 +6353,8 @@
             "lat": 35.2875,
             "lng": -80.69556
           },
-          "website": "https://www.wtvi.org/"
+          "website": "https://www.wtvi.org/",
+          "requested": "WTVI"
         }
       ],
       "transmitters": [],
@@ -5684,6 +6362,9 @@
         "title": "WTVI",
         "url": "https://en.wikipedia.org/wiki/WTVI",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WTVI"
+        ],
         "branding": "PBS Charlotte",
         "owner": "Central Piedmont Community College",
         "facilityId": 10645,
@@ -5691,7 +6372,8 @@
           "lat": 35.2875,
           "lng": -80.69556
         },
-        "website": "https://www.wtvi.org/"
+        "website": "https://www.wtvi.org/",
+        "requested": "WTVI"
       }
     },
     {
@@ -5797,7 +6479,8 @@
         "url": "https://en.wikipedia.org/wiki/Prairie_Public_Television",
         "retrievedAt": "2026-10-18",
         "owner": "Prairie Public Broadcasting",
-        "website": "https://www.prairiepublic.org/"
+        "website": "https://www.prairiepublic.org/",
+        "requested": "Prairie Public Television"
       }
     },
     {
@@ -5829,6 +6512,10 @@
           "title": "WNEO",
           "url": "https://en.wikipedia.org/wiki/WNEO",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WNEO",
+            "WEAO"
+          ],
           "branding": "PBS Western Reserve",
           "owner": "Western Reserve Public Media(merger pending with Ideastream)(Northeastern Educational Television of Ohio, Inc.)",
           "facilityId": 49439,
@@ -5836,27 +6523,19 @@
             "lat": 40.906444,
             "lng": -80.910917
           },
-          "website": "https://www.pbswesternreserve.org/"
-        },
-        {
-          "title": "WEAO (TV)",
-          "url": "https://en.wikipedia.org/wiki/WEAO_(TV)",
-          "retrievedAt": "2026-10-18",
-          "branding": "PBS Western Reserve",
-          "owner": "Western Reserve Public Media(merger pending with Ideastream)(Northeastern Educational Television of Ohio, Inc.)",
-          "facilityId": 49439,
-          "coords": {
-            "lat": 40.906444,
-            "lng": -80.910917
-          },
-          "website": "https://www.pbswesternreserve.org/"
+          "website": "https://www.pbswesternreserve.org/",
+          "requested": "WNEO"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "PBS Western Reserve",
-        "url": "https://en.wikipedia.org/wiki/PBS_Western_Reserve",
+        "title": "WNEO",
+        "url": "https://en.wikipedia.org/wiki/WNEO",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WNEO",
+          "WEAO"
+        ],
         "branding": "PBS Western Reserve",
         "owner": "Western Reserve Public Media(merger pending with Ideastream)(Northeastern Educational Television of Ohio, Inc.)",
         "facilityId": 49439,
@@ -5864,7 +6543,8 @@
           "lat": 40.906444,
           "lng": -80.910917
         },
-        "website": "https://www.pbswesternreserve.org/"
+        "website": "https://www.pbswesternreserve.org/",
+        "requested": "PBS Western Reserve"
       }
     },
     {
@@ -5891,6 +6571,10 @@
           "title": "WOUB-TV",
           "url": "https://en.wikipedia.org/wiki/WOUB-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WOUB-TV",
+            "WOUC-TV"
+          ],
           "branding": "PBS WOUB",
           "owner": "Ohio University(WOUB Public Media)",
           "facilityId": 50147,
@@ -5898,20 +6582,8 @@
             "lat": 39.31444,
             "lng": -82.14972
           },
-          "website": "https://woub.org"
-        },
-        {
-          "title": "WOUC-TV",
-          "url": "https://en.wikipedia.org/wiki/WOUC-TV",
-          "retrievedAt": "2026-10-18",
-          "branding": "PBS WOUB",
-          "owner": "Ohio University(WOUB Public Media)",
-          "facilityId": 50147,
-          "coords": {
-            "lat": 39.31444,
-            "lng": -82.14972
-          },
-          "website": "https://woub.org"
+          "website": "https://woub.org",
+          "requested": "WOUB-TV"
         }
       ],
       "transmitters": [],
@@ -5919,6 +6591,10 @@
         "title": "WOUB-TV",
         "url": "https://en.wikipedia.org/wiki/WOUB-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WOUB-TV",
+          "WOUC-TV"
+        ],
         "branding": "PBS WOUB",
         "owner": "Ohio University(WOUB Public Media)",
         "facilityId": 50147,
@@ -5926,7 +6602,8 @@
           "lat": 39.31444,
           "lng": -82.14972
         },
-        "website": "https://woub.org"
+        "website": "https://woub.org",
+        "requested": "WOUB-TV"
       }
     },
     {
@@ -5948,6 +6625,9 @@
           "title": "WBGU-TV",
           "url": "https://en.wikipedia.org/wiki/WBGU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WBGU-TV"
+          ],
           "branding": "WBGU PBS",
           "owner": "Bowling Green State University",
           "facilityId": 6568,
@@ -5955,7 +6635,8 @@
             "lat": 41.13667,
             "lng": -83.90667
           },
-          "website": "https://www.wbgutv.org/"
+          "website": "https://www.wbgutv.org/",
+          "requested": "WBGU-TV"
         }
       ],
       "transmitters": [],
@@ -5963,6 +6644,9 @@
         "title": "WBGU-TV",
         "url": "https://en.wikipedia.org/wiki/WBGU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WBGU-TV"
+        ],
         "branding": "WBGU PBS",
         "owner": "Bowling Green State University",
         "facilityId": 6568,
@@ -5970,7 +6654,8 @@
           "lat": 41.13667,
           "lng": -83.90667
         },
-        "website": "https://www.wbgutv.org/"
+        "website": "https://www.wbgutv.org/",
+        "requested": "WBGU-TV"
       }
     },
     {
@@ -5992,6 +6677,9 @@
           "title": "WCET (TV)",
           "url": "https://en.wikipedia.org/wiki/WCET_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WCET"
+          ],
           "branding": "CET",
           "owner": "Public Media Connect(The Greater Cincinnati Television Educational Foundation)",
           "facilityId": 65666,
@@ -5999,7 +6687,8 @@
             "lat": 39.12417,
             "lng": -84.52167
           },
-          "website": "https://www.cetconnect.org/"
+          "website": "https://www.cetconnect.org/",
+          "requested": "WCET (TV)"
         }
       ],
       "transmitters": [],
@@ -6007,6 +6696,9 @@
         "title": "WCET (TV)",
         "url": "https://en.wikipedia.org/wiki/WCET_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WCET"
+        ],
         "branding": "CET",
         "owner": "Public Media Connect(The Greater Cincinnati Television Educational Foundation)",
         "facilityId": 65666,
@@ -6014,7 +6706,8 @@
           "lat": 39.12417,
           "lng": -84.52167
         },
-        "website": "https://www.cetconnect.org/"
+        "website": "https://www.cetconnect.org/",
+        "requested": "WCET (TV)"
       }
     },
     {
@@ -6036,6 +6729,9 @@
           "title": "WOSU-TV",
           "url": "https://en.wikipedia.org/wiki/WOSU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WOSU-TV"
+          ],
           "branding": "WOSU PBS",
           "owner": "Ohio State University",
           "facilityId": 66190,
@@ -6043,7 +6739,8 @@
             "lat": 38.76167,
             "lng": -83.06139
           },
-          "website": "https://wosu.org/television/"
+          "website": "https://wosu.org/television/",
+          "requested": "WOSU-TV"
         }
       ],
       "transmitters": [],
@@ -6051,6 +6748,9 @@
         "title": "WOSU-TV",
         "url": "https://en.wikipedia.org/wiki/WOSU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WOSU-TV"
+        ],
         "branding": "WOSU PBS",
         "owner": "Ohio State University",
         "facilityId": 66190,
@@ -6058,7 +6758,8 @@
           "lat": 38.76167,
           "lng": -83.06139
         },
-        "website": "https://wosu.org/television/"
+        "website": "https://wosu.org/television/",
+        "requested": "WOSU-TV"
       }
     },
     {
@@ -6085,6 +6786,9 @@
           "title": "WVIZ",
           "url": "https://en.wikipedia.org/wiki/WVIZ",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WVIZ"
+          ],
           "branding": "WVIZ Ideastream Public Media",
           "owner": "Ideastream",
           "facilityId": 18753,
@@ -6092,7 +6796,8 @@
             "lat": 41.386083,
             "lng": -81.689083
           },
-          "website": "http://ideastream.org"
+          "website": "http://ideastream.org",
+          "requested": "WVIZ"
         }
       ],
       "transmitters": [
@@ -6116,10 +6821,11 @@
         }
       ],
       "primary": {
-        "title": "Ideastream Public Media",
-        "url": "https://en.wikipedia.org/wiki/Ideastream_Public_Media",
+        "title": "Ideastream",
+        "url": "https://en.wikipedia.org/wiki/Ideastream",
         "retrievedAt": "2026-10-18",
-        "website": "http://ideastream.org"
+        "website": "http://ideastream.org",
+        "requested": "Ideastream Public Media"
       }
     },
     {
@@ -6151,6 +6857,9 @@
           "title": "WPTD",
           "url": "https://en.wikipedia.org/wiki/WPTD",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WPTD"
+          ],
           "branding": "ThinkTV 16",
           "owner": "Public Media Connect(Greater Dayton Public Television, Inc.)",
           "facilityId": 25067,
@@ -6158,12 +6867,16 @@
             "lat": 39.72111,
             "lng": -84.25
           },
-          "website": "https://thinktv.org/"
+          "website": "https://thinktv.org/",
+          "requested": "WPTD"
         },
         {
           "title": "WPTO",
           "url": "https://en.wikipedia.org/wiki/WPTO",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WPTO"
+          ],
           "branding": "ThinkTV",
           "owner": "Public Media Connect(Greater Cincinnati Television Educational Foundation)",
           "facilityId": 25065,
@@ -6171,14 +6884,18 @@
             "lat": 39.12417,
             "lng": -84.52167
           },
-          "website": "https://thinktv.org/"
+          "website": "https://thinktv.org/",
+          "requested": "WPTO"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Think TV",
-        "url": "https://en.wikipedia.org/wiki/Think_TV",
+        "title": "WPTD",
+        "url": "https://en.wikipedia.org/wiki/WPTD",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WPTD"
+        ],
         "branding": "ThinkTV 16",
         "owner": "Public Media Connect(Greater Dayton Public Television, Inc.)",
         "facilityId": 25067,
@@ -6186,7 +6903,8 @@
           "lat": 39.72111,
           "lng": -84.25
         },
-        "website": "https://thinktv.org/"
+        "website": "https://thinktv.org/",
+        "requested": "Think TV"
       }
     },
     {
@@ -6208,6 +6926,9 @@
           "title": "WGTE-TV",
           "url": "https://en.wikipedia.org/wiki/WGTE-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WGTE-TV"
+          ],
           "branding": "WGTE",
           "owner": "Public Broadcasting Foundation of Northwest Ohio",
           "facilityId": 66285,
@@ -6215,7 +6936,8 @@
             "lat": 41.65722,
             "lng": -83.43194
           },
-          "website": "https://www.wgte.org/"
+          "website": "https://www.wgte.org/",
+          "requested": "WGTE-TV"
         }
       ],
       "transmitters": [],
@@ -6223,6 +6945,9 @@
         "title": "WGTE-TV",
         "url": "https://en.wikipedia.org/wiki/WGTE-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WGTE-TV"
+        ],
         "branding": "WGTE",
         "owner": "Public Broadcasting Foundation of Northwest Ohio",
         "facilityId": 66285,
@@ -6230,7 +6955,8 @@
           "lat": 41.65722,
           "lng": -83.43194
         },
-        "website": "https://www.wgte.org/"
+        "website": "https://www.wgte.org/",
+        "requested": "WGTE-TV"
       }
     },
     {
@@ -6291,7 +7017,8 @@
         "url": "https://en.wikipedia.org/wiki/Oklahoma_Educational_Television_Authority",
         "retrievedAt": "2026-10-18",
         "owner": "Oklahoma Educational Television Authority",
-        "website": "https://oeta.tv"
+        "website": "https://oeta.tv",
+        "requested": "Oklahoma Educational Television Authority"
       }
     },
     {
@@ -6362,7 +7089,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "OPB",
         "owner": "Oregon Public Broadcasting",
-        "website": "https://www.opb.org/"
+        "website": "https://www.opb.org/",
+        "requested": "Oregon Public Broadcasting"
       }
     },
     {
@@ -6385,6 +7113,10 @@
         "title": "Southern Oregon PBS",
         "url": "https://en.wikipedia.org/wiki/Southern_Oregon_PBS",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KSYS",
+          "KFTS"
+        ],
         "branding": "Southern Oregon PBS, SOPBS (alternate)",
         "owner": "Southern Oregon Public Television, Inc.",
         "facilityId": 61350,
@@ -6392,7 +7124,8 @@
           "lat": 42.692056,
           "lng": -123.230333
         },
-        "website": "http://www.sopbs.org/"
+        "website": "http://www.sopbs.org/",
+        "requested": "Southern Oregon PBS"
       }
     },
     {
@@ -6419,6 +7152,10 @@
           "title": "WMTJ",
           "url": "https://en.wikipedia.org/wiki/WMTJ",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WMTJ",
+            "WQTO"
+          ],
           "branding": "Sistema TV",
           "owner": "Ana G. Méndez University(Sistema Universitario Ana G. Méndez, Inc.)",
           "facilityId": 2174,
@@ -6426,20 +7163,8 @@
             "lat": 18.307722,
             "lng": -65.794861
           },
-          "website": "http://sistematv.com/"
-        },
-        {
-          "title": "WQTO",
-          "url": "https://en.wikipedia.org/wiki/WQTO",
-          "retrievedAt": "2026-10-18",
-          "branding": "Sistema TV",
-          "owner": "Ana G. Méndez University(Sistema Universitario Ana G. Méndez, Inc.)",
-          "facilityId": 2174,
-          "coords": {
-            "lat": 18.307722,
-            "lng": -65.794861
-          },
-          "website": "http://sistematv.com/"
+          "website": "http://sistematv.com/",
+          "requested": "WMTJ"
         }
       ],
       "transmitters": [],
@@ -6447,6 +7172,10 @@
         "title": "WMTJ",
         "url": "https://en.wikipedia.org/wiki/WMTJ",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WMTJ",
+          "WQTO"
+        ],
         "branding": "Sistema TV",
         "owner": "Ana G. Méndez University(Sistema Universitario Ana G. Méndez, Inc.)",
         "facilityId": 2174,
@@ -6454,7 +7183,8 @@
           "lat": 18.307722,
           "lng": -65.794861
         },
-        "website": "http://sistematv.com/"
+        "website": "http://sistematv.com/",
+        "requested": "WMTJ"
       }
     },
     {
@@ -6481,6 +7211,9 @@
           "title": "WLVT-TV",
           "url": "https://en.wikipedia.org/wiki/WLVT-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WLVT-TV"
+          ],
           "branding": "PBS39",
           "owner": "Lehigh Valley Public Media(Lehigh Valley Public Telecommunications Corp.)",
           "facilityId": 36989,
@@ -6488,12 +7221,16 @@
             "lat": 40.56444,
             "lng": -75.44
           },
-          "website": "http://wlvt.org"
+          "website": "http://wlvt.org",
+          "requested": "WLVT-TV"
         },
         {
           "title": "WPPT (TV)",
           "url": "https://en.wikipedia.org/wiki/WPPT_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WPPT"
+          ],
           "branding": "PBS39 Extra",
           "owner": "Lehigh Valley Public Media(Lehigh Valley Public Telecommunications Corporation)",
           "facilityId": 28480,
@@ -6501,7 +7238,8 @@
             "lat": 40.56444,
             "lng": -75.44
           },
-          "website": "https://www.wlvt.org/"
+          "website": "https://www.wlvt.org/",
+          "requested": "WPPT (TV)"
         }
       ],
       "transmitters": [],
@@ -6509,6 +7247,9 @@
         "title": "WLVT-TV",
         "url": "https://en.wikipedia.org/wiki/WLVT-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WLVT-TV"
+        ],
         "branding": "PBS39",
         "owner": "Lehigh Valley Public Media(Lehigh Valley Public Telecommunications Corp.)",
         "facilityId": 36989,
@@ -6516,7 +7257,8 @@
           "lat": 40.56444,
           "lng": -75.44
         },
-        "website": "http://wlvt.org"
+        "website": "http://wlvt.org",
+        "requested": "WLVT-TV"
       }
     },
     {
@@ -6538,6 +7280,9 @@
           "title": "WQLN (TV)",
           "url": "https://en.wikipedia.org/wiki/WQLN_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WQLN"
+          ],
           "branding": "WQLN PBS",
           "owner": "Public Broadcasting of Northwest Pennsylvania, Inc.",
           "facilityId": 53716,
@@ -6545,7 +7290,8 @@
             "lat": 42.042583,
             "lng": -80.0655
           },
-          "website": "https://www.wqln.org/"
+          "website": "https://www.wqln.org/",
+          "requested": "WQLN (TV)"
         }
       ],
       "transmitters": [],
@@ -6553,6 +7299,9 @@
         "title": "WQLN (TV)",
         "url": "https://en.wikipedia.org/wiki/WQLN_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WQLN"
+        ],
         "branding": "WQLN PBS",
         "owner": "Public Broadcasting of Northwest Pennsylvania, Inc.",
         "facilityId": 53716,
@@ -6560,7 +7309,8 @@
           "lat": 42.042583,
           "lng": -80.0655
         },
-        "website": "https://www.wqln.org/"
+        "website": "https://www.wqln.org/",
+        "requested": "WQLN (TV)"
       }
     },
     {
@@ -6582,6 +7332,9 @@
           "title": "WITF-TV",
           "url": "https://en.wikipedia.org/wiki/WITF-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WITF-TV"
+          ],
           "branding": "WITF",
           "owner": "WITF, Inc.",
           "facilityId": 73083,
@@ -6589,7 +7342,8 @@
             "lat": 40.345444,
             "lng": -76.868778
           },
-          "website": "https://www.witf.org/"
+          "website": "https://www.witf.org/",
+          "requested": "WITF-TV"
         }
       ],
       "transmitters": [
@@ -6607,6 +7361,9 @@
         "title": "WITF-TV",
         "url": "https://en.wikipedia.org/wiki/WITF-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WITF-TV"
+        ],
         "branding": "WITF",
         "owner": "WITF, Inc.",
         "facilityId": 73083,
@@ -6614,7 +7371,8 @@
           "lat": 40.345444,
           "lng": -76.868778
         },
-        "website": "https://www.witf.org/"
+        "website": "https://www.witf.org/",
+        "requested": "WITF-TV"
       }
     },
     {
@@ -6636,6 +7394,10 @@
           "title": "WHYY-TV",
           "url": "https://en.wikipedia.org/wiki/WHYY-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WHYY-TV",
+            "WDPB"
+          ],
           "branding": "PBS WHYY",
           "owner": "WHYY, Inc.",
           "facilityId": 72338,
@@ -6643,7 +7405,8 @@
             "lat": 40.041917,
             "lng": -75.239417
           },
-          "website": "https://www.whyy.org/"
+          "website": "https://www.whyy.org/",
+          "requested": "WHYY-TV"
         }
       ],
       "transmitters": [],
@@ -6651,6 +7414,10 @@
         "title": "WHYY-TV",
         "url": "https://en.wikipedia.org/wiki/WHYY-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WHYY-TV",
+          "WDPB"
+        ],
         "branding": "PBS WHYY",
         "owner": "WHYY, Inc.",
         "facilityId": 72338,
@@ -6658,7 +7425,8 @@
           "lat": 40.041917,
           "lng": -75.239417
         },
-        "website": "https://www.whyy.org/"
+        "website": "https://www.whyy.org/",
+        "requested": "WHYY-TV"
       }
     },
     {
@@ -6680,6 +7448,9 @@
           "title": "WQED (TV)",
           "url": "https://en.wikipedia.org/wiki/WQED_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WQED"
+          ],
           "branding": "WQED",
           "owner": "WQED Multimedia",
           "facilityId": 41315,
@@ -6687,7 +7458,8 @@
             "lat": 40.446167,
             "lng": -79.963944
           },
-          "website": "https://www.wqed.org/"
+          "website": "https://www.wqed.org/",
+          "requested": "WQED (TV)"
         }
       ],
       "transmitters": [],
@@ -6695,6 +7467,9 @@
         "title": "WQED (TV)",
         "url": "https://en.wikipedia.org/wiki/WQED_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WQED"
+        ],
         "branding": "WQED",
         "owner": "WQED Multimedia",
         "facilityId": 41315,
@@ -6702,7 +7477,8 @@
           "lat": 40.446167,
           "lng": -79.963944
         },
-        "website": "https://www.wqed.org/"
+        "website": "https://www.wqed.org/",
+        "requested": "WQED (TV)"
       }
     },
     {
@@ -6724,6 +7500,9 @@
           "title": "WVIA-TV",
           "url": "https://en.wikipedia.org/wiki/WVIA-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WVIA-TV"
+          ],
           "branding": "WVIA",
           "owner": "Northeast Pennsylvania Educational Television Association",
           "facilityId": 47929,
@@ -6731,7 +7510,8 @@
             "lat": 41.18194,
             "lng": -75.87111
           },
-          "website": "http://www.wvia.org/"
+          "website": "http://www.wvia.org/",
+          "requested": "WVIA-TV"
         }
       ],
       "transmitters": [
@@ -6749,6 +7529,9 @@
         "title": "WVIA-TV",
         "url": "https://en.wikipedia.org/wiki/WVIA-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WVIA-TV"
+        ],
         "branding": "WVIA",
         "owner": "Northeast Pennsylvania Educational Television Association",
         "facilityId": 47929,
@@ -6756,7 +7539,8 @@
           "lat": 41.18194,
           "lng": -75.87111
         },
-        "website": "http://www.wvia.org/"
+        "website": "http://www.wvia.org/",
+        "requested": "WVIA-TV"
       }
     },
     {
@@ -6778,6 +7562,9 @@
           "title": "WPSU-TV",
           "url": "https://en.wikipedia.org/wiki/WPSU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WPSU-TV"
+          ],
           "branding": "WPSU Penn State",
           "owner": "WHYY, Inc..mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:\"\\\"\"\"\\\"\"\"'\"\"'\"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url(\"//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url(\"//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url(\"//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url(\"//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg\")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}",
           "facilityId": 66219,
@@ -6785,7 +7572,8 @@
             "lat": 41.122278,
             "lng": -78.441361
           },
-          "website": "http://wpsu.org/"
+          "website": "http://wpsu.org/",
+          "requested": "WPSU-TV"
         }
       ],
       "transmitters": [],
@@ -6793,6 +7581,9 @@
         "title": "WPSU-TV",
         "url": "https://en.wikipedia.org/wiki/WPSU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WPSU-TV"
+        ],
         "branding": "WPSU Penn State",
         "owner": "WHYY, Inc..mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:\"\\\"\"\"\\\"\"\"'\"\"'\"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url(\"//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url(\"//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url(\"//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url(\"//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg\")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}",
         "facilityId": 66219,
@@ -6800,7 +7591,8 @@
           "lat": 41.122278,
           "lng": -78.441361
         },
-        "website": "http://wpsu.org/"
+        "website": "http://wpsu.org/",
+        "requested": "WPSU-TV"
       }
     },
     {
@@ -6827,6 +7619,9 @@
           "title": "WPVD-TV",
           "url": "https://en.wikipedia.org/wiki/WPVD-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WPVD-TV"
+          ],
           "branding": "Ocean State Media",
           "owner": "Ocean State Media(Ocean State Media Group)",
           "facilityId": 56092,
@@ -6834,7 +7629,8 @@
             "lat": 41.865389,
             "lng": -71.286861
           },
-          "website": "https://www.oceanstatemedia.org/"
+          "website": "https://www.oceanstatemedia.org/",
+          "requested": "WPVD-TV"
         }
       ],
       "transmitters": [],
@@ -6843,7 +7639,8 @@
         "url": "https://en.wikipedia.org/wiki/Ocean_State_Media",
         "retrievedAt": "2026-10-18",
         "owner": "Ocean State Media Group",
-        "website": "https://www.oceanstatemedia.org/"
+        "website": "https://www.oceanstatemedia.org/",
+        "requested": "Ocean State Media"
       }
     },
     {
@@ -6968,7 +7765,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "SCETV",
         "owner": "South Carolina Educational Television Commission",
-        "website": "http://www.scetv.org/"
+        "website": "http://www.scetv.org/",
+        "requested": "South Carolina Educational Television"
       }
     },
     {
@@ -7075,7 +7873,8 @@
         "retrievedAt": "2026-10-18",
         "branding": "SDPB",
         "owner": "South Dakota Bureau of Information and Technology(South Dakota Board of Directors for Educational Telecommunications)",
-        "website": "https://www.sdpb.org/"
+        "website": "https://www.sdpb.org/",
+        "requested": "South Dakota Public Broadcasting"
       }
     },
     {
@@ -7097,6 +7896,9 @@
           "title": "WTCI",
           "url": "https://en.wikipedia.org/wiki/WTCI",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WTCI"
+          ],
           "branding": "WTCI PBS",
           "owner": "The Greater Chattanooga Public Television Corporation",
           "facilityId": 65667,
@@ -7104,7 +7906,8 @@
             "lat": 35.20722,
             "lng": -85.28111
           },
-          "website": "https://www.wtcitv.org/"
+          "website": "https://www.wtcitv.org/",
+          "requested": "WTCI"
         }
       ],
       "transmitters": [],
@@ -7112,6 +7915,9 @@
         "title": "WTCI",
         "url": "https://en.wikipedia.org/wiki/WTCI",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WTCI"
+        ],
         "branding": "WTCI PBS",
         "owner": "The Greater Chattanooga Public Television Corporation",
         "facilityId": 65667,
@@ -7119,7 +7925,8 @@
           "lat": 35.20722,
           "lng": -85.28111
         },
-        "website": "https://www.wtcitv.org/"
+        "website": "https://www.wtcitv.org/",
+        "requested": "WTCI"
       }
     },
     {
@@ -7141,6 +7948,9 @@
           "title": "WLJT",
           "url": "https://en.wikipedia.org/wiki/WLJT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WLJT"
+          ],
           "branding": "West TN PBS",
           "owner": "West Tennessee Public Television Council, Inc.",
           "facilityId": 71645,
@@ -7148,7 +7958,8 @@
             "lat": 35.70333,
             "lng": -88.60278
           },
-          "website": "http://www.westtnpbs.org/"
+          "website": "http://www.westtnpbs.org/",
+          "requested": "WLJT"
         }
       ],
       "transmitters": [],
@@ -7156,6 +7967,9 @@
         "title": "WLJT",
         "url": "https://en.wikipedia.org/wiki/WLJT",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WLJT"
+        ],
         "branding": "West TN PBS",
         "owner": "West Tennessee Public Television Council, Inc.",
         "facilityId": 71645,
@@ -7163,7 +7977,8 @@
           "lat": 35.70333,
           "lng": -88.60278
         },
-        "website": "http://www.westtnpbs.org/"
+        "website": "http://www.westtnpbs.org/",
+        "requested": "WLJT"
       }
     },
     {
@@ -7195,6 +8010,10 @@
           "title": "WETP-TV",
           "url": "https://en.wikipedia.org/wiki/WETP-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WETP-TV",
+            "WKOP-TV"
+          ],
           "branding": "East Tennessee PBS",
           "owner": "East Tennessee Public Communications Corporation",
           "facilityId": 18252,
@@ -7202,27 +8021,19 @@
             "lat": 36.381194,
             "lng": -83.180222
           },
-          "website": "https://www.easttennesseepbs.org"
-        },
-        {
-          "title": "WKOP",
-          "url": "https://en.wikipedia.org/wiki/WKOP",
-          "retrievedAt": "2026-10-18",
-          "branding": "East Tennessee PBS",
-          "owner": "East Tennessee Public Communications Corporation",
-          "facilityId": 18252,
-          "coords": {
-            "lat": 36.381194,
-            "lng": -83.180222
-          },
-          "website": "https://www.easttennesseepbs.org"
+          "website": "https://www.easttennesseepbs.org",
+          "requested": "WETP-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "East Tennessee PBS",
-        "url": "https://en.wikipedia.org/wiki/East_Tennessee_PBS",
+        "title": "WETP-TV",
+        "url": "https://en.wikipedia.org/wiki/WETP-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WETP-TV",
+          "WKOP-TV"
+        ],
         "branding": "East Tennessee PBS",
         "owner": "East Tennessee Public Communications Corporation",
         "facilityId": 18252,
@@ -7230,7 +8041,8 @@
           "lat": 36.381194,
           "lng": -83.180222
         },
-        "website": "https://www.easttennesseepbs.org"
+        "website": "https://www.easttennesseepbs.org",
+        "requested": "East Tennessee PBS"
       }
     },
     {
@@ -7252,13 +8064,17 @@
           "title": "WKNO (TV)",
           "url": "https://en.wikipedia.org/wiki/WKNO_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WKNO"
+          ],
           "owner": "Mid-South Public Communications Foundation",
           "facilityId": 42061,
           "coords": {
             "lat": 35.15444,
             "lng": -89.82222
           },
-          "website": "http://www.wkno.org/"
+          "website": "http://www.wkno.org/",
+          "requested": "WKNO (TV)"
         }
       ],
       "transmitters": [],
@@ -7266,13 +8082,17 @@
         "title": "WKNO (TV)",
         "url": "https://en.wikipedia.org/wiki/WKNO_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WKNO"
+        ],
         "owner": "Mid-South Public Communications Foundation",
         "facilityId": 42061,
         "coords": {
           "lat": 35.15444,
           "lng": -89.82222
         },
-        "website": "http://www.wkno.org/"
+        "website": "http://www.wkno.org/",
+        "requested": "WKNO (TV)"
       }
     },
     {
@@ -7294,6 +8114,9 @@
           "title": "WNPT",
           "url": "https://en.wikipedia.org/wiki/WNPT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WNPT"
+          ],
           "branding": "Nashville PBS",
           "owner": "Nashville Public Television, Inc.",
           "facilityId": 41398,
@@ -7301,7 +8124,8 @@
             "lat": 36.047194,
             "lng": -86.830139
           },
-          "website": "https://www.wnpt.org/"
+          "website": "https://www.wnpt.org/",
+          "requested": "WNPT"
         }
       ],
       "transmitters": [],
@@ -7309,6 +8133,9 @@
         "title": "WNPT",
         "url": "https://en.wikipedia.org/wiki/WNPT",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WNPT"
+        ],
         "branding": "Nashville PBS",
         "owner": "Nashville Public Television, Inc.",
         "facilityId": 41398,
@@ -7316,7 +8143,8 @@
           "lat": 36.047194,
           "lng": -86.830139
         },
-        "website": "https://www.wnpt.org/"
+        "website": "https://www.wnpt.org/",
+        "requested": "WNPT"
       }
     },
     {
@@ -7338,6 +8166,9 @@
           "title": "WCTE",
           "url": "https://en.wikipedia.org/wiki/WCTE",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WCTE"
+          ],
           "branding": "WCTE Central TN PBS",
           "owner": "Upper Cumberland Broadcast Council",
           "facilityId": 69479,
@@ -7345,7 +8176,8 @@
             "lat": 36.17389,
             "lng": -85.34361
           },
-          "website": "https://www.wcte.org/"
+          "website": "https://www.wcte.org/",
+          "requested": "WCTE"
         }
       ],
       "transmitters": [],
@@ -7353,6 +8185,9 @@
         "title": "WCTE",
         "url": "https://en.wikipedia.org/wiki/WCTE",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WCTE"
+        ],
         "branding": "WCTE Central TN PBS",
         "owner": "Upper Cumberland Broadcast Council",
         "facilityId": 69479,
@@ -7360,7 +8195,8 @@
           "lat": 36.17389,
           "lng": -85.34361
         },
-        "website": "https://www.wcte.org/"
+        "website": "https://www.wcte.org/",
+        "requested": "WCTE"
       }
     },
     {
@@ -7382,6 +8218,9 @@
           "title": "KACV-TV",
           "url": "https://en.wikipedia.org/wiki/KACV-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KACV-TV"
+          ],
           "branding": "Panhandle PBS",
           "owner": "Amarillo College(Amarillo Junior College District)",
           "facilityId": 1236,
@@ -7389,7 +8228,8 @@
             "lat": 35.374917,
             "lng": -101.882583
           },
-          "website": "http://www.panhandlepbs.org"
+          "website": "http://www.panhandlepbs.org",
+          "requested": "KACV-TV"
         }
       ],
       "transmitters": [],
@@ -7397,6 +8237,9 @@
         "title": "KACV-TV",
         "url": "https://en.wikipedia.org/wiki/KACV-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KACV-TV"
+        ],
         "branding": "Panhandle PBS",
         "owner": "Amarillo College(Amarillo Junior College District)",
         "facilityId": 1236,
@@ -7404,7 +8247,8 @@
           "lat": 35.374917,
           "lng": -101.882583
         },
-        "website": "http://www.panhandlepbs.org"
+        "website": "http://www.panhandlepbs.org",
+        "requested": "KACV-TV"
       }
     },
     {
@@ -7426,6 +8270,9 @@
           "title": "KLRU",
           "url": "https://en.wikipedia.org/wiki/KLRU",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KLRU"
+          ],
           "branding": "Austin PBS",
           "owner": "Capital of Texas Public Telecommunications Council",
           "facilityId": 8564,
@@ -7433,7 +8280,8 @@
             "lat": 30.32194,
             "lng": -97.80333
           },
-          "website": "http://www.austinpbs.org/"
+          "website": "http://www.austinpbs.org/",
+          "requested": "KLRU"
         }
       ],
       "transmitters": [],
@@ -7441,6 +8289,9 @@
         "title": "KLRU",
         "url": "https://en.wikipedia.org/wiki/KLRU",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KLRU"
+        ],
         "branding": "Austin PBS",
         "owner": "Capital of Texas Public Telecommunications Council",
         "facilityId": 8564,
@@ -7448,7 +8299,8 @@
           "lat": 30.32194,
           "lng": -97.80333
         },
-        "website": "http://www.austinpbs.org/"
+        "website": "http://www.austinpbs.org/",
+        "requested": "KLRU"
       }
     },
     {
@@ -7470,6 +8322,9 @@
           "title": "KAMU-TV",
           "url": "https://en.wikipedia.org/wiki/KAMU-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KAMU-TV"
+          ],
           "branding": "KAMU PBS",
           "owner": "Texas A&M University",
           "facilityId": 65301,
@@ -7477,7 +8332,8 @@
             "lat": 30.63,
             "lng": -96.34278
           },
-          "website": "https://kamu.tamu.edu/"
+          "website": "https://kamu.tamu.edu/",
+          "requested": "KAMU-TV"
         }
       ],
       "transmitters": [],
@@ -7485,6 +8341,9 @@
         "title": "KAMU-TV",
         "url": "https://en.wikipedia.org/wiki/KAMU-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KAMU-TV"
+        ],
         "branding": "KAMU PBS",
         "owner": "Texas A&M University",
         "facilityId": 65301,
@@ -7492,7 +8351,8 @@
           "lat": 30.63,
           "lng": -96.34278
         },
-        "website": "https://kamu.tamu.edu/"
+        "website": "https://kamu.tamu.edu/",
+        "requested": "KAMU-TV"
       }
     },
     {
@@ -7514,6 +8374,9 @@
           "title": "KEDT",
           "url": "https://en.wikipedia.org/wiki/KEDT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KEDT"
+          ],
           "branding": "KEDT",
           "owner": "South Texas Public Broadcasting, Inc.",
           "facilityId": 58408,
@@ -7521,7 +8384,8 @@
             "lat": 27.65583,
             "lng": -97.56556
           },
-          "website": "https://www.kedt.org/"
+          "website": "https://www.kedt.org/",
+          "requested": "KEDT"
         }
       ],
       "transmitters": [],
@@ -7529,6 +8393,9 @@
         "title": "KEDT",
         "url": "https://en.wikipedia.org/wiki/KEDT",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KEDT"
+        ],
         "branding": "KEDT",
         "owner": "South Texas Public Broadcasting, Inc.",
         "facilityId": 58408,
@@ -7536,7 +8403,8 @@
           "lat": 27.65583,
           "lng": -97.56556
         },
-        "website": "https://www.kedt.org/"
+        "website": "https://www.kedt.org/",
+        "requested": "KEDT"
       }
     },
     {
@@ -7558,6 +8426,9 @@
           "title": "KERA-TV",
           "url": "https://en.wikipedia.org/wiki/KERA-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KERA-TV"
+          ],
           "branding": "KERA",
           "owner": "North Texas Public Broadcasting, Inc.",
           "facilityId": 49324,
@@ -7565,7 +8436,8 @@
             "lat": 32.54333,
             "lng": -96.95917
           },
-          "website": "https://www.kera.org/tv/"
+          "website": "https://www.kera.org/tv/",
+          "requested": "KERA-TV"
         }
       ],
       "transmitters": [],
@@ -7573,6 +8445,9 @@
         "title": "KERA-TV",
         "url": "https://en.wikipedia.org/wiki/KERA-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KERA-TV"
+        ],
         "branding": "KERA",
         "owner": "North Texas Public Broadcasting, Inc.",
         "facilityId": 49324,
@@ -7580,7 +8455,8 @@
           "lat": 32.54333,
           "lng": -96.95917
         },
-        "website": "https://www.kera.org/tv/"
+        "website": "https://www.kera.org/tv/",
+        "requested": "KERA-TV"
       }
     },
     {
@@ -7602,6 +8478,9 @@
           "title": "KCOS (TV)",
           "url": "https://en.wikipedia.org/wiki/KCOS_(TV)",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KCOS"
+          ],
           "branding": "PBS El PasoTexas Tech Public Media",
           "owner": "Texas Tech University",
           "facilityId": 19117,
@@ -7609,7 +8488,8 @@
             "lat": 31.7875,
             "lng": -106.48028
           },
-          "website": "https://www.kcostv.org/"
+          "website": "https://www.kcostv.org/",
+          "requested": "KCOS (TV)"
         }
       ],
       "transmitters": [],
@@ -7617,6 +8497,9 @@
         "title": "KCOS (TV)",
         "url": "https://en.wikipedia.org/wiki/KCOS_(TV)",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KCOS"
+        ],
         "branding": "PBS El PasoTexas Tech Public Media",
         "owner": "Texas Tech University",
         "facilityId": 19117,
@@ -7624,7 +8507,8 @@
           "lat": 31.7875,
           "lng": -106.48028
         },
-        "website": "https://www.kcostv.org/"
+        "website": "https://www.kcostv.org/",
+        "requested": "KCOS (TV)"
       }
     },
     {
@@ -7643,30 +8527,38 @@
       "problems": [],
       "stations": [
         {
-          "title": "KCWT-CD",
-          "url": "https://en.wikipedia.org/wiki/KCWT-CD",
+          "title": "KMBH-CD",
+          "url": "https://en.wikipedia.org/wiki/KMBH-CD",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KMBH-CD"
+          ],
           "branding": "PBS Rio Grande Valley",
           "owner": "Entravision Communications(Entravision Holdings, LLC)",
           "facilityId": 40058,
           "coords": {
             "lat": 26.14111,
             "lng": -97.83444
-          }
+          },
+          "requested": "KCWT-CD"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "KCWT-CD",
-        "url": "https://en.wikipedia.org/wiki/KCWT-CD",
+        "title": "KMBH-CD",
+        "url": "https://en.wikipedia.org/wiki/KMBH-CD",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KMBH-CD"
+        ],
         "branding": "PBS Rio Grande Valley",
         "owner": "Entravision Communications(Entravision Holdings, LLC)",
         "facilityId": 40058,
         "coords": {
           "lat": 26.14111,
           "lng": -97.83444
-        }
+        },
+        "requested": "KCWT-CD"
       }
     },
     {
@@ -7688,6 +8580,9 @@
           "title": "KUHT",
           "url": "https://en.wikipedia.org/wiki/KUHT",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KUHT"
+          ],
           "branding": "Houston Public Media PBS",
           "owner": "University of Houston(University of Houston System)",
           "facilityId": 69269,
@@ -7695,7 +8590,8 @@
             "lat": 29.57472,
             "lng": -95.49389
           },
-          "website": "https://www.houstonpublicmedia.org/"
+          "website": "https://www.houstonpublicmedia.org/",
+          "requested": "KUHT"
         }
       ],
       "transmitters": [],
@@ -7703,6 +8599,9 @@
         "title": "KUHT",
         "url": "https://en.wikipedia.org/wiki/KUHT",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KUHT"
+        ],
         "branding": "Houston Public Media PBS",
         "owner": "University of Houston(University of Houston System)",
         "facilityId": 69269,
@@ -7710,7 +8609,8 @@
           "lat": 29.57472,
           "lng": -95.49389
         },
-        "website": "https://www.houstonpublicmedia.org/"
+        "website": "https://www.houstonpublicmedia.org/",
+        "requested": "KUHT"
       }
     },
     {
@@ -7737,6 +8637,9 @@
           "title": "KTTZ-TV",
           "url": "https://en.wikipedia.org/wiki/KTTZ-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KTTZ-TV"
+          ],
           "branding": "Texas Tech Public Media",
           "owner": "Texas Tech University",
           "facilityId": 65355,
@@ -7744,14 +8647,18 @@
             "lat": 33.58194,
             "lng": -101.89083
           },
-          "website": "https://tv.kttz.org/"
+          "website": "https://tv.kttz.org/",
+          "requested": "KTTZ-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Texas Tech Public Media",
-        "url": "https://en.wikipedia.org/wiki/Texas_Tech_Public_Media",
+        "title": "KTTZ-TV",
+        "url": "https://en.wikipedia.org/wiki/KTTZ-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KTTZ-TV"
+        ],
         "branding": "Texas Tech Public Media",
         "owner": "Texas Tech University",
         "facilityId": 65355,
@@ -7759,7 +8666,8 @@
           "lat": 33.58194,
           "lng": -101.89083
         },
-        "website": "https://tv.kttz.org/"
+        "website": "https://tv.kttz.org/",
+        "requested": "Texas Tech Public Media"
       }
     },
     {
@@ -7786,6 +8694,9 @@
           "title": "KPBT-TV",
           "url": "https://en.wikipedia.org/wiki/KPBT-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KPBT-TV"
+          ],
           "branding": "Basin PBS",
           "owner": "Permian Basin Public Telecommunications, Inc.",
           "facilityId": 50044,
@@ -7793,14 +8704,18 @@
             "lat": 32.08639,
             "lng": -102.28667
           },
-          "website": "http://www.basinpbs.org/"
+          "website": "http://www.basinpbs.org/",
+          "requested": "KPBT-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Basin PBS",
-        "url": "https://en.wikipedia.org/wiki/Basin_PBS",
+        "title": "KPBT-TV",
+        "url": "https://en.wikipedia.org/wiki/KPBT-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KPBT-TV"
+        ],
         "branding": "Basin PBS",
         "owner": "Permian Basin Public Telecommunications, Inc.",
         "facilityId": 50044,
@@ -7808,7 +8723,8 @@
           "lat": 32.08639,
           "lng": -102.28667
         },
-        "website": "http://www.basinpbs.org/"
+        "website": "http://www.basinpbs.org/",
+        "requested": "Basin PBS"
       }
     },
     {
@@ -7830,6 +8746,9 @@
           "title": "KLRN",
           "url": "https://en.wikipedia.org/wiki/KLRN",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KLRN"
+          ],
           "branding": "KLRN",
           "owner": "Alamo Public Telecommunications Council",
           "facilityId": 749,
@@ -7837,7 +8756,8 @@
             "lat": 29.32722,
             "lng": -98.35472
           },
-          "website": "https://www.klrn.org/"
+          "website": "https://www.klrn.org/",
+          "requested": "KLRN"
         }
       ],
       "transmitters": [],
@@ -7845,6 +8765,9 @@
         "title": "KLRN",
         "url": "https://en.wikipedia.org/wiki/KLRN",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KLRN"
+        ],
         "branding": "KLRN",
         "owner": "Alamo Public Telecommunications Council",
         "facilityId": 749,
@@ -7852,7 +8775,8 @@
           "lat": 29.32722,
           "lng": -98.35472
         },
-        "website": "https://www.klrn.org/"
+        "website": "https://www.klrn.org/",
+        "requested": "KLRN"
       }
     },
     {
@@ -7891,9 +8815,12 @@
         }
       ],
       "primary": {
-        "title": "PBS Utah",
-        "url": "https://en.wikipedia.org/wiki/PBS_Utah",
+        "title": "KUED",
+        "url": "https://en.wikipedia.org/wiki/KUED",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KUED"
+        ],
         "branding": "PBS Utah",
         "owner": "University of Utah",
         "facilityId": 69396,
@@ -7901,7 +8828,8 @@
           "lat": 40.65917,
           "lng": -112.20278
         },
-        "website": "https://www.pbsutah.org/"
+        "website": "https://www.pbsutah.org/",
+        "requested": "PBS Utah"
       }
     },
     {
@@ -7923,6 +8851,9 @@
           "title": "WTJX-TV",
           "url": "https://en.wikipedia.org/wiki/WTJX-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WTJX-TV"
+          ],
           "branding": "PBS WTJX",
           "owner": "Virgin Islands Public Broadcasting System",
           "facilityId": 70287,
@@ -7930,7 +8861,8 @@
             "lat": 18.355778,
             "lng": -64.947639
           },
-          "website": "https://www.wtjx.org/"
+          "website": "https://www.wtjx.org/",
+          "requested": "WTJX-TV"
         }
       ],
       "transmitters": [],
@@ -7938,6 +8870,9 @@
         "title": "WTJX-TV",
         "url": "https://en.wikipedia.org/wiki/WTJX-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WTJX-TV"
+        ],
         "branding": "PBS WTJX",
         "owner": "Virgin Islands Public Broadcasting System",
         "facilityId": 70287,
@@ -7945,7 +8880,8 @@
           "lat": 18.355778,
           "lng": -64.947639
         },
-        "website": "https://www.wtjx.org/"
+        "website": "https://www.wtjx.org/",
+        "requested": "WTJX-TV"
       }
     },
     {
@@ -8014,7 +8950,8 @@
         "title": "Vermont Public",
         "url": "https://en.wikipedia.org/wiki/Vermont_Public",
         "retrievedAt": "2026-10-18",
-        "website": "http://vermontpublic.org"
+        "website": "http://vermontpublic.org",
+        "requested": "Vermont Public"
       }
     },
     {
@@ -8036,6 +8973,9 @@
           "title": "WHRO-TV",
           "url": "https://en.wikipedia.org/wiki/WHRO-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WHRO-TV"
+          ],
           "branding": "WHRO",
           "owner": "Hampton Roads Educational Telecommunications Association",
           "facilityId": 25932,
@@ -8043,7 +8983,8 @@
             "lat": 36.808833,
             "lng": -76.503139
           },
-          "website": "https://whro.org/"
+          "website": "https://whro.org/",
+          "requested": "WHRO-TV"
         }
       ],
       "transmitters": [],
@@ -8051,6 +8992,9 @@
         "title": "WHRO-TV",
         "url": "https://en.wikipedia.org/wiki/WHRO-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WHRO-TV"
+        ],
         "branding": "WHRO",
         "owner": "Hampton Roads Educational Telecommunications Association",
         "facilityId": 25932,
@@ -8058,7 +9002,8 @@
           "lat": 36.808833,
           "lng": -76.503139
         },
-        "website": "https://whro.org/"
+        "website": "https://whro.org/",
+        "requested": "WHRO-TV"
       }
     },
     {
@@ -8085,6 +9030,10 @@
           "title": "WCVE-TV",
           "url": "https://en.wikipedia.org/wiki/WCVE-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WCVE-TV",
+            "WHTJ"
+          ],
           "branding": "VPM PBS",
           "owner": "VPM Media Corporation",
           "facilityId": 9987,
@@ -8092,7 +9041,8 @@
             "lat": 37.512667,
             "lng": -77.601333
           },
-          "website": "https://www.vpm.org/"
+          "website": "https://www.vpm.org/",
+          "requested": "WCVE-TV"
         }
       ],
       "transmitters": [],
@@ -8100,7 +9050,8 @@
         "title": "VPM Media Corporation",
         "url": "https://en.wikipedia.org/wiki/VPM_Media_Corporation",
         "retrievedAt": "2026-10-18",
-        "website": "http://www.vpm.org"
+        "website": "http://www.vpm.org",
+        "requested": "VPM Media Corporation"
       }
     },
     {
@@ -8127,6 +9078,9 @@
           "title": "WBRA-TV",
           "url": "https://en.wikipedia.org/wiki/WBRA-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "WBRA-TV"
+          ],
           "branding": "Blue Ridge PBS",
           "owner": "Blue Ridge Public Television, Inc.",
           "facilityId": 5981,
@@ -8134,7 +9088,8 @@
             "lat": 37.19611,
             "lng": -80.15444
           },
-          "website": "http://www.blueridgepbs.org/"
+          "website": "http://www.blueridgepbs.org/",
+          "requested": "WBRA-TV"
         }
       ],
       "transmitters": [
@@ -8158,9 +9113,12 @@
         }
       ],
       "primary": {
-        "title": "Blue Ridge PBS",
-        "url": "https://en.wikipedia.org/wiki/Blue_Ridge_PBS",
+        "title": "WBRA-TV",
+        "url": "https://en.wikipedia.org/wiki/WBRA-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WBRA-TV"
+        ],
         "branding": "Blue Ridge PBS",
         "owner": "Blue Ridge Public Television, Inc.",
         "facilityId": 5981,
@@ -8168,7 +9126,8 @@
           "lat": 37.19611,
           "lng": -80.15444
         },
-        "website": "http://www.blueridgepbs.org/"
+        "website": "http://www.blueridgepbs.org/",
+        "requested": "Blue Ridge PBS"
       }
     },
     {
@@ -8192,7 +9151,8 @@
         "url": "https://en.wikipedia.org/wiki/PBS_Appalachia_Virginia",
         "retrievedAt": "2026-10-18",
         "owner": "Blue Ridge Public Television, Inc.",
-        "website": "https://www.pbsavirginia.org/"
+        "website": "https://www.pbsavirginia.org/",
+        "requested": "PBS Appalachia Virginia"
       }
     },
     {
@@ -8219,6 +9179,9 @@
           "title": "KTNW",
           "url": "https://en.wikipedia.org/wiki/KTNW",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KTNW"
+          ],
           "branding": "Northwest Public Broadcasting",
           "owner": "Washington State University",
           "facilityId": 71023,
@@ -8226,7 +9189,8 @@
             "lat": 46.103556,
             "lng": -119.129056
           },
-          "website": "https://www.nwpb.org/"
+          "website": "https://www.nwpb.org/",
+          "requested": "KTNW"
         }
       ],
       "transmitters": [],
@@ -8235,7 +9199,8 @@
         "url": "https://en.wikipedia.org/wiki/Northwest_Public_Broadcasting",
         "retrievedAt": "2026-10-18",
         "owner": "Washington State University",
-        "website": "https://www.nwpb.org/"
+        "website": "https://www.nwpb.org/",
+        "requested": "Northwest Public Broadcasting"
       }
     },
     {
@@ -8262,6 +9227,9 @@
           "title": "KCTS-TV",
           "url": "https://en.wikipedia.org/wiki/KCTS-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KCTS-TV"
+          ],
           "branding": "Cascade PBS",
           "owner": "Cascade Public Media",
           "facilityId": 33749,
@@ -8269,14 +9237,18 @@
             "lat": 47.61583,
             "lng": -122.30889
           },
-          "website": "http://www.kcts9.org/"
+          "website": "http://www.kcts9.org/",
+          "requested": "KCTS-TV"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "Cascade PBS",
-        "url": "https://en.wikipedia.org/wiki/Cascade_PBS",
+        "title": "KCTS-TV",
+        "url": "https://en.wikipedia.org/wiki/KCTS-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KCTS-TV"
+        ],
         "branding": "Cascade PBS",
         "owner": "Cascade Public Media",
         "facilityId": 33749,
@@ -8284,7 +9256,8 @@
           "lat": 47.61583,
           "lng": -122.30889
         },
-        "website": "http://www.kcts9.org/"
+        "website": "http://www.kcts9.org/",
+        "requested": "Cascade PBS"
       }
     },
     {
@@ -8311,6 +9284,10 @@
           "title": "KBTC-TV",
           "url": "https://en.wikipedia.org/wiki/KBTC-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KBTC-TV",
+            "KCKA"
+          ],
           "branding": "KBTC PBS",
           "owner": "Bates Technical College",
           "facilityId": 62469,
@@ -8318,20 +9295,8 @@
             "lat": 47.278722,
             "lng": -122.512889
           },
-          "website": "https://www.kbtc.org/"
-        },
-        {
-          "title": "KCKA",
-          "url": "https://en.wikipedia.org/wiki/KCKA",
-          "retrievedAt": "2026-10-18",
-          "branding": "KBTC PBS",
-          "owner": "Bates Technical College",
-          "facilityId": 62469,
-          "coords": {
-            "lat": 47.278722,
-            "lng": -122.512889
-          },
-          "website": "https://www.kbtc.org/"
+          "website": "https://www.kbtc.org/",
+          "requested": "KBTC-TV"
         }
       ],
       "transmitters": [],
@@ -8339,6 +9304,10 @@
         "title": "KBTC-TV",
         "url": "https://en.wikipedia.org/wiki/KBTC-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KBTC-TV",
+          "KCKA"
+        ],
         "branding": "KBTC PBS",
         "owner": "Bates Technical College",
         "facilityId": 62469,
@@ -8346,7 +9315,8 @@
           "lat": 47.278722,
           "lng": -122.512889
         },
-        "website": "https://www.kbtc.org/"
+        "website": "https://www.kbtc.org/",
+        "requested": "KBTC-TV"
       }
     },
     {
@@ -8368,6 +9338,9 @@
           "title": "KSPS-TV",
           "url": "https://en.wikipedia.org/wiki/KSPS-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KSPS-TV"
+          ],
           "branding": "KSPS PBS",
           "owner": "Friends of KSPS",
           "facilityId": 61956,
@@ -8375,7 +9348,8 @@
             "lat": 47.57611,
             "lng": -117.30056
           },
-          "website": "https://www.ksps.org/"
+          "website": "https://www.ksps.org/",
+          "requested": "KSPS-TV"
         }
       ],
       "transmitters": [],
@@ -8383,6 +9357,9 @@
         "title": "KSPS-TV",
         "url": "https://en.wikipedia.org/wiki/KSPS-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KSPS-TV"
+        ],
         "branding": "KSPS PBS",
         "owner": "Friends of KSPS",
         "facilityId": 61956,
@@ -8390,7 +9367,8 @@
           "lat": 47.57611,
           "lng": -117.30056
         },
-        "website": "https://www.ksps.org/"
+        "website": "https://www.ksps.org/",
+        "requested": "KSPS-TV"
       }
     },
     {
@@ -8409,9 +9387,12 @@
       "problems": [],
       "stations": [
         {
-          "title": "KYVE",
-          "url": "https://en.wikipedia.org/wiki/KYVE",
+          "title": "KCTS-TV",
+          "url": "https://en.wikipedia.org/wiki/KCTS-TV",
           "retrievedAt": "2026-10-18",
+          "callSigns": [
+            "KCTS-TV"
+          ],
           "branding": "Cascade PBS",
           "owner": "Cascade Public Media",
           "facilityId": 33749,
@@ -8419,14 +9400,18 @@
             "lat": 47.61583,
             "lng": -122.30889
           },
-          "website": "http://www.kcts9.org/"
+          "website": "http://www.kcts9.org/",
+          "requested": "KYVE"
         }
       ],
       "transmitters": [],
       "primary": {
-        "title": "KYVE",
-        "url": "https://en.wikipedia.org/wiki/KYVE",
+        "title": "KCTS-TV",
+        "url": "https://en.wikipedia.org/wiki/KCTS-TV",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "KCTS-TV"
+        ],
         "branding": "Cascade PBS",
         "owner": "Cascade Public Media",
         "facilityId": 33749,
@@ -8434,7 +9419,8 @@
           "lat": 47.61583,
           "lng": -122.30889
         },
-        "website": "http://www.kcts9.org/"
+        "website": "http://www.kcts9.org/",
+        "requested": "KYVE"
       }
     },
     {
@@ -8486,7 +9472,8 @@
         "url": "https://en.wikipedia.org/wiki/West_Virginia_Public_Broadcasting",
         "retrievedAt": "2026-10-18",
         "owner": "West Virginia Educational Broadcasting Authority",
-        "website": "http://wvpublic.org/"
+        "website": "http://wvpublic.org/",
+        "requested": "West Virginia Public Broadcasting"
       }
     },
     {
@@ -8565,7 +9552,8 @@
         "url": "https://en.wikipedia.org/wiki/PBS_Wisconsin",
         "retrievedAt": "2026-10-18",
         "owner": "WHA-TV: University of Wisconsin–MadisonOther stations: State of Wisconsin – Educational Communications Board",
-        "website": "https://pbswisconsin.org/"
+        "website": "https://pbswisconsin.org/",
+        "requested": "PBS Wisconsin"
       }
     },
     {
@@ -8588,6 +9576,10 @@
         "title": "Milwaukee PBS",
         "url": "https://en.wikipedia.org/wiki/Milwaukee_PBS",
         "retrievedAt": "2026-10-18",
+        "callSigns": [
+          "WMVS",
+          "WMVT"
+        ],
         "branding": "Milwaukee PBS",
         "owner": "Milwaukee Area Technical College(Milwaukee Area Technical College District Board)",
         "facilityId": 42663,
@@ -8595,7 +9587,8 @@
           "lat": 43.096167,
           "lng": -87.90417
         },
-        "website": "https://www.milwaukeepbs.org/"
+        "website": "https://www.milwaukeepbs.org/",
+        "requested": "Milwaukee PBS"
       }
     },
     {
@@ -8647,7 +9640,8 @@
         "url": "https://en.wikipedia.org/wiki/Wyoming_PBS",
         "retrievedAt": "2026-10-18",
         "owner": "Central Wyoming College",
-        "website": "https://wyomingpbs.org"
+        "website": "https://wyomingpbs.org",
+        "requested": "Wyoming PBS"
       }
     }
   ]

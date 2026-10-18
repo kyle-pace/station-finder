@@ -1,0 +1,6206 @@
+[
+  {
+    "id": "alaska-public-media",
+    "name": "Alaska Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "AK",
+    "website": "https://alaskapublic.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-804"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Alaska_Public_Media",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kuac",
+    "name": "KUAC",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Fairbanks",
+    "state": "AK",
+    "owner": "University of Alaska Fairbanks",
+    "website": "https://kuac.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69315"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KUAC-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KUAC-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "alabama-public-television",
+    "name": "Alabama Public Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "AL",
+    "owner": "Alabama Educational Television Commission",
+    "website": "https://www.aptv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-706",
+      "fcc-717",
+      "fcc-711",
+      "fcc-714",
+      "fcc-721",
+      "fcc-715",
+      "fcc-710",
+      "fcc-713",
+      "fcc-720"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Alabama_Public_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Alabama_Public_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "arkansas-tv",
+    "name": "Arkansas TV",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "AR",
+    "owner": "Arkansas Educational Television Commission",
+    "website": "https://www.arkansastv.gov/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-2767",
+      "fcc-2777",
+      "fcc-2768",
+      "fcc-2770",
+      "fcc-92872",
+      "fcc-2769"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Arkansas_TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Arkansas_TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kvzk",
+    "name": "KVZK",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Pago Pago",
+    "state": "AS",
+    "owner": "Office of Public Information (Government of American Samoa)",
+    "website": "https://www.kvzktv.com/",
+    "apps": [],
+    "facilityIds": [
+      "wp-kvzk-tv"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KVZK-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KVZK-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "arizona-pbs",
+    "name": "Arizona PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Phoenix",
+    "state": "AZ",
+    "owner": "Arizona State University(Arizona Board of Regents for Arizona State University)",
+    "website": "https://www.azpbs.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://watch.azpbs.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-2728"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KAET",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KAET",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "azpm",
+    "name": "AZPM",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Tucson",
+    "state": "AZ",
+    "apps": [],
+    "facilityIds": [
+      "fcc-2731"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "keet",
+    "name": "KEET",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Eureka",
+    "state": "CA",
+    "owner": "Redwood Empire Public Television, Inc.",
+    "website": "https://www.keet.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-55435"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KEET",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KEET",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kixe",
+    "name": "KIXE",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Chico–Redding",
+    "state": "CA",
+    "owner": "Northern California Educational Television Association, Inc.",
+    "website": "https://www.kixe.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-47285"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KIXE-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KIXE-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "klcs",
+    "name": "KLCS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Los Angeles",
+    "state": "CA",
+    "owner": "Los Angeles Unified School District",
+    "website": "https://www.klcs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-38430"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KLCS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KLCS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kpbs",
+    "name": "KPBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "San Diego",
+    "state": "CA",
+    "owner": "San Diego State University(The Board of Trustees of the California State University for San Diego State University)",
+    "website": "https://www.kpbs.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://plus.kpbs.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-6124"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KPBS_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KPBS_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kqed-and-kqeh",
+    "name": "KQED and KQEH",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "San Francisco",
+    "state": "CA",
+    "owner": "KQED Inc.",
+    "website": "https://www.kqed.org/tv/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-35500",
+      "fcc-35663"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KQED_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KQED_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kvcr-dt",
+    "name": "KVCR-DT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "San Bernardino",
+    "state": "CA",
+    "owner": "San Bernardino Community College District",
+    "website": "https://www.kvcr.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-58795"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KVCR-DT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KVCR-DT",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kvie",
+    "name": "KVIE",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Sacramento",
+    "state": "CA",
+    "owner": "KVIE, Inc.",
+    "website": "https://www.kvie.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://stream.kvie.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-35855"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KVIE",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KVIE",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "northern-california-public-media",
+    "name": "Northern California Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "San Francisco",
+    "state": "CA",
+    "apps": [],
+    "facilityIds": [
+      "fcc-57945"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-socal",
+    "name": "PBS SoCal",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Los Angeles",
+    "state": "CA",
+    "owner": "Public Media Group of Southern California",
+    "website": "https://pbssocal.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-4328",
+      "fcc-13058"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KOCE-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KOCE-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "valley-pbs",
+    "name": "Valley PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Fresno",
+    "state": "CA",
+    "owner": "Valley Public Television, Inc.",
+    "website": "https://valleypbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69733"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KVPT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KVPT",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kbdi",
+    "name": "KBDI",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Denver",
+    "state": "CO",
+    "owner": "Colorado Public Television, Inc.",
+    "website": "https://www.pbs12.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-22685"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KBDI-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KBDI-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "rocky-mountain-pbs",
+    "name": "Rocky Mountain PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "CO",
+    "owner": "Rocky Mountain Public Media, Inc.",
+    "website": "https://www.rmpbs.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://rmpbsplus.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-14040",
+      "fcc-69170",
+      "fcc-14042",
+      "fcc-84224"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Rocky_Mountain_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Rocky_Mountain_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "connecticut-public-television",
+    "name": "Connecticut Public Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "CT",
+    "owner": "Connecticut Public Broadcasting, Inc.",
+    "website": "https://www.ctpublic.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-13602",
+      "fcc-13607",
+      "fcc-13594",
+      "fcc-13595"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Connecticut_Public_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Connecticut_Public_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "weta",
+    "name": "WETA",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "owner": "Greater Washington Educational Telecommunications Association",
+    "website": "https://weta.org/watch",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://wetaplus.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-65670"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WETA-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WETA-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "whut",
+    "name": "WHUT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "owner": "Howard University",
+    "website": "https://www.whut.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-27772"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WHUT-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WHUT-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "south-florida-pbs",
+    "name": "South Florida PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Miami-Fort Lauderdale-West Palm Beach",
+    "state": "FL",
+    "apps": [],
+    "facilityIds": [
+      "fcc-13456",
+      "fcc-61084"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wedu-and-wedq",
+    "name": "WEDU and WEDQ",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Tampa",
+    "state": "FL",
+    "owner": "Florida West Coast Public Broadcasting, Inc.",
+    "website": "https://www.wedu.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-21808",
+      "fcc-69338"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WEDU",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WEDU",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wfsu",
+    "name": "WFSU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Tallahassee",
+    "state": "FL",
+    "owner": "Florida State University",
+    "website": "https://wfsu.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-21801"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WFSU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WFSU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wgcu",
+    "name": "WGCU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Fort Myers",
+    "state": "FL",
+    "owner": "Board of Trustees, Florida Gulf Coast University",
+    "website": "https://wgcu.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-62388"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WGCU_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WGCU_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wjct",
+    "name": "WJCT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Jacksonville",
+    "state": "FL",
+    "owner": "WJCT, Inc.",
+    "website": "https://www.wjct.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-73130"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WJCT_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WJCT_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wlrn",
+    "name": "WLRN",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Miami-Fort Lauderdale",
+    "state": "FL",
+    "owner": "Miami-Dade County Public Schools(The School Board of Miami-Dade County, Florida)",
+    "website": "https://www.wlrn.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-66358"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WLRN-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WLRN-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wucf",
+    "name": "WUCF",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Orlando",
+    "state": "FL",
+    "owner": "University of Central Florida(University of Central Florida Board of Trustees)",
+    "website": "https://www.wucf.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-12855"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WUCF-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WUCF-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wuft",
+    "name": "WUFT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Gainesville",
+    "state": "FL",
+    "owner": "University of Florida(Board of Trustees, University of Florida)",
+    "website": "https://www.wuft.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69440"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WUFT_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WUFT_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "georgia-public-broadcasting",
+    "name": "Georgia Public Broadcasting",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "GA",
+    "owner": "Georgia Public Telecommunications Commission",
+    "website": "https://www.gpb.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-23917",
+      "fcc-23930",
+      "fcc-23937",
+      "fcc-23948",
+      "fcc-23918",
+      "fcc-23935",
+      "fcc-23942",
+      "fcc-23947",
+      "fcc-23929"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Georgia_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Georgia_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wabe",
+    "name": "WABE",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Atlanta",
+    "state": "GA",
+    "owner": "Atlanta Public Schools(Board of Education of the City of Atlanta)",
+    "website": "https://wabe.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-4190"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WABE-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WABE-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-guam",
+    "name": "PBS Guam",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Hagåtña",
+    "state": "GU",
+    "owner": "Guam Educational Telecommunications Corporation",
+    "website": "https://pbsguam.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-25511"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KGTF",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KGTF",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-hawai-i",
+    "name": "PBS Hawai'i",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "HI",
+    "owner": "Hawaii Public Television Foundation",
+    "website": "https://www.pbshawaii.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-26431"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KHET",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KHET",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "iowa-pbs",
+    "name": "Iowa PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "IA",
+    "owner": "Iowa Public Broadcasting Board",
+    "website": "https://www.iowapbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-29108",
+      "fcc-29102",
+      "fcc-29085",
+      "fcc-29095",
+      "fcc-5471",
+      "fcc-29114",
+      "fcc-29096",
+      "fcc-29100",
+      "fcc-29086"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Iowa_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Iowa_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "idaho-public-television",
+    "name": "Idaho Public Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "ID",
+    "owner": "State of Idaho",
+    "website": "https://www.idahoptv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-62442",
+      "fcc-62424",
+      "fcc-62427",
+      "fcc-62430",
+      "fcc-62382"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Idaho_Public_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Idaho_Public_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "illinois-public-media",
+    "name": "Illinois Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Champaign–Springfield",
+    "state": "IL",
+    "apps": [],
+    "facilityIds": [
+      "fcc-68939"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wqpt",
+    "name": "WQPT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Moline",
+    "state": "IL",
+    "owner": "Western Illinois University",
+    "website": "https://www.wqpt.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-5468"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WQPT-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WQPT-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wsiu-and-wusi",
+    "name": "WSIU and WUSI",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Carbondale",
+    "state": "IL",
+    "owner": "Southern Illinois University(Board of Trustees of Southern Illinois University)",
+    "website": "https://www.wsiu.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-4297",
+      "fcc-70536",
+      "fcc-70537",
+      "fcc-71561"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WSIU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WSIU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wttw-and-wyin",
+    "name": "WTTW and WYIN",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Chicago",
+    "state": "IL",
+    "owner": "Window to the World Communications, Inc.",
+    "website": "https://www.wttw.com",
+    "apps": [],
+    "facilityIds": [
+      "fcc-10802",
+      "fcc-49803"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WTTW",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WTTW",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wtvp",
+    "name": "WTVP",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Peoria",
+    "state": "IL",
+    "owner": "Illinois Valley Public Telecommunications Corporation",
+    "website": "https://www.wtvp.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-28311"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WTVP",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WTVP",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ball-state-pbs",
+    "name": "Ball State PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Muncie",
+    "state": "IN",
+    "owner": "Ball State University",
+    "website": "https://ballstatepbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-3646"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WIPB",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WIPB",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "lakeshore-pbs",
+    "name": "Lakeshore PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Gary",
+    "state": "IN",
+    "owner": "Northwest Indiana Public Broadcasting, Inc.",
+    "website": "https://www.lakeshorepublicmedia.org",
+    "apps": [],
+    "facilityIds": [],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WYIN",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WYIN",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "michiana-pbs",
+    "name": "Michiana PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "South Bend",
+    "state": "IN",
+    "owner": "Michiana Public Broadcasting Corporation",
+    "website": "https://www.wnit.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-41671"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNIT_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNIT_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-fort-wayne",
+    "name": "PBS Fort Wayne",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Fort Wayne",
+    "state": "IN",
+    "owner": "Fort Wayne Public Television, Inc.",
+    "website": "https://www.pbsfortwayne.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-22108"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WFWA",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WFWA",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wfyi",
+    "name": "WFYI",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Indianapolis",
+    "state": "IN",
+    "owner": "Metropolitan Indianapolis Public Media, Inc.",
+    "website": "https://www.wfyi.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-41397"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WFYI_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WFYI_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wnin",
+    "name": "WNIN",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Evansville",
+    "state": "IN",
+    "owner": "WNIN Tri-State Public Media, Inc.",
+    "website": "https://www.wnin.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-67802"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNIN_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNIN_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wtiu",
+    "name": "WTIU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Bloomington",
+    "state": "IN",
+    "owner": "Indiana University(The Trustees of Indiana University)",
+    "website": "https://ipm.org/tv/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-66536"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WTIU",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WTIU",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ktwu",
+    "name": "KTWU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Topeka",
+    "state": "KS",
+    "owner": "Washburn University(Washburn University of Topeka)",
+    "website": "https://www.ktwu.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-70938"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KTWU",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KTWU",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-kansas",
+    "name": "PBS Kansas",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Wichita",
+    "state": "KS",
+    "owner": "Kansas Public Telecommunications Service, Inc.",
+    "website": "https://www.kpts.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-33345"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KPTS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KPTS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "smoky-hills-pbs",
+    "name": "Smoky Hills PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Hays–Dodge City",
+    "state": "KS",
+    "owner": "Smoky Hills Public Television Corporation",
+    "website": "https://www.smokyhillspbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-60675",
+      "fcc-60683",
+      "fcc-79258",
+      "fcc-162115"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Smoky_Hills_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Smoky_Hills_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kentucky-educational-television",
+    "name": "Kentucky Educational Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "KY",
+    "owner": "Kentucky Authority for Educational Television",
+    "website": "https://www.ket.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-34204",
+      "fcc-34171",
+      "fcc-34177",
+      "fcc-34196",
+      "fcc-34207",
+      "fcc-34212",
+      "fcc-34195",
+      "fcc-34202",
+      "fcc-34174",
+      "fcc-34205",
+      "fcc-34211",
+      "fcc-21432",
+      "fcc-65758",
+      "fcc-34200",
+      "fcc-34222",
+      "fcc-34181"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Kentucky_Educational_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Kentucky_Educational_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wku-pbs",
+    "name": "WKU PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Bowling Green",
+    "state": "KY",
+    "owner": "Western Kentucky University",
+    "website": "https://www.wkyupbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-71861"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WKYU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WKYU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "louisiana-public-broadcasting",
+    "name": "Louisiana Public Broadcasting",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "LA",
+    "owner": "Louisiana Educational Television Authority",
+    "website": "https://www.lpb.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-38586",
+      "fcc-38589",
+      "fcc-38591",
+      "fcc-38588",
+      "fcc-38587",
+      "fcc-38590"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Louisiana_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Louisiana_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wyes",
+    "name": "WYES",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "New Orleans",
+    "state": "LA",
+    "owner": "Greater New Orleans Educational Television Foundation",
+    "website": "https://www.wyes.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-25090"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WYES-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WYES-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "gbh",
+    "name": "GBH",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Boston",
+    "state": "MA",
+    "owner": "WGBH Educational Foundation",
+    "website": "https://www.wgbh.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-72099",
+      "fcc-72098"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WGBH-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WGBH-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "new-england-public-media",
+    "name": "New England Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Springfield",
+    "state": "MA",
+    "website": "https://nepm.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-72096"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/New_England_Public_Media",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "maryland-public-television",
+    "name": "Maryland Public Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "MD",
+    "owner": "Maryland Public Broadcasting Commission",
+    "website": "https://mpt.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-65942",
+      "fcc-65944",
+      "fcc-40626",
+      "fcc-65943",
+      "fcc-40619",
+      "fcc-40618"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Maryland_Public_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Maryland_Public_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "maine-public-broadcasting-network",
+    "name": "Maine Public Broadcasting Network",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "ME",
+    "owner": "Maine Public Broadcasting Corporation",
+    "website": "https://www.mainepublic.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-39659",
+      "fcc-39656",
+      "fcc-39648",
+      "fcc-39649",
+      "fcc-39662"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Maine_Public_Broadcasting_Network",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Maine_Public_Broadcasting_Network",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "cmu-public-television",
+    "name": "CMU Public Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Mount Pleasant",
+    "state": "MI",
+    "owner": "Central Michigan University",
+    "website": "https://www.wcmu.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-9908",
+      "fcc-9917",
+      "fcc-9922",
+      "fcc-9913"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WCMU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WCMU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "delta-college-public-media",
+    "name": "Delta College Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Flint",
+    "state": "MI",
+    "owner": "Delta College",
+    "website": "https://www.deltapublicmedia.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-16530"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WDCQ-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WDCQ-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "detroit-pbs",
+    "name": "Detroit PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Detroit",
+    "state": "MI",
+    "owner": "Detroit Public Media",
+    "website": "https://www.detroitpbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-16817"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WTVS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WTVS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wgvu-public-media",
+    "name": "WGVU Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Grand Rapids–Kalamazoo",
+    "state": "MI",
+    "owner": "Grand Valley State University",
+    "website": "https://www.wgvu.org/television/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-24784"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WGVU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WGVU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wkar",
+    "name": "WKAR",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "East Lansing",
+    "state": "MI",
+    "owner": "Michigan State University(Board of Trustees, Michigan State University)",
+    "website": "https://tv.wkar.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-6104"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WKAR-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WKAR-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wnmu",
+    "name": "WNMU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Marquette",
+    "state": "MI",
+    "owner": "Northern Michigan University(Board of Control, Northern Michigan University)",
+    "website": "https://wnmutv.nmu.edu/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-4318"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNMU_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNMU_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ksmq",
+    "name": "KSMQ",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Rochester",
+    "state": "MN",
+    "owner": "KSMQ Public Service Media, Inc.",
+    "website": "https://www.minnesotapbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-28510"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KSMQ-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KSMQ-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "lakeland-pbs",
+    "name": "Lakeland PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Bemidji–Brainerd",
+    "state": "MN",
+    "owner": "Northern Minnesota Public Television, Inc.",
+    "website": "https://lptv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-49578"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Lakeland_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Lakeland_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "minnesota-pbs",
+    "name": "Minnesota PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Minneapolis–Saint Paul",
+    "state": "MN",
+    "owner": "Twin Cities Public Television, Inc.",
+    "website": "https://www.minnesotapbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-68594"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Minnesota_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Minnesota_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-north",
+    "name": "PBS North",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Duluth",
+    "state": "MN",
+    "owner": "Duluth–Superior Area Educational Television Corporation",
+    "website": "https://pbsnorth.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-17726"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WDSE_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WDSE_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pioneer-pbs",
+    "name": "Pioneer PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Granite Falls",
+    "state": "MN",
+    "owner": "West Central Minnesota Educational TV Corp.",
+    "website": "https://www.pioneer.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-71549",
+      "fcc-59645",
+      "fcc-71562",
+      "fcc-55749",
+      "fcc-68708"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KWCM-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KWCM-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kansas-city-pbs",
+    "name": "Kansas City PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Kansas City",
+    "state": "MO",
+    "owner": "Public Television 19, Inc.",
+    "website": "https://www.kansascitypbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-53843"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KCPT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KCPT",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ketc",
+    "name": "KETC",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "St. Louis",
+    "state": "MO",
+    "owner": "St. Louis Regional Public Media, Inc.",
+    "website": "https://www.ninepbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-62182"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KETC",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KETC",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kmos",
+    "name": "KMOS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Jefferson City",
+    "state": "MO",
+    "owner": "University of Central Missouri",
+    "website": "https://www.kmos.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-4326"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KMOS-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KMOS-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ozarks-public-television",
+    "name": "Ozarks Public Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Springfield–Joplin",
+    "state": "MO",
+    "owner": "Missouri State University(Board of Governors of Missouri State University)",
+    "website": "https://www.optv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-51102"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Ozarks_Public_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Ozarks_Public_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "mississippi-public-broadcasting",
+    "name": "Mississippi Public Broadcasting",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "MS",
+    "owner": "Mississippi Authority for Educational Television",
+    "website": "https://www.mpbonline.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-43192",
+      "fcc-43170",
+      "fcc-43197",
+      "fcc-43176",
+      "fcc-43184",
+      "fcc-43193",
+      "fcc-43169",
+      "fcc-43168"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Mississippi_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Mississippi_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "montana-pbs",
+    "name": "Montana PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "MT",
+    "owner": "Montana State UniversityUniversity of Montana",
+    "website": "https://www.montanapbs.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-169030",
+      "fcc-66611",
+      "fcc-169028",
+      "fcc-68717",
+      "fcc-169027",
+      "fcc-43567",
+      "fcc-24287",
+      "fcc-5237"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Montana_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Montana_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-charlotte",
+    "name": "PBS Charlotte",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Charlotte",
+    "state": "NC",
+    "owner": "Central Piedmont Community College",
+    "website": "https://www.wtvi.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-10645"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WTVI",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WTVI",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-north-carolina",
+    "name": "PBS North Carolina",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "NC",
+    "owner": "University of North Carolina",
+    "website": "https://www.pbsnc.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69080",
+      "fcc-69292",
+      "fcc-69114",
+      "fcc-69300",
+      "fcc-69124",
+      "fcc-69332",
+      "fcc-69149",
+      "fcc-69360",
+      "fcc-69444",
+      "fcc-69397",
+      "fcc-69416",
+      "fcc-83822"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/PBS_North_Carolina",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/PBS_North_Carolina",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "prairie-public-television",
+    "name": "Prairie Public Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "ND",
+    "owner": "Prairie Public Broadcasting",
+    "website": "https://www.prairiepublic.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-53321",
+      "fcc-53320",
+      "fcc-53324",
+      "fcc-53313",
+      "fcc-53329",
+      "fcc-53318",
+      "fcc-53315",
+      "fcc-132606",
+      "fcc-162016"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Prairie_Public_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Prairie_Public_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "nebraska-public-media",
+    "name": "Nebraska Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "NE",
+    "owner": "KUON: University of Nebraska–LincolnOthers: Nebraska Educational Telecommunications Commission",
+    "website": "https://nebraskapublicmedia.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-47996",
+      "fcc-47981",
+      "fcc-47987",
+      "fcc-47975",
+      "fcc-66589",
+      "fcc-47971",
+      "fcc-47995",
+      "fcc-47973",
+      "fcc-47974"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Nebraska_Public_Media",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Nebraska_Public_Media",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "new-hampshire-pbs",
+    "name": "New Hampshire PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "NH",
+    "owner": "New Hampshire Public Broadcasting",
+    "website": "https://nhpbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69271",
+      "fcc-69237",
+      "fcc-69328",
+      "fcc-69056",
+      "fcc-69303"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/New_Hampshire_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/New_Hampshire_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "nj-pbs",
+    "name": "NJ PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "NJ",
+    "owner": "New Jersey Public Broadcasting Authority",
+    "website": "https://www.njpbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-48457",
+      "fcc-48477",
+      "fcc-48481",
+      "fcc-48465",
+      "fcc-48466",
+      "fcc-48484",
+      "fcc-48482"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/NJ_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/NJ_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wnet",
+    "name": "WNET",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Newark-New York City",
+    "state": "NJ",
+    "owner": "The WNET Group(WNET)",
+    "website": "https://www.thirteen.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-18795"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNET",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNET",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kenw",
+    "name": "KENW",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Portales",
+    "state": "NM",
+    "owner": "Eastern New Mexico University",
+    "website": "https://kenw.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-18338"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KENW_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KENW_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "krwg",
+    "name": "KRWG",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Las Cruces",
+    "state": "NM",
+    "owner": "Regents of New Mexico State University",
+    "website": "https://www.krwg.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-55516"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KRWG-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KRWG-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "new-mexico-pbs",
+    "name": "New Mexico PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Albuquerque–Santa Fe",
+    "state": "NM",
+    "owner": "University of New MexicoAlbuquerque Public Schools(The Regents of the University of New Mexico & the Board of Education of the City of Albuquerque, New Mexico)",
+    "website": "https://www.newmexicopbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-55528",
+      "fcc-84215"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KNME-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KNME-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-reno",
+    "name": "PBS Reno",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Reno",
+    "state": "NV",
+    "owner": "Channel 5 Public Broadcasting, Inc.",
+    "website": "https://www.pbsreno.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-10228"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KNPB",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KNPB",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "vegas-pbs",
+    "name": "Vegas PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Las Vegas",
+    "state": "NV",
+    "owner": "KLVX Communications Group(Clark County School District)",
+    "website": "https://www.vegaspbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-11683"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KLVX",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KLVX",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "buffalo-toronto-public-media",
+    "name": "Buffalo Toronto Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Buffalo",
+    "state": "NY",
+    "owner": "Buffalo Toronto Public Media(Western NY Public Broadcasting Association)",
+    "website": "https://www.btpm.org/watch/pbs",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://watch.btpm.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-71928"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNED-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNED-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "mountain-lake-pbs",
+    "name": "Mountain Lake PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Plattsburgh",
+    "state": "NY",
+    "owner": "Mountain Lake Public Telecommunications Council",
+    "website": "https://mountainlake.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-46755"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WCFE-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WCFE-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wcny",
+    "name": "WCNY",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Syracuse",
+    "state": "NY",
+    "owner": "The Public Broadcasting Council of Central New York, Inc.",
+    "website": "https://www.wcny.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-53734"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WCNY-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WCNY-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wliw",
+    "name": "WLIW",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Long Island-New York City",
+    "state": "NY",
+    "owner": "The WNET Group(WNET)",
+    "website": "https://www.wliw.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-38336"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WLIW_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WLIW_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wmht",
+    "name": "WMHT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Albany-Schenectady-Troy",
+    "state": "NY",
+    "owner": "WMHT Educational Telecommunications",
+    "website": "https://www.wmht.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-73263"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WMHT_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WMHT_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wpbs-and-wnpi-dt",
+    "name": "WPBS and WNPI-DT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Watertown–Norwood",
+    "state": "NY",
+    "owner": "St. Lawrence Valley Educational TV Council, Inc.",
+    "website": "https://www.wpbstv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-62136"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WPBS-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WPBS-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wskg",
+    "name": "WSKG",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Binghamton",
+    "state": "NY",
+    "owner": "WSKG Public Telecommunications Council",
+    "website": "https://wskg.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-74034"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WSKG-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WSKG-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wxxi",
+    "name": "WXXI",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Rochester",
+    "state": "NY",
+    "owner": "WXXI Public Broadcasting Council",
+    "website": "https://www.wxxi.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-57274"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WXXI-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WXXI-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ideastream-public-media",
+    "name": "Ideastream Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Cleveland",
+    "state": "OH",
+    "website": "https://ideastream.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-18753",
+      "fcc-18559"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Ideastream",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-western-reserve",
+    "name": "PBS Western Reserve",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Akron–Youngstown",
+    "state": "OH",
+    "owner": "Western Reserve Public Media(merger pending with Ideastream)(Northeastern Educational Television of Ohio, Inc.)",
+    "website": "https://www.pbswesternreserve.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-49439"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNEO",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNEO",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "think-tv",
+    "name": "Think TV",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Dayton",
+    "state": "OH",
+    "owner": "Public Media Connect(Greater Dayton Public Television, Inc.)",
+    "website": "https://thinktv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-25067",
+      "fcc-25065"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WPTD",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WPTD",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wbgu",
+    "name": "WBGU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Bowling Green",
+    "state": "OH",
+    "owner": "Bowling Green State University",
+    "website": "https://www.wbgutv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-6568"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WBGU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WBGU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wcet",
+    "name": "WCET",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Cincinnati",
+    "state": "OH",
+    "owner": "Public Media Connect(The Greater Cincinnati Television Educational Foundation)",
+    "website": "https://www.cetconnect.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-65666"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WCET_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WCET_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wgte",
+    "name": "WGTE",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Toledo",
+    "state": "OH",
+    "owner": "Public Broadcasting Foundation of Northwest Ohio",
+    "website": "https://www.wgte.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-66285"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WGTE-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WGTE-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wosu",
+    "name": "WOSU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Columbus",
+    "state": "OH",
+    "owner": "Ohio State University",
+    "website": "https://wosu.org/television/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-66190"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WOSU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WOSU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "woub-and-wouc",
+    "name": "WOUB and WOUC",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Athens",
+    "state": "OH",
+    "owner": "Ohio University(WOUB Public Media)",
+    "website": "https://woub.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-50147"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WOUB-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WOUB-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "oklahoma-educational-television-authority",
+    "name": "Oklahoma Educational Television Authority",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "OK",
+    "owner": "Oklahoma Educational Television Authority",
+    "website": "https://oeta.tv",
+    "apps": [],
+    "facilityIds": [
+      "fcc-50205",
+      "fcc-66195",
+      "fcc-50198",
+      "fcc-50194"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Oklahoma_Educational_Television_Authority",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Oklahoma_Educational_Television_Authority",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "oregon-public-broadcasting",
+    "name": "Oregon Public Broadcasting",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "OR",
+    "owner": "Oregon Public Broadcasting",
+    "website": "https://www.opb.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-50589",
+      "fcc-50590",
+      "fcc-50591",
+      "fcc-50588",
+      "fcc-50592"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Oregon_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Oregon_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "southern-oregon-pbs",
+    "name": "Southern Oregon PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Medford",
+    "state": "OR",
+    "owner": "Southern Oregon Public Television, Inc.",
+    "website": "https://www.sopbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-61350"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Southern_Oregon_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Southern_Oregon_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-39",
+    "name": "PBS 39",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Allentown",
+    "state": "PA",
+    "owner": "Lehigh Valley Public Media(Lehigh Valley Public Telecommunications Corp.)",
+    "website": "https://wlvt.org",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://watch.lehighvalleypublicmedia.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-36989",
+      "fcc-28480"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WLVT-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WLVT-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "whyy",
+    "name": "WHYY",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Philadelphia",
+    "state": "PA",
+    "owner": "WHYY, Inc.",
+    "website": "https://www.whyy.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://watch.whyy.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-72338"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WHYY-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WHYY-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "witf",
+    "name": "WITF",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Harrisburg",
+    "state": "PA",
+    "owner": "WITF, Inc.",
+    "website": "https://www.witf.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-73083"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WITF-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WITF-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wpsu",
+    "name": "WPSU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "State College–Johnstown",
+    "state": "PA",
+    "owner": "WHYY, Inc..mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:\"\\\"\"\"\\\"\"\"'\"\"'\"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url(\"//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url(\"//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url(\"//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg\")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url(\"//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg\")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}",
+    "website": "https://wpsu.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-66219"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WPSU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WPSU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wqed",
+    "name": "WQED",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Pittsburgh",
+    "state": "PA",
+    "owner": "WQED Multimedia",
+    "website": "https://www.wqed.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://plus.wqed.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-41315"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WQED_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WQED_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wqln",
+    "name": "WQLN",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Erie",
+    "state": "PA",
+    "owner": "Public Broadcasting of Northwest Pennsylvania, Inc.",
+    "website": "https://www.wqln.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-53716"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WQLN_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WQLN_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wvia",
+    "name": "WVIA",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Scranton",
+    "state": "PA",
+    "owner": "Northeast Pennsylvania Educational Television Association",
+    "website": "https://www.wvia.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-47929"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WVIA-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WVIA-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "sistema-tv",
+    "name": "Sistema TV",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "San Juan",
+    "state": "PR",
+    "owner": "Ana G. Méndez University(Sistema Universitario Ana G. Méndez, Inc.)",
+    "website": "https://sistematv.com/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-2174"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WMTJ",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WMTJ",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ocean-state-media",
+    "name": "Ocean State Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Providence",
+    "state": "RI",
+    "owner": "Ocean State Media Group",
+    "website": "https://www.oceanstatemedia.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-56092"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Ocean_State_Media",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Ocean_State_Media",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "south-carolina-educational-television",
+    "name": "South Carolina Educational Television",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "SC",
+    "owner": "South Carolina Educational Television Commission",
+    "website": "https://www.scetv.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://plus.scetv.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-61003",
+      "fcc-61007",
+      "fcc-61005",
+      "fcc-61013",
+      "fcc-61004",
+      "fcc-61008",
+      "fcc-61010",
+      "fcc-60931",
+      "fcc-61009",
+      "fcc-61011",
+      "fcc-61012"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/South_Carolina_Educational_Television",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/South_Carolina_Educational_Television",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "south-dakota-public-broadcasting",
+    "name": "South Dakota Public Broadcasting",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "SD",
+    "owner": "South Dakota Bureau of Information and Technology(South Dakota Board of Directors for Educational Telecommunications)",
+    "website": "https://www.sdpb.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-61072",
+      "fcc-61068",
+      "fcc-61067",
+      "fcc-61066",
+      "fcc-61064",
+      "fcc-61071",
+      "fcc-61063",
+      "fcc-61062",
+      "fcc-60728"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/South_Dakota_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/South_Dakota_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "east-tennessee-pbs",
+    "name": "East Tennessee PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Knoxville–Johnson City",
+    "state": "TN",
+    "owner": "East Tennessee Public Communications Corporation",
+    "website": "https://www.easttennesseepbs.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-18252"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WETP-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WETP-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "nashville-pbs",
+    "name": "Nashville PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Nashville",
+    "state": "TN",
+    "owner": "Nashville Public Television, Inc.",
+    "website": "https://www.wnpt.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://nashvillepbs.app/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-41398"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNPT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNPT",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wcte",
+    "name": "WCTE",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Nashville",
+    "state": "TN",
+    "owner": "Upper Cumberland Broadcast Council",
+    "website": "https://www.wcte.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69479"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WCTE",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WCTE",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "west-tn-pbs",
+    "name": "West TN PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Jackson",
+    "state": "TN",
+    "owner": "West Tennessee Public Television Council, Inc.",
+    "website": "https://www.westtnpbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-71645"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WLJT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WLJT",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wkno",
+    "name": "WKNO",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Memphis",
+    "state": "TN",
+    "owner": "Mid-South Public Communications Foundation",
+    "website": "https://www.wkno.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-42061"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WKNO_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WKNO_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wtci",
+    "name": "WTCI",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Chattanooga",
+    "state": "TN",
+    "owner": "The Greater Chattanooga Public Television Corporation",
+    "website": "https://www.wtcitv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-65667"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WTCI",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WTCI",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "austin-pbs",
+    "name": "Austin PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Austin",
+    "state": "TX",
+    "owner": "Capital of Texas Public Telecommunications Council",
+    "website": "https://www.austinpbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-8564"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KLRU",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KLRU",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "basin-pbs",
+    "name": "Basin PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Midland–Odessa",
+    "state": "TX",
+    "owner": "Permian Basin Public Telecommunications, Inc.",
+    "website": "https://www.basinpbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-50044"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KPBT-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KPBT-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "houston-public-media",
+    "name": "Houston Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Houston",
+    "state": "TX",
+    "owner": "University of Houston(University of Houston System)",
+    "website": "https://www.houstonpublicmedia.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69269"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KUHT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KUHT",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kamu",
+    "name": "KAMU",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Bryan–College Station",
+    "state": "TX",
+    "owner": "Texas A&M University",
+    "website": "https://kamu.tamu.edu/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-65301"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KAMU-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KAMU-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kedt",
+    "name": "KEDT",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Corpus Christi",
+    "state": "TX",
+    "owner": "South Texas Public Broadcasting, Inc.",
+    "website": "https://www.kedt.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-58408"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KEDT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KEDT",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kera",
+    "name": "KERA",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Dallas–Fort Worth",
+    "state": "TX",
+    "owner": "North Texas Public Broadcasting, Inc.",
+    "website": "https://www.kera.org/tv/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-49324"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KERA-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KERA-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "klrn",
+    "name": "KLRN",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "San Antonio",
+    "state": "TX",
+    "owner": "Alamo Public Telecommunications Council",
+    "website": "https://www.klrn.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-749"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KLRN",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KLRN",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "panhandle-pbs",
+    "name": "Panhandle PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Amarillo",
+    "state": "TX",
+    "owner": "Amarillo College(Amarillo Junior College District)",
+    "website": "https://www.panhandlepbs.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-1236"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KACV-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KACV-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-el-paso",
+    "name": "PBS El Paso",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "El Paso",
+    "state": "TX",
+    "owner": "Texas Tech University",
+    "website": "https://www.kcostv.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-19117"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KCOS_(TV)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KCOS_(TV)",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-rio-grande-valley",
+    "name": "PBS Rio Grande Valley",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Harlingen",
+    "state": "TX",
+    "owner": "Entravision Communications(Entravision Holdings, LLC)",
+    "apps": [],
+    "facilityIds": [],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KMBH-CD",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "texas-tech-public-media",
+    "name": "Texas Tech Public Media",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Lubbock",
+    "state": "TX",
+    "owner": "Texas Tech University",
+    "website": "https://tv.kttz.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-65355"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KTTZ-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KTTZ-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-utah",
+    "name": "PBS Utah",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "UT",
+    "owner": "University of Utah",
+    "website": "https://www.pbsutah.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69396",
+      "fcc-82576",
+      "fcc-82585"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KUED",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KUED",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "blue-ridge-pbs",
+    "name": "Blue Ridge PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Roanoke",
+    "state": "VA",
+    "owner": "Blue Ridge Public Television, Inc.",
+    "website": "https://www.blueridgepbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-5981",
+      "fcc-5985",
+      "fcc-5982"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WBRA-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WBRA-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-appalachia-virginia",
+    "name": "PBS Appalachia Virginia",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Southwest VA",
+    "state": "VA",
+    "owner": "Blue Ridge Public Television, Inc.",
+    "website": "https://www.pbsavirginia.org/",
+    "apps": [],
+    "facilityIds": [],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/PBS_Appalachia_Virginia",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/PBS_Appalachia_Virginia",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "vpm-pbs",
+    "name": "VPM PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Richmond",
+    "state": "VA",
+    "website": "https://www.vpm.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-9987"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/VPM_Media_Corporation",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "whro",
+    "name": "WHRO",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Norfolk",
+    "state": "VA",
+    "owner": "Hampton Roads Educational Telecommunications Association",
+    "website": "https://whro.org/",
+    "apps": [
+      {
+        "platform": "web",
+        "url": "https://video.whro.org/",
+        "source": "manual: station-app-pages.yaml",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
+    "facilityIds": [
+      "fcc-25932"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WHRO-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WHRO-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wtjx",
+    "name": "WTJX",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Charlotte Amalie",
+    "state": "VI",
+    "owner": "Virgin Islands Public Broadcasting System",
+    "website": "https://www.wtjx.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-70287"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WTJX-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WTJX-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "vermont-public",
+    "name": "Vermont Public",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "VT",
+    "website": "https://vermontpublic.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69944",
+      "fcc-69946",
+      "fcc-69940",
+      "fcc-189111",
+      "fcc-189112"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Vermont_Public",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "cascade-pbs",
+    "name": "Cascade PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Seattle",
+    "state": "WA",
+    "owner": "Cascade Public Media",
+    "website": "https://www.kcts9.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-33749"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KCTS-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KCTS-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "kbtc-and-kcka",
+    "name": "KBTC and KCKA",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Tacoma–Centralia",
+    "state": "WA",
+    "owner": "Bates Technical College",
+    "website": "https://www.kbtc.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-62469"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KBTC-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KBTC-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "ksps",
+    "name": "KSPS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Spokane",
+    "state": "WA",
+    "owner": "Friends of KSPS",
+    "website": "https://www.ksps.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-61956"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KSPS-TV",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KSPS-TV",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "northwest-public-broadcasting",
+    "name": "Northwest Public Broadcasting",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Richland",
+    "state": "WA",
+    "owner": "Washington State University",
+    "website": "https://www.nwpb.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-71023"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Northwest_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Northwest_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "milwaukee-pbs",
+    "name": "Milwaukee PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": "Milwaukee",
+    "state": "WI",
+    "owner": "Milwaukee Area Technical College(Milwaukee Area Technical College District Board)",
+    "website": "https://www.milwaukeepbs.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-42663"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Milwaukee_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Milwaukee_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "pbs-wisconsin",
+    "name": "PBS Wisconsin",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "WI",
+    "owner": "WHA-TV: University of Wisconsin–MadisonOther stations: State of Wisconsin – Educational Communications Board",
+    "website": "https://pbswisconsin.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-6096",
+      "fcc-18780",
+      "fcc-73036",
+      "fcc-18793",
+      "fcc-63046",
+      "fcc-18798"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/PBS_Wisconsin",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/PBS_Wisconsin",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "west-virginia-public-broadcasting",
+    "name": "West Virginia Public Broadcasting",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "WV",
+    "owner": "West Virginia Educational Broadcasting Authority",
+    "website": "https://wvpublic.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-71657",
+      "fcc-71680",
+      "fcc-71676"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/West_Virginia_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/West_Virginia_Public_Broadcasting",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "wyoming-pbs",
+    "name": "Wyoming PBS",
+    "networks": [
+      "PBS"
+    ],
+    "mediaTypes": [
+      "tv"
+    ],
+    "city": null,
+    "state": "WY",
+    "owner": "Central Wyoming College",
+    "website": "https://wyomingpbs.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-10036",
+      "fcc-10032",
+      "fcc-82575"
+    ],
+    "sources": {
+      "name": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/Wyoming_PBS",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/Wyoming_PBS",
+        "retrievedAt": "2026-10-18"
+      }
+    }
+  }
+]

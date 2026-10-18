@@ -1,0 +1,21 @@
+# Merges — hand-maintained. Folds one station into another, e.g. a satellite/relay
+# transmitter that Wikipedia lists as its own row but viewers know as part of a bigger
+# station. The merged station's transmitters move to the target; it disappears as a
+# separate result.
+#
+# The build already merges rows Wikipedia marks "Satellite of …" and rows that link to
+# another station's article. Use this file for the rest. The build report lists ids.
+#
+# - id:    the station to fold in
+#   into:  the station it belongs to
+#   note:  why (and how you know)
+
+- id: wsec
+  into: wsiu-and-wusi
+  note: WSIU relay (Wikipedia WSEC article; same owner and website)
+- id: wmec
+  into: wsiu-and-wusi
+  note: WSIU relay (Wikipedia WMEC article; same owner and website)
+- id: wqec
+  into: wsiu-and-wusi
+  note: WSIU relay (Wikipedia WQEC article; same owner and website)
