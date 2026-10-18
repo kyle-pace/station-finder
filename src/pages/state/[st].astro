@@ -1,0 +1,47 @@
+---
+// One page per state/territory: every station there, A–Z.
+import Base from '../../layouts/Base.astro';
+import NationalApps from '../../components/NationalApps.astro';
+import Icon from '../../components/Icon.astro';
+import { organizations, statesWithStations, metaLine } from '../../lib/data';
+import { url } from '../../lib/site';
+
+export function getStaticPaths() {
+  return statesWithStations.map((s) => ({ params: { st: s.code.toLowerCase() }, props: { code: s.code, name: s.name } }));
+}
+
+const { code, name } = Astro.props as { code: string; name: string };
+const stations = organizations.filter((o) => o.state === code).sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base title={`Public media in ${name}`} description={`Every public media station in ${name} and every way to watch and listen.`}>
+  <div class="wrap band">
+    <div class="two-col">
+      <section class="stack gap-16">
+        <div class="stack gap-4">
+          <a class="label back" href={url('/state/')}>← All states</a>
+          <h1>Public media in {name}</h1>
+          <p class="small muted">{stations.length} station{stations.length === 1 ? '' : 's'} · A–Z</p>
+        </div>
+        <ul class="station-list">
+          {stations.map((o) => (
+            <li>
+              <a class="station-row" href={url(`/station/${o.id}/`)}>
+                <div class="stack gap-4">
+                  <span class="body-strong">{o.name}</span>
+                  <span class="small muted">{metaLine(o)}</span>
+                </div>
+                <Icon name="chevron-right" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <aside><NationalApps /></aside>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .back { text-decoration: none; }
+</style>

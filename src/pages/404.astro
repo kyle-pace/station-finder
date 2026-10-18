@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import SearchForm from '../components/SearchForm.astro';
+import { url } from '../lib/site';
+---
+
+<Base title="Page not found">
+  <div class="wrap narrow band-lg stack gap-16">
+    <h1>We couldn't find that page</h1>
+    <p class="muted">Search for a station instead, or <a href={url('/state/')}>browse by state</a>.</p>
+    <SearchForm />
+  </div>
+</Base>

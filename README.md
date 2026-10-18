@@ -27,6 +27,21 @@ Other commands:
 | `npm run build` | Runs `build-data`, type-checks, and builds the finished site into `dist/` |
 | `npm run preview` | Serves the built `dist/` site locally, exactly as it will be published |
 
+## What's on the site
+
+| Page | What it shows |
+|---|---|
+| `/` | Search box, "Use my location", how it works, all states |
+| `/search/?q=…` | Results: ZIP (stations within 75 miles, nearest first), call letters, or name/city/state |
+| `/station/<id>/` | One station: watch live, donate, website, apps by Phone & tablet / TV / Web, correction link |
+| `/state/` and `/state/<st>/` | Every station in a state, A–Z |
+| `/about/` | Who built it, principles, data sources and licenses, privacy |
+
+Search runs in the visitor's browser over `public/data/search.json` and one small ZIP
+file per search (`public/data/zip/981.json`); nothing typed is sent to a server. The
+browser picks out the visitor's device (iPhone/iPad, Android, or computer) to highlight
+the matching app link. All stations look the same, whoever built their apps.
+
 ## Publishing
 
 Every push to `main` builds the site and publishes it to GitHub Pages
@@ -62,6 +77,9 @@ npm run refresh-data   # about 10 minutes; downloads politely, one request at a 
 This runs, in order: `fetch-wikipedia`, `build-data`, `fetch-station-app-pages`,
 `build-data`. Downloaded pages are cached in `data/raw/` (not committed), so re-runs are
 fast. Add `-- --refresh` to a fetch script to download fresh copies.
+
+ZIP-code locations come from a Census file that is downloaded **by hand** (see
+`data/raw/census/SOURCE.md` for why); after replacing it, run `npm run build-zcta`.
 
 Then read `data/build-report.txt`. It lists stations with no coordinates, merged rows,
 websites that moved, and app links that need a human check. `npm run build-data -- --full`

@@ -1,0 +1,59 @@
+---
+// Results page. The page itself is static; src/scripts/search.ts reads ?q= (or ?near=)
+// and fills in the results in the browser.
+import Base from '../layouts/Base.astro';
+import SearchForm from '../components/SearchForm.astro';
+import NationalApps from '../components/NationalApps.astro';
+import Icon from '../components/Icon.astro';
+import { url } from '../lib/site';
+---
+
+<Base title="Search">
+  <section class="band-surface search-band">
+    <div class="wrap"><div class="narrow-col"><SearchForm /></div></div>
+  </section>
+
+  <div class="wrap band">
+    <div class="two-col">
+      <section class="stack gap-16" aria-labelledby="results-heading">
+        <div class="stack gap-4">
+          <h1 id="results-heading">Searching…</h1>
+          <p id="results-sub" class="small muted"></p>
+        </div>
+        <p id="search-status" class="visually-hidden" role="status" aria-live="polite"></p>
+        <div id="results" class="stack gap-16"></div>
+        <div id="empty" class="stack gap-12" hidden>
+          <h2 class="h3">Browse a state</h2>
+          <p><a class="chip" href={url('/state/')}>All states →</a></p>
+        </div>
+      </section>
+      <aside><NationalApps /></aside>
+    </div>
+  </div>
+
+  <template id="card-template">
+    <article class="card">
+      <a class="card-top" data-link href="#">
+        <div class="card-info">
+          <h2 class="h3 card-name" data-name></h2>
+          <p class="small muted" data-meta></p>
+        </div>
+        <span class="caption muted card-dist" data-dist></span>
+        <Icon name="chevron-right" />
+      </a>
+      <div class="row-wrap">
+        <a class="btn btn-secondary" data-live href="#" rel="noopener"><Icon name="live" /><span>Watch live</span></a>
+        <a class="btn btn-secondary" data-app href="#"><Icon name="phone" /><span>Get the app</span></a>
+        <a class="btn btn-quiet" data-donate href="#" rel="noopener"><Icon name="donate" /><span>Donate</span></a>
+        <a class="btn btn-secondary" data-site href="#"><Icon name="web" /><span>Station details</span></a>
+      </div>
+    </article>
+  </template>
+</Base>
+
+<script src="../scripts/search.ts"></script>
+
+<style>
+  .search-band { padding: var(--space-16) 0; }
+  .narrow-col { max-width: var(--narrow); }
+</style>

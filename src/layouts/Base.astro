@@ -1,19 +1,18 @@
 ---
 import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { url, SITE_NAME, correctionUrl } from '../lib/site';
 
 interface Props {
   title?: string;
   description?: string;
 }
 
-const siteName = 'Station App Finder';
 const {
   title,
   description = 'Find your local public media station and every way to watch and listen.',
 } = Astro.props;
-const pageTitle = title ? `${title} · ${siteName}` : siteName;
-// BASE_URL is '/station-finder' on GitHub Pages; strip any trailing slash before joining.
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
 ---
 
 <!doctype html>
@@ -23,25 +22,61 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
-    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="container">
-      <main id="main">
-        <slot />
-      </main>
-      <footer>
-        <p>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href={url('/')}>
+          <Icon name="radio" />
+          <span class="body-strong">{SITE_NAME}</span>
+        </a>
+        <nav aria-label="Site">
+          <a class="label" href={url('/state/')}><span class="wide">Browse by state</span><span class="narrow-only">States</span></a>
+          <a class="label" href={url('/about/')}>About</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer band-surface">
+      <div class="wrap stack gap-12">
+        <nav class="row-wrap footer-links" aria-label="Footer">
+          <a class="label" href={url('/about/')}>About</a>
+          <a class="label" href={url('/about/#sources')}>Data sources</a>
+          <a class="label" href={correctionUrl()}>Suggest a correction</a>
+          <a class="label" href={url('/about/#privacy')}>Privacy</a>
+        </nav>
+        <p class="caption muted">
           A prototype by Local Public, a public benefit corporation. Not affiliated with or
-          endorsed by PBS or NPR.
+          endorsed by PBS or NPR. No cookies, no tracking.
         </p>
-        <p>
-          Station information is drawn in part from Wikipedia, used under{' '}
-          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and from
-          public FCC and U.S. Census data.
+        <p class="caption muted">
+          Station information drawn in part from Wikipedia's{' '}
+          <a href="https://en.wikipedia.org/wiki/List_of_PBS_member_stations">List of PBS member stations</a>{' '}
+          and station articles (Wikipedia contributors), used under{' '}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and from public
+          U.S. Census data and stations' own websites.
         </p>
-      </footer>
-    </div>
+      </div>
+    </footer>
+    <script src="../scripts/device.ts"></script>
   </body>
 </html>
+
+<style>
+  .site-header { border-bottom: 1px solid var(--border); background: var(--bg); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: var(--space-16); }
+  .wordmark { display: flex; align-items: center; gap: var(--space-8); color: var(--text); text-decoration: none; }
+  .wordmark svg { width: 24px; height: 24px; color: var(--accent); }
+  nav { display: flex; gap: var(--space-24); }
+  nav a { text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  .narrow-only { display: none; }
+  @media (max-width: 600px) { .wide { display: none; } .narrow-only { display: inline; } }
+  .site-footer { padding: var(--space-32) 0; margin-top: var(--space-32); }
+  .footer-links { gap: var(--space-8) var(--space-20, 20px); }
+</style>

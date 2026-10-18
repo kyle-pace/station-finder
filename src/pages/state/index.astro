@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { statesWithStations } from '../../lib/data';
+import { url } from '../../lib/site';
+---
+
+<Base title="Browse by state" description="Public media stations in every state and territory.">
+  <div class="wrap band stack gap-24">
+    <div class="stack gap-4">
+      <h1>Browse by state</h1>
+      <p class="small muted">{statesWithStations.length} states and territories with public TV stations</p>
+    </div>
+    <ul class="row-wrap" role="list" style="list-style:none;margin:0;padding:0">
+      {statesWithStations.map((s) => (
+        <li><a class="chip" href={url(`/state/${s.code.toLowerCase()}/`)}>{s.name} <span class="count">{s.count}</span></a></li>
+      ))}
+    </ul>
+  </div>
+</Base>

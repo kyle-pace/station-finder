@@ -1,0 +1,19 @@
+---
+// One store/platform link. The device script (src/scripts/device.ts) adds the
+// "your-device" highlight to the link for the visitor's platform — never a station.
+import Icon from './Icon.astro';
+import { PLATFORM_INFO, type Platform } from '../lib/data';
+
+interface Props { platform: Platform; href: string; detail?: string; label?: string }
+const { platform, href, detail, label } = Astro.props;
+const info = PLATFORM_INFO[platform];
+---
+<a class="app-link" href={href} data-platform={platform} rel="noopener">
+  <Icon name={info.icon} />
+  <span class="text">
+    <span class="tag caption" data-tag></span>
+    <span class="body-strong">{label ?? info.label}</span>
+    <span class="small muted">{detail ?? info.detail}</span>
+  </span>
+  <Icon name="external" class="ext" />
+</a>

@@ -1,0 +1,103 @@
+---
+// One page per station, generated at build time from public/data/organizations.json.
+// Layout is identical for every station; nothing here depends on who built its apps.
+import Base from '../../layouts/Base.astro';
+import AppLink from '../../components/AppLink.astro';
+import NationalApps from '../../components/NationalApps.astro';
+import Icon from '../../components/Icon.astro';
+import {
+  organizations, facilitiesFor, metaLine, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES, formatDate, host,
+  type Organization,
+} from '../../lib/data';
+import { url, correctionUrl } from '../../lib/site';
+
+export function getStaticPaths() {
+  return organizations.map((org) => ({ params: { id: org.id }, props: { org } }));
+}
+
+const { org } = Astro.props as { org: Organization };
+const apps = [...org.apps].sort((a, b) => PLATFORM_ORDER.indexOf(a.platform) - PLATFORM_ORDER.indexOf(b.platform));
+const groups = [
+  { key: 'mobile', title: 'Phone & tablet' },
+  { key: 'tv', title: 'TV' },
+  { key: 'web', title: 'Web' },
+]
+  .map((g) => ({ ...g, apps: apps.filter((a) => PLATFORM_INFO[a.platform].group === g.key) }))
+  .filter((g) => g.apps.length);
+
+const calls = facilitiesFor(org).map((f) => f.callSign);
+const stateName = STATE_NAMES[org.state] ?? org.state;
+const dates = Object.values(org.sources).map((s) => s.retrievedAt).concat(org.apps.map((a) => a.retrievedAt)).sort();
+const lastChecked = dates.at(-1);
+const sourceKinds = [
+  'Wikipedia',
+  org.apps.length || org.donateUrl || org.livestreamUrl ? 'station website' : '',
+  Object.values(org.sources).some((s) => s.source.startsWith('manual')) ? 'manual correction' : '',
+].filter(Boolean);
+const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, livestream, website, and donate page.`;
+---
+
+<Base title={org.name} description={description}>
+  <div class="wrap band">
+    <div class="two-col">
+      <div class="stack gap-32">
+        <div class="stack gap-8">
+          <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
+          <h1 class="display">{org.name}</h1>
+          <p class="muted">{metaLine(org)}{calls.length > 0 && <> · On air as {calls.map((c, i) => <>{i > 0 && ', '}<span class="nowrap">{c}</span></>)}</>}</p>
+        </div>
+
+        {(org.livestreamUrl || org.donateUrl || org.website) && (
+          <div class="row-wrap">
+            {org.livestreamUrl && <a class="btn btn-primary" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>Watch live</span></a>}
+            {org.donateUrl && <a class={`btn ${org.livestreamUrl ? 'btn-secondary' : 'btn-primary'}`} href={org.donateUrl} rel="noopener"><Icon name="donate" /><span>Donate</span></a>}
+            {org.website && <a class="btn btn-secondary" href={org.website} rel="noopener"><Icon name="web" /><span>Website</span></a>}
+          </div>
+        )}
+
+        <section id="apps" class="stack gap-24" aria-label="Apps">
+          {groups.length ? (
+            groups.map((g) => (
+              <div class="stack gap-12" data-app-group>
+                <h2>{g.title}</h2>
+                <div class="app-grid">
+                  {g.apps.map((a) => (
+                    <AppLink platform={a.platform} href={a.url} detail={a.platform === 'web' ? host(a.url) : undefined} />
+                  ))}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div class="stack gap-8">
+              <h2>Apps</h2>
+              <p class="muted">
+                We haven't found {org.name}'s own apps yet. Check the station's website, or try the
+                national apps — many stations' shows and livestreams are there too.
+              </p>
+            </div>
+          )}
+        </section>
+      </div>
+
+      <aside class="stack gap-16">
+        <div class="outline-box">
+          <Icon name="correction" />
+          <div class="stack gap-4">
+            <p class="body-strong">Something wrong or missing?</p>
+            <a class="label" href={correctionUrl(org.id, org.name)}>Suggest a correction</a>
+            <p class="caption muted">
+              {lastChecked && <>Last checked {formatDate(lastChecked)} · </>}Sources: {sourceKinds.join(', ')}
+            </p>
+          </div>
+        </div>
+        <NationalApps />
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .nowrap { white-space: nowrap; }
+  .back { text-decoration: none; }
+  .back:hover { text-decoration: underline; }
+</style>

@@ -1,0 +1,61 @@
+---
+// Minimal About page: who, why, principles, sources/licenses, privacy, corrections.
+// Phase 4 expands it.
+import Base from '../layouts/Base.astro';
+import { correctionUrl, REPO } from '../lib/site';
+---
+
+<Base title="About" description="Who built Station App Finder, why, where the data comes from, and how to correct it.">
+  <div class="wrap narrow band stack gap-32">
+    <section class="stack gap-12">
+      <h1>About</h1>
+      <p>
+        Station App Finder helps anyone find their local public media station and every way
+        to watch and listen: the station's own apps, livestream, website, and donate page.
+        It's a prototype built by Local Public, a public benefit corporation.
+      </p>
+    </section>
+
+    <section class="stack gap-12">
+      <h2>How we list stations</h2>
+      <ul class="stack gap-8">
+        <li><strong>Neutral.</strong> Every station is listed and shown the same way. Results are ordered by distance or how well they match your search, nothing else.</li>
+        <li><strong>Station first.</strong> A station's own apps and links come before the national apps.</li>
+        <li><strong>No endorsement.</strong> We aren't affiliated with or endorsed by PBS or NPR, and we use their names as text only.</li>
+      </ul>
+    </section>
+
+    <section id="sources" class="stack gap-12">
+      <h2>Where the information comes from</h2>
+      <ul class="stack gap-8">
+        <li>
+          Stations, owners, websites, and transmitter locations: Wikipedia's{' '}
+          <a href="https://en.wikipedia.org/wiki/List_of_PBS_member_stations">List of PBS member stations</a>{' '}
+          and each station's article, by Wikipedia contributors, used under{' '}
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. We extract and
+          combine fields from those articles; the station data we publish is shared under the same license.
+        </li>
+        <li>App, donate, and livestream links: each station's own website. We don't scrape app stores.</li>
+        <li>ZIP code locations: U.S. Census Bureau ZCTA Gazetteer (public domain).</li>
+        <li>Every field records where it came from and when. The data and code are public at <a href={REPO}>GitHub</a>.</li>
+      </ul>
+    </section>
+
+    <section id="privacy" class="stack gap-12">
+      <h2>Privacy</h2>
+      <p>
+        No cookies, no accounts, and no third-party trackers. Searches run in your browser.
+        "Use my location" is optional, stays on your device, and is rounded before it's used.
+      </p>
+    </section>
+
+    <section class="stack gap-12">
+      <h2>Corrections</h2>
+      <p>Something wrong or missing? <a href={correctionUrl()}>Suggest a correction</a>. Corrections are reviewed by hand and always win over automatically gathered data.</p>
+    </section>
+  </div>
+</Base>
+
+<style>
+  ul { padding-left: 1.2em; margin: 0; }
+</style>

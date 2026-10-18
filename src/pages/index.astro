@@ -1,12 +1,70 @@
 ---
 import Base from '../layouts/Base.astro';
+import SearchForm from '../components/SearchForm.astro';
+import Icon from '../components/Icon.astro';
+import { statesWithStations } from '../lib/data';
+import { url } from '../lib/site';
 ---
 
 <Base>
-  <h1>Station App Finder</h1>
-  <p>
-    Find your local public media station (PBS, NPR, and independent) and every way to watch
-    and listen: the station's own apps, website, livestream, and donate page.
-  </p>
-  <p><strong>Coming soon.</strong> Search by ZIP code, city, station name, or call letters.</p>
+  <section class="band-lg">
+    <div class="wrap narrow stack gap-16">
+      <h1 class="display">Find your local public media station</h1>
+      <p class="muted">Every way to watch and listen: your station's own apps, livestream, website, and donate page.</p>
+      <SearchForm />
+      <div class="location" hidden data-location>
+        <button class="btn btn-quiet" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
+        <p class="caption muted">Your location is used on this device only and never sent to us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-surface" aria-labelledby="how">
+    <div class="wrap stack gap-24">
+      <h2 id="how">How it works</h2>
+      <ol class="steps">
+        <li class="step"><span class="step-num">1</span><div class="stack gap-4"><p class="body-strong">Search</p><p class="small muted">Enter your ZIP code, city, station name, or call letters.</p></div></li>
+        <li class="step"><span class="step-num">2</span><div class="stack gap-4"><p class="body-strong">Pick your station</p><p class="small muted">Stations near you, nearest first. Every station is listed the same way.</p></div></li>
+        <li class="step"><span class="step-num">3</span><div class="stack gap-4"><p class="body-strong">Get the right app</p><p class="small muted">We show the app for the device you're on first, plus every other way to watch and listen.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="states">
+    <div class="wrap stack gap-16">
+      <h2 id="states">Or browse by state</h2>
+      <ul class="row-wrap" role="list" style="list-style:none;margin:0;padding:0">
+        {statesWithStations.map((s) => (
+          <li><a class="chip" href={url(`/state/${s.code.toLowerCase()}/`)}>{s.name}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
 </Base>
+
+<script>
+  // "Use my location": only offered when the browser supports it. The coordinates are
+  // rounded (~1 km) and only go into this site's own search URL.
+  const box = document.querySelector<HTMLElement>('[data-location]');
+  if (box && 'geolocation' in navigator) {
+    box.hidden = false;
+    const button = box.querySelector<HTMLButtonElement>('[data-locate]')!;
+    const label = button.querySelector('span')!;
+    button.addEventListener('click', () => {
+      label.textContent = 'Finding you…';
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const near = `${pos.coords.latitude.toFixed(2)},${pos.coords.longitude.toFixed(2)}`;
+          location.href = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/search/?near=${near}`;
+        },
+        () => { label.textContent = "Couldn't get your location — try a ZIP code"; },
+        { maximumAge: 600000, timeout: 10000 },
+      );
+    });
+  }
+</script>
+
+<style>
+  .location { display: flex; flex-direction: column; gap: var(--space-4); align-items: flex-start; }
+  @media (min-width: 701px) { .location { flex-direction: row; align-items: center; gap: var(--space-12); } }
+</style>
