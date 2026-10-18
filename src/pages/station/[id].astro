@@ -3,11 +3,10 @@
 // Layout is identical for every station; nothing here depends on who built its apps.
 import Base from '../../layouts/Base.astro';
 import AppLink from '../../components/AppLink.astro';
-import NationalApps from '../../components/NationalApps.astro';
 import Icon from '../../components/Icon.astro';
 import {
-  organizations, facilitiesFor, metaLine, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES, formatDate, host,
-  type Organization,
+  organizations, facilitiesFor, metaLine, national, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES, formatDate, host,
+  type Organization, type Platform,
 } from '../../lib/data';
 import { url, correctionUrl } from '../../lib/site';
 
@@ -16,14 +15,25 @@ export function getStaticPaths() {
 }
 
 const { org } = Astro.props as { org: Organization };
-const apps = [...org.apps].sort((a, b) => PLATFORM_ORDER.indexOf(a.platform) - PLATFORM_ORDER.indexOf(b.platform));
-const groups = [
-  { key: 'mobile', title: 'Phone & tablet' },
-  { key: 'tv', title: 'TV' },
-  { key: 'web', title: 'Web' },
-]
-  .map((g) => ({ ...g, apps: apps.filter((a) => PLATFORM_INFO[a.platform].group === g.key) }))
-  .filter((g) => g.apps.length);
+// Station first: the station's own app for each platform. Where it has none, link the
+// national app of its network (the PBS app for PBS stations) for that platform, labeled
+// clearly as the network's app so it's never mistaken for the station's own.
+const fallbackBrand = national.find((b) => org.networks.map((n) => n.toLowerCase()).includes(b.id));
+interface Item { platform: Platform; href: string; label?: string; detail?: string; fallback: boolean }
+const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
+  const own = org.apps.find((a) => a.platform === platform);
+  if (own) return [{ platform, href: own.url, detail: platform === 'web' ? host(own.url) : undefined, fallback: false }];
+  const fb = fallbackBrand?.apps.find((a) => a.platform === platform);
+  if (!fb) return [];
+  const where = platform === 'web' ? host(fb.url) : fb.kind === 'help' ? 'how to get it' : PLATFORM_INFO[platform].detail;
+  return [{ platform, href: fb.url, detail: `${fallbackBrand!.name} app · ${where}`, fallback: true }];
+});
+const hasOwnApps = items.some((i) => !i.fallback);
+const GROUP_WORDS = { mobile: 'phone or tablet app', tv: 'TV app', web: 'web player' } as const;
+const groups = (['mobile', 'tv', 'web'] as const)
+  .map((key) => ({ key, title: { mobile: 'Phone & tablet', tv: 'TV', web: 'Web' }[key], items: items.filter((i) => PLATFORM_INFO[i.platform].group === key) }))
+  .filter((g) => g.items.length)
+  .map((g) => ({ ...g, allFallback: g.items.every((i) => i.fallback) }));
 
 const calls = facilitiesFor(org).map((f) => f.callSign);
 const stateName = STATE_NAMES[org.state] ?? org.state;
@@ -31,10 +41,10 @@ const dates = Object.values(org.sources).map((s) => s.retrievedAt).concat(org.ap
 const lastChecked = dates.at(-1);
 const sourceKinds = [
   'Wikipedia',
-  org.apps.length || org.donateUrl || org.livestreamUrl ? 'station website' : '',
+  org.apps.length || org.livestreamUrl ? 'station website' : '',
   Object.values(org.sources).some((s) => s.source.startsWith('manual')) ? 'manual correction' : '',
 ].filter(Boolean);
-const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, livestream, website, and donate page.`;
+const description = `Every way to watch ${org.name}: apps for phone, tablet, and TV, livestream, and website.`;
 ---
 
 <Base title={org.name} description={description}>
@@ -47,38 +57,33 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
           <p class="muted">{metaLine(org)}{calls.length > 0 && <> · On air as {calls.map((c, i) => <>{i > 0 && ', '}<span class="nowrap">{c}</span></>)}</>}</p>
         </div>
 
-        {(org.livestreamUrl || org.donateUrl || org.website) && (
+        {(org.livestreamUrl || org.website) && (
           <div class="row-wrap">
             {org.livestreamUrl && <a class="btn btn-primary" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>Watch live</span></a>}
-            {org.donateUrl && <a class={`btn ${org.livestreamUrl ? 'btn-secondary' : 'btn-primary'}`} href={org.donateUrl} rel="noopener"><Icon name="donate" /><span>Donate</span></a>}
-            {org.website && <a class="btn btn-secondary" href={org.website} rel="noopener"><Icon name="web" /><span>Website</span></a>}
+            {org.website && <a class={`btn ${org.livestreamUrl ? 'btn-secondary' : 'btn-primary'}`} href={org.website} rel="noopener"><Icon name="web" /><span>Website</span></a>}
           </div>
         )}
 
         <section id="apps" class="stack gap-24" aria-label="Apps">
-          {groups.length ? (
-            groups.map((g) => (
-              <div class="stack gap-12" data-app-group>
-                <h2>{g.title}</h2>
-                <div class="app-grid">
-                  {g.apps.map((a) => (
-                    <AppLink platform={a.platform} href={a.url} detail={a.platform === 'web' ? host(a.url) : undefined} />
-                  ))}
-                </div>
-              </div>
-            ))
-          ) : (
-            <div class="stack gap-16">
-              <div class="stack gap-8">
-                <h2>Apps</h2>
-                <p class="muted">
-                  We haven't found {org.name}'s own apps yet. You can watch and listen in the
-                  national apps, where many stations' shows and livestreams are available.
-                </p>
-              </div>
-              <NationalApps />
-            </div>
+          {!hasOwnApps && fallbackBrand && (
+            <p class="muted">
+              We haven't found {org.name}'s own apps yet. These links open the {fallbackBrand.name} app,
+              which carries many stations' shows and livestreams.
+            </p>
           )}
+          {groups.map((g) => (
+            <div class="stack gap-12" data-app-group>
+              <div class="stack gap-4">
+                <h2>{g.title}</h2>
+                {hasOwnApps && g.allFallback && fallbackBrand && (
+                  <p class="small muted">{org.name} doesn't have its own {GROUP_WORDS[g.key]} yet. Watch with the {fallbackBrand.name} app:</p>
+                )}
+              </div>
+              <div class="app-grid">
+                {g.items.map((i) => <AppLink platform={i.platform} href={i.href} detail={i.detail} fallback={i.fallback} />)}
+              </div>
+            </div>
+          ))}
         </section>
       </div>
 

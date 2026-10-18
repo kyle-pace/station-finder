@@ -3,7 +3,7 @@
 Read `SPEC.md` before doing any work. It is the source of truth for what we're building and in what order.
 
 ## What this is
-A public, neutral directory that helps anyone find their local public media station (PBS, NPR, independent) and every way to watch and listen: the station's own apps, website, livestream, and donate page, with national PBS/NPR apps as a fallback. Built as an independent prototype. Do not name the publishing organization anywhere in the site or repo (decided 2026-10-18).
+A public, neutral directory that helps anyone find their local public media station (PBS, NPR, independent) and every way to watch and listen: the station's own apps, website, and livestream, with the network's national app (PBS, later NPR) as a per-platform fallback. No donate links for now. Built as an independent prototype. Do not name the publishing organization anywhere in the site or repo (decided 2026-10-18).
 
 The owner is Kyle (Director of Product, not a full-time engineer). Explain decisions in plain language, keep the codebase simple, and prefer boring, well-documented tools.
 

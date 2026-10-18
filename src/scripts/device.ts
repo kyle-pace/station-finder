@@ -3,7 +3,6 @@
 //
 // - Station pages: highlights the app link for this device ("For your iPhone") and
 //   moves its group to the top. This marks the visitor's platform, never a station.
-// - National apps block: swaps the button to the right store for phones.
 
 export type Device = 'ios' | 'android' | 'desktop';
 
@@ -27,19 +26,12 @@ function apply(): void {
     match.classList.add('your-device');
     const tag = match.querySelector('[data-tag]');
     if (tag) tag.textContent = TAGS[device];
+    // Station first: never move the network's fallback app above the station's own apps.
+    const stationHasApps = !!document.querySelector('.app-link:not([data-fallback])');
+    if (match.hasAttribute('data-fallback') && stationHasApps) return;
     const group = match.closest<HTMLElement>('[data-app-group]');
     const groups = group?.parentElement;
     if (group && groups && groups.firstElementChild !== group) groups.prepend(group);
-  }
-
-  // National apps buttons.
-  for (const a of document.querySelectorAll<HTMLAnchorElement>('a[data-national]')) {
-    const store = device === 'ios' ? a.dataset.ios : device === 'android' ? a.dataset.android : '';
-    if (store) a.href = store;
-    else {
-      const label = a.querySelector('span');
-      if (label) label.textContent = `Visit ${new URL(a.href).host.replace(/^www\./, '')}`;
-    }
   }
 }
 

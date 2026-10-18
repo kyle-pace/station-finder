@@ -4,11 +4,12 @@
 import Icon from './Icon.astro';
 import { PLATFORM_INFO, type Platform } from '../lib/data';
 
-interface Props { platform: Platform; href: string; detail?: string; label?: string }
-const { platform, href, detail, label } = Astro.props;
+// fallback = the network's national app standing in for a platform the station has no app on.
+interface Props { platform: Platform; href: string; detail?: string; label?: string; fallback?: boolean }
+const { platform, href, detail, label, fallback = false } = Astro.props;
 const info = PLATFORM_INFO[platform];
 ---
-<a class="app-link" href={href} data-platform={platform} rel="noopener">
+<a class="app-link" href={href} data-platform={platform} data-fallback={fallback ? "" : undefined} rel="noopener">
   <Icon name={info.icon} />
   <span class="text">
     <span class="tag caption" data-tag></span>

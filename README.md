@@ -2,7 +2,8 @@
 
 A public, neutral directory that helps anyone in the US find their local public media
 station (PBS, NPR, and independent) and every way to watch and listen: the station's own
-apps, website, livestream, and donate page, with national PBS/NPR apps as a fallback.
+apps, website, and livestream, with the national PBS app as a fallback on any platform
+the station doesn't have its own app for.
 
 An independent prototype.
 See [SPEC.md](SPEC.md) for what we're building and in what order.
@@ -33,7 +34,7 @@ Other commands:
 |---|---|
 | `/` | Search box, "Use my location", how it works, all states |
 | `/search/?q=…` | Results: ZIP (stations within 75 miles, nearest first), call letters, or name/city/state |
-| `/station/<id>/` | One station: watch live, donate, website, apps by Phone & tablet / TV / Web, correction link |
+| `/station/<id>/` | One station: watch live, website, apps by Phone & tablet / TV / Web (PBS app where the station has none), correction link |
 | `/state/` and `/state/<st>/` | Every station in a state, A–Z |
 | `/about/` | Who built it, principles, data sources and licenses, privacy |
 
@@ -93,7 +94,7 @@ stops before anything broken is published.
 
 | File | What goes in it |
 |---|---|
-| `national.yaml` | The PBS and NPR app links shown below every result. |
+| `national.yaml` | The PBS and NPR app links used as the fallback for platforms a station has no app on. |
 | `station-app-pages.yaml` | A station's own "get our app" page (when the automatic search misses it) and its web app. |
 | `station-apps.yaml` | Hand-checked app links for any station (all 9 platforms), and `exclude:` for wrong links. |
 | `merges.yaml` | Fold a relay/satellite station into the station viewers know. |

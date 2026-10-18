@@ -6,7 +6,7 @@
 Help anyone in the US find their local public media station and every way to watch and listen to it, in under 30 seconds.
 
 **For viewers:** one search (ZIP, city, station name, or call letters) → their stations → the right app for their device.
-**For stations:** more traffic to their own apps, site, livestream, and donate page, with proof (UTM-tagged links).
+**For stations:** more traffic to their own apps, site, and livestream, with proof (UTM-tagged links).
 **For the publisher:** credibility as public media infrastructure, aggregate audience insight (which markets, which platforms), and warm signals about stations without apps.
 
 ## 2. v1 scope
@@ -14,7 +14,8 @@ In:
 - Search by ZIP, city/state, station name, call letters
 - Results: nearby stations sorted by distance
 - National apps (PBS, NPR) as a fallback only: shown on a station's page when that station has no apps of its own, never advertised elsewhere
-- Station page with apps by platform, website, livestream, donate, and "suggest a correction"
+- Station page with apps by platform, website, livestream, and "suggest a correction". Any platform without a station app links the station's network app for that platform (the PBS app), labeled as such.
+- Donate links: not shown for now (decided 2026-10-18).
 - State browse pages (also good for SEO)
 - Device-aware calls to action
 - About page (who built it, why, data sources, how to correct)
@@ -35,7 +36,6 @@ Model **organizations** (the station people know, e.g. a statewide network) sepa
   "city": "Exampleville",
   "state": "OR",
   "website": "https://...",
-  "donateUrl": "https://...",
   "livestreamUrl": "https://...",
   "apps": [
     { "platform": "ios", "url": "https://apps.apple.com/...", "source": "manual", "verified": true }
@@ -83,20 +83,20 @@ Search runs client-side over static JSON (e.g. a small fuzzy-search library).
 ## 6. Pages
 - `/` Hero search plus a short explanation
 - `/search?q=` Results
-- `/station/[id]` Station page: app buttons grouped by Phone & tablet / TV / Web, plus website, livestream, donate, and correction link
+- `/station/[id]` Station page: app buttons grouped by Phone & tablet / TV / Web, plus website, livestream, and correction link; missing platforms fall back to the PBS app
 - `/state/[st]` All stations in a state
 - `/about` Who built it (an independent prototype; the publisher is not named for now), why, data sources and licenses, neutrality principles, how to correct
 
 **Device-aware calls to action:** detect iOS/Android client-side and promote the matching store button first. For TV platforms, show "Search for [station] on your Roku/Fire TV/…" with the store link when known.
 
 ## 7. Station benefit and measurement
-- UTM-tag outbound links to station websites, livestreams, and donate pages: `utm_source=<site>&utm_medium=referral&utm_campaign=station-finder`. Don't tag app store links.
+- UTM-tag outbound links to station websites and livestreams: `utm_source=<site>&utm_medium=referral&utm_campaign=station-finder`. Don't tag app store links.
 - Correction link opens a simple form (a Google Form is fine for v1) prefilled with the station id.
 
 ## 8. Analytics (cookieless)
 Use Plausible or Fathom (ask Kyle which). Custom events:
 - `search`: input type (zip/name/callsign), result count, ZIP **3-digit prefix only**
-- `outbound_click`: organization id, link type (app/web/donate/livestream), platform
+- `outbound_click`: organization id, link type (app/web/livestream), platform
 - `no_results`
 
 No IPs, full ZIPs, or identifiers stored by us.
