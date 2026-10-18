@@ -54,8 +54,9 @@ ZIP lookup: Census ZCTA centroids, sharded by 3-digit ZIP prefix (`public/data/z
 ## 4. Data sources and pipeline
 | Data | Source | Notes |
 |---|---|---|
-| Transmitters, call letters, coordinates | FCC licensing data (noncommercial educational TV and FM) | Public domain. Verify the current download location. |
-| Network affiliation, station names, websites | Wikipedia lists of PBS member stations and NPR member stations | CC BY-SA; attribute in footer. |
+| Stations, call letters, network | Wikipedia "List of PBS member stations" article | CC BY-SA; attribute in footer. |
+| Owner, website, FCC facility ID, transmitter coordinates | Each station's Wikipedia article (infobox); state network articles' transmitter tables | CC BY-SA. Coordinates are editor-entered; gaps are fixed in `overrides.yaml`. |
+| Station app store links | Each station's own "get our app" page, listed in `data/manual/station-app-pages.yaml` | Station's own website. |
 | ZIP → lat/lng | Census ZCTA Gazetteer file | Public domain. |
 | iOS apps (stations not in station-apps.yaml) | Apple iTunes Search API (no key) | Keep only matches that pass a name/developer check; mark `verified: false` until reviewed. |
 | Hand-verified station apps (all 9 platforms) | `data/manual/station-apps.yaml` | Hand-maintained by Kyle; any station, no partner flag. |
@@ -63,7 +64,9 @@ ZIP lookup: Census ZCTA centroids, sharded by 3-digit ZIP prefix (`public/data/z
 | Corrections | `data/manual/overrides.yaml` | Always wins. |
 | National fallbacks | `data/manual/national.yaml` | PBS and NPR app links. No PBS KIDS. |
 
-Pipeline: `scripts/fetch-fcc`, `fetch-wikipedia`, `fetch-zcta`, `match-ios-apps` → `data/raw/` → `scripts/build-data` merges, applies manual files last, validates, and writes `public/data/`. `build-data` prints a report covering counts, organizations with no apps, unmatched facilities, and low-confidence matches.
+**Fetching rules (decided 2026-10-18):** no FCC downloads (the FCC site's robots.txt disallows it). Wikipedia is read only through ordinary article pages (`/wiki/...`), because its robots.txt disallows the `/w/` and `/api/` paths.
+
+Pipeline: `scripts/fetch-wikipedia`, `fetch-station-app-pages`, `fetch-zcta`, `match-ios-apps` → `data/raw/` → `scripts/build-data` merges, applies manual files last, validates, and writes `public/data/`. `build-data` prints a report covering counts, organizations with no apps, unmatched facilities, and low-confidence matches.
 
 Refresh: a monthly GitHub Action runs the pipeline and opens a pull request with the data diff for Kyle to review. It never auto-publishes.
 
@@ -104,10 +107,10 @@ No IPs, full ZIPs, or identifiers stored by us.
 
 ## 10. Phases
 1. **Scaffold:** Astro project, README, folder structure, manual data files, deploy a "hello" page.
-2. **TV data:** FCC TV facilities + Wikipedia PBS list + station-apps.yaml → organizations/facilities JSON with a build report.
+2. **TV data (PBS only):** Wikipedia PBS list + station articles + station app pages + station-apps.yaml → organizations/facilities JSON with a build report.
 3. **Search and pages:** ZIP shards, search, results, station and state pages, national fallback.
 4. **Ship v0:** about page, analytics, UTM tagging, correction form, deploy publicly.
-5. **Radio:** FCC FM + Wikipedia NPR list.
+5. **Radio:** Wikipedia NPR list and station articles.
 6. **iOS matching:** iTunes Search API with review report.
 7. **Refresh automation:** monthly GitHub Action PR.
 
@@ -115,5 +118,5 @@ No IPs, full ZIPs, or identifiers stored by us.
 - Site name and domain (neutral brand vs Local Public-branded)?
 - Analytics: Plausible or Fathom?
 - Correction intake: Google Form, or email to start?
-- Include independent/non-network public stations in v1, or PBS + NPR only?
+- ~~Include independent stations in v1?~~ Decided: PBS only for now; NPR in Phase 5.
 - PBS KIDS block: should it also cover stations' own PBS KIDS pages, or only national PBS KIDS (pbskids.org and its apps)? For now the build blocks anything with "pbs-kids"/"pbskids" in the link.

@@ -24,7 +24,8 @@ The owner is Kyle (Director of Product, not a full-time engineer). Explain decis
 - Scripts must be idempotent and safe to re-run.
 
 ## Scraping rules
-- Prefer official/public-domain sources (FCC, Census) and openly licensed ones (Wikipedia, CC BY-SA, attribute in the footer).
+- Prefer official/public-domain sources (Census) and openly licensed ones (Wikipedia, CC BY-SA, attribute in the footer).
+- Do not download FCC files (robots.txt disallows it). Read Wikipedia only via `/wiki/` article pages, never `/w/` or `/api/` (disallowed in robots.txt).
 - Respect robots.txt, rate-limit (≥1s between requests to the same host), set a descriptive User-Agent, and cache raw responses in `data/raw/`.
 - Do not scrape Google Play or the Roku/Amazon/Samsung/LG stores. Those links come from `data/manual/` or the station's own website.
 - Before relying on a source URL or file format, verify it is current. Don't hardcode download locations from memory.
