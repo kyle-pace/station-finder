@@ -11,7 +11,8 @@
     "dev": "astro dev",
     "build": "npm run build-data && astro check && astro build",
     "preview": "astro preview",
-    "build-data": "node scripts/build-data.ts"
+    "build-data": "node scripts/build-data.ts",
+    "fetch-wikipedia": "node scripts/fetch-wikipedia.ts"
   },
   "dependencies": {
     "astro": "^7.4.0",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@types/node": "^26.6.5",
+    "cheerio": "^1.2.0",
     "typescript": "^6.0.3"
   }
 }

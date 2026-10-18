@@ -14,3 +14,9 @@ dist/
 
 # Private working notes (e.g. Local Public partner list). Never committed, never read by the build.
 data/private/
+
+# Raw downloaded pages are cached locally but not committed (tens of MB, change every
+# refresh). The committed provenance is the extracted JSON next to them, which records
+# each value's source URL and retrievedAt. Re-download any time with --refresh.
+data/raw/**/*.html
+data/raw/**/*.html.meta.json
