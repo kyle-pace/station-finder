@@ -13,7 +13,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 export const USER_AGENT =
-  'StationAppFinder/0.1 (+https://github.com/kyle-pace/station-finder/issues; prototype by Local Public)';
+  'StationAppFinder/0.1 (+https://github.com/kyle-pace/station-finder/issues)';
 const MIN_DELAY_MS = 1500;
 const MAX_RETRIES = 3;
 const RAW_DIR = new URL('../../data/raw/', import.meta.url).pathname;

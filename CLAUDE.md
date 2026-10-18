@@ -3,12 +3,12 @@
 Read `SPEC.md` before doing any work. It is the source of truth for what we're building and in what order.
 
 ## What this is
-A public, neutral directory that helps anyone find their local public media station (PBS, NPR, independent) and every way to watch and listen: the station's own apps, website, livestream, and donate page, with national PBS/NPR apps as a fallback. Built and run by Local Public (a public benefit corporation) as a prototype.
+A public, neutral directory that helps anyone find their local public media station (PBS, NPR, independent) and every way to watch and listen: the station's own apps, website, livestream, and donate page, with national PBS/NPR apps as a fallback. Built as an independent prototype. Do not name the publishing organization anywhere in the site or repo (decided 2026-10-18).
 
 The owner is Kyle (Director of Product, not a full-time engineer). Explain decisions in plain language, keep the codebase simple, and prefer boring, well-documented tools.
 
 ## Non-negotiable principles
-- **Neutral.** Never rank, feature, or style Local Public partner stations differently in results. Order is relevance and distance only. Show every station's apps, whoever built them.
+- **Neutral.** Never rank, feature, or style partner stations differently in results. Order is relevance and distance only. Show every station's apps, whoever built them.
 - **Station-first.** A station's own links come before national apps.
 - **Privacy-first.** No cookies, no personal data, no third-party trackers. Analytics are cookieless and aggregate only (see SPEC).
 - **No PBS KIDS.** Never link to PBS KIDS apps or content (pbskids.org, PBS KIDS store listings), in national fallbacks or station data.
@@ -20,7 +20,7 @@ The owner is Kyle (Director of Product, not a full-time engineer). Explain decis
 - Data collection happens in scripts under `scripts/`, run at build time or by a scheduled GitHub Action, never in the browser.
 - Pipeline: `scripts/fetch-*` → `data/raw/` (cached source dumps) → `scripts/build-data` → `public/data/*.json` (what the site reads).
 - Hand-maintained files in `data/manual/` always win over scraped data. A pipeline re-run must never undo a manual fix.
-- The repo is public. Never commit Local Public partner status. `data/private/` is git-ignored and must never be read by scripts.
+- The repo is public. Never commit partner status. `data/private/` is git-ignored and must never be read by scripts.
 - Scripts must be idempotent and safe to re-run.
 
 ## Scraping rules

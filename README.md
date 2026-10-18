@@ -4,7 +4,7 @@ A public, neutral directory that helps anyone in the US find their local public 
 station (PBS, NPR, and independent) and every way to watch and listen: the station's own
 apps, website, livestream, and donate page, with national PBS/NPR apps as a fallback.
 
-A prototype by [Local Public](https://localpublic.tv), a public benefit corporation.
+An independent prototype.
 See [SPEC.md](SPEC.md) for what we're building and in what order.
 
 **Live prototype:** https://kyle-pace.github.io/station-finder/
@@ -101,7 +101,7 @@ stops before anything broken is published.
 
 Every link needs a `source` (where you found it) and a `retrievedAt` date.
 
-**This repo is public.** Don't record which stations work with Local Public anywhere in it.
+**This repo is public.** Don't record partner relationships or the publishing organization's name anywhere in it.
 Manual files list apps and pages only, for any station. Private notes can go in
 `data/private/`, which git ignores and the build never reads.
 

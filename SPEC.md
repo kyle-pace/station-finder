@@ -1,18 +1,19 @@
 # Station App Finder — Prototype Spec
 
-**Owner:** Kyle Pace, Local Public · **Status:** Draft v0.1 · **Site name/domain:** TBD (working name "Station App Finder")
+**Owner:** Kyle Pace · **Status:** Draft v0.1 · **Site name/domain:** TBD (working name "Station App Finder")
 
 ## 1. Goal
 Help anyone in the US find their local public media station and every way to watch and listen to it, in under 30 seconds.
 
 **For viewers:** one search (ZIP, city, station name, or call letters) → their stations → the right app for their device.
 **For stations:** more traffic to their own apps, site, livestream, and donate page, with proof (UTM-tagged links).
-**For Local Public:** credibility as public media infrastructure, aggregate audience insight (which markets, which platforms), and warm signals about stations without apps.
+**For the publisher:** credibility as public media infrastructure, aggregate audience insight (which markets, which platforms), and warm signals about stations without apps.
 
 ## 2. v1 scope
 In:
 - Search by ZIP, city/state, station name, call letters
-- Results: nearby stations sorted by distance, plus a national fallback block (PBS and NPR apps) on every result
+- Results: nearby stations sorted by distance
+- National apps (PBS, NPR) as a fallback only: shown on a station's page when that station has no apps of its own, never advertised elsewhere
 - Station page with apps by platform, website, livestream, donate, and "suggest a correction"
 - State browse pages (also good for SEO)
 - Device-aware calls to action
@@ -49,7 +50,7 @@ Model **organizations** (the station people know, e.g. a statewide network) sepa
 
 ZIP lookup: Census ZCTA centroids, sharded by 3-digit ZIP prefix (`public/data/zip/981.json`) so the browser only loads a few KB per search.
 
-**No partner flag anywhere in the repo.** The repo is public, so Local Public partner status is not stored in it at all. Hand-verified app links for any station go in `data/manual/station-apps.yaml`, which records apps only. Kyle's private partner notes live in `data/private/` (git-ignored, never read by the build).
+**No partner flag anywhere in the repo.** The repo is public, so partner status is not stored in it at all. Hand-verified app links for any station go in `data/manual/station-apps.yaml`, which records apps only. Kyle's private partner notes live in `data/private/` (git-ignored, never read by the build).
 
 ## 4. Data sources and pipeline
 | Data | Source | Notes |
@@ -74,8 +75,8 @@ Refresh: a monthly GitHub Action runs the pipeline and opens a pull request with
 1. Input looks like 5 digits → ZIP: load the shard, get the centroid, find facilities within 75 mi (TV) / 50 mi (radio), roll up to organizations, and sort by nearest facility.
 2. Call letters (e.g. "KCTS", "KUOW-FM") → exact facility match → its organization.
 3. Otherwise → fuzzy match on organization name, city, state.
-4. Always show the national fallback block below results.
-5. Empty state: suggest nearby states and the national apps.
+4. No national apps on results pages (decided 2026-10-18). They appear only on the page of a station with no apps of its own.
+5. Empty state: search tips and browse by state.
 
 Search runs client-side over static JSON (e.g. a small fuzzy-search library).
 
@@ -84,7 +85,7 @@ Search runs client-side over static JSON (e.g. a small fuzzy-search library).
 - `/search?q=` Results
 - `/station/[id]` Station page: app buttons grouped by Phone & tablet / TV / Web, plus website, livestream, donate, and correction link
 - `/state/[st]` All stations in a state
-- `/about` Who built it (Local Public, a public benefit corporation), why, data sources and licenses, neutrality principles, how to correct
+- `/about` Who built it (an independent prototype; the publisher is not named for now), why, data sources and licenses, neutrality principles, how to correct
 
 **Device-aware calls to action:** detect iOS/Android client-side and promote the matching store button first. For TV platforms, show "Search for [station] on your Roku/Fire TV/…" with the store link when known.
 
@@ -108,14 +109,14 @@ No IPs, full ZIPs, or identifiers stored by us.
 ## 10. Phases
 1. **Scaffold:** Astro project, README, folder structure, manual data files, deploy a "hello" page.
 2. **TV data (PBS only):** Wikipedia PBS list + station articles + station app pages + station-apps.yaml → organizations/facilities JSON with a build report.
-3. **Search and pages:** ZIP shards, search, results, station and state pages, national fallback.
+3. **Search and pages:** ZIP shards, search, results, station and state pages, national fallback on station pages without apps.
 4. **Ship v0:** about page, analytics, UTM tagging, correction form, deploy publicly.
 5. **Radio:** Wikipedia NPR list and station articles.
 6. **iOS matching:** iTunes Search API with review report.
 7. **Refresh automation:** monthly GitHub Action PR.
 
 ## 11. Open questions for Kyle
-- Site name and domain (neutral brand vs Local Public-branded)?
+- Site name and domain? (Decided 2026-10-18: don't name the publishing organization anywhere for now.)
 - Analytics: Plausible or Fathom?
 - Correction intake: Google Form, or email to start?
 - ~~Include independent stations in v1?~~ Decided: PBS only for now; NPR in Phase 5.
