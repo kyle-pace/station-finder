@@ -447,11 +447,29 @@
         "verified": false
       },
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/kpbs-news/id1305075995",
+        "source": "https://www.kpbs.org/kpbs-on-the-go",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "KPBS News"
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.kpbs",
         "source": "https://www.kpbs.org/kpbs-on-the-go",
         "retrievedAt": "2026-10-18",
         "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.kpbs",
+        "source": "https://www.kpbs.org/kpbs-on-the-go",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "KPBS News"
       },
       {
         "platform": "web",
@@ -898,20 +916,6 @@
         "verified": false
       },
       {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.krma",
-        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
-        "retrievedAt": "2026-10-18",
-        "verified": false
-      },
-      {
-        "platform": "appletv",
-        "url": "https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876",
-        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
-        "retrievedAt": "2026-10-18",
-        "verified": false
-      },
-      {
         "platform": "firetv",
         "url": "https://www.amazon.com/dp/B0DLBTLJ7B",
         "source": "https://www.rmpbs.org/watch/rmpbs-plus",
@@ -1043,13 +1047,6 @@
     "owner": "Greater Washington Educational Telecommunications Association",
     "website": "https://weta.org/watch",
     "apps": [
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/weta/id6740541547",
-        "source": "https://weta.org/wetaplus",
-        "retrievedAt": "2026-10-18",
-        "verified": false
-      },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.weta",
@@ -1587,11 +1584,74 @@
         "verified": false
       },
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb-sports/id455158040",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "GPB Sports"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb-classical/id6443334692",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "GPB Classical"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gasha-go/id6451390320",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "Gasha Go"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb-vr-ar/id6756442017",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "GPB Vr Ar"
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb",
         "source": "https://www.gpb.org/apps",
         "retrievedAt": "2026-10-18",
         "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.gpb.gpbfootball",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "GPB Sports"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.gpbclassical",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "GPB Classical"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.gpb.gashago",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "Gasha Go"
       }
     ],
     "facilityIds": [
@@ -2616,7 +2676,7 @@
   },
   {
     "id": "kentucky-educational-television",
-    "name": "Kentucky Educational Television",
+    "name": "KET",
     "networks": [
       "PBS"
     ],
@@ -2636,11 +2696,38 @@
         "verified": false
       },
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ket-legislative-coverage/id786591133",
+        "source": "https://ket.org/about/ket-pbs-apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "KET Legislative Coverage"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ket-fastforward-skill-check/id1321050730",
+        "source": "https://ket.org/about/ket-pbs-apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "KET Fastforward Skill Check"
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kettv",
         "source": "https://ket.org/about/ket-pbs-apps/",
         "retrievedAt": "2026-10-18",
         "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.ket.legislativecoverage",
+        "source": "https://ket.org/about/ket-pbs-apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "KET Legislative Coverage"
       }
     ],
     "facilityIds": [
@@ -2663,7 +2750,7 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
+        "source": "manual: overrides.yaml (name the station uses on its own site (ket.org title \"KET > Kentucky Educational Television\"))",
         "retrievedAt": "2026-10-18"
       },
       "city": {
@@ -4481,13 +4568,6 @@
     "website": "https://www.btpm.org/watch/pbs",
     "apps": [
       {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/btpm/id6752734865",
-        "source": "https://www.btpm.org/plus",
-        "retrievedAt": "2026-10-18",
-        "verified": false
-      },
-      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wned",
         "source": "https://www.btpm.org/plus",
@@ -5499,6 +5579,15 @@
         "verified": false
       },
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/whyy-greater-phillys-npr/id1246315452",
+        "source": "https://whyy.org/whyy-listen-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "WHYY Greater Phillys NPR"
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whyy",
         "source": "https://whyy.org/whyy-watch-app/",
@@ -5506,11 +5595,13 @@
         "verified": false
       },
       {
-        "platform": "appletv",
-        "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
-        "source": "https://whyy.org/whyy-watch-app/",
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.whyy",
+        "source": "https://whyy.org/whyy-listen-app/",
         "retrievedAt": "2026-10-18",
-        "verified": false
+        "verified": false,
+        "extra": true,
+        "name": "WHYY Greater Phillys NPR"
       },
       {
         "platform": "firetv",
@@ -5687,16 +5778,9 @@
     "website": "https://www.wqed.org/",
     "apps": [
       {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/wqed/id6752442766",
-        "source": "https://www.wqed.org/plus/activate/",
-        "retrievedAt": "2026-10-18",
-        "verified": false
-      },
-      {
         "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
-        "source": "https://www.wqed.org/plus/activate/",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.wqed",
+        "source": "https://www.wqed.org/fm/app/",
         "retrievedAt": "2026-10-18",
         "verified": false
       },
@@ -5995,7 +6079,7 @@
     "apps": [
       {
         "platform": "ios",
-        "url": "https://apps.apple.com/us/app/scetv/id6772544565",
+        "url": "https://apps.apple.com/us/app/south-carolina-etv/id1056289468",
         "source": "https://www.scetv.org/scetvplus",
         "retrievedAt": "2026-10-18",
         "verified": false
@@ -6006,6 +6090,15 @@
         "source": "https://www.scetv.org/scetvplus",
         "retrievedAt": "2026-10-18",
         "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv",
+        "source": "https://www.scetv.org/scetvplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
       },
       {
         "platform": "appletv",
@@ -7146,13 +7239,6 @@
     "owner": "Hampton Roads Educational Telecommunications Association",
     "website": "https://whro.org/",
     "apps": [
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/whro-public-media/id6741328420",
-        "source": "https://www.whro.org/plus",
-        "retrievedAt": "2026-10-18",
-        "verified": false
-      },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whro",

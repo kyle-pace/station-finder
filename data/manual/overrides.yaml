@@ -10,4 +10,7 @@
 #     livestreamUrl: https://example.org/live
 #     website: https://example.org/
 
-[]
+- id: kentucky-educational-television
+  note: name the station uses on its own site (ket.org title "KET > Kentucky Educational Television")
+  set:
+    name: KET

@@ -54,7 +54,27 @@ interface App {
   source: string;
   retrievedAt: string;
   verified: boolean;
+  // A station can have more than one app per platform (e.g. KET's main app plus KET
+  // Legislative Coverage). The first one is its main app; the rest are extra apps,
+  // shown under "More apps from …" with a name.
+  extra?: boolean;
+  name?: string;
 }
+
+// A readable app name from a store link: Apple's URL slug ("ket-legislative-coverage"
+// → "KET Legislative Coverage"). Words that appear in capitals in the station's name or
+// call letters stay in capitals.
+function appNameFromUrl(url: string, org: { name: string }): string | undefined {
+  const slug = url.match(/apple\.com\/[a-z]{2}\/app\/([^/]+)\/id\d+/)?.[1];
+  if (!slug) return undefined;
+  const words = org.name.split(/\W+/).filter(Boolean);
+  const initials = words.filter((w) => /^[A-Z]/.test(w)).map((w) => w[0]).join(''); // Kentucky Educational Television → KET
+  const caps = new Set(words.filter((w) => w.length > 1 && w === w.toUpperCase()).concat([initials, 'PBS', 'NPR', 'TV', 'FM']));
+  return decodeURIComponent(slug).split('-').filter(Boolean)
+    .map((w) => (caps.has(w.toUpperCase()) ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1)))
+    .join(' ');
+}
+const letters = (s: string) => s.toLowerCase().replace(/[^a-z]/g, '');
 
 interface Organization {
   id: string;
@@ -174,6 +194,9 @@ for (const entry of stationApps) {
   if (typeof entry.id !== 'string') errors.push(`${where}: needs an id`);
   // Neutrality: this file is public and must not record partner status.
   checkFields(where, entry, ['id', 'name', 'apps', 'exclude']);
+  for (const [i, app] of (Array.isArray(entry.apps) ? entry.apps : []).entries()) {
+    checkFields(`${where} app ${i + 1}`, app as Record<string, unknown>, ['platform', 'url', 'source', 'retrievedAt', 'extra', 'name']);
+  }
   if (entry.exclude !== undefined && (!Array.isArray(entry.exclude) || !entry.exclude.every(isUrl))) {
     errors.push(`${where}: exclude must be a list of full https:// links`);
   }
@@ -424,6 +447,7 @@ for (const site of scraped) {
   }
 }
 
+const extras = section('Extra apps (a second app for the same platform; set extra/name in station-apps.yaml if wrong)');
 const excluded = new Set(stationApps.flatMap((e) => (Array.isArray(e.exclude) ? (e.exclude as string[]) : [])));
 for (const site of scraped) {
   const d = byId.get(site.id);
@@ -432,9 +456,12 @@ for (const site of scraped) {
   for (const l of links) {
     if (isPbsKids(l.url) || excluded.has(l.url)) continue;
     if (/[?&]id=com\.(amazon|google|roku|samsung|lge|apple)\./.test(l.url)) continue; // device makers' apps
-    const existing = d.org.apps.find((a) => a.platform === l.platform);
-    if (existing) {
-      if (existing.url !== l.url) lowConfidence.push(`${d.org.id}: more than one ${l.platform} link on its site; using ${existing.url}, not ${l.url}`);
+    if (d.org.apps.some((a) => a.url === l.url)) continue;
+    const main = d.org.apps.find((a) => a.platform === l.platform && !a.extra);
+    if (main) {
+      // A second app for the same platform: keep it as an extra app.
+      d.org.apps.push({ platform: l.platform, url: l.url, source: l.foundOn, retrievedAt: site.retrievedAt, verified: false, extra: true });
+      extras.push(`${d.org.id}: extra ${l.platform} app ${l.url} (main: ${main.url})`);
       continue;
     }
     d.org.apps.push({ platform: l.platform, url: l.url, source: l.foundOn, retrievedAt: site.retrievedAt, verified: false }); // scraped: unverified until a person adds it to station-apps.yaml
@@ -443,13 +470,41 @@ for (const site of scraped) {
   }
 }
 
-// Hand-checked app links win over everything else for their platform.
+// Hand-checked app links win over everything else: a main app replaces the platform's
+// main app; an `extra: true` app is added (or corrected) as an extra app.
 for (const entry of stationApps) {
   const d = byId.get(entry.id as string);
   if (!d) { unknownIds.push(`station-apps.yaml: ${entry.id}`); continue; }
-  for (const a of entry.apps as Record<string, unknown>[]) {
-    d.org.apps = d.org.apps.filter((x) => x.platform !== a.platform);
-    d.org.apps.push({ platform: a.platform as Platform, url: a.url as string, source: a.source as string, retrievedAt: toDateString(a.retrievedAt), verified: true });
+  for (const a of (entry.apps ?? []) as Record<string, unknown>[]) {
+    const isExtra = a.extra === true;
+    d.org.apps = d.org.apps.filter((x) => x.url !== a.url && (isExtra || x.platform !== a.platform || x.extra));
+    d.org.apps.push({
+      platform: a.platform as Platform, url: a.url as string, source: a.source as string, retrievedAt: toDateString(a.retrievedAt), verified: true,
+      ...(isExtra ? { extra: true } : {}), ...(typeof a.name === 'string' ? { name: a.name } : {}),
+    });
+  }
+}
+
+// Name the extra apps. Apple links carry a name in their address; a Google Play extra is
+// paired with an Apple extra whose name matches its package id (org.ket.legislativecoverage
+// ↔ "KET Legislative Coverage"), otherwise it gets a generic name.
+for (const d of drafts) {
+  const extrasHere = d.org.apps.filter((a) => a.extra);
+  for (const a of extrasHere) if (!a.name) a.name = appNameFromUrl(a.url, d.org);
+  const paired = new Set<string>();
+  const unnamed = extrasHere.filter((x) => !x.name);
+  for (const a of unnamed) {
+    const pkg = a.url.match(/[?&]id=([\w.]+)/)?.[1]?.split('.').pop() ?? '';
+    const twin = extrasHere.find((x) => x.name && !paired.has(x.name) && pkg.length > 3 && letters(x.name).endsWith(letters(pkg)));
+    if (twin?.name) { a.name = twin.name; paired.add(twin.name); }
+  }
+  // Still unnamed: pair with the next named app that has no other-platform twin yet, in
+  // the order the station's page lists them (stations usually list an app's links together).
+  for (const a of unnamed.filter((x) => !x.name)) {
+    const twin = extrasHere.find((x) => x.name && x.platform !== a.platform && !paired.has(x.name) &&
+      !extrasHere.some((y) => y !== x && y.name === x.name && y.platform === a.platform));
+    if (twin?.name) { a.name = twin.name; paired.add(twin.name); lowConfidence.push(`${d.org.id}: paired ${a.url} with "${twin.name}" by position on the page`); }
+    else a.name = 'Another app';
   }
 }
 
@@ -524,7 +579,7 @@ const searchIndex = organizations.map((o) => ({
   tx: o.facilityIds.map((id) => [facById.get(id)!.lat, facById.get(id)!.lng]),
   network: o.networks.join(', '),
   media: o.mediaTypes,
-  hasApps: o.apps.some((a) => a.platform !== 'web'),
+  hasApps: o.apps.some((a) => a.platform !== 'web' && !a.extra),
   live: o.livestreamUrl ?? null,
 }));
 writeFileSync(join(OUT, 'search.json'), JSON.stringify(searchIndex));

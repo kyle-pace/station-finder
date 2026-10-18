@@ -7,7 +7,7 @@ import { join } from 'node:path';
 export type Platform = 'ios' | 'android' | 'appletv' | 'firetv' | 'androidtv' | 'roku' | 'samsung' | 'lg' | 'web';
 
 export interface Provenance { source: string; retrievedAt: string }
-export interface App { platform: Platform; url: string; source: string; retrievedAt: string; verified: boolean }
+export interface App { platform: Platform; url: string; source: string; retrievedAt: string; verified: boolean; extra?: boolean; name?: string }
 export interface Organization {
   id: string;
   name: string;

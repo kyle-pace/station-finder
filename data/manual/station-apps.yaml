@@ -15,6 +15,9 @@
 # source:      where you found the link (e.g. "station website", "store listing")
 # retrievedAt: the date you checked it (YYYY-MM-DD)
 #
+# extra:       optional, true for an additional app (not the station's main app for
+#              that platform), shown under "More apps from …"
+# name:        optional app name, e.g. "KET Legislative Coverage" (used for extra apps)
 # exclude:     optional list of links found on the station's site that are NOT its app
 #              (the build will stop using them), e.g. a remote-control or partner app.
 #

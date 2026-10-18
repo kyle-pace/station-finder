@@ -21,7 +21,7 @@ const { org } = Astro.props as { org: Organization };
 const fallbackBrand = national.find((b) => org.networks.map((n) => n.toLowerCase()).includes(b.id));
 interface Item { platform: Platform; href: string; label?: string; detail?: string; fallback: boolean }
 const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
-  const own = org.apps.find((a) => a.platform === platform);
+  const own = org.apps.find((a) => a.platform === platform && !a.extra);
   if (own) return [{ platform, href: own.url, detail: platform === 'web' ? host(own.url) : undefined, fallback: false }];
   const fb = fallbackBrand?.apps.find((a) => a.platform === platform);
   if (!fb) return [];
@@ -29,6 +29,13 @@ const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
   return [{ platform, href: fb.url, detail: `${fallbackBrand!.name} app · ${where}`, fallback: true }];
 });
 const hasOwnApps = items.some((i) => !i.fallback);
+
+// Extra apps (a station's other apps, e.g. KET Legislative Coverage), grouped by name.
+const extraApps = [...org.apps.filter((a) => a.extra).reduce((m, a) => {
+  const name = a.name ?? 'Another app';
+  m.set(name, [...(m.get(name) ?? []), a].sort((x, y) => PLATFORM_ORDER.indexOf(x.platform) - PLATFORM_ORDER.indexOf(y.platform)));
+  return m;
+}, new Map<string, typeof org.apps>())];
 const GROUP_WORDS = { mobile: 'phone or tablet app', tv: 'TV app', web: 'web player' } as const;
 const groups = (['mobile', 'tv', 'web'] as const)
   .map((key) => ({ key, title: { mobile: 'Phone & tablet', tv: 'TV', web: 'Web' }[key], items: items.filter((i) => PLATFORM_INFO[i.platform].group === key) }))
@@ -54,7 +61,7 @@ const description = `Every way to watch ${org.name}: apps for phone, tablet, and
         <div class="stack gap-8">
           <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
           <h1 class="display">{org.name}</h1>
-          <p class="muted">{metaLine(org)}{calls.length > 0 && <> · On air as {calls.map((c, i) => <>{i > 0 && ', '}<span class="nowrap">{c}</span></>)}</>}</p>
+          <p class="muted">{metaLine(org)}{calls.length > 0 && <> · On air as {calls.slice(0, 3).map((c, i) => <>{i > 0 && ', '}<span class="nowrap">{c}</span></>)}{calls.length > 3 && <> and {calls.length - 3} more</>}</>}</p>
         </div>
 
         {(org.livestreamUrl || org.website) && (
@@ -84,6 +91,21 @@ const description = `Every way to watch ${org.name}: apps for phone, tablet, and
               </div>
             </div>
           ))}
+          {extraApps.length > 0 && (
+            <div class="stack gap-12">
+              <h2>More apps from {org.name}</h2>
+              <ul class="extra-list">
+                {extraApps.map(([name, list]) => (
+                  <li class="extra-app">
+                    <span class="body-strong">{name}</span>
+                    <span class="row-wrap">
+                      {list.map((a) => <a class="label" href={a.url} rel="noopener">{PLATFORM_INFO[a.platform].label}</a>)}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </section>
       </div>
 
@@ -105,6 +127,9 @@ const description = `Every way to watch ${org.name}: apps for phone, tablet, and
 
 <style>
   .nowrap { white-space: nowrap; }
+  .extra-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
+  .extra-app { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-8) var(--space-16); padding: var(--space-12) var(--space-4); border-bottom: 1px solid var(--border); }
+  .extra-app .row-wrap { gap: var(--space-16); }
   .back { text-decoration: none; }
   .back:hover { text-decoration: underline; }
 </style>
