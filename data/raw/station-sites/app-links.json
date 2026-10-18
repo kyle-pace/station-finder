@@ -1,0 +1,3286 @@
+[
+  {
+    "id": "alaska-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://alaskapublic.org/",
+      "https://alaskapublic.org/about/akpm-app",
+      "https://alaskapublic.org/watch/ways-to-watch"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://alaskapublic.org",
+      "final": "https://alaskapublic.org/"
+    }
+  },
+  {
+    "id": "kuac",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://kuac.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://kuac.org/",
+      "final": "https://kuac.org/"
+    }
+  },
+  {
+    "id": "alabama-public-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://aptv.org/",
+      "https://aptv.org/about/download-guides-and-listings/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.aptv.org/",
+      "final": "https://aptv.org/"
+    }
+  },
+  {
+    "id": "arkansas-tv",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.arkansastv.gov/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.arkansastv.gov/",
+      "final": "https://www.arkansastv.gov/"
+    }
+  },
+  {
+    "id": "kvzk",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": [
+      "https://www.kvzktv.com/: fetch failed"
+    ]
+  },
+  {
+    "id": "arizona-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://azpbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.azpbs.org/",
+      "final": "https://azpbs.org/"
+    }
+  },
+  {
+    "id": "azpm",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": []
+  },
+  {
+    "id": "keet",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.keet.org/",
+      "https://www.keet.org/how-to-watch/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.keet.org/",
+      "final": "https://www.keet.org/"
+    }
+  },
+  {
+    "id": "kixe",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kixe.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kixe.org/",
+      "final": "https://www.kixe.org/"
+    }
+  },
+  {
+    "id": "klcs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://klcs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.klcs.org/",
+      "final": "https://klcs.org/"
+    }
+  },
+  {
+    "id": "kpbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kpbs.org/kpbsplus",
+      "https://www.kpbs.org/",
+      "https://www.kpbs.org/kpbs-on-the-go"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/kpbs/id6741001514",
+        "linkText": "KPBS+ on iTunes Store",
+        "foundOn": "https://www.kpbs.org/kpbs-on-the-go",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.kpbs",
+        "linkText": "KPBS+ on Google Play Store",
+        "foundOn": "https://www.kpbs.org/kpbs-on-the-go",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/kpbs-news/id1305075995",
+        "linkText": "KPBS on iTunes Store",
+        "foundOn": "https://www.kpbs.org/kpbs-on-the-go",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.kpbs",
+        "linkText": "KPBS on Google Play Store",
+        "foundOn": "https://www.kpbs.org/kpbs-on-the-go",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kpbs.org/",
+      "final": "https://www.kpbs.org/"
+    }
+  },
+  {
+    "id": "kqed-and-kqeh",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kqed.org/tv"
+    ],
+    "links": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Icon-Fire-TVCreated with Sketch.Amazon Fire TV",
+        "foundOn": "https://www.kqed.org/tv",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kqed.org/tv/",
+      "final": "https://www.kqed.org/tv"
+    }
+  },
+  {
+    "id": "kvcr-dt",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://kvcr.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kvcr.org/",
+      "final": "https://kvcr.org/"
+    }
+  },
+  {
+    "id": "kvie",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kvie.org/kvie-plus/",
+      "https://www.kvie.org/",
+      "https://www.kvie.org/app/",
+      "https://www.kvie.org/app/tv-connected-devices/apple-tv/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/ccf90dd41f8e5518e9d6a1082486e7ef:5e8ea1044757b549d4a4e3e4843bed4d/kvie-pbs-kvie",
+        "linkText": "Roku",
+        "foundOn": "https://www.kvie.org/kvie-plus/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0F5XB6BQL",
+        "linkText": "Fire TV",
+        "foundOn": "https://www.kvie.org/kvie-plus/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1268909",
+        "linkText": "LG",
+        "foundOn": "https://www.kvie.org/kvie-plus/",
+        "how": "manual-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kvie.org/",
+      "final": "https://www.kvie.org/"
+    }
+  },
+  {
+    "id": "northern-california-public-media",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": []
+  },
+  {
+    "id": "pbs-socal",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbssocal.org/",
+      "https://www.pbssocal.org/about/app",
+      "https://www.pbssocal.org/about/app"
+    ],
+    "links": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "",
+        "foundOn": "https://www.pbssocal.org/about/app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "linkText": "",
+        "foundOn": "https://www.pbssocal.org/about/app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://pbssocal.org",
+      "final": "https://www.pbssocal.org/"
+    }
+  },
+  {
+    "id": "valley-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://valleypbs.org/",
+      "https://valleypbs.org/app/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/id1173006721",
+        "linkText": "",
+        "foundOn": "https://valleypbs.org/app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.valleypbs",
+        "linkText": "",
+        "foundOn": "https://valleypbs.org/app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://valleypbs.org/",
+      "final": "https://valleypbs.org/"
+    }
+  },
+  {
+    "id": "kbdi",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbs12.org/",
+      "https://www.pbs12.org/watch/ways-to-watch/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "linkText": "ROKU",
+        "foundOn": "https://www.pbs12.org/watch/ways-to-watch/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Amazon Fire TV",
+        "foundOn": "https://www.pbs12.org/watch/ways-to-watch/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbs12.org/",
+      "final": "https://www.pbs12.org/"
+    }
+  },
+  {
+    "id": "rocky-mountain-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.rmpbs.org/watch/rmpbs-plus",
+      "https://www.rmpbs.org/",
+      "https://www.rmpbs.org/ways-to-watch"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876",
+        "linkText": ".css-1k2qhva.builder-block{width:100%;position:relative;min-height:20px;min-widt",
+        "foundOn": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876",
+        "linkText": ".css-1jtdkxx.builder-block{width:100%;position:relative;min-height:20px;min-widt",
+        "foundOn": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/appSearch",
+        "linkText": ".css-86q9dx.builder-block{width:32%;position:relative;min-height:20px;min-width:",
+        "foundOn": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "androidtv",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.krma",
+        "linkText": ".css-1qqloj9.builder-block{width:76%;position:relative;min-height:20px;min-width",
+        "foundOn": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.krma",
+        "linkText": ".css-1giayd7.builder-block{width:100%;position:relative;min-height:20px;min-widt",
+        "foundOn": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/0875518a556facf58849ba719e7edf36:6d256d82db92a35b3602265aa715ce20/rmpbs-rocky-mountain-pbs",
+        "linkText": ".css-zo6g3x.builder-block{width:100%;position:relative;min-height:20px;min-width",
+        "foundOn": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DLBTLJ7B",
+        "linkText": ".css-1a88tfu.builder-block{width:100%;position:relative;min-height:20px;min-widt",
+        "foundOn": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "how": "manual-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.rmpbs.org/",
+      "final": "https://www.rmpbs.org/"
+    }
+  },
+  {
+    "id": "connecticut-public-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.ctpublic.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.ctpublic.org/",
+      "final": "https://www.ctpublic.org/"
+    }
+  },
+  {
+    "id": "weta",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://weta.org/wetaplus",
+      "https://weta.org/watch"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/2ecc8f8b5306bfcf72dac56e6a6a10bd:e3336a2ea2166d0d7e89aed5c45816d2/weta-pbs",
+        "linkText": "Watch on Roku",
+        "foundOn": "https://weta.org/wetaplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/weta/id6740541547",
+        "linkText": "Watch on Apple TV",
+        "foundOn": "https://weta.org/wetaplus",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DTRDNXXP",
+        "linkText": "Watch on Fire TV",
+        "foundOn": "https://weta.org/wetaplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
+        "linkText": "Watch on LG",
+        "foundOn": "https://weta.org/wetaplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/weta/id6740541547",
+        "linkText": "Watch on iOS",
+        "foundOn": "https://weta.org/wetaplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.weta",
+        "linkText": "Watch on Android",
+        "foundOn": "https://weta.org/wetaplus",
+        "how": "manual-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://weta.org/watch",
+      "final": "https://weta.org/watch"
+    }
+  },
+  {
+    "id": "whut",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.whut.org/",
+      "https://www.whut.org/ways-to-watch"
+    ],
+    "links": [],
+    "problems": [
+      "https://www.whut.org/tv-schedule-1: HTTP 404 for https://www.whut.org/tv-schedule-1"
+    ],
+    "homepage": {
+      "requested": "https://www.whut.org/",
+      "final": "https://www.whut.org/"
+    }
+  },
+  {
+    "id": "south-florida-pbs",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": []
+  },
+  {
+    "id": "wedu-and-wedq",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wedu.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wedu.org/",
+      "final": "https://www.wedu.org/"
+    }
+  },
+  {
+    "id": "wfsu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://wfsu.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wfsu.org/",
+      "final": "https://wfsu.org/"
+    }
+  },
+  {
+    "id": "wgcu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wgcu.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wgcu.org/",
+      "final": "https://www.wgcu.org/"
+    }
+  },
+  {
+    "id": "wjct",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wjct.org/",
+      "https://www.wjct.org/ways-to-listen/download-the-wjct-app/",
+      "https://www.wjct.org/jaxpbs/watch/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wjct-public-broadcasting-app/id1041625425",
+        "linkText": "Download for iOS",
+        "foundOn": "https://www.wjct.org/jaxpbs/watch/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wjct",
+        "linkText": "Download for Android",
+        "foundOn": "https://www.wjct.org/jaxpbs/watch/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "linkText": "Image",
+        "foundOn": "https://www.wjct.org/jaxpbs/watch/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Image",
+        "foundOn": "https://www.wjct.org/jaxpbs/watch/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wjct.org/",
+      "final": "https://www.wjct.org/"
+    }
+  },
+  {
+    "id": "wlrn",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wlrn.org/",
+      "https://www.wlrn.org/arts-culture/2026-10-14/beyond-social-media-how-miami-based-vertical-movie-app-empowers-independent-filmmakers",
+      "https://www.wlrn.org/ways-to-watch-wlrn"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/in/app/wlrn-public-media/id927438305",
+        "linkText": "iPhone",
+        "foundOn": "https://www.wlrn.org/ways-to-watch-wlrn",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.wlrn",
+        "linkText": "Android",
+        "foundOn": "https://www.wlrn.org/ways-to-watch-wlrn",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wlrn.org/",
+      "final": "https://www.wlrn.org/"
+    }
+  },
+  {
+    "id": "wucf",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wucf.org/",
+      "https://www.wucf.org/about/watch-listen/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wucf.org/",
+      "final": "https://www.wucf.org/"
+    }
+  },
+  {
+    "id": "wuft",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wuft.org/",
+      "https://www.wuft.org/app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/floridas-89-1-wuft-fm/id411899516",
+        "linkText": "WUFT Public Media App",
+        "foundOn": "https://www.wuft.org/app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wufttv",
+        "linkText": "WUFT Public Media App",
+        "foundOn": "https://www.wuft.org/app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wuft.org/",
+      "final": "https://www.wuft.org/"
+    }
+  },
+  {
+    "id": "georgia-public-broadcasting",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.gpb.org/",
+      "https://www.gpb.org/apps",
+      "https://www.gpb.org/apps/gpb-sports"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb/id940297307",
+        "linkText": "Download on the App Store",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb",
+        "linkText": "Download on Google Play",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb-sports/id455158040",
+        "linkText": "Download on the App Store",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.gpb.gpbfootball",
+        "linkText": "Download on Google Play",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb-classical/id6443334692",
+        "linkText": "Download on the App Store",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.gpbclassical",
+        "linkText": "Download on Google Play",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gasha-go/id6451390320",
+        "linkText": "Download on the App Store",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.gpb.gashago",
+        "linkText": "Download on Google Play",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb-vr-ar/id6756442017",
+        "linkText": "Download on the App Store",
+        "foundOn": "https://www.gpb.org/apps",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.gpb.org/",
+      "final": "https://www.gpb.org/"
+    }
+  },
+  {
+    "id": "wabe",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wabe.org/",
+      "https://www.wabe.org/download-mobile-app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wabe-public-broadcasting-app/id567615999",
+        "linkText": "Mobile App Download BTN",
+        "foundOn": "https://www.wabe.org/download-mobile-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wabe",
+        "linkText": "Boogle Play BTN",
+        "foundOn": "https://www.wabe.org/download-mobile-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wabe.org",
+      "final": "https://www.wabe.org/"
+    }
+  },
+  {
+    "id": "pbs-guam",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbsguam.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://pbsguam.org/",
+      "final": "https://www.pbsguam.org/"
+    }
+  },
+  {
+    "id": "pbs-hawai-i",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbshawaii.org/",
+      "https://www.pbshawaii.org/download-the-pbs-app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbshawaii.org",
+      "final": "https://www.pbshawaii.org/"
+    }
+  },
+  {
+    "id": "iowa-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.iowapbs.org/",
+      "https://www.iowapbs.org/watch"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.iowapbs.org/",
+      "final": "https://www.iowapbs.org/"
+    }
+  },
+  {
+    "id": "idaho-public-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.idahoptv.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.idahoptv.org/",
+      "final": "https://www.idahoptv.org/"
+    }
+  },
+  {
+    "id": "illinois-public-media",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": []
+  },
+  {
+    "id": "wqpt",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wqpt.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wqpt.org/",
+      "final": "https://www.wqpt.org/"
+    }
+  },
+  {
+    "id": "wsiu-and-wusi",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wsiu.org/",
+      "https://www.wsiu.org/wsiu-mobile-app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wsiu-public-media-app/id1081876063",
+        "linkText": "iTunes",
+        "foundOn": "https://www.wsiu.org/wsiu-mobile-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wsiu",
+        "linkText": "Google Play",
+        "foundOn": "https://www.wsiu.org/wsiu-mobile-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wsiu.org/",
+      "final": "https://www.wsiu.org/"
+    }
+  },
+  {
+    "id": "wttw-and-wyin",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wttw.com/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wttw.com",
+      "final": "https://www.wttw.com/"
+    }
+  },
+  {
+    "id": "wtvp",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wtvp.org/",
+      "https://www.wtvp.org/pbs-video-app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wtvp.org/",
+      "final": "https://www.wtvp.org/"
+    }
+  },
+  {
+    "id": "ball-state-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://ballstatepbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://ballstatepbs.org/",
+      "final": "https://ballstatepbs.org/"
+    }
+  },
+  {
+    "id": "lakeshore-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.lakeshorepublicmedia.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.lakeshorepublicmedia.org",
+      "final": "https://www.lakeshorepublicmedia.org/"
+    }
+  },
+  {
+    "id": "michiana-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wnit.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wnit.org/",
+      "final": "https://www.wnit.org/"
+    }
+  },
+  {
+    "id": "pbs-fort-wayne",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbsfortwayne.org/",
+      "https://www.pbsfortwayne.org/pbsapp/",
+      "https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/es/app/wfwa-pbs39-fort-wayne/id1181680465",
+        "linkText": "iPhone, iPad",
+        "foundOn": "https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wfwa",
+        "linkText": "Android",
+        "foundOn": "https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B06X6BXYDT",
+        "linkText": "Amazon Kindle devices",
+        "foundOn": "https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbsfortwayne.org/",
+      "final": "https://www.pbsfortwayne.org/"
+    }
+  },
+  {
+    "id": "wfyi",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wfyi.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wfyi.org",
+      "final": "https://www.wfyi.org/"
+    }
+  },
+  {
+    "id": "wnin",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wnin.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wnin.org/",
+      "final": "https://www.wnin.org/"
+    }
+  },
+  {
+    "id": "wtiu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.ipm.org/tv/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "linkText": "Download app on Roku",
+        "foundOn": "https://www.ipm.org/tv/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Download app on Fire TV",
+        "foundOn": "https://www.ipm.org/tv/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
+        "linkText": "Download app on LG",
+        "foundOn": "https://www.ipm.org/tv/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://ipm.org/tv/",
+      "final": "https://www.ipm.org/tv/"
+    }
+  },
+  {
+    "id": "ktwu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://ktwu.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.ktwu.org/",
+      "final": "https://ktwu.org/"
+    }
+  },
+  {
+    "id": "pbs-kansas",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kpts.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kpts.org/",
+      "final": "https://www.kpts.org/"
+    }
+  },
+  {
+    "id": "smoky-hills-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.smokyhillspbs.org/",
+      "https://www.smokyhillspbs.org/app/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/smoky-hills-pbs/id1636746517",
+        "linkText": "Download it on App Store or Google Play image link Download it on App Store or G",
+        "foundOn": "https://www.smokyhillspbs.org/app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.smokyhillspbs",
+        "linkText": "Download it on Google Play image link Download it on Google Play",
+        "foundOn": "https://www.smokyhillspbs.org/app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.smokyhillspbs.org/",
+      "final": "https://www.smokyhillspbs.org/"
+    }
+  },
+  {
+    "id": "kentucky-educational-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://ket.org/",
+      "https://ket.org/about/ket-pbs-apps/"
+    ],
+    "links": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kettv",
+        "linkText": "Google Play store logo",
+        "foundOn": "https://ket.org/about/ket-pbs-apps/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ket-videos-schedules/id1298153586",
+        "linkText": "Apple App Store logo",
+        "foundOn": "https://ket.org/about/ket-pbs-apps/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.ket.legislativecoverage",
+        "linkText": "Google Play store logo",
+        "foundOn": "https://ket.org/about/ket-pbs-apps/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ket-legislative-coverage/id786591133",
+        "linkText": "Apple App Store logo",
+        "foundOn": "https://ket.org/about/ket-pbs-apps/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ket-fastforward-skill-check/id1321050730",
+        "linkText": "Apple App Store logo",
+        "foundOn": "https://ket.org/about/ket-pbs-apps/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.ket.org/",
+      "final": "https://ket.org/"
+    }
+  },
+  {
+    "id": "wku-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wkyupbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wkyupbs.org/",
+      "final": "https://www.wkyupbs.org/"
+    }
+  },
+  {
+    "id": "louisiana-public-broadcasting",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.lpb.org/",
+      "https://www.lpb.org/about/lpb-app/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/lpb-app/id1459163263",
+        "linkText": "image link Filer image",
+        "foundOn": "https://www.lpb.org/about/lpb-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.lpb",
+        "linkText": "image link Filer image",
+        "foundOn": "https://www.lpb.org/about/lpb-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.lpb.org",
+      "final": "https://www.lpb.org/"
+    }
+  },
+  {
+    "id": "wyes",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wyes.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wyes.org/",
+      "final": "https://www.wyes.org/"
+    }
+  },
+  {
+    "id": "gbh",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wgbh.org/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gbh-news/id434660601",
+        "linkText": "Download on the App Store Apple App Store button",
+        "foundOn": "https://www.wgbh.org/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.wgbh.WGBHApp",
+        "linkText": "Get it on Google Play Google Play Store button",
+        "foundOn": "https://www.wgbh.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wgbh.org/",
+      "final": "https://www.wgbh.org/"
+    }
+  },
+  {
+    "id": "new-england-public-media",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": [
+      "https://nepm.org: fetch failed"
+    ]
+  },
+  {
+    "id": "maryland-public-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.mpt.org/",
+      "https://www.mpt.org/anywhere/pbs-app/",
+      "https://www.mpt.org/support/mptpassporthelp/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://mpt.org",
+      "final": "https://www.mpt.org/"
+    }
+  },
+  {
+    "id": "maine-public-broadcasting-network",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.mainepublic.org/",
+      "https://www.mainepublic.org/download-the-maine-public-app"
+    ],
+    "links": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Fire TV Download the PBS app on Fire TV",
+        "foundOn": "https://www.mainepublic.org/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.mpbn",
+        "linkText": "Get it on Google Play",
+        "foundOn": "https://www.mainepublic.org/download-the-maine-public-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/maine-public-broadcasting-app/id1104650605",
+        "linkText": "Download on the App Store",
+        "foundOn": "https://www.mainepublic.org/download-the-maine-public-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.mainepublic.org/",
+      "final": "https://www.mainepublic.org/"
+    }
+  },
+  {
+    "id": "cmu-public-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wcmu.org/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wcmu-public-media-app/id584427780",
+        "linkText": "WCMU App - iTunes Store",
+        "foundOn": "https://www.wcmu.org/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wcmu",
+        "linkText": "WCMU App - Google Play Store",
+        "foundOn": "https://www.wcmu.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wcmu.org/",
+      "final": "https://www.wcmu.org/"
+    }
+  },
+  {
+    "id": "delta-college-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.deltapublicmedia.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.deltapublicmedia.org/",
+      "final": "https://www.deltapublicmedia.org/"
+    }
+  },
+  {
+    "id": "detroit-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.detroitpbs.org/",
+      "https://www.detroitpbs.org/download-mobile-app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.detroitpbs.org/",
+      "final": "https://www.detroitpbs.org/"
+    }
+  },
+  {
+    "id": "wgvu-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wgvu.org/television/",
+      "https://www.wgvu.org/pbsapp/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wgvu.org/television/",
+      "final": "https://www.wgvu.org/television/"
+    }
+  },
+  {
+    "id": "wkar",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://tv.wkar.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://tv.wkar.org",
+      "final": "https://tv.wkar.org/"
+    }
+  },
+  {
+    "id": "wnmu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://wnmutv.nmu.edu/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wnmutv.nmu.edu/",
+      "final": "https://wnmutv.nmu.edu/"
+    }
+  },
+  {
+    "id": "ksmq",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.minnesotapbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.minnesotapbs.org/",
+      "final": "https://www.minnesotapbs.org/"
+    }
+  },
+  {
+    "id": "lakeland-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://lptv.org/",
+      "https://lptv.org/download-highlights-lakeland-pbs-program-guide/",
+      "https://lptv.org/watch-online/"
+    ],
+    "links": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "FireTV Logo Firetv White",
+        "foundOn": "https://lptv.org/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "linkText": "Roku Logo Roku White",
+        "foundOn": "https://lptv.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://lptv.org/",
+      "final": "https://lptv.org/"
+    }
+  },
+  {
+    "id": "minnesota-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.minnesotapbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.minnesotapbs.org/",
+      "final": "https://www.minnesotapbs.org/"
+    }
+  },
+  {
+    "id": "pbs-north",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://pbsnorth.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://pbsnorth.org/",
+      "final": "https://pbsnorth.org/"
+    }
+  },
+  {
+    "id": "pioneer-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pioneer.org/",
+      "https://www.pioneer.org/pbsapp/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pioneer.org/",
+      "final": "https://www.pioneer.org/"
+    }
+  },
+  {
+    "id": "kansas-city-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kansascitypbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kansascitypbs.org/",
+      "final": "https://www.kansascitypbs.org/"
+    }
+  },
+  {
+    "id": "ketc",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.ninepbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.ninepbs.org/",
+      "final": "https://www.ninepbs.org/"
+    }
+  },
+  {
+    "id": "kmos",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kmos.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kmos.org/",
+      "final": "https://www.kmos.org/"
+    }
+  },
+  {
+    "id": "ozarks-public-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.optv.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.optv.org/",
+      "final": "https://www.optv.org/"
+    }
+  },
+  {
+    "id": "mississippi-public-broadcasting",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.mpbonline.org/",
+      "https://www.mpbonline.org/radio/app/"
+    ],
+    "links": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.mpb",
+        "linkText": "Google Play image link Google Play",
+        "foundOn": "https://www.mpbonline.org/radio/app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.mpbonline.org/",
+      "final": "https://www.mpbonline.org/"
+    }
+  },
+  {
+    "id": "montana-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.montanapbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.montanapbs.org",
+      "final": "https://www.montanapbs.org/"
+    }
+  },
+  {
+    "id": "pbs-charlotte",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wtvi.org/",
+      "https://www.wtvi.org/app/"
+    ],
+    "links": [],
+    "problems": [
+      "https://www.wtvi.org/watch/pbs-app/: HTTP 404 for https://www.wtvi.org/watch/pbs-app/"
+    ],
+    "homepage": {
+      "requested": "https://www.wtvi.org/",
+      "final": "https://www.wtvi.org/"
+    }
+  },
+  {
+    "id": "pbs-north-carolina",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbsnc.org/",
+      "https://www.pbsnc.org/watch/pbs-app/",
+      "https://www.pbsnc.org/watch/pbs-app/getting-started-with-the-pbs-app/"
+    ],
+    "links": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Fire TV image link Fire TV",
+        "foundOn": "https://www.pbsnc.org/watch/pbs-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbsnc.org/",
+      "final": "https://www.pbsnc.org/"
+    }
+  },
+  {
+    "id": "prairie-public-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.prairiepublic.org/",
+      "https://www.prairiepublic.org/television/pbs-app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.prairiepublic.org/",
+      "final": "https://www.prairiepublic.org/"
+    }
+  },
+  {
+    "id": "nebraska-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://nebraskapublicmedia.org/en/",
+      "https://nebraskapublicmedia.org/en/about/apps/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/nebraska-public-media/id728573963",
+        "linkText": "",
+        "foundOn": "https://nebraskapublicmedia.org/en/about/apps/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.netnebraska.netnebraska",
+        "linkText": "",
+        "foundOn": "https://nebraskapublicmedia.org/en/about/apps/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://nebraskapublicmedia.org/",
+      "final": "https://nebraskapublicmedia.org/en/"
+    }
+  },
+  {
+    "id": "new-hampshire-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://nhpbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://nhpbs.org/",
+      "final": "https://nhpbs.org/"
+    }
+  },
+  {
+    "id": "nj-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://njpbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.njpbs.org/",
+      "final": "https://njpbs.org/"
+    }
+  },
+  {
+    "id": "wnet",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": [
+      "https://www.thirteen.org/: HTTP 403 for https://www.thirteen.org/"
+    ]
+  },
+  {
+    "id": "kenw",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": [
+      "https://kenw.org/: fetch failed"
+    ]
+  },
+  {
+    "id": "krwg",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.krwg.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.krwg.org/",
+      "final": "https://www.krwg.org/"
+    }
+  },
+  {
+    "id": "new-mexico-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.newmexicopbs.org/",
+      "https://www.newmexicopbs.org/what-we-do/how-to-watch-us/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.newmexicopbs.org/",
+      "final": "https://www.newmexicopbs.org/"
+    }
+  },
+  {
+    "id": "pbs-reno",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbsreno.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbsreno.org/",
+      "final": "https://www.pbsreno.org/"
+    }
+  },
+  {
+    "id": "vegas-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.vegaspbs.org/",
+      "https://www.vegaspbs.org/watch/app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.vegaspbs.org/",
+      "final": "https://www.vegaspbs.org/"
+    }
+  },
+  {
+    "id": "buffalo-toronto-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.btpm.org/plus",
+      "https://www.btpm.org/watch/pbs",
+      "https://www.btpm.org/watch/where-to-watch-us"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/d6b5213277d31cd6baeb6cef3d880d3c:9713be84041f47ae656407d348f2a4f1/btpm",
+        "linkText": "Watch on Roku",
+        "foundOn": "https://www.btpm.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/btpm/id6752734865",
+        "linkText": "Watch on Apple TV",
+        "foundOn": "https://www.btpm.org/plus",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0G224WRG5",
+        "linkText": "Watch on Fire TV",
+        "foundOn": "https://www.btpm.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/btpm/id6752734865",
+        "linkText": "Watch on iOS",
+        "foundOn": "https://www.btpm.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wned",
+        "linkText": "Watch on Android",
+        "foundOn": "https://www.btpm.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.btpm.org/watch/pbs",
+      "final": "https://www.btpm.org/watch/pbs"
+    }
+  },
+  {
+    "id": "mountain-lake-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.mountainlake.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://mountainlake.org/",
+      "final": "https://www.mountainlake.org/"
+    }
+  },
+  {
+    "id": "wcny",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wcny.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wcny.org/",
+      "final": "https://www.wcny.org/"
+    }
+  },
+  {
+    "id": "wliw",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": [
+      "https://www.wliw.org/: HTTP 403 for https://www.wliw.org/"
+    ]
+  },
+  {
+    "id": "wmht",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wmht.org/",
+      "https://www.wmht.org/findwmht/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wmht.org/",
+      "final": "https://www.wmht.org/"
+    }
+  },
+  {
+    "id": "wpbs-and-wnpi-dt",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wpbstv.org/",
+      "https://www.wpbstv.org/wpbs-mobile-app/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wpbs-dt/id982619997",
+        "linkText": "",
+        "foundOn": "https://www.wpbstv.org/wpbs-mobile-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wpbs",
+        "linkText": "",
+        "foundOn": "https://www.wpbstv.org/wpbs-mobile-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wpbstv.org/",
+      "final": "https://www.wpbstv.org/"
+    }
+  },
+  {
+    "id": "wskg",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://wskg.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wskg.org/",
+      "final": "https://wskg.org/"
+    }
+  },
+  {
+    "id": "wxxi",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wxxi.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wxxi.org/",
+      "final": "https://www.wxxi.org/"
+    }
+  },
+  {
+    "id": "ideastream-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.ideastream.org/",
+      "https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ideastream-public-media-app/id1618238576",
+        "linkText": "Apple App Store",
+        "foundOn": "https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.ideastream",
+        "linkText": "Google Play Store",
+        "foundOn": "https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://ideastream.org",
+      "final": "https://www.ideastream.org/"
+    }
+  },
+  {
+    "id": "pbs-western-reserve",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbswesternreserve.org/",
+      "https://www.pbswesternreserve.org/pbs-video-app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbswesternreserve.org/",
+      "final": "https://www.pbswesternreserve.org/"
+    }
+  },
+  {
+    "id": "think-tv",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://thinktv.org/",
+      "https://thinktv.org/pbs-app/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "linkText": "Available on Roku",
+        "foundOn": "https://thinktv.org/pbs-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Available on Fire TV",
+        "foundOn": "https://thinktv.org/pbs-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://thinktv.org/",
+      "final": "https://thinktv.org/"
+    }
+  },
+  {
+    "id": "wbgu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wbgutv.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wbgutv.org/",
+      "final": "https://www.wbgutv.org/"
+    }
+  },
+  {
+    "id": "wcet",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.cetconnect.org/",
+      "https://www.cetconnect.org/pbs-app/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "linkText": "Available on Roku",
+        "foundOn": "https://www.cetconnect.org/pbs-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Available on Fire TV",
+        "foundOn": "https://www.cetconnect.org/pbs-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.cetconnect.org/",
+      "final": "https://www.cetconnect.org/"
+    }
+  },
+  {
+    "id": "wgte",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wgte.org/",
+      "https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/id1437532139",
+        "linkText": "Apple",
+        "foundOn": "https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wgte",
+        "linkText": "Android",
+        "foundOn": "https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wgte.org/",
+      "final": "https://www.wgte.org/"
+    }
+  },
+  {
+    "id": "wosu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wosu.org/television/",
+      "https://www.wosu.org/wosu-public-media-mobile-app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wosu-public-media-app/id649640858",
+        "linkText": "Apple logo - Download on the App Store",
+        "foundOn": "https://www.wosu.org/wosu-public-media-mobile-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wosu",
+        "linkText": "Get it on Google Play",
+        "foundOn": "https://www.wosu.org/wosu-public-media-mobile-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wosu.org/television/",
+      "final": "https://www.wosu.org/television/"
+    }
+  },
+  {
+    "id": "woub-and-wouc",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://woub.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://woub.org",
+      "final": "https://woub.org/"
+    }
+  },
+  {
+    "id": "oklahoma-educational-television-authority",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.oeta.tv/",
+      "https://www.oeta.tv/about/streaming-faqs/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://oeta.tv",
+      "final": "https://www.oeta.tv/"
+    }
+  },
+  {
+    "id": "oregon-public-broadcasting",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.opb.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.opb.org/",
+      "final": "https://www.opb.org/"
+    }
+  },
+  {
+    "id": "southern-oregon-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.sopbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.sopbs.org/",
+      "final": "https://www.sopbs.org/"
+    }
+  },
+  {
+    "id": "pbs-39",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wlvt.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wlvt.org",
+      "final": "https://www.wlvt.org/"
+    }
+  },
+  {
+    "id": "whyy",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://whyy.org/whyy-watch-app/",
+      "https://whyy.org/",
+      "https://whyy.org/whyy-listen-app/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
+        "linkText": "iOS Download on the App Store black badge with white text",
+        "foundOn": "https://whyy.org/whyy-watch-app/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1261252",
+        "linkText": "LG LG logo",
+        "foundOn": "https://whyy.org/whyy-watch-app/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
+        "linkText": "Apple TV Apple TV logo",
+        "foundOn": "https://whyy.org/whyy-watch-app/",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whyy",
+        "linkText": "Android Android logo",
+        "foundOn": "https://whyy.org/whyy-watch-app/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/bf40c4e8dc6ecde6d0a9a0ea22af9fae:3d91c874584177eb45373c475768b197/whyy-watch",
+        "linkText": "Roku Roku logo",
+        "foundOn": "https://whyy.org/whyy-watch-app/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DX4GG2V9",
+        "linkText": "Fire TV Fire TV logo",
+        "foundOn": "https://whyy.org/whyy-watch-app/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/whyy-greater-phillys-npr/id1246315452",
+        "linkText": "Download on the App Store button",
+        "foundOn": "https://whyy.org/whyy-listen-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.whyy",
+        "linkText": "Download on the Google Play Store button",
+        "foundOn": "https://whyy.org/whyy-listen-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.whyy.org/",
+      "final": "https://whyy.org/"
+    }
+  },
+  {
+    "id": "witf",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.witf.org/",
+      "https://www.witf.org/mobile/",
+      "https://www.witf.org/programs/witf-passport/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/witf/id1223083847",
+        "linkText": "Link to the WITF mobile app in the Apple App Store",
+        "foundOn": "https://www.witf.org/mobile/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.mediamadeeasy.WITFapp",
+        "linkText": "Link to the WITF mobile app in the Google Play Store",
+        "foundOn": "https://www.witf.org/mobile/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.witf.org/",
+      "final": "https://www.witf.org/"
+    }
+  },
+  {
+    "id": "wpsu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://wpsu.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wpsu.org/",
+      "final": "https://wpsu.org/"
+    }
+  },
+  {
+    "id": "wqed",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wqed.org/plus/activate/",
+      "https://www.wqed.org/",
+      "https://www.wqed.org/fm/app/",
+      "https://www.wqed.org/plus/"
+    ],
+    "links": [
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/wqed/id6752442766",
+        "linkText": "Apple TV icon",
+        "foundOn": "https://www.wqed.org/plus/activate/",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0FVNC82N1",
+        "linkText": "Fire TV",
+        "foundOn": "https://www.wqed.org/plus/activate/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/4d3e3d0302ed8d8d66ed623af6ede419:a6afc2cc55e97c38bbd9adaea7f9e6bd/wqed",
+        "linkText": "Roku",
+        "foundOn": "https://www.wqed.org/plus/activate/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "androidtv",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
+        "linkText": "Google TV icon",
+        "foundOn": "https://www.wqed.org/plus/activate/",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wqed/id6752442766",
+        "linkText": "ios",
+        "foundOn": "https://www.wqed.org/plus/activate/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
+        "linkText": "Android App",
+        "foundOn": "https://www.wqed.org/plus/activate/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1283074",
+        "linkText": "LG",
+        "foundOn": "https://www.wqed.org/plus/activate/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.wqed",
+        "linkText": "Get it on the Google Play store",
+        "foundOn": "https://www.wqed.org/fm/app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wqed.org/",
+      "final": "https://www.wqed.org/"
+    }
+  },
+  {
+    "id": "wqln",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wqln.org/",
+      "https://www.wqln.org/wqln-pbs-npr-app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wqln/id1666701865",
+        "linkText": "Download on the Apple App Store Download on the Apple App Store",
+        "foundOn": "https://www.wqln.org/wqln-pbs-npr-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wqln",
+        "linkText": "Download on the Google Play Store Download on the Google Play Store",
+        "foundOn": "https://www.wqln.org/wqln-pbs-npr-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wqln.org/",
+      "final": "https://www.wqln.org/"
+    }
+  },
+  {
+    "id": "wvia",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wvia.org/",
+      "https://www.wvia.org/wvia-mobile-app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/id1479793016",
+        "linkText": "Download on the App Store",
+        "foundOn": "https://www.wvia.org/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wvia",
+        "linkText": "Get it on Google Play",
+        "foundOn": "https://www.wvia.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wvia.org/",
+      "final": "https://www.wvia.org/"
+    }
+  },
+  {
+    "id": "sistema-tv",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://sistematv.uagm.net/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://sistematv.uagm.net/",
+      "final": "https://sistematv.uagm.net/"
+    }
+  },
+  {
+    "id": "ocean-state-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.oceanstatemedia.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.oceanstatemedia.org/",
+      "final": "https://www.oceanstatemedia.org/"
+    }
+  },
+  {
+    "id": "south-carolina-educational-television",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.scetv.org/scetvplus",
+      "https://www.scetv.org/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://my.roku.com/account/add/SCETVPLUS",
+        "linkText": "Roku",
+        "foundOn": "https://www.scetv.org/scetvplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/scetv/id6772544565",
+        "linkText": "Apple TV",
+        "foundOn": "https://www.scetv.org/scetvplus",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0H3YY4X4T",
+        "linkText": "Fire TV",
+        "foundOn": "https://www.scetv.org/scetvplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/scetv/id6772544565",
+        "linkText": "Apple App Store",
+        "foundOn": "https://www.scetv.org/scetvplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wrlk",
+        "linkText": "Google Play",
+        "foundOn": "https://www.scetv.org/scetvplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/south-carolina-etv/id1056289468",
+        "linkText": "South Carolina ETV on the App Store",
+        "foundOn": "https://www.scetv.org/scetvplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv",
+        "linkText": "South Carolina ETV on Google Play",
+        "foundOn": "https://www.scetv.org/scetvplus",
+        "how": "manual-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.scetv.org/",
+      "final": "https://www.scetv.org/"
+    }
+  },
+  {
+    "id": "south-dakota-public-broadcasting",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.sdpb.org/",
+      "https://www.sdpb.org/about/app"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/sdpb-app/id881275526",
+        "linkText": "App Store",
+        "foundOn": "https://www.sdpb.org/about/app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.sdpb",
+        "linkText": "",
+        "foundOn": "https://www.sdpb.org/about/app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.sdpb.org/",
+      "final": "https://www.sdpb.org/"
+    }
+  },
+  {
+    "id": "east-tennessee-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.easttennesseepbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.easttennesseepbs.org",
+      "final": "https://www.easttennesseepbs.org/"
+    }
+  },
+  {
+    "id": "nashville-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wnpt.org/",
+      "https://www.wnpt.org/watch/pbsapp/"
+    ],
+    "links": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Fire App Store Fire App Store button link",
+        "foundOn": "https://www.wnpt.org/watch/pbsapp/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wnpt.org/",
+      "final": "https://www.wnpt.org/"
+    }
+  },
+  {
+    "id": "wcte",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wcte.org/",
+      "https://www.wcte.org/watch/app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wcte.org/",
+      "final": "https://www.wcte.org/"
+    }
+  },
+  {
+    "id": "west-tn-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.westtnpbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.westtnpbs.org/",
+      "final": "https://www.westtnpbs.org/"
+    }
+  },
+  {
+    "id": "wkno",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wkno.org/",
+      "https://www.wkno.org/pbs-app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wkno.org/",
+      "final": "https://www.wkno.org/"
+    }
+  },
+  {
+    "id": "wtci",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wtcitv.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wtcitv.org/",
+      "final": "https://www.wtcitv.org/"
+    }
+  },
+  {
+    "id": "austin-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://austinpbs.org/",
+      "https://austinpbs.org/ways-to-watch"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.austinpbs.org/",
+      "final": "https://austinpbs.org/"
+    }
+  },
+  {
+    "id": "basin-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.basinpbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.basinpbs.org/",
+      "final": "https://www.basinpbs.org/"
+    }
+  },
+  {
+    "id": "houston-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.houstonpublicmedia.org/support/hpm-plus/",
+      "https://www.houstonpublicmedia.org/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/d3e1be932ab615fd04c7f9a16951f130:7d176e27bfd7d91af4741125088ff7be/hpm-pbs",
+        "linkText": "Roku",
+        "foundOn": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/hpm/id6755161777",
+        "linkText": "Apple TV",
+        "foundOn": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0G3XYR4HJ",
+        "linkText": "Amazon Fire TV",
+        "foundOn": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1286640",
+        "linkText": "LG webOS",
+        "foundOn": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "androidtv",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.kuht",
+        "linkText": "Android TV",
+        "foundOn": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "how": "manual-page",
+        "confidence": "low"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.houstonpublicmedia.org/",
+      "final": "https://www.houstonpublicmedia.org/"
+    }
+  },
+  {
+    "id": "kamu",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://kamu.tamu.edu/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://kamu.tamu.edu/",
+      "final": "https://kamu.tamu.edu/"
+    }
+  },
+  {
+    "id": "kedt",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kedt.org/"
+    ],
+    "links": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kedt",
+        "linkText": "Download the KEDT App Download the KEDT app on Apple's \"App Store\" and on the \"G",
+        "foundOn": "https://www.kedt.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kedt.org/",
+      "final": "https://www.kedt.org/"
+    }
+  },
+  {
+    "id": "kera",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kera.org/2003/01/27/tv-ads-a-lot-of-money-but-is-it-worth-it/",
+      "https://www.kera.org/listen/app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kera.org/tv/",
+      "final": "https://www.kera.org/2003/01/27/tv-ads-a-lot-of-money-but-is-it-worth-it/"
+    }
+  },
+  {
+    "id": "klrn",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.klrn.org/",
+      "https://www.klrn.org/videoapp/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.klrn.org/",
+      "final": "https://www.klrn.org/"
+    }
+  },
+  {
+    "id": "panhandle-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.panhandlepbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.panhandlepbs.org",
+      "final": "https://www.panhandlepbs.org/"
+    }
+  },
+  {
+    "id": "pbs-el-paso",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kcostv.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kcostv.org/",
+      "final": "https://www.kcostv.org/"
+    }
+  },
+  {
+    "id": "pbs-rio-grande-valley",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": []
+  },
+  {
+    "id": "texas-tech-public-media",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://tv.kttz.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://tv.kttz.org/",
+      "final": "https://tv.kttz.org/"
+    }
+  },
+  {
+    "id": "pbs-utah",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbsutah.org/",
+      "https://www.pbsutah.org/watch/pbs-app/",
+      "https://www.pbsutah.org/watch/ways-to-watch/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbsutah.org/",
+      "final": "https://www.pbsutah.org/"
+    }
+  },
+  {
+    "id": "blue-ridge-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.blueridgepbs.org/"
+    ],
+    "links": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.brpbs",
+        "linkText": "Filer image element",
+        "foundOn": "https://www.blueridgepbs.org/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/blue-ridge-pbs-app/id1348880332",
+        "linkText": "Filer image element",
+        "foundOn": "https://www.blueridgepbs.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.blueridgepbs.org/",
+      "final": "https://www.blueridgepbs.org/"
+    }
+  },
+  {
+    "id": "pbs-appalachia-virginia",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.pbsavirginia.org/"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/db1be65a5802b106f74ef933153ac4aa/pbs-appalachia-virginia",
+        "linkText": "More ways to Watch! More ways to Watch! link",
+        "foundOn": "https://www.pbsavirginia.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.pbsavirginia.org/",
+      "final": "https://www.pbsavirginia.org/"
+    }
+  },
+  {
+    "id": "vpm-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.vpm.org/",
+      "https://www.vpm.org/stream-vpm/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.vpm.org",
+      "final": "https://www.vpm.org/"
+    }
+  },
+  {
+    "id": "whro",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.whro.org/plus",
+      "https://www.whro.org/",
+      "https://www.whro.org/ways-to-watch"
+    ],
+    "links": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/080e9d0af7016729020119014eb29a50:05d8367f6dd508559e51dd7d89bd9ef1/whro-public-media",
+        "linkText": "Roku",
+        "foundOn": "https://www.whro.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/whro-public-media/id6741328420",
+        "linkText": "AppleTV",
+        "foundOn": "https://www.whro.org/plus",
+        "how": "manual-page",
+        "confidence": "low"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whro",
+        "linkText": "AndroidTV",
+        "foundOn": "https://www.whro.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DW58FRQM",
+        "linkText": "Fire TV",
+        "foundOn": "https://www.whro.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1262422",
+        "linkText": "LG",
+        "foundOn": "https://www.whro.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/whro-public-media/id6741328420",
+        "linkText": "iOS",
+        "foundOn": "https://www.whro.org/plus",
+        "how": "manual-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://whro.org/",
+      "final": "https://www.whro.org/"
+    }
+  },
+  {
+    "id": "wtjx",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wtjx.org/",
+      "https://www.wtjx.org/vimeo/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wtjx.org/",
+      "final": "https://www.wtjx.org/"
+    }
+  },
+  {
+    "id": "vermont-public",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.vermontpublic.org/",
+      "https://www.vermontpublic.org/app"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://vermontpublic.org",
+      "final": "https://www.vermontpublic.org/"
+    }
+  },
+  {
+    "id": "cascade-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.cascadepbs.org/apps/",
+      "https://www.cascadepbs.org/",
+      "https://www.cascadepbs.org/ways-to-watch/"
+    ],
+    "links": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.kcts9.android",
+        "linkText": "Cascade PBS on Google Play (opens in new tab)",
+        "foundOn": "https://www.cascadepbs.org/apps/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B09M2NVYDX",
+        "linkText": "Cascade PBS on Amazon Fire TV (opens in new tab)",
+        "foundOn": "https://www.cascadepbs.org/apps/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/cascade-pbs/id1578709872",
+        "linkText": "Cascade PBS on the App Store for iOS (opens in new tab)",
+        "foundOn": "https://www.cascadepbs.org/apps/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1253684",
+        "linkText": "Cascade PBS on LG Smart TV (opens in new tab)",
+        "foundOn": "https://www.cascadepbs.org/apps/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/61407c76b4b4502c06b257788018e39e:ee2e27f9f6f191ed1e2b469f47cf13ff/cascade-pbs",
+        "linkText": "Cascade PBS on Roku (opens in new tab)",
+        "foundOn": "https://www.cascadepbs.org/apps/",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/worlds-best-television/id1578709872",
+        "linkText": "Apple TV",
+        "foundOn": "https://www.cascadepbs.org/ways-to-watch/",
+        "how": "discovered-page",
+        "confidence": "low"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.cascadepbs.org/",
+      "final": "https://www.cascadepbs.org/"
+    }
+  },
+  {
+    "id": "kbtc-and-kcka",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.kbtc.org/",
+      "https://www.kbtc.org/watch-on-demand/kbtc-app/",
+      "https://www.kbtc.org/watch-on-demand/pbs-app/"
+    ],
+    "links": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kbtc",
+        "linkText": "image link Filer image",
+        "foundOn": "https://www.kbtc.org/watch-on-demand/kbtc-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/kbtc-public-television/id6740147601",
+        "linkText": "image link Filer image",
+        "foundOn": "https://www.kbtc.org/watch-on-demand/kbtc-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "Filer image element",
+        "foundOn": "https://www.kbtc.org/watch-on-demand/pbs-app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kbtc.org/",
+      "final": "https://www.kbtc.org/"
+    }
+  },
+  {
+    "id": "ksps",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.ksps.org/",
+      "https://www.ksps.org/programs/pbs-app/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.ksps.org/",
+      "final": "https://www.ksps.org/"
+    }
+  },
+  {
+    "id": "northwest-public-broadcasting",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.nwpb.org/",
+      "https://www.nwpb.org/nwpb-app"
+    ],
+    "links": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacobsmedia.nwpr",
+        "linkText": "Download",
+        "foundOn": "https://www.nwpb.org/nwpb-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/nwpb/id472024661",
+        "linkText": "Download",
+        "foundOn": "https://www.nwpb.org/nwpb-app",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.nwpb.org/",
+      "final": "https://www.nwpb.org/"
+    }
+  },
+  {
+    "id": "milwaukee-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.milwaukeepbs.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.milwaukeepbs.org/",
+      "final": "https://www.milwaukeepbs.org/"
+    }
+  },
+  {
+    "id": "pbs-wisconsin",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://pbswisconsin.org/",
+      "https://pbswisconsin.org/article/your-fall-2026-streaming-guide-to-pbs-passport/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://pbswisconsin.org/",
+      "final": "https://pbswisconsin.org/"
+    }
+  },
+  {
+    "id": "west-virginia-public-broadcasting",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://wvpublic.org/",
+      "https://wvpublic.org/wvpb-app/",
+      "https://wvpublic.org/radio-listen-live/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wvpb-public-media-app/id1100735838",
+        "linkText": "Apple-App-Store",
+        "foundOn": "https://wvpublic.org/",
+        "how": "homepage",
+        "confidence": "high"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wvpb",
+        "linkText": "Google-Play-Store",
+        "foundOn": "https://wvpublic.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wvpublic.org/",
+      "final": "https://wvpublic.org/"
+    }
+  },
+  {
+    "id": "wyoming-pbs",
+    "retrievedAt": "2026-10-18",
+    "pagesRead": [
+      "https://www.wyomingpbs.org/",
+      "https://www.wyomingpbs.org/app/"
+    ],
+    "links": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "linkText": "INSTALL",
+        "foundOn": "https://www.wyomingpbs.org/app/",
+        "how": "discovered-page",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wyomingpbs.org",
+      "final": "https://www.wyomingpbs.org/"
+    }
+  }
+]

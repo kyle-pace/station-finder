@@ -173,7 +173,10 @@ for (const entry of stationApps) {
   const where = `station-apps.yaml [${entry.id ?? '?'}]`;
   if (typeof entry.id !== 'string') errors.push(`${where}: needs an id`);
   // Neutrality: this file is public and must not record partner status.
-  checkFields(where, entry, ['id', 'name', 'apps']);
+  checkFields(where, entry, ['id', 'name', 'apps', 'exclude']);
+  if (entry.exclude !== undefined && (!Array.isArray(entry.exclude) || !entry.exclude.every(isUrl))) {
+    errors.push(`${where}: exclude must be a list of full https:// links`);
+  }
   const apps = Array.isArray(entry.apps) ? entry.apps : [];
   apps.forEach((app, i) => checkApp(`${where} app ${i + 1}`, app, false));
 }
@@ -391,12 +394,29 @@ for (const page of appPages) {
 const appLinksPath = join(RAW, 'station-sites', 'app-links.json');
 const scraped = existsSync(appLinksPath) ? (JSON.parse(readFileSync(appLinksPath, 'utf8')) as StationAppLinks[]) : [];
 const howRank = { 'manual-page': 0, homepage: 1, 'discovered-page': 2 } as const;
+// Wikipedia sometimes lists a station's old domain. If the station's own homepage now
+// redirects to a different domain (e.g. kcts9.org → cascadepbs.org), use where it lands.
+const redirected = section('Websites updated because the old address redirects');
+const hostOf = (u: string) => new URL(u).host.replace(/^www\./, '');
+for (const site of scraped) {
+  const d = byId.get(site.id);
+  if (!d?.org.website || !site.homepage || d.org.sources.website?.source.startsWith('manual')) continue;
+  if (site.homepage.requested !== d.org.website) continue; // website changed since the fetch
+  if (hostOf(site.homepage.final) !== hostOf(site.homepage.requested) && isUrl(site.homepage.final)) {
+    redirected.push(`${d.org.id}: ${d.org.website} → ${site.homepage.final}`);
+    d.org.website = site.homepage.final;
+    d.org.sources.website = { source: `redirect from ${site.homepage.requested} (station website)`, retrievedAt: site.retrievedAt };
+  }
+}
+
+const excluded = new Set(stationApps.flatMap((e) => (Array.isArray(e.exclude) ? (e.exclude as string[]) : [])));
 for (const site of scraped) {
   const d = byId.get(site.id);
   if (!d) continue; // station no longer in the data (renamed or removed since the fetch)
   const links = [...site.links].sort((a, b) => howRank[a.how] - howRank[b.how]);
   for (const l of links) {
-    if (isPbsKids(l.url)) continue;
+    if (isPbsKids(l.url) || excluded.has(l.url)) continue;
+    if (/[?&]id=com\.(amazon|google|roku|samsung|lge|apple)\./.test(l.url)) continue; // device makers' apps
     const existing = d.org.apps.find((a) => a.platform === l.platform);
     if (existing) {
       if (existing.url !== l.url) lowConfidence.push(`${d.org.id}: more than one ${l.platform} link on its site; using ${existing.url}, not ${l.url}`);
@@ -461,22 +481,25 @@ write('organizations.json', organizations);
 write('facilities.json', facilities);
 write('national.json', nationalOut);
 
-// --- Report ----------------------------------------------------------------------
+// --- Report (printed, and saved to data/build-report.txt for review in PRs) ----
 const noApps = organizations.filter((o) => o.apps.length === 0);
 const noWebsite = organizations.filter((o) => !o.website);
-console.log('\nbuild-data report');
-console.log(`  organizations:  ${organizations.length} (${organizations.filter((o) => o.facilityIds.length).length} with transmitter coordinates)`);
-console.log(`  facilities:     ${facilities.length}`);
-console.log(`  with apps:      ${organizations.length - noApps.length}   without apps: ${noApps.length}`);
-console.log(`  without website: ${noWebsite.length}${noWebsite.length ? ' (' + noWebsite.map((o) => o.id).join(', ') + ')' : ''}`);
-console.log(`  manual: ${overrides.length} overrides, ${appPages.length} app pages, ${stationApps.length} station-apps entries`);
+const lines: string[] = [
+  'build-data report',
+  `  organizations:  ${organizations.length} (${organizations.filter((o) => o.facilityIds.length).length} with transmitter coordinates)`,
+  `  facilities:     ${facilities.length}`,
+  `  with apps:      ${organizations.length - noApps.length} (${organizations.filter((o) => o.apps.some((a) => a.verified)).length} with a verified app)   without apps: ${noApps.length}`,
+  `  without website: ${noWebsite.length}${noWebsite.length ? ' (' + noWebsite.map((o) => o.id).join(', ') + ')' : ''}`,
+  `  manual: ${overrides.length} overrides, ${mergesFile.length} merges, ${appPages.length} app pages, ${stationApps.length} station-apps entries`,
+];
 for (const s of report) {
   if (!s.lines.length) continue;
-  console.log(`\n  ${s.title}: ${s.lines.length}`);
-  for (const l of s.lines) console.log(`    - ${l}`);
+  lines.push('', `  ${s.title}: ${s.lines.length}`, ...s.lines.map((l) => `    - ${l}`));
 }
-if (process.argv.includes('--ids')) {
-  console.log('\n  Station ids:');
-  for (const o of organizations) console.log(`    ${o.state}  ${o.id.padEnd(44)} ${o.name}`);
-}
+lines.push('', '  Station ids:', ...organizations.map((o) => `    ${o.state}  ${o.id.padEnd(44)} ${o.name}`));
+writeFileSync(join(ROOT, 'data', 'build-report.txt'), lines.join('\n') + '\n');
+const full = process.argv.includes('--ids') || process.argv.includes('--full');
+console.log('\n' + (full ? lines : lines.slice(0, 6)).join('\n'));
+for (const s of report) if (s.lines.length && !full) console.log(`  ${s.title}: ${s.lines.length}`);
+console.log('\n  full report: data/build-report.txt');
 console.log('\n  wrote public/data/organizations.json, facilities.json, national.json\n');

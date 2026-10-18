@@ -15,6 +15,9 @@
 # source:      where you found the link (e.g. "station website", "store listing")
 # retrievedAt: the date you checked it (YYYY-MM-DD)
 #
+# exclude:     optional list of links found on the station's site that are NOT its app
+#              (the build will stop using them), e.g. a remote-control or partner app.
+#
 # Example:
 # - id: example
 #   apps:
@@ -22,5 +25,7 @@
 #       url: https://apps.apple.com/us/app/...
 #       source: station website
 #       retrievedAt: 2026-10-18
+#   exclude:
+#     - https://apps.apple.com/us/app/some-other-app/id123
 
 []

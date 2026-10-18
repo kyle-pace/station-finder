@@ -1,0 +1,109 @@
+# Station app pages — hand-maintained, public. Known "get our app" pages on stations'
+# own websites, plus each station's web streaming app if it has one.
+#
+# You don't need an entry for every station: fetch-station-app-pages already checks
+# every station's homepage and follows links that look like an apps page. Add an entry
+# when that automatic search misses a station's page, or to add a web app.
+#
+# Only public addresses (never staging, test, or internal links). No partner status.
+#
+# - id:       the station's id (see `npm run build-data -- --ids`)
+#   appsPage: the station's own page listing its apps (store links are read from it)
+#   webApp:   the station's web streaming app, shown as the "Web" link
+#   note:     optional
+
+- id: arizona-pbs
+  webApp: https://watch.azpbs.org/
+- id: buffalo-toronto-public-media
+  appsPage: https://www.btpm.org/plus
+  webApp: https://watch.btpm.org/
+- id: cascade-pbs
+  appsPage: https://www.cascadepbs.org/apps/
+- id: georgia-public-broadcasting
+  appsPage: https://www.gpb.org/apps
+- id: houston-public-media
+  appsPage: https://www.houstonpublicmedia.org/support/hpm-plus/
+- id: ideastream-public-media
+  appsPage: https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android
+- id: kbdi
+  appsPage: https://www.pbs12.org/watch/ways-to-watch/
+- id: kbtc-and-kcka
+  appsPage: https://www.kbtc.org/watch-on-demand/kbtc-app/
+- id: kentucky-educational-television
+  appsPage: https://ket.org/about/ket-pbs-apps/
+- id: kpbs
+  appsPage: https://www.kpbs.org/kpbsplus
+  webApp: https://plus.kpbs.org/
+- id: kvie
+  appsPage: https://www.kvie.org/pbs-kvie-app/
+  webApp: https://stream.kvie.org/
+- id: louisiana-public-broadcasting
+  appsPage: https://www.lpb.org/about/lpb-app/
+- id: maine-public-broadcasting-network
+  appsPage: https://www.mainepublic.org/download-the-maine-public-app
+- id: mississippi-public-broadcasting
+  appsPage: https://www.mpbonline.org/radio/app/
+- id: nashville-pbs
+  webApp: https://nashvillepbs.app/
+- id: nebraska-public-media
+  appsPage: https://nebraskapublicmedia.org/en/about/apps/
+- id: northwest-public-broadcasting
+  appsPage: https://www.nwpb.org/nwpb-app
+- id: pbs-39
+  webApp: https://watch.lehighvalleypublicmedia.org/
+- id: pbs-fort-wayne
+  appsPage: https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/
+- id: pbs-north-carolina
+  appsPage: https://www.pbsnc.org/watch/pbs-app/
+- id: pbs-socal
+  appsPage: https://www.pbssocal.org/about/app
+- id: rocky-mountain-pbs
+  appsPage: https://www.rmpbs.org/watch/rmpbs-plus
+  webApp: https://rmpbsplus.org/
+- id: smoky-hills-pbs
+  appsPage: https://www.smokyhillspbs.org/app/
+- id: south-carolina-educational-television
+  appsPage: https://www.scetv.org/scetvplus
+  webApp: https://plus.scetv.org/
+- id: south-dakota-public-broadcasting
+  appsPage: https://www.sdpb.org/about/app
+- id: think-tv
+  appsPage: https://thinktv.org/pbs-app/
+- id: valley-pbs
+  appsPage: https://valleypbs.org/app/
+- id: wabe
+  appsPage: https://www.wabe.org/download-mobile-app
+- id: wcet
+  appsPage: https://www.cetconnect.org/pbs-app/
+- id: weta
+  appsPage: https://weta.org/wetaplus
+  webApp: https://wetaplus.org/
+- id: wgte
+  appsPage: https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app
+- id: whro
+  appsPage: https://www.whro.org/plus
+  webApp: https://video.whro.org/
+- id: whyy
+  appsPage: https://whyy.org/whyy-watch-app/
+  webApp: https://watch.whyy.org/
+- id: witf
+  appsPage: https://www.witf.org/mobile/
+- id: wjct
+  appsPage: https://www.wjct.org/jaxpbs/watch/
+- id: wlrn
+  appsPage: https://www.wlrn.org/ways-to-watch-wlrn
+- id: wosu
+  appsPage: https://www.wosu.org/wosu-public-media-mobile-app
+- id: wpbs-and-wnpi-dt
+  appsPage: https://www.wpbstv.org/wpbs-mobile-app/
+- id: wqed
+  appsPage: https://www.wqed.org/plus/activate/
+  webApp: https://plus.wqed.org/
+- id: wqln
+  appsPage: https://www.wqln.org/wqln-pbs-npr-app
+- id: wsiu-and-wusi
+  appsPage: https://www.wsiu.org/wsiu-mobile-app
+- id: wuft
+  appsPage: https://www.wuft.org/app
+- id: wyoming-pbs
+  appsPage: https://www.wyomingpbs.org/app/

@@ -1,0 +1,286 @@
+build-data report
+  organizations:  150 (147 with transmitter coordinates)
+  facilities:     331
+  with apps:      53 (14 with a verified app)   without apps: 97
+  without website: 5 (azpm, northern-california-public-media, south-florida-pbs, illinois-public-media, pbs-rio-grande-valley)
+  manual: 0 overrides, 3 merges, 43 app pages, 0 station-apps entries
+
+  Rows with no transmitter coordinates (not findable by ZIP until fixed): 1
+    - pbs-appalachia-virginia (PBS Appalachia Virginia, VA)
+
+  Low-confidence matches to review: 112
+    - pbs-rio-grande-valley: Wikipedia says satellite of KMBH-CD, but no row has that call sign; kept separate
+    - kpbs: ios link found on https://www.kpbs.org/kpbs-on-the-go — check it's the station's own app
+    - kpbs: android link found on https://www.kpbs.org/kpbs-on-the-go — check it's the station's own app
+    - kpbs: more than one ios link on its site; using https://apps.apple.com/us/app/kpbs/id6741001514, not https://apps.apple.com/us/app/kpbs-news/id1305075995
+    - kpbs: more than one android link on its site; using https://play.google.com/store/apps/details?id=org.localstreaming.kpbs, not https://play.google.com/store/apps/details?id=com.jacapps.kpbs
+    - kqed-and-kqeh: firetv link found on https://www.kqed.org/tv — check it's the station's own app
+    - pbs-socal: firetv link found on https://www.pbssocal.org/about/app — check it's the station's own app
+    - pbs-socal: roku link found on https://www.pbssocal.org/about/app — check it's the station's own app
+    - valley-pbs: ios link found on https://valleypbs.org/app/ — check it's the station's own app
+    - valley-pbs: android link found on https://valleypbs.org/app/ — check it's the station's own app
+    - kbdi: roku link found on https://www.pbs12.org/watch/ways-to-watch/ — check it's the station's own app
+    - kbdi: firetv link found on https://www.pbs12.org/watch/ways-to-watch/ — check it's the station's own app
+    - rocky-mountain-pbs: appletv guessed from link text ".css-1jtdkxx.builder-block{width:100%;position:relative;min-height:20px;min-widt" — https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876
+    - rocky-mountain-pbs: androidtv guessed from link text ".css-1qqloj9.builder-block{width:76%;position:relative;min-height:20px;min-width" — https://play.google.com/store/apps/details?id=org.localstreaming.krma
+    - weta: appletv guessed from link text "Watch on Apple TV" — https://apps.apple.com/us/app/weta/id6740541547
+    - wjct: ios link found on https://www.wjct.org/jaxpbs/watch/ — check it's the station's own app
+    - wjct: android link found on https://www.wjct.org/jaxpbs/watch/ — check it's the station's own app
+    - wjct: roku link found on https://www.wjct.org/jaxpbs/watch/ — check it's the station's own app
+    - wjct: firetv link found on https://www.wjct.org/jaxpbs/watch/ — check it's the station's own app
+    - wlrn: ios link found on https://www.wlrn.org/ways-to-watch-wlrn — check it's the station's own app
+    - wlrn: android link found on https://www.wlrn.org/ways-to-watch-wlrn — check it's the station's own app
+    - wuft: ios link found on https://www.wuft.org/app — check it's the station's own app
+    - wuft: android link found on https://www.wuft.org/app — check it's the station's own app
+    - georgia-public-broadcasting: ios link found on https://www.gpb.org/apps — check it's the station's own app
+    - georgia-public-broadcasting: android link found on https://www.gpb.org/apps — check it's the station's own app
+    - georgia-public-broadcasting: more than one ios link on its site; using https://apps.apple.com/us/app/gpb/id940297307, not https://apps.apple.com/us/app/gpb-sports/id455158040
+    - georgia-public-broadcasting: more than one android link on its site; using https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb, not https://play.google.com/store/apps/details?id=org.gpb.gpbfootball
+    - georgia-public-broadcasting: more than one ios link on its site; using https://apps.apple.com/us/app/gpb/id940297307, not https://apps.apple.com/us/app/gpb-classical/id6443334692
+    - georgia-public-broadcasting: more than one android link on its site; using https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb, not https://play.google.com/store/apps/details?id=com.publicmediaapps.gpbclassical
+    - georgia-public-broadcasting: more than one ios link on its site; using https://apps.apple.com/us/app/gpb/id940297307, not https://apps.apple.com/us/app/gasha-go/id6451390320
+    - georgia-public-broadcasting: more than one android link on its site; using https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb, not https://play.google.com/store/apps/details?id=org.gpb.gashago
+    - georgia-public-broadcasting: more than one ios link on its site; using https://apps.apple.com/us/app/gpb/id940297307, not https://apps.apple.com/us/app/gpb-vr-ar/id6756442017
+    - wabe: ios link found on https://www.wabe.org/download-mobile-app — check it's the station's own app
+    - wabe: android link found on https://www.wabe.org/download-mobile-app — check it's the station's own app
+    - wsiu-and-wusi: ios link found on https://www.wsiu.org/wsiu-mobile-app — check it's the station's own app
+    - wsiu-and-wusi: android link found on https://www.wsiu.org/wsiu-mobile-app — check it's the station's own app
+    - pbs-fort-wayne: ios link found on https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/ — check it's the station's own app
+    - pbs-fort-wayne: android link found on https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/ — check it's the station's own app
+    - pbs-fort-wayne: firetv link found on https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/ — check it's the station's own app
+    - wtiu: roku link found on https://www.ipm.org/tv/ — check it's the station's own app
+    - wtiu: firetv link found on https://www.ipm.org/tv/ — check it's the station's own app
+    - wtiu: lg link found on https://www.ipm.org/tv/ — check it's the station's own app
+    - smoky-hills-pbs: ios link found on https://www.smokyhillspbs.org/app/ — check it's the station's own app
+    - smoky-hills-pbs: android link found on https://www.smokyhillspbs.org/app/ — check it's the station's own app
+    - kentucky-educational-television: android link found on https://ket.org/about/ket-pbs-apps/ — check it's the station's own app
+    - kentucky-educational-television: ios link found on https://ket.org/about/ket-pbs-apps/ — check it's the station's own app
+    - kentucky-educational-television: more than one android link on its site; using https://play.google.com/store/apps/details?id=com.publicmediaapps.kettv, not https://play.google.com/store/apps/details?id=org.ket.legislativecoverage
+    - kentucky-educational-television: more than one ios link on its site; using https://apps.apple.com/us/app/ket-videos-schedules/id1298153586, not https://apps.apple.com/us/app/ket-legislative-coverage/id786591133
+    - kentucky-educational-television: more than one ios link on its site; using https://apps.apple.com/us/app/ket-videos-schedules/id1298153586, not https://apps.apple.com/us/app/ket-fastforward-skill-check/id1321050730
+    - louisiana-public-broadcasting: ios link found on https://www.lpb.org/about/lpb-app/ — check it's the station's own app
+    - louisiana-public-broadcasting: android link found on https://www.lpb.org/about/lpb-app/ — check it's the station's own app
+    - gbh: ios link found on https://www.wgbh.org/ — check it's the station's own app
+    - gbh: android link found on https://www.wgbh.org/ — check it's the station's own app
+    - maine-public-broadcasting-network: firetv link found on https://www.mainepublic.org/ — check it's the station's own app
+    - maine-public-broadcasting-network: android link found on https://www.mainepublic.org/download-the-maine-public-app — check it's the station's own app
+    - maine-public-broadcasting-network: ios link found on https://www.mainepublic.org/download-the-maine-public-app — check it's the station's own app
+    - cmu-public-television: ios link found on https://www.wcmu.org/ — check it's the station's own app
+    - cmu-public-television: android link found on https://www.wcmu.org/ — check it's the station's own app
+    - lakeland-pbs: firetv link found on https://lptv.org/ — check it's the station's own app
+    - lakeland-pbs: roku link found on https://lptv.org/ — check it's the station's own app
+    - mississippi-public-broadcasting: android link found on https://www.mpbonline.org/radio/app/ — check it's the station's own app
+    - pbs-north-carolina: firetv link found on https://www.pbsnc.org/watch/pbs-app/ — check it's the station's own app
+    - nebraska-public-media: ios link found on https://nebraskapublicmedia.org/en/about/apps/ — check it's the station's own app
+    - nebraska-public-media: android link found on https://nebraskapublicmedia.org/en/about/apps/ — check it's the station's own app
+    - buffalo-toronto-public-media: appletv guessed from link text "Watch on Apple TV" — https://apps.apple.com/us/app/btpm/id6752734865
+    - wpbs-and-wnpi-dt: ios link found on https://www.wpbstv.org/wpbs-mobile-app/ — check it's the station's own app
+    - wpbs-and-wnpi-dt: android link found on https://www.wpbstv.org/wpbs-mobile-app/ — check it's the station's own app
+    - ideastream-public-media: ios link found on https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android — check it's the station's own app
+    - ideastream-public-media: android link found on https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android — check it's the station's own app
+    - think-tv: roku link found on https://thinktv.org/pbs-app/ — check it's the station's own app
+    - think-tv: firetv link found on https://thinktv.org/pbs-app/ — check it's the station's own app
+    - wcet: roku link found on https://www.cetconnect.org/pbs-app/ — check it's the station's own app
+    - wcet: firetv link found on https://www.cetconnect.org/pbs-app/ — check it's the station's own app
+    - wgte: ios link found on https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app — check it's the station's own app
+    - wgte: android link found on https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app — check it's the station's own app
+    - wosu: ios link found on https://www.wosu.org/wosu-public-media-mobile-app — check it's the station's own app
+    - wosu: android link found on https://www.wosu.org/wosu-public-media-mobile-app — check it's the station's own app
+    - whyy: appletv guessed from link text "Apple TV Apple TV logo" — https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837
+    - whyy: more than one ios link on its site; using https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837, not https://apps.apple.com/us/app/whyy-greater-phillys-npr/id1246315452
+    - whyy: more than one android link on its site; using https://play.google.com/store/apps/details?id=org.localstreaming.whyy, not https://play.google.com/store/apps/details?id=com.jacapps.whyy
+    - witf: ios link found on https://www.witf.org/mobile/ — check it's the station's own app
+    - witf: android link found on https://www.witf.org/mobile/ — check it's the station's own app
+    - wqed: appletv guessed from link text "Apple TV icon" — https://apps.apple.com/us/app/wqed/id6752442766
+    - wqed: androidtv guessed from link text "Google TV icon" — https://play.google.com/store/apps/details?id=org.localstreaming.wqed
+    - wqed: more than one android link on its site; using https://play.google.com/store/apps/details?id=org.localstreaming.wqed, not https://play.google.com/store/apps/details?id=com.jacapps.wqed
+    - wqln: ios link found on https://www.wqln.org/wqln-pbs-npr-app — check it's the station's own app
+    - wqln: android link found on https://www.wqln.org/wqln-pbs-npr-app — check it's the station's own app
+    - wvia: ios link found on https://www.wvia.org/ — check it's the station's own app
+    - wvia: android link found on https://www.wvia.org/ — check it's the station's own app
+    - south-carolina-educational-television: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/scetv/id6772544565
+    - south-carolina-educational-television: more than one ios link on its site; using https://apps.apple.com/us/app/scetv/id6772544565, not https://apps.apple.com/us/app/south-carolina-etv/id1056289468
+    - south-carolina-educational-television: more than one android link on its site; using https://play.google.com/store/apps/details?id=org.localstreaming.wrlk, not https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv
+    - south-dakota-public-broadcasting: ios link found on https://www.sdpb.org/about/app — check it's the station's own app
+    - south-dakota-public-broadcasting: android link found on https://www.sdpb.org/about/app — check it's the station's own app
+    - nashville-pbs: firetv link found on https://www.wnpt.org/watch/pbsapp/ — check it's the station's own app
+    - houston-public-media: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/hpm/id6755161777
+    - houston-public-media: androidtv guessed from link text "Android TV" — https://play.google.com/store/apps/details?id=org.localstreaming.kuht
+    - kedt: android link found on https://www.kedt.org/ — check it's the station's own app
+    - blue-ridge-pbs: android link found on https://www.blueridgepbs.org/ — check it's the station's own app
+    - blue-ridge-pbs: ios link found on https://www.blueridgepbs.org/ — check it's the station's own app
+    - pbs-appalachia-virginia: roku link found on https://www.pbsavirginia.org/ — check it's the station's own app
+    - whro: appletv guessed from link text "AppleTV" — https://apps.apple.com/us/app/whro-public-media/id6741328420
+    - cascade-pbs: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/worlds-best-television/id1578709872
+    - kbtc-and-kcka: android link found on https://www.kbtc.org/watch-on-demand/kbtc-app/ — check it's the station's own app
+    - kbtc-and-kcka: ios link found on https://www.kbtc.org/watch-on-demand/kbtc-app/ — check it's the station's own app
+    - kbtc-and-kcka: firetv link found on https://www.kbtc.org/watch-on-demand/pbs-app/ — check it's the station's own app
+    - northwest-public-broadcasting: android link found on https://www.nwpb.org/nwpb-app — check it's the station's own app
+    - northwest-public-broadcasting: ios link found on https://www.nwpb.org/nwpb-app — check it's the station's own app
+    - west-virginia-public-broadcasting: ios link found on https://wvpublic.org/ — check it's the station's own app
+    - west-virginia-public-broadcasting: android link found on https://wvpublic.org/ — check it's the station's own app
+    - wyoming-pbs: firetv link found on https://www.wyomingpbs.org/app/ — check it's the station's own app
+    - WYIN (fcc-49803) appears under two stations; kept under the first, not lakeshore-pbs
+
+  Merged rows: 9
+    - South Florida PBS (FL) → south-florida-pbs: same name
+    - Cascade PBS (WA) → cascade-pbs: same name
+    - KQET (CA) → kqed-and-kqeh: satellite of KQED
+    - WDPB (DE) → whyy: satellite of WHYY-TV
+    - WFSG (FL) → wfsu: satellite of WFSU-TV
+    - WSKA (NY) → wskg: satellite of WSKG-TV
+    - WSEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WSEC article; same owner and website))
+    - WMEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WMEC article; same owner and website))
+    - WQEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WQEC article; same owner and website))
+
+  Station ids:
+    AK  alaska-public-media                          Alaska Public Media
+    AK  kuac                                         KUAC
+    AL  alabama-public-television                    Alabama Public Television
+    AR  arkansas-tv                                  Arkansas TV
+    AS  kvzk                                         KVZK
+    AZ  arizona-pbs                                  Arizona PBS
+    AZ  azpm                                         AZPM
+    CA  keet                                         KEET
+    CA  kixe                                         KIXE
+    CA  klcs                                         KLCS
+    CA  kpbs                                         KPBS
+    CA  kqed-and-kqeh                                KQED and KQEH
+    CA  kvcr-dt                                      KVCR-DT
+    CA  kvie                                         KVIE
+    CA  northern-california-public-media             Northern California Public Media
+    CA  pbs-socal                                    PBS SoCal
+    CA  valley-pbs                                   Valley PBS
+    CO  kbdi                                         KBDI
+    CO  rocky-mountain-pbs                           Rocky Mountain PBS
+    CT  connecticut-public-television                Connecticut Public Television
+    DC  weta                                         WETA
+    DC  whut                                         WHUT
+    FL  south-florida-pbs                            South Florida PBS
+    FL  wedu-and-wedq                                WEDU and WEDQ
+    FL  wfsu                                         WFSU
+    FL  wgcu                                         WGCU
+    FL  wjct                                         WJCT
+    FL  wlrn                                         WLRN
+    FL  wucf                                         WUCF
+    FL  wuft                                         WUFT
+    GA  georgia-public-broadcasting                  Georgia Public Broadcasting
+    GA  wabe                                         WABE
+    GU  pbs-guam                                     PBS Guam
+    HI  pbs-hawai-i                                  PBS Hawai'i
+    IA  iowa-pbs                                     Iowa PBS
+    ID  idaho-public-television                      Idaho Public Television
+    IL  illinois-public-media                        Illinois Public Media
+    IL  wqpt                                         WQPT
+    IL  wsiu-and-wusi                                WSIU and WUSI
+    IL  wttw-and-wyin                                WTTW and WYIN
+    IL  wtvp                                         WTVP
+    IN  ball-state-pbs                               Ball State PBS
+    IN  lakeshore-pbs                                Lakeshore PBS
+    IN  michiana-pbs                                 Michiana PBS
+    IN  pbs-fort-wayne                               PBS Fort Wayne
+    IN  wfyi                                         WFYI
+    IN  wnin                                         WNIN
+    IN  wtiu                                         WTIU
+    KS  ktwu                                         KTWU
+    KS  pbs-kansas                                   PBS Kansas
+    KS  smoky-hills-pbs                              Smoky Hills PBS
+    KY  kentucky-educational-television              Kentucky Educational Television
+    KY  wku-pbs                                      WKU PBS
+    LA  louisiana-public-broadcasting                Louisiana Public Broadcasting
+    LA  wyes                                         WYES
+    MA  gbh                                          GBH
+    MA  new-england-public-media                     New England Public Media
+    MD  maryland-public-television                   Maryland Public Television
+    ME  maine-public-broadcasting-network            Maine Public Broadcasting Network
+    MI  cmu-public-television                        CMU Public Television
+    MI  delta-college-public-media                   Delta College Public Media
+    MI  detroit-pbs                                  Detroit PBS
+    MI  wgvu-public-media                            WGVU Public Media
+    MI  wkar                                         WKAR
+    MI  wnmu                                         WNMU
+    MN  ksmq                                         KSMQ
+    MN  lakeland-pbs                                 Lakeland PBS
+    MN  minnesota-pbs                                Minnesota PBS
+    MN  pbs-north                                    PBS North
+    MN  pioneer-pbs                                  Pioneer PBS
+    MO  kansas-city-pbs                              Kansas City PBS
+    MO  ketc                                         KETC
+    MO  kmos                                         KMOS
+    MO  ozarks-public-television                     Ozarks Public Television
+    MS  mississippi-public-broadcasting              Mississippi Public Broadcasting
+    MT  montana-pbs                                  Montana PBS
+    NC  pbs-charlotte                                PBS Charlotte
+    NC  pbs-north-carolina                           PBS North Carolina
+    ND  prairie-public-television                    Prairie Public Television
+    NE  nebraska-public-media                        Nebraska Public Media
+    NH  new-hampshire-pbs                            New Hampshire PBS
+    NJ  nj-pbs                                       NJ PBS
+    NJ  wnet                                         WNET
+    NM  kenw                                         KENW
+    NM  krwg                                         KRWG
+    NM  new-mexico-pbs                               New Mexico PBS
+    NV  pbs-reno                                     PBS Reno
+    NV  vegas-pbs                                    Vegas PBS
+    NY  buffalo-toronto-public-media                 Buffalo Toronto Public Media
+    NY  mountain-lake-pbs                            Mountain Lake PBS
+    NY  wcny                                         WCNY
+    NY  wliw                                         WLIW
+    NY  wmht                                         WMHT
+    NY  wpbs-and-wnpi-dt                             WPBS and WNPI-DT
+    NY  wskg                                         WSKG
+    NY  wxxi                                         WXXI
+    OH  ideastream-public-media                      Ideastream Public Media
+    OH  pbs-western-reserve                          PBS Western Reserve
+    OH  think-tv                                     Think TV
+    OH  wbgu                                         WBGU
+    OH  wcet                                         WCET
+    OH  wgte                                         WGTE
+    OH  wosu                                         WOSU
+    OH  woub-and-wouc                                WOUB and WOUC
+    OK  oklahoma-educational-television-authority    Oklahoma Educational Television Authority
+    OR  oregon-public-broadcasting                   Oregon Public Broadcasting
+    OR  southern-oregon-pbs                          Southern Oregon PBS
+    PA  pbs-39                                       PBS 39
+    PA  whyy                                         WHYY
+    PA  witf                                         WITF
+    PA  wpsu                                         WPSU
+    PA  wqed                                         WQED
+    PA  wqln                                         WQLN
+    PA  wvia                                         WVIA
+    PR  sistema-tv                                   Sistema TV
+    RI  ocean-state-media                            Ocean State Media
+    SC  south-carolina-educational-television        South Carolina Educational Television
+    SD  south-dakota-public-broadcasting             South Dakota Public Broadcasting
+    TN  east-tennessee-pbs                           East Tennessee PBS
+    TN  nashville-pbs                                Nashville PBS
+    TN  wcte                                         WCTE
+    TN  west-tn-pbs                                  West TN PBS
+    TN  wkno                                         WKNO
+    TN  wtci                                         WTCI
+    TX  austin-pbs                                   Austin PBS
+    TX  basin-pbs                                    Basin PBS
+    TX  houston-public-media                         Houston Public Media
+    TX  kamu                                         KAMU
+    TX  kedt                                         KEDT
+    TX  kera                                         KERA
+    TX  klrn                                         KLRN
+    TX  panhandle-pbs                                Panhandle PBS
+    TX  pbs-el-paso                                  PBS El Paso
+    TX  pbs-rio-grande-valley                        PBS Rio Grande Valley
+    TX  texas-tech-public-media                      Texas Tech Public Media
+    UT  pbs-utah                                     PBS Utah
+    VA  blue-ridge-pbs                               Blue Ridge PBS
+    VA  pbs-appalachia-virginia                      PBS Appalachia Virginia
+    VA  vpm-pbs                                      VPM PBS
+    VA  whro                                         WHRO
+    VI  wtjx                                         WTJX
+    VT  vermont-public                               Vermont Public
+    WA  cascade-pbs                                  Cascade PBS
+    WA  kbtc-and-kcka                                KBTC and KCKA
+    WA  ksps                                         KSPS
+    WA  northwest-public-broadcasting                Northwest Public Broadcasting
+    WI  milwaukee-pbs                                Milwaukee PBS
+    WI  pbs-wisconsin                                PBS Wisconsin
+    WV  west-virginia-public-broadcasting            West Virginia Public Broadcasting
+    WY  wyoming-pbs                                  Wyoming PBS

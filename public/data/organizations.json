@@ -420,6 +420,20 @@
     "website": "https://www.kpbs.org/",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/kpbs/id6741001514",
+        "source": "https://www.kpbs.org/kpbs-on-the-go",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.kpbs",
+        "source": "https://www.kpbs.org/kpbs-on-the-go",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
         "platform": "web",
         "url": "https://plus.kpbs.org/",
         "source": "manual: station-app-pages.yaml",
@@ -466,7 +480,15 @@
     "state": "CA",
     "owner": "KQED Inc.",
     "website": "https://www.kqed.org/tv/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.kqed.org/tv",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-35500",
       "fcc-35663"
@@ -549,6 +571,27 @@
     "website": "https://www.kvie.org/",
     "apps": [
       {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0F5XB6BQL",
+        "source": "https://www.kvie.org/kvie-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/ccf90dd41f8e5518e9d6a1082486e7ef:5e8ea1044757b549d4a4e3e4843bed4d/kvie-pbs-kvie",
+        "source": "https://www.kvie.org/kvie-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1268909",
+        "source": "https://www.kvie.org/kvie-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
         "platform": "web",
         "url": "https://stream.kvie.org/",
         "source": "manual: station-app-pages.yaml",
@@ -625,7 +668,22 @@
     "state": "CA",
     "owner": "Public Media Group of Southern California",
     "website": "https://pbssocal.org",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.pbssocal.org/about/app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://www.pbssocal.org/about/app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-4328",
       "fcc-13058"
@@ -666,7 +724,22 @@
     "state": "CA",
     "owner": "Valley Public Television, Inc.",
     "website": "https://valleypbs.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/id1173006721",
+        "source": "https://valleypbs.org/app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.valleypbs",
+        "source": "https://valleypbs.org/app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-69733"
     ],
@@ -706,7 +779,22 @@
     "state": "CO",
     "owner": "Colorado Public Television, Inc.",
     "website": "https://www.pbs12.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.pbs12.org/watch/ways-to-watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://www.pbs12.org/watch/ways-to-watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-22685"
     ],
@@ -747,6 +835,55 @@
     "owner": "Rocky Mountain Public Media, Inc.",
     "website": "https://www.rmpbs.org/",
     "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.krma",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DLBTLJ7B",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "androidtv",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.krma",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/0875518a556facf58849ba719e7edf36:6d256d82db92a35b3602265aa715ce20/rmpbs-rocky-mountain-pbs",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/appSearch",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
       {
         "platform": "web",
         "url": "https://rmpbsplus.org/",
@@ -841,6 +978,48 @@
     "owner": "Greater Washington Educational Telecommunications Association",
     "website": "https://weta.org/watch",
     "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/weta/id6740541547",
+        "source": "https://weta.org/wetaplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.weta",
+        "source": "https://weta.org/wetaplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/weta/id6740541547",
+        "source": "https://weta.org/wetaplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DTRDNXXP",
+        "source": "https://weta.org/wetaplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/2ecc8f8b5306bfcf72dac56e6a6a10bd:e3336a2ea2166d0d7e89aed5c45816d2/weta-pbs",
+        "source": "https://weta.org/wetaplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
+        "source": "https://weta.org/wetaplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
       {
         "platform": "web",
         "url": "https://wetaplus.org/",
@@ -1080,7 +1259,36 @@
     "state": "FL",
     "owner": "WJCT, Inc.",
     "website": "https://www.wjct.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wjct-public-broadcasting-app/id1041625425",
+        "source": "https://www.wjct.org/jaxpbs/watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wjct",
+        "source": "https://www.wjct.org/jaxpbs/watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.wjct.org/jaxpbs/watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://www.wjct.org/jaxpbs/watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-73130"
     ],
@@ -1120,7 +1328,22 @@
     "state": "FL",
     "owner": "Miami-Dade County Public Schools(The School Board of Miami-Dade County, Florida)",
     "website": "https://www.wlrn.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/in/app/wlrn-public-media/id927438305",
+        "source": "https://www.wlrn.org/ways-to-watch-wlrn",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacapps.wlrn",
+        "source": "https://www.wlrn.org/ways-to-watch-wlrn",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-66358"
     ],
@@ -1200,7 +1423,22 @@
     "state": "FL",
     "owner": "University of Florida(Board of Trustees, University of Florida)",
     "website": "https://www.wuft.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/floridas-89-1-wuft-fm/id411899516",
+        "source": "https://www.wuft.org/app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wufttv",
+        "source": "https://www.wuft.org/app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-69440"
     ],
@@ -1240,7 +1478,22 @@
     "state": "GA",
     "owner": "Georgia Public Telecommunications Commission",
     "website": "https://www.gpb.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gpb/id940297307",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb",
+        "source": "https://www.gpb.org/apps",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-23917",
       "fcc-23930",
@@ -1288,7 +1541,22 @@
     "state": "GA",
     "owner": "Atlanta Public Schools(Board of Education of the City of Atlanta)",
     "website": "https://wabe.org",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wabe-public-broadcasting-app/id567615999",
+        "source": "https://www.wabe.org/download-mobile-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wabe",
+        "source": "https://www.wabe.org/download-mobile-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-4190"
     ],
@@ -1570,7 +1838,22 @@
     "state": "IL",
     "owner": "Southern Illinois University(Board of Trustees of Southern Illinois University)",
     "website": "https://www.wsiu.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wsiu-public-media-app/id1081876063",
+        "source": "https://www.wsiu.org/wsiu-mobile-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wsiu",
+        "source": "https://www.wsiu.org/wsiu-mobile-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-4297",
       "fcc-70536",
@@ -1812,7 +2095,29 @@
     "state": "IN",
     "owner": "Fort Wayne Public Television, Inc.",
     "website": "https://www.pbsfortwayne.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/es/app/wfwa-pbs39-fort-wayne/id1181680465",
+        "source": "https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wfwa",
+        "source": "https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B06X6BXYDT",
+        "source": "https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-22108"
     ],
@@ -1932,7 +2237,29 @@
     "state": "IN",
     "owner": "Indiana University(The Trustees of Indiana University)",
     "website": "https://ipm.org/tv/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.ipm.org/tv/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://www.ipm.org/tv/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
+        "source": "https://www.ipm.org/tv/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-66536"
     ],
@@ -2052,7 +2379,22 @@
     "state": "KS",
     "owner": "Smoky Hills Public Television Corporation",
     "website": "https://www.smokyhillspbs.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/smoky-hills-pbs/id1636746517",
+        "source": "https://www.smokyhillspbs.org/app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.smokyhillspbs",
+        "source": "https://www.smokyhillspbs.org/app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-60675",
       "fcc-60683",
@@ -2095,7 +2437,22 @@
     "state": "KY",
     "owner": "Kentucky Authority for Educational Television",
     "website": "https://www.ket.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ket-videos-schedules/id1298153586",
+        "source": "https://ket.org/about/ket-pbs-apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kettv",
+        "source": "https://ket.org/about/ket-pbs-apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-34204",
       "fcc-34171",
@@ -2190,7 +2547,22 @@
     "state": "LA",
     "owner": "Louisiana Educational Television Authority",
     "website": "https://www.lpb.org",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/lpb-app/id1459163263",
+        "source": "https://www.lpb.org/about/lpb-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.lpb",
+        "source": "https://www.lpb.org/about/lpb-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-38586",
       "fcc-38589",
@@ -2275,7 +2647,22 @@
     "state": "MA",
     "owner": "WGBH Educational Foundation",
     "website": "https://www.wgbh.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/gbh-news/id434660601",
+        "source": "https://www.wgbh.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.wgbh.WGBHApp",
+        "source": "https://www.wgbh.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-72099",
       "fcc-72098"
@@ -2396,7 +2783,29 @@
     "state": "ME",
     "owner": "Maine Public Broadcasting Corporation",
     "website": "https://www.mainepublic.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/maine-public-broadcasting-app/id1104650605",
+        "source": "https://www.mainepublic.org/download-the-maine-public-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.mpbn",
+        "source": "https://www.mainepublic.org/download-the-maine-public-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.mainepublic.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-39659",
       "fcc-39656",
@@ -2440,7 +2849,22 @@
     "state": "MI",
     "owner": "Central Michigan University",
     "website": "https://www.wcmu.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wcmu-public-media-app/id584427780",
+        "source": "https://www.wcmu.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wcmu",
+        "source": "https://www.wcmu.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-9908",
       "fcc-9917",
@@ -2723,7 +3147,22 @@
     "state": "MN",
     "owner": "Northern Minnesota Public Television, Inc.",
     "website": "https://lptv.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://lptv.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://lptv.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-49578"
     ],
@@ -3047,7 +3486,15 @@
     "state": "MS",
     "owner": "Mississippi Authority for Educational Television",
     "website": "https://www.mpbonline.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.mpb",
+        "source": "https://www.mpbonline.org/radio/app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-43192",
       "fcc-43170",
@@ -3181,7 +3628,15 @@
     "state": "NC",
     "owner": "University of North Carolina",
     "website": "https://www.pbsnc.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.pbsnc.org/watch/pbs-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-69080",
       "fcc-69292",
@@ -3280,7 +3735,22 @@
     "state": "NE",
     "owner": "KUON: University of Nebraska–LincolnOthers: Nebraska Educational Telecommunications Commission",
     "website": "https://nebraskapublicmedia.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/nebraska-public-media/id728573963",
+        "source": "https://nebraskapublicmedia.org/en/about/apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.netnebraska.netnebraska",
+        "source": "https://nebraskapublicmedia.org/en/about/apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-47996",
       "fcc-47981",
@@ -3661,6 +4131,41 @@
     "website": "https://www.btpm.org/watch/pbs",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/btpm/id6752734865",
+        "source": "https://www.btpm.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wned",
+        "source": "https://www.btpm.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/btpm/id6752734865",
+        "source": "https://www.btpm.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0G224WRG5",
+        "source": "https://www.btpm.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/d6b5213277d31cd6baeb6cef3d880d3c:9713be84041f47ae656407d348f2a4f1/btpm",
+        "source": "https://www.btpm.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
         "platform": "web",
         "url": "https://watch.btpm.org/",
         "source": "manual: station-app-pages.yaml",
@@ -3867,7 +4372,22 @@
     "state": "NY",
     "owner": "St. Lawrence Valley Educational TV Council, Inc.",
     "website": "https://www.wpbstv.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wpbs-dt/id982619997",
+        "source": "https://www.wpbstv.org/wpbs-mobile-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wpbs",
+        "source": "https://www.wpbstv.org/wpbs-mobile-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-62136"
     ],
@@ -3986,7 +4506,22 @@
     "city": "Cleveland",
     "state": "OH",
     "website": "https://ideastream.org",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/ideastream-public-media-app/id1618238576",
+        "source": "https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.ideastream",
+        "source": "https://www.ideastream.org/news/ideastream-public-media-mobile-app-now-available-for-ios-and-android",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-18753",
       "fcc-18559"
@@ -4063,7 +4598,22 @@
     "state": "OH",
     "owner": "Public Media Connect(Greater Dayton Public Television, Inc.)",
     "website": "https://thinktv.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://thinktv.org/pbs-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://thinktv.org/pbs-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-25067",
       "fcc-25065"
@@ -4144,7 +4694,22 @@
     "state": "OH",
     "owner": "Public Media Connect(The Greater Cincinnati Television Educational Foundation)",
     "website": "https://www.cetconnect.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.cetconnect.org/pbs-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://www.cetconnect.org/pbs-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-65666"
     ],
@@ -4184,7 +4749,22 @@
     "state": "OH",
     "owner": "Public Broadcasting Foundation of Northwest Ohio",
     "website": "https://www.wgte.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/id1437532139",
+        "source": "https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wgte",
+        "source": "https://www.wgte.org/blog/take-wgte-with-you-download-the-all-new-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-66285"
     ],
@@ -4224,7 +4804,22 @@
     "state": "OH",
     "owner": "Ohio State University",
     "website": "https://wosu.org/television/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wosu-public-media-app/id649640858",
+        "source": "https://www.wosu.org/wosu-public-media-mobile-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wosu",
+        "source": "https://www.wosu.org/wosu-public-media-mobile-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-66190"
     ],
@@ -4482,6 +5077,48 @@
     "website": "https://www.whyy.org/",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
+        "source": "https://whyy.org/whyy-watch-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whyy",
+        "source": "https://whyy.org/whyy-watch-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
+        "source": "https://whyy.org/whyy-watch-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DX4GG2V9",
+        "source": "https://whyy.org/whyy-watch-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/bf40c4e8dc6ecde6d0a9a0ea22af9fae:3d91c874584177eb45373c475768b197/whyy-watch",
+        "source": "https://whyy.org/whyy-watch-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1261252",
+        "source": "https://whyy.org/whyy-watch-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
         "platform": "web",
         "url": "https://watch.whyy.org/",
         "source": "manual: station-app-pages.yaml",
@@ -4528,7 +5165,22 @@
     "state": "PA",
     "owner": "WITF, Inc.",
     "website": "https://www.witf.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/witf/id1223083847",
+        "source": "https://www.witf.org/mobile/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.mediamadeeasy.WITFapp",
+        "source": "https://www.witf.org/mobile/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-73083"
     ],
@@ -4610,6 +5262,55 @@
     "website": "https://www.wqed.org/",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wqed/id6752442766",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/wqed/id6752442766",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0FVNC82N1",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "androidtv",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/4d3e3d0302ed8d8d66ed623af6ede419:a6afc2cc55e97c38bbd9adaea7f9e6bd/wqed",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1283074",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
         "platform": "web",
         "url": "https://plus.wqed.org/",
         "source": "manual: station-app-pages.yaml",
@@ -4656,7 +5357,22 @@
     "state": "PA",
     "owner": "Public Broadcasting of Northwest Pennsylvania, Inc.",
     "website": "https://www.wqln.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wqln/id1666701865",
+        "source": "https://www.wqln.org/wqln-pbs-npr-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wqln",
+        "source": "https://www.wqln.org/wqln-pbs-npr-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-53716"
     ],
@@ -4696,7 +5412,22 @@
     "state": "PA",
     "owner": "Northeast Pennsylvania Educational Television Association",
     "website": "https://www.wvia.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/id1479793016",
+        "source": "https://www.wvia.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wvia",
+        "source": "https://www.wvia.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-47929"
     ],
@@ -4818,6 +5549,41 @@
     "website": "https://www.scetv.org/",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/scetv/id6772544565",
+        "source": "https://www.scetv.org/scetvplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wrlk",
+        "source": "https://www.scetv.org/scetvplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/scetv/id6772544565",
+        "source": "https://www.scetv.org/scetvplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0H3YY4X4T",
+        "source": "https://www.scetv.org/scetvplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "roku",
+        "url": "https://my.roku.com/account/add/SCETVPLUS",
+        "source": "https://www.scetv.org/scetvplus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
         "platform": "web",
         "url": "https://plus.scetv.org/",
         "source": "manual: station-app-pages.yaml",
@@ -4874,7 +5640,22 @@
     "state": "SD",
     "owner": "South Dakota Bureau of Information and Technology(South Dakota Board of Directors for Educational Telecommunications)",
     "website": "https://www.sdpb.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/sdpb-app/id881275526",
+        "source": "https://www.sdpb.org/about/app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.sdpb",
+        "source": "https://www.sdpb.org/about/app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-61072",
       "fcc-61068",
@@ -4963,6 +5744,13 @@
     "owner": "Nashville Public Television, Inc.",
     "website": "https://www.wnpt.org/",
     "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.wnpt.org/watch/pbsapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
       {
         "platform": "web",
         "url": "https://nashvillepbs.app/",
@@ -5250,7 +6038,43 @@
     "state": "TX",
     "owner": "University of Houston(University of Houston System)",
     "website": "https://www.houstonpublicmedia.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/hpm/id6755161777",
+        "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0G3XYR4HJ",
+        "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "androidtv",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.kuht",
+        "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/d3e1be932ab615fd04c7f9a16951f130:7d176e27bfd7d91af4741125088ff7be/hpm-pbs",
+        "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1286640",
+        "source": "https://www.houstonpublicmedia.org/support/hpm-plus/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
     "facilityIds": [
       "fcc-69269"
     ],
@@ -5330,7 +6154,15 @@
     "state": "TX",
     "owner": "South Texas Public Broadcasting, Inc.",
     "website": "https://www.kedt.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kedt",
+        "source": "https://www.kedt.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-58408"
     ],
@@ -5645,7 +6477,22 @@
     "state": "VA",
     "owner": "Blue Ridge Public Television, Inc.",
     "website": "https://www.blueridgepbs.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/blue-ridge-pbs-app/id1348880332",
+        "source": "https://www.blueridgepbs.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.brpbs",
+        "source": "https://www.blueridgepbs.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-5981",
       "fcc-5985",
@@ -5687,7 +6534,15 @@
     "state": "VA",
     "owner": "Blue Ridge Public Television, Inc.",
     "website": "https://www.pbsavirginia.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/db1be65a5802b106f74ef933153ac4aa/pbs-appalachia-virginia",
+        "source": "https://www.pbsavirginia.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [],
     "sources": {
       "name": {
@@ -5761,6 +6616,48 @@
     "owner": "Hampton Roads Educational Telecommunications Association",
     "website": "https://whro.org/",
     "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/whro-public-media/id6741328420",
+        "source": "https://www.whro.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whro",
+        "source": "https://www.whro.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/whro-public-media/id6741328420",
+        "source": "https://www.whro.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0DW58FRQM",
+        "source": "https://www.whro.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/080e9d0af7016729020119014eb29a50:05d8367f6dd508559e51dd7d89bd9ef1/whro-public-media",
+        "source": "https://www.whro.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1262422",
+        "source": "https://www.whro.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
       {
         "platform": "web",
         "url": "https://video.whro.org/",
@@ -5887,7 +6784,50 @@
     "state": "WA",
     "owner": "Cascade Public Media",
     "website": "https://www.kcts9.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/cascade-pbs/id1578709872",
+        "source": "https://www.cascadepbs.org/apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.kcts9.android",
+        "source": "https://www.cascadepbs.org/apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/worlds-best-television/id1578709872",
+        "source": "https://www.cascadepbs.org/ways-to-watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B09M2NVYDX",
+        "source": "https://www.cascadepbs.org/apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/61407c76b4b4502c06b257788018e39e:ee2e27f9f6f191ed1e2b469f47cf13ff/cascade-pbs",
+        "source": "https://www.cascadepbs.org/apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      },
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1253684",
+        "source": "https://www.cascadepbs.org/apps/",
+        "retrievedAt": "2026-10-18",
+        "verified": true
+      }
+    ],
     "facilityIds": [
       "fcc-33749"
     ],
@@ -5927,7 +6867,29 @@
     "state": "WA",
     "owner": "Bates Technical College",
     "website": "https://www.kbtc.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/kbtc-public-television/id6740147601",
+        "source": "https://www.kbtc.org/watch-on-demand/kbtc-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kbtc",
+        "source": "https://www.kbtc.org/watch-on-demand/kbtc-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.kbtc.org/watch-on-demand/pbs-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-62469"
     ],
@@ -6007,7 +6969,22 @@
     "state": "WA",
     "owner": "Washington State University",
     "website": "https://www.nwpb.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/nwpb/id472024661",
+        "source": "https://www.nwpb.org/nwpb-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacobsmedia.nwpr",
+        "source": "https://www.nwpb.org/nwpb-app",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-71023"
     ],
@@ -6132,7 +7109,22 @@
     "state": "WV",
     "owner": "West Virginia Educational Broadcasting Authority",
     "website": "https://wvpublic.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wvpb-public-media-app/id1100735838",
+        "source": "https://wvpublic.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wvpb",
+        "source": "https://wvpublic.org/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-71657",
       "fcc-71680",
@@ -6174,7 +7166,15 @@
     "state": "WY",
     "owner": "Central Wyoming College",
     "website": "https://wyomingpbs.org",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.wyomingpbs.org/app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-10036",
       "fcc-10032",
