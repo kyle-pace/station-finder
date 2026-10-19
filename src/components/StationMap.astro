@@ -17,7 +17,7 @@ import { join } from 'node:path';
 import { feature, mesh } from 'topojson-client';
 import { geoAlbersUsa, geoPath } from 'd3-geo';
 import type { Topology, GeometryCollection } from 'topojson-specification';
-import { organizations, facilities, national, metaLine, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES } from '../lib/data';
+import { organizations, facilities, national, metaLine, statesWithStations, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES } from '../lib/data';
 import { url } from '../lib/site';
 
 const topo = JSON.parse(readFileSync(join(process.cwd(), 'node_modules', 'us-atlas', 'states-albers-10m.json'), 'utf8')) as Topology;
@@ -26,8 +26,7 @@ const path = geoPath().digits(1); // shapes are already projected
 const projection = geoAlbersUsa().scale(1300).translate([487.5, 305]); // matches us-atlas *-albers files
 const codeByName = Object.fromEntries(Object.entries(STATE_NAMES).map(([code, name]) => [name, code]));
 const orgById = new Map(organizations.map((o) => [o.id, o]));
-const countByState = new Map<string, number>();
-for (const o of organizations) countByState.set(o.state, (countByState.get(o.state) ?? 0) + 1);
+const countByState = new Map(statesWithStations.map((s) => [s.code, s.count]));
 
 const states = feature(topo, statesObj).features.map((f) => {
   const code = codeByName[f.properties.name] ?? '';
@@ -36,14 +35,15 @@ const states = feature(topo, statesObj).features.map((f) => {
 });
 const borders = path(mesh(topo, statesObj, (a, b) => a !== b)) ?? '';
 
-const dots: { x: number; y: number; org: string; call: string; label: string }[] = [];
+const dots: { x: number; y: number; org: string; call: string; label: string; radio: boolean }[] = [];
 const offMap = new Map<string, { code: string; name: string }>();
 for (const f of facilities) {
   const org = orgById.get(f.organizationId);
   if (!org) continue;
   const p = projection([f.lng, f.lat]);
   if (!p) { offMap.set(org.state, { code: org.state, name: STATE_NAMES[org.state] ?? org.state }); continue; }
-  dots.push({ x: Math.round(p[0] * 10) / 10, y: Math.round(p[1] * 10) / 10, org: org.id, call: f.callSign, label: `${org.name} · ${f.callSign}${f.city ? `, ${f.city}` : ''}` });
+  const call = f.frequency ? `${f.callSign} ${f.frequency}` : f.callSign;
+  dots.push({ x: Math.round(p[0] * 10) / 10, y: Math.round(p[1] * 10) / 10, org: org.id, call, label: `${org.name} · ${call}${f.city ? `, ${f.city}` : ''}`, radio: f.service !== 'tv' });
 }
 const stationCount = new Set(dots.map((d) => d.org)).size;
 
@@ -71,6 +71,7 @@ const info = Object.fromEntries(
     <p class="small muted" data-map-status>{stationCount} stations, {dots.length} transmitters. Pick a state to zoom in, then a dot to learn about that station.</p>
     <button class="btn btn-quiet" type="button" data-map-reset hidden>← All of the US</button>
   </div>
+  <p class="legend caption muted" aria-hidden="true"><span class="key tv"></span>TV transmitter <span class="key radio"></span>Radio transmitter</p>
   <div class="map-frame" data-frame>
     <svg viewBox="0 0 975 610" data-full="0 0 975 610" role="group" aria-label="Map of public media stations in the United States">
       <g class="states">
@@ -81,7 +82,7 @@ const info = Object.fromEntries(
       <path class="borders" d={borders} />
       <g class="dots">
         {dots.map((d) => (
-          <a href={url(`/station/${d.org}/`)} aria-label={d.label} data-org={d.org} data-call={d.call}>
+          <a href={url(`/station/${d.org}/`)} aria-label={d.label} data-org={d.org} data-call={d.call} class:list={[d.radio && 'radio']}>
             <circle cx={d.x} cy={d.y} r="4" />
           </a>
         ))}
@@ -301,7 +302,11 @@ const info = Object.fromEntries(
   .dots a { cursor: pointer; }
   .dots a:hover circle, .dots a:focus-visible circle, .dots a.hl circle { r: calc(var(--dot-r, 4) * 1.7px); }
   .has-hl .dots a:not(.hl) circle { opacity: 0.35; }
+  .dots a.radio circle { fill: var(--warm); }
   .dots a.hl circle { fill: var(--text); }
+  .legend { display: flex; align-items: center; gap: var(--space-8); margin-top: calc(-1 * var(--space-8)); }
+  .key { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .key.radio { background: var(--warm); margin-left: var(--space-12); }
   .dots a:focus-visible { outline: none; }
   /* On touch screens, the zoomed-out map is for picking a state: taps go to the state. */
   @media (pointer: coarse) { svg:not(.zoomed) .dots { pointer-events: none; } }

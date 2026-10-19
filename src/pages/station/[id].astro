@@ -9,7 +9,6 @@ import {
   type Organization, type Platform,
 } from '../../lib/data';
 import { url, correctionUrl } from '../../lib/site';
-import { monogram } from '../../lib/monogram';
 
 export function getStaticPaths() {
   return organizations.map((org) => ({ params: { id: org.id }, props: { org } }));
@@ -46,7 +45,7 @@ const groups = (['mobile', 'tv', 'web'] as const)
   .filter((g) => g.items.length)
   .map((g) => ({ ...g, allFallback: g.items.every((i) => i.fallback) }));
 
-const calls = facilitiesFor(org).map((f) => f.callSign);
+const calls = facilitiesFor(org).map((f) => (f.frequency ? `${f.callSign} ${f.frequency}` : f.callSign));
 const stateName = STATE_NAMES[org.state] ?? org.state;
 const dates = Object.values(org.sources).map((s) => s.retrievedAt).concat(org.apps.map((a) => a.retrievedAt)).sort();
 const lastChecked = dates.at(-1);
@@ -63,7 +62,6 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
     <div class="wrap stack gap-24">
       <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
       <div class="station-head">
-        {monogram(org.name) !== org.name && <span class="monogram lg" aria-hidden="true">{monogram(org.name)}</span>}
         <div class="stack gap-8">
           <h1 class="display">{org.name}</h1>
           <p class="muted">{metaLine(org)}{calls.length > 0 && <> · On air as {calls.slice(0, 3).map((c, i) => <>{i > 0 && ', '}<span class="nowrap">{c}</span></>)}{calls.length > 3 && <> and {calls.length - 3} more</>}</>}</p>

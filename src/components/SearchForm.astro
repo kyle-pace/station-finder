@@ -68,9 +68,8 @@ const { value = '', id = 'q', size = 'md', examples = [] } = Astro.props;
 <style is:global>
   /* Suggestion rows are created by instant.ts, so these styles are global. */
   .suggest li { border-radius: var(--radius-sm); }
-  .suggest a { display: flex; align-items: center; gap: var(--space-12); padding: var(--space-8); color: var(--text); text-decoration: none; border-radius: var(--radius-sm); }
+  .suggest a { display: flex; align-items: center; gap: var(--space-12); padding: var(--space-8) var(--space-12); color: var(--text); text-decoration: none; border-radius: var(--radius-sm); }
   .suggest li[aria-selected='true'] a, .suggest a:hover { background: var(--accent-subtle); }
-  .suggest .monogram { width: 40px; height: 40px; border-radius: 11px; font-size: 14px; }
   .suggest .s-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
   .suggest .s-name { font-weight: 650; }
   .suggest .s-meta { font-size: 14px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

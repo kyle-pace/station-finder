@@ -59,8 +59,10 @@ scripts/build-data               →  public/data/organizations.json, facilities
                                     + data/build-report.txt (what to review)
 ```
 
-- **Stations (PBS only for now)** come from Wikipedia's "List of PBS member stations"
-  and each station's article: name, owner, website, and transmitter coordinates.
+- **Stations** come from Wikipedia's "List of PBS member stations" and "List of NPR
+  stations" and each station's article: name, owner, website, and transmitter coordinates.
+  Radio stations sharing a website are one station; a radio group whose website matches a
+  TV station's joins it (TV & Radio).
   We read only ordinary article pages; Wikipedia's robots.txt disallows its API paths.
   We do not download FCC files (the FCC site's robots.txt disallows it).
 - **App links** come only from each station's own website: its homepage, any page it
@@ -75,8 +77,8 @@ scripts/build-data               →  public/data/organizations.json, facilities
 npm run refresh-data   # about 10 minutes; downloads politely, one request at a time
 ```
 
-This runs, in order: `fetch-wikipedia`, `build-data`, `fetch-station-app-pages`,
-`build-data`. Downloaded pages are cached in `data/raw/` (not committed), so re-runs are
+This runs, in order: `fetch-wikipedia`, `fetch-wikipedia-npr`, `build-data`,
+`fetch-station-app-pages`, `build-data`. Downloaded pages are cached in `data/raw/` (not committed), so re-runs are
 fast. Add `-- --refresh` to a fetch script to download fresh copies.
 
 ZIP-code locations come from a Census file that is downloaded **by hand** (see

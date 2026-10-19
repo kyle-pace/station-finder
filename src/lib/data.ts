@@ -26,6 +26,7 @@ export interface Facility {
   id: string;
   callSign: string;
   service: 'tv' | 'fm' | 'am';
+  frequency?: string;
   city: string | null;
   state: string;
   lat: number;
@@ -46,9 +47,15 @@ export const national = read<NationalBrand[]>('national.json');
 
 import { STATE_NAMES } from './states';
 export { STATE_NAMES };
+// Every state an organization broadcasts in: its home state plus its transmitters' states
+// (a regional network like High Plains Public Radio appears on each of its states' pages).
+const facilityState = new Map(facilities.map((f) => [f.id, f.state]));
+export const statesOf = (o: Organization) => [...new Set([o.state, ...o.facilityIds.map((id) => facilityState.get(id)!).filter(Boolean)])];
+export const stationsIn = (code: string) => organizations.filter((o) => statesOf(o).includes(code));
+
 // States (and territories) that have at least one station, A–Z by name.
-export const statesWithStations = [...new Set(organizations.map((o) => o.state))]
-  .map((code) => ({ code, name: STATE_NAMES[code] ?? code, count: organizations.filter((o) => o.state === code).length }))
+export const statesWithStations = [...new Set(organizations.flatMap(statesOf))]
+  .map((code) => ({ code, name: STATE_NAMES[code] ?? code, count: stationsIn(code).length }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
 export const facilitiesFor = (org: Organization) => org.facilityIds.map((id) => facilities.find((f) => f.id === id)!).filter(Boolean);

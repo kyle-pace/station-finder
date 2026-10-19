@@ -78,6 +78,12 @@ export function parseInfobox($: CheerioAPI, url: string, retrievedAt: string): I
       if (c) fields.coords = c;
     }
   });
+  // Many radio articles keep their coordinates at the top of the page instead of in the
+  // infobox; use those when the infobox has none.
+  if (!fields.coords) {
+    const c = parseGeo($('#coordinates .geo').first().text());
+    if (c) fields.coords = c;
+  }
   return fields;
 }
 

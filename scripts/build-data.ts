@@ -20,8 +20,8 @@ import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node
 import { join } from 'node:path';
 import { parse } from 'yaml';
 import type { ExtractedRow, InfoboxFields } from './fetch-wikipedia.ts';
+import type { NprRow } from './fetch-wikipedia-npr.ts';
 import type { StationAppLinks } from './fetch-station-app-pages.ts';
-import { monogram } from '../src/lib/monogram.ts';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const MANUAL = join(ROOT, 'data', 'manual');
@@ -40,7 +40,7 @@ const STATES: Record<string, string> = {
   Nevada: 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY',
   'North Carolina': 'NC', 'North Dakota': 'ND', 'Northern Mariana Islands': 'MP', Ohio: 'OH',
   Oklahoma: 'OK', Oregon: 'OR', Pennsylvania: 'PA', 'Puerto Rico': 'PR', 'Rhode Island': 'RI',
-  'South Carolina': 'SC', 'South Dakota': 'SD', Tennessee: 'TN', Texas: 'TX', Utah: 'UT',
+  'Washington, D.C.': 'DC', 'South Carolina': 'SC', 'South Dakota': 'SD', Tennessee: 'TN', Texas: 'TX', Utah: 'UT',
   Vermont: 'VT', Virginia: 'VA', 'U.S. Virgin Islands': 'VI', Washington: 'WA', 'West Virginia': 'WV',
   Wisconsin: 'WI', Wyoming: 'WY',
 };
@@ -99,6 +99,7 @@ interface Facility {
   id: string;
   callSign: string;
   service: 'tv' | 'fm' | 'am';
+  frequency?: string; // radio, e.g. "94.9 FM"
   city: string | null;
   state: string;
   lat: number;
@@ -382,9 +383,122 @@ for (const m of mergesFile) {
   mergeInto(into, from, `merges.yaml${m.note ? ` (${m.note})` : ''}`);
 }
 
-// Unique ids: add the state when two stations share a name.
+// ----------------------------------------------------------------------------------
+// Radio: Wikipedia's "List of NPR stations" (fetch-wikipedia-npr). Stations that share a
+// website (or a Wikipedia article) are one organization, e.g. Wisconsin Public Radio's 24
+// transmitters. A group whose website matches a TV station's joins that station (KQED,
+// WHYY, OPB…), which then lists TV & Radio. Otherwise it becomes a radio station.
+// ----------------------------------------------------------------------------------
+const nprPath = join(RAW, 'wikipedia', 'npr-extracted.json');
+const radioReport = section('Radio (NPR) stations');
+const radioUnplaced = section('Radio stations with no transmitter coordinates (searchable by name, not by ZIP)');
+if (existsSync(nprPath)) {
+  const npr = JSON.parse(readFileSync(nprPath, 'utf8')) as { source: string; retrievedAt: string; rows: NprRow[] };
+  const listSource: Provenance = { source: npr.source, retrievedAt: npr.retrievedAt };
+  const hostKey = (u?: string) => {
+    if (!u) return undefined;
+    try {
+      const h = new URL(u).host.replace(/^www\./, '').toLowerCase();
+      return /(^|\.)(npr\.org|facebook\.com|wikipedia\.org|twitter\.com|x\.com|instagram\.com)$/.test(h) ? undefined : h;
+    } catch { return undefined; }
+  };
+  const tvByHost = new Map<string, Draft>();
+  for (const d of drafts) { const h = hostKey(d.org.website); if (h && !tvByHost.has(h)) tvByHost.set(h, d); }
+
+  // Group rows by website, else by the article they link to.
+  const groups = new Map<string, NprRow[]>();
+  for (const row of npr.rows) {
+    if (!STATES[row.state]) { radioReport.push(`${row.callSign}: unknown state "${row.state}" — skipped`); continue; }
+    const key = hostKey(row.station?.website) ?? `article:${row.station?.url ?? row.callSign}`;
+    groups.set(key, [...(groups.get(key) ?? []), row]);
+  }
+
+  const cleanBrand = (b: string) => b.replace(/\b\d{2,3}(\.\d)?\b/g, '').replace(/\b(FM|AM|HD\d?)\b/gi, '').replace(/\s{2,}/g, ' ').replace(/[\s,/–-]+$/, '').trim();
+  const FORMAT_WORDS = /\b(news|classical|jazz|ideas|music|indie|remix|studio|hd|talk|all classical|blues|rock|kids|español)\b/i;
+  function groupName(rows: NprRow[]): string {
+    const article = rows[0].station?.title ?? '';
+    const fromList = article.match(/^List of (.+?)(?: affiliates| stations)?$/)?.[1];
+    if (fromList) return fromList;
+    const counts = new Map<string, number>();
+    for (const r of rows) {
+      const b = r.station?.branding ? cleanBrand(r.station.branding) : '';
+      if (b && b.length <= 40) counts.set(b, (counts.get(b) ?? 0) + 1);
+    }
+    // Prefer a station-style name over a format name ("Jazz", "WPR News and Classical").
+    const ranked = [...counts.entries()].filter(([b]) => !FORMAT_WORDS.test(b)).sort((a, b) => b[1] - a[1] || a[0].length - b[0].length);
+    if (ranked.length) return ranked[0][0];
+    return rows[0].callSign.replace(/-(FM|AM)$/, '');
+  }
+
+  let merged = 0, created = 0, placed = 0;
+  for (const [key, rows] of groups) {
+    const facs: Draft['facilities'] = [];
+    const calls = new Set<string>();
+    for (const r of rows) {
+      calls.add(r.callSign);
+      const st = r.station;
+      const state = STATES[r.state];
+      if (!st?.coords) { radioUnplaced.push(`${r.callSign} ${r.frequency} ${r.band} (${r.city}, ${state})`); continue; }
+      const id = st.facilityId && rows.filter((x) => x.station?.facilityId === st.facilityId).length === 1 ? `fcc-${st.facilityId}` : `wp-${r.callSign.toLowerCase()}`;
+      if (facs.some((f) => f.id === id)) continue;
+      facs.push({
+        id, callSign: r.callSign, service: r.band === 'AM' ? 'am' : 'fm', frequency: `${r.frequency} ${r.band}`,
+        city: r.city || null, state, lat: st.coords.lat, lng: st.coords.lng, source: st.url, retrievedAt: st.retrievedAt,
+      });
+      placed++;
+    }
+    const tv = key.startsWith('article:') ? undefined : tvByHost.get(key);
+    if (tv) {
+      for (const f of facs) if (!tv.facilities.some((x) => x.id === f.id)) tv.facilities.push(f);
+      for (const c of calls) tv.callSigns.add(c);
+      if (!tv.org.mediaTypes.includes('radio')) tv.org.mediaTypes.push('radio');
+      if (!tv.org.networks.includes('NPR')) tv.org.networks.push('NPR');
+      merged++;
+      continue;
+    }
+    const first = rows[0];
+    const info = rows.find((r) => r.station?.website)?.station ?? first.station;
+    // Home state = where most of its transmitters are (ties: the first-listed station's).
+    const stateCounts = new Map<string, number>();
+    for (const r of rows) stateCounts.set(STATES[r.state], (stateCounts.get(STATES[r.state]) ?? 0) + 1);
+    const states = [...stateCounts.entries()].sort((a, b) => b[1] - a[1]).map(([s]) => s);
+    const cities = [...new Set(rows.map((r) => r.city))];
+    const name = groupName(rows);
+    const org: Organization = {
+      id: slug(name),
+      name,
+      networks: ['NPR'],
+      mediaTypes: ['radio'],
+      city: cities.length > 3 ? null : first.city || null,
+      state: states[0],
+      owner: info?.owner,
+      website: info?.website?.replace(/^http:/, 'https:'),
+      apps: [],
+      facilityIds: [],
+      sources: { name: info ? { source: info.url, retrievedAt: info.retrievedAt } : listSource, city: listSource, state: listSource },
+    };
+    if (org.website && !isUrl(org.website)) delete org.website;
+    if (org.owner && info) org.sources.owner = { source: info.url, retrievedAt: info.retrievedAt };
+    if (org.website && info) org.sources.website = { source: info.url, retrievedAt: info.retrievedAt };
+    drafts.push({ org, facilities: facs, callSigns: calls });
+    if (states.length > 1) radioReport.push(`${org.id}: transmitters in ${states.join(', ')}; home state ${states[0]} (also listed on the others' state pages)`);
+    created++;
+  }
+  radioReport.unshift(`${npr.rows.length} NPR stations → ${created} radio organizations, ${merged} groups joined a TV station; ${placed} transmitters placed`);
+}
+
+// Radio groups with the same name in the same state are one station (e.g. two websites).
+for (const d of [...drafts]) {
+  const twin = drafts.find((x) => x !== d && x.org.state === d.org.state && x.org.name === d.org.name && drafts.indexOf(x) < drafts.indexOf(d));
+  if (twin && d.org.mediaTypes.includes('radio')) mergeInto(twin, d, 'same name (radio)');
+}
+
+// Unique ids: add the state when two stations share a name, then a call sign if needed.
 for (const d of drafts) {
   if (drafts.filter((x) => x.org.id === d.org.id).length > 1) d.org.id = `${d.org.id}-${d.org.state.toLowerCase()}`;
+}
+for (const d of drafts) {
+  if (drafts.filter((x) => x.org.id === d.org.id).length > 1) d.org.id = `${d.org.id}-${([...d.callSigns][0] ?? 'x').toLowerCase()}`;
 }
 
 // ==================================================================================
@@ -585,7 +699,6 @@ const ownGroup = (o: Organization, platforms: Platform[]) => o.apps.some((a) => 
 const searchIndex = organizations.map((o) => ({
   id: o.id,
   name: o.name,
-  mono: monogram(o.name),
   city: o.city,
   state: o.state,
   calls: o.facilityIds.map((id) => facById.get(id)!.callSign),

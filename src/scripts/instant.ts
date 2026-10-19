@@ -33,10 +33,6 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
     const a = document.createElement('a');
     a.href = stationUrl(entry.id);
     a.tabIndex = -1;
-    const mono = document.createElement('span');
-    mono.className = 'monogram';
-    mono.ariaHidden = 'true';
-    mono.textContent = entry.mono;
     const text = document.createElement('span');
     text.className = 's-text';
     const name = document.createElement('span');
@@ -46,7 +42,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
     meta.className = 's-meta';
     meta.textContent = metaLine(entry);
     text.append(name, meta);
-    a.append(mono, text);
+    a.append(text);
     if (miles !== undefined) {
       const pill = document.createElement('span');
       pill.className = 'pill';

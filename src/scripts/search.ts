@@ -12,7 +12,6 @@ function renderCards(container: HTMLElement, results: Result[]): void {
     const card = tpl.content.firstElementChild!.cloneNode(true) as HTMLElement;
     card.style.setProperty('--i', String(Math.min(i, 8)));
     card.querySelector<HTMLAnchorElement>('[data-link]')!.href = stationUrl(entry.id);
-    card.querySelector('[data-mono]')!.textContent = entry.mono;
     card.querySelector('[data-name]')!.textContent = entry.name;
     card.querySelector('[data-meta]')!.textContent = metaLine(entry);
     const dist = card.querySelector<HTMLElement>('[data-dist]')!;

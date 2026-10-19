@@ -136,7 +136,7 @@ Device class is only `phone`, `tablet`, `desktop`, `other`. Dates are stored at 
 2. **TV data (PBS only):** Wikipedia PBS list + station articles + station app pages + station-apps.yaml → organizations/facilities JSON with a build report.
 3. **Search and pages:** ZIP shards, search, results, station and state pages, national fallback on station pages without apps.
 4. **Ship v0:** about page, analytics, UTM tagging, correction form, deploy publicly.
-5. **Radio:** Wikipedia NPR list and station articles.
+5. **Radio:** Wikipedia NPR list and station articles. (Done 2026-10-18: TV radius 75 mi, radio 50 mi.)
 6. **iOS matching:** needs a new approach (the iTunes Search API is disallowed by robots.txt).
 7. **Refresh automation:** monthly GitHub Action PR.
 
@@ -144,5 +144,5 @@ Device class is only `phone`, `tablet`, `desktop`, `other`. Dates are stored at 
 - Site name and domain? (Decided 2026-10-18: don't name the publishing organization anywhere for now.)
 - Analytics counter: which host for the counting endpoint (e.g. a Cloudflare Worker)? It must meet Section 8 exactly; no off-the-shelf analytics tool unless it can be configured to match.
 - Correction intake: Google Form, or email to start?
-- ~~Include independent stations in v1?~~ Decided: PBS only for now; NPR in Phase 5.
+- ~~Include independent stations in v1?~~ Decided: PBS and NPR stations; others later.
 - PBS KIDS block: should it also cover stations' own PBS KIDS pages, or only national PBS KIDS (pbskids.org and its apps)? For now the build blocks anything with "pbs-kids"/"pbskids" in the link.

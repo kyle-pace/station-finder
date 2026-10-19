@@ -146,13 +146,6 @@ h1, h2, h3, p { margin: 0; }
 .card-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .card-top > svg { width: 20px; height: 20px; color: var(--text-muted); flex: none; }
 
-/* Monogram tile: the same style for every station (no logos, no per-station colors). */
-.monogram {
-  flex: none; width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
-  background: var(--accent-subtle); color: var(--accent); font-weight: 800; font-size: 17px; letter-spacing: -0.02em;
-}
-.monogram.lg { width: 72px; height: 72px; border-radius: 20px; font-size: 24px; }
-
 /* Distance pill and device coverage icons */
 .pill {
   display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: var(--radius-full);
@@ -191,7 +184,6 @@ h1, h2, h3, p { margin: 0; }
 .station-row:hover .body-strong { color: var(--accent); }
 .station-row > div { flex: 1; min-width: 0; }
 .station-row > svg { width: 20px; height: 20px; color: var(--text-muted); }
-.station-row .monogram { width: 44px; height: 44px; border-radius: 12px; font-size: 15px; }
 
 /* Panels */
 .panel { background: var(--surface); border-radius: var(--radius-md); padding: var(--space-24) var(--space-16); display: flex; flex-direction: column; gap: var(--space-16); }

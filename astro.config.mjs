@@ -8,4 +8,9 @@ export default defineConfig({
   base: '/station-finder',
   output: 'static',
   trailingSlash: 'ignore',
+  vite: {
+    // A new value on every build, added to data file URLs (search.json, zip/*.json) so a
+    // browser never mixes new page code with data it cached from an older build.
+    define: { __DATA_VERSION__: JSON.stringify(Date.now().toString(36)) },
+  },
 });

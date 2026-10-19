@@ -9,7 +9,6 @@ import { STATE_NAMES } from './states';
 export interface Entry {
   id: string;
   name: string;
-  mono: string;
   city: string | null;
   state: string;
   calls: string[];
@@ -23,11 +22,20 @@ export interface Entry {
 export interface Result { entry: Entry; miles?: number }
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
+declare const __DATA_VERSION__: string;
+const V = `?v=${__DATA_VERSION__}`;
 export const stationUrl = (id: string) => `${BASE}/station/${id}/`;
 
 let indexPromise: Promise<Entry[]> | null = null;
 export function loadIndex(): Promise<Entry[]> {
-  indexPromise ??= fetch(`${BASE}/data/search.json`).then((r) => r.json() as Promise<Entry[]>);
+  indexPromise ??= fetch(`${BASE}/data/search.json${V}`)
+    .then((r) => r.json() as Promise<Entry[]>)
+    // Tolerate entries from an older data format rather than failing the whole search.
+    .then((list) => list.map((e) => ({
+      ...e,
+      devices: e.devices ?? { mobile: false, tv: false, web: false },
+      tx: (e.tx ?? []).map((t) => [t[0], t[1], t[2] ?? 75] as [number, number, number]),
+    })));
   return indexPromise;
 }
 
@@ -35,7 +43,7 @@ const zipCache = new Map<string, Promise<Record<string, [number, number]>>>();
 export async function zipCenter(zip: string): Promise<[number, number] | undefined> {
   const prefix = zip.slice(0, 3);
   if (!zipCache.has(prefix)) {
-    zipCache.set(prefix, fetch(`${BASE}/data/zip/${prefix}.json`).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+    zipCache.set(prefix, fetch(`${BASE}/data/zip/${prefix}.json${V}`).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
   }
   return (await zipCache.get(prefix)!)[zip];
 }
