@@ -113,22 +113,9 @@ const stations = live
 
     if (still.matches) { showTag(pick()); continue; }
 
-    // A pause button (any [data-anim-toggle] in the same section): motion that keeps
-    // going must be stoppable.
-    let paused = false;
-    const toggle = root.closest('section')?.querySelector<HTMLButtonElement>('[data-anim-toggle]');
-    if (toggle) {
-      toggle.hidden = false;
-      toggle.addEventListener('click', () => {
-        paused = !paused;
-        toggle.setAttribute('aria-pressed', String(paused));
-        toggle.textContent = paused ? 'Play animation' : 'Pause animation';
-        root.classList.toggle('paused', paused);
-      });
-    }
     let visible = true;
     new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(root);
-    const active = () => visible && !document.hidden && !paused;
+    const active = () => visible && !document.hidden;
     const named = () => { if (!active()) return; const s = pick(); ripple(s, true); showTag(s); };
     named();
     setInterval(named, NAMED_EVERY);
@@ -166,7 +153,6 @@ const stations = live
     opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease;
   }
   .on-air-tag.show { opacity: 1; }
-  .live-map.paused :global(.ripple circle) { animation-play-state: paused; }
   .on-air-tag:hover .name { text-decoration: underline; }
   .on-air-tag .kind {
     flex: none; padding: 2px 8px; border-radius: var(--radius-full); font-size: 12px; font-weight: 700;
