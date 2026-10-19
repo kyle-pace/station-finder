@@ -55,9 +55,9 @@
       },
       {
         "platform": "lg",
-        "kind": "store",
-        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
-        "source": "https://www.ipm.org/tv/ (link \"Download app on LG\" in its PBS app section; also weta.org)",
+        "kind": "help",
+        "url": "https://help.pbs.org/support/solutions/articles/12000108270-how-to-install-the-pbs-app-on-lg-tv-",
+        "source": "https://www.pbs.org/pbs-app/",
         "retrievedAt": "2026-10-18"
       },
       {

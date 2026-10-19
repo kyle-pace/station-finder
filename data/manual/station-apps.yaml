@@ -37,3 +37,8 @@
       url: https://my.roku.com/account/add/HPDZRHL
       source: hand-checked (published Roku channel link)
       retrievedAt: 2026-10-18
+
+- id: wtiu
+  exclude:
+    # Its PBS app section links WETA+'s LG app (appId 1260085), not an app of its own.
+    - https://us.lgappstv.com/main/tvapp/detail?appId=1260085

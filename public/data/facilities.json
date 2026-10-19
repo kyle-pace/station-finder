@@ -1040,7 +1040,7 @@
     "lng": -76.212,
     "source": "https://en.wikipedia.org/wiki/WRVS-FM",
     "retrievedAt": "2026-10-18",
-    "organizationId": "nine-ecsu"
+    "organizationId": "ecsu"
   },
   {
     "id": "fcc-19365",
@@ -1092,7 +1092,7 @@
     "lng": -95.331278,
     "source": "https://en.wikipedia.org/wiki/KFRO-FM",
     "retrievedAt": "2026-10-19",
-    "organizationId": "and-kfro"
+    "organizationId": "kfro"
   },
   {
     "id": "fcc-20298",
@@ -1230,7 +1230,7 @@
     "lng": -78.1877778,
     "source": "https://en.wikipedia.org/wiki/WHQR",
     "retrievedAt": "2026-10-18",
-    "organizationId": "whqr-and"
+    "organizationId": "whqr"
   },
   {
     "id": "fcc-22685",
@@ -1756,7 +1756,7 @@
     "lng": -114.5,
     "source": "https://en.wikipedia.org/wiki/KOFA_(AM)",
     "retrievedAt": "2026-10-18",
-    "organizationId": "border-radio-1320"
+    "organizationId": "border-radio"
   },
   {
     "id": "fcc-2767",
@@ -4560,7 +4560,7 @@
     "lng": -151.126,
     "source": "https://en.wikipedia.org/wiki/KDLL",
     "retrievedAt": "2026-10-18",
-    "organizationId": "9fm-kenai-and-soldotna"
+    "organizationId": "kenai-and-soldotna"
   },
   {
     "id": "fcc-52745",
@@ -7583,7 +7583,7 @@
     "lng": -86.8655556,
     "source": "https://en.wikipedia.org/wiki/WNXP",
     "retrievedAt": "2026-10-19",
-    "organizationId": "one"
+    "organizationId": "wnxp"
   },
   {
     "id": "fcc-69940",
@@ -7783,7 +7783,7 @@
     "lng": -79.446944,
     "source": "https://en.wikipedia.org/wiki/WLUR",
     "retrievedAt": "2026-10-19",
-    "organizationId": "5-wlur"
+    "organizationId": "wlur"
   },
   {
     "id": "fcc-710",
@@ -12419,7 +12419,7 @@
     "lng": -80.468,
     "source": "https://en.wikipedia.org/wiki/WDNA",
     "retrievedAt": "2026-10-18",
-    "organizationId": "9fm-wdna"
+    "organizationId": "wdna"
   },
   {
     "id": "wp-wedw-fm",

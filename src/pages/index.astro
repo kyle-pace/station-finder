@@ -32,25 +32,23 @@ const examplePool = organizations.flatMap((o) => {
 
 <Base>
   <section class="hero">
-    <DotMap class="hero-map" dotRadius={2.6} live />
     <div class="wrap hero-inner">
       <div class="hero-copy stack gap-24">
         <div class="stack gap-16">
           <p class="eyebrow">Public media, near you</p>
           <h1 class="display">Every way to watch and listen to your local station</h1>
-          <p class="lede muted">Find your local public TV and radio station, then get its own apps for your phone, tablet, and TV, its livestream, and its website.</p>
+          <p class="lede muted">Find your local public TV and radio station, then get its own apps for your phone, tablet, and TV, plus its website.</p>
         </div>
         <SearchForm size="lg" examplePool={examplePool} />
         <div class="location" hidden data-location>
           <button class="btn btn-secondary" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
           <p class="caption muted">Used on this device only, never sent to us.</p>
         </div>
-        <p class="on-air small muted" data-on-air hidden aria-live="off">
-          <span class="on-air-dot" aria-hidden="true"></span>
-          <span><a data-on-air-link href="#"></a> · <span data-on-air-place></span></span>
-          <span class="on-air-count">one of {stationCount} local stations</span>
-        </p>
       </div>
+      <figure class="hero-visual">
+        <DotMap class="hero-map" dotRadius={2.6} live />
+        <figcaption class="caption muted">Every dot is a public TV or radio transmitter: {transmitterCount.toLocaleString('en-US')} of them, run by {stationCount} local stations.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -105,7 +103,6 @@ const examplePool = organizations.flatMap((o) => {
           <p class="muted">{stationCount} stations and {transmitterCount} transmitters across the country. Zoom into your state and tap a dot to learn about a station.</p>
           <span class="btn btn-primary">Open the map →</span>
         </div>
-        <DotMap class="teaser-map" dotRadius={4} />
       </a>
     </div>
   </section>
@@ -152,14 +149,11 @@ const examplePool = organizations.flatMap((o) => {
       linear-gradient(135deg, var(--hero-a) 0%, var(--bg) 55%, var(--hero-b) 100%);
     border-bottom: 1px solid var(--border);
   }
-  :global(.hero-map) {
-    position: absolute; z-index: -1; right: -12%; top: 50%; transform: translateY(-50%);
-    width: min(820px, 64vw); opacity: 0.75; pointer-events: none;
-    mask-image: linear-gradient(90deg, transparent 0%, transparent 18%, #000 55%);
-  }
-  @media (max-width: 900px) { :global(.hero-map) { width: 140vw; right: -40vw; top: 18%; opacity: 0.45; } }
-  .hero-inner { padding-block: var(--space-48) var(--space-64); }
-  @media (min-width: 701px) { .hero-inner { padding-block: 88px 104px; } }
+  .hero-inner { display: grid; gap: var(--space-40, 40px); align-items: center; padding-block: var(--space-48) var(--space-48); }
+  @media (min-width: 701px) { .hero-inner { padding-block: 72px 80px; } }
+  @media (min-width: 1024px) { .hero-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-48); } }
+  .hero-visual { margin: 0; display: flex; flex-direction: column; gap: var(--space-8); min-width: 0; }
+  .hero-visual figcaption { text-align: center; }
   .hero-copy { max-width: 640px; }
   .lede { font-size: 19px; line-height: 29px; max-width: 560px; }
 
@@ -176,20 +170,9 @@ const examplePool = organizations.flatMap((o) => {
     box-shadow: var(--shadow-sm); transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
   }
   .teaser:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
-  @media (min-width: 801px) { .teaser { grid-template-columns: 1fr 1.3fr; padding: var(--space-48); } }
+  @media (min-width: 801px) { .teaser { padding: var(--space-40, 40px) var(--space-48); } }
   .teaser-copy { align-items: flex-start; }
 
-  .on-air { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4) var(--space-8); margin: 0; min-height: 24px; }
-  .on-air > span:nth-child(2) { opacity: 0; transition: opacity 0.25s; }
-  .on-air.show > span:nth-child(2) { opacity: 1; }
-  .on-air a { color: var(--text); font-weight: 600; text-decoration: none; }
-  .on-air a:hover { text-decoration: underline; }
-  .on-air-count::before { content: '— '; }
-  .on-air { --on-air: var(--accent); }
-  .on-air.radio { --on-air: var(--warm); }
-  .on-air-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--on-air); animation: on-air 2s infinite; }
-  @keyframes on-air { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--on-air) 55%, transparent); } 100% { box-shadow: 0 0 0 8px transparent; } }
-  @media (prefers-reduced-motion: reduce) { .on-air-dot { animation: none; } }
   .location { display: flex; flex-direction: column; gap: var(--space-8); align-items: flex-start; }
   @media (min-width: 701px) { .location { flex-direction: row; align-items: center; gap: var(--space-12); } }
 </style>

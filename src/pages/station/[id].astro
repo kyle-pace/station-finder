@@ -67,7 +67,7 @@ const sourceKinds = [
   org.apps.length || org.livestreamUrl ? 'station website' : '',
   Object.values(org.sources).some((s) => s.source.startsWith('manual')) ? 'manual correction' : '',
 ].filter(Boolean);
-const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, livestream, and website.`;
+const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, and website.`;
 ---
 
 <Base title={org.name} description={description}>

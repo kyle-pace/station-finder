@@ -14,3 +14,13 @@
   note: name the station uses on its own site (ket.org title "KET > Kentucky Educational Television")
   set:
     name: KET
+
+- id: cape-cod-s-classic-alternative
+  note: Wikipedia's branding field is a slogan; use the call sign (en.wikipedia.org/wiki/WSDH)
+  set:
+    name: WSDH
+
+- id: kenai-and-soldotna
+  note: Wikipedia's branding is "91.9FM Kenai and Soldotna" (a frequency and places); use the call sign (en.wikipedia.org/wiki/KDLL)
+  set:
+    name: KDLL

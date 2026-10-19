@@ -1,10 +1,5 @@
 {
  "homes": {
-  "9fm-kenai-and-soldotna": {
-   "city": "Kenai",
-   "state": "AK",
-   "from": "city of license"
-  },
   "alaska-public-media": {
    "city": "Anchorage",
    "state": "AK",
@@ -39,6 +34,11 @@
    "city": "Dillingham",
    "state": "AK",
    "from": "main transmitter city"
+  },
+  "kenai-and-soldotna": {
+   "city": "Kenai",
+   "state": "AK",
+   "from": "city of license"
   },
   "kfsk-radio": {
    "city": "Petersburg",
@@ -130,11 +130,6 @@
    "state": "AK",
    "from": "city of license"
   },
-  "huntsville-public-radio": {
-   "city": "Huntsville",
-   "state": "AL",
-   "from": "city of license"
-  },
   "92j": {
    "city": "Jacksonville",
    "state": "AL",
@@ -149,6 +144,11 @@
    "city": "Montgomery",
    "state": "AL",
    "from": "main transmitter city"
+  },
+  "huntsville-public-radio": {
+   "city": "Huntsville",
+   "state": "AL",
+   "from": "city of license"
   },
   "troy-public-radio": {
    "city": "Dothan",
@@ -210,7 +210,7 @@
    "state": "AZ",
    "from": "city of license"
   },
-  "border-radio-1320": {
+  "border-radio": {
    "city": "Yuma",
    "state": "AZ",
    "from": "city of license"
@@ -535,11 +535,6 @@
    "state": "DE",
    "from": "city of license"
   },
-  "9fm-wdna": {
-   "city": "Miami",
-   "state": "FL",
-   "from": "city of license"
-  },
   "central-florida-public-media": {
    "city": "Cedar Creek",
    "state": "FL",
@@ -547,6 +542,11 @@
   },
   "south-florida-pbs": {
    "city": "Miami-Fort Lauderdale-West Palm Beach",
+   "state": "FL",
+   "from": "city of license"
+  },
+  "wdna": {
+   "city": "Miami",
    "state": "FL",
    "from": "city of license"
   },
@@ -776,11 +776,6 @@
    "from": "city of license"
   },
   "will": {
-   "city": "Urbana",
-   "state": "IL",
-   "from": "city of license"
-  },
-  "will-main-program-illinois-soul": {
    "city": "Urbana",
    "state": "IL",
    "from": "city of license"
@@ -1015,11 +1010,6 @@
    "state": "LA",
    "from": "city of license"
   },
-  "cape-cod-s-classic-alternative": {
-   "city": "Sandwich",
-   "state": "MA",
-   "from": "city of license"
-  },
   "cai": {
    "city": "Woods Hole",
    "state": "MA",
@@ -1065,15 +1055,15 @@
    "state": "MA",
    "from": "city of license"
   },
+  "cape-cod-s-classic-alternative": {
+   "city": "Sandwich",
+   "state": "MA",
+   "from": "city of license"
+  },
   "wumb-radio": {
    "city": "Boston",
    "state": "MA",
    "from": "main transmitter city"
-  },
-  "whcp-radio": {
-   "city": "Cambridge",
-   "state": "MD",
-   "from": "city of license"
   },
   "maryland-public-television": {
    "city": "Annapolis",
@@ -1092,6 +1082,11 @@
   },
   "wfwm": {
    "city": "Frostburg",
+   "state": "MD",
+   "from": "city of license"
+  },
+  "whcp-radio": {
+   "city": "Cambridge",
    "state": "MD",
    "from": "city of license"
   },
@@ -1210,11 +1205,6 @@
    "state": "MI",
    "from": "city of license"
   },
-  "the-maverick": {
-   "city": "Mankato",
-   "state": "MN",
-   "from": "city of license"
-  },
   "jazz88": {
    "city": "Minneapolis",
    "state": "MN",
@@ -1257,6 +1247,11 @@
   },
   "the-current": {
    "city": "Northfield",
+   "state": "MN",
+   "from": "city of license"
+  },
+  "the-maverick": {
+   "city": "Mankato",
    "state": "MN",
    "from": "city of license"
   },
@@ -1405,15 +1400,15 @@
    "state": "MT",
    "from": "main transmitter city"
   },
-  "nine-ecsu": {
-   "city": "Elizabeth City",
-   "state": "NC",
-   "from": "city of license"
-  },
   "bpr-classic": {
    "city": "Asheville",
    "state": "NC",
    "from": "main transmitter city"
+  },
+  "ecsu": {
+   "city": "Elizabeth City",
+   "state": "NC",
+   "from": "city of license"
   },
   "pbs-charlotte": {
    "city": "Charlotte",
@@ -1445,7 +1440,7 @@
    "state": "NC",
    "from": "city of license"
   },
-  "whqr-and": {
+  "whqr": {
    "city": "Wilmington",
    "state": "NC",
    "from": "city of license"
@@ -2005,11 +2000,6 @@
    "state": "SD",
    "from": "main transmitter city"
   },
-  "one": {
-   "city": "Nashville",
-   "state": "TN",
-   "from": "city of license"
-  },
   "east-tennessee-pbs": {
    "city": "Knoxville",
    "state": "TN",
@@ -2060,6 +2050,11 @@
    "state": "TN",
    "from": "city of license"
   },
+  "wnxp": {
+   "city": "Nashville",
+   "state": "TN",
+   "from": "city of license"
+  },
   "wsmc": {
    "city": "Collegedale",
    "state": "TN",
@@ -2073,11 +2068,6 @@
   "wutc": {
    "city": "Chattanooga",
    "state": "TN",
-   "from": "city of license"
-  },
-  "and-kfro": {
-   "city": "Tyler",
-   "state": "TX",
    "from": "city of license"
   },
   "austin-pbs": {
@@ -2127,6 +2117,11 @@
   },
   "ketr": {
    "city": "Commerce",
+   "state": "TX",
+   "from": "city of license"
+  },
+  "kfro": {
+   "city": "Tyler",
    "state": "TX",
    "from": "city of license"
   },
@@ -2245,11 +2240,6 @@
    "state": "UT",
    "from": "main transmitter city"
   },
-  "5-wlur": {
-   "city": "Lexington",
-   "state": "VA",
-   "from": "city of license"
-  },
   "allegheny-mountain-radio": {
    "city": "Hot Springs",
    "state": "VA",
@@ -2287,6 +2277,11 @@
   },
   "whro": {
    "city": "Norfolk",
+   "state": "VA",
+   "from": "city of license"
+  },
+  "wlur": {
+   "city": "Lexington",
    "state": "VA",
    "from": "city of license"
   },
@@ -2365,11 +2360,6 @@
    "state": "WA",
    "from": "city of license"
   },
-  "wrst": {
-   "city": "Oshkosh",
-   "state": "WI",
-   "from": "city of license"
-  },
   "88nine-radio-milwaukee": {
    "city": "Milwaukee",
    "state": "WI",
@@ -2407,6 +2397,11 @@
   },
   "wrfw": {
    "city": "River Falls",
+   "state": "WI",
+   "from": "city of license"
+  },
+  "wrst": {
+   "city": "Oshkosh",
    "state": "WI",
    "from": "city of license"
   },

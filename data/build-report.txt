@@ -1,9 +1,9 @@
 build-data report
-  organizations:  490 (479 with transmitter coordinates)
+  organizations:  489 (479 with transmitter coordinates)
   facilities:     1148
-  with apps:      139 (13 with a verified app)   without apps: 351
+  with apps:      139 (13 with a verified app)   without apps: 350
   without website: 22 (kodk, azpm, ksyc, northern-california-public-media, wamc-northeast-public-radio-ct, south-florida-pbs, wuwg, kbbg, illinois-public-media, will, wisu, cape-cod-s-classic-alternative, wcmv, minnesota-public-radio-mn, kmst, krnm, wurc-rust-college-public-radio, kgva, xpn-nj, pbs-rio-grande-valley, the-edge, kyvt)
-  manual: 1 overrides, 3 merges, 44 app pages, 1 station-apps entries
+  manual: 3 overrides, 3 merges, 44 app pages, 2 station-apps entries
 
   Rows with no transmitter coordinates (not findable by ZIP until fixed): 1
     - pbs-appalachia-virginia (PBS Appalachia Virginia, VA)
@@ -14,8 +14,8 @@ build-data report
     - kbbi: ios link found on https://www.kbbi.org/kbbi-mobile-listening-and-apps — check it's the station's own app
     - alabama-public-radio: ios link found on https://www.apr.org/ — check it's the station's own app
     - alabama-public-radio: android link found on https://www.apr.org/ — check it's the station's own app
-    - border-radio-1320: android link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
-    - border-radio-1320: ios link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
+    - border-radio: android link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
+    - border-radio: ios link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
     - k-bach: ios link found on https://kbaq.org/kbach-mobile-app — check it's the station's own app
     - k-bach: android link found on https://kbaq.org/kbach-mobile-app — check it's the station's own app
     - kawp: android link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
@@ -152,8 +152,8 @@ build-data report
     - pbs-north-carolina: ios link found on https://www.pbsnc.org/explore-nc-app/ — check it's the station's own app
     - pbs-north-carolina: android link found on https://www.pbsnc.org/explore-nc-app/ — check it's the station's own app
     - wfae: android link found on https://www.wfae.org/wfae-app — check it's the station's own app
-    - whqr-and: ios link found on https://www.whqr.org/local/2017-03-17/whqr-app — check it's the station's own app
-    - whqr-and: android link found on https://www.whqr.org/local/2017-03-17/whqr-app — check it's the station's own app
+    - whqr: ios link found on https://www.whqr.org/local/2017-03-17/whqr-app — check it's the station's own app
+    - whqr: android link found on https://www.whqr.org/local/2017-03-17/whqr-app — check it's the station's own app
     - wncu: ios link found on https://www.wncu.org/ — check it's the station's own app
     - community-radio: ios link found on https://kzum.org/kzum-app-now-available-on-apple-and-android/ — check it's the station's own app
     - community-radio: android link found on https://kzum.org/kzum-app-now-available-on-apple-and-android/ — check it's the station's own app
@@ -217,9 +217,9 @@ build-data report
     - wyep: ios link found on https://www.wyep.org/wyep-app — check it's the station's own app
     - wyep: android link found on https://www.wyep.org/wyep-app — check it's the station's own app
     - south-carolina-educational-television: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/scetv/id6772544565
-    - one: ios link found on https://wnxp.org/ — check it's the station's own app
     - nashville-public-radio: ios link found on https://wpln.org/ — check it's the station's own app
     - nashville-public-radio: android link found on https://wpln.org/ — check it's the station's own app
+    - wnxp: ios link found on https://wnxp.org/ — check it's the station's own app
     - houston-public-media: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/hpm/id6755161777
     - houston-public-media: androidtv guessed from link text "Android TV" — https://play.google.com/store/apps/details?id=org.localstreaming.kuht
     - kedt: android link found on https://www.kedt.org/ — check it's the station's own app
@@ -265,7 +265,7 @@ build-data report
     - minnesota-public-radio: paired https://play.google.com/store/apps/details?id=org.americanpublicmedia.thecurrent with "Another app" by position on the page
     - WYIN (fcc-49803) appears under two stations; kept under the first, not lakeshore-pbs
 
-  Merged rows: 16
+  Merged rows: 17
     - South Florida PBS (FL) → south-florida-pbs: same name
     - Cascade PBS (WA) → cascade-pbs: same name
     - KQET (CA) → kqed-and-kqeh: satellite of KQED
@@ -276,6 +276,7 @@ build-data report
     - WMEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WMEC article; same owner and website))
     - WQEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WQEC article; same owner and website))
     - WJCT (FL) → wjct: same name (radio)
+    - WILL (IL) → will: same name (radio)
     - Montana Public Radio (MT) → montana-public-radio: same name (radio)
     - WXXI (NY) → wxxi: same name (radio)
     - The Route (NY) → the-route: same name (radio)
@@ -574,7 +575,31 @@ build-data report
     - KUWT 91.3 FM (Thermopolis, WY)
     - KEUW 89.9 FM (Torrington, WY)
 
-  Livestream links found on homepages (check they are right): 132
+  Websites updated because the old address redirects: 22
+    - 92j: https://wljs919.com → https://www.jsuchanticleer.com/wljs919/
+    - klre: https://www.kuar.org → https://www.ualrpublicradio.org/
+    - border-radio: https://www.borderradioaz.org/ → https://www.kawc.org/border-radio
+    - kvla: https://kpcc.org/about/public/kpcv → https://laist.com/about-us/public/kvla
+    - krcc: https://www.krcc.org/ → https://www.cpr.org/krcc/
+    - super: https://www.brandywineschools.org/wmph → https://mphs.brandywineschools.org/learning/wmph-917-fm-radio
+    - quincy-public-radio: https://stlpublicradio.org/quincy → https://www.stlpr.org/quincy
+    - wfiu: https://indianapublicmedia.org/radio/ → https://www.ipm.org/radio/
+    - delta-college-public-radio: https://www.deltabroadcasting.org/radio → https://www.deltapublicmedia.org/radio/
+    - wcmu-public-radio: https://radio.wcmu.org → https://www.wcmu.org/
+    - the-maverick: https://www.mnsu.edu/kmsu-radio/ → https://mankato.mnsu.edu/kmsu-radio/
+    - kanw: https://www.kanw.com → https://www.kanw.org/
+    - exit: https://exit977.org → https://www.wextradio.org/
+    - radio-catskill: https://wjffradio.org → https://radiocatskill.org/
+    - wksu-ideastream-public-media: https://www.wksu.org/ → https://www.ideastream.org/
+    - wmub: https://www.wmub.org → https://www.wvxu.org/
+    - wose: https://news.wosu.org/classical-101 → https://www.wosu.org/Classical101
+    - wesa: https://wesa.fm/ → https://www.wesanews.org/
+    - sistema-tv: https://sistematv.com/ → https://sistematv.uagm.net/
+    - wehc: https://ehc.edu/wehc → https://www.emoryhenry.edu/wehc/
+    - wlur: https://wlur.wlu.edu/index.htm → https://my.wlu.edu/wlur
+    - cascade-pbs: https://www.kcts9.org/ → https://www.cascadepbs.org/
+
+  Livestream links found on homepages (not published; add to overrides.yaml after checking): 131
     - alaska-public-media: livestream "Live TV" → https://video.alaskapublic.org/livestream/
     - ktna: livestream "LIVE" → https://ktna.org/live-radio/
     - kuac: livestream "Watch Live" → https://www.pbs.org/livestream/
@@ -605,7 +630,6 @@ build-data report
     - pbs-hawai-i: livestream "LIVE TV" → https://www.pbs.org/
     - iowa-pbs: livestream "LIVE TV" → https://www.iowapbs.org/watch/live
     - idaho-public-television: livestream "LIVE TV" → https://www.idahoptv.org/watch/streaming/
-    - will-main-program-illinois-soul: livestream "Play the WILL AM news & talk livestream" → https://will.illinois.edu/am/willplayer
     - wqpt: livestream "LIVE TV" → https://video.wqpt.org/livestream/
     - wsiu-and-wusi: livestream "Live TV" → https://www.wsiu.org/live-tv
     - wttw-and-wyin: livestream "Live TV" → https://www.wttw.com/wttw-live-stream
@@ -753,7 +777,6 @@ build-data report
     - jefferson-public-radio: couldn't place Bayside, OR; shown at KNHM
 
   Station ids:
-    AK  9fm-kenai-and-soldotna                       .9FM Kenai and Soldotna
     AK  alaska-public-media                          Alaska Public Media
     AK  excellent-radio                              Excellent Radio
     AK  kbbi                                         KBBI
@@ -761,6 +784,7 @@ build-data report
     AK  kchu                                         KCHU
     AK  kcuk                                         KCUK
     AK  kdlg                                         KDLG
+    AK  kenai-and-soldotna                           KDLL
     AK  kfsk-radio                                   KFSK Radio
     AK  khns                                         KHNS
     AK  kiyu                                         KIYU
@@ -779,10 +803,10 @@ build-data report
     AK  kyuk                                         KYUK
     AK  kzpa-radio                                   KZPA Radio
     AK  raven-radio                                  Raven Radio
-    AL  huntsville-public-radio                      / Huntsville Public Radio
     AL  92j                                          92J
     AL  alabama-public-radio                         Alabama Public Radio
     AL  alabama-public-television                    Alabama Public Television
+    AL  huntsville-public-radio                      Huntsville Public Radio
     AL  troy-public-radio                            Troy Public Radio
     AL  wbhm                                         WBHM
     AL  wjab                                         WJAB
@@ -795,7 +819,7 @@ build-data report
     AZ  arizona-pbs                                  Arizona PBS
     AZ  arizona-public-radio                         Arizona Public Radio
     AZ  azpm                                         AZPM
-    AZ  border-radio-1320                            Border Radio - 1320
+    AZ  border-radio                                 Border Radio
     AZ  hopi-radio                                   Hopi Radio
     AZ  k-bach                                       K-Bach
     AZ  kawp                                         KAWP
@@ -860,9 +884,9 @@ build-data report
     DC  whut                                         WHUT
     DE  super                                        Super
     DE  wdde                                         WDDE
-    FL  9fm-wdna                                     .9FM WDNA
     FL  central-florida-public-media                 Central Florida Public Media
     FL  south-florida-pbs                            South Florida PBS
+    FL  wdna                                         WDNA
     FL  wedu-and-wedq                                WEDU and WEDQ
     FL  wfit                                         WFIT
     FL  wfsu                                         WFSU
@@ -910,7 +934,6 @@ build-data report
     IL  weps                                         WEPS
     IL  wglt                                         WGLT
     IL  will                                         WILL
-    IL  will-main-program-illinois-soul              WILL- (main program)Illinois Soul ( )
     IL  wqpt                                         WQPT
     IL  wsie                                         WSIE
     IL  wsiu-and-wusi                                WSIU and WUSI
@@ -957,7 +980,6 @@ build-data report
     LA  wrkf                                         WRKF
     LA  wwno-new-orleans-public-radio                WWNO - New Orleans Public Radio
     LA  wyes                                         WYES
-    MA  cape-cod-s-classic-alternative               "Cape Cod's Classic Alternative"
     MA  cai                                          CAI
     MA  gbh                                          GBH
     MA  new-england-public-media                     New England Public Media
@@ -967,12 +989,13 @@ build-data report
     MA  wbur                                         WBUR
     MA  wcrb                                         WCRB
     MA  wicn                                         WICN
+    MA  cape-cod-s-classic-alternative               WSDH
     MA  wumb-radio                                   WUMB Radio
-    MD  whcp-radio                                   "WHCP Radio"
     MD  maryland-public-television                   Maryland Public Television
     MD  morgan-state-university-radio                Morgan State University Radio
     MD  wesm                                         WESM
     MD  wfwm                                         WFWM
+    MD  whcp-radio                                   WHCP Radio
     MD  wkhs                                         WKHS
     MD  wtmd                                         WTMD
     MD  wypr                                         WYPR
@@ -997,7 +1020,6 @@ build-data report
     MI  whbp                                         WHBP
     MI  wkar                                         WKAR
     MI  wnmu                                         WNMU
-    MN  the-maverick                                 "The Maverick"
     MN  jazz88                                       Jazz88
     MN  ksmq                                         KSMQ
     MN  lakeland-pbs                                 Lakeland PBS
@@ -1008,6 +1030,7 @@ build-data report
     MN  pbs-north                                    PBS North
     MN  pioneer-pbs                                  Pioneer PBS
     MN  the-current                                  The Current
+    MN  the-maverick                                 The Maverick
     MN  the-north                                    The North
     MN  wscn                                         WSCN
     MN  yourclassical-mpr                            YourClassical MPR
@@ -1037,15 +1060,15 @@ build-data report
     MT  montana-pbs                                  Montana PBS
     MT  montana-public-radio                         Montana Public Radio
     MT  yellowstone-public-radio                     Yellowstone Public Radio
-    NC  nine-ecsu                                    "-Nine ECSU"
     NC  bpr-classic                                  BPR Classic
+    NC  ecsu                                         ECSU
     NC  pbs-charlotte                                PBS Charlotte
     NC  pbs-north-carolina                           PBS North Carolina
     NC  wbjd                                         WBJD
     NC  wdav                                         WDAV
     NC  wfae                                         WFAE
     NC  wfdd-public-radio-for-the-piedmont           WFDD, Public Radio for the Piedmont
-    NC  whqr-and                                     WHQR &
+    NC  whqr                                         WHQR
     NC  wncu                                         WNCU
     NC  wncw                                         WNCW
     NC  wsge                                         WSGE
@@ -1157,7 +1180,6 @@ build-data report
     SC  south-carolina-public-radio                  South Carolina Public Radio
     SC  wssb                                         WSSB
     SD  south-dakota-public-broadcasting             South Dakota Public Broadcasting
-    TN  one                                          .one
     TN  east-tennessee-pbs                           East Tennessee PBS
     TN  nashville-pbs                                Nashville PBS
     TN  nashville-public-radio                       Nashville Public Radio
@@ -1168,10 +1190,10 @@ build-data report
     TN  west-tn-pbs                                  West TN PBS
     TN  wets                                         WETS
     TN  wkno                                         WKNO
+    TN  wnxp                                         WNXP
     TN  wsmc                                         WSMC
     TN  wtci                                         WTCI
     TN  wutc                                         WUTC
-    TX  and-kfro                                     & KFRO
     TX  austin-pbs                                   Austin PBS
     TX  basin-pbs                                    Basin PBS
     TX  fm90                                         FM90
@@ -1182,6 +1204,7 @@ build-data report
     TX  keos                                         KEOS
     TX  kera                                         KERA
     TX  ketr                                         KETR
+    TX  kfro                                         KFRO
     TX  klrn                                         KLRN
     TX  kmfa                                         KMFA
     TX  kpvu                                         KPVU
@@ -1205,7 +1228,6 @@ build-data report
     UT  pbs-utah                                     PBS Utah
     UT  the-edge                                     The Edge
     UT  utah-public-radio                            Utah Public Radio
-    VA  5-wlur                                       -5 WLUR
     VA  allegheny-mountain-radio                     Allegheny Mountain Radio
     VA  blue-ridge-pbs                               Blue Ridge PBS
     VA  pbs-appalachia-virginia                      PBS Appalachia Virginia
@@ -1214,6 +1236,7 @@ build-data report
     VA  vpm-pbs                                      VPM PBS
     VA  wehc                                         WEHC
     VA  whro                                         WHRO
+    VA  wlur                                         WLUR
     VA  wmlu                                         WMLU
     VA  wmra                                         WMRA
     VA  wnrn                                         WNRN
@@ -1229,7 +1252,6 @@ build-data report
     WA  kuow                                         KUOW
     WA  kyvt                                         KYVT
     WA  northwest-public-broadcasting                Northwest Public Broadcasting
-    WI  wrst                                         " WRST"
     WI  88nine-radio-milwaukee                       88Nine Radio Milwaukee
     WI  community-powered-radio                      Community Powered Radio
     WI  milwaukee-pbs                                Milwaukee PBS
@@ -1238,6 +1260,7 @@ build-data report
     WI  wgtd                                         WGTD
     WI  wisconsin-public-radio                       Wisconsin Public Radio
     WI  wrfw                                         WRFW
+    WI  wrst                                         WRST
     WI  wshs                                         WSHS
     WI  wxpr                                         WXPR
     WV  west-virginia-public-broadcasting            West Virginia Public Broadcasting

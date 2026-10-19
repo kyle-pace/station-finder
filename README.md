@@ -67,6 +67,9 @@ scripts/build-data               →  public/data/organizations.json, facilities
   TV station's joins it (TV & Radio).
   We read only ordinary article pages; Wikipedia's robots.txt disallows its API paths.
   We do not download FCC files (the FCC site's robots.txt disallows it).
+- **Livestream links** are only published when added by hand (`livestreamUrl` in
+  `overrides.yaml`). Links found automatically on homepages too often point to help pages
+  or players that move, so they're listed in the build report for checking, not shown.
 - **App links** come only from each station's own website: its homepage, any page it
   links to that looks like an apps page, and known pages in `station-app-pages.yaml`.
   We never scrape the app stores. Links found automatically are marked unverified

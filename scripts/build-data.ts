@@ -415,7 +415,20 @@ if (existsSync(nprPath)) {
     groups.set(key, [...(groups.get(key) ?? []), row]);
   }
 
-  const cleanBrand = (b: string) => b.replace(/\b\d{2,3}(\.\d)?\b/g, '').replace(/\b(FM|AM|HD\d?)\b/gi, '').replace(/\s{2,}/g, ' ').replace(/[\s,/–-]+$/, '').trim();
+  // On-air branding → a station name: drop quotes, notes in parentheses, frequencies and
+  // band words ("89.3 FM/HD Huntsville Public Radio" → "Huntsville Public Radio",
+  // "91-5 WLUR" → "WLUR"). If almost nothing is left ("91.one"), return '' so the call
+  // sign is used. Brands that are a number on purpose ("88Nine Radio Milwaukee", "92J")
+  // are kept, since the number is joined to letters.
+  const LEADING_FREQ = /^\s*\d{2,3}(?:[.-]\s?\w+|\s+(?=\S))/;
+  const cleanBrand = (b: string) => {
+    const s = b.replace(/["“”]/g, '').split('(')[0]
+      .replace(LEADING_FREQ, '').replace(/\b\d{2,4}(\.\d)?\b/g, '').replace(/\b(FM|AM|HD\d?)\b/gi, '')
+      .replace(/^[\s,/&.:–-]+|[\s,/&.:–-]+$/g, '').replace(/\s{2,}/g, ' ').trim();
+    if ((s.match(/[A-Za-z]/g) ?? []).length >= 3) return s;
+    const whole = b.replace(/["“”]/g, '').trim();
+    return /^[A-Za-z]*\d{2,3}[A-Za-z]+$|^[A-Za-z]+\d{2,3}$/.test(whole) ? whole : ''; // "92J", "FM90"
+  };
   const FORMAT_WORDS = /\b(news|classical|jazz|ideas|music|indie|remix|studio|hd|talk|all classical|blues|rock|kids|español)\b/i;
   function groupName(rows: NprRow[]): string {
     const article = rows[0].station?.title ?? '';
@@ -559,29 +572,28 @@ for (const site of scraped) {
   }
 }
 
-// Livestream links found on station homepages (unverified until reviewed; overrides.yaml
-// can set or correct them). Donate links are also noted by the fetch, but not published
-// for now (decided 2026-10-18).
-const foundLinks = section('Livestream links found on homepages (check they are right)');
+// Livestream links found on station homepages are NOT published: many point to help
+// pages or players that move ("Having trouble with our livestream player?"), and the
+// station's website is a safer link. They stay in the report for reference; a person
+// can publish one by adding livestreamUrl for that station in overrides.yaml.
+// Donate links are also noted by the fetch, but not published for now (decided 2026-10-18).
+const foundLinks = section('Livestream links found on homepages (not published; add to overrides.yaml after checking)');
 for (const site of scraped) {
   const d = byId.get(site.id);
-  if (!d) continue;
-  for (const [field, link] of [['livestreamUrl', site.livestream]] as const) {
-    if (!link || d.org[field] || !isUrl(link.url)) continue;
-    d.org[field] = link.url;
-    d.org.sources[field] = { source: `${site.homepage?.final ?? 'homepage'} (link "${link.text}")`, retrievedAt: site.retrievedAt };
-    foundLinks.push(`${d.org.id}: livestream "${link.text}" → ${link.url}`);
-  }
+  if (!d || !site.livestream || d.org.livestreamUrl || !isUrl(site.livestream.url)) continue;
+  foundLinks.push(`${d.org.id}: livestream "${site.livestream.text}" → ${site.livestream.url}`);
 }
 
 const extras = section('Extra apps (a second app for the same platform; set extra/name in station-apps.yaml if wrong)');
-const excluded = new Set(stationApps.flatMap((e) => (Array.isArray(e.exclude) ? (e.exclude as string[]) : [])));
+// "exclude" applies only to the station it's listed under (WTIU's page can link WETA+'s
+// LG app without that removing WETA's own link).
+const excludedFor = new Map(stationApps.map((e) => [e.id as string, new Set(Array.isArray(e.exclude) ? (e.exclude as string[]) : [])]));
 for (const site of scraped) {
   const d = byId.get(site.id);
   if (!d) continue; // station no longer in the data (renamed or removed since the fetch)
   const links = [...site.links].sort((a, b) => howRank[a.how] - howRank[b.how]);
   for (const l of links) {
-    if (isPbsKids(l.url) || excluded.has(l.url)) continue;
+    if (isPbsKids(l.url) || excludedFor.get(site.id)?.has(l.url) || excludedFor.get(d.org.id)?.has(l.url)) continue;
     if (/[?&]id=com\.(amazon|google|roku|samsung|lge|apple)\./.test(l.url)) continue; // device makers' apps
     if (d.org.apps.some((a) => a.url === l.url && a.platform === l.platform)) continue;
     const main = d.org.apps.find((a) => a.platform === l.platform && !a.extra);

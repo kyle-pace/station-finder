@@ -14,7 +14,7 @@ In:
 - Search by ZIP, city/state, station name, call letters
 - Results: nearby stations sorted by distance
 - National apps (PBS, NPR) as a fallback only: shown on a station's page when that station has no apps of its own, never advertised elsewhere
-- Station page with apps by platform, website, livestream, and "suggest a correction". Any platform without a station app links the station's network app for that platform (the PBS app), labeled as such.
+- Station page with apps by platform, website, livestream (only when added by hand and checked; decided 2026-10-18), and "suggest a correction". Any platform without a station app links the station's network app for that platform (the PBS app), labeled as such.
 - Donate links: not shown for now (decided 2026-10-18).
 - State browse pages (also good for SEO)
 - Device-aware calls to action

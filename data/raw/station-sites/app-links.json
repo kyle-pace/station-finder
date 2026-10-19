@@ -1,22 +1,5 @@
 [
   {
-    "id": "9fm-kenai-and-soldotna",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://www.kdll.org/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://www.kdll.org/",
-      "final": "https://www.kdll.org/"
-    },
-    "donate": {
-      "url": "https://goo.gl/F92f0A",
-      "text": "Donate"
-    }
-  },
-  {
     "id": "alaska-public-media",
     "retrievedAt": "2026-10-18",
     "pagesRead": [
@@ -149,6 +132,23 @@
     },
     "donate": {
       "url": "https://donate.nprstations.org/kdlg/?_ga=2.189185901.791613269.1630432067-993226882.1475622829",
+      "text": "Donate"
+    }
+  },
+  {
+    "id": "kenai-and-soldotna",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://www.kdll.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.kdll.org/",
+      "final": "https://www.kdll.org/"
+    },
+    "donate": {
+      "url": "https://goo.gl/F92f0A",
       "text": "Donate"
     }
   },
@@ -425,23 +425,6 @@
     ]
   },
   {
-    "id": "huntsville-public-radio",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://wlrh.org/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://www.wlrh.org/",
-      "final": "https://wlrh.org/"
-    },
-    "donate": {
-      "url": "https://aptv.org/wlrh-donation/",
-      "text": "Donate"
-    }
-  },
-  {
     "id": "92j",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
@@ -450,7 +433,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.jsuchanticleer.com/wljs919/",
+      "requested": "https://wljs919.com",
       "final": "https://www.jsuchanticleer.com/wljs919/"
     },
     "donate": {
@@ -507,6 +490,23 @@
     },
     "donate": {
       "url": "https://aptv.org/donation/",
+      "text": "Donate"
+    }
+  },
+  {
+    "id": "huntsville-public-radio",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://wlrh.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.wlrh.org/",
+      "final": "https://wlrh.org/"
+    },
+    "donate": {
+      "url": "https://aptv.org/wlrh-donation/",
       "text": "Donate"
     }
   },
@@ -625,7 +625,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.ualrpublicradio.org/",
+      "requested": "https://www.kuar.org",
       "final": "https://www.ualrpublicradio.org/"
     },
     "donate": {
@@ -701,7 +701,7 @@
     "problems": []
   },
   {
-    "id": "border-radio-1320",
+    "id": "border-radio",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
       "https://www.kawc.org/border-radio",
@@ -727,7 +727,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://www.kawc.org/border-radio",
+      "requested": "https://www.borderradioaz.org/",
       "final": "https://www.kawc.org/border-radio"
     },
     "donate": {
@@ -1490,7 +1490,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://laist.com/about-us/public/kvla",
+      "requested": "https://kpcc.org/about/public/kpcv",
       "final": "https://laist.com/about-us/public/kvla"
     },
     "donate": {
@@ -1999,7 +1999,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.cpr.org/krcc/",
+      "requested": "https://www.krcc.org/",
       "final": "https://www.cpr.org/krcc/"
     },
     "donate": {
@@ -2375,6 +2375,14 @@
         "confidence": "high"
       },
       {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
+        "linkText": "Watch on LG",
+        "foundOn": "https://weta.org/wetaplus",
+        "how": "manual-page",
+        "confidence": "high"
+      },
+      {
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/weta/id6740541547",
         "linkText": "Watch on iOS",
@@ -2449,7 +2457,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://mphs.brandywineschools.org/learning/wmph-917-fm-radio",
+      "requested": "https://www.brandywineschools.org/wmph",
       "final": "https://mphs.brandywineschools.org/learning/wmph-917-fm-radio"
     }
   },
@@ -2485,23 +2493,6 @@
     },
     "donate": {
       "url": "https://secure.qgiv.com/for/delawarepublicmedia/",
-      "text": "Donate"
-    }
-  },
-  {
-    "id": "9fm-wdna",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://wdnaradio.org/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://wdnaradio.org",
-      "final": "https://wdnaradio.org/"
-    },
-    "donate": {
-      "url": "https://crm.bloomerang.co/HostedDonation?ApiKey=pub_823e2a0c-feb1-11ef-b6eb-0699c6635f0d&WidgetId=1183744",
       "text": "Donate"
     }
   },
@@ -2547,6 +2538,23 @@
     "pagesRead": [],
     "links": [],
     "problems": []
+  },
+  {
+    "id": "wdna",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://wdnaradio.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wdnaradio.org",
+      "final": "https://wdnaradio.org/"
+    },
+    "donate": {
+      "url": "https://crm.bloomerang.co/HostedDonation?ApiKey=pub_823e2a0c-feb1-11ef-b6eb-0699c6635f0d&WidgetId=1183744",
+      "text": "Donate"
+    }
   },
   {
     "id": "wedu-and-wedq",
@@ -3533,7 +3541,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.stlpr.org/quincy",
+      "requested": "https://stlpublicradio.org/quincy",
       "final": "https://www.stlpr.org/quincy"
     },
     "donate": {
@@ -3630,28 +3638,6 @@
     "pagesRead": [],
     "links": [],
     "problems": []
-  },
-  {
-    "id": "will-main-program-illinois-soul",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://will.illinois.edu/",
-      "https://will.illinois.edu/nprplus"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://will.illinois.edu",
-      "final": "https://will.illinois.edu/"
-    },
-    "donate": {
-      "url": "https://will-fm.secureallegiance.com/will/WebModule/Donate.aspx?P=MASTERTV&PAGETYPE=PLG&CHECK=OGsI%2f2G4N1jRyPYT4GBdDm3L5BYddGq6PVAl6UEf65g%3d",
-      "text": "Donate Now"
-    },
-    "livestream": {
-      "url": "https://will.illinois.edu/am/willplayer",
-      "text": "Play the WILL AM news & talk livestream"
-    }
   },
   {
     "id": "wqpt",
@@ -3980,7 +3966,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.ipm.org/radio/",
+      "requested": "https://indianapublicmedia.org/radio/",
       "final": "https://www.ipm.org/radio/"
     },
     "donate": {
@@ -4074,7 +4060,16 @@
     "pagesRead": [
       "https://www.ipm.org/tv/"
     ],
-    "links": [],
+    "links": [
+      {
+        "platform": "lg",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1260085",
+        "linkText": "Download app on LG",
+        "foundOn": "https://www.ipm.org/tv/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
     "problems": [],
     "homepage": {
       "requested": "https://ipm.org/tv/",
@@ -4685,13 +4680,6 @@
     }
   },
   {
-    "id": "cape-cod-s-classic-alternative",
-    "retrievedAt": "",
-    "pagesRead": [],
-    "links": [],
-    "problems": []
-  },
-  {
     "id": "cai",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
@@ -4865,6 +4853,13 @@
     ]
   },
   {
+    "id": "cape-cod-s-classic-alternative",
+    "retrievedAt": "",
+    "pagesRead": [],
+    "links": [],
+    "problems": []
+  },
+  {
     "id": "wumb-radio",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
@@ -4880,23 +4875,6 @@
     "donate": {
       "url": "https://wumb.secureallegiance.com/wumb/WebModule/Donate.aspx?P=WEB&PAGETYPE=PLG&CHECK=nTVTsCAcZKMVQycLjeawDdW0piuR9ZMb",
       "text": "Donate Now"
-    }
-  },
-  {
-    "id": "whcp-radio",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://www.whcp.org/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://whcp.org/",
-      "final": "https://www.whcp.org/"
-    },
-    "donate": {
-      "url": "https://www.whcp.org/donate",
-      "text": "Donate"
     }
   },
   {
@@ -4957,6 +4935,23 @@
     "problems": [
       "https://www.wfwm.org: fetch failed"
     ]
+  },
+  {
+    "id": "whcp-radio",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://www.whcp.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://whcp.org/",
+      "final": "https://www.whcp.org/"
+    },
+    "donate": {
+      "url": "https://www.whcp.org/donate",
+      "text": "Donate"
+    }
   },
   {
     "id": "wkhs",
@@ -5170,7 +5165,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.deltapublicmedia.org/radio/",
+      "requested": "https://www.deltabroadcasting.org/radio",
       "final": "https://www.deltapublicmedia.org/radio/"
     },
     "donate": {
@@ -5469,7 +5464,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://www.wcmu.org/",
+      "requested": "https://radio.wcmu.org",
       "final": "https://www.wcmu.org/"
     },
     "donate": {
@@ -5610,19 +5605,6 @@
     "livestream": {
       "url": "https://wnmuvideo.nmu.edu/livestream/",
       "text": "LIVE TV"
-    }
-  },
-  {
-    "id": "the-maverick",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://mankato.mnsu.edu/kmsu-radio/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://mankato.mnsu.edu/kmsu-radio/",
-      "final": "https://mankato.mnsu.edu/kmsu-radio/"
     }
   },
   {
@@ -5827,6 +5809,19 @@
     "donate": {
       "url": "https://support.mpr.org/current-web",
       "text": "Donate Now"
+    }
+  },
+  {
+    "id": "the-maverick",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://mankato.mnsu.edu/kmsu-radio/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.mnsu.edu/kmsu-radio/",
+      "final": "https://mankato.mnsu.edu/kmsu-radio/"
     }
   },
   {
@@ -6340,23 +6335,6 @@
     }
   },
   {
-    "id": "nine-ecsu",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://ecsu.edu/radio-tv/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://www.ecsu.edu/wrvs/",
-      "final": "https://ecsu.edu/radio-tv/"
-    },
-    "donate": {
-      "url": "https://wrvs.careasy.org/home?preview=1&revision=2",
-      "text": "Donate your vehicle"
-    }
-  },
-  {
     "id": "bpr-classic",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
@@ -6372,6 +6350,23 @@
     "donate": {
       "url": "https://donate.bpr.org/bpr/donate",
       "text": "Donate Now"
+    }
+  },
+  {
+    "id": "ecsu",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://ecsu.edu/radio-tv/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://www.ecsu.edu/wrvs/",
+      "final": "https://ecsu.edu/radio-tv/"
+    },
+    "donate": {
+      "url": "https://wrvs.careasy.org/home?preview=1&revision=2",
+      "text": "Donate your vehicle"
     }
   },
   {
@@ -6631,7 +6626,7 @@
     }
   },
   {
-    "id": "whqr-and",
+    "id": "whqr",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
       "https://www.whqr.org/",
@@ -7143,7 +7138,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.kanw.org/",
+      "requested": "https://www.kanw.com",
       "final": "https://www.kanw.org/"
     },
     "donate": {
@@ -7445,7 +7440,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://www.wextradio.org/",
+      "requested": "https://exit977.org",
       "final": "https://www.wextradio.org/"
     },
     "donate": {
@@ -7503,7 +7498,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://radiocatskill.org/",
+      "requested": "https://wjffradio.org",
       "final": "https://radiocatskill.org/"
     },
     "donate": {
@@ -8353,7 +8348,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.ideastream.org/",
+      "requested": "https://www.wksu.org/",
       "final": "https://www.ideastream.org/"
     },
     "donate": {
@@ -8392,7 +8387,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://www.wvxu.org/",
+      "requested": "https://www.wmub.org",
       "final": "https://www.wvxu.org/"
     },
     "donate": {
@@ -8428,7 +8423,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://www.wosu.org/Classical101",
+      "requested": "https://news.wosu.org/classical-101",
       "final": "https://www.wosu.org/Classical101"
     },
     "donate": {
@@ -8851,7 +8846,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.wesanews.org/",
+      "requested": "https://wesa.fm/",
       "final": "https://www.wesanews.org/"
     },
     "donate": {
@@ -9355,7 +9350,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://sistematv.uagm.net/",
+      "requested": "https://sistematv.com/",
       "final": "https://sistematv.uagm.net/"
     }
   },
@@ -9548,32 +9543,6 @@
     "livestream": {
       "url": "https://www.sdpb.org/live",
       "text": "Live TV"
-    }
-  },
-  {
-    "id": "one",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://wnxp.org/"
-    ],
-    "links": [
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/wnxp/id6755207472",
-        "linkText": "DOWNLOAD THE WNXP APP",
-        "foundOn": "https://wnxp.org/",
-        "how": "homepage",
-        "confidence": "high"
-      }
-    ],
-    "problems": [],
-    "homepage": {
-      "requested": "https://wnxp.org",
-      "final": "https://wnxp.org/"
-    },
-    "donate": {
-      "url": "https://donate.nashvillepublicradio.org/campaign/832075/donate?c_src=wnxp&c_src2=web_header_button",
-      "text": "Donate"
     }
   },
   {
@@ -9783,6 +9752,32 @@
     }
   },
   {
+    "id": "wnxp",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://wnxp.org/"
+    ],
+    "links": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wnxp/id6755207472",
+        "linkText": "DOWNLOAD THE WNXP APP",
+        "foundOn": "https://wnxp.org/",
+        "how": "homepage",
+        "confidence": "high"
+      }
+    ],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wnxp.org",
+      "final": "https://wnxp.org/"
+    },
+    "donate": {
+      "url": "https://donate.nashvillepublicradio.org/campaign/832075/donate?c_src=wnxp&c_src2=web_header_button",
+      "text": "Donate"
+    }
+  },
+  {
     "id": "wsmc",
     "retrievedAt": "",
     "pagesRead": [],
@@ -9827,19 +9822,6 @@
     "donate": {
       "url": "https://giving.utc.edu/campaigns/86422/donations/new?a=14087118",
       "text": "Donate"
-    }
-  },
-  {
-    "id": "and-kfro",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://kfroradio.com/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://kfroradio.com/",
-      "final": "https://kfroradio.com/"
     }
   },
   {
@@ -10077,6 +10059,19 @@
     "donate": {
       "url": "https://donate.nprstations.org/ketr/thank-you-supporting-889-ketr-0",
       "text": "Donate"
+    }
+  },
+  {
+    "id": "kfro",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://kfroradio.com/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://kfroradio.com/",
+      "final": "https://kfroradio.com/"
     }
   },
   {
@@ -10511,19 +10506,6 @@
     }
   },
   {
-    "id": "5-wlur",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://my.wlu.edu/wlur"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://my.wlu.edu/wlur",
-      "final": "https://my.wlu.edu/wlur"
-    }
-  },
-  {
     "id": "allegheny-mountain-radio",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
@@ -10682,7 +10664,7 @@
     "links": [],
     "problems": [],
     "homepage": {
-      "requested": "https://www.emoryhenry.edu/wehc/",
+      "requested": "https://ehc.edu/wehc",
       "final": "https://www.emoryhenry.edu/wehc/"
     },
     "donate": {
@@ -10760,6 +10742,19 @@
     "livestream": {
       "url": "https://video.whro.org/live/whro-tv15/",
       "text": "Live TV"
+    }
+  },
+  {
+    "id": "wlur",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://my.wlu.edu/wlur"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wlur.wlu.edu/index.htm",
+      "final": "https://my.wlu.edu/wlur"
     }
   },
   {
@@ -10953,7 +10948,7 @@
     ],
     "problems": [],
     "homepage": {
-      "requested": "https://www.cascadepbs.org/",
+      "requested": "https://www.kcts9.org/",
       "final": "https://www.cascadepbs.org/"
     },
     "donate": {
@@ -11186,19 +11181,6 @@
     }
   },
   {
-    "id": "wrst",
-    "retrievedAt": "2026-10-19",
-    "pagesRead": [
-      "https://wrst.org/"
-    ],
-    "links": [],
-    "problems": [],
-    "homepage": {
-      "requested": "https://wrst.org/",
-      "final": "https://wrst.org/"
-    }
-  },
-  {
     "id": "88nine-radio-milwaukee",
     "retrievedAt": "2026-10-19",
     "pagesRead": [
@@ -11360,6 +11342,19 @@
     "livestream": {
       "url": "https://www.wrfw887.com/listen-live.html",
       "text": "live stream"
+    }
+  },
+  {
+    "id": "wrst",
+    "retrievedAt": "2026-10-19",
+    "pagesRead": [
+      "https://wrst.org/"
+    ],
+    "links": [],
+    "problems": [],
+    "homepage": {
+      "requested": "https://wrst.org/",
+      "final": "https://wrst.org/"
     }
   },
   {
