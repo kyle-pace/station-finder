@@ -17,8 +17,10 @@ export function getStaticPaths() {
 const { org } = Astro.props as { org: Organization };
 // Station first: the station's own app for each platform. Where it has none, link the
 // national app of its network (the PBS app for PBS stations) for that platform, labeled
-// clearly as the network's app so it's never mistaken for the station's own.
-const fallbackBrand = national.find((b) => org.networks.map((n) => n.toLowerCase()).includes(b.id));
+// clearly as the network's app so it's never mistaken for the station's own. Stations with
+// both TV and radio get both networks' apps (PBS to watch, NPR to listen).
+const fallbackBrands = national.filter((b) => org.networks.map((n) => n.toLowerCase()).includes(b.id));
+const fallbackBrand = fallbackBrands[0];
 interface Item { platform: Platform; href: string; label?: string; detail?: string; fallback: boolean }
 const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
   const own = org.apps.find((a) => a.platform === platform && !a.extra);
@@ -26,10 +28,12 @@ const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
     const detail = own.kind === 'instructions' ? `${org.name} app · how to get it` : platform === 'web' ? host(own.url) : undefined;
     return [{ platform, href: own.url, detail, fallback: false }];
   }
-  const fb = fallbackBrand?.apps.find((a) => a.platform === platform);
-  if (!fb) return [];
-  const where = platform === 'web' ? host(fb.url) : fb.kind === 'help' ? 'how to get it' : PLATFORM_INFO[platform].detail;
-  return [{ platform, href: fb.url, detail: `${fallbackBrand!.name} app · ${where}`, fallback: true }];
+  return fallbackBrands.flatMap((brand): Item[] => {
+    const fb = brand.apps.find((a) => a.platform === platform);
+    if (!fb) return [];
+    const where = platform === 'web' ? host(fb.url) : fb.kind === 'help' ? 'how to get it' : PLATFORM_INFO[platform].detail;
+    return [{ platform, href: fb.url, detail: `${brand.name} app · ${where}`, fallback: true }];
+  });
 });
 const hasOwnApps = items.some((i) => !i.fallback);
 
@@ -41,7 +45,14 @@ const extraApps = [...org.apps.filter((a) => a.extra).reduce((m, a) => {
 }, new Map<string, typeof org.apps>())];
 const verb = verbFor(org.mediaTypes);
 const fbVerb = fallbackBrand ? fallbackVerb(fallbackBrand.name) : verb;
-const GROUP_WORDS = { mobile: `${fbVerb} on your phone or tablet`, tv: `${fbVerb} on your TV`, web: `${fbVerb} in your browser` } as const;
+// "with the PBS app" / "with the PBS and NPR apps" (only the networks that have that kind of app)
+const withApps = (names: string[]) => `with the ${names.join(' and ')} app${names.length > 1 ? 's' : ''}`;
+const groupLead = (fallbackItems: Item[]) => {
+  const names = fallbackBrands.map((b) => b.name).filter((n) => fallbackItems.some((i) => i.detail?.startsWith(`${n} app`)));
+  const verbs = [...new Set(names.map(fallbackVerb))].join(' and ').replace('Watch and Listen', 'Watch and listen');
+  return { verbs, names };
+};
+const GROUP_WHERE = { mobile: 'on your phone or tablet', tv: 'on your TV', web: 'in your browser' } as const;
 const groups = (['mobile', 'tv', 'web'] as const)
   .map((key) => ({ key, title: { mobile: 'Phone & tablet', tv: 'TV', web: 'Web' }[key], items: items.filter((i) => PLATFORM_INFO[i.platform].group === key) }))
   .filter((g) => g.items.length)
@@ -83,10 +94,16 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
       <div class="stack gap-32">
 
         <section id="apps" class="stack gap-24" aria-label="Apps">
-          {!hasOwnApps && fallbackBrand && (
+          {!hasOwnApps && fallbackBrands.length === 1 && (
             <p class="muted">
               {fbVerb === 'Listen' ? 'Listen to' : 'Watch'} {org.name} on any device with the {fallbackBrand.name} app, home to many local
               stations' shows and livestreams.
+            </p>
+          )}
+          {!hasOwnApps && fallbackBrands.length > 1 && (
+            <p class="muted">
+              Watch {org.name} with the PBS app and listen with the NPR app. Both are home to many
+              local stations' shows and livestreams.
             </p>
           )}
           {groups.map((g) => (
@@ -94,7 +111,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
               <div class="stack gap-4">
                 <h2>{g.title}</h2>
                 {hasOwnApps && g.allFallback && fallbackBrand && (
-                  <p class="small muted">{GROUP_WORDS[g.key]} with the {fallbackBrand.name} app:</p>
+                  <p class="small muted">{groupLead(g.items).verbs} {GROUP_WHERE[g.key]} {withApps(groupLead(g.items).names)}:</p>
                 )}
               </div>
               <div class="app-grid">

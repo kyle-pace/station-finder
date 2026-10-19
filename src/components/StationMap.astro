@@ -91,7 +91,7 @@ const info = Object.fromEntries(
   dots.map(({ id, kind }) => {
     const o = organizations.find((x) => x.id === id)!;
     const own = PLATFORM_ORDER.filter((p) => o.apps.some((a) => a.platform === p && !a.extra));
-    const fallback = national.find((b) => o.networks.map((n) => n.toLowerCase()).includes(b.id))?.name;
+    const fallbacks = national.filter((b) => o.networks.map((n) => n.toLowerCase()).includes(b.id)).map((b) => `${b.name === 'NPR' ? 'Listen' : 'Watch'} with the ${b.name} app`);
     const fac = facilitiesFor(o);
     const main = fac.find((f) => o.name.toUpperCase().startsWith(f.callSign.replace(/-.*$/, '')));
     const calls = [...(main ? [main] : []), ...fac.filter((f) => f !== main)].map((f) => (f.frequency ? `${f.callSign} ${f.frequency}` : f.callSign));
@@ -104,7 +104,7 @@ const info = Object.fromEntries(
       meta: metaLine(o),
       calls: calls.length ? `On air as ${calls[0]}${calls.length > 1 ? ` + ${calls.length - 1} more` : ''}` : '',
       apps: own.map((p) => PLATFORM_INFO[p].label.replace(/^On the web$/, 'Web')),
-      fallback: fallback ?? null,
+      fallback: fallbacks.join(' · ') || null,
       live: !!o.livestreamUrl,
       href: url(`/station/${id}/`),
     }];
@@ -530,7 +530,7 @@ const FILTERS = [
       q<HTMLElement>('[data-card-apps]').hidden = false;
       q('[data-card-apps]').textContent = i.apps.length
         ? `Own apps: ${i.apps.join(', ')}`
-        : i.fallback ? `${i.fallback === 'NPR' ? 'Listen' : 'Watch'} with the ${i.fallback} app` : '';
+        : i.fallback ?? '';
       q<HTMLElement>('[data-card-live]').hidden = !i.live;
       cardList.hidden = true;
       const link = q<HTMLAnchorElement>('[data-card-link]');
