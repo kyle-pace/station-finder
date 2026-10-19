@@ -1,6 +1,7 @@
 ---
+import '@fontsource-variable/figtree';
 import '../styles/global.css';
-import Icon from '../components/Icon.astro';
+import Logo from '../components/Logo.astro';
 import { url, SITE_NAME, correctionUrl } from '../lib/site';
 
 interface Props {
@@ -13,6 +14,7 @@ const {
   description = 'Find your local public media station and every way to watch and listen.',
 } = Astro.props;
 const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+const here = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -23,38 +25,43 @@ const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1118" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap header-inner">
-        <a class="wordmark" href={url('/')}>
-          <Icon name="radio" />
-          <span class="body-strong">{SITE_NAME}</span>
+        <a class="wordmark" href={url('/')} aria-label={`${SITE_NAME} home`}>
+          <Logo />
+          <span>Station App Finder</span>
         </a>
         <nav aria-label="Site">
-          <a class="label" href={url('/state/')}><span class="wide">Browse by state</span><span class="narrow-only">States</span></a>
-          <a class="label" href={url('/about/')}>About</a>
+          <a class="label" href={url('/state/')} aria-current={here.includes('/state/') ? 'page' : undefined}><span class="wide">Browse by state</span><span class="narrow-only">States</span></a>
+          <a class="label" href={url('/about/')} aria-current={here.includes('/about/') ? 'page' : undefined}>About</a>
         </nav>
       </div>
     </header>
     <main id="main">
       <slot />
     </main>
-    <footer class="site-footer band-surface">
-      <div class="wrap stack gap-12">
-        <nav class="row-wrap footer-links" aria-label="Footer">
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="stack gap-12 footer-brand">
+          <a class="wordmark" href={url('/')}><Logo size={24} /><span>Station App Finder</span></a>
+          <p class="caption muted">
+            An independent prototype. Not affiliated with or endorsed by PBS or NPR. No cookies, no tracking.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a class="label" href={url('/state/')}>Browse by state</a>
           <a class="label" href={url('/about/')}>About</a>
           <a class="label" href={url('/about/#sources')}>Data sources</a>
-          <a class="label" href={correctionUrl()}>Suggest a correction</a>
           <a class="label" href={url('/about/#privacy')}>Privacy</a>
+          <a class="label" href={correctionUrl()}>Suggest a correction</a>
         </nav>
-        <p class="caption muted">
-          An independent prototype. Not affiliated with or endorsed by PBS or NPR. No cookies,
-          no tracking.
-        </p>
-        <p class="caption muted">
+        <p class="caption muted attribution">
           Station information drawn in part from Wikipedia's{' '}
           <a href="https://en.wikipedia.org/wiki/List_of_PBS_member_stations">List of PBS member stations</a>{' '}
           and station articles (Wikipedia contributors), used under{' '}
@@ -68,15 +75,26 @@ const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
 </html>
 
 <style>
-  .site-header { border-bottom: 1px solid var(--border); background: var(--bg); }
+  .site-header {
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: saturate(1.6) blur(14px); -webkit-backdrop-filter: saturate(1.6) blur(14px);
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+  }
   .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: var(--space-16); }
-  .wordmark { display: flex; align-items: center; gap: var(--space-8); color: var(--text); text-decoration: none; }
-  .wordmark svg { width: 24px; height: 24px; color: var(--accent); }
-  nav { display: flex; gap: var(--space-24); }
-  nav a { text-decoration: none; }
-  nav a:hover { text-decoration: underline; }
+  .wordmark { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 800; font-size: 18px; letter-spacing: -0.02em; }
+  nav { display: flex; gap: var(--space-4); }
+  nav a { text-decoration: none; color: var(--text); padding: var(--space-8) var(--space-12); border-radius: var(--radius-full); transition: background-color 0.15s; }
+  nav a:hover { background: var(--surface); }
+  nav a[aria-current='page'] { background: var(--accent-subtle); color: var(--accent); }
   .narrow-only { display: none; }
-  @media (max-width: 600px) { .wide { display: none; } .narrow-only { display: inline; } }
-  .site-footer { padding: var(--space-32) 0; margin-top: var(--space-32); }
-  .footer-links { gap: var(--space-8) var(--space-20, 20px); }
+  @media (max-width: 600px) { .wide { display: none; } .narrow-only { display: inline; } .wordmark span { font-size: 17px; } }
+
+  .site-footer { background: var(--surface); border-top: 1px solid var(--border); padding: var(--space-48) 0 var(--space-32); margin-top: var(--space-48); }
+  .footer-inner { display: grid; gap: var(--space-24); }
+  @media (min-width: 801px) { .footer-inner { grid-template-columns: 1.2fr 1fr; } .attribution { grid-column: 1 / -1; } }
+  .footer-brand { max-width: 420px; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-8); align-content: flex-start; margin-left: calc(-1 * var(--space-12)); }
+  .footer-links a { color: var(--text); }
+  .attribution { border-top: 1px solid var(--border); padding-top: var(--space-16); }
 </style>

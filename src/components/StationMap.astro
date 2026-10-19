@@ -66,7 +66,7 @@ const info = Object.fromEntries(
   }),
 );
 ---
-<div class="station-map" data-map>
+<div class="station-map" id="map" data-map>
   <div class="map-bar">
     <p class="small muted" data-map-status>{stationCount} stations, {dots.length} transmitters. Pick a state to zoom in, then a dot to learn about that station.</p>
     <button class="btn btn-quiet" type="button" data-map-reset hidden>← All of the US</button>

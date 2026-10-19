@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { organizations, statesWithStations, metaLine } from '../../lib/data';
 import { url } from '../../lib/site';
+import { monogram } from '../../lib/monogram';
 
 export function getStaticPaths() {
   return statesWithStations.map((s) => ({ params: { st: s.code.toLowerCase() }, props: { code: s.code, name: s.name } }));
@@ -26,6 +27,7 @@ const stations = organizations.filter((o) => o.state === code).sort((a, b) => a.
           {stations.map((o) => (
             <li>
               <a class="station-row" href={url(`/station/${o.id}/`)}>
+                <span class="monogram" aria-hidden="true">{monogram(o.name)}</span>
                 <div class="stack gap-4">
                   <span class="body-strong">{o.name}</span>
                   <span class="small muted">{metaLine(o)}</span>

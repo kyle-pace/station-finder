@@ -1,65 +1,91 @@
 ---
 import Base from '../layouts/Base.astro';
 import SearchForm from '../components/SearchForm.astro';
+import DotMap from '../components/DotMap.astro';
 import Icon from '../components/Icon.astro';
-import { statesWithStations } from '../lib/data';
+import { organizations, facilities, statesWithStations } from '../lib/data';
 import { url } from '../lib/site';
+
+const stationCount = organizations.length;
+const transmitterCount = facilities.length;
 ---
 
 <Base>
-  <section class="band-lg">
-    <div class="wrap narrow stack gap-16">
-      <h1 class="display">Find your local public media station</h1>
-      <p class="muted">Every way to watch your local public media station: its own apps for your phone, tablet, and TV, its livestream, and its website.</p>
-      <SearchForm />
-      <div class="location" hidden data-location>
-        <button class="btn btn-quiet" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
-        <p class="caption muted">Your location is used on this device only and never sent to us.</p>
+  <section class="hero">
+    <DotMap class="hero-map" dotRadius={2.6} />
+    <div class="wrap hero-inner">
+      <div class="hero-copy stack gap-24">
+        <div class="stack gap-16">
+          <p class="eyebrow">Public media, near you</p>
+          <h1 class="display">Every way to watch and listen to your local station</h1>
+          <p class="lede muted">Find your local public TV and radio station, then get its own apps for your phone, tablet, and TV, its livestream, and its website.</p>
+        </div>
+        <SearchForm size="lg" examples={['98101', 'Sacramento', 'KVIE']} />
+        <div class="location" hidden data-location>
+          <button class="btn btn-secondary" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
+          <p class="caption muted">Used on this device only, never sent to us.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="band band-surface" aria-labelledby="how">
+  <section class="band" aria-labelledby="how">
     <div class="wrap stack gap-24">
       <h2 id="how">How it works</h2>
       <ol class="steps">
-        <li class="step"><span class="step-num">1</span><div class="stack gap-4"><p class="body-strong">Search</p><p class="small muted">Enter your ZIP code, city, station name, or call letters.</p></div></li>
+        <li class="step"><span class="step-num">1</span><div class="stack gap-4"><p class="body-strong">Search</p><p class="small muted">Type your ZIP code, city, station name, or call letters. Results appear as you type.</p></div></li>
         <li class="step"><span class="step-num">2</span><div class="stack gap-4"><p class="body-strong">Pick your station</p><p class="small muted">Stations near you, nearest first. Every station is listed the same way.</p></div></li>
         <li class="step"><span class="step-num">3</span><div class="stack gap-4"><p class="body-strong">Get the right app</p><p class="small muted">We show the app for the device you're on first, plus every other way to watch and listen.</p></div></li>
       </ol>
     </div>
   </section>
 
-  <section class="band" aria-labelledby="why">
+  <section class="band band-surface" aria-labelledby="why">
     <div class="wrap stack gap-24">
-      <div class="stack gap-8">
-        <h2 id="why">Why your local station matters</h2>
-        <p class="muted">Public media is one of the few places on TV that's made for your community, by people who live in it.</p>
+      <div class="stack gap-8 section-head">
+        <p class="eyebrow">Why it matters</p>
+        <h2 id="why">Your local station is made for your community</h2>
+        <p class="muted">Public media is one of the few places on the air made for where you live, by people who live there.</p>
       </div>
       <ul class="points">
-        <li><p class="body-strong">Made where you live</p><p class="small muted">Local stations make and choose programs for their own communities: local news and public affairs, arts, history, and learning you won't find on national channels.</p></li>
-        <li><p class="body-strong">Free and open to everyone</p><p class="small muted">Public television is free to watch over the air, and stations share much of what they make online and in their apps.</p></li>
-        <li><p class="body-strong">Rooted in the community</p><p class="small muted">Stations are local nonprofits, universities, and public agencies, answerable to the people they serve rather than to advertisers.</p></li>
+        <li><span class="point-icon"><Icon name="location" /></span><p class="body-strong">Made where you live</p><p class="small muted">Local stations make and choose programs for their communities: local news and public affairs, music, arts, history, and learning you won't find on national channels.</p></li>
+        <li><span class="point-icon"><Icon name="radio" /></span><p class="body-strong">Free and open to everyone</p><p class="small muted">Public TV and radio are free to watch and listen to over the air, and stations share much of what they make online and in their apps.</p></li>
+        <li><span class="point-icon"><Icon name="web" /></span><p class="body-strong">Rooted in the community</p><p class="small muted">Stations are local nonprofits, universities, and public agencies, answerable to the people they serve rather than to advertisers.</p></li>
       </ul>
     </div>
   </section>
 
-  <section class="band band-surface" aria-labelledby="apps-why">
+  <section class="band" aria-labelledby="apps-why">
     <div class="wrap stack gap-24">
-      <div class="stack gap-8">
-        <h2 id="apps-why">Why use your station's own app</h2>
-        <p class="muted">Watching through your station's app is the best way to see everything it offers, and it helps the station too.</p>
+      <div class="stack gap-8 section-head">
+        <p class="eyebrow">Why the station's app</p>
+        <h2 id="apps-why">The best way to watch and listen</h2>
+        <p class="muted">Your station's own app brings together everything it offers, and it helps the station too.</p>
       </div>
       <ul class="points">
-        <li><p class="body-strong">Everything local in one place</p><p class="small muted">Your station's livestream, its local shows, and its schedule, not just the national lineup.</p></li>
-        <li><p class="body-strong">Made for your screen</p><p class="small muted">Apps are built for your phone, tablet, or TV, so it's quicker to start watching than on a website.</p></li>
-        <li><p class="body-strong">A direct line to your station</p><p class="small muted">When you watch in its own app, your station keeps a direct connection with its audience and a clearer picture of what its community values.</p></li>
+        <li><span class="point-icon"><Icon name="live" /></span><p class="body-strong">Everything local in one place</p><p class="small muted">Your station's livestream, its local shows and programs, and its schedule, not just the national lineup.</p></li>
+        <li><span class="point-icon"><Icon name="phone" /></span><p class="body-strong">Made for your screen</p><p class="small muted">Apps are built for your phone, tablet, or TV, so it's quicker to start watching or listening than on a website.</p></li>
+        <li><span class="point-icon"><Icon name="donate" /></span><p class="body-strong">A direct line to your station</p><p class="small muted">When you use its own app, your station keeps a direct connection with its audience and a clearer picture of what its community values.</p></li>
       </ul>
       <p><a class="label" href={url('/about/#why')}>Why we built this →</a></p>
     </div>
   </section>
 
-  <section class="band" aria-labelledby="states">
+  <section class="band" aria-labelledby="map-teaser">
+    <div class="wrap">
+      <a class="teaser" href={url('/state/#map')}>
+        <div class="stack gap-12 teaser-copy">
+          <p class="eyebrow">Explore</p>
+          <h2 id="map-teaser">Every station on the map</h2>
+          <p class="muted">{stationCount} stations and {transmitterCount} transmitters across the country. Zoom into your state and tap a dot to learn about a station.</p>
+          <span class="btn btn-primary">Open the map →</span>
+        </div>
+        <DotMap class="teaser-map" dotRadius={4} />
+      </a>
+    </div>
+  </section>
+
+  <section class="band band-surface" aria-labelledby="states">
     <div class="wrap stack gap-16">
       <h2 id="states">Browse by state</h2>
       <ul class="row-wrap" role="list" style="list-style:none;margin:0;padding:0">
@@ -94,9 +120,40 @@ import { url } from '../lib/site';
 </script>
 
 <style>
-  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-16); }
-  @media (min-width: 701px) { .points { grid-template-columns: repeat(3, 1fr); gap: var(--space-24); } }
-  .points li { display: flex; flex-direction: column; gap: var(--space-4); }
-  .location { display: flex; flex-direction: column; gap: var(--space-4); align-items: flex-start; }
+  .hero {
+    position: relative; overflow: hidden; isolation: isolate;
+    background:
+      radial-gradient(1200px 500px at 85% -10%, color-mix(in srgb, var(--warm) 14%, transparent), transparent 60%),
+      linear-gradient(135deg, var(--hero-a) 0%, var(--bg) 55%, var(--hero-b) 100%);
+    border-bottom: 1px solid var(--border);
+  }
+  :global(.hero-map) {
+    position: absolute; z-index: -1; right: -12%; top: 50%; transform: translateY(-50%);
+    width: min(820px, 64vw); opacity: 0.75; pointer-events: none;
+    mask-image: linear-gradient(90deg, transparent 0%, transparent 18%, #000 55%);
+  }
+  @media (max-width: 900px) { :global(.hero-map) { width: 140vw; right: -40vw; top: 18%; opacity: 0.45; } }
+  .hero-inner { padding-block: var(--space-48) var(--space-64); }
+  @media (min-width: 701px) { .hero-inner { padding-block: 88px 104px; } }
+  .hero-copy { max-width: 640px; }
+  .lede { font-size: 19px; line-height: 29px; max-width: 560px; }
+
+  .section-head { max-width: 640px; }
+  .points { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-24); }
+  @media (min-width: 701px) { .points { grid-template-columns: repeat(3, 1fr); gap: var(--space-32); } }
+  .points li { display: flex; flex-direction: column; gap: var(--space-8); }
+  .point-icon { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; background: color-mix(in srgb, var(--warm) 14%, transparent); color: var(--warm); margin-bottom: var(--space-4); }
+  .point-icon svg { width: 22px; height: 22px; }
+
+  .teaser {
+    display: grid; gap: var(--space-24); align-items: center; padding: var(--space-24); text-decoration: none; color: inherit;
+    border: 1px solid var(--border); border-radius: var(--radius-lg); background: linear-gradient(135deg, var(--hero-a), var(--surface-raised));
+    box-shadow: var(--shadow-sm); transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+  }
+  .teaser:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  @media (min-width: 801px) { .teaser { grid-template-columns: 1fr 1.3fr; padding: var(--space-48); } }
+  .teaser-copy { align-items: flex-start; }
+
+  .location { display: flex; flex-direction: column; gap: var(--space-8); align-items: flex-start; }
   @media (min-width: 701px) { .location { flex-direction: row; align-items: center; gap: var(--space-12); } }
 </style>

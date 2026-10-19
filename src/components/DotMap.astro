@@ -1,0 +1,33 @@
+---
+// Decorative US outline with one dot per transmitter, drawn at build time (no requests).
+// Used as the homepage backdrop and the map teaser. Every dot is identical.
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { feature } from 'topojson-client';
+import { geoAlbersUsa, geoPath } from 'd3-geo';
+import type { Topology, GeometryCollection } from 'topojson-specification';
+import { facilities } from '../lib/data';
+
+interface Props { class?: string; dotRadius?: number }
+const { class: className, dotRadius = 3.2 } = Astro.props;
+
+const topo = JSON.parse(readFileSync(join(process.cwd(), 'node_modules', 'us-atlas', 'nation-albers-10m.json'), 'utf8')) as Topology;
+const nation = path(feature(topo, topo.objects.nation as GeometryCollection));
+function path(f: Parameters<ReturnType<typeof geoPath>>[0]) { return geoPath().digits(0)(f) ?? ''; }
+const projection = geoAlbersUsa().scale(1300).translate([487.5, 305]);
+const dots = facilities.flatMap((f) => {
+  const p = projection([f.lng, f.lat]);
+  return p ? [{ x: Math.round(p[0]), y: Math.round(p[1]), radio: f.service !== 'tv' }] : [];
+});
+---
+<svg class:list={['dot-map', className]} viewBox="0 0 975 610" aria-hidden="true" focusable="false">
+  <path class="land" d={nation} />
+  {dots.map((d) => <circle class:list={[d.radio && 'radio']} cx={d.x} cy={d.y} r={dotRadius} />)}
+</svg>
+
+<style>
+  .dot-map { width: 100%; height: auto; }
+  .land { fill: color-mix(in srgb, var(--accent) 7%, transparent); stroke: color-mix(in srgb, var(--accent) 18%, transparent); stroke-width: 1.2; }
+  circle { fill: var(--accent); opacity: 0.55; }
+  circle.radio { fill: var(--warm); }
+</style>

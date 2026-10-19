@@ -8,41 +8,51 @@ import { url } from '../lib/site';
 ---
 
 <Base title="Search">
-  <section class="band-surface search-band">
+  <section class="search-band">
     <div class="wrap"><div class="narrow-col"><SearchForm /></div></div>
   </section>
 
   <div class="wrap band">
     <div class="narrow-col">
-      <section class="stack gap-16" aria-labelledby="results-heading">
+      <section class="stack gap-24" aria-labelledby="results-heading">
         <div class="stack gap-4">
-          <h1 id="results-heading">Searching…</h1>
-          <p id="results-sub" class="small muted"></p>
+          <h1 id="results-heading">Finding stations…</h1>
+          <p id="results-sub" class="muted"></p>
         </div>
         <p id="search-status" class="visually-hidden" role="status" aria-live="polite"></p>
-        <div id="results" class="stack gap-16"></div>
+        <div id="results" class="stack gap-16">
+          <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+        </div>
         <div id="empty" class="stack gap-12" hidden>
-          <h2 class="h3">Browse a state</h2>
-          <p><a class="chip" href={url('/state/')}>All states →</a></p>
+          <h2 class="h3">Browse instead</h2>
+          <p class="row-wrap"><a class="chip" href={url('/state/')}>All states →</a><a class="chip" href={url('/state/#map')}>Station map →</a></p>
         </div>
       </section>
     </div>
   </div>
 
   <template id="card-template">
-    <article class="card">
+    <article class="card result-card">
       <a class="card-top" data-link href="#">
+        <span class="monogram" data-mono aria-hidden="true"></span>
         <div class="card-info">
           <h2 class="h3 card-name" data-name></h2>
           <p class="small muted" data-meta></p>
         </div>
-        <span class="caption muted card-dist" data-dist></span>
+        <span class="pill" data-dist></span>
         <Icon name="chevron-right" />
       </a>
-      <div class="row-wrap">
-        <a class="btn btn-secondary" data-live href="#" rel="noopener"><Icon name="live" /><span>Watch live</span></a>
-        <a class="btn btn-secondary" data-app href="#"><Icon name="phone" /><span>Get the app</span></a>
-        <a class="btn btn-secondary" data-site href="#"><Icon name="web" /><span>Station details</span></a>
+      <div class="card-foot">
+        <p class="devices" data-devices>
+          <span data-device="mobile"><Icon name="phone" />Phone</span>
+          <span data-device="tv"><Icon name="tv" />TV</span>
+          <span data-device="web"><Icon name="web" />Web</span>
+          <span data-device="fallback"></span>
+        </p>
+        <div class="row-wrap">
+          <a class="btn btn-secondary" data-live href="#" rel="noopener"><Icon name="live" /><span>Watch live</span></a>
+          <a class="btn btn-primary" data-app href="#"><Icon name="phone" /><span>Get the app</span></a>
+        </div>
       </div>
     </article>
   </template>
@@ -51,6 +61,11 @@ import { url } from '../lib/site';
 <script src="../scripts/search.ts"></script>
 
 <style>
-  .search-band { padding: var(--space-16) 0; }
+  .search-band { padding: var(--space-24) 0; background: linear-gradient(120deg, var(--hero-a), var(--hero-b)); border-bottom: 1px solid var(--border); }
   .narrow-col { max-width: var(--narrow); }
+  .card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-12); padding-top: var(--space-12); border-top: 1px solid var(--border); }
+  .devices { margin: 0; }
+  .devices .on { color: var(--accent); }
+  .result-card { animation: rise 0.35s var(--ease) both; animation-delay: calc(var(--i, 0) * 40ms); }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 </style>

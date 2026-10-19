@@ -9,6 +9,7 @@ import {
   type Organization, type Platform,
 } from '../../lib/data';
 import { url, correctionUrl } from '../../lib/site';
+import { monogram } from '../../lib/monogram';
 
 export function getStaticPaths() {
   return organizations.map((org) => ({ params: { id: org.id }, props: { org } }));
@@ -54,25 +55,32 @@ const sourceKinds = [
   org.apps.length || org.livestreamUrl ? 'station website' : '',
   Object.values(org.sources).some((s) => s.source.startsWith('manual')) ? 'manual correction' : '',
 ].filter(Boolean);
-const description = `Every way to watch ${org.name}: apps for phone, tablet, and TV, livestream, and website.`;
+const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, livestream, and website.`;
 ---
 
 <Base title={org.name} description={description}>
-  <div class="wrap band">
-    <div class="two-col">
-      <div class="stack gap-32">
+  <section class="station-hero">
+    <div class="wrap stack gap-24">
+      <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
+      <div class="station-head">
+        {monogram(org.name) !== org.name && <span class="monogram lg" aria-hidden="true">{monogram(org.name)}</span>}
         <div class="stack gap-8">
-          <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
           <h1 class="display">{org.name}</h1>
           <p class="muted">{metaLine(org)}{calls.length > 0 && <> · On air as {calls.slice(0, 3).map((c, i) => <>{i > 0 && ', '}<span class="nowrap">{c}</span></>)}{calls.length > 3 && <> and {calls.length - 3} more</>}</>}</p>
         </div>
+      </div>
+      <div class="row-wrap hero-actions">
+        {/* Filled in by the device script with the best link for this visitor's device. */}
+        <a class="btn btn-primary btn-lg" data-smart-cta data-name={org.name} data-fallback={fallbackBrand?.name ?? ''} data-has-own={String(hasOwnApps || !!org.livestreamUrl)} href="#apps" hidden><span data-cta-icon="mobile"><Icon name="phone" /></span><span data-cta-icon="desktop" hidden><Icon name="web" /></span><span data-cta-label></span></a>
+        {org.livestreamUrl && <a class="btn btn-secondary btn-lg" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>Watch live</span></a>}
+        {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener"><Icon name="web" /><span>Website</span></a>}
+      </div>
+    </div>
+  </section>
 
-        {(org.livestreamUrl || org.website) && (
-          <div class="row-wrap">
-            {org.livestreamUrl && <a class="btn btn-primary" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>Watch live</span></a>}
-            {org.website && <a class={`btn ${org.livestreamUrl ? 'btn-secondary' : 'btn-primary'}`} href={org.website} rel="noopener"><Icon name="web" /><span>Website</span></a>}
-          </div>
-        )}
+  <div class="wrap band">
+    <div class="two-col">
+      <div class="stack gap-32">
 
         <section id="apps" class="stack gap-24" aria-label="Apps">
           {!hasOwnApps && fallbackBrand && (
@@ -130,6 +138,12 @@ const description = `Every way to watch ${org.name}: apps for phone, tablet, and
 
 <style>
   .nowrap { white-space: nowrap; }
+  .station-hero { padding-block: var(--space-32) var(--space-32); background: linear-gradient(135deg, var(--hero-a), var(--bg) 60%, var(--hero-b)); border-bottom: 1px solid var(--border); }
+  @media (min-width: 701px) { .station-hero { padding-block: var(--space-48); } }
+  .station-head { display: flex; gap: var(--space-24); align-items: center; }
+  @media (max-width: 600px) { .station-head { flex-direction: column; align-items: flex-start; gap: var(--space-16); } }
+  .hero-actions .btn-lg { flex: 0 1 auto; }
+  @media (max-width: 600px) { .hero-actions .btn-lg { flex: 1 1 100%; } }
   .extra-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
   .extra-app { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-8) var(--space-16); padding: var(--space-12) var(--space-4); border-bottom: 1px solid var(--border); }
   .extra-app .row-wrap { gap: var(--space-16); }

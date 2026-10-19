@@ -1,36 +1,79 @@
 ---
-// The one search box: ZIP, city/state, station name, or call letters. Submits to /search
-// (a plain GET form, so it works without JavaScript).
+// The one search box: ZIP, city/state, station name, or call letters. A plain GET form to
+// /search, so it works without JavaScript; with JavaScript, results appear as you type
+// (src/scripts/instant.ts). Optional example chips fill in a sample search.
 import Icon from './Icon.astro';
 import { url } from '../lib/site';
 
-interface Props { value?: string; id?: string }
-const { value = '', id = 'q' } = Astro.props;
+interface Props { value?: string; id?: string; size?: 'md' | 'lg'; examples?: string[] }
+const { value = '', id = 'q', size = 'md', examples = [] } = Astro.props;
 ---
-<form class="search-form" action={url('/search/')} method="get" role="search">
+<form class:list={['search-form', size]} action={url('/search/')} method="get" role="search" data-search-form>
   <label for={id} class="visually-hidden">ZIP code, city, station name, or call letters</label>
-  <div class="search-input">
-    <Icon name="search" />
-    <input id={id} name="q" type="search" value={value} required autocomplete="postal-code"
-      placeholder="ZIP, city, or station name" enterkeyhint="search" />
+  <div class="search-row">
+    <div class="search-field">
+      <div class="search-input">
+        <Icon name="search" />
+        <input id={id} name="q" type="search" value={value} required autocomplete="off" spellcheck="false"
+          placeholder="ZIP, city, or station name" enterkeyhint="search"
+          role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls={`${id}-list`} />
+      </div>
+      <ul id={`${id}-list`} class="suggest" role="listbox" aria-label="Matching stations" hidden></ul>
+    </div>
+    <button class:list={['btn btn-primary', size === 'lg' && 'btn-lg']} type="submit">Find my stations</button>
   </div>
-  <button class="btn btn-primary" type="submit">Find my stations</button>
+  {examples.length > 0 && (
+    <p class="examples small muted">
+      Try
+      {examples.map((e) => <a class="chip chip-sm" href={url(`/search/?q=${encodeURIComponent(e)}`)}>{e}</a>)}
+    </p>
+  )}
 </form>
 
+<script src="../scripts/instant.ts"></script>
+
 <style>
-  .search-form { display: flex; flex-direction: column; gap: var(--space-12); }
-  @media (min-width: 701px) { .search-form { flex-direction: row; } }
+  .search-form { position: relative; display: flex; flex-direction: column; gap: var(--space-12); }
+  .search-row { display: flex; flex-direction: column; gap: var(--space-12); }
+  @media (min-width: 701px) { .search-row { flex-direction: row; } }
+  .search-field { position: relative; flex: 1; display: flex; }
   .search-input {
     flex: 1; display: flex; align-items: center; gap: var(--space-12);
-    padding: 0 var(--space-16); border: 2px solid var(--text); border-radius: var(--radius-md);
-    background: var(--surface-raised);
+    padding: 0 var(--space-16); border: 1.5px solid var(--border); border-radius: var(--radius-md);
+    background: var(--surface-raised); box-shadow: var(--shadow-sm);
+    transition: border-color 0.15s, box-shadow 0.15s;
   }
-  .search-input:focus-within { outline: 3px solid var(--accent); outline-offset: 2px; }
-  .search-input svg { width: 24px; height: 24px; color: var(--text-muted); flex: none; }
+  .search-input:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent), var(--shadow-sm); }
+  .search-input svg { width: 22px; height: 22px; color: var(--text-muted); flex: none; }
   input {
     flex: 1; min-width: 0; border: 0; background: none; color: var(--text);
     font: inherit; padding: var(--space-16) 0; outline: none;
   }
   input::placeholder { color: var(--text-muted); opacity: 1; }
-  .btn { padding: var(--space-16) var(--space-24); }
+  input::-webkit-search-cancel-button { cursor: pointer; }
+  .search-row > .btn { padding-inline: var(--space-24); min-height: 56px; border-radius: var(--radius-md); }
+  .lg .search-input { padding: 0 var(--space-24); border-radius: var(--radius-lg); }
+  .lg input { font-size: 19px; padding: 20px 0; }
+  .lg .search-row > .btn { border-radius: var(--radius-lg); min-height: 64px; }
+
+  .suggest {
+    position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 15; margin: 0; padding: var(--space-8);
+    list-style: none; background: var(--surface-raised); border: 1px solid var(--border); border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg); max-height: min(420px, 60vh); overflow: auto;
+  }
+  .examples { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-8); margin: 0; }
+  .chip-sm { padding: 4px 12px; font-size: 14px; }
+</style>
+
+<style is:global>
+  /* Suggestion rows are created by instant.ts, so these styles are global. */
+  .suggest li { border-radius: var(--radius-sm); }
+  .suggest a { display: flex; align-items: center; gap: var(--space-12); padding: var(--space-8); color: var(--text); text-decoration: none; border-radius: var(--radius-sm); }
+  .suggest li[aria-selected='true'] a, .suggest a:hover { background: var(--accent-subtle); }
+  .suggest .monogram { width: 40px; height: 40px; border-radius: 11px; font-size: 14px; }
+  .suggest .s-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .suggest .s-name { font-weight: 650; }
+  .suggest .s-meta { font-size: 14px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .suggest .s-note { padding: var(--space-8) var(--space-12); font-size: 14px; color: var(--text-muted); }
+  .suggest .s-all { justify-content: center; font-weight: 650; color: var(--accent); }
 </style>

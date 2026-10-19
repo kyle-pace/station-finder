@@ -21,6 +21,7 @@ import { join } from 'node:path';
 import { parse } from 'yaml';
 import type { ExtractedRow, InfoboxFields } from './fetch-wikipedia.ts';
 import type { StationAppLinks } from './fetch-station-app-pages.ts';
+import { monogram } from '../src/lib/monogram.ts';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const MANUAL = join(ROOT, 'data', 'manual');
@@ -578,16 +579,26 @@ if (existsSync(zctaPath)) {
   console.warn('build-data: data/raw/census/zcta.json missing — ZIP search files not written (npm run build-zcta)');
 }
 const facById = new Map(facilities.map((f) => [f.id, f]));
+// Search radius per transmitter, as in SPEC §5: TV reaches farther than radio.
+const RADIUS_MI = { tv: 75, fm: 50, am: 50 } as const;
+const ownGroup = (o: Organization, platforms: Platform[]) => o.apps.some((a) => !a.extra && platforms.includes(a.platform));
 const searchIndex = organizations.map((o) => ({
   id: o.id,
   name: o.name,
+  mono: monogram(o.name),
   city: o.city,
   state: o.state,
   calls: o.facilityIds.map((id) => facById.get(id)!.callSign),
-  tx: o.facilityIds.map((id) => [facById.get(id)!.lat, facById.get(id)!.lng]),
+  tx: o.facilityIds.map((id) => { const f = facById.get(id)!; return [f.lat, f.lng, RADIUS_MI[f.service]]; }),
+  // Which kinds of devices the station's own apps cover (for the icons on result cards).
+  devices: {
+    mobile: ownGroup(o, ['ios', 'android']),
+    tv: ownGroup(o, ['appletv', 'roku', 'firetv', 'androidtv', 'samsung', 'lg']),
+    web: ownGroup(o, ['web']),
+  },
   network: o.networks.join(', '),
   media: o.mediaTypes,
-  hasApps: o.apps.some((a) => a.platform !== 'web' && !a.extra),
+  hasApps: o.apps.some((a) => !a.extra),
   live: o.livestreamUrl ?? null,
 }));
 writeFileSync(join(OUT, 'search.json'), JSON.stringify(searchIndex));
