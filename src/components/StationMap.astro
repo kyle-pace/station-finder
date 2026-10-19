@@ -20,8 +20,8 @@
 //     touch screens, a tap shows the card and its button opens the station page. Without JavaScript the markers are plain links.
 // Every marker and card looks the same for every station.
 //
-// Places outside the Albers USA projection (Puerto Rico and other territories) are
-// listed under the map instead.
+// Places outside the Albers USA projection (Puerto Rico and other territories) aren't
+// drawn; they're in the list of states and territories on the same page.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { feature, mesh } from 'topojson-client';
@@ -64,11 +64,10 @@ const borders = path(mesh(topo, statesObj, (a, b) => a !== b)) ?? '';
 // One marker per station. Stations based in the same city are fanned out in a small
 // sunflower pattern so each one can be picked once you zoom in.
 const placed: { x: number; y: number; id: string; kind: Kind; label: string }[] = [];
-const offMap = new Map<string, { code: string; name: string }>();
 for (const o of organizations) {
   if (!o.home) continue;
   const p = projection([o.home.lng, o.home.lat]);
-  if (!p) { offMap.set(o.state, { code: o.state, name: STATE_NAMES[o.state] ?? o.state }); continue; }
+  if (!p) continue;
   placed.push({ x: p[0], y: p[1], id: o.id, kind: kindOf(o.mediaTypes), label: `${o.name}, ${o.home.city ?? STATE_NAMES[o.state]}` });
 }
 const sameCity = new Map<string, typeof placed>();
@@ -193,12 +192,6 @@ const FILTERS = [
   </div>
 
   <p class="caption muted">Each marker is the city a station is based in. Stations reach well beyond it: search by ZIP code to see every station you can get.</p>
-  {offMap.size > 0 && (
-    <p class="small muted">
-      Not shown on the map:{' '}
-      {[...offMap.values()].map((s, i) => <>{i > 0 && ', '}<a href={url(`/state/${s.code.toLowerCase()}/`)}>{s.name}</a></>)}
-    </p>
-  )}
   <script type="application/json" data-map-info set:html={JSON.stringify(info)} />
 </div>
 
