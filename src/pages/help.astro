@@ -1,0 +1,207 @@
+---
+// "How to get the apps": plain steps for installing an app on each kind of device, each
+// with a link to that company's own help page. The steps are general (they work for any
+// station's app, and for the PBS and NPR apps); they never describe one station's app.
+// Official help pages checked 2026-10-18. Section ids match platform keys so station
+// pages can link straight to one (e.g. /help/#roku).
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/site';
+
+interface Guide { id: string; name: string; logo?: string; steps: string[]; help: { label: string; href: string }[]; note?: string }
+
+const PHONE: Guide[] = [
+  {
+    id: 'ios', name: 'iPhone and iPad', logo: 'ios',
+    steps: [
+      'Open the App Store.',
+      'Tap Search and type the station or app name.',
+      'Tap Get. (If it says Open, the app is already installed.)',
+      'Confirm with Face ID, Touch ID, or your Apple Account password.',
+    ],
+    help: [{ label: 'Apple Support: Download apps on your iPhone or iPad', href: 'https://support.apple.com/en-us/102590' }],
+  },
+  {
+    id: 'android', name: 'Android phones and tablets', logo: 'android',
+    steps: [
+      'Open the Google Play Store app.',
+      'Search for the station or app name.',
+      'Select the app and tap Install.',
+      'Open it from your home screen or app list.',
+    ],
+    help: [{ label: 'Google Play Help: Get Android apps', href: 'https://support.google.com/googleplay/answer/113409?hl=en' }],
+  },
+];
+
+const TV: Guide[] = [
+  {
+    id: 'appletv', name: 'Apple TV', logo: 'appletv',
+    steps: [
+      'Open the App Store on your Apple TV.',
+      'Search for the station or app name.',
+      'Select Get. The app appears on your Home Screen.',
+    ],
+    help: [{ label: 'Apple Support: Download apps on your Apple TV', href: 'https://support.apple.com/en-us/102348' }],
+    note: 'The App Store is on Apple TV 4K and Apple TV HD. Older (3rd generation) Apple TVs can’t add apps.',
+  },
+  {
+    id: 'roku', name: 'Roku', logo: 'roku',
+    steps: [
+      'Press Home on your Roku remote.',
+      'Choose Search (or the Streaming Store) and type the station or app name.',
+      'Select the app, then Add app. It appears at the end of your Home screen apps.',
+    ],
+    help: [{ label: 'Roku Support: Adding apps from the Streaming Store', href: 'https://support.roku.com/article/adding-apps-from-rokus-streaming-store' }],
+    note: 'You can also add it from Roku’s website or the Roku mobile app; it shows up on your TV automatically.',
+  },
+  {
+    id: 'firetv', name: 'Amazon Fire TV', logo: 'firetv',
+    steps: [
+      'Go to Find on the main menu (or hold the Alexa voice button and say the name).',
+      'Search for the station or app name and select it.',
+      'Select Get or Download.',
+    ],
+    help: [{ label: 'Amazon Help: Download apps on your Fire TV', href: 'https://www.amazon.com/gp/help/customer/display.html?nodeId=GRDR6KJPL2FT6YHS' }],
+  },
+  {
+    id: 'androidtv', name: 'Google TV and Android TV', logo: 'androidtv',
+    steps: [
+      'Google TV: choose Search (or press the Assistant button) and say or type the name. Android TV: go to Apps and open the Google Play Store.',
+      'Select the app.',
+      'Select Install.',
+    ],
+    help: [
+      { label: 'Google TV Help: Install apps', href: 'https://support.google.com/googletv/answer/10050570?hl=en' },
+      { label: 'Android TV Help: Download apps', href: 'https://support.google.com/androidtv/answer/6121463?hl=en' },
+      { label: 'Install on your TV from your phone or computer', href: 'https://support.google.com/googleplay/answer/14274288?hl=en' },
+    ],
+    note: 'This includes Chromecast with Google TV and smart TVs that run Google TV or Android TV.',
+  },
+  {
+    id: 'samsung', name: 'Samsung Smart TV', logo: 'samsung',
+    steps: [
+      'Press Home on your remote and open Apps.',
+      'Select the search icon (top right) and type the station or app name.',
+      'Select the app, then Install.',
+      'Open it from the Home menu.',
+    ],
+    help: [{ label: 'Samsung Support: Use apps on your Samsung Smart TV', href: 'https://www.samsung.com/us/support/answer/ANS10005205/' }],
+    note: 'Samsung asks you to sign in with a Samsung account before installing streaming apps.',
+  },
+  {
+    id: 'lg', name: 'LG Smart TV', logo: 'lg',
+    steps: [
+      'Press Home on your remote and choose Apps (on some models, LG Content Store).',
+      'Select the search icon (top right) and type the station or app name.',
+      'Select the app, then Install, then Launch.',
+    ],
+    help: [{ label: 'LG Support: How to download smart apps', href: 'https://www.lg.com/us/support/help-library/lg-tv-how-to-download-smart-apps-CT10000018-20153174119431' }],
+  },
+];
+---
+
+<Base title="How to get the apps" description="Simple steps for installing your local public media station's app on a phone, tablet, or TV.">
+  <div class="wrap narrow band stack gap-32">
+    <section class="stack gap-12">
+      <h1>How to get the apps</h1>
+      <p class="lede muted">
+        Find your station, then pick your device on its page: each button opens the right app
+        store. If you'd rather search on the device itself, here's how on each one.
+      </p>
+      <nav class="jump row-wrap" aria-label="Devices">
+        {[...PHONE, ...TV].map((g) => <a class="chip chip-sm" href={`#${g.id}`}>{g.name}</a>)}
+      </nav>
+    </section>
+
+    <section class="stack gap-16" aria-labelledby="phones">
+      <h2 id="phones">Phones and tablets</h2>
+      {PHONE.map((g) => (
+        <article id={g.id} class="guide card">
+          <div class="guide-head">
+            {g.logo && <span class="logo-tile badge"><img src={url(`/platforms/${g.logo}.png`)} alt="" height="40" /></span>}
+            <h3>{g.name}</h3>
+          </div>
+          <ol>{g.steps.map((s) => <li>{s}</li>)}</ol>
+          {g.note && <p class="small muted">{g.note}</p>}
+          <p class="small">{g.help.map((h, i) => <>{i > 0 && <br />}<a href={h.href} rel="noopener">{h.label}</a></>)}</p>
+        </article>
+      ))}
+    </section>
+
+    <section class="stack gap-16" aria-labelledby="tvs">
+      <h2 id="tvs">TVs and streaming devices</h2>
+      {TV.map((g) => (
+        <article id={g.id} class="guide card">
+          <div class="guide-head">
+            {g.logo && <span class="logo-tile"><img src={url(`/platforms/${g.logo}.png`)} alt="" /></span>}
+            <h3>{g.name}</h3>
+          </div>
+          <ol>{g.steps.map((s) => <li>{s}</li>)}</ol>
+          {g.note && <p class="small muted">{g.note}</p>}
+          <p class="small">{g.help.map((h, i) => <>{i > 0 && <br />}<a href={h.href} rel="noopener">{h.label}</a></>)}</p>
+        </article>
+      ))}
+    </section>
+
+    <section class="stack gap-16" aria-labelledby="faq">
+      <h2 id="faq">Common questions</h2>
+      <details class="faq card" open>
+        <summary>My TV app shows a code. What do I do?</summary>
+        <p>
+          Many TV apps sign you in with a short code instead of making you type a password with
+          the remote. Keep the code on screen, open the web address the app shows on your phone
+          or computer, enter the code, and sign in there. The TV finishes signing in by itself.
+        </p>
+      </details>
+      <details class="faq card">
+        <summary>I can't find the app in my TV's store.</summary>
+        <p>
+          Try searching for the station's name and its call letters (like the four letters
+          starting with K or W). Some stations name their app differently from what people
+          call the station; the button on the station's page here always opens the right one.
+          If the station has no app for your TV, its page links to the PBS or NPR app instead.
+        </p>
+      </details>
+      <details class="faq card">
+        <summary>My TV is older and doesn't have the app.</summary>
+        <p>
+          Older smart TVs often can't install new apps. A small streaming device plugged into
+          the TV's HDMI port (Roku, Fire TV, Apple TV, or a Google TV device) adds them, and
+          these devices get updates for years.
+        </p>
+      </details>
+      <details class="faq card">
+        <summary>Do the apps cost anything?</summary>
+        <p>
+          Public media apps are free to download. Some stations offer extra shows to members
+          who donate; the app will tell you if something needs a membership.
+        </p>
+      </details>
+    </section>
+
+    <p class="small muted">
+      Steps can change when a company updates its devices. Each section links to that company's
+      own help page for the latest instructions.
+      <a href={url('/')}>Find your station →</a>
+    </p>
+  </div>
+</Base>
+
+<style>
+  .lede { font-size: 18px; }
+  .jump { gap: var(--space-8); }
+  .guide { display: flex; flex-direction: column; gap: var(--space-12); scroll-margin-top: 88px; }
+  .guide-head { display: flex; align-items: center; gap: var(--space-16); }
+  .guide-head h3 { margin: 0; }
+  .guide ol { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: var(--space-4); }
+  .guide p { margin: 0; }
+  .logo-tile {
+    flex: none; width: 112px; height: 48px; display: grid; place-items: center;
+    background: #fff; border-radius: var(--radius-sm); box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.08);
+  }
+  .logo-tile img { max-width: 92px; max-height: 28px; width: auto; height: auto; }
+  .logo-tile.badge { width: auto; background: none; box-shadow: none; }
+  .logo-tile.badge img { max-width: none; max-height: none; height: 40px; }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq p { margin: var(--space-12) 0 0; }
+  :target { outline: 2px solid var(--accent); outline-offset: 4px; }
+</style>

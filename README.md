@@ -84,6 +84,9 @@ scripts/build-data               →  public/data/organizations.json, facilities
   for every station. Before a public launch, check them against each company's
   current brand guidelines (Apple and Google publish official badge files and minimum
   sizes). Station and network logos are deliberately not used.
+- **Install help** (`src/pages/help.astro`, the "How to get the apps" page): general steps
+  for each device, each linking to that company's own help page (links checked
+  2026-10-18). Re-check them now and then; companies move help pages.
 - Every value records where it came from (`source`) and when (`retrievedAt`).
 
 ### Refreshing the data
