@@ -1,15 +1,21 @@
 ---
 // Decorative US outline with one dot per transmitter, drawn at build time (no requests).
 // Used as the homepage backdrop and the map teaser. Every dot is identical.
+//
+// With `live`, stations take turns "going on air": a soft ripple spreads from where a
+// station is based, picked at random so every station is equally likely. Every few
+// seconds one is named in the page's [data-on-air] line, linked to its page. Nothing
+// moves for people who ask for reduced motion, and it pauses when off screen.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { feature } from 'topojson-client';
 import { geoAlbersUsa, geoPath } from 'd3-geo';
 import type { Topology, GeometryCollection } from 'topojson-specification';
-import { facilities } from '../lib/data';
+import { facilities, organizations } from '../lib/data';
+import { url } from '../lib/site';
 
-interface Props { class?: string; dotRadius?: number }
-const { class: className, dotRadius = 3.2 } = Astro.props;
+interface Props { class?: string; dotRadius?: number; live?: boolean }
+const { class: className, dotRadius = 3.2, live = false } = Astro.props;
 
 const topo = JSON.parse(readFileSync(join(process.cwd(), 'node_modules', 'us-atlas', 'nation-albers-10m.json'), 'utf8')) as Topology;
 const nation = path(feature(topo, topo.objects.nation as GeometryCollection));
@@ -19,15 +25,105 @@ const dots = facilities.flatMap((f) => {
   const p = projection([f.lng, f.lat]);
   return p ? [{ x: Math.round(p[0]), y: Math.round(p[1]), radio: f.service !== 'tv' }] : [];
 });
+// [x, y, 1 if radio-only, name, "City, ST", link] for each station on the map.
+const stations = live
+  ? organizations.flatMap((o) => {
+      const p = o.home && projection([o.home.lng, o.home.lat]);
+      if (!p || !o.home) return [];
+      return [[Math.round(p[0]), Math.round(p[1]), o.mediaTypes.includes('tv') ? 0 : 1, o.name, o.home.city ? `${o.home.city}, ${o.state}` : o.state, url(`/station/${o.id}/`)]];
+    })
+  : [];
 ---
-<svg class:list={['dot-map', className]} viewBox="0 0 975 610" aria-hidden="true" focusable="false">
+<svg class:list={['dot-map', className]} viewBox="0 0 975 610" aria-hidden="true" focusable="false" data-live={live ? JSON.stringify(stations) : undefined}>
   <path class="land" d={nation} />
   {dots.map((d) => <circle class:list={[d.radio && 'radio']} cx={d.x} cy={d.y} r={dotRadius} />)}
+  {live && <g class="ripples" data-ripples></g>}
 </svg>
+
+{live && (
+  <script>
+    type Station = [number, number, 0 | 1, string, string, string];
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    const still = matchMedia('(prefers-reduced-motion: reduce)');
+    for (const svg of document.querySelectorAll<SVGSVGElement>('svg[data-live]')) {
+      const stations = JSON.parse(svg.dataset.live!) as Station[];
+      const layer = svg.querySelector<SVGGElement>('[data-ripples]')!;
+      const line = svg.closest('section')?.querySelector<HTMLElement>('[data-on-air]');
+      const link = line?.querySelector<HTMLAnchorElement>('[data-on-air-link]');
+      const place = line?.querySelector<HTMLElement>('[data-on-air-place]');
+      const pick = () => stations[Math.floor(Math.random() * stations.length)];
+
+      const ripple = (s: Station, named: boolean) => {
+        const g = document.createElementNS(SVG_NS, 'g');
+        g.setAttribute('class', `ripple${s[2] ? ' radio' : ''}${named ? ' named' : ''}`);
+        g.setAttribute('transform', `translate(${s[0]} ${s[1]})`);
+        for (const delay of named ? [0, 0.5] : [0]) {
+          const c = document.createElementNS(SVG_NS, 'circle');
+          c.setAttribute('r', named ? '34' : '22');
+          c.style.animationDelay = `${delay}s`;
+          g.append(c);
+        }
+        if (named) {
+          const dot = document.createElementNS(SVG_NS, 'circle');
+          dot.setAttribute('class', 'core');
+          dot.setAttribute('r', '4.5');
+          g.append(dot);
+        }
+        layer.append(g);
+        setTimeout(() => g.remove(), named ? 3600 : 2600);
+      };
+      const name = (s: Station) => {
+        if (!line || !link || !place) return;
+        line.classList.remove('show');
+        setTimeout(() => {
+          link.textContent = s[3];
+          link.href = s[5];
+          place.textContent = s[4];
+          line.classList.toggle('radio', !!s[2]);
+          line.hidden = false;
+          line.classList.add('show');
+        }, line.hidden ? 0 : 250);
+      };
+
+      // Reduced motion: name one station, no ripples.
+      if (still.matches) { name(pick()); continue; }
+
+      let visible = true;
+      new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(svg);
+      let tick = 0;
+      const step = () => {
+        if (visible && !document.hidden) {
+          const named = tick % 5 === 0; // a named station about every 4 seconds
+          const s = pick();
+          ripple(s, named);
+          if (named) name(s);
+          tick++;
+        }
+      };
+      step();
+      setInterval(step, 800);
+    }
+  </script>
+)}
 
 <style>
   .dot-map { width: 100%; height: auto; }
   .land { fill: color-mix(in srgb, var(--accent) 7%, transparent); stroke: color-mix(in srgb, var(--accent) 18%, transparent); stroke-width: 1.2; }
   circle { fill: var(--accent); opacity: 0.55; }
   circle.radio { fill: var(--warm); }
+
+  /* "On air" ripples (live maps only). */
+  .dot-map :global(.ripple circle) {
+    fill: none; stroke: var(--accent); stroke-width: 2; opacity: 0;
+    transform-box: fill-box; transform-origin: center;
+    animation: ripple 2.4s cubic-bezier(0.2, 0.6, 0.3, 1) forwards;
+  }
+  .dot-map :global(.ripple.radio circle) { stroke: var(--warm); }
+  .dot-map :global(.ripple.named circle) { stroke-width: 2.5; animation-duration: 3s; }
+  .dot-map :global(.ripple .core) {
+    fill: var(--accent); stroke: none; opacity: 1; animation: core 3.4s ease-out forwards;
+  }
+  .dot-map :global(.ripple.radio .core) { fill: var(--warm); }
+  @keyframes ripple { 0% { transform: scale(0.15); opacity: 0.9; } 100% { transform: scale(1); opacity: 0; } }
+  @keyframes core { 0%, 70% { opacity: 1; } 100% { opacity: 0; } }
 </style>

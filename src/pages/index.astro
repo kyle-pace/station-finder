@@ -32,7 +32,7 @@ const examplePool = organizations.flatMap((o) => {
 
 <Base>
   <section class="hero">
-    <DotMap class="hero-map" dotRadius={2.6} />
+    <DotMap class="hero-map" dotRadius={2.6} live />
     <div class="wrap hero-inner">
       <div class="hero-copy stack gap-24">
         <div class="stack gap-16">
@@ -45,6 +45,11 @@ const examplePool = organizations.flatMap((o) => {
           <button class="btn btn-secondary" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
           <p class="caption muted">Used on this device only, never sent to us.</p>
         </div>
+        <p class="on-air small muted" data-on-air hidden aria-live="off">
+          <span class="on-air-dot" aria-hidden="true"></span>
+          <span><a data-on-air-link href="#"></a> · <span data-on-air-place></span></span>
+          <span class="on-air-count">one of {stationCount} local stations</span>
+        </p>
       </div>
     </div>
   </section>
@@ -174,6 +179,17 @@ const examplePool = organizations.flatMap((o) => {
   @media (min-width: 801px) { .teaser { grid-template-columns: 1fr 1.3fr; padding: var(--space-48); } }
   .teaser-copy { align-items: flex-start; }
 
+  .on-air { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4) var(--space-8); margin: 0; min-height: 24px; }
+  .on-air > span:nth-child(2) { opacity: 0; transition: opacity 0.25s; }
+  .on-air.show > span:nth-child(2) { opacity: 1; }
+  .on-air a { color: var(--text); font-weight: 600; text-decoration: none; }
+  .on-air a:hover { text-decoration: underline; }
+  .on-air-count::before { content: '— '; }
+  .on-air { --on-air: var(--accent); }
+  .on-air.radio { --on-air: var(--warm); }
+  .on-air-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--on-air); animation: on-air 2s infinite; }
+  @keyframes on-air { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--on-air) 55%, transparent); } 100% { box-shadow: 0 0 0 8px transparent; } }
+  @media (prefers-reduced-motion: reduce) { .on-air-dot { animation: none; } }
   .location { display: flex; flex-direction: column; gap: var(--space-8); align-items: flex-start; }
   @media (min-width: 701px) { .location { flex-direction: row; align-items: center; gap: var(--space-12); } }
 </style>
