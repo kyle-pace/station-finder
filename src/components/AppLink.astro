@@ -1,16 +1,36 @@
 ---
 // One store/platform link. The device script (src/scripts/device.ts) adds the
 // "your-device" highlight to the link for the visitor's platform — never a station.
+//
+// Platform logos and store badges (public/platforms/) identify where an app is
+// available; they're shown unmodified on a white tile, the same for every station.
+// The web link has no logo and keeps its icon.
 import Icon from './Icon.astro';
 import { PLATFORM_INFO, type Platform } from '../lib/data';
+import { url } from '../lib/site';
+
+// Pixel size of each image file, so the browser can reserve space before it loads.
+const LOGOS: Partial<Record<Platform, { w: number; h: number; badge?: boolean }>> = {
+  ios: { w: 264, h: 88, badge: true },
+  android: { w: 297, h: 88, badge: true },
+  appletv: { w: 244, h: 135 },
+  roku: { w: 316, h: 99 },
+  firetv: { w: 239, h: 128 },
+  androidtv: { w: 432, h: 75 },
+  samsung: { w: 399, h: 128 },
+  lg: { w: 286, h: 127 },
+};
 
 // fallback = the network's national app standing in for a platform the station has no app on.
 interface Props { platform: Platform; href: string; detail?: string; label?: string; fallback?: boolean }
 const { platform, href, detail, label, fallback = false } = Astro.props;
 const info = PLATFORM_INFO[platform];
+const logo = LOGOS[platform];
 ---
 <a class="app-link" href={href} data-platform={platform} data-fallback={fallback ? "" : undefined} rel="noopener">
-  <Icon name={info.icon} />
+  {logo
+    ? <span class:list={['logo-tile', logo.badge && 'badge']}><img src={url(`/platforms/${platform}.png`)} alt="" width={logo.w} height={logo.h} loading="lazy" decoding="async" /></span>
+    : <Icon name={info.icon} />}
   <span class="text">
     <span class="tag caption" data-tag></span>
     <span class="body-strong">{label ?? info.label}</span>

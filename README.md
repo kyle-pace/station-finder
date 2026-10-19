@@ -79,6 +79,11 @@ scripts/build-data               →  public/data/organizations.json, facilities
 - **National apps** (`national.yaml`): the PBS and NPR fallback links, plus
   `otherStoreLinks`, other store listings of the national app that station sites link to.
   Those are never shown; they keep the PBS app from being counted as a station's own.
+- **Platform logos and store badges** (`public/platforms/`) were exported from the
+  project's Figma design file. They identify where an app is available and look the same
+  for every station. Before a public launch, check them against each company's
+  current brand guidelines (Apple and Google publish official badge files and minimum
+  sizes). Station and network logos are deliberately not used.
 - Every value records where it came from (`source`) and when (`retrievedAt`).
 
 ### Refreshing the data
