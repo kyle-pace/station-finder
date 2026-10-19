@@ -47,7 +47,10 @@ const examplePool = organizations.flatMap((o) => {
       </div>
       <figure class="hero-visual">
         <DotMap class="hero-map" dotRadius={2.6} live />
-        <figcaption class="caption muted">Every dot is a public TV or radio transmitter: {transmitterCount.toLocaleString('en-US')} of them, run by {stationCount} local stations.</figcaption>
+        <figcaption>
+          <span class="caption muted">Every dot is a public TV or radio transmitter: {transmitterCount.toLocaleString('en-US')} of them, run by {stationCount} local stations.</span>
+          <a class="label" href={url('/state/#map')}>Browse all stations by state →</a>
+        </figcaption>
       </figure>
     </div>
   </section>
@@ -151,9 +154,13 @@ const examplePool = organizations.flatMap((o) => {
   }
   .hero-inner { display: grid; gap: var(--space-40, 40px); align-items: center; padding-block: var(--space-48) var(--space-48); }
   @media (min-width: 701px) { .hero-inner { padding-block: 72px 80px; } }
-  @media (min-width: 1024px) { .hero-inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-48); } }
   .hero-visual { margin: 0; display: flex; flex-direction: column; gap: var(--space-8); min-width: 0; }
-  .hero-visual figcaption { text-align: center; }
+  .hero-visual figcaption { display: flex; flex-direction: column; align-items: center; gap: var(--space-8); text-align: center; }
+  @media (min-width: 1024px) {
+    .hero-inner { grid-template-columns: minmax(0, 540px) minmax(0, 1fr); gap: var(--space-24); }
+    .hero-visual { margin-right: -56px; }
+  }
+  @media (min-width: 1400px) { .hero-visual { margin-right: -150px; margin-left: var(--space-16); } }
   .hero-copy { max-width: 640px; }
   .lede { font-size: 19px; line-height: 29px; max-width: 560px; }
 
