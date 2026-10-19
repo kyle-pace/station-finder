@@ -43,7 +43,7 @@ const stations = live
       {dots.map((d) => <circle class:list={[d.radio && 'radio']} cx={d.x} cy={d.y} r={dotRadius} />)}
       <g class="ripples" data-ripples></g>
     </svg>
-    <a class="on-air-tag" data-on-air-tag href="#" hidden>
+    <a class="on-air-tag" data-on-air-tag href="#" tabindex="-1" aria-hidden="true" hidden>
       <span class="kind" data-kind></span>
       <span class="who"><span class="name" data-name></span><span class="place" data-place></span></span>
     </a>
@@ -113,9 +113,22 @@ const stations = live
 
     if (still.matches) { showTag(pick()); continue; }
 
+    // A pause button (any [data-anim-toggle] in the same section): motion that keeps
+    // going must be stoppable.
+    let paused = false;
+    const toggle = root.closest('section')?.querySelector<HTMLButtonElement>('[data-anim-toggle]');
+    if (toggle) {
+      toggle.hidden = false;
+      toggle.addEventListener('click', () => {
+        paused = !paused;
+        toggle.setAttribute('aria-pressed', String(paused));
+        toggle.textContent = paused ? 'Play animation' : 'Pause animation';
+        root.classList.toggle('paused', paused);
+      });
+    }
     let visible = true;
     new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(root);
-    const active = () => visible && !document.hidden;
+    const active = () => visible && !document.hidden && !paused;
     const named = () => { if (!active()) return; const s = pick(); ripple(s, true); showTag(s); };
     named();
     setInterval(named, NAMED_EVERY);
@@ -153,13 +166,14 @@ const stations = live
     opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease;
   }
   .on-air-tag.show { opacity: 1; }
+  .live-map.paused :global(.ripple circle) { animation-play-state: paused; }
   .on-air-tag:hover .name { text-decoration: underline; }
   .on-air-tag .kind {
     flex: none; padding: 2px 8px; border-radius: var(--radius-full); font-size: 12px; font-weight: 700;
     color: var(--bg); background: var(--accent);
   }
-  .on-air-tag[data-k='1'] .kind { background: var(--warm); }
-  .on-air-tag[data-k='2'] .kind { background: linear-gradient(90deg, var(--accent) 50%, var(--warm) 50%); }
+  .on-air-tag[data-k='1'] .kind { background: var(--warm-ink); }
+  .on-air-tag[data-k='2'] .kind { background: linear-gradient(90deg, var(--accent) 50%, var(--warm-ink) 50%); }
   .on-air-tag .who { display: flex; flex-direction: column; min-width: 0; }
   .on-air-tag .name { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .on-air-tag .place { color: var(--text-muted); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

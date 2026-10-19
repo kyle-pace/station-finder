@@ -138,7 +138,7 @@ const FILTERS = [
   <div class="map-layout">
     <div class="map-col">
       <div class="map-frame" data-frame>
-        <svg viewBox="0 0 975 610" role="group" aria-label="Map of public media stations in the United States">
+        <svg viewBox="0 0 975 610" role="group" aria-label="Map of public media stations in the United States. Every station is also in the station list next to the map and in the list of states below it.">
           <defs>
             <linearGradient id="map-split" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0.5" class="stop-tv" /><stop offset="0.5" class="stop-radio" />
@@ -150,9 +150,9 @@ const FILTERS = [
             ))}
           </g>
           <path class="borders" d={borders} />
-          <g class="dots">
+          <g class="dots" aria-hidden="true">
             {dots.map((d) => (
-              <a href={url(`/station/${d.id}/`)} aria-label={d.label} data-org={d.id} data-x={d.x} data-y={d.y} class:list={['dot', d.kind]}>
+              <a href={url(`/station/${d.id}/`)} tabindex="-1" aria-label={d.label} data-org={d.id} data-x={d.x} data-y={d.y} class:list={['dot', d.kind]}>
                 <g transform={`translate(${d.x} ${d.y})`}><g class="m">
                   <circle class="hit" r="2" />
                   {d.kind === 'radio'
@@ -162,7 +162,7 @@ const FILTERS = [
               </a>
             ))}
           </g>
-          <g class="clusters" data-clusters></g>
+          <g class="clusters" data-clusters aria-hidden="true"></g>
         </svg>
         <div class="zoom-controls">
           <button type="button" class="zoom-btn" data-zoom="in" aria-label="Zoom in">+</button>
@@ -315,9 +315,6 @@ const FILTERS = [
         const g = document.createElementNS(SVG_NS, 'g');
         g.setAttribute('class', 'cluster');
         g.setAttribute('transform', `translate(${c.x} ${c.y})`);
-        g.setAttribute('tabindex', '0');
-        g.setAttribute('role', 'button');
-        g.setAttribute('aria-label', `${n} stations here. Zoom in`);
         g.dataset.c = String(i);
         const ring = (cls: string, share: number, offset: number) => {
           const el = document.createElementNS(SVG_NS, 'circle');

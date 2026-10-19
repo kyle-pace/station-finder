@@ -45,7 +45,10 @@ const examplePool = organizations.flatMap((o) => {
         <DotMap class="hero-map" dotRadius={2.6} live />
         <figcaption>
           <span class="caption muted">Every dot is a public TV or radio transmitter: {transmitterCount.toLocaleString('en-US')} of them, run by {stationCount} local stations.</span>
-          <a class="label" href={url('/state/#map')}>Browse all stations by state →</a>
+          <span class="row-wrap fig-actions">
+            <a class="label" href={url('/state/#map')}>Browse all stations by state →</a>
+            <button class="anim-toggle caption" type="button" data-anim-toggle aria-pressed="false" hidden>Pause animation</button>
+          </span>
         </figcaption>
       </figure>
     </div>
@@ -130,6 +133,10 @@ const examplePool = organizations.flatMap((o) => {
   .hero-inner { display: grid; gap: var(--space-40, 40px); align-items: center; padding-block: var(--space-48) var(--space-48); }
   @media (min-width: 701px) { .hero-inner { padding-block: 72px 80px; } }
   .hero-visual { margin: 0; display: flex; flex-direction: column; gap: var(--space-8); min-width: 0; }
+  .fig-actions { justify-content: center; gap: var(--space-8) var(--space-16); }
+  .anim-toggle { border: 1px solid var(--border); background: none; color: var(--text-muted); border-radius: var(--radius-full); padding: 4px 12px; cursor: pointer; font: inherit; }
+  .anim-toggle:hover { color: var(--text); border-color: var(--text-muted); }
+  .anim-toggle[hidden] { display: none; }
   .hero-visual figcaption { display: flex; flex-direction: column; align-items: center; gap: var(--space-8); text-align: center; }
   @media (min-width: 1024px) {
     .hero-inner { grid-template-columns: minmax(0, 580px) minmax(0, 1fr); gap: var(--space-24); }
