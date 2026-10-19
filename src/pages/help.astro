@@ -2,7 +2,7 @@
 // "How to get the apps": plain steps for installing an app on each kind of device, each
 // with a link to that company's own help page. The steps are general (they work for any
 // station's app, and for the PBS and NPR apps); they never describe one station's app.
-// Official help pages checked 2026-10-18. Section ids match platform keys so station
+// Official help pages (and the PBS Passport / NPR+ pages) checked 2026-10-18. Section ids match platform keys so station
 // pages can link straight to one (e.g. /help/#roku).
 import Base from '../layouts/Base.astro';
 import { url } from '../lib/site';
@@ -172,19 +172,59 @@ const TV: Guide[] = [
       <details class="faq card">
         <summary>Do the apps cost anything?</summary>
         <p>
-          Public media apps are free to download. Some stations offer extra shows to members
-          who donate; the app will tell you if something needs a membership.
+          Public media apps are free to download, and most shows and livestreams are free to
+          watch and listen to. Some extras come with a donation to your station: see
+          <a href="#passport">PBS Passport</a> and <a href="#npr-plus">NPR+</a> below.
         </p>
+      </details>
+      <details id="passport" class="faq card">
+        <summary>What is PBS Passport?</summary>
+        <p>
+          Passport is a benefit many PBS stations give their donors: extended access to a large
+          on-demand library of PBS shows, in the PBS app and some station apps. Each station
+          sets its own donation level, so check with yours. After you donate, your station
+          sends you a code to activate it.
+        </p>
+        <p>
+          Already a member but can't see Passport shows? Sign in to the app with the same email
+          address you gave your station; a different email is the most common reason it doesn't
+          show up. You can look up your membership with that email on PBS's site.
+        </p>
+        <p class="small">
+          <a href="https://help.pbs.org/support/solutions/articles/12000043556-what-is-pbs-passport-" rel="noopener">PBS Help: What is PBS Passport?</a><br />
+          <a href="https://www.pbs.org/passport/lookup/" rel="noopener">PBS: Passport member lookup</a>
+        </p>
+      </details>
+      <details id="npr-plus" class="faq card">
+        <summary>What is NPR+?</summary>
+        <p>
+          NPR+ is a set of podcast perks for supporters: sponsor-free listening, bonus episodes,
+          and early access to some shows. You get it by donating to NPR or to a participating
+          local station (NPR lists a minimum of $8 a month or $96 a year). Regular listening
+          stays free for everyone. Some stations include it for existing donors; sign in on
+          NPR's site with the email your station has on file.
+        </p>
+        <p class="small"><a href="https://plus.npr.org/" rel="noopener">NPR: About NPR+</a></p>
       </details>
     </section>
 
     <p class="small muted">
       Steps can change when a company updates its devices. Each section links to that company's
-      own help page for the latest instructions.
+      own help page for the latest instructions.{' '}
       <a href={url('/')}>Find your station →</a>
     </p>
   </div>
 </Base>
+
+<script>
+  // Open a question when a link jumps to it (e.g. /help/#passport).
+  const openTarget = () => {
+    const el = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+    if (el instanceof HTMLDetailsElement) el.open = true;
+  };
+  addEventListener('hashchange', openTarget);
+  openTarget();
+</script>
 
 <style>
   .lede { font-size: 18px; }
@@ -203,5 +243,6 @@ const TV: Guide[] = [
   .logo-tile.badge img { max-width: none; max-height: none; height: 40px; }
   .faq summary { cursor: pointer; font-weight: 600; }
   .faq p { margin: var(--space-12) 0 0; }
+  .faq { scroll-margin-top: 88px; }
   :target { outline: 2px solid var(--accent); outline-offset: 4px; }
 </style>
