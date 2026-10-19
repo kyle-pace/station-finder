@@ -1,15 +1,32 @@
 build-data report
   organizations:  490 (479 with transmitter coordinates)
   facilities:     1148
-  with apps:      59 (13 with a verified app)   without apps: 431
+  with apps:      139 (13 with a verified app)   without apps: 351
   without website: 22 (kodk, azpm, ksyc, northern-california-public-media, wamc-northeast-public-radio-ct, south-florida-pbs, wuwg, kbbg, illinois-public-media, will, wisu, cape-cod-s-classic-alternative, wcmv, minnesota-public-radio-mn, kmst, krnm, wurc-rust-college-public-radio, kgva, xpn-nj, pbs-rio-grande-valley, the-edge, kyvt)
   manual: 1 overrides, 3 merges, 44 app pages, 1 station-apps entries
 
   Rows with no transmitter coordinates (not findable by ZIP until fixed): 1
     - pbs-appalachia-virginia (PBS Appalachia Virginia, VA)
 
-  Low-confidence matches to review: 70
+  Low-confidence matches to review: 255
     - pbs-rio-grande-valley: Wikipedia says satellite of KMBH-CD, but no row has that call sign; kept separate
+    - kbbi: android link found on https://www.kbbi.org/kbbi-mobile-listening-and-apps — check it's the station's own app
+    - kbbi: ios link found on https://www.kbbi.org/kbbi-mobile-listening-and-apps — check it's the station's own app
+    - alabama-public-radio: ios link found on https://www.apr.org/ — check it's the station's own app
+    - alabama-public-radio: android link found on https://www.apr.org/ — check it's the station's own app
+    - border-radio-1320: android link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
+    - border-radio-1320: ios link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
+    - k-bach: ios link found on https://kbaq.org/kbach-mobile-app — check it's the station's own app
+    - k-bach: android link found on https://kbaq.org/kbach-mobile-app — check it's the station's own app
+    - kawp: android link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
+    - kawp: ios link found on https://www.kawc.org/get-the-kawc-app — check it's the station's own app
+    - kjzz: ios link found on https://www.kjzz.org/stream-plus — check it's the station's own app
+    - kjzz: android link found on https://www.kjzz.org/stream-plus — check it's the station's own app
+    - kuas: firetv link found on https://radio.azpm.org/kuaz/ — check it's the station's own app
+    - capradio: ios link found on https://www.capradio.org/about/app/ — check it's the station's own app
+    - capradio: android link found on https://www.capradio.org/about/app/ — check it's the station's own app
+    - kalw: android link found on https://www.kalw.org/kalw-app — check it's the station's own app
+    - kalw: ios link found on https://www.kalw.org/kalw-app — check it's the station's own app
     - kpbs: its apps page names ios but has no store link; linking the page
     - kpbs: its apps page names android but has no store link; linking the page
     - kpbs: its apps page names appletv but has no store link; linking the page
@@ -20,64 +37,232 @@ build-data report
     - kpbs: its apps page names lg but has no store link; linking the page
     - kpbs: ios link found on https://www.kpbs.org/kpbs-on-the-go — check it's the station's own app
     - kpbs: android link found on https://www.kpbs.org/kpbs-on-the-go — check it's the station's own app
-    - kqed-and-kqeh: firetv link found on https://www.kqed.org/tv — check it's the station's own app
+    - krcb: android link found on https://norcalpublicmedia.org/radio/radio — check it's the station's own app
+    - ksds: android link found on https://www.jazz88.org/ — check it's the station's own app
+    - ksds: ios link found on https://www.jazz88.org/ — check it's the station's own app
+    - kusc: ios link found on https://www.classicalcalifornia.org/ — check it's the station's own app
+    - kusc: android link found on https://www.classicalcalifornia.org/ — check it's the station's own app
+    - kvla: ios link found on https://laist.com/about-us/public/kvla — check it's the station's own app
+    - kvla: android link found on https://laist.com/about-us/public/kvla — check it's the station's own app
+    - kvpr: ios link found on https://www.kvpr.org/kvpr-app — check it's the station's own app
+    - kvpr: android link found on https://www.kvpr.org/kvpr-app — check it's the station's own app
+    - laist: ios link found on https://laist.com/ — check it's the station's own app
+    - laist: android link found on https://laist.com/ — check it's the station's own app
+    - pbs-socal: its apps page names ios but has no store link; linking the page
+    - pbs-socal: its apps page names appletv but has no store link; linking the page
+    - pbs-socal: its apps page names roku but has no store link; linking the page
+    - pbs-socal: its apps page names firetv but has no store link; linking the page
+    - pbs-socal: its apps page names androidtv but has no store link; linking the page
+    - pbs-socal: its apps page names samsung but has no store link; linking the page
     - pbs-socal: android link found on https://www.pbssocal.org/familymathapp — check it's the station's own app
     - pbs-socal: ios link found on https://www.pbssocal.org/familymathapp — check it's the station's own app
+    - the-grade: ios link found on https://thegradecountry.com/ — check it's the station's own app
+    - the-grade: android link found on https://thegradecountry.com/ — check it's the station's own app
+    - the-socal-sound: ios link found on https://www.thesocalsound.org/on-the-socal-sound/setup/ — check it's the station's own app
+    - the-socal-sound: android link found on https://www.thesocalsound.org/on-the-socal-sound/setup/ — check it's the station's own app
+    - four-corners-public-radio: ios link found on https://www.ksut.org/ksut-app — check it's the station's own app
+    - four-corners-public-radio: android link found on https://www.ksut.org/ksut-app — check it's the station's own app
+    - kbdi: its apps page names ios but has no store link; linking the page
+    - kbdi: its apps page names appletv but has no store link; linking the page
+    - kbdi: its apps page names roku but has no store link; linking the page
+    - kbdi: its apps page names firetv but has no store link; linking the page
+    - kbdi: its apps page names androidtv but has no store link; linking the page
+    - kbdi: its apps page names samsung but has no store link; linking the page
+    - kuvo: android link found on https://www.kuvo.org/ — check it's the station's own app
+    - kuvo: ios link found on https://www.kuvo.org/ — check it's the station's own app
+    - kvmt: android link found on https://www.kvnf.org/ — check it's the station's own app
+    - kvmt: ios link found on https://www.kvnf.org/news/2024-03-15/kvnf-now-has-a-listening-app — check it's the station's own app
     - rocky-mountain-pbs: appletv guessed from link text ".css-1jtdkxx.builder-block{width:100%;position:relative;min-height:20px;min-widt" — https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876
     - rocky-mountain-pbs: androidtv guessed from link text ".css-1qqloj9.builder-block{width:76%;position:relative;min-height:20px;min-width" — https://play.google.com/store/apps/details?id=org.localstreaming.krma
+    - the-colorado-sound: ios link found on https://coloradosound.org/colorado-sound-app-download/ — check it's the station's own app
+    - the-colorado-sound: android link found on https://coloradosound.org/colorado-sound-app-download/ — check it's the station's own app
     - weta: appletv guessed from link text "Watch on Apple TV" — https://apps.apple.com/us/app/weta/id6740541547
-    - lakeshore-pbs: firetv link found on https://www.lakeshorepublicmedia.org/how-to-watch — check it's the station's own app
+    - super: ios link found on https://mphs.brandywineschools.org/learning/wmph-917-fm-radio/live-streaming — check it's the station's own app
+    - wdde: ios link found on https://www.delawarepublic.org/mobile-app — check it's the station's own app
+    - wdde: android link found on https://www.delawarepublic.org/mobile-app — check it's the station's own app
+    - central-florida-public-media: ios link found on https://www.cfpublic.org/mobile-app — check it's the station's own app
+    - central-florida-public-media: android link found on https://www.cfpublic.org/mobile-app — check it's the station's own app
+    - wsmr: ios link found on https://www.wsmr.org/ways-to-listen/download-our-app — check it's the station's own app
+    - wsmr: android link found on https://www.wsmr.org/ways-to-listen/download-our-app — check it's the station's own app
+    - wusf: ios link found on https://www.wusf.org/download-our-app — check it's the station's own app
+    - wusf: android link found on https://www.wusf.org/download-our-app — check it's the station's own app
+    - wuwf: ios link found on https://www.wuwf.org/get-our-apps — check it's the station's own app
+    - wuwf: android link found on https://www.wuwf.org/get-our-apps — check it's the station's own app
+    - iowa-public-radio: ios link found on https://www.iowapublicradio.org/app — check it's the station's own app
+    - iowa-public-radio: android link found on https://www.iowapublicradio.org/app — check it's the station's own app
+    - siouxland-public-media: android link found on https://www.kwit.org/ — check it's the station's own app
+    - siouxland-public-media: ios link found on https://www.kwit.org/ — check it's the station's own app
+    - kisu: ios link found on https://www.kisu.org/kisu-public-radio-launches-new-mobile-app-for-enhanced-listening-experience — check it's the station's own app
+    - kisu: android link found on https://www.kisu.org/kisu-public-radio-launches-new-mobile-app-for-enhanced-listening-experience — check it's the station's own app
+    - quad-cities-npr: ios link found on https://www.wvik.org/wvik-app-faq — check it's the station's own app
+    - quad-cities-npr: android link found on https://www.wvik.org/wvik-app-faq — check it's the station's own app
+    - wbez: ios link found on https://www.wbez.org/mobile-apps — check it's the station's own app
+    - wbez: android link found on https://www.wbez.org/mobile-apps — check it's the station's own app
+    - indiana-public-radio: android link found on https://indianapublicradio.org/mobile-app/ — check it's the station's own app
+    - indiana-public-radio: ios link found on https://indianapublicradio.org/mobile-app/ — check it's the station's own app
     - wfyi: android link found on https://www.wfyi.org/watch-and-listen — check it's the station's own app
     - wfyi: ios link found on https://www.wfyi.org/watch-and-listen — check it's the station's own app
-    - wtiu: roku link found on https://www.ipm.org/tv/ — check it's the station's own app
-    - wtiu: firetv link found on https://www.ipm.org/tv/ — check it's the station's own app
-    - wtiu: lg link found on https://www.ipm.org/tv/ — check it's the station's own app
+    - kansas-public-radio: ios link found on https://kansaspublicradio.org/ — check it's the station's own app
+    - kansas-public-radio: android link found on https://kansaspublicradio.org/ — check it's the station's own app
+    - wrkf: ios link found on https://www.wrkf.org/download-our-app — check it's the station's own app
+    - wrkf: android link found on https://www.wrkf.org/download-our-app — check it's the station's own app
     - gbh: ios link found on https://www.wgbh.org/ — check it's the station's own app
     - gbh: android link found on https://www.wgbh.org/ — check it's the station's own app
-    - maine-public-broadcasting-network: firetv link found on https://www.mainepublic.org/ — check it's the station's own app
+    - quahog-country: ios link found on https://www.nantucketscountry.com/ — check it's the station's own app
+    - quahog-country: android link found on https://www.nantucketscountry.com/ — check it's the station's own app
+    - wcrb: ios link found on https://www.classicalwcrb.org/download-our-mobile-app — check it's the station's own app
+    - wcrb: android link found on https://www.classicalwcrb.org/download-our-mobile-app — check it's the station's own app
+    - wtmd: android link found on https://www.wtmd.org/radio/ — check it's the station's own app
+    - wtmd: ios link found on https://www.wtmd.org/radio/ — check it's the station's own app
+    - wtmd: firetv link found on https://www.wtmd.org/radio/listen-live/ — check it's the station's own app
+    - blue-lake-public-radio: android link found on https://www.bluelakeradio.org/ — check it's the station's own app
     - cmu-public-television: ios link found on https://www.wcmu.org/ — check it's the station's own app
     - cmu-public-television: android link found on https://www.wcmu.org/ — check it's the station's own app
-    - ksmq: firetv link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
-    - ksmq: roku link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
-    - lakeland-pbs: firetv link found on https://lptv.org/ — check it's the station's own app
-    - lakeland-pbs: roku link found on https://lptv.org/ — check it's the station's own app
-    - minnesota-pbs: firetv link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
-    - minnesota-pbs: roku link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
+    - michigan-public: android link found on https://www.michiganpublic.org/station-news/2019-06-25/download-the-michigan-radio-app — check it's the station's own app
+    - minnesota-public-radio: ios link found on https://www.mpr.org/app — check it's the station's own app
+    - minnesota-public-radio: android link found on https://www.mpr.org/app — check it's the station's own app
+    - npr-wkar: ios link found on https://www.wkar.org/all-things-npr-and-pbs-right-here-at-wkar — check it's the station's own app
+    - npr-wkar: android link found on https://www.wkar.org/all-things-npr-and-pbs-right-here-at-wkar — check it's the station's own app
+    - public-radio-mi: ios link found on https://www.wnmufm.org/mobile-apps — check it's the station's own app
+    - public-radio-mi: android link found on https://www.wnmufm.org/mobile-apps — check it's the station's own app
+    - waus: ios link found on https://www.waus.org/waus-app — check it's the station's own app
+    - waus: android link found on https://www.waus.org/waus-app — check it's the station's own app
+    - wcmu-public-radio: ios link found on https://www.wcmu.org/ — check it's the station's own app
+    - wcmu-public-radio: android link found on https://www.wcmu.org/ — check it's the station's own app
+    - wemu: ios link found on https://www.wemu.org/listen-live — check it's the station's own app
+    - north-shore-community-radio: ios link found on https://wtip.org/wtip-app/ — check it's the station's own app
+    - north-shore-community-radio: android link found on https://wtip.org/wtip-app/ — check it's the station's own app
+    - yourclassical-mpr: ios link found on https://www.yourclassical.org/mpr — check it's the station's own app
+    - yourclassical-mpr: android link found on https://www.yourclassical.org/mpr — check it's the station's own app
+    - yellowstone-public-radio: android link found on https://www.ypradio.org/ypr-mobile-app — check it's the station's own app
+    - yellowstone-public-radio: ios link found on https://www.ypradio.org/ypr-mobile-app — check it's the station's own app
     - pbs-charlotte: its apps page names ios but has no store link; linking the page
     - pbs-charlotte: its apps page names android but has no store link; linking the page
     - pbs-charlotte: its apps page names appletv but has no store link; linking the page
     - pbs-charlotte: its apps page names roku but has no store link; linking the page
     - pbs-charlotte: its apps page names firetv but has no store link; linking the page
+    - pbs-north-carolina: its apps page names ios but has no store link; linking the page
+    - pbs-north-carolina: its apps page names android but has no store link; linking the page
+    - pbs-north-carolina: its apps page names appletv but has no store link; linking the page
+    - pbs-north-carolina: its apps page names roku but has no store link; linking the page
+    - pbs-north-carolina: its apps page names firetv but has no store link; linking the page
+    - pbs-north-carolina: its apps page names androidtv but has no store link; linking the page
+    - pbs-north-carolina: its apps page names samsung but has no store link; linking the page
+    - pbs-north-carolina: its apps page names lg but has no store link; linking the page
     - pbs-north-carolina: ios link found on https://www.pbsnc.org/explore-nc-app/ — check it's the station's own app
     - pbs-north-carolina: android link found on https://www.pbsnc.org/explore-nc-app/ — check it's the station's own app
-    - pbs-reno: roku link found on https://www.pbsreno.org/about/how-to-watch/ — check it's the station's own app
-    - pbs-reno: firetv link found on https://www.pbsreno.org/about/how-to-watch/ — check it's the station's own app
+    - wfae: android link found on https://www.wfae.org/wfae-app — check it's the station's own app
+    - whqr-and: ios link found on https://www.whqr.org/local/2017-03-17/whqr-app — check it's the station's own app
+    - whqr-and: android link found on https://www.whqr.org/local/2017-03-17/whqr-app — check it's the station's own app
+    - wncu: ios link found on https://www.wncu.org/ — check it's the station's own app
+    - community-radio: ios link found on https://kzum.org/kzum-app-now-available-on-apple-and-android/ — check it's the station's own app
+    - community-radio: android link found on https://kzum.org/kzum-app-now-available-on-apple-and-android/ — check it's the station's own app
+    - nhpr: android link found on https://www.nhpr.org/nhpr-ios-android-apps — check it's the station's own app
+    - wbgo: ios link found on https://www.wbgo.org/top-stories/2026-07-04/the-ultimate-jazz-companion-discover-the-features-of-the-new-wbgo-app — check it's the station's own app
+    - wbgo: android link found on https://www.wbgo.org/top-stories/2026-07-04/the-ultimate-jazz-companion-discover-the-features-of-the-new-wbgo-app — check it's the station's own app
+    - wnyc: ios link found on https://wnyc.org/mobile — check it's the station's own app
+    - wnyc: android link found on https://wnyc.org/mobile — check it's the station's own app
+    - kunr-public-radiokncc-public-radio: ios link found on https://www.kunr.org/kunr-public-radio-app — check it's the station's own app
+    - kunr-public-radiokncc-public-radio: android link found on https://www.kunr.org/kunr-public-radio-app — check it's the station's own app
     - buffalo-toronto-public-media: appletv guessed from link text "Watch on Apple TV" — https://apps.apple.com/us/app/btpm/id6752734865
+    - exit: ios link found on https://www.wextradio.org/ — check it's the station's own app
+    - exit: android link found on https://www.wextradio.org/ — check it's the station's own app
+    - radio-catskill: ios link found on https://radiocatskill.org/ — check it's the station's own app
+    - wamc-northeast-public-radio: ios link found on https://www.wamc.org/mobileapp — check it's the station's own app
+    - wamc-northeast-public-radio: android link found on https://www.wamc.org/mobileapp — check it's the station's own app
+    - wrhv: ios link found on https://www.classicalwmht.org/ — check it's the station's own app
+    - wrhv: android link found on https://www.classicalwmht.org/ — check it's the station's own app
+    - wrvo: ios link found on https://www.wrvo.org/mobile-app — check it's the station's own app
+    - wrvo: android link found on https://www.wrvo.org/mobile-app — check it's the station's own app
+    - cincinnati-public-radio: ios link found on https://www.wvxu.org/wvxu-app — check it's the station's own app
+    - cincinnati-public-radio: android link found on https://www.wvxu.org/wvxu-app — check it's the station's own app
+    - jazzy: android link found on https://www.wcsufm.org/ — check it's the station's own app
+    - jazzy: firetv link found on https://www.wcsufm.org/ — check it's the station's own app
+    - think-tv: its apps page names ios but has no store link; linking the page
+    - think-tv: its apps page names android but has no store link; linking the page
+    - think-tv: its apps page names appletv but has no store link; linking the page
+    - think-tv: its apps page names roku but has no store link; linking the page
+    - think-tv: its apps page names firetv but has no store link; linking the page
+    - think-tv: its apps page names androidtv but has no store link; linking the page
+    - wcet: its apps page names ios but has no store link; linking the page
+    - wcet: its apps page names android but has no store link; linking the page
+    - wcet: its apps page names appletv but has no store link; linking the page
+    - wcet: its apps page names roku but has no store link; linking the page
+    - wcet: its apps page names firetv but has no store link; linking the page
+    - wcet: its apps page names androidtv but has no store link; linking the page
+    - wdpr: android link found on https://www.discoverclassical.org/streaming.htm — check it's the station's own app
+    - wdpr: ios link found on https://www.discoverclassical.org/streaming.htm — check it's the station's own app
+    - wguc: ios link found on https://wguc.org/ — check it's the station's own app
+    - wguc: android link found on https://wguc.org/ — check it's the station's own app
+    - wmub: ios link found on https://www.wvxu.org/wvxu-app — check it's the station's own app
+    - wmub: android link found on https://www.wvxu.org/wvxu-app — check it's the station's own app
+    - wose: ios link found on https://www.wosu.org/wosu-public-media-mobile-app/ — check it's the station's own app
+    - wose: android link found on https://www.wosu.org/wosu-public-media-mobile-app/ — check it's the station's own app
+    - wysu: android link found on https://wysu.org/mobile-app — check it's the station's own app
+    - wysu: ios link found on https://wysu.org/mobile-app — check it's the station's own app
+    - kgou: ios link found on https://www.kgou.org/ibuy-app — check it's the station's own app
+    - kgou: android link found on https://www.kgou.org/ibuy-app — check it's the station's own app
+    - jefferson-public-radio: ios link found on https://www.ijpr.org/ — check it's the station's own app
+    - jefferson-public-radio: android link found on https://www.ijpr.org/ — check it's the station's own app
+    - lehigh-valley-public-radio: android link found on https://www.wdiy.org/wdiy-app — check it's the station's own app
+    - lehigh-valley-public-radio: ios link found on https://www.wdiy.org/wdiy-app — check it's the station's own app
     - whyy: appletv guessed from link text "Apple TV Apple TV logo" — https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837
+    - wlvr: android link found on https://wlvr.org/ — check it's the station's own app
     - wqed: appletv guessed from link text "Apple TV icon" — https://apps.apple.com/us/app/wqed/id6752442766
     - wqed: androidtv guessed from link text "Google TV icon" — https://play.google.com/store/apps/details?id=org.localstreaming.wqed
+    - wrti: ios link found on https://www.wrti.org/listen-on-the-wrti-mobile-app — check it's the station's own app
+    - wrti: android link found on https://www.wrti.org/listen-on-the-wrti-mobile-app — check it's the station's own app
     - wvia: ios link found on https://www.wvia.org/ — check it's the station's own app
     - wvia: android link found on https://www.wvia.org/ — check it's the station's own app
+    - wyep: ios link found on https://www.wyep.org/wyep-app — check it's the station's own app
+    - wyep: android link found on https://www.wyep.org/wyep-app — check it's the station's own app
     - south-carolina-educational-television: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/scetv/id6772544565
-    - nashville-pbs: firetv link found on https://www.wnpt.org/watch/pbsapp/ — check it's the station's own app
+    - one: ios link found on https://wnxp.org/ — check it's the station's own app
+    - nashville-public-radio: ios link found on https://wpln.org/ — check it's the station's own app
+    - nashville-public-radio: android link found on https://wpln.org/ — check it's the station's own app
     - houston-public-media: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/hpm/id6755161777
     - houston-public-media: androidtv guessed from link text "Android TV" — https://play.google.com/store/apps/details?id=org.localstreaming.kuht
     - kedt: android link found on https://www.kedt.org/ — check it's the station's own app
+    - kmfa: ios link found on https://www.kmfa.org/ — check it's the station's own app
+    - kmfa: android link found on https://www.kmfa.org/ — check it's the station's own app
+    - ktpd: ios link found on https://www.tpr.org/tpr-app — check it's the station's own app
+    - ktpd: android link found on https://www.tpr.org/tpr-app — check it's the station's own app
+    - kwbu: ios link found on https://www.kwbu.org/local-news/2018-02-08/kwbu-mobile-app — check it's the station's own app
+    - kwbu: android link found on https://www.kwbu.org/local-news/2018-02-08/kwbu-mobile-app — check it's the station's own app
+    - kpcw: android link found on https://www.kpcw.org/app — check it's the station's own app
+    - kpcw: ios link found on https://www.kpcw.org/app — check it's the station's own app
+    - allegheny-mountain-radio: ios link found on https://www.alleghenymountainradio.org/ — check it's the station's own app
+    - allegheny-mountain-radio: android link found on https://www.alleghenymountainradio.org/ — check it's the station's own app
     - blue-ridge-pbs: android link found on https://www.blueridgepbs.org/ — check it's the station's own app
     - blue-ridge-pbs: ios link found on https://www.blueridgepbs.org/ — check it's the station's own app
     - pbs-appalachia-virginia: roku link found on https://www.pbsavirginia.org/ — check it's the station's own app
     - whro: appletv guessed from link text "AppleTV" — https://apps.apple.com/us/app/whro-public-media/id6741328420
+    - wmra: ios link found on https://www.wmra.org/wmra-app — check it's the station's own app
+    - wmra: android link found on https://www.wmra.org/wmra-app — check it's the station's own app
+    - wnrn: ios link found on https://wnrn.org/ — check it's the station's own app
+    - wnrn: android link found on https://wnrn.org/ — check it's the station's own app
     - cascade-pbs: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/worlds-best-television/id1578709872
-    - kbtc-and-kcka: firetv link found on https://www.kbtc.org/watch-on-demand/pbs-app/ — check it's the station's own app
+    - kexp: ios link found on https://kexp.org/archive/ — check it's the station's own app
+    - kexp: android link found on https://kexp.org/archive/ — check it's the station's own app
+    - kibx: ios link found on https://www.spokanepublicradio.org/programming/2026-08-28/the-spokane-public-radio-mobile-app — check it's the station's own app
+    - kibx: android link found on https://www.spokanepublicradio.org/programming/2026-08-28/the-spokane-public-radio-mobile-app — check it's the station's own app
+    - milwaukee-s-npr: ios link found on https://www.wuwm.com/app — check it's the station's own app
+    - milwaukee-s-npr: android link found on https://www.wuwm.com/app — check it's the station's own app
     - west-virginia-public-broadcasting: ios link found on https://wvpublic.org/ — check it's the station's own app
     - west-virginia-public-broadcasting: android link found on https://wvpublic.org/ — check it's the station's own app
-    - kvie: paired https://channelstore.roku.com/details/23353/pbs with "Another app" by position on the page
+    - wyoming-pbs: its apps page names ios but has no store link; linking the page
+    - wyoming-pbs: its apps page names appletv but has no store link; linking the page
+    - wyoming-pbs: its apps page names roku but has no store link; linking the page
+    - wyoming-pbs: its apps page names androidtv but has no store link; linking the page
+    - wyoming-pbs: its apps page names samsung but has no store link; linking the page
     - kpbs: paired https://play.google.com/store/apps/details?id=com.jacapps.kpbs with "KPBS News" by position on the page
     - georgia-public-broadcasting: paired https://play.google.com/store/apps/details?id=org.gpb.gpbfootball with "GPB Sports" by position on the page
     - wfyi: paired https://play.google.com/store/apps/details?id=com.skyblue.pra.wbaa with "Wbaa Public Radio App" by position on the page
     - whyy: paired https://play.google.com/store/apps/details?id=com.jacapps.whyy with "WHYY Greater Phillys NPR" by position on the page
     - whyy: paired https://play.google.com/store/apps/details?id=com.stitcher.app with "Podcasts" by position on the page
     - south-carolina-educational-television: paired https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv with "South Carolina Etv" by position on the page
+    - wuwf: paired https://play.google.com/store/apps/details?id=com.mobiquityinc.uf_florida_storms_android with "Florida Storms" by position on the page
+    - minnesota-public-radio: paired https://play.google.com/store/apps/details?id=org.americanpublicmedia.thecurrent with "Another app" by position on the page
     - WYIN (fcc-49803) appears under two stations; kept under the first, not lakeshore-pbs
 
   Merged rows: 16
@@ -389,18 +574,23 @@ build-data report
     - KUWT 91.3 FM (Thermopolis, WY)
     - KEUW 89.9 FM (Torrington, WY)
 
-  Livestream links found on homepages (check they are right): 116
+  Livestream links found on homepages (check they are right): 132
     - alaska-public-media: livestream "Live TV" → https://video.alaskapublic.org/livestream/
+    - ktna: livestream "LIVE" → https://ktna.org/live-radio/
     - kuac: livestream "Watch Live" → https://www.pbs.org/livestream/
     - arkansas-tv: livestream "Live TV" → https://www.arkansastv.gov/live
+    - kalw: livestream "NPR 24 Livestream" → https://www.kalw.org/on-air-schedule
     - klcs: livestream "watch.klcs.org/livestream" → https://watch.klcs.org/livestream/
     - kpbs: livestream "Watch Live" → https://www.kpbs.org/watch-live
     - kqed-and-kqeh: livestream "Livestream KQED 9" → https://www.kqed.org/livetv?fr=navbar
+    - krcb: livestream "Live TV" → https://norcalpublicmedia.org/krcb-kpjk-nhk-tv-live
+    - kvcr: livestream "LIVE TV" → https://www.kvcr.org/live/
     - kvcr-dt: livestream "Live TV" → https://kvcr.org/tv/live
     - kvie: livestream "Live TV" → https://www.kvie.org/live/
     - pbs-socal: livestream "Watch Live" → https://www.pbssocal.org/live
     - valley-pbs: livestream "WATCH LIVE" → https://video.valleypbs.org/livestream/?_ga=2.29010556.1785486690.1678723916-728915228.1664839299
     - kbdi: livestream "Live TV" → https://www.pbs12.org/livestream
+    - krza: livestream "KRZA Live Stream (Live Radio US)" → https://liveradious.com/8503-krza-radio.html
     - rocky-mountain-pbs: livestream "Live tv" → https://www.rmpbs.org/live/rmpbs
     - connecticut-public-television: livestream "WNPR Radio Livestream" → https://www.ctpublic.org/listen/radio/livestream
     - weta: livestream "Live TV" → https://weta.org/live
@@ -415,6 +605,7 @@ build-data report
     - pbs-hawai-i: livestream "LIVE TV" → https://www.pbs.org/
     - iowa-pbs: livestream "LIVE TV" → https://www.iowapbs.org/watch/live
     - idaho-public-television: livestream "LIVE TV" → https://www.idahoptv.org/watch/streaming/
+    - will-main-program-illinois-soul: livestream "Play the WILL AM news & talk livestream" → https://will.illinois.edu/am/willplayer
     - wqpt: livestream "LIVE TV" → https://video.wqpt.org/livestream/
     - wsiu-and-wusi: livestream "Live TV" → https://www.wsiu.org/live-tv
     - wttw-and-wyin: livestream "Live TV" → https://www.wttw.com/wttw-live-stream
@@ -431,13 +622,17 @@ build-data report
     - kentucky-educational-television: livestream "Live" → https://ket.org/live/
     - wku-pbs: livestream "LIVE TV" → https://video.wkyupbs.org/livestream/
     - louisiana-public-broadcasting: livestream "Live TV" → https://video.lpb.org/livestream/
+    - radio-acadie: livestream "Festivals Acadiens et Creole Livestream" → https://www.krvs.org/2026-10-05/festivals-acadiens-et-creole-livestream-schedule
     - wyes: livestream "Live" → https://www.wyes.org/live/
     - gbh: livestream "Watch Live" → https://www.wgbh.org/tv-shows/gbh-channel-2
     - maryland-public-television: livestream "WATCH LIVE" → https://www.mpt.org/showcase/
     - maine-public-broadcasting-network: livestream "Live TV stream" → https://www.mainepublic.org/watch-maine-public-television-live-stream
     - cmu-public-television: livestream "Live TV" → https://www.wcmu.org/WCMUPBSLive
     - delta-college-public-media: livestream "Watch Live" → https://www.deltapublicmedia.org/watch/
+    - delta-college-public-radio: livestream "Watch Live" → https://www.deltapublicmedia.org/watch/
     - detroit-pbs: livestream "LIVE TV" → https://www.detroitpbs.org/live-tv/wtvs-hdtv/
+    - npr-wkar: livestream "Live TV" → https://video.wkar.org/livestream/?utm_source=regB&utm_medium=livetv&utm_campaign=sitenav
+    - wcmu-public-radio: livestream "Live TV" → https://www.wcmu.org/WCMUPBSLive
     - wgvu-public-media: livestream "NPR 88.5 live stream" → https://www.wgvu.org/fm-live/
     - wnmu: livestream "LIVE TV" → https://wnmuvideo.nmu.edu/livestream/
     - ksmq: livestream "Live TV" → https://minnesotapbs.org/pages/live-tv
@@ -447,6 +642,7 @@ build-data report
     - pioneer-pbs: livestream "LIVE TV" → https://www.pioneer.org/live/
     - kansas-city-pbs: livestream "Live TV" → https://www.kansascitypbs.org/kansas-city-pbs-livestream/
     - kmos: livestream "LIVE TV" → https://www.pbs.org/livestream/
+    - kopn: livestream "Live Stream" → https://kopn.broadcasttool.stream/play
     - ozarks-public-television: livestream "LIVE TV" → https://www.pbs.org/livestream/
     - mississippi-public-broadcasting: livestream "Watch Live TV" → https://www.mpbonline.org/television/livestream/
     - montana-pbs: livestream "Live Stream" → https://watch.montanapbs.org/livestream/
@@ -455,6 +651,7 @@ build-data report
     - prairie-public-television: livestream "Live TV" → https://www.pbs.org/livestream/
     - nebraska-public-media: livestream "Live" → https://nebraskapublicmedia.org/en/schedules/
     - new-hampshire-pbs: livestream "WATCH LIVE" → https://nhpbs.org/livestream/?selected=ga-main
+    - nhpr: livestream "Livestream Troubleshooting" → https://www.nhpr.org/having-trouble-with-nhprs-livestream-player
     - nj-pbs: livestream "Live" → https://njpbs.org/live/
     - krwg: livestream "Live TV" → https://www.krwg.org/live-tv
     - new-mexico-pbs: livestream "Live TV" → https://portal.knme.org/livestream/
@@ -469,12 +666,15 @@ build-data report
     - ideastream-public-media: livestream "Live TV" → https://www.ideastream.org/wviz-livestream
     - pbs-western-reserve: livestream "Live TV" → https://www.pbswesternreserve.org/live-tv/
     - wgte: livestream "Watch Live" → https://player.pbs.org/ga-livestream-partnerplayer/?station_id=2bff28d0-08be-43a9-9dc0-6d3584e278d6
+    - wksu-ideastream-public-media: livestream "Live TV" → https://www.ideastream.org/wviz-livestream
+    - wose: livestream "Live TV" → https://www.wosu.org/television/wosu-tv-livestream
     - wosu: livestream "Live TV" → https://www.wosu.org/television/wosu-tv-livestream
     - oklahoma-educational-television-authority: livestream "LIVE TV" → https://www.oeta.tv/live
     - southern-oregon-pbs: livestream "WATCH LIVE" → https://www.sopbs.org/live/
     - pbs-39: livestream "Live TV" → https://video.wlvt.org/livestream/
     - whyy: livestream "Live TV" → https://whyy.org/watch-now/
     - witf: livestream "Watch Live" → https://www.witf.org/watch/
+    - wpsu-penn-state: livestream "WPSU Live Stream" → https://live.wpsu.org/
     - wqed: livestream "WATCH LIVE" → https://www.wqed.org/livestream/
     - wqln: livestream "LIVE TV" → https://www.wqln.org/watch-live-tv
     - wvia: livestream "Live TV" → https://www.wvia.org/wvia-live-tv
@@ -504,14 +704,15 @@ build-data report
     - ksps: livestream "KSPS PBS Live TV - US" → https://video.ksps.org/livestream/
     - milwaukee-pbs: livestream "Watch Live" → https://www.milwaukeepbs.org/watch-live
     - pbs-wisconsin: livestream "Live TV" → https://pbswisconsin.org/livetv/
+    - wrfw: livestream "live stream" → https://www.wrfw887.com/listen-live.html
     - west-virginia-public-broadcasting: livestream "WVPB Live Stream" → https://video.wvpublic.org/livestream/
     - wyoming-pbs: livestream "How to Livestream" → https://www.wyomingpbs.org/app/
 
-  Extra apps (a second app for the same platform; set extra/name in station-apps.yaml if wrong): 24
+  Extra apps (a second app for the same platform; set extra/name in station-apps.yaml if wrong): 32
     - kpbs: extra ios app https://apps.apple.com/us/app/kpbs-news/id1305075995 (main: https://apps.apple.com/us/app/kpbs/id6741001514)
     - kpbs: extra android app https://play.google.com/store/apps/details?id=com.jacapps.kpbs (main: https://play.google.com/store/apps/details?id=org.localstreaming.kpbs)
-    - kvie: extra firetv app https://www.amazon.com/dp/B008Z2NVGK (main: https://www.amazon.com/dp/B0F5XB6BQL)
-    - kvie: extra roku app https://channelstore.roku.com/details/23353/pbs (main: https://channelstore.roku.com/details/ccf90dd41f8e5518e9d6a1082486e7ef:5e8ea1044757b549d4a4e3e4843bed4d/kvie-pbs-kvie)
+    - wuwf: extra ios app https://apps.apple.com/us/app/florida-storms/id1011397030 (main: https://apps.apple.com/us/app/wuwf-public-radio-app/id644895016)
+    - wuwf: extra android app https://play.google.com/store/apps/details?id=com.mobiquityinc.uf_florida_storms_android (main: https://play.google.com/store/apps/details?id=com.skyblue.pra.wuwf)
     - georgia-public-broadcasting: extra ios app https://apps.apple.com/us/app/gpb-sports/id455158040 (main: https://apps.apple.com/us/app/gpb/id940297307)
     - georgia-public-broadcasting: extra android app https://play.google.com/store/apps/details?id=org.gpb.gpbfootball (main: https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb)
     - georgia-public-broadcasting: extra ios app https://apps.apple.com/us/app/gpb-classical/id6443334692 (main: https://apps.apple.com/us/app/gpb/id940297307)
@@ -524,6 +725,14 @@ build-data report
     - kentucky-educational-television: extra android app https://play.google.com/store/apps/details?id=org.ket.legislativecoverage (main: https://play.google.com/store/apps/details?id=com.publicmediaapps.kettv)
     - kentucky-educational-television: extra ios app https://apps.apple.com/us/app/ket-legislative-coverage/id786591133 (main: https://apps.apple.com/us/app/ket-videos-schedules/id1298153586)
     - kentucky-educational-television: extra ios app https://apps.apple.com/us/app/ket-fastforward-skill-check/id1321050730 (main: https://apps.apple.com/us/app/ket-videos-schedules/id1298153586)
+    - minnesota-public-radio: extra ios app https://apps.apple.com/app/apple-store/id1334353737 (main: https://apps.apple.com/app/apple-store/id400286612)
+    - minnesota-public-radio: extra android app https://play.google.com/store/apps/details?id=org.americanpublicmedia.thecurrent (main: https://play.google.com/store/apps/details?id=org.mpr.mprnews)
+    - minnesota-public-radio: extra ios app https://apps.apple.com/app/apple-store/id1564157090 (main: https://apps.apple.com/app/apple-store/id400286612)
+    - minnesota-public-radio: extra android app https://play.google.com/store/apps/details?id=org.americanpublicmedia.classical (main: https://play.google.com/store/apps/details?id=org.mpr.mprnews)
+    - minnesota-public-radio: extra ios app https://apps.apple.com/app/apple-store/id1622081582 (main: https://apps.apple.com/app/apple-store/id400286612)
+    - minnesota-public-radio: extra android app https://play.google.com/store/apps/details?id=org.americanpublicmedia.urbanradio (main: https://play.google.com/store/apps/details?id=org.mpr.mprnews)
+    - exit: extra android app https://play.google.com/store/apps/details?id=com.jacobsmedia.wext1 (main: https://play.google.com/store/apps/details?id=com.jacobsmedia.WEXT)
+    - wrhv: extra android app https://play.google.com/store/apps/details?id=com.jacobsmedia.wmht1 (main: https://play.google.com/store/apps/details?id=com.jacobsmedia.WMHT)
     - whyy: extra ios app https://apps.apple.com/us/app/whyy-greater-phillys-npr/id1246315452 (main: https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837)
     - whyy: extra android app https://play.google.com/store/apps/details?id=com.jacapps.whyy (main: https://play.google.com/store/apps/details?id=org.localstreaming.whyy)
     - whyy: extra ios app https://apps.apple.com/us/app/podcasts/id525463029 (main: https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837)
@@ -532,6 +741,16 @@ build-data report
     - wqed: extra android app https://play.google.com/store/apps/details?id=com.jacapps.wqed (main: https://play.google.com/store/apps/details?id=org.localstreaming.wqed)
     - south-carolina-educational-television: extra ios app https://apps.apple.com/us/app/south-carolina-etv/id1056289468 (main: https://apps.apple.com/us/app/scetv/id6772544565)
     - south-carolina-educational-television: extra android app https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv (main: https://play.google.com/store/apps/details?id=org.localstreaming.wrlk)
+
+  Map placement (station shown at a transmitter instead of its home city): 8
+    - krbd: couldn't place Ketchikan, AK; shown at KRBD
+    - central-florida-public-media: couldn't place Cedar Creek, FL; shown at WMFV
+    - pbs-hawai-i: no home city found; shown at KHET
+    - high-plains-public-radio: couldn't place Amarillo, KS; shown at KJJP
+    - red-river-radio: couldn't place Overton, LA; shown at KTYK
+    - mississippi-public-broadcasting: couldn't place Mississippi State, MS; shown at WMAB-TV1
+    - wnyc: couldn't place New York, NJ; shown at WNYC
+    - jefferson-public-radio: couldn't place Bayside, OR; shown at KNHM
 
   Station ids:
     AK  9fm-kenai-and-soldotna                       .9FM Kenai and Soldotna

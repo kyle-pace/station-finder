@@ -1,13 +1,16 @@
 ---
-// Map of every station transmitter, drawn as plain SVG at build time: no map tiles and no
-// requests to any other server. State outlines come from the us-atlas package (U.S.
-// Census cartographic boundaries, pre-projected to Albers USA, 975×610).
+// Map of every station, one dot where each station is based (its home city), drawn as
+// plain SVG at build time: no map tiles and no requests to any other server. State
+// outlines come from the us-atlas package (U.S. Census cartographic boundaries,
+// pre-projected to Albers USA, 975×610).
 //
 // Interaction (all in the browser, nothing sent anywhere):
-//   - hover a state: it lights up with its station count; click/tap to zoom in
-//   - hover a dot: a small card about the station (network, city, apps, livestream),
-//     and the station's other transmitters light up; click/tap pins the card, whose
-//     button opens the station page. Without JavaScript the dots are plain links.
+//   - show all stations, TV only, or radio only
+//   - zoom: click/tap a state, use the + and − buttons, pinch or drag on a phone,
+//     ctrl/⌘ + scroll or a trackpad pinch on a computer, double-click to zoom in;
+//     "All of the US", Esc, or clicking outside the states zooms back out
+//   - hover a dot: a small card about the station; click/tap pins it, and its button
+//     opens the station page. Without JavaScript the dots are plain links.
 // Every dot and card looks the same for every station.
 //
 // Places outside the Albers USA projection (Puerto Rico and other territories) are
@@ -17,77 +20,129 @@ import { join } from 'node:path';
 import { feature, mesh } from 'topojson-client';
 import { geoAlbersUsa, geoPath } from 'd3-geo';
 import type { Topology, GeometryCollection } from 'topojson-specification';
-import { organizations, facilities, national, metaLine, statesWithStations, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES } from '../lib/data';
+import { organizations, national, metaLine, statesOf, facilitiesFor, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES } from '../lib/data';
 import { url } from '../lib/site';
+import Icon from './Icon.astro';
 
 const topo = JSON.parse(readFileSync(join(process.cwd(), 'node_modules', 'us-atlas', 'states-albers-10m.json'), 'utf8')) as Topology;
 const statesObj = topo.objects.states as GeometryCollection<{ name: string }>;
 const path = geoPath().digits(1); // shapes are already projected
 const projection = geoAlbersUsa().scale(1300).translate([487.5, 305]); // matches us-atlas *-albers files
 const codeByName = Object.fromEntries(Object.entries(STATE_NAMES).map(([code, name]) => [name, code]));
-const orgById = new Map(organizations.map((o) => [o.id, o]));
-const countByState = new Map(statesWithStations.map((s) => [s.code, s.count]));
+
+type Kind = 'tv' | 'radio' | 'both';
+const kindOf = (m: string[]): Kind => (m.includes('tv') ? (m.includes('radio') ? 'both' : 'tv') : 'radio');
+
+// Station counts per state for each filter (a station counts in every state it broadcasts in).
+const counts = new Map<string, { all: number; tv: number; radio: number }>();
+for (const o of organizations) {
+  const k = kindOf(o.mediaTypes);
+  for (const st of statesOf(o)) {
+    const c = counts.get(st) ?? { all: 0, tv: 0, radio: 0 };
+    c.all++;
+    if (k !== 'radio') c.tv++;
+    if (k !== 'tv') c.radio++;
+    counts.set(st, c);
+  }
+}
 
 const states = feature(topo, statesObj).features.map((f) => {
   const code = codeByName[f.properties.name] ?? '';
   const [[x0, y0], [x1, y1]] = path.bounds(f);
-  return { code, name: f.properties.name, d: path(f) ?? '', box: [x0, y0, x1 - x0, y1 - y0].map((n) => Math.round(n)).join(' '), count: countByState.get(code) ?? 0 };
+  const c = counts.get(code) ?? { all: 0, tv: 0, radio: 0 };
+  return { code, name: f.properties.name, d: path(f) ?? '', box: [x0, y0, x1 - x0, y1 - y0].map((n) => Math.round(n)).join(' '), c };
 });
 const borders = path(mesh(topo, statesObj, (a, b) => a !== b)) ?? '';
 
-const dots: { x: number; y: number; org: string; call: string; label: string; radio: boolean }[] = [];
+// One dot per station. Stations based in the same city are fanned out in a small
+// sunflower pattern so each one can be picked once you zoom in.
+const placed: { x: number; y: number; id: string; kind: Kind; label: string }[] = [];
 const offMap = new Map<string, { code: string; name: string }>();
-for (const f of facilities) {
-  const org = orgById.get(f.organizationId);
-  if (!org) continue;
-  const p = projection([f.lng, f.lat]);
-  if (!p) { offMap.set(org.state, { code: org.state, name: STATE_NAMES[org.state] ?? org.state }); continue; }
-  const call = f.frequency ? `${f.callSign} ${f.frequency}` : f.callSign;
-  dots.push({ x: Math.round(p[0] * 10) / 10, y: Math.round(p[1] * 10) / 10, org: org.id, call, label: `${org.name} · ${call}${f.city ? `, ${f.city}` : ''}`, radio: f.service !== 'tv' });
+for (const o of organizations) {
+  if (!o.home) continue;
+  const p = projection([o.home.lng, o.home.lat]);
+  if (!p) { offMap.set(o.state, { code: o.state, name: STATE_NAMES[o.state] ?? o.state }); continue; }
+  placed.push({ x: p[0], y: p[1], id: o.id, kind: kindOf(o.mediaTypes), label: `${o.name}, ${o.home.city ?? STATE_NAMES[o.state]}` });
 }
-const stationCount = new Set(dots.map((d) => d.org)).size;
+const clusters = new Map<string, typeof placed>();
+for (const d of placed) {
+  const key = `${Math.round(d.x / 2)},${Math.round(d.y / 2)}`;
+  clusters.set(key, [...(clusters.get(key) ?? []), d]);
+}
+const dots = [...clusters.values()].flatMap((group) =>
+  group.sort((a, b) => a.label.localeCompare(b.label)).map((d, i) => {
+    if (group.length === 1) return d;
+    const angle = i * 2.39996; // golden angle
+    const r = 1.1 * Math.sqrt(i + 0.5);
+    return { ...d, x: d.x + r * Math.cos(angle), y: d.y + r * Math.sin(angle) };
+  }),
+).map((d) => ({ ...d, x: Math.round(d.x * 10) / 10, y: Math.round(d.y * 10) / 10 }));
+const total = { all: dots.length, tv: dots.filter((d) => d.kind !== 'radio').length, radio: dots.filter((d) => d.kind !== 'tv').length };
 
 // What the hover card says about each station on the map (same fields for every station).
 const info = Object.fromEntries(
-  [...new Set(dots.map((d) => d.org))].map((id) => {
-    const o = orgById.get(id)!;
+  dots.map(({ id }) => {
+    const o = organizations.find((x) => x.id === id)!;
     const own = PLATFORM_ORDER.filter((p) => o.apps.some((a) => a.platform === p && !a.extra));
     const fallback = national.find((b) => o.networks.map((n) => n.toLowerCase()).includes(b.id))?.name;
-    const transmitters = dots.filter((d) => d.org === id).length;
+    const fac = facilitiesFor(o);
+    const main = fac.find((f) => o.name.toUpperCase().startsWith(f.callSign.replace(/-.*$/, '')));
+    const calls = [...(main ? [main] : []), ...fac.filter((f) => f !== main)].map((f) => (f.frequency ? `${f.callSign} ${f.frequency}` : f.callSign));
     return [id, {
       name: o.name,
       meta: metaLine(o),
-      apps: own.map((p) => PLATFORM_INFO[p].label.replace(/^Watch on the web$/, 'Web')),
+      calls: calls.length ? `On air as ${calls[0]}${calls.length > 1 ? ` + ${calls.length - 1} more` : ''}` : '',
+      apps: own.map((p) => PLATFORM_INFO[p].label.replace(/^On the web$/, 'Web')),
       fallback: fallback ?? null,
       live: !!o.livestreamUrl,
-      tx: transmitters,
       href: url(`/station/${id}/`),
     }];
   }),
 );
+const FILTERS = [
+  { key: 'all', label: 'All stations', n: total.all },
+  { key: 'tv', label: 'TV', n: total.tv },
+  { key: 'radio', label: 'Radio', n: total.radio },
+] as const;
 ---
-<div class="station-map" id="map" data-map>
+<div class="station-map" id="map" data-map data-total={JSON.stringify(total)}>
   <div class="map-bar">
-    <p class="small muted" data-map-status>{stationCount} stations, {dots.length} transmitters. Pick a state to zoom in, then a dot to learn about that station.</p>
-    <button class="btn btn-quiet" type="button" data-map-reset hidden>← All of the US</button>
+    <div class="filters" role="group" aria-label="Show">
+      {FILTERS.map((f) => (
+        <button type="button" class="filter" data-filter={f.key} aria-pressed={f.key === 'all' ? 'true' : 'false'}>
+          {f.key !== 'all' && <span class:list={['key', f.key]} aria-hidden="true"></span>}
+          {f.label} <span class="n">{f.n}</span>
+        </button>
+      ))}
+    </div>
+    <p class="legend caption muted" aria-hidden="true">
+      <span><span class="key tv"></span>TV station</span>
+      <span><span class="key radio"></span>Radio station</span>
+      <span><span class="key both"></span>TV &amp; radio</span>
+    </p>
   </div>
-  <p class="legend caption muted" aria-hidden="true"><span class="key tv"></span>TV transmitter <span class="key radio"></span>Radio transmitter</p>
+  <p class="small muted" data-map-status aria-live="polite">Pick a state or zoom in, then a dot to learn about that station.</p>
   <div class="map-frame" data-frame>
     <svg viewBox="0 0 975 610" data-full="0 0 975 610" role="group" aria-label="Map of public media stations in the United States">
       <g class="states">
         {states.map((s) => (
-          <path d={s.d} data-state={s.code} data-name={s.name} data-box={s.box} data-count={s.count} />
+          <path d={s.d} data-state={s.code} data-name={s.name} data-box={s.box} data-all={s.c.all} data-tv={s.c.tv} data-radio={s.c.radio} />
         ))}
       </g>
       <path class="borders" d={borders} />
       <g class="dots">
         {dots.map((d) => (
-          <a href={url(`/station/${d.org}/`)} aria-label={d.label} data-org={d.org} data-call={d.call} class:list={[d.radio && 'radio']}>
+          <a href={url(`/station/${d.id}/`)} aria-label={d.label} data-org={d.id} class={d.kind}>
             <circle cx={d.x} cy={d.y} r="4" />
           </a>
         ))}
       </g>
     </svg>
+    <div class="zoom-controls">
+      <button type="button" class="zoom-btn" data-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" class="zoom-btn" data-zoom="out" aria-label="Zoom out">−</button>
+      <button type="button" class="zoom-btn" data-zoom="reset" aria-label="Show all of the US" title="All of the US" hidden><Icon name="fit" /></button>
+    </div>
     <p class="map-tip caption" data-map-tip hidden></p>
     <div class="map-card" data-map-card role="dialog" aria-label="Station details" hidden>
       <button class="card-close" type="button" data-card-close aria-label="Close">×</button>
@@ -98,7 +153,11 @@ const info = Object.fromEntries(
       <a class="btn btn-primary" data-card-link href="#">View station →</a>
     </div>
   </div>
-  <a class="label" data-map-state-link hidden href="#"></a>
+  <div class="map-foot">
+    <button class="btn btn-secondary" type="button" data-map-reset hidden>← Zoom out to all of the US</button>
+    <a class="label" data-map-state-link hidden href="#"></a>
+  </div>
+  <p class="caption muted">Each dot is the city a station is based in. Stations reach well beyond it: search by ZIP code to see every station you can get.</p>
   {offMap.size > 0 && (
     <p class="small muted">
       Not shown on the map:{' '}
@@ -111,7 +170,11 @@ const info = Object.fromEntries(
 <script>
   import { STATE_NAMES } from '../lib/states';
 
-  interface Info { name: string; meta: string; apps: string[]; fallback: string | null; live: boolean; tx: number; href: string }
+  interface Info { name: string; meta: string; calls: string; apps: string[]; fallback: string | null; live: boolean; href: string }
+  type Filter = 'all' | 'tv' | 'radio';
+
+  const W = 975, H = 610;
+  const MAX_ZOOM = 24;
 
   for (const root of document.querySelectorAll<HTMLElement>('[data-map]')) {
     const svg = root.querySelector('svg')!;
@@ -119,43 +182,98 @@ const info = Object.fromEntries(
     const tip = root.querySelector<HTMLElement>('[data-map-tip]')!;
     const card = root.querySelector<HTMLElement>('[data-map-card]')!;
     const reset = root.querySelector<HTMLButtonElement>('[data-map-reset]')!;
+    const resetIcon = root.querySelector<HTMLButtonElement>('[data-zoom="reset"]')!;
     const status = root.querySelector<HTMLElement>('[data-map-status]')!;
     const stateLink = root.querySelector<HTMLAnchorElement>('[data-map-state-link]')!;
     const info = JSON.parse(root.querySelector('[data-map-info]')!.textContent!) as Record<string, Info>;
-    const initialStatus = status.textContent;
+    const total = JSON.parse(root.dataset.total!) as Record<Filter, number>;
     const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     const touch = matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0;
     const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let box = svg.getAttribute('data-full')!.split(' ').map(Number);
+    let box = [0, 0, W, H];
+    let filter: Filter = 'all';
+    let activeState: SVGPathElement | null = null;
+    let shown: SVGAElement | null = null; // dot whose card is open
     let pinned: SVGAElement | null = null;
+    let frameId = 0;
 
-    // --- Sizing and zoom ---------------------------------------------------------
-    // Dots stay the same size on screen (big enough to tap) at any zoom or screen width.
-    const sizeDots = () => {
+    const zoom = () => W / box[2];
+    const noun = () => (filter === 'tv' ? 'TV station' : filter === 'radio' ? 'radio station' : 'station');
+    const plural = (n: number) => `${n} ${noun()}${n === 1 ? '' : 's'}`;
+
+    // --- View box: clamp, draw, animate --------------------------------------------
+    const clamp = (b: number[]) => {
+      const w = Math.min(W, Math.max(W / MAX_ZOOM, b[2]));
+      const h = w * H / W;
+      const cx = b[0] + b[2] / 2, cy = b[1] + b[3] / 2;
+      const x = Math.min(W - w / 2, Math.max(w / 2, cx)) - w / 2;
+      const y = Math.min(H - h / 2, Math.max(h / 2, cy)) - h / 2;
+      return [x, y, w, h];
+    };
+    const draw = () => {
+      svg.setAttribute('viewBox', box.join(' '));
+      const z = zoom();
+      const zoomed = z > 1.05;
+      svg.classList.toggle('zoomed', zoomed);
+      reset.hidden = !zoomed;
+      resetIcon.hidden = !zoomed;
+      // Dots stay a tappable size on screen, growing a little as you zoom in.
       const pxPerUnit = svg.getBoundingClientRect().width / box[2] || 1;
-      const dotPx = svg.classList.contains('zoomed') ? 6 : innerWidth < 700 ? 2.25 : 3.5;
+      const basePx = innerWidth < 700 ? 2.6 : 3.6;
+      const dotPx = Math.min(8, basePx * Math.sqrt(z));
       svg.style.setProperty('--dot-r', String(dotPx / pxPerUnit));
       svg.style.setProperty('--stroke', String(1 / pxPerUnit));
+      if (shown && !card.hidden) place(card, shown.querySelector('circle')!);
     };
-    addEventListener('resize', () => { sizeDots(); hideCard(); });
-    const animateTo = (target: number[]) => {
+    const setBox = (target: number[], animate = false) => {
+      target = clamp(target);
+      if (W / target[2] <= 1.05 && activeState) clearState(); // back to the whole country
+      cancelAnimationFrame(frameId);
       tip.hidden = true;
-      hideCard();
+      if (!animate || reduceMotion) { box = target; draw(); return; }
       const from = box.slice();
       const start = performance.now();
       const step = (now: number) => {
-        const t = reduceMotion ? 1 : Math.min(1, (now - start) / 380);
+        const t = Math.min(1, (now - start) / 380);
         const e = 1 - (1 - t) ** 3;
         box = from.map((v, i) => v + (target[i] - v) * e);
-        svg.setAttribute('viewBox', box.join(' '));
-        sizeDots();
-        if (t < 1) requestAnimationFrame(step);
+        draw();
+        if (t < 1) frameId = requestAnimationFrame(step);
       };
-      requestAnimationFrame(step);
+      frameId = requestAnimationFrame(step);
     };
+    // Zoom by `factor` keeping the map point (px, py) under the same spot on screen.
+    const zoomAt = (factor: number, px = box[0] + box[2] / 2, py = box[1] + box[3] / 2, animate = false) => {
+      const w = box[2] / factor, h = box[3] / factor;
+      setBox([px - (px - box[0]) / factor, py - (py - box[1]) / factor, w, h], animate);
+    };
+    const toMap = (clientX: number, clientY: number) => {
+      const r = svg.getBoundingClientRect();
+      return [box[0] + ((clientX - r.left) / r.width) * box[2], box[1] + ((clientY - r.top) / r.height) * box[3]];
+    };
+    const zoomOutAll = () => { hideCard(); clearState(); setBox([0, 0, W, H], true); };
+
+    // --- Filter: all / TV / radio ----------------------------------------------------
+    for (const b of root.querySelectorAll<HTMLButtonElement>('[data-filter]')) {
+      b.addEventListener('click', () => {
+        filter = b.dataset.filter as Filter;
+        for (const o of root.querySelectorAll('[data-filter]')) o.setAttribute('aria-pressed', String(o === b));
+        svg.dataset.filter = filter;
+        if (shown && shown.classList.contains(filter === 'tv' ? 'radio' : 'tv') && filter !== 'all') hideCard();
+        updateStatus();
+      });
+    }
+    function updateStatus() {
+      if (activeState) {
+        const n = Number(activeState.dataset[filter]);
+        status.textContent = `${STATE_NAMES[activeState.dataset.state!] ?? activeState.dataset.name}: ${plural(n)}. ${touch ? 'Tap' : 'Hover over'} a dot to learn more.`;
+      } else {
+        status.textContent = `${plural(total[filter])} on the map. ${touch ? 'Tap a state or pinch to zoom in, then tap' : 'Pick a state or zoom in, then pick'} a dot to learn about that station.`;
+      }
+    }
 
     // --- Positioning helpers -----------------------------------------------------
-    const place = (el: HTMLElement, target: Element) => {
+    function place(el: HTMLElement, target: Element) {
       const r = target.getBoundingClientRect();
       const f = frame.getBoundingClientRect();
       const x = r.left - f.left + r.width / 2;
@@ -167,23 +285,16 @@ const info = Object.fromEntries(
       el.classList.toggle('below', y < el.offsetHeight + 16);
       const half = el.offsetWidth / 2;
       el.style.setProperty('--shift', `${Math.max(8 + half - x, Math.min(0, f.width - 8 - half - x))}px`);
-    };
-
-    // --- Highlighting a station's transmitters ----------------------------------
-    const highlight = (org: string | null) => {
-      for (const a of svg.querySelectorAll<SVGAElement>('.dots a')) a.classList.toggle('hl', !!org && a.dataset.org === org);
-      svg.classList.toggle('has-hl', !!org);
-    };
+    }
 
     // --- Station card ------------------------------------------------------------
     const fill = (dot: SVGAElement) => {
       const i = info[dot.dataset.org!];
       card.querySelector('[data-card-name]')!.textContent = i.name;
-      card.querySelector('[data-card-meta]')!.textContent =
-        `${i.meta} · ${dot.dataset.call}${i.tx > 1 ? ` + ${i.tx - 1} more transmitter${i.tx > 2 ? 's' : ''}` : ''}`;
+      card.querySelector('[data-card-meta]')!.textContent = [i.meta, i.calls].filter(Boolean).join(' · ');
       card.querySelector('[data-card-apps]')!.textContent = i.apps.length
         ? `Own apps: ${i.apps.join(', ')}`
-        : i.fallback ? `Watch with the ${i.fallback} app` : '';
+        : i.fallback ? `${i.fallback === 'NPR' ? 'Listen' : 'Watch'} with the ${i.fallback} app` : '';
       card.querySelector<HTMLElement>('[data-card-live]')!.hidden = !i.live;
       card.querySelector<HTMLAnchorElement>('[data-card-link]')!.href = i.href;
     };
@@ -192,25 +303,51 @@ const info = Object.fromEntries(
       fill(dot);
       card.hidden = false;
       card.classList.toggle('pinned', pin);
+      shown?.classList.remove('hl');
+      shown = dot;
+      dot.classList.add('hl');
       place(card, dot.querySelector('circle')!);
-      highlight(dot.dataset.org!);
       pinned = pin ? dot : pinned;
     };
     function hideCard() {
       card.hidden = true;
       pinned = null;
-      highlight(null);
+      shown?.classList.remove('hl');
+      shown = null;
     }
+
+    // --- States ------------------------------------------------------------------
+    function clearState() {
+      activeState?.classList.remove('active');
+      activeState = null;
+      stateLink.hidden = true;
+      updateStatus();
+    }
+    const zoomToState = (state: SVGPathElement) => {
+      const [x, y, w, h] = state.dataset.box!.split(' ').map(Number);
+      const pad = Math.max(w, h) * 0.15;
+      let bw = w + 2 * pad, bh = h + 2 * pad;
+      if (bw / bh > W / H) bh = bw * H / W; else bw = bh * W / H;
+      activeState?.classList.remove('active');
+      activeState = state;
+      state.classList.add('active');
+      setBox([x + w / 2 - bw / 2, y + h / 2 - bh / 2, bw, bh], true);
+      const code = state.dataset.state!;
+      const name = STATE_NAMES[code] ?? state.dataset.name;
+      stateLink.hidden = !code;
+      stateLink.href = `${base}/state/${code.toLowerCase()}/`;
+      stateLink.textContent = `See every station in ${name} →`;
+      updateStatus();
+    };
 
     // --- Hover (mouse) -----------------------------------------------------------
     svg.addEventListener('pointerover', (e) => {
-      if (e.pointerType !== 'mouse') return;
+      if (e.pointerType !== 'mouse' || dragging) return;
       const dot = (e.target as Element).closest<SVGAElement>('.dots a');
       const state = (e.target as Element).closest<SVGPathElement>('path[data-state]');
       if (dot && !pinned) showCard(dot, false);
       else if (state && !pinned) {
-        const n = Number(state.dataset.count);
-        tip.textContent = `${STATE_NAMES[state.dataset.state!] ?? state.dataset.name} · ${n} station${n === 1 ? '' : 's'}`;
+        tip.textContent = `${STATE_NAMES[state.dataset.state!] ?? state.dataset.name} · ${plural(Number(state.dataset[filter]))}`;
         tip.hidden = false;
       }
     });
@@ -226,10 +363,71 @@ const info = Object.fromEntries(
       const to = e.relatedTarget as Element | null;
       if (to && (card.contains(to) || to.closest?.('.dots a'))) return;
       tip.hidden = true;
-      if (!pinned) { card.hidden = true; highlight(null); }
+      if (!pinned) hideCard();
     });
     card.addEventListener('pointerleave', (e) => {
-      if (e.pointerType === 'mouse' && !pinned) { card.hidden = true; highlight(null); }
+      if (e.pointerType === 'mouse' && !pinned) hideCard();
+    });
+
+    // --- Drag to pan, pinch to zoom (mouse, pen, and touch) -----------------------
+    const pointers = new Map<number, { x: number; y: number }>();
+    let dragging = false; // moved far enough that the gesture isn't a click
+    let startDist = 0, startBox = box, startMid = [0, 0];
+    const mid = () => { const [a, b] = [...pointers.values()]; return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2, d: Math.hypot(a.x - b.x, a.y - b.y) }; };
+    svg.addEventListener('pointerdown', (e) => {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      dragging = false;
+      startBox = box.slice();
+      if (pointers.size === 2) {
+        const m = mid();
+        startDist = m.d;
+        startMid = toMap(m.x, m.y);
+      }
+    });
+    svg.addEventListener('pointermove', (e) => {
+      const p = pointers.get(e.pointerId);
+      if (!p) return;
+      const r = svg.getBoundingClientRect();
+      const unit = box[2] / r.width;
+      if (pointers.size === 1) {
+        const dx = e.clientX - p.x, dy = e.clientY - p.y;
+        if (!dragging && Math.hypot(dx, dy) < 6) return;
+        if (zoom() <= 1.05) return; // nothing to pan when showing the whole country
+        if (!dragging) { dragging = true; tip.hidden = true; svg.setPointerCapture(e.pointerId); svg.classList.add('panning'); }
+        p.x = e.clientX; p.y = e.clientY;
+        setBox([box[0] - dx * unit, box[1] - dy * unit, box[2], box[3]]);
+      } else if (pointers.size === 2) {
+        p.x = e.clientX; p.y = e.clientY;
+        dragging = true;
+        const m = mid();
+        const factor = Math.max(0.05, m.d / (startDist || 1));
+        const w = startBox[2] / factor, h = startBox[3] / factor;
+        // Keep the point between the fingers under the fingers.
+        const fx = (m.x - r.left) / r.width, fy = (m.y - r.top) / r.height;
+        setBox([startMid[0] - fx * w, startMid[1] - fy * h, w, h]);
+      }
+    });
+    const endPointer = (e: PointerEvent) => {
+      pointers.delete(e.pointerId);
+      svg.classList.remove('panning');
+      if (pointers.size === 1) startBox = box.slice();
+    };
+    svg.addEventListener('pointerup', endPointer);
+    svg.addEventListener('pointercancel', endPointer);
+
+    // Trackpad pinch and ctrl/⌘ + scroll zoom. A plain scroll wheel keeps scrolling the
+    // page until you've zoomed in, so the map never traps someone scrolling past it.
+    svg.addEventListener('wheel', (e) => {
+      if (!(e.ctrlKey || e.metaKey) && zoom() <= 1.05) return;
+      e.preventDefault();
+      const [px, py] = toMap(e.clientX, e.clientY);
+      zoomAt(Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.002)), px, py);
+    }, { passive: false });
+    svg.addEventListener('dblclick', (e) => {
+      e.preventDefault();
+      const [px, py] = toMap(e.clientX, e.clientY);
+      zoomAt(2, px, py, true);
     });
 
     // --- Keyboard ----------------------------------------------------------------
@@ -237,9 +435,15 @@ const info = Object.fromEntries(
       const dot = (e.target as Element).closest<SVGAElement>('.dots a');
       if (dot) showCard(dot, false);
     });
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      if (!card.hidden) hideCard();
+      else if (zoom() > 1.05 && root.contains(document.activeElement)) zoomOutAll();
+    });
 
     // --- Click / tap -------------------------------------------------------------
     svg.addEventListener('click', (e) => {
+      if (dragging) { e.preventDefault(); dragging = false; return; } // end of a drag or pinch
       const dot = (e.target as Element).closest<SVGAElement>('.dots a');
       if (dot) {
         // First click pins the card; clicking the same dot again opens the station.
@@ -248,51 +452,52 @@ const info = Object.fromEntries(
         showCard(dot, true);
         return;
       }
+      if (pinned) { hideCard(); return; }
       const state = (e.target as Element).closest<SVGPathElement>('path[data-state]');
-      if (!state) return;
-      if (pinned) { hideCard(); if (svg.classList.contains('zoomed')) return; }
-      const [x, y, w, h] = state.dataset.box!.split(' ').map(Number);
-      const pad = Math.max(w, h) * 0.15;
-      let bw = w + 2 * pad, bh = h + 2 * pad;
-      if (bw / bh > 975 / 610) bh = bw * 610 / 975; else bw = bh * 975 / 610;
-      for (const p of svg.querySelectorAll('path[data-state]')) p.classList.toggle('active', p === state);
-      svg.classList.add('zoomed');
-      animateTo([x + w / 2 - bw / 2, y + h / 2 - bh / 2, bw, bh]);
-      reset.hidden = false;
-      const code = state.dataset.state!;
-      const count = Number(state.dataset.count);
-      const name = STATE_NAMES[code] ?? state.dataset.name;
-      status.textContent = `${name}: ${count} station${count === 1 ? '' : 's'}. ${touch ? 'Tap' : 'Hover over'} a dot to learn more.`;
-      stateLink.hidden = !code;
-      stateLink.href = `${base}/state/${code.toLowerCase()}/`;
-      stateLink.textContent = `See every station in ${name} →`;
+      // Clicking outside the states zooms back out.
+      if (!state) { if (zoom() > 1.05) zoomOutAll(); return; }
+      if (state !== activeState) zoomToState(state);
     });
     card.querySelector('[data-card-close]')!.addEventListener('click', hideCard);
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !card.hidden) hideCard(); });
     document.addEventListener('click', (e) => { if (pinned && !root.contains(e.target as Node)) hideCard(); });
 
-    reset.addEventListener('click', () => {
-      for (const p of svg.querySelectorAll('path.active')) p.classList.remove('active');
-      svg.classList.remove('zoomed');
-      animateTo(svg.getAttribute('data-full')!.split(' ').map(Number));
-      reset.hidden = true;
-      stateLink.hidden = true;
-      status.textContent = initialStatus;
-    });
-    sizeDots();
+    for (const b of root.querySelectorAll<HTMLButtonElement>('[data-zoom]')) {
+      b.addEventListener('click', () => {
+        hideCard();
+        if (b.dataset.zoom === 'in') zoomAt(2, undefined, undefined, true);
+        else if (b.dataset.zoom === 'out') zoomAt(0.5, undefined, undefined, true);
+        else zoomOutAll();
+      });
+    }
+    reset.addEventListener('click', zoomOutAll);
+    addEventListener('resize', () => { draw(); hideCard(); });
+    updateStatus();
+    draw();
   }
 </script>
 
 <style>
   .station-map { display: flex; flex-direction: column; gap: var(--space-12); }
-  .map-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--space-12); min-height: 44px; }
+  .map-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-12); }
+  .filters { display: inline-flex; padding: 4px; gap: 4px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-full); }
+  .filter {
+    display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 var(--space-12);
+    border: 0; border-radius: var(--radius-full); background: none; color: var(--text); font: inherit; font-weight: 600; font-size: 14px; cursor: pointer;
+  }
+  .filter:hover { background: var(--bg); }
+  .filter[aria-pressed='true'] { background: var(--bg); box-shadow: 0 1px 3px rgb(0 0 0 / 0.15); }
+  .filter .n { color: var(--text-muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+  .legend { display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-16); margin: 0; }
+  .legend > span { display: inline-flex; align-items: center; gap: 6px; }
+
   .map-frame { position: relative; }
-  svg { width: 100%; height: auto; display: block; touch-action: manipulation; overflow: hidden; }
+  svg { width: 100%; height: auto; display: block; border-radius: var(--radius-md); touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+  svg.zoomed { touch-action: none; cursor: grab; }
+  svg.panning { cursor: grabbing; }
 
   .states path { fill: var(--surface); stroke: none; cursor: pointer; transition: fill 0.15s; }
   .states path:hover { fill: var(--accent-subtle); }
   .states path.active { fill: var(--accent-subtle); }
-  .zoomed .states path:not(.active) { fill: var(--surface); opacity: 0.6; }
   .borders { fill: none; stroke: var(--border); stroke-width: var(--stroke, 1); stroke-linejoin: round; pointer-events: none; }
 
   circle {
@@ -300,16 +505,33 @@ const info = Object.fromEntries(
     transition: r 0.15s ease-out, opacity 0.15s;
   }
   .dots a { cursor: pointer; }
-  .dots a:hover circle, .dots a:focus-visible circle, .dots a.hl circle { r: calc(var(--dot-r, 4) * 1.7px); }
-  .has-hl .dots a:not(.hl) circle { opacity: 0.35; }
+  .dots a:hover circle, .dots a:focus-visible circle, .dots a.hl circle { r: calc(var(--dot-r, 4) * 1.6px); }
   .dots a.radio circle { fill: var(--warm); }
+  .dots a.both circle { fill: var(--accent); stroke: var(--warm); stroke-width: calc(var(--dot-r, 4) * 0.45px); }
   .dots a.hl circle { fill: var(--text); }
-  .legend { display: flex; align-items: center; gap: var(--space-8); margin-top: calc(-1 * var(--space-8)); }
-  .key { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
-  .key.radio { background: var(--warm); margin-left: var(--space-12); }
   .dots a:focus-visible { outline: none; }
+  svg[data-filter='tv'] .dots a.radio, svg[data-filter='radio'] .dots a.tv { display: none; }
   /* On touch screens, the zoomed-out map is for picking a state: taps go to the state. */
   @media (pointer: coarse) { svg:not(.zoomed) .dots { pointer-events: none; } }
+
+  .key { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex: none; }
+  .key.radio { background: var(--warm); }
+  .key.both { background: var(--accent); box-shadow: 0 0 0 2px var(--warm); width: 8px; height: 8px; margin: 1px; }
+
+  .zoom-controls {
+    position: absolute; top: var(--space-8); right: var(--space-8); z-index: 1;
+    display: flex; flex-direction: column; gap: 1px; border-radius: var(--radius-sm); overflow: hidden;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.2); background: var(--border);
+  }
+  .zoom-btn {
+    width: 40px; height: 40px; display: grid; place-items: center; border: 0; padding: 0;
+    background: var(--surface-raised); color: var(--text); font: inherit; font-size: 22px; font-weight: 600; line-height: 1; cursor: pointer;
+  }
+  .zoom-btn[hidden] { display: none; }
+  .zoom-btn:hover { background: var(--surface); }
+  .zoom-btn :global(svg) { width: 20px; height: 20px; }
+  .map-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-12); }
+  .map-foot:has(> [hidden] + [hidden]) { display: none; }
 
   .map-tip, .map-card {
     position: absolute; transform: translate(calc(-50% + var(--shift, 0px)), calc(-100% - 10px)); z-index: 2;
@@ -334,4 +556,12 @@ const info = Object.fromEntries(
   .card-close:hover { background: var(--surface); }
   .map-card:not(.pinned) .card-close { display: none; }
   .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #d93025; margin-right: var(--space-8); vertical-align: middle; }
+  /* Phones: the map is small, so the buttons sit in a row under it instead of on top. */
+  @media (max-width: 700px) {
+    .zoom-controls { position: static; flex-direction: row; justify-content: flex-end; gap: var(--space-8); margin-top: var(--space-8); background: none; box-shadow: none; overflow: visible; }
+    .zoom-btn { width: 44px; height: 44px; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+    .zoom-btn[data-zoom='reset'] { display: none; } /* "Zoom out to all of the US" is right below */
+    /* The station card sits under the map, so it never covers the dots. */
+    .map-card, .map-card.below { position: relative; left: auto !important; top: auto !important; transform: none; width: auto; margin-top: var(--space-8); }
+  }
 </style>

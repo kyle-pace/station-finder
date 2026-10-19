@@ -31,7 +31,7 @@ function smartCta(link: HTMLAnchorElement, device: Device): void {
   const label = cta.querySelector('[data-cta-label]')!;
   cta.querySelector<HTMLElement>('[data-cta-icon="mobile"]')!.hidden = device === 'desktop';
   cta.querySelector<HTMLElement>('[data-cta-icon="desktop"]')!.hidden = device !== 'desktop';
-  if (device === 'desktop') label.textContent = isFallback ? `Watch with the ${cta.dataset.fallback} app` : `Watch ${name} in your browser`;
+  if (device === 'desktop') label.textContent = isFallback ? `${cta.dataset.fallbackVerb} with the ${cta.dataset.fallback} app` : `${cta.dataset.verb} ${name} in your browser`;
   else label.textContent = isFallback ? `Get the ${cta.dataset.fallback} app` : `Get ${name} on ${DEVICE_WORDS[device]}`;
   cta.href = link.href;
   if (link.rel) cta.rel = link.rel;

@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 import AppLink from '../../components/AppLink.astro';
 import Icon from '../../components/Icon.astro';
 import {
-  organizations, facilitiesFor, metaLine, national, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES, formatDate, host,
+  organizations, facilitiesFor, metaLine, national, PLATFORM_INFO, PLATFORM_ORDER, STATE_NAMES, formatDate, host, verbFor, fallbackVerb,
   type Organization, type Platform,
 } from '../../lib/data';
 import { url, correctionUrl } from '../../lib/site';
@@ -39,7 +39,9 @@ const extraApps = [...org.apps.filter((a) => a.extra).reduce((m, a) => {
   m.set(name, [...(m.get(name) ?? []), a].sort((x, y) => PLATFORM_ORDER.indexOf(x.platform) - PLATFORM_ORDER.indexOf(y.platform)));
   return m;
 }, new Map<string, typeof org.apps>())];
-const GROUP_WORDS = { mobile: 'Watch on your phone or tablet', tv: 'Watch on your TV', web: 'Watch in your browser' } as const;
+const verb = verbFor(org.mediaTypes);
+const fbVerb = fallbackBrand ? fallbackVerb(fallbackBrand.name) : verb;
+const GROUP_WORDS = { mobile: `${fbVerb} on your phone or tablet`, tv: `${fbVerb} on your TV`, web: `${fbVerb} in your browser` } as const;
 const groups = (['mobile', 'tv', 'web'] as const)
   .map((key) => ({ key, title: { mobile: 'Phone & tablet', tv: 'TV', web: 'Web' }[key], items: items.filter((i) => PLATFORM_INFO[i.platform].group === key) }))
   .filter((g) => g.items.length)
@@ -69,8 +71,8 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
       </div>
       <div class="row-wrap hero-actions">
         {/* Filled in by the device script with the best link for this visitor's device. */}
-        <a class="btn btn-primary btn-lg" data-smart-cta data-name={org.name} data-fallback={fallbackBrand?.name ?? ''} data-has-own={String(hasOwnApps || !!org.livestreamUrl)} href="#apps" hidden><span data-cta-icon="mobile"><Icon name="phone" /></span><span data-cta-icon="desktop" hidden><Icon name="web" /></span><span data-cta-label></span></a>
-        {org.livestreamUrl && <a class="btn btn-secondary btn-lg" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>Watch live</span></a>}
+        <a class="btn btn-primary btn-lg" data-smart-cta data-name={org.name} data-fallback={fallbackBrand?.name ?? ''} data-verb={verb} data-fallback-verb={fbVerb} data-has-own={String(hasOwnApps || !!org.livestreamUrl)} href="#apps" hidden><span data-cta-icon="mobile"><Icon name="phone" /></span><span data-cta-icon="desktop" hidden><Icon name="web" /></span><span data-cta-label></span></a>
+        {org.livestreamUrl && <a class="btn btn-secondary btn-lg" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>{verb} live</span></a>}
         {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener"><Icon name="web" /><span>Website</span></a>}
       </div>
     </div>
@@ -83,7 +85,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
         <section id="apps" class="stack gap-24" aria-label="Apps">
           {!hasOwnApps && fallbackBrand && (
             <p class="muted">
-              Watch {org.name} on any device with the {fallbackBrand.name} app, home to many local
+              {fbVerb === 'Listen' ? 'Listen to' : 'Watch'} {org.name} on any device with the {fallbackBrand.name} app, home to many local
               stations' shows and livestreams.
             </p>
           )}

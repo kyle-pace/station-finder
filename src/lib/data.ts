@@ -21,6 +21,7 @@ export interface Organization {
   apps: App[];
   facilityIds: string[];
   sources: Record<string, Provenance>;
+  home?: { lat: number; lng: number; city: string | null; source: string; retrievedAt: string };
 }
 export interface Facility {
   id: string;
@@ -77,8 +78,12 @@ export const PLATFORM_INFO: Record<Platform, { label: string; detail: string; ic
   androidtv: { label: 'Android TV & Google TV', detail: 'Google Play on your TV', icon: 'tv', group: 'tv' },
   samsung: { label: 'Samsung TV', detail: 'Samsung Smart TV apps', icon: 'tv', group: 'tv' },
   lg: { label: 'LG TV', detail: 'LG Content Store', icon: 'tv', group: 'tv' },
-  web: { label: 'Watch on the web', detail: 'In your browser', icon: 'web', group: 'web' },
+  web: { label: 'On the web', detail: 'In your browser', icon: 'web', group: 'web' },
 };
+// Radio is listened to, TV is watched: radio-only stations and the NPR app say "Listen".
+export const verbFor = (media: string[]) => (media.includes('tv') ? 'Watch' : 'Listen');
+export const fallbackVerb = (brand: string) => (brand === 'NPR' ? 'Listen' : 'Watch');
+
 export const PLATFORM_ORDER: Platform[] = ['ios', 'android', 'appletv', 'roku', 'firetv', 'androidtv', 'samsung', 'lg', 'web'];
 
 export function formatDate(iso: string): string {

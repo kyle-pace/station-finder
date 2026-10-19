@@ -16,7 +16,8 @@
     "fetch-wikipedia": "node scripts/fetch-wikipedia.ts",
     "fetch-wikipedia-npr": "node scripts/fetch-wikipedia-npr.ts",
     "fetch-station-app-pages": "node scripts/fetch-station-app-pages.ts",
-    "refresh-data": "npm run fetch-wikipedia && npm run fetch-wikipedia-npr && npm run build-data && npm run fetch-station-app-pages && npm run build-data"
+    "refresh-data": "npm run fetch-wikipedia && npm run fetch-wikipedia-npr && npm run build-data && npm run fetch-station-app-pages && npm run fetch-wikipedia-places && npm run build-data",
+    "fetch-wikipedia-places": "node scripts/fetch-wikipedia-places.ts"
   },
   "dependencies": {
     "@fontsource-variable/figtree": "^5.3.0",

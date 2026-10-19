@@ -93,6 +93,8 @@ interface Organization {
   apps: App[];
   facilityIds: string[];
   sources: Record<string, Provenance>;
+  // Where the station is based, for the map (its home city, or its first transmitter).
+  home?: { lat: number; lng: number; city: string | null; source: string; retrievedAt: string };
 }
 
 interface Facility {
@@ -456,7 +458,13 @@ if (existsSync(nprPath)) {
       merged++;
       continue;
     }
-    const first = rows[0];
+    // Flagship: the station the group's main article is about (KUOW-FM for KUOW's
+    // Seattle signal and its Bellingham repeater), else the first listed.
+    const titleCounts = new Map<string, number>();
+    for (const r of rows) if (r.station) titleCounts.set(r.station.title, (titleCounts.get(r.station.title) ?? 0) + 1);
+    const mainTitle = [...titleCounts.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
+    const base = (c: string) => c.replace(/-.*$/, '');
+    const first = rows.find((r) => !!r.station && r.station.title === mainTitle && base(r.station.title) === base(r.callSign)) ?? rows[0];
     const info = rows.find((r) => r.station?.website)?.station ?? first.station;
     // Home state = where most of its transmitters are (ties: the first-listed station's).
     const stateCounts = new Map<string, number>();
@@ -480,6 +488,7 @@ if (existsSync(nprPath)) {
     if (org.website && !isUrl(org.website)) delete org.website;
     if (org.owner && info) org.sources.owner = { source: info.url, retrievedAt: info.retrievedAt };
     if (org.website && info) org.sources.website = { source: info.url, retrievedAt: info.retrievedAt };
+    facs.sort((x, y) => Number(y.callSign === first.callSign) - Number(x.callSign === first.callSign)); // flagship first
     drafts.push({ org, facilities: facs, callSigns: calls });
     if (states.length > 1) radioReport.push(`${org.id}: transmitters in ${states.join(', ')}; home state ${states[0]} (also listed on the others' state pages)`);
     created++;
@@ -660,6 +669,37 @@ if (errors.length > 0) {
 }
 organizations.sort((a, b) => a.state.localeCompare(b.state) || a.name.localeCompare(b.name));
 facilities.sort((a, b) => a.id.localeCompare(b.id));
+
+// --- Where each station is based (one dot per station on the map) ---------------
+// From scripts/fetch-wikipedia-places: the station's home city and that city's
+// coordinates. When we can't place the city (or it lands far from every one of the
+// station's transmitters, which means we probably found the wrong city), we use the
+// station's first transmitter instead and list it in the report.
+const placesPath = join(RAW, 'wikipedia', 'places.json');
+const placesRaw = existsSync(placesPath)
+  ? (JSON.parse(readFileSync(placesPath, 'utf8')) as {
+      homes: Record<string, { city: string; state: string; from: string }>;
+      places: Record<string, { url: string; coords: { lat: number; lng: number }; retrievedAt: string } | { error: string }>;
+    })
+  : { homes: {}, places: {} };
+const placement = section('Map placement (station shown at a transmitter instead of its home city)');
+const milesBetween = (a: { lat: number; lng: number }, b: { lat: number; lng: number }) => {
+  const r = Math.PI / 180;
+  const h = Math.sin(((b.lat - a.lat) * r) / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin(((b.lng - a.lng) * r) / 2) ** 2;
+  return 7918 * Math.asin(Math.sqrt(h));
+};
+for (const o of organizations) {
+  const tx = o.facilityIds.map((id) => facilities.find((f) => f.id === id)!);
+  const home = placesRaw.homes[o.id];
+  const place = home ? placesRaw.places[`${home.city}|${home.state}`] : undefined;
+  if (place && 'coords' in place && (!tx.length || tx.some((f) => milesBetween(f, place.coords) < 250))) {
+    o.home = { lat: place.coords.lat, lng: place.coords.lng, city: home!.city, source: place.url, retrievedAt: place.retrievedAt };
+  } else if (tx.length) {
+    const f = tx[0];
+    o.home = { lat: f.lat, lng: f.lng, city: f.city, source: f.source, retrievedAt: f.retrievedAt };
+    placement.push(`${o.id}: ${!home ? 'no home city found' : place && 'coords' in place ? `${home.city}, ${home.state} is far from its transmitters` : `couldn't place ${home.city}, ${home.state}`}; shown at ${f.callSign}`);
+  }
+}
 
 const nationalOut = national.map((b) => ({
   id: b.id,

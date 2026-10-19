@@ -53,7 +53,9 @@ If a build fails, nothing is published and the previous version stays live.
 
 ```
 scripts/fetch-wikipedia          →  data/raw/wikipedia/pbs-extracted.json
+scripts/fetch-wikipedia-npr      →  data/raw/wikipedia/npr-extracted.json
 scripts/fetch-station-app-pages  →  data/raw/station-sites/app-links.json
+scripts/fetch-wikipedia-places   →  data/raw/wikipedia/places.json (where stations are based)
 data/manual/*.yaml                  hand-maintained; always applied last, so they win
 scripts/build-data               →  public/data/organizations.json, facilities.json, national.json
                                     + data/build-report.txt (what to review)
@@ -69,16 +71,24 @@ scripts/build-data               →  public/data/organizations.json, facilities
   links to that looks like an apps page, and known pages in `station-app-pages.yaml`.
   We never scrape the app stores. Links found automatically are marked unverified
   until a person checks them.
+- **Map locations**: each station is one dot at the city it's based in (its city of
+  license, or for statewide networks its Wikipedia "Headquarters" or its main
+  transmitter's city). City coordinates come from the city's Wikipedia article. ZIP
+  search still uses transmitter coverage. Stations we can't place this way are shown at
+  their first transmitter and listed under "Map placement" in the build report.
+- **National apps** (`national.yaml`): the PBS and NPR fallback links, plus
+  `otherStoreLinks`, other store listings of the national app that station sites link to.
+  Those are never shown; they keep the PBS app from being counted as a station's own.
 - Every value records where it came from (`source`) and when (`retrievedAt`).
 
 ### Refreshing the data
 
 ```sh
-npm run refresh-data   # about 10 minutes; downloads politely, one request at a time
+npm run refresh-data   # about 30 minutes the first time; downloads politely, one request at a time
 ```
 
 This runs, in order: `fetch-wikipedia`, `fetch-wikipedia-npr`, `build-data`,
-`fetch-station-app-pages`, `build-data`. Downloaded pages are cached in `data/raw/` (not committed), so re-runs are
+`fetch-station-app-pages`, `fetch-wikipedia-places`, `build-data`. Downloaded pages are cached in `data/raw/` (not committed), so re-runs are
 fast. Add `-- --refresh` to a fetch script to download fresh copies.
 
 ZIP-code locations come from a Census file that is downloaded **by hand** (see

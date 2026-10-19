@@ -57,6 +57,17 @@
       url: https://www.pbs.org/
       source: https://www.pbs.org/pbs-app/
       retrievedAt: 2026-10-18
+  # Other store listings of the PBS app that station websites link to. Never shown; they
+  # stop the scraper from counting the PBS app as a station's own app.
+  otherStoreLinks:
+    - url: https://www.amazon.com/dp/B008Z2NVGK
+      source: https://www.kvie.org/app/tv-connected-devices/amazon-fire-tv/ (link "Get PBS on Fire TV")
+    - url: https://channelstore.roku.com/details/23353/pbs
+      source: https://www.kvie.org/app/tv-connected-devices/roku/ (link "Get PBS on Roku")
+    - url: https://channelstore.roku.com/details/6bfb4fc9bfcfe6a4215e32e203439914:25f0df6d853649615c2ec64ef2555811/pbs
+      source: https://minnesotapbs.org/pages/how-to-watch (Roku link on the PBS app section)
+    - url: https://us.lgappstv.com/main/tvapp/detail?appId=1260085
+      source: https://www.ipm.org/tv/ (link "Download app on LG", PBS app section)
 
 - id: npr
   name: NPR

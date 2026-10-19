@@ -62,8 +62,8 @@ const STORES: { platform: Platform; test: RegExp }[] = [
 
 // National apps (from national.yaml) and PBS KIDS are not a station's own apps.
 const nationalIds = new Set<string>();
-for (const brand of (parse(readFileSync(join(MANUAL, 'national.yaml'), 'utf8')) ?? []) as { apps: { url: string }[] }[]) {
-  for (const a of brand.apps) nationalIds.add(storeKey(a.url));
+for (const brand of (parse(readFileSync(join(MANUAL, 'national.yaml'), 'utf8')) ?? []) as { apps: { url: string }[]; otherStoreLinks?: { url: string }[] }[]) {
+  for (const a of [...brand.apps, ...(brand.otherStoreLinks ?? [])]) nationalIds.add(storeKey(a.url));
 }
 // Device makers' own apps (e.g. the Fire TV remote) sometimes appear on "how to watch" pages.
 const DEVICE_MAKER_APP = /[?&]id=(com\.(amazon|google|roku|samsung|lge|apple)\.)/;
@@ -76,6 +76,7 @@ function storeKey(url: string): string {
     url.match(/[?&]id=([\w.]+)/)?.[1] ??
     url.match(/roku\.com\/details\/([0-9a-f]+)/)?.[1] ??
     url.match(/\/(B0[A-Z0-9]{8})/)?.[1] ??
+    url.match(/[?&]appId=(\d+)/)?.[1] ??
     url
   );
 }

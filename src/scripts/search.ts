@@ -26,9 +26,9 @@ function renderCards(container: HTMLElement, results: Result[]): void {
     }
     const fb = card.querySelector<HTMLElement>('[data-device="fallback"]')!;
     if (anyOwn) fb.remove();
-    else fb.textContent = `Watch with the ${entry.network.includes('PBS') ? 'PBS' : 'NPR'} app`;
+    else fb.textContent = entry.network.includes('PBS') ? 'Watch with the PBS app' : 'Listen with the NPR app';
     const live = card.querySelector<HTMLAnchorElement>('[data-live]')!;
-    if (entry.live) live.href = entry.live; else live.remove();
+    if (entry.live) { live.href = entry.live; live.querySelector('span')!.textContent = entry.media.includes('tv') ? 'Watch live' : 'Listen live'; } else live.remove();
     card.querySelector<HTMLAnchorElement>('[data-app]')!.href = `${stationUrl(entry.id)}#apps`;
     container.append(card);
   });
