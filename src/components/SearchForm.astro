@@ -19,6 +19,7 @@ const { value = '', id = 'q', size = 'md', examplePool = [] } = Astro.props;
         <input id={id} name="q" type="search" value={value} required autocomplete="off" spellcheck="false"
           placeholder="ZIP, city, or station name" enterkeyhint="search"
           role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls={`${id}-list`} />
+        <button class="locate" type="button" data-locate aria-label="Find stations near my location" title="Use my location" hidden><Icon name="location" /></button>
       </div>
       <ul id={`${id}-list`} class="suggest" role="listbox" aria-label="Matching stations" hidden></ul>
     </div>
@@ -66,6 +67,14 @@ const { value = '', id = 'q', size = 'md', examplePool = [] } = Astro.props;
   }
   .search-input:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent), var(--shadow-sm); }
   .search-input svg { width: 22px; height: 22px; color: var(--text-muted); flex: none; }
+  /* "Use my location", inside the box on the right. */
+  .locate {
+    flex: none; display: grid; place-items: center; width: 40px; height: 40px; margin-right: -8px;
+    border: 0; border-radius: var(--radius-full); background: none; color: var(--accent); cursor: pointer;
+  }
+  .locate:hover, .locate:focus-visible { background: var(--accent-subtle); }
+  .locate :global(svg) { color: inherit; }
+  .locate[hidden] { display: none; }
   input {
     flex: 1; min-width: 0; border: 0; background: none; color: var(--text);
     font: inherit; padding: var(--space-16) 0; outline: none;
@@ -95,5 +104,6 @@ const { value = '', id = 'q', size = 'md', examplePool = [] } = Astro.props;
   .suggest .s-name { font-weight: 650; }
   .suggest .s-meta { font-size: 14px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .suggest .s-note { padding: var(--space-8) var(--space-12); font-size: 14px; color: var(--text-muted); }
+  .suggest .s-locate svg { flex: none; color: var(--accent); }
   .suggest .s-all { justify-content: center; font-weight: 650; color: var(--accent); }
 </style>

@@ -40,10 +40,6 @@ const examplePool = organizations.flatMap((o) => {
           <p class="lede muted">Find your local public TV and radio station, then get its own apps for your phone, tablet, and TV, plus its website.</p>
         </div>
         <SearchForm size="lg" examplePool={examplePool} />
-        <div class="location" hidden data-location>
-          <button class="btn btn-secondary" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
-          <p class="caption muted">Used on this device only, never sent to us.</p>
-        </div>
       </div>
       <figure class="hero-visual">
         <DotMap class="hero-map" dotRadius={2.6} live />
@@ -122,27 +118,6 @@ const examplePool = organizations.flatMap((o) => {
   </section>
 </Base>
 
-<script>
-  // "Use my location": only offered when the browser supports it. The coordinates are
-  // rounded (~1 km) and only go into this site's own search URL.
-  const box = document.querySelector<HTMLElement>('[data-location]');
-  if (box && 'geolocation' in navigator) {
-    box.hidden = false;
-    const button = box.querySelector<HTMLButtonElement>('[data-locate]')!;
-    const label = button.querySelector('span')!;
-    button.addEventListener('click', () => {
-      label.textContent = 'Finding you…';
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          const near = `${pos.coords.latitude.toFixed(2)},${pos.coords.longitude.toFixed(2)}`;
-          location.href = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/search/?near=${near}`;
-        },
-        () => { label.textContent = "Couldn't get your location — try a ZIP code"; },
-        { maximumAge: 600000, timeout: 10000 },
-      );
-    });
-  }
-</script>
 
 <style>
   .hero {
@@ -157,7 +132,7 @@ const examplePool = organizations.flatMap((o) => {
   .hero-visual { margin: 0; display: flex; flex-direction: column; gap: var(--space-8); min-width: 0; }
   .hero-visual figcaption { display: flex; flex-direction: column; align-items: center; gap: var(--space-8); text-align: center; }
   @media (min-width: 1024px) {
-    .hero-inner { grid-template-columns: minmax(0, 540px) minmax(0, 1fr); gap: var(--space-24); }
+    .hero-inner { grid-template-columns: minmax(0, 580px) minmax(0, 1fr); gap: var(--space-24); }
     .hero-visual { margin-right: -56px; }
   }
   @media (min-width: 1400px) { .hero-visual { margin-right: -150px; margin-left: var(--space-16); } }
@@ -180,6 +155,4 @@ const examplePool = organizations.flatMap((o) => {
   @media (min-width: 801px) { .teaser { padding: var(--space-40, 40px) var(--space-48); } }
   .teaser-copy { align-items: flex-start; }
 
-  .location { display: flex; flex-direction: column; gap: var(--space-8); align-items: flex-start; }
-  @media (min-width: 701px) { .location { flex-direction: row; align-items: center; gap: var(--space-12); } }
 </style>

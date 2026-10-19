@@ -1,10 +1,16 @@
 // Results as you type, under every search box. Uses the same rules as the results page
 // (src/lib/search-core.ts). Keyboard: ↑/↓ to move, Enter to open, Esc to close.
 // Nothing typed leaves the browser except the one small ZIP file request.
+//
+// "Use my location": the pin button in the box, and the first option when the box is
+// empty. Only offered when the browser supports it. The coordinates are rounded (~1 km)
+// and only go into this site's own search URL; they're never sent anywhere else.
 
 import { search, loadIndex, metaLine, formatMiles, stationUrl, type Result } from '../lib/search-core';
 
 const MAX = 6;
+const canLocate = 'geolocation' in navigator;
+const searchUrl = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/search/`;
 
 for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form]')) {
   const input = form.querySelector<HTMLInputElement>('input[name="q"]')!;
@@ -25,6 +31,45 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
     opts[active].scrollIntoView({ block: 'nearest' });
   };
 
+  const locateBtn = form.querySelector<HTMLButtonElement>('[data-locate]');
+  const placeholder = input.placeholder;
+  const locate = () => {
+    close();
+    input.value = '';
+    input.placeholder = 'Finding stations near you…';
+    navigator.geolocation.getCurrentPosition(
+      (pos) => { location.href = `${searchUrl}?near=${pos.coords.latitude.toFixed(2)},${pos.coords.longitude.toFixed(2)}`; },
+      () => { input.placeholder = "Couldn't get your location. Try a ZIP code"; setTimeout(() => { input.placeholder = placeholder; }, 5000); },
+      { maximumAge: 600000, timeout: 10000 },
+    );
+  };
+  if (locateBtn && canLocate) {
+    locateBtn.hidden = false;
+    locateBtn.addEventListener('click', locate);
+  }
+  const locateOption = () => {
+    const li = document.createElement('li');
+    li.role = 'option';
+    li.id = `${list.id}-locate`;
+    const a = document.createElement('a');
+    a.href = '#';
+    a.tabIndex = -1;
+    a.dataset.locate = '';
+    a.className = 's-locate';
+    a.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>';
+    const text = document.createElement('span');
+    text.className = 's-text';
+    const name = document.createElement('span');
+    name.className = 's-name';
+    name.textContent = 'Use my current location';
+    const meta = document.createElement('span');
+    meta.className = 's-meta';
+    meta.textContent = 'Stays on this device. Never sent to us.';
+    text.append(name, meta);
+    a.append(text);
+    li.append(a);
+    return li;
+  };
   const note = (text: string) => { const li = document.createElement('li'); li.className = 's-note'; li.textContent = text; return li; };
   const row = ({ entry, miles }: Result, i: number) => {
     const li = document.createElement('li');
@@ -56,7 +101,11 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
   async function update() {
     const q = input.value.trim();
     const mine = ++seq;
-    if (q.length < 2) { close(); return; }
+    if (q.length < 2) {
+      if (canLocate && document.activeElement === input) { list.replaceChildren(locateOption()); active = -1; open(); }
+      else close();
+      return;
+    }
     if (/^\d{1,4}$/.test(q)) {
       list.replaceChildren(note('Keep typing your 5-digit ZIP code…'));
       open();
@@ -87,6 +136,10 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
   }
 
   input.addEventListener('focus', () => { loadIndex(); }, { once: true }); // warm the index
+  input.addEventListener('focus', () => { if (input.value.trim().length < 2) update(); });
+  list.addEventListener('click', (e) => {
+    if ((e.target as Element).closest('[data-locate]')) { e.preventDefault(); locate(); }
+  });
   input.addEventListener('input', () => { clearTimeout(timer); timer = window.setTimeout(update, 120); });
   input.addEventListener('keydown', (e) => {
     if (list.hidden) return;
@@ -95,7 +148,8 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
     else if (e.key === 'Escape') { close(); }
     else if (e.key === 'Enter' && active >= 0) {
       e.preventDefault();
-      location.href = options()[active].querySelector('a')!.href;
+      const a = options()[active].querySelector('a')!;
+      if (a.dataset.locate !== undefined) locate(); else location.href = a.href;
     }
   });
   input.addEventListener('blur', () => setTimeout(close, 150)); // let a click on a result land first
