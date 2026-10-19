@@ -16,8 +16,8 @@
 //     "All of the US", Esc, or clicking outside the states zooms back out
 //   - the list beside the map shows every station in view; hovering a name points
 //     to its marker
-//   - hover a marker: a small card about the station; click/tap pins it, and its
-//     button opens the station page. Without JavaScript the markers are plain links.
+//   - hover a marker: a small card about the station; click to open the station. On
+//     touch screens, a tap shows the card and its button opens the station page. Without JavaScript the markers are plain links.
 // Every marker and card looks the same for every station.
 //
 // Places outside the Albers USA projection (Puerto Rico and other territories) are
@@ -648,7 +648,9 @@ const FILTERS = [
     let dragging = false; // moved far enough that the gesture isn't a click
     let startDist = 0, startBox = box, startMid = [0, 0];
     const mid = () => { const [a, b] = [...pointers.values()]; return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2, d: Math.hypot(a.x - b.x, a.y - b.y) }; };
+    let lastPointer = '';
     svg.addEventListener('pointerdown', (e) => {
+      lastPointer = e.pointerType;
       if (e.pointerType === 'mouse' && e.button !== 0) return;
       pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
       dragging = false;
@@ -725,8 +727,10 @@ const FILTERS = [
       const t = e.target as Element;
       const dot = t.closest<SVGAElement>('.dots a');
       if (dot) {
-        // First click pins the card; clicking the same marker again opens the station.
-        if (pinned === dot) return;
+        // With a mouse, hovering already shows the card, so a click opens the station.
+        // On touch screens there's no hover: the first tap shows the card (its button
+        // opens the station), and tapping the same marker again opens it too.
+        if (lastPointer === 'mouse' || pinned === dot) return;
         e.preventDefault();
         showCard(dot, true);
         return;
