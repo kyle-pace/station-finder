@@ -3,11 +3,31 @@ import Base from '../layouts/Base.astro';
 import SearchForm from '../components/SearchForm.astro';
 import DotMap from '../components/DotMap.astro';
 import Icon from '../components/Icon.astro';
-import { organizations, facilities, statesWithStations } from '../lib/data';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { organizations, facilities, statesWithStations, facilitiesFor } from '../lib/data';
 import { url } from '../lib/site';
 
 const stationCount = organizations.length;
 const transmitterCount = facilities.length;
+
+// "Try" examples: the browser picks a ZIP, a city, and call letters from three different
+// stations at random on each visit, so no station is featured. Each entry is
+// [ZIP nearest the station's home city, "City, ST", call letters].
+const zips = Object.entries((JSON.parse(readFileSync(join(process.cwd(), 'data', 'raw', 'census', 'zcta.json'), 'utf8')) as { zips: Record<string, [number, number]> }).zips);
+const nearestZip = (lat: number, lng: number) => {
+  let best = '', bestD = Infinity;
+  for (const [zip, [la, ln]] of zips) {
+    const d = (la - lat) ** 2 + ((ln - lng) * Math.cos((lat * Math.PI) / 180)) ** 2;
+    if (d < bestD) { bestD = d; best = zip; }
+  }
+  return best;
+};
+const examplePool = organizations.flatMap((o) => {
+  const call = facilitiesFor(o)[0]?.callSign.replace(/-.*$/, '');
+  if (!o.home?.city || !call || !/^[KW][A-Z]{2,3}$/.test(call)) return [];
+  return [[nearestZip(o.home.lat, o.home.lng), `${o.home.city}, ${o.state}`, call]];
+});
 ---
 
 <Base>
@@ -20,7 +40,7 @@ const transmitterCount = facilities.length;
           <h1 class="display">Every way to watch and listen to your local station</h1>
           <p class="lede muted">Find your local public TV and radio station, then get its own apps for your phone, tablet, and TV, its livestream, and its website.</p>
         </div>
-        <SearchForm size="lg" examples={['98101', 'Sacramento', 'KVIE']} />
+        <SearchForm size="lg" examplePool={examplePool} />
         <div class="location" hidden data-location>
           <button class="btn btn-secondary" type="button" data-locate><Icon name="location" /><span>Use my location</span></button>
           <p class="caption muted">Used on this device only, never sent to us.</p>

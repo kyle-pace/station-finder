@@ -1,12 +1,14 @@
 ---
 // The one search box: ZIP, city/state, station name, or call letters. A plain GET form to
 // /search, so it works without JavaScript; with JavaScript, results appear as you type
-// (src/scripts/instant.ts). Optional example chips fill in a sample search.
+// (src/scripts/instant.ts). Optional "Try" chips fill in a sample search: three picked at
+// random in the browser from `examplePool` (a ZIP, a city, and call letters, each from a
+// different station), so every station is equally likely and none is featured.
 import Icon from './Icon.astro';
 import { url } from '../lib/site';
 
-interface Props { value?: string; id?: string; size?: 'md' | 'lg'; examples?: string[] }
-const { value = '', id = 'q', size = 'md', examples = [] } = Astro.props;
+interface Props { value?: string; id?: string; size?: 'md' | 'lg'; examplePool?: string[][] }
+const { value = '', id = 'q', size = 'md', examplePool = [] } = Astro.props;
 ---
 <form class:list={['search-form', size]} action={url('/search/')} method="get" role="search" data-search-form>
   <label for={id} class="visually-hidden">ZIP code, city, station name, or call letters</label>
@@ -22,15 +24,34 @@ const { value = '', id = 'q', size = 'md', examples = [] } = Astro.props;
     </div>
     <button class:list={['btn btn-primary', size === 'lg' && 'btn-lg']} type="submit">Find my stations</button>
   </div>
-  {examples.length > 0 && (
-    <p class="examples small muted">
+  {examplePool.length >= 3 && (
+    <p class="examples small muted" data-examples={JSON.stringify(examplePool)} data-search-url={url('/search/')} hidden>
       Try
-      {examples.map((e) => <a class="chip chip-sm" href={url(`/search/?q=${encodeURIComponent(e)}`)}>{e}</a>)}
+      <a class="chip chip-sm" href="#" data-example="0"></a>
+      <a class="chip chip-sm" href="#" data-example="1"></a>
+      <a class="chip chip-sm" href="#" data-example="2"></a>
     </p>
   )}
 </form>
 
 <script src="../scripts/instant.ts"></script>
+<script>
+  // Pick the "Try" chips: three different stations at random, one ZIP, one city, one call sign.
+  for (const p of document.querySelectorAll<HTMLElement>('[data-examples]')) {
+    const pool = JSON.parse(p.dataset.examples!) as string[][];
+    const picks: string[][] = [];
+    while (picks.length < 3) {
+      const e = pool[Math.floor(Math.random() * pool.length)];
+      if (!picks.includes(e)) picks.push(e);
+    }
+    p.querySelectorAll<HTMLAnchorElement>('[data-example]').forEach((a, i) => {
+      const q = picks[i][i]; // [0] ZIP, [1] city, [2] call letters
+      a.textContent = q;
+      a.href = `${p.dataset.searchUrl}?${new URLSearchParams({ q })}`;
+    });
+    p.hidden = false;
+  }
+</script>
 
 <style>
   .search-form { position: relative; display: flex; flex-direction: column; gap: var(--space-12); }

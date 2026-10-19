@@ -22,35 +22,38 @@
       url: https://play.google.com/store/apps/details?id=com.pbs.video
       source: https://www.pbs.org/pbs-app/
       retrievedAt: 2026-10-18
+    # pbs.org links only help pages for most TV platforms; these direct store links are
+    # the ones PBS member stations' own "PBS app" pages use.
     - platform: appletv
-      kind: help
-      url: https://help.pbs.org/support/solutions/articles/12000084210-how-do-i-download-the-pbs-app-on-apple-tv-
-      source: https://www.pbs.org/pbs-app/
+      kind: store
+      url: https://apps.apple.com/us/app/pbs-watch-tv-documentaries/id398349296
+      source: https://www.cetconnect.org/pbs-app/ (link "Download on Apple TV"; same App Store listing as iPhone)
       retrievedAt: 2026-10-18
     - platform: firetv
-      kind: help
-      url: https://help.pbs.org/support/solutions/articles/12000095640-how-to-use-the-pbs-app-on-android-tv-
-      source: https://www.pbs.org/pbs-app/ (PBS uses one help link for Fire TV and Android TV)
+      kind: store
+      url: https://www.amazon.com/dp/B008Z2NVGK
+      source: https://www.cetconnect.org/pbs-app/ (link "Available on Fire TV"; also kvie.org "Get PBS on Fire TV")
       retrievedAt: 2026-10-18
     - platform: androidtv
-      kind: help
-      url: https://help.pbs.org/support/solutions/articles/12000095640-how-to-use-the-pbs-app-on-android-tv-
-      source: https://www.pbs.org/pbs-app/
+      kind: store
+      url: https://play.google.com/store/apps/details?id=com.pbs.video
+      source: https://www.cetconnect.org/pbs-app/ (link "Available on Android TV"; same Google Play listing as phones)
       retrievedAt: 2026-10-18
     - platform: roku
       kind: store
       url: https://channelstore.roku.com/details/2926d0a0c976db9bfcc86d2364ff9dbc/pbs
       source: https://www.pbs.org/pbs-app/
       retrievedAt: 2026-10-18
+    # Samsung has no public web store page to link to, so this stays PBS's install help.
     - platform: samsung
       kind: help
       url: https://help.pbs.org/support/solutions/articles/12000059656-is-the-pbs-app-available-on-my-samsung-smart-tv-
       source: https://www.pbs.org/pbs-app/
       retrievedAt: 2026-10-18
     - platform: lg
-      kind: help
-      url: https://help.pbs.org/support/solutions/articles/12000108270-how-to-install-the-pbs-app-on-lg-tv-
-      source: https://www.pbs.org/pbs-app/
+      kind: store
+      url: https://us.lgappstv.com/main/tvapp/detail?appId=1260085
+      source: https://www.ipm.org/tv/ (link "Download app on LG" in its PBS app section; also weta.org)
       retrievedAt: 2026-10-18
     - platform: web
       kind: store
@@ -60,14 +63,10 @@
   # Other store listings of the PBS app that station websites link to. Never shown; they
   # stop the scraper from counting the PBS app as a station's own app.
   otherStoreLinks:
-    - url: https://www.amazon.com/dp/B008Z2NVGK
-      source: https://www.kvie.org/app/tv-connected-devices/amazon-fire-tv/ (link "Get PBS on Fire TV")
     - url: https://channelstore.roku.com/details/23353/pbs
       source: https://www.kvie.org/app/tv-connected-devices/roku/ (link "Get PBS on Roku")
     - url: https://channelstore.roku.com/details/6bfb4fc9bfcfe6a4215e32e203439914:25f0df6d853649615c2ec64ef2555811/pbs
       source: https://minnesotapbs.org/pages/how-to-watch (Roku link on the PBS app section)
-    - url: https://us.lgappstv.com/main/tvapp/detail?appId=1260085
-      source: https://www.ipm.org/tv/ (link "Download app on LG", PBS app section)
 
 - id: npr
   name: NPR
