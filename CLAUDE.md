@@ -10,13 +10,13 @@ The owner is Kyle (Director of Product, not a full-time engineer). Explain decis
 ## Non-negotiable principles
 - **Neutral.** Never rank, feature, or style partner stations differently in results. Order is relevance and distance only. Show every station's apps, whoever built them.
 - **Station-first.** A station's own links come before national apps.
-- **Privacy-first.** No cookies, no personal data, no third-party trackers. Analytics are cookieless and aggregate only (see SPEC).
+- **Privacy-first: count events, never people.** No cookies, no browser-storage IDs, no fingerprinting, no IPs, no search text, no third-party requests. Analytics are aggregated at collection time into broad buckets; individual events are never stored. SPEC Section 8 is the complete allowlist of what may be collected. Never add a field or event without Kyle's approval.
 - **No PBS KIDS.** Never link to PBS KIDS apps or content (pbskids.org, PBS KIDS store listings), in national fallbacks or station data.
 - **No endorsement implied.** Use network names (PBS, NPR) as text only. No PBS/NPR logos.
 - **Provenance.** Every data field records where it came from (`source`) and when (`retrievedAt`).
 
 ## Architecture rules
-- Fully static site. No server, no database, no API keys at runtime.
+- Fully static site. No server, no database, no API keys at runtime. The only exception is the tiny anonymous counting endpoint described in SPEC Section 8.
 - Data collection happens in scripts under `scripts/`, run at build time or by a scheduled GitHub Action, never in the browser.
 - Pipeline: `scripts/fetch-*` → `data/raw/` (cached source dumps) → `scripts/build-data` → `public/data/*.json` (what the site reads).
 - Hand-maintained files in `data/manual/` always win over scraped data. A pipeline re-run must never undo a manual fix.

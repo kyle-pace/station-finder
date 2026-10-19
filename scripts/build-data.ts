@@ -59,6 +59,9 @@ interface App {
   // shown under "More apps from …" with a name.
   extra?: boolean;
   name?: string;
+  // "instructions": the station's own page says its app is on this platform but has no
+  // store link; url is that page ("how to get it").
+  kind?: 'instructions';
 }
 
 // A readable app name from a store link: Apple's URL slug ("ket-legislative-coverage"
@@ -456,15 +459,20 @@ for (const site of scraped) {
   for (const l of links) {
     if (isPbsKids(l.url) || excluded.has(l.url)) continue;
     if (/[?&]id=com\.(amazon|google|roku|samsung|lge|apple)\./.test(l.url)) continue; // device makers' apps
-    if (d.org.apps.some((a) => a.url === l.url)) continue;
+    if (d.org.apps.some((a) => a.url === l.url && a.platform === l.platform)) continue;
     const main = d.org.apps.find((a) => a.platform === l.platform && !a.extra);
-    if (main) {
+    if (main?.kind === 'instructions' && l.kind !== 'instructions') {
+      // A real store link beats a "how to get it" link for the same platform.
+      d.org.apps.splice(d.org.apps.indexOf(main), 1);
+    } else if (main) {
+      if (l.kind === 'instructions') continue;
       // A second app for the same platform: keep it as an extra app.
       d.org.apps.push({ platform: l.platform, url: l.url, source: l.foundOn, retrievedAt: site.retrievedAt, verified: false, extra: true });
       extras.push(`${d.org.id}: extra ${l.platform} app ${l.url} (main: ${main.url})`);
       continue;
     }
-    d.org.apps.push({ platform: l.platform, url: l.url, source: l.foundOn, retrievedAt: site.retrievedAt, verified: false }); // scraped: unverified until a person adds it to station-apps.yaml
+    d.org.apps.push({ platform: l.platform, url: l.url, source: l.foundOn, retrievedAt: site.retrievedAt, verified: false, ...(l.kind === 'instructions' ? { kind: 'instructions' as const } : {}) }); // scraped: unverified until a person adds it to station-apps.yaml
+    if (l.kind === 'instructions') { lowConfidence.push(`${d.org.id}: its apps page names ${l.platform} but has no store link; linking the page`); continue; }
     if (l.confidence === 'low') lowConfidence.push(`${d.org.id}: ${l.platform} guessed from link text "${l.linkText}" — ${l.url}`);
     else if (l.how !== 'manual-page') lowConfidence.push(`${d.org.id}: ${l.platform} link found on ${l.foundOn} — check it's the station's own app`);
   }

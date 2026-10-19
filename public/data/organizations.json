@@ -240,7 +240,7 @@
         "platform": "web",
         "url": "https://watch.azpbs.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -472,10 +472,58 @@
         "name": "KPBS News"
       },
       {
+        "platform": "appletv",
+        "url": "https://www.kpbs.org/kpbsplus",
+        "source": "https://www.kpbs.org/kpbsplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.kpbs.org/kpbsplus",
+        "source": "https://www.kpbs.org/kpbsplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "androidtv",
+        "url": "https://www.kpbs.org/kpbsplus",
+        "source": "https://www.kpbs.org/kpbsplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "roku",
+        "url": "https://www.kpbs.org/kpbsplus",
+        "source": "https://www.kpbs.org/kpbsplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "samsung",
+        "url": "https://www.kpbs.org/kpbsplus",
+        "source": "https://www.kpbs.org/kpbsplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "lg",
+        "url": "https://www.kpbs.org/kpbsplus",
+        "source": "https://www.kpbs.org/kpbsplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
         "platform": "web",
         "url": "https://plus.kpbs.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -604,7 +652,7 @@
       },
       "livestreamUrl": {
         "source": "https://kvcr.org/ (link \"Live TV\")",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-19"
       }
     },
     "livestreamUrl": "https://kvcr.org/tv/live"
@@ -627,28 +675,46 @@
         "platform": "firetv",
         "url": "https://www.amazon.com/dp/B0F5XB6BQL",
         "source": "https://www.kvie.org/kvie-plus/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.kvie.org/app/tv-connected-devices/amazon-fire-tv/",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/ccf90dd41f8e5518e9d6a1082486e7ef:5e8ea1044757b549d4a4e3e4843bed4d/kvie-pbs-kvie",
         "source": "https://www.kvie.org/kvie-plus/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/23353/pbs",
+        "source": "https://www.kvie.org/app/tv-connected-devices/roku/",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1268909",
         "source": "https://www.kvie.org/kvie-plus/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "web",
         "url": "https://stream.kvie.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -678,7 +744,7 @@
       },
       "livestreamUrl": {
         "source": "https://www.kvie.org/ (link \"Live TV\")",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-19"
       }
     },
     "livestreamUrl": "https://www.kvie.org/live/"
@@ -727,6 +793,20 @@
     "owner": "Public Media Group of Southern California",
     "website": "https://pbssocal.org",
     "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/family-math-play-learn/id6761206856",
+        "source": "https://www.pbssocal.org/familymathapp",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.pbssocal.familymath",
+        "source": "https://www.pbssocal.org/familymathapp",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
       {
         "platform": "firetv",
         "url": "https://www.amazon.com/dp/B008Z2NVGK",
@@ -916,6 +996,20 @@
         "verified": false
       },
       {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.krma",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876",
+        "source": "https://www.rmpbs.org/watch/rmpbs-plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
         "platform": "firetv",
         "url": "https://www.amazon.com/dp/B0DLBTLJ7B",
         "source": "https://www.rmpbs.org/watch/rmpbs-plus",
@@ -947,7 +1041,7 @@
         "platform": "web",
         "url": "https://rmpbsplus.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -1048,6 +1142,13 @@
     "website": "https://weta.org/watch",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/weta/id6740541547",
+        "source": "https://weta.org/wetaplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.weta",
         "source": "https://weta.org/wetaplus",
@@ -1086,7 +1187,7 @@
         "platform": "web",
         "url": "https://wetaplus.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -1420,14 +1521,14 @@
         "platform": "ios",
         "url": "https://apps.apple.com/in/app/wlrn-public-media/id927438305",
         "source": "https://www.wlrn.org/ways-to-watch-wlrn",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.jacapps.wlrn",
         "source": "https://www.wlrn.org/ways-to-watch-wlrn",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       }
     ],
@@ -1580,14 +1681,14 @@
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/gpb/id940297307",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/gpb-sports/id455158040",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "GPB Sports"
@@ -1596,7 +1697,7 @@
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/gpb-classical/id6443334692",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "GPB Classical"
@@ -1605,7 +1706,7 @@
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/gasha-go/id6451390320",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "Gasha Go"
@@ -1614,7 +1715,7 @@
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/gpb-vr-ar/id6756442017",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "GPB Vr Ar"
@@ -1623,14 +1724,14 @@
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.gpb.gpbfootball",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "GPB Sports"
@@ -1639,7 +1740,7 @@
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.gpbclassical",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "GPB Classical"
@@ -1648,7 +1749,7 @@
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.gpb.gashago",
         "source": "https://www.gpb.org/apps",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "Gasha Go"
@@ -1688,7 +1789,7 @@
       },
       "livestreamUrl": {
         "source": "https://www.gpb.org/ (link \"Watch Live\")",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-19"
       }
     },
     "livestreamUrl": "https://www.gpb.org/television/live"
@@ -2227,7 +2328,15 @@
     "state": "IN",
     "owner": "Northwest Indiana Public Broadcasting, Inc.",
     "website": "https://www.lakeshorepublicmedia.org",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.lakeshorepublicmedia.org/how-to-watch",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [],
     "sources": {
       "name": {
@@ -2382,7 +2491,40 @@
     "state": "IN",
     "owner": "Metropolitan Indianapolis Public Media, Inc.",
     "website": "https://www.wfyi.org",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wfyi-app/id1353150546",
+        "source": "https://www.wfyi.org/watch-and-listen",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wbaa-public-radio-app/id455577222",
+        "source": "https://www.wfyi.org/watch-and-listen",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "Wbaa Public Radio App"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wfyi",
+        "source": "https://www.wfyi.org/watch-and-listen",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wbaa",
+        "source": "https://www.wfyi.org/watch-and-listen",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "Wbaa Public Radio App"
+      }
+    ],
     "facilityIds": [
       "fcc-41397"
     ],
@@ -2561,7 +2703,7 @@
       },
       "livestreamUrl": {
         "source": "https://ktwu.org/ (link \"Live\")",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-19"
       }
     },
     "livestreamUrl": "https://watch.ktwu.org/livestream/"
@@ -2751,7 +2893,7 @@
     "sources": {
       "name": {
         "source": "manual: overrides.yaml (name the station uses on its own site (ket.org title \"KET > Kentucky Educational Television\"))",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-19"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
@@ -3444,7 +3586,22 @@
     "state": "MN",
     "owner": "KSMQ Public Service Media, Inc.",
     "website": "https://www.minnesotapbs.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://minnesotapbs.org/pages/how-to-watch",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/6bfb4fc9bfcfe6a4215e32e203439914:25f0df6d853649615c2ec64ef2555811/pbs",
+        "source": "https://minnesotapbs.org/pages/how-to-watch",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-28510"
     ],
@@ -3549,7 +3706,22 @@
     "state": "MN",
     "owner": "Twin Cities Public Television, Inc.",
     "website": "https://www.minnesotapbs.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://minnesotapbs.org/pages/how-to-watch",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/6bfb4fc9bfcfe6a4215e32e203439914:25f0df6d853649615c2ec64ef2555811/pbs",
+        "source": "https://minnesotapbs.org/pages/how-to-watch",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-68594"
     ],
@@ -3977,6 +4149,38 @@
     "website": "https://www.wtvi.org/",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://www.wtvi.org/pbscltapp/",
+        "source": "https://www.wtvi.org/pbscltapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "android",
+        "url": "https://www.wtvi.org/pbscltapp/",
+        "source": "https://www.wtvi.org/pbscltapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://www.wtvi.org/pbscltapp/",
+        "source": "https://www.wtvi.org/pbscltapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.wtvi.org/pbscltapp/",
+        "source": "https://www.wtvi.org/pbscltapp/",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "kind": "instructions"
+      },
+      {
         "platform": "roku",
         "url": "https://my.roku.com/account/add/HPDZRHL",
         "source": "hand-checked (published Roku channel link)",
@@ -4029,6 +4233,20 @@
     "owner": "University of North Carolina",
     "website": "https://www.pbsnc.org/",
     "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/au/app/explore-nc/id1613986031",
+        "source": "https://www.pbsnc.org/explore-nc-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.horizonvp.pbs",
+        "source": "https://www.pbsnc.org/explore-nc-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
       {
         "platform": "firetv",
         "url": "https://www.amazon.com/dp/B008Z2NVGK",
@@ -4484,7 +4702,22 @@
     "state": "NV",
     "owner": "Channel 5 Public Broadcasting, Inc.",
     "website": "https://www.pbsreno.org/",
-    "apps": [],
+    "apps": [
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.pbsreno.org/about/how-to-watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "roku",
+        "url": "https://channelstore.roku.com/details/6bfb4fc9bfcfe6a4215e32e203439914:25f0df6d853649615c2ec64ef2555811/pbs",
+        "source": "https://www.pbsreno.org/about/how-to-watch/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      }
+    ],
     "facilityIds": [
       "fcc-10228"
     ],
@@ -4576,6 +4809,13 @@
     "website": "https://www.btpm.org/watch/pbs",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/btpm/id6752734865",
+        "source": "https://www.btpm.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wned",
         "source": "https://www.btpm.org/plus",
@@ -4607,7 +4847,7 @@
         "platform": "web",
         "url": "https://watch.btpm.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -5529,7 +5769,7 @@
         "platform": "web",
         "url": "https://watch.lehighvalleypublicmedia.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -5583,60 +5823,94 @@
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
         "source": "https://whyy.org/whyy-watch-app/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "ios",
         "url": "https://apps.apple.com/us/app/whyy-greater-phillys-npr/id1246315452",
         "source": "https://whyy.org/whyy-listen-app/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "WHYY Greater Phillys NPR"
       },
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/podcasts/id525463029",
+        "source": "https://whyy.org/ways-to-stream/",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Podcasts"
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whyy",
         "source": "https://whyy.org/whyy-watch-app/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.jacapps.whyy",
         "source": "https://whyy.org/whyy-listen-app/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false,
         "extra": true,
         "name": "WHYY Greater Phillys NPR"
       },
       {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.stitcher.app",
+        "source": "https://whyy.org/ways-to-stream/",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Podcasts"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.radiopublic.android",
+        "source": "https://whyy.org/ways-to-stream/",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      },
+      {
+        "platform": "appletv",
+        "url": "https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837",
+        "source": "https://whyy.org/whyy-watch-app/",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
         "platform": "firetv",
         "url": "https://www.amazon.com/dp/B0DX4GG2V9",
         "source": "https://whyy.org/whyy-watch-app/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/bf40c4e8dc6ecde6d0a9a0ea22af9fae:3d91c874584177eb45373c475768b197/whyy-watch",
         "source": "https://whyy.org/whyy-watch-app/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1261252",
         "source": "https://whyy.org/whyy-watch-app/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "web",
         "url": "https://watch.whyy.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -5666,7 +5940,7 @@
       },
       "livestreamUrl": {
         "source": "https://whyy.org/ (link \"Live TV\")",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-19"
       }
     },
     "livestreamUrl": "https://whyy.org/watch-now/"
@@ -5786,52 +6060,68 @@
     "website": "https://www.wqed.org/",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wqed/id6752442766",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
+        "source": "https://www.wqed.org/plus/activate/",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.jacapps.wqed",
         "source": "https://www.wqed.org/fm/app/",
-        "retrievedAt": "2026-10-18",
-        "verified": false
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
       },
       {
         "platform": "appletv",
         "url": "https://apps.apple.com/us/app/wqed/id6752442766",
         "source": "https://www.wqed.org/plus/activate/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "firetv",
         "url": "https://www.amazon.com/dp/B0FVNC82N1",
         "source": "https://www.wqed.org/plus/activate/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "androidtv",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.wqed",
         "source": "https://www.wqed.org/plus/activate/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "roku",
         "url": "https://channelstore.roku.com/details/4d3e3d0302ed8d8d66ed623af6ede419:a6afc2cc55e97c38bbd9adaea7f9e6bd/wqed",
         "source": "https://www.wqed.org/plus/activate/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "lg",
         "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1283074",
         "source": "https://www.wqed.org/plus/activate/",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": false
       },
       {
         "platform": "web",
         "url": "https://plus.wqed.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -5861,7 +6151,7 @@
       },
       "livestreamUrl": {
         "source": "https://www.wqed.org/ (link \"WATCH LIVE\")",
-        "retrievedAt": "2026-10-18"
+        "retrievedAt": "2026-10-19"
       }
     },
     "livestreamUrl": "https://www.wqed.org/livestream/"
@@ -5998,7 +6288,7 @@
     "city": "San Juan",
     "state": "PR",
     "owner": "Ana G. Méndez University(Sistema Universitario Ana G. Méndez, Inc.)",
-    "website": "https://sistematv.uagm.net/",
+    "website": "https://sistematv.com/",
     "apps": [],
     "facilityIds": [
       "fcc-2174"
@@ -6021,7 +6311,7 @@
         "retrievedAt": "2026-10-18"
       },
       "website": {
-        "source": "redirect from https://sistematv.com/ (station website)",
+        "source": "https://en.wikipedia.org/wiki/WMTJ",
         "retrievedAt": "2026-10-18"
       }
     }
@@ -6087,10 +6377,19 @@
     "apps": [
       {
         "platform": "ios",
-        "url": "https://apps.apple.com/us/app/south-carolina-etv/id1056289468",
+        "url": "https://apps.apple.com/us/app/scetv/id6772544565",
         "source": "https://www.scetv.org/scetvplus",
         "retrievedAt": "2026-10-18",
         "verified": false
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/south-carolina-etv/id1056289468",
+        "source": "https://www.scetv.org/scetvplus",
+        "retrievedAt": "2026-10-18",
+        "verified": false,
+        "extra": true,
+        "name": "South Carolina Etv"
       },
       {
         "platform": "android",
@@ -6106,7 +6405,7 @@
         "retrievedAt": "2026-10-18",
         "verified": false,
         "extra": true,
-        "name": "Another app"
+        "name": "South Carolina Etv"
       },
       {
         "platform": "appletv",
@@ -6133,7 +6432,7 @@
         "platform": "web",
         "url": "https://plus.scetv.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -6316,7 +6615,7 @@
         "platform": "web",
         "url": "https://nashvillepbs.app/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -7248,6 +7547,13 @@
     "website": "https://whro.org/",
     "apps": [
       {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/whro-public-media/id6741328420",
+        "source": "https://www.whro.org/plus",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=org.localstreaming.whro",
         "source": "https://www.whro.org/plus",
@@ -7286,7 +7592,7 @@
         "platform": "web",
         "url": "https://video.whro.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-18",
+        "retrievedAt": "2026-10-19",
         "verified": true
       }
     ],
@@ -7422,7 +7728,7 @@
     "city": "Seattle",
     "state": "WA",
     "owner": "Cascade Public Media",
-    "website": "https://www.cascadepbs.org/",
+    "website": "https://www.kcts9.org/",
     "apps": [
       {
         "platform": "ios",
@@ -7488,7 +7794,7 @@
         "retrievedAt": "2026-10-18"
       },
       "website": {
-        "source": "redirect from https://www.kcts9.org/ (station website)",
+        "source": "https://en.wikipedia.org/wiki/KCTS-TV",
         "retrievedAt": "2026-10-18"
       },
       "livestreamUrl": {
@@ -7523,6 +7829,13 @@
         "platform": "android",
         "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.kbtc",
         "source": "https://www.kbtc.org/watch-on-demand/kbtc-app/",
+        "retrievedAt": "2026-10-18",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B008Z2NVGK",
+        "source": "https://www.kbtc.org/watch-on-demand/pbs-app/",
         "retrievedAt": "2026-10-18",
         "verified": false
       }

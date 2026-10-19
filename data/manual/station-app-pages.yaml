@@ -51,6 +51,8 @@
   appsPage: https://www.nwpb.org/nwpb-app
 - id: pbs-39
   webApp: https://watch.lehighvalleypublicmedia.org/
+- id: pbs-charlotte
+  appsPage: https://www.wtvi.org/pbscltapp/
 - id: pbs-fort-wayne
   appsPage: https://www.pbsfortwayne.org/schedule/pbsfortwayneapp/
 - id: pbs-north-carolina

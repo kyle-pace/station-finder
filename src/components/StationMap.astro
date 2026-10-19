@@ -182,7 +182,7 @@ const info = Object.fromEntries(
         `${i.meta} · ${dot.dataset.call}${i.tx > 1 ? ` + ${i.tx - 1} more transmitter${i.tx > 2 ? 's' : ''}` : ''}`;
       card.querySelector('[data-card-apps]')!.textContent = i.apps.length
         ? `Own apps: ${i.apps.join(', ')}`
-        : i.fallback ? `No apps of its own yet. Watch with the ${i.fallback} app.` : 'No apps of its own yet.';
+        : i.fallback ? `Watch with the ${i.fallback} app` : '';
       card.querySelector<HTMLElement>('[data-card-live]')!.hidden = !i.live;
       card.querySelector<HTMLAnchorElement>('[data-card-link]')!.href = i.href;
     };

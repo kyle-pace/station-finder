@@ -1,20 +1,34 @@
 build-data report
   organizations:  150 (147 with transmitter coordinates)
   facilities:     331
-  with apps:      54 (13 with a verified app)   without apps: 96
+  with apps:      59 (13 with a verified app)   without apps: 91
   without website: 5 (azpm, northern-california-public-media, south-florida-pbs, illinois-public-media, pbs-rio-grande-valley)
-  manual: 1 overrides, 3 merges, 43 app pages, 1 station-apps entries
+  manual: 1 overrides, 3 merges, 44 app pages, 1 station-apps entries
 
   Rows with no transmitter coordinates (not findable by ZIP until fixed): 1
     - pbs-appalachia-virginia (PBS Appalachia Virginia, VA)
 
-  Low-confidence matches to review: 38
+  Low-confidence matches to review: 70
     - pbs-rio-grande-valley: Wikipedia says satellite of KMBH-CD, but no row has that call sign; kept separate
+    - kpbs: its apps page names ios but has no store link; linking the page
+    - kpbs: its apps page names android but has no store link; linking the page
+    - kpbs: its apps page names appletv but has no store link; linking the page
+    - kpbs: its apps page names roku but has no store link; linking the page
+    - kpbs: its apps page names firetv but has no store link; linking the page
+    - kpbs: its apps page names androidtv but has no store link; linking the page
+    - kpbs: its apps page names samsung but has no store link; linking the page
+    - kpbs: its apps page names lg but has no store link; linking the page
     - kpbs: ios link found on https://www.kpbs.org/kpbs-on-the-go — check it's the station's own app
     - kpbs: android link found on https://www.kpbs.org/kpbs-on-the-go — check it's the station's own app
     - kqed-and-kqeh: firetv link found on https://www.kqed.org/tv — check it's the station's own app
+    - pbs-socal: android link found on https://www.pbssocal.org/familymathapp — check it's the station's own app
+    - pbs-socal: ios link found on https://www.pbssocal.org/familymathapp — check it's the station's own app
+    - rocky-mountain-pbs: appletv guessed from link text ".css-1jtdkxx.builder-block{width:100%;position:relative;min-height:20px;min-widt" — https://apps.apple.com/us/app/rmpbs-rocky-mountain-pbs/id6737281876
     - rocky-mountain-pbs: androidtv guessed from link text ".css-1qqloj9.builder-block{width:76%;position:relative;min-height:20px;min-width" — https://play.google.com/store/apps/details?id=org.localstreaming.krma
     - weta: appletv guessed from link text "Watch on Apple TV" — https://apps.apple.com/us/app/weta/id6740541547
+    - lakeshore-pbs: firetv link found on https://www.lakeshorepublicmedia.org/how-to-watch — check it's the station's own app
+    - wfyi: android link found on https://www.wfyi.org/watch-and-listen — check it's the station's own app
+    - wfyi: ios link found on https://www.wfyi.org/watch-and-listen — check it's the station's own app
     - wtiu: roku link found on https://www.ipm.org/tv/ — check it's the station's own app
     - wtiu: firetv link found on https://www.ipm.org/tv/ — check it's the station's own app
     - wtiu: lg link found on https://www.ipm.org/tv/ — check it's the station's own app
@@ -23,12 +37,25 @@ build-data report
     - maine-public-broadcasting-network: firetv link found on https://www.mainepublic.org/ — check it's the station's own app
     - cmu-public-television: ios link found on https://www.wcmu.org/ — check it's the station's own app
     - cmu-public-television: android link found on https://www.wcmu.org/ — check it's the station's own app
+    - ksmq: firetv link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
+    - ksmq: roku link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
     - lakeland-pbs: firetv link found on https://lptv.org/ — check it's the station's own app
     - lakeland-pbs: roku link found on https://lptv.org/ — check it's the station's own app
+    - minnesota-pbs: firetv link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
+    - minnesota-pbs: roku link found on https://minnesotapbs.org/pages/how-to-watch — check it's the station's own app
+    - pbs-charlotte: its apps page names ios but has no store link; linking the page
+    - pbs-charlotte: its apps page names android but has no store link; linking the page
+    - pbs-charlotte: its apps page names appletv but has no store link; linking the page
+    - pbs-charlotte: its apps page names roku but has no store link; linking the page
+    - pbs-charlotte: its apps page names firetv but has no store link; linking the page
+    - pbs-north-carolina: ios link found on https://www.pbsnc.org/explore-nc-app/ — check it's the station's own app
+    - pbs-north-carolina: android link found on https://www.pbsnc.org/explore-nc-app/ — check it's the station's own app
+    - pbs-reno: roku link found on https://www.pbsreno.org/about/how-to-watch/ — check it's the station's own app
+    - pbs-reno: firetv link found on https://www.pbsreno.org/about/how-to-watch/ — check it's the station's own app
     - buffalo-toronto-public-media: appletv guessed from link text "Watch on Apple TV" — https://apps.apple.com/us/app/btpm/id6752734865
+    - whyy: appletv guessed from link text "Apple TV Apple TV logo" — https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837
     - wqed: appletv guessed from link text "Apple TV icon" — https://apps.apple.com/us/app/wqed/id6752442766
     - wqed: androidtv guessed from link text "Google TV icon" — https://play.google.com/store/apps/details?id=org.localstreaming.wqed
-    - wqed: android link found on https://www.wqed.org/fm/app/ — check it's the station's own app
     - wvia: ios link found on https://www.wvia.org/ — check it's the station's own app
     - wvia: android link found on https://www.wvia.org/ — check it's the station's own app
     - south-carolina-educational-television: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/scetv/id6772544565
@@ -41,11 +68,16 @@ build-data report
     - pbs-appalachia-virginia: roku link found on https://www.pbsavirginia.org/ — check it's the station's own app
     - whro: appletv guessed from link text "AppleTV" — https://apps.apple.com/us/app/whro-public-media/id6741328420
     - cascade-pbs: appletv guessed from link text "Apple TV" — https://apps.apple.com/us/app/worlds-best-television/id1578709872
+    - kbtc-and-kcka: firetv link found on https://www.kbtc.org/watch-on-demand/pbs-app/ — check it's the station's own app
     - west-virginia-public-broadcasting: ios link found on https://wvpublic.org/ — check it's the station's own app
     - west-virginia-public-broadcasting: android link found on https://wvpublic.org/ — check it's the station's own app
+    - kvie: paired https://channelstore.roku.com/details/23353/pbs with "Another app" by position on the page
     - kpbs: paired https://play.google.com/store/apps/details?id=com.jacapps.kpbs with "KPBS News" by position on the page
     - georgia-public-broadcasting: paired https://play.google.com/store/apps/details?id=org.gpb.gpbfootball with "GPB Sports" by position on the page
+    - wfyi: paired https://play.google.com/store/apps/details?id=com.skyblue.pra.wbaa with "Wbaa Public Radio App" by position on the page
     - whyy: paired https://play.google.com/store/apps/details?id=com.jacapps.whyy with "WHYY Greater Phillys NPR" by position on the page
+    - whyy: paired https://play.google.com/store/apps/details?id=com.stitcher.app with "Podcasts" by position on the page
+    - south-carolina-educational-television: paired https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv with "South Carolina Etv" by position on the page
     - WYIN (fcc-49803) appears under two stations; kept under the first, not lakeshore-pbs
 
   Merged rows: 9
@@ -58,10 +90,6 @@ build-data report
     - WSEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WSEC article; same owner and website))
     - WMEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WMEC article; same owner and website))
     - WQEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WQEC article; same owner and website))
-
-  Websites updated because the old address redirects: 2
-    - sistema-tv: https://sistematv.com/ → https://sistematv.uagm.net/
-    - cascade-pbs: https://www.kcts9.org/ → https://www.cascadepbs.org/
 
   Livestream links found on homepages (check they are right): 116
     - alaska-public-media: livestream "Live TV" → https://video.alaskapublic.org/livestream/
@@ -181,9 +209,11 @@ build-data report
     - west-virginia-public-broadcasting: livestream "WVPB Live Stream" → https://video.wvpublic.org/livestream/
     - wyoming-pbs: livestream "How to Livestream" → https://www.wyomingpbs.org/app/
 
-  Extra apps (a second app for the same platform; set extra/name in station-apps.yaml if wrong): 15
+  Extra apps (a second app for the same platform; set extra/name in station-apps.yaml if wrong): 24
     - kpbs: extra ios app https://apps.apple.com/us/app/kpbs-news/id1305075995 (main: https://apps.apple.com/us/app/kpbs/id6741001514)
     - kpbs: extra android app https://play.google.com/store/apps/details?id=com.jacapps.kpbs (main: https://play.google.com/store/apps/details?id=org.localstreaming.kpbs)
+    - kvie: extra firetv app https://www.amazon.com/dp/B008Z2NVGK (main: https://www.amazon.com/dp/B0F5XB6BQL)
+    - kvie: extra roku app https://channelstore.roku.com/details/23353/pbs (main: https://channelstore.roku.com/details/ccf90dd41f8e5518e9d6a1082486e7ef:5e8ea1044757b549d4a4e3e4843bed4d/kvie-pbs-kvie)
     - georgia-public-broadcasting: extra ios app https://apps.apple.com/us/app/gpb-sports/id455158040 (main: https://apps.apple.com/us/app/gpb/id940297307)
     - georgia-public-broadcasting: extra android app https://play.google.com/store/apps/details?id=org.gpb.gpbfootball (main: https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb)
     - georgia-public-broadcasting: extra ios app https://apps.apple.com/us/app/gpb-classical/id6443334692 (main: https://apps.apple.com/us/app/gpb/id940297307)
@@ -191,11 +221,18 @@ build-data report
     - georgia-public-broadcasting: extra ios app https://apps.apple.com/us/app/gasha-go/id6451390320 (main: https://apps.apple.com/us/app/gpb/id940297307)
     - georgia-public-broadcasting: extra android app https://play.google.com/store/apps/details?id=org.gpb.gashago (main: https://play.google.com/store/apps/details?id=com.skyblue.pra.gpb)
     - georgia-public-broadcasting: extra ios app https://apps.apple.com/us/app/gpb-vr-ar/id6756442017 (main: https://apps.apple.com/us/app/gpb/id940297307)
+    - wfyi: extra android app https://play.google.com/store/apps/details?id=com.skyblue.pra.wbaa (main: https://play.google.com/store/apps/details?id=com.publicmediaapps.wfyi)
+    - wfyi: extra ios app https://apps.apple.com/us/app/wbaa-public-radio-app/id455577222 (main: https://apps.apple.com/us/app/wfyi-app/id1353150546)
     - kentucky-educational-television: extra android app https://play.google.com/store/apps/details?id=org.ket.legislativecoverage (main: https://play.google.com/store/apps/details?id=com.publicmediaapps.kettv)
     - kentucky-educational-television: extra ios app https://apps.apple.com/us/app/ket-legislative-coverage/id786591133 (main: https://apps.apple.com/us/app/ket-videos-schedules/id1298153586)
     - kentucky-educational-television: extra ios app https://apps.apple.com/us/app/ket-fastforward-skill-check/id1321050730 (main: https://apps.apple.com/us/app/ket-videos-schedules/id1298153586)
     - whyy: extra ios app https://apps.apple.com/us/app/whyy-greater-phillys-npr/id1246315452 (main: https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837)
     - whyy: extra android app https://play.google.com/store/apps/details?id=com.jacapps.whyy (main: https://play.google.com/store/apps/details?id=org.localstreaming.whyy)
+    - whyy: extra ios app https://apps.apple.com/us/app/podcasts/id525463029 (main: https://apps.apple.com/us/app/whyy-watch-tv-and-video/id6741119837)
+    - whyy: extra android app https://play.google.com/store/apps/details?id=com.stitcher.app (main: https://play.google.com/store/apps/details?id=org.localstreaming.whyy)
+    - whyy: extra android app https://play.google.com/store/apps/details?id=com.radiopublic.android (main: https://play.google.com/store/apps/details?id=org.localstreaming.whyy)
+    - wqed: extra android app https://play.google.com/store/apps/details?id=com.jacapps.wqed (main: https://play.google.com/store/apps/details?id=org.localstreaming.wqed)
+    - south-carolina-educational-television: extra ios app https://apps.apple.com/us/app/south-carolina-etv/id1056289468 (main: https://apps.apple.com/us/app/scetv/id6772544565)
     - south-carolina-educational-television: extra android app https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv (main: https://play.google.com/store/apps/details?id=org.localstreaming.wrlk)
 
   Station ids:

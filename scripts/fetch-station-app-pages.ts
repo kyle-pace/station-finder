@@ -33,6 +33,9 @@ export interface FoundLink {
   foundOn: string;
   how: 'manual-page' | 'homepage' | 'discovered-page';
   confidence: 'high' | 'low'; // low = TV platform guessed from the link's surrounding text
+  // "instructions": the station's own page says the app is on this platform but gives no
+  // store link (e.g. "search 'PBS Charlotte' in your app store"); url is that page.
+  kind?: 'store' | 'instructions';
 }
 
 export interface StationAppLinks {
@@ -134,13 +137,22 @@ function appPageCandidates($: cheerio.CheerioAPI, base: string): string[] {
     const text = $(a).text().replace(/\s+/g, ' ').trim().toLowerCase();
     const path = u.pathname.toLowerCase();
     let score = 0;
-    if (/(^|\/)(apps?|mobile-?apps?|get-?the-?app|download)(\/|$|-)/.test(path)) score += 3;
+    // "app" anywhere in the address (e.g. /pbscltapp/, /apps/, /get-the-app), but not
+    // "apple"/"application"; station streaming apps are often called "<station> Plus".
+    if (/app(?![a-z])|apps(?![a-z])/.test(path) && !/appl/.test(path)) score += 3;
+    if (/(^|\/)download/.test(path)) score += 2;
     if (/\bapps?\b/.test(text)) score += 2;
-    if (/ways to (watch|stream)|watch anywhere|streaming/.test(text)) score += 1;
-    if (/pbs[-_ ]?kids|podcast|careers|privacy/.test(path + ' ' + text)) score = 0;
-    if (score > 0) scored.push({ url: (u.hash = '', u.href), score });
+    if ((text.length <= 25 && /\bplus\b|\+$/.test(text)) || /plus(\/|$)/.test(path)) score += 2;
+    if (/\bon the go\b|\bmobile\b/.test(text)) score += 2;
+    if (/ways to (watch|stream)|watch anywhere|streaming|how to watch/.test(text)) score += 1;
+    // Pages about the national PBS app, PBS KIDS, and unrelated sections.
+    if (/getting-started|pbs-?app|pbs[-_ ]?kids|podcast|careers|privacy|apply|job/.test(path)) score -= 4;
+    // News stories and blog posts aren't apps pages, even when they mention streaming.
+    if (/\/(news|blogs?|articles?|stories|story)\/|\/20\d\d\//.test(path)) score -= 6;
+    if (score <= 0) return;
+    scored.push({ url: (u.hash = '', u.href), score });
   });
-  return [...new Map(scored.sort((x, y) => y.score - x.score).map((s) => [s.url, s])).values()].slice(0, 2).map((s) => s.url);
+  return [...new Map(scored.sort((x, y) => y.score - x.score).map((s) => [s.url, s])).values()].slice(0, 4).map((s) => s.url);
 }
 
 function collectLinks($: cheerio.CheerioAPI, pageUrl: string, how: FoundLink['how'], into: FoundLink[]): void {
@@ -156,6 +168,26 @@ function collectLinks($: cheerio.CheerioAPI, pageUrl: string, how: FoundLink['ho
     if (into.some((l) => storeKey(l.url) === storeKey(href) && l.platform === platform)) return;
     into.push({ platform, url: href, linkText: own.replace(/\s+/g, ' ').trim().slice(0, 80), foundOn: pageUrl, how, confidence });
   });
+}
+
+// Platforms a station's apps page names in its text, for pages with no store links.
+// Only used on hand-listed apps pages, where the text is about the station's own app.
+const MENTIONS: [Platform, RegExp][] = [
+  ['ios', /\b(iphone|ipad|ios)\b/i],
+  ['android', /\bandroid (phones?|tablets?|devices?|mobile)\b|google play/i],
+  ['appletv', /\bapple ?tv\b/i],
+  ['roku', /\broku\b/i],
+  ['firetv', /\bfire ?tv\b|\bfire ?stick\b/i],
+  ['androidtv', /\b(android|google) ?tv\b/i],
+  ['samsung', /\bsamsung\b/i],
+  ['lg', /\blg\b/i],
+];
+function mentionedPlatforms($: cheerio.CheerioAPI): Platform[] {
+  const body = $('main').length ? $('main').first() : $('body');
+  const copy = body.clone();
+  copy.find('script, style, nav, header, footer').remove();
+  const text = copy.text().replace(/\s+/g, ' ');
+  return MENTIONS.filter(([, re]) => re.test(text)).map(([p]) => p);
 }
 
 // --- Main ------------------------------------------------------------------------
@@ -190,7 +222,14 @@ for (const org of orgs) {
   };
 
   const manual = manualPages.get(org.id);
-  if (manual) await read(manual, 'manual-page', 'manual-page');
+  if (manual) {
+    const page = await read(manual, 'manual-page', 'manual-page');
+    if (page && !r.links.some((l) => l.how === 'manual-page')) {
+      for (const platform of mentionedPlatforms(page.$)) {
+        r.links.push({ platform, url: page.url, linkText: '', foundOn: page.url, how: 'manual-page', confidence: 'high', kind: 'instructions' });
+      }
+    }
+  }
   if (org.website) {
     const home = await read(org.website, 'home', 'homepage');
     if (home) {
@@ -198,7 +237,8 @@ for (const org of orgs) {
       r.donate = bestLink(home.$, home.url, DONATE);
       r.livestream = bestLink(home.$, home.url, LIVESTREAM);
       const candidates = appPageCandidates(home.$, home.url).filter((u) => u !== manual);
-      for (const [i, url] of candidates.entries()) await read(url, `candidate-${i + 1}`, 'discovered-page');
+      // Cached by address, so a re-run never reuses a different page's copy.
+      for (const url of candidates) await read(url, `page-${new URL(url).pathname.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '') || 'root'}`, 'discovered-page');
     }
   }
   results.push(r);
