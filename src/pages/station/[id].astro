@@ -95,7 +95,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
       <button class="app-banner-close" type="button" data-app-banner-close aria-label="Close">×</button>
     </div>
   )}
-  <section class="station-hero">
+  <section class="station-hero" data-station={org.id}>
     <div class="wrap stack gap-24">
       <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
       <div class="station-head">
@@ -114,7 +114,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
         {/* Filled in by the device script with the best link for this visitor's device. */}
         <a class="btn btn-primary btn-lg" data-smart-cta data-name={org.name} data-fallback={fallbackBrand?.name ?? ''} data-verb={verb} data-fallback-verb={fbVerb} data-has-own={String(hasOwnApps || !!org.livestreamUrl)} href="#apps" hidden><span data-cta-icon="mobile"><Icon name="phone" /></span><span data-cta-icon="desktop" hidden><Icon name="web" /></span><span data-cta-label></span></a>
         {org.livestreamUrl && <a class="btn btn-secondary btn-lg" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>{verb} live</span></a>}
-        {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener" data-website-btn data-name={org.name}><Icon name="web" /><span>Website</span></a>}
+        {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener" data-website-btn data-name={org.name} data-platform="web" data-link-type="web"><Icon name="web" /><span>Website</span></a>}
       </div>
     </div>
   </section>
@@ -157,7 +157,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
                   <li class="extra-app">
                     <span class="body-strong">{name}</span>
                     <span class="row-wrap">
-                      {list.map((a) => <a class="label" href={a.url} rel="noopener">{PLATFORM_INFO[a.platform].label}</a>)}
+                      {list.map((a) => <a class="label" href={a.url} rel="noopener" data-platform={a.platform}>{PLATFORM_INFO[a.platform].label}</a>)}
                     </span>
                   </li>
                 ))}
@@ -220,6 +220,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
     const link = device === 'ios' ? banner.dataset.ios : device === 'android' ? banner.dataset.android : undefined;
     if (link && !iosSafari) {
       banner.querySelector<HTMLAnchorElement>('[data-app-banner-get]')!.href = link;
+      banner.querySelector<HTMLAnchorElement>('[data-app-banner-get]')!.dataset.platform = device;
       banner.querySelector('[data-app-banner-where]')!.textContent = device === 'ios' ? 'Free on the App Store' : 'Free on Google Play';
       banner.hidden = false;
       banner.querySelector('[data-app-banner-close]')!.addEventListener('click', () => { banner.hidden = true; });

@@ -8,6 +8,9 @@ export const url = (path: string) => `${BASE}${path.startsWith('/') ? path : `/$
 export const SITE_NAME = 'Station App Finder';
 export const REPO = 'https://github.com/kyle-pace/station-finder';
 
+// The anonymous counter's web app URL (see counter/SETUP.md). Empty = counting is off.
+export const COUNTER_URL = '';
+
 // "Suggest a correction" opens a prefilled public GitHub issue for now (Phase 4 replaces
 // this with a simple form). Station id and name are prefilled so we know what it's about.
 export function correctionUrl(id?: string, name?: string): string {

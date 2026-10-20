@@ -26,6 +26,7 @@ function smartCta(link: HTMLAnchorElement, device: Device): void {
   if (device === 'desktop') label.textContent = isFallback ? `${cta.dataset.fallbackVerb} with the ${cta.dataset.fallback} app` : `${cta.dataset.verb} ${name} in your browser`;
   else label.textContent = isFallback ? `Get the ${cta.dataset.fallback} app` : `Get ${name} on ${DEVICE_WORDS[device]}`;
   cta.href = link.href;
+  cta.dataset.platform = link.dataset.platform; // for anonymous click counting
   if (link.rel) cta.rel = link.rel;
   cta.hidden = false;
 }

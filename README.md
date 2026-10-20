@@ -110,6 +110,10 @@ scripts/build-data               →  public/data/organizations.json, facilities
   resvg in Figtree. Same template for every station; no station or network logos.
 - **On the web, stations go to their own site**: a station's web app if it has one,
   otherwise its website. The PBS and NPR apps are only phone and TV fallbacks.
+- **Anonymous counter** (SPEC section 8): `src/scripts/count.ts` sends daily-count events
+  (page views, searches, no-result searches, clicks out to apps and sites) to a Google
+  Sheet via `counter/google-apps-script.gs`. Off until `COUNTER_URL` in `src/lib/site.ts`
+  is set; setup in `counter/SETUP.md`.
 - Every value records where it came from (`source`) and when (`retrievedAt`).
 
 ### Refreshing the data

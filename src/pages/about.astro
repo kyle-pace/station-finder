@@ -2,7 +2,7 @@
 // Minimal About page: who, why, principles, sources/licenses, privacy, corrections.
 // Phase 4 expands it.
 import Base from '../layouts/Base.astro';
-import { correctionUrl, REPO } from '../lib/site';
+import { correctionUrl, REPO, COUNTER_URL } from '../lib/site';
 ---
 
 <Base title="About" description="Who built Station App Finder, why, where the data comes from, and how to correct it.">
@@ -74,6 +74,19 @@ import { correctionUrl, REPO } from '../lib/site';
         No cookies, no accounts, and no third-party trackers. Searches run in your browser.
         "Use my location" is optional, stays on your device, and is rounded before it's used.
       </p>
+      {COUNTER_URL && (
+        <>
+          <p>
+            We count events, never people: daily totals of page views by page type, searches
+            (the kind of search, how many stations it found, and only the first three digits
+            of a ZIP code or the state), and clicks out to a station's app or website (which
+            station and which platform). Each comes with only a device type (phone, tablet,
+            computer). Nothing is stored about individual visits: no search text, full ZIP
+            codes, locations, cookies, IDs, or IP addresses. If your browser sends Do Not Track
+            or Global Privacy Control, nothing is counted at all.
+          </p>
+        </>
+      )}
     </section>
 
     <section class="stack gap-12">
