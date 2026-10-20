@@ -17,21 +17,29 @@ until the Sheet's web app URL is pasted into `src/lib/site.ts`.
 6. Check: open the site, search a ZIP, click an app link. Within a minute the Sheet gets a
    `counts` tab with rows like `2026-10-20 · search · zip · 4+ · 981 · phone · 1`.
 
-## Weekly email (optional, about 3 minutes)
+## Weekly Slack summary (optional, about 5 minutes)
 
-Every Monday at 8am you get an email summing up the last 7 days: page views, searches,
+Every Monday at 8am a Slack message sums up the last 7 days: page views, searches,
 no-station searches and clicks (with the change from the week before), plus the top
-stations, platforms and no-station areas. It goes to whoever owns the script. Numbers
-under 10 show as "fewer than 10", so it's safe to forward.
+stations, platforms and no-station areas. Numbers under 10 show as "fewer than 10".
 
-1. In the Apps Script editor, click **+** next to Files → **Script**, name it
-   `weekly-email`, and paste the whole of `counter/weekly-email.gs`. Save.
-2. In the function menu at the top, pick `sendWeeklyEmail` and click **Run**. Google asks
-   for one new permission (send email as you); approve it. You should get a test email.
-3. Pick `installWeeklyEmail` and click **Run**. That's it; it now runs every Monday.
+1. **Make a Slack webhook.** Go to https://api.slack.com/apps → **Create New App** →
+   **From scratch**, name it `Find My Station`, pick your workspace. Open
+   **Incoming Webhooks**, switch it on, click **Add New Webhook**, and pick where it posts
+   (your own name for a DM to yourself, or a channel). Copy the URL
+   (`https://hooks.slack.com/services/...`). Your workspace may need an admin to approve
+   the app. Keep the URL private: anyone with it can post there.
+2. **Give it to the script.** In the Apps Script editor: **Project Settings** (gear) →
+   **Script Properties** → **Add script property**: name `SLACK_WEBHOOK_URL`, value the
+   URL. Save. (It lives there, never in the repo.)
+3. **Add the code.** Click **+** next to Files → **Script**, name it `weekly-slack`, paste
+   the whole of `counter/weekly-slack.gs`. Save.
+4. **Test.** In the function menu at the top pick `sendWeeklySlack` → **Run**. Approve the
+   one new permission (connect to an external service). A message should appear in Slack.
+5. **Turn it on.** Pick `installWeeklySlack` → **Run**. It now posts every Monday.
 
-To stop it, run `removeWeeklyEmail`. No redeploy is needed: the email doesn't touch the
-web app URL.
+To stop it, run `removeWeeklySlack`. No redeploy is needed: it doesn't touch the web app
+URL.
 
 ## What's stored
 

@@ -113,8 +113,8 @@ scripts/build-data               →  public/data/organizations.json, facilities
 - **Anonymous counter** (SPEC section 8): `src/scripts/count.ts` sends daily-count events
   (page views, searches, no-result searches, clicks out to apps and sites) to a Google
   Sheet via `counter/google-apps-script.gs`. Off until `COUNTER_URL` in `src/lib/site.ts`
-  is set; setup in `counter/SETUP.md`. An optional weekly summary email
-  (`counter/weekly-email.gs`) goes to the script's owner every Monday.
+  is set; setup in `counter/SETUP.md`. An optional weekly Slack summary
+  (`counter/weekly-slack.gs`) posts every Monday.
 - Every value records where it came from (`source`) and when (`retrievedAt`).
 
 ### Refreshing the data
