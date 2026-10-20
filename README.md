@@ -100,9 +100,9 @@ scripts/build-data               →  public/data/organizations.json, facilities
   On a computer, stations with their own phone app also show a QR code of the same link
   (drawn at build time with the `qrcode` package) to scan and get the app. Show-level links wait until station
   web portals have stable show URLs.
-- **"Get the app" banners** on station pages: Apple's Smart App Banner (`apple-itunes-app`
-  tag) for the station's iPhone app, and a per-station manifest (`/manifests/<id>.webmanifest`)
-  naming its Play Store app, so Chrome on Android can offer it (shown as a small bar).
+- **"Get the app" banner** on station pages: on a phone, a slim bar at the top links the
+  station's own app for that device (App Store or Google Play). iPhone Safari shows Apple's
+  Smart App Banner instead (from the `apple-itunes-app` tag), so the two never stack.
 - **On the web, stations go to their own site**: a station's web app if it has one,
   otherwise its website. The PBS and NPR apps are only phone and TV fallbacks.
 - Every value records where it came from (`source`) and when (`retrievedAt`).

@@ -10,7 +10,6 @@ import {
   type Organization, type Platform,
 } from '../../lib/data';
 import { url, correctionUrl } from '../../lib/site';
-import { playId, appleId } from '../manifests/[id].webmanifest';
 
 export function getStaticPaths() {
   return organizations.map((org) => ({ params: { id: org.id }, props: { org } }));
@@ -77,12 +76,23 @@ const goUrl = new URL(url(`/go/${org.id}/`), Astro.site).href;
 // QR code for people on a computer: scan with a phone to get the station's app. It encodes
 // the share link, which opens a page where the phone offers the station's app. Only for stations with their own
 // phone app; drawn at build time (black on white so it scans in dark mode too).
-const hasPhoneApp = org.apps.some((a) => (a.platform === 'ios' || a.platform === 'android') && !a.extra && a.kind !== 'instructions');
+const ownStore = (p: Platform) => org.apps.find((a) => a.platform === p && !a.extra && a.kind !== 'instructions')?.url;
+const phoneApps = { ios: ownStore('ios'), android: ownStore('android') };
+const appleAppId = phoneApps.ios?.match(/\/id(\d+)/)?.[1];
+const hasPhoneApp = !!(phoneApps.ios || phoneApps.android);
 const qrSvg = hasPhoneApp ? await QRCode.toString(goUrl, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#000000', light: '#ffffff' } }) : null;
 const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, and website.`;
 ---
 
-<Base title={org.name} description={description} appleAppId={appleId(org)} manifest={playId(org) ? url(`/manifests/${org.id}.webmanifest`) : undefined}>
+<Base title={org.name} description={description} appleAppId={appleAppId}>
+  {(phoneApps.ios || phoneApps.android) && (
+    <div class="app-banner" slot="banner" data-app-banner data-ios={phoneApps.ios} data-android={phoneApps.android} hidden>
+      <span class="app-banner-icon" aria-hidden="true"><Icon name="phone" /></span>
+      <span class="app-banner-text"><span class="body-strong">{org.name} app</span><span class="small muted" data-app-banner-where></span></span>
+      <a class="btn btn-primary app-banner-get" href="#" rel="noopener" data-app-banner-get>Get</a>
+      <button class="app-banner-close" type="button" data-app-banner-close aria-label="Close">×</button>
+    </div>
+  )}
   <section class="station-hero">
     <div class="wrap stack gap-24">
       <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
@@ -107,13 +117,6 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
     </div>
   </section>
 
-  {playId(org) && (
-    <div class="app-bar" data-app-bar hidden>
-      <p><span class="body-strong">{org.name}</span> has an app for your phone.</p>
-      <button class="btn btn-primary" type="button" data-app-install>Get the app</button>
-      <button class="app-bar-close" type="button" data-app-close aria-label="Not now">×</button>
-    </div>
-  )}
   <div class="wrap band">
     <div class="two-col">
       <div class="stack gap-32">
@@ -191,24 +194,22 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
 </Base>
 
 <script>
-  // Android: when Chrome says this station's app can be offered (its manifest names the
-  // Play Store app), show a small "Get the app" bar that opens Chrome's install prompt.
-  // iPhone and iPad use Apple's own banner from the apple-itunes-app tag instead.
-  type InstallPrompt = Event & { prompt: () => Promise<void> };
-  const bar = document.querySelector<HTMLElement>('[data-app-bar]');
-  if (bar) {
-    let deferred: InstallPrompt | null = null;
-    addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferred = e as InstallPrompt;
-      bar.hidden = false;
-    });
-    bar.querySelector('[data-app-install]')!.addEventListener('click', async () => {
-      bar.hidden = true;
-      await deferred?.prompt();
-      deferred = null;
-    });
-    bar.querySelector('[data-app-close]')!.addEventListener('click', () => { bar.hidden = true; });
+  // On a phone: a "Get the app" banner for the station's own app on that platform. iPhone
+  // Safari shows Apple's own banner (apple-itunes-app tag), so ours stays out of its way.
+  // Closing it lasts for this page view only; nothing is saved.
+  import { detectDevice } from '../../scripts/device-detect';
+  const banner = document.querySelector<HTMLElement>('[data-app-banner]');
+  if (banner) {
+    const device = detectDevice();
+    const ua = navigator.userAgent;
+    const iosSafari = device === 'ios' && /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|GSA/.test(ua);
+    const link = device === 'ios' ? banner.dataset.ios : device === 'android' ? banner.dataset.android : undefined;
+    if (link && !iosSafari) {
+      banner.querySelector<HTMLAnchorElement>('[data-app-banner-get]')!.href = link;
+      banner.querySelector('[data-app-banner-where]')!.textContent = device === 'ios' ? 'Free on the App Store' : 'Free on Google Play';
+      banner.hidden = false;
+      banner.querySelector('[data-app-banner-close]')!.addEventListener('click', () => { banner.hidden = true; });
+    }
   }
 
   // "Copy" for the share link. Falls back to selecting the text if the clipboard is blocked.
@@ -241,11 +242,14 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
   .hero-qr p { margin: 0; }
   .qr-img { flex: none; width: 112px; height: 112px; background: #fff; border-radius: var(--radius-sm); padding: 4px; }
   .qr-img :global(svg) { width: 100%; height: 100%; display: block; }
-  .app-bar { position: sticky; top: 64px; z-index: 15; display: flex; align-items: center; gap: var(--space-12); padding: var(--space-8) var(--space-16); background: var(--surface-raised); border-bottom: 1px solid var(--border); box-shadow: var(--shadow-sm); }
-  .app-bar[hidden] { display: none; }
-  .app-bar p { margin: 0; flex: 1; font-size: 15px; }
-  .app-bar .btn { padding: var(--space-8) var(--space-16); }
-  .app-bar-close { border: 0; background: none; color: var(--text-muted); font-size: 22px; width: 36px; height: 36px; cursor: pointer; }
+  .app-banner { display: flex; align-items: center; gap: var(--space-12); padding: var(--space-8) var(--space-12) var(--space-8) var(--space-16); background: var(--surface-raised); border-bottom: 1px solid var(--border); }
+  .app-banner[hidden] { display: none; }
+  .app-banner-icon { flex: none; width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-subtle); color: var(--accent); }
+  .app-banner-icon :global(svg) { width: 22px; height: 22px; }
+  .app-banner-text { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.3; }
+  .app-banner-text .body-strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .app-banner-get { padding: var(--space-8) var(--space-16); min-height: 0; }
+  .app-banner-close { flex: none; border: 0; background: none; color: var(--text-muted); font-size: 22px; width: 36px; height: 36px; cursor: pointer; }
   .share-row { display: flex; gap: var(--space-8); }
   .share-url { flex: 1; min-width: 0; font: inherit; font-size: 14px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--space-8); }
   .share-copy { padding: var(--space-8) var(--space-12); }
