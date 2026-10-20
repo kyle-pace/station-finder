@@ -19,3 +19,15 @@
 - id: wqec
   into: wsiu-and-wusi
   note: WSIU relay (Wikipedia WQEC article; same owner and website)
+- id: minnesota-public-radio-mn
+  into: minnesota-public-radio
+  note: same network (Wikipedia lists MPR's Minnesota stations and its Michigan station WGGL separately)
+- id: xpn-nj
+  into: xpn
+  note: WXPJ is an XPN repeater (Wikipedia WXPJ article; xpn.org)
+- id: wamc-northeast-public-radio-ct
+  into: wamc-northeast-public-radio
+  note: WAMC's Connecticut repeater (Wikipedia; wamc.org)
+- id: wscn
+  into: minnesota-public-radio
+  note: MPR News (mprnews.org), incl. KNOW-FM in the Twin Cities; The Current and YourClassical stay separate services

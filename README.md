@@ -77,7 +77,9 @@ scripts/build-data               →  public/data/organizations.json, facilities
 - **Map locations**: each station is one dot at the city it's based in (its city of
   license, or for statewide networks its Wikipedia "Headquarters" or its main
   transmitter's city). City coordinates come from the city's Wikipedia article. ZIP
-  search still uses transmitter coverage. Stations we can't place this way are shown at
+  search still uses transmitter coverage. Radio transmitters that Wikipedia has no location
+  for are placed at their city of license (marked approximate), so ZIP search still finds
+  those stations; the build report lists them. Stations we can't place this way are shown at
   their first transmitter and listed under "Map placement" in the build report.
 - **National apps** (`national.yaml`): the PBS and NPR fallback links, plus
   `otherStoreLinks`, other store listings of the national app that station sites link to.

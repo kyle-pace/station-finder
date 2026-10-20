@@ -22,6 +22,7 @@ import { parse } from 'yaml';
 import type { ExtractedRow, InfoboxFields } from './fetch-wikipedia.ts';
 import type { NprRow } from './fetch-wikipedia-npr.ts';
 import type { StationAppLinks } from './fetch-station-app-pages.ts';
+import { placeKey } from './lib/places.ts';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const MANUAL = join(ROOT, 'data', 'manual');
@@ -109,6 +110,7 @@ interface Facility {
   organizationId: string;
   source: string;
   retrievedAt: string;
+  approx?: boolean; // placed at its city of license because Wikipedia has no transmitter location
 }
 
 // --- Helpers -----------------------------------------------------------------------
@@ -230,7 +232,7 @@ for (const entry of mergesFile) {
   if (entry.id === entry.into) errors.push(`${where}: can't merge a station into itself`);
 }
 
-const OVERRIDABLE = ['id', 'name', 'city', 'website', 'livestreamUrl', 'owner'];
+const OVERRIDABLE = ['id', 'name', 'city', 'state', 'website', 'livestreamUrl', 'owner'];
 const overrides = checkList('overrides.yaml', readYaml(MANUAL, 'overrides.yaml'));
 for (const entry of overrides) {
   const where = `overrides.yaml [${entry.id ?? '?'}]`;
@@ -376,15 +378,6 @@ for (const d of [...drafts]) {
   else lowConfidence.push(`${d.org.id}: Wikipedia says satellite of ${d.satelliteOf}, but no row has that call sign; kept separate`);
 }
 
-// Hand-listed merges (data/manual/merges.yaml), by automatic id.
-const unknownMerge = section('merges.yaml entries whose id matches no station');
-for (const m of mergesFile) {
-  const from = drafts.find((d) => d.org.id === m.id);
-  const into = drafts.find((d) => d.org.id === m.into);
-  if (!from || !into) { unknownMerge.push(`${m.id} → ${m.into}`); continue; }
-  mergeInto(into, from, `merges.yaml${m.note ? ` (${m.note})` : ''}`);
-}
-
 // ----------------------------------------------------------------------------------
 // Radio: Wikipedia's "List of NPR stations" (fetch-wikipedia-npr). Stations that share a
 // website (or a Wikipedia article) are one organization, e.g. Wisconsin Public Radio's 24
@@ -393,7 +386,13 @@ for (const m of mergesFile) {
 // ----------------------------------------------------------------------------------
 const nprPath = join(RAW, 'wikipedia', 'npr-extracted.json');
 const radioReport = section('Radio (NPR) stations');
-const radioUnplaced = section('Radio stations with no transmitter coordinates (searchable by name, not by ZIP)');
+const radioUnplaced = section('Radio transmitters with no location at all (searchable by name, not by ZIP)');
+const radioApprox = section('Radio transmitters placed at their city of license (Wikipedia has no transmitter location)');
+// City coordinates from scripts/fetch-wikipedia-places (Wikipedia city articles).
+const placesPathEarly = join(RAW, 'wikipedia', 'places.json');
+const cityCoords = existsSync(placesPathEarly)
+  ? (JSON.parse(readFileSync(placesPathEarly, 'utf8')) as { places: Record<string, { url: string; coords: { lat: number; lng: number }; retrievedAt: string } | { error: string }> }).places
+  : {};
 if (existsSync(nprPath)) {
   const npr = JSON.parse(readFileSync(nprPath, 'utf8')) as { source: string; retrievedAt: string; rows: NprRow[] };
   const listSource: Provenance = { source: npr.source, retrievedAt: npr.retrievedAt };
@@ -453,7 +452,24 @@ if (existsSync(nprPath)) {
       calls.add(r.callSign);
       const st = r.station;
       const state = STATES[r.state];
-      if (!st?.coords) { radioUnplaced.push(`${r.callSign} ${r.frequency} ${r.band} (${r.city}, ${state})`); continue; }
+      if (!st?.coords) {
+        // No transmitter location on Wikipedia: use the city of license, so ZIP search
+        // around that city still finds the station (radio reach is ~50 miles anyway).
+        const place = r.city ? cityCoords[placeKey(r.city, state)] : undefined;
+        if (place && 'coords' in place) {
+          const id = `wp-${r.callSign.toLowerCase()}`;
+          if (!facs.some((f) => f.id === id)) {
+            facs.push({
+              id, callSign: r.callSign, service: r.band === 'AM' ? 'am' : 'fm', frequency: `${r.frequency} ${r.band}`,
+              city: r.city || null, state, lat: place.coords.lat, lng: place.coords.lng,
+              source: `${place.url} (city of license; transmitter location not on Wikipedia)`, retrievedAt: place.retrievedAt, approx: true,
+            });
+            placed++;
+            radioApprox.push(`${r.callSign} ${r.frequency} ${r.band} at ${r.city}, ${state}`);
+          }
+        } else radioUnplaced.push(`${r.callSign} ${r.frequency} ${r.band} (${r.city}, ${state})`);
+        continue;
+      }
       const id = st.facilityId && rows.filter((x) => x.station?.facilityId === st.facilityId).length === 1 ? `fcc-${st.facilityId}` : `wp-${r.callSign.toLowerCase()}`;
       if (facs.some((f) => f.id === id)) continue;
       facs.push({
@@ -522,6 +538,17 @@ for (const d of drafts) {
 for (const d of drafts) {
   if (drafts.filter((x) => x.org.id === d.org.id).length > 1) d.org.id = `${d.org.id}-${([...d.callSigns][0] ?? 'x').toLowerCase()}`;
 }
+
+// Hand-listed merges (data/manual/merges.yaml), by automatic id. Runs after the radio
+// stations are added and every id is final, so it can merge TV and radio stations alike.
+const unknownMerge = section('merges.yaml entries whose id matches no station');
+for (const m of mergesFile) {
+  const from = drafts.find((d) => d.org.id === m.id);
+  const into = drafts.find((d) => d.org.id === m.into);
+  if (!from || !into) { unknownMerge.push(`${m.id} → ${m.into}`); continue; }
+  mergeInto(into, from, `merges.yaml${m.note ? ` (${m.note})` : ''}`);
+}
+
 
 // ==================================================================================
 // 3. Apply manual files (last, so they always win)

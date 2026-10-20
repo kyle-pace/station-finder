@@ -18,6 +18,7 @@ import * as cheerio from 'cheerio';
 import { fetchCached } from './lib/fetch.ts';
 import { WIKI, clean, titleFromUrl, parseGeo, fileFor, type Coords } from './lib/wikipedia.ts';
 import { STATE_NAMES } from '../src/lib/states.ts';
+import { firstCity } from './lib/places.ts';
 
 interface Org { id: string; name: string; city: string | null; state: string; facilityIds: string[]; sources: Record<string, { source: string }> }
 interface Fac { id: string; callSign: string; city: string | null; state: string }
@@ -26,8 +27,6 @@ const RAW = join(process.cwd(), 'data', 'raw', 'wikipedia');
 const orgs = JSON.parse(readFileSync(join(process.cwd(), 'public', 'data', 'organizations.json'), 'utf8')) as Org[];
 const facilityById = new Map((JSON.parse(readFileSync(join(process.cwd(), 'public', 'data', 'facilities.json'), 'utf8')) as Fac[]).map((f) => [f.id, f]));
 
-// "Montgomery(Selma)" → "Montgomery"; "Sneedville–Johnson City" → "Sneedville".
-const firstCity = (s: string) => clean(s).split(/[(/–—;]|\band\b/)[0].replace(/,.*$/, '').trim();
 
 // The station's own article (not the list it came from).
 function articleFor(org: Org): string | undefined {
@@ -81,7 +80,15 @@ for (const org of orgs) {
 }
 
 const places: Record<string, { title: string; url: string; coords: Coords; retrievedAt: string } | { error: string }> = {};
-const keys = [...new Set(Object.values(homes).map((h) => `${h.city}|${h.state}`))].sort();
+// Radio transmitters with no coordinates on Wikipedia: build-data places them at their
+// city of license (approximate), so we look those cities up too.
+const codeByName = Object.fromEntries(Object.entries(STATE_NAMES).map(([code, name]) => [name, code]));
+const nprPath = join(RAW, 'npr-extracted.json');
+const nprRows = existsSync(nprPath) ? (JSON.parse(readFileSync(nprPath, 'utf8')) as { rows: { city: string; state: string; station?: { coords?: Coords } }[] }).rows : [];
+const transmitterCities = nprRows
+  .filter((r) => !r.station?.coords && r.city && codeByName[r.state])
+  .map((r) => `${firstCity(r.city)}|${codeByName[r.state]}`);
+const keys = [...new Set([...Object.values(homes).map((h) => `${h.city}|${h.state}`), ...transmitterCities])].sort();
 let done = 0;
 for (const key of keys) {
   const [city, st] = key.split('|');

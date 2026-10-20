@@ -1,9 +1,9 @@
 build-data report
-  organizations:  489 (479 with transmitter coordinates)
-  facilities:     1148
-  with apps:      139 (13 with a verified app)   without apps: 350
-  without website: 22 (kodk, azpm, ksyc, northern-california-public-media, wamc-northeast-public-radio-ct, south-florida-pbs, wuwg, kbbg, illinois-public-media, will, wisu, cape-cod-s-classic-alternative, wcmv, minnesota-public-radio-mn, kmst, krnm, wurc-rust-college-public-radio, kgva, xpn-nj, pbs-rio-grande-valley, the-edge, kyvt)
-  manual: 3 overrides, 3 merges, 44 app pages, 2 station-apps entries
+  organizations:  485 (483 with transmitter coordinates)
+  facilities:     1410
+  with apps:      139 (13 with a verified app)   without apps: 346
+  without website: 19 (kodk, azpm, ksyc, northern-california-public-media, south-florida-pbs, wuwg, kbbg, illinois-public-media, will, wisu, cape-cod-s-classic-alternative, wcmv, kmst, krnm, wurc-rust-college-public-radio, kgva, pbs-rio-grande-valley, the-edge, kyvt)
+  manual: 24 overrides, 7 merges, 44 app pages, 2 station-apps entries
 
   Rows with no transmitter coordinates (not findable by ZIP until fixed): 1
     - pbs-appalachia-virginia (PBS Appalachia Virginia, VA)
@@ -265,16 +265,13 @@ build-data report
     - minnesota-public-radio: paired https://play.google.com/store/apps/details?id=org.americanpublicmedia.thecurrent with "Another app" by position on the page
     - WYIN (fcc-49803) appears under two stations; kept under the first, not lakeshore-pbs
 
-  Merged rows: 17
+  Merged rows: 21
     - South Florida PBS (FL) → south-florida-pbs: same name
     - Cascade PBS (WA) → cascade-pbs: same name
     - KQET (CA) → kqed-and-kqeh: satellite of KQED
     - WDPB (DE) → whyy: satellite of WHYY-TV
     - WFSG (FL) → wfsu: satellite of WFSU-TV
     - WSKA (NY) → wskg: satellite of WSKG-TV
-    - WSEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WSEC article; same owner and website))
-    - WMEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WMEC article; same owner and website))
-    - WQEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WQEC article; same owner and website))
     - WJCT (FL) → wjct: same name (radio)
     - WILL (IL) → will: same name (radio)
     - Montana Public Radio (MT) → montana-public-radio: same name (radio)
@@ -283,9 +280,16 @@ build-data report
     - Texas Tech Public Media (TX) → texas-tech-public-media: same name (radio)
     - Texas Tech Public Media (TX) → texas-tech-public-media: same name (radio)
     - Wisconsin Public Radio (WI) → wisconsin-public-radio: same name (radio)
+    - WSEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WSEC article; same owner and website))
+    - WMEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WMEC article; same owner and website))
+    - WQEC (IL) → wsiu-and-wusi: merges.yaml (WSIU relay (Wikipedia WQEC article; same owner and website))
+    - Minnesota Public Radio (MN) → minnesota-public-radio: merges.yaml (same network (Wikipedia lists MPR's Minnesota stations and its Michigan station WGGL separately))
+    - XPN (NJ) → xpn: merges.yaml (WXPJ is an XPN repeater (Wikipedia WXPJ article; xpn.org))
+    - WAMC Northeast Public Radio (CT) → wamc-northeast-public-radio: merges.yaml (WAMC's Connecticut repeater (Wikipedia; wamc.org))
+    - WSCN (MN) → minnesota-public-radio: merges.yaml (MPR News (mprnews.org), incl. KNOW-FM in the Twin Cities; The Current and YourClassical stay separate services)
 
   Radio (NPR) stations: 20
-    - 1085 NPR stations → 347 radio organizations, 52 groups joined a TV station; 817 transmitters placed
+    - 1085 NPR stations → 347 radio organizations, 52 groups joined a TV station; 1079 transmitters placed
     - troy-public-radio: transmitters in AL, GA; home state AL (also listed on the others' state pages)
     - red-river-radio: transmitters in LA, TX, AR; home state LA (also listed on the others' state pages)
     - jefferson-public-radio: transmitters in OR, CA; home state OR (also listed on the others' state pages)
@@ -306,274 +310,276 @@ build-data report
     - kccu: transmitters in OK, TX; home state OK (also listed on the others' state pages)
     - allegheny-mountain-radio: transmitters in VA, WV; home state VA (also listed on the others' state pages)
 
-  Radio stations with no transmitter coordinates (searchable by name, not by ZIP): 267
-    - WRWA 88.7 FM (Dothan, AL)
-    - WTJB 91.7 FM (Columbus, GA)
-    - WQPR 88.7 FM (Muscle Shoals, AL)
-    - WAPR 88.3 FM (Selma, AL)
-    - KODK 90.7 FM (Kodiak, AK)
-    - KBSA 90.9 FM (El Dorado, AR)
-    - KLSA 90.7 FM (Alexandria, LA)
-    - KDAQ 89.9 FM (Shreveport, LA)
-    - KLDN 88.9 FM (Lufkin, TX)
-    - KNCA 89.7 FM (Burney, CA)
-    - KLDD 91.9 FM (McCloud, CA)
-    - KNSQ 88.1 FM (Mount Shasta, CA)
-    - KJPR 1330 AM (Shasta Lake City, CA)
-    - KNYR 91.3 FM (Yreka, CA)
-    - KSMF 89.1 FM (Ashland, OR)
-    - KSRG 88.3 FM (Ashland, OR)
-    - KSBA 88.5 FM (Coos Bay, OR)
-    - KZBY 90.5 FM (Coos Bay, OR)
-    - KLMF 88.5 FM (Klamath Falls, OR)
-    - KSKF 90.9 FM (Klamath Falls, OR)
-    - KSRS 91.5 FM (Roseburg, OR)
-    - KRAM 90.5 FM (Borrego Springs, CA)
-    - KQVO 97.7 FM (Calexico, CA)
-    - KPBS-FM 89.5 FM (San Diego, CA)
-    - KEPC 89.7 FM (Colorado Springs, CO)
-    - KPYR 88.3 FM (Craig, CO)
-    - KPRU 103.3 FM (Delta, CO)
-    - KPRN 89.5 FM (Grand Junction, CO)
-    - KPRH 88.3 FM (Montrose, CO)
-    - KCFP 91.9 FM (Pueblo, CO)
-    - KPRE 89.9 FM (Vail, CO)
-    - KRCC 91.5 FM (Colorado Springs, CO)
-    - KECC 89.1 FM (La Junta, CO)
-    - KCCS 91.7 FM (Starkville, CO)
-    - KCSE 90.7 FM (Lamar, CO)
-    - KZNK 90.1 FM (Brewster, KS)
-    - KZNZ 91.5 FM (Elkhart, KS)
-    - KANZ 91.1 FM (Garden City, KS)
-    - KZAN 91.7 FM (Hays, KS)
-    - KZNA 90.5 FM (Hill City, KS)
-    - KGUY 91.3 FM (Guymon, OK)
+  Radio transmitters with no location at all (searchable by name, not by ZIP): 5
     - KTXP 91.5 FM (Bushland, TX)
-    - KTDH 89.3 FM (Dalhart, TX)
-    - KTOT 89.5 FM (Spearman, TX)
-    - KIPH 88.3 FM (Hana, HI)
-    - KANO 89.1 FM (Hilo, HI)
-    - KHPR 88.1 FM (Honolulu, HI)
-    - KIPO 89.3 FM (Honolulu, HI)
-    - KHPH 88.7 FM (Kailua, HI)
-    - KJHF 103.1 FM (Kualapuu, HI)
-    - KIPL 89.9 FM (Lihue, HI)
-    - KIPM 89.7 FM (Waikapu, HI)
-    - KKUA 90.7 FM (Wailuku, HI)
-    - KBSX 91.5 FM (Boise, ID)
-    - KBSY 88.5 FM (Burley, ID)
-    - KBSM 91.7 FM (McCall, ID)
-    - KBSQ 90.7 FM (McCall, ID)
-    - KBSS 91.1 FM (Sun Valley, ID)
-    - KWRV 91.9 FM (Sun Valley, ID)
-    - KBSW 91.7 FM (Twin Falls, ID)
-    - KBSJ 91.3 FM (Jackpot, NV)
-    - KNWO 90.1 FM (Cottonwood, ID)
-    - KSWS 88.9 FM (Chehalis, WA)
-    - KNWV 90.5 FM (Clarkston, WA)
-    - KNWR 90.7 FM (Ellensburg, WA)
-    - KNWU 91.5 FM (Forks, WA)
-    - KHNW 88.3 FM (Manson, WA)
-    - KLWS 91.5 FM (Moses Lake, WA)
-    - KMWS 90.1 FM (Mount Vernon, WA)
-    - KQWS 90.1 FM (Omak, WA)
-    - KNWP 90.1 FM (Port Angeles, WA)
-    - KFAE-FM 89.1 FM (Richland, WA)
-    - KWWS 89.7 FM (Walla Walla, WA)
-    - KNWY 90.3 FM (Yakima, WA)
-    - WNIE 89.1 FM (Freeport, IL)
-    - WNIW 91.5 FM (LaSalle, IL)
-    - WNIQ 91.5 FM (Sterling, IL)
-    - WILL-FM 90.9 FM (Urbana, IL)
-    - KNSB 91.1 FM (Bettendorf, IA)
-    - KNSC 90.7 FM (Carroll, IA)
-    - KNSY 89.7 FM (Dubuque, IA)
-    - KNSK 91.1 FM (Fort Dodge, IA)
-    - KNSZ 89.1 FM (Ottumwa, IA)
-    - KICG 91.7 FM (Perry, IA)
-    - KLCD 89.5 FM (Decorah, IA)
-    - KLNI 88.7 FM (Decorah, IA)
-    - KNCM 88.5 FM (Appleton, MN)
-    - KRSU 91.3 FM (Appleton, MN)
-    - KNSE 90.1 FM (Austin, MN)
-    - KCRB-FM 88.5 FM (Bemidji, MN)
-    - KNBJ 91.3 FM (Bemidji, MN)
-    - KBPN 88.3 FM (Brainerd, MN)
-    - KBPR 90.7 FM (Brainerd, MN)
-    - WIRN 92.5 FM (Buhl, MN)
-    - KNSR 88.9 FM (Collegeville, MN)
-    - KCMF 89.7 FM (Fergus Falls, MN)
-    - KNWF 91.5 FM (Fergus Falls, MN)
-    - WLSN 89.7 FM (Grand Marais, MN)
-    - WMLS 88.7 FM (Grand Marais, MN)
-    - WGRH 88.5 FM (Hinckley, MN)
-    - KITF 88.3 FM (International Falls, MN)
-    - KXLC 91.1 FM (La Crescent, MN)
-    - KCCD 90.3 FM (Moorhead, MN)
-    - KRFI 88.1 FM (Redwood Falls, MN)
-    - KLSE 90.7 FM (Rochester, MN)
-    - KZSE 91.7 FM (Rochester, MN)
-    - KRXW 103.5 FM (Roseau, MN)
-    - KGAC 90.5 FM (St. Peter, MN)
-    - KNGA 91.5 FM (St. Peter, MN)
-    - KNTN 102.7 FM (Thief River Falls, MN)
-    - KQMN 91.5 FM (Thief River Falls, MN)
-    - WIRR 90.9 FM (Virginia–Hibbing, MN)
-    - KRSW 89.3 FM (Worthington, MN)
-    - KNSW 91.7 FM (Worthington–Marshall, MN)
-    - KRSD 88.1 FM (Sioux Falls, SD)
-    - KHCC 90.1 FM (Wichita, KS)
-    - KHCD 89.5 FM (Salina, KS)
-    - KHCT 90.9 FM (Great Bend, KS)
-    - WKYU-FM 88.9 FM (Bowling Green, KY)
-    - WKUE 90.9 FM (Elizabethtown, KY)
-    - WDCL-FM 89.7 FM (Somerset, KY)
-    - WUOL-FM 90.5 FM (Louisville, KY)
-    - WMEH 90.9 FM (Bangor, ME)
-    - WMED 89.7 FM (Calais, ME)
-    - WMEP 90.5 FM (Camden, ME)
-    - WMEF 106.5 FM (Fort Kent, ME)
-    - WBQF 91.7 FM (Fryeburg, ME)
-    - WMEA 90.1 FM (Portland, ME)
-    - WMEM 106.1 FM (Presque Isle, ME)
-    - WMEW 91.3 FM (Waterville, ME)
-    - WUOM 91.7 FM (Ann Arbor, MI)
-    - WFUM 91.1 FM (Flint, MI)
-    - WVGR 104.1 FM (Grand Rapids, MI)
-    - WRSX 91.3 FM (Port Huron, MI)
-    - WMAH-FM 90.3 FM (Biloxi, MS)
-    - WMAE-FM 89.5 FM (Booneville, MS)
-    - WMAU-FM 88.9 FM (Bude, MS)
-    - WMAO-FM 90.9 FM (Greenwood, MS)
-    - WMPN-FM 91.3 FM (Jackson, MS)
-    - WMAW-FM 88.1 FM (Meridian, MS)
     - WMAB-FM 89.9 FM (Mississippi State, MS)
-    - WMAV-FM 90.3 FM (Oxford, MS)
-    - KSMS-FM 90.5 FM (Branson, MO)
-    - KSMU 91.1 FM (Springfield, MO)
-    - KSMW 90.9 FM (West Plains, MO)
-    - KBMC 102.1 FM (Bozeman, MT)
-    - KYPH 88.5 FM (Helena, MT)
-    - KYPR 90.7 FM (Miles City, MT)
-    - KPRQ 88.1 FM (Sheridan, WY)
-    - KAPC 91.3 FM (Butte, MT)
-    - KUFN 91.9 FM (Hamilton, MT)
-    - KUHM 91.7 FM (Helena, MT)
-    - KUKL 89.9 FM (Kalispell, MT)
-    - KUFL 90.5 FM (Libby, MT)
-    - KPJH 89.5 FM (Polson, MT)
-    - WEVF 90.3 FM (Colebrook, NH)
-    - WEVH 91.3 FM (Hanover, NH)
-    - WEVJ 99.5 FM (Jackson, NH)
-    - WEVN 90.7 FM (Keene, NH)
-    - WEVQ 91.9 FM (Littleton, NH)
-    - WEVS 88.3 FM (Nashua, NH)
-    - WNJY 89.3 FM (Netcong, NJ)
-    - WNJP 88.5 FM (Sussex, NJ)
-    - WNJO 90.3 FM (Toms River, NJ)
-    - WNJT-FM 88.1 FM (Trenton, NJ)
     - WXLH 91.3 FM (Blue Mountain Lake, NY)
-    - WXLB 91.7 FM (Boonville, NY)
-    - WSLU 89.5 FM (Canton, NY)
-    - WSLZ 88.1 FM (Cape Vincent, NY)
-    - WSLG 90.5 FM (Gouverneur, NY)
-    - WXLE 105.9 FM (Indian Lake, NY)
-    - WXLL 91.7 FM (Lake Placid, NY)
-    - WXLD 89.7 FM (Lowville, NY)
-    - WSLO 90.9 FM (Malone, NY)
-    - WXLG 89.9 FM (North Creek, NY)
-    - WXLU 88.1 FM (Peru, NY)
-    - WSLL 90.5 FM (Saranac Lake, NY)
-    - WXLS 88.3 FM (Tupper Lake, NY)
-    - WSLJ 88.9 FM (Watertown, NY)
-    - WXLQ 90.5 FM (Bristol, VT)
-    - WEOS 89.5 FM (Geneva, NY)
-    - WVBA 88.9 FM (Brattleboro, VT)
-    - WVTI 106.9 FM (Brighton, VT)
-    - WVPS 107.9 FM (Burlington, VT)
-    - WVNK 91.1 FM (Manchester, VT)
-    - WNCH 88.1 FM (Norwich, VT)
     - WRVT 88.7 FM (Rutland, VT)
-    - WVPA 88.5 FM (St. Johnsbury, VT)
-    - WVPR 89.5 FM (Windsor, VT)
-    - WBJD 91.5 FM (Atlantic Beach, NC)
-    - WKNS 90.3 FM (Kinston, NC)
-    - WTEB 89.3 FM (New Bern, NC)
-    - WZNB 88.5 FM (New Bern, NC)
-    - KPPD 91.7 FM (Devils Lake, ND)
-    - KDPR 89.9 FM (Dickinson, ND)
-    - KPRJ 91.5 FM (Jamestown, ND)
-    - KMPR 88.9 FM (Minot, ND)
-    - KPPR 89.5 FM (Williston, ND)
-    - KPPW 88.7 FM (Williston, ND)
-    - KOBK 88.9 FM (Baker City, OR)
-    - KOAB-FM 91.3 FM (Bend, OR)
-    - KOBN 90.1 FM (Burns, OR)
-    - KETP 88.7 FM (Enterprise, OR)
-    - KOGL 89.3 FM (Gleneden Beach, OR)
-    - KOJD 89.7 FM (John Day, OR)
-    - KTVR-FM 90.3 FM (La Grande, OR)
-    - KOAP 88.7 FM (Lakeview, OR)
-    - KOTD 89.7 FM (The Dalles, OR)
-    - WLJK 89.1 FM (Aiken, SC)
-    - WSCI 89.3 FM (Charleston, SC)
-    - KPSD-FM 97.1 FM (Faith, SD)
-    - KQSD-FM 91.9 FM (Lowry, SD)
-    - KZSD-FM 102.5 FM (Martin, SD)
-    - KDSD-FM 90.9 FM (Pierpont, SD)
-    - KBHE-FM 89.3 FM (Rapid City, SD)
-    - KTSD-FM 91.1 FM (Reliance, SD)
-    - KYSD 91.9 FM (Spearfish, SD)
-    - KUSD 89.7 FM (Vermillion, SD)
-    - KJSD 90.3 FM (Watertown, SD)
-    - KTPD 89.3 FM (Del Rio, TX)
-    - KTXI 90.1 FM (Ingram, TX)
-    - KVHL 91.7 FM (Llano, TX)
-    - KSTX 89.1 FM (San Antonio, TX)
-    - KPAC 88.3 FM (San Antonio, TX)
-    - KTPR 89.9 FM (Stanton, TX)
-    - WCHG 107.1 FM (Hot Springs, VA)
-    - WVLS 89.7 FM (Monterey, VA)
-    - WVMR 1370 AM (Frost, WV)
-    - WVBY 91.7 FM (Beckley, WV)
-    - WVBL 88.5 FM (Bluefield, WV)
-    - WVPW 88.9 FM (Buckhannon, WV)
-    - WVPB 88.5 FM (Charleston, WV)
-    - WVWV 89.9 FM (Huntington, WV)
-    - WVEP 88.9 FM (Martinsburg, WV)
-    - WVKM 106.7 FM (Matewan, WV)
-    - WVPM 90.9 FM (Morgantown, WV)
-    - WVWS 89.3 FM (Webster Springs, WV)
-    - WVNP 89.9 FM (Wheeling, WV)
-    - WHAA 89.1 FM (Adams, WI)
-    - WHID 88.1 FM (Green Bay, WI)
     - WHHI 91.3 FM (Highland, WI)
-    - WHLA 90.3 FM (La Crosse, WI)
-    - WHWC 88.3 FM (Menomonie, WI)
-    - WHBM 90.3 FM (Park Falls, WI)
-    - WHSF 89.9 FM (Rhinelander, WI)
-    - WHDI 91.1 FM (Sister Bay, WI)
-    - WHND 89.7 FM (Sister Bay, WI)
-    - WHRM 90.9 FM (Wausau, WI)
-    - KUWA 91.3 FM (Afton, WY)
-    - KBUW 90.5 FM (Buffalo, WY)
-    - KUWC 91.3 FM (Casper, WY)
-    - KDUW 91.7 FM (Douglas, WY)
-    - KUWE 89.7 FM (Evanston, WY)
-    - KUWG 90.9 FM (Gillette, WY)
-    - KUWJ 90.3 FM (Jackson, WY)
-    - KUWK 88.7 FM (Kaycee, WY)
-    - KUWV 90.7 FM (Lingle, WY)
-    - KUWN 90.5 FM (Newcastle, WY)
-    - KUWX 90.9 FM (Pinedale, WY)
-    - KUWP 90.1 FM (Powell, WY)
-    - KUWI 89.9 FM (Rawlins, WY)
-    - KZUW 88.5 FM (Reliance, WY)
-    - KUWZ 90.5 FM (Rock Springs, WY)
-    - KAIW 88.9 FM (Saratoga, WY)
-    - KUWD 91.5 FM (Sundance, WY)
-    - KUWT 91.3 FM (Thermopolis, WY)
-    - KEUW 89.9 FM (Torrington, WY)
+
+  Radio transmitters placed at their city of license (Wikipedia has no transmitter location): 262
+    - WRWA 88.7 FM at Dothan, AL
+    - WTJB 91.7 FM at Columbus, GA
+    - WQPR 88.7 FM at Muscle Shoals, AL
+    - WAPR 88.3 FM at Selma, AL
+    - KODK 90.7 FM at Kodiak, AK
+    - KBSA 90.9 FM at El Dorado, AR
+    - KLSA 90.7 FM at Alexandria, LA
+    - KDAQ 89.9 FM at Shreveport, LA
+    - KLDN 88.9 FM at Lufkin, TX
+    - KNCA 89.7 FM at Burney, CA
+    - KLDD 91.9 FM at McCloud, CA
+    - KNSQ 88.1 FM at Mount Shasta, CA
+    - KJPR 1330 AM at Shasta Lake City, CA
+    - KNYR 91.3 FM at Yreka, CA
+    - KSMF 89.1 FM at Ashland, OR
+    - KSRG 88.3 FM at Ashland, OR
+    - KSBA 88.5 FM at Coos Bay, OR
+    - KZBY 90.5 FM at Coos Bay, OR
+    - KLMF 88.5 FM at Klamath Falls, OR
+    - KSKF 90.9 FM at Klamath Falls, OR
+    - KSRS 91.5 FM at Roseburg, OR
+    - KRAM 90.5 FM at Borrego Springs, CA
+    - KQVO 97.7 FM at Calexico, CA
+    - KPBS-FM 89.5 FM at San Diego, CA
+    - KEPC 89.7 FM at Colorado Springs, CO
+    - KPYR 88.3 FM at Craig, CO
+    - KPRU 103.3 FM at Delta, CO
+    - KPRN 89.5 FM at Grand Junction, CO
+    - KPRH 88.3 FM at Montrose, CO
+    - KCFP 91.9 FM at Pueblo, CO
+    - KPRE 89.9 FM at Vail, CO
+    - KRCC 91.5 FM at Colorado Springs, CO
+    - KECC 89.1 FM at La Junta, CO
+    - KCCS 91.7 FM at Starkville, CO
+    - KCSE 90.7 FM at Lamar, CO
+    - KZNK 90.1 FM at Brewster, KS
+    - KZNZ 91.5 FM at Elkhart, KS
+    - KANZ 91.1 FM at Garden City, KS
+    - KZAN 91.7 FM at Hays, KS
+    - KZNA 90.5 FM at Hill City, KS
+    - KGUY 91.3 FM at Guymon, OK
+    - KTDH 89.3 FM at Dalhart, TX
+    - KTOT 89.5 FM at Spearman, TX
+    - KIPH 88.3 FM at Hana, HI
+    - KANO 89.1 FM at Hilo, HI
+    - KHPR 88.1 FM at Honolulu, HI
+    - KIPO 89.3 FM at Honolulu, HI
+    - KHPH 88.7 FM at Kailua, HI
+    - KJHF 103.1 FM at Kualapuu, HI
+    - KIPL 89.9 FM at Lihue, HI
+    - KIPM 89.7 FM at Waikapu, HI
+    - KKUA 90.7 FM at Wailuku, HI
+    - KBSX 91.5 FM at Boise, ID
+    - KBSY 88.5 FM at Burley, ID
+    - KBSM 91.7 FM at McCall, ID
+    - KBSQ 90.7 FM at McCall, ID
+    - KBSS 91.1 FM at Sun Valley, ID
+    - KWRV 91.9 FM at Sun Valley, ID
+    - KBSW 91.7 FM at Twin Falls, ID
+    - KBSJ 91.3 FM at Jackpot, NV
+    - KNWO 90.1 FM at Cottonwood, ID
+    - KSWS 88.9 FM at Chehalis, WA
+    - KNWV 90.5 FM at Clarkston, WA
+    - KNWR 90.7 FM at Ellensburg, WA
+    - KNWU 91.5 FM at Forks, WA
+    - KHNW 88.3 FM at Manson, WA
+    - KLWS 91.5 FM at Moses Lake, WA
+    - KMWS 90.1 FM at Mount Vernon, WA
+    - KQWS 90.1 FM at Omak, WA
+    - KNWP 90.1 FM at Port Angeles, WA
+    - KFAE-FM 89.1 FM at Richland, WA
+    - KWWS 89.7 FM at Walla Walla, WA
+    - KNWY 90.3 FM at Yakima, WA
+    - WNIE 89.1 FM at Freeport, IL
+    - WNIW 91.5 FM at LaSalle, IL
+    - WNIQ 91.5 FM at Sterling, IL
+    - WILL-FM 90.9 FM at Urbana, IL
+    - KNSB 91.1 FM at Bettendorf, IA
+    - KNSC 90.7 FM at Carroll, IA
+    - KNSY 89.7 FM at Dubuque, IA
+    - KNSK 91.1 FM at Fort Dodge, IA
+    - KNSZ 89.1 FM at Ottumwa, IA
+    - KICG 91.7 FM at Perry, IA
+    - KLCD 89.5 FM at Decorah, IA
+    - KLNI 88.7 FM at Decorah, IA
+    - KNCM 88.5 FM at Appleton, MN
+    - KRSU 91.3 FM at Appleton, MN
+    - KNSE 90.1 FM at Austin, MN
+    - KCRB-FM 88.5 FM at Bemidji, MN
+    - KNBJ 91.3 FM at Bemidji, MN
+    - KBPN 88.3 FM at Brainerd, MN
+    - KBPR 90.7 FM at Brainerd, MN
+    - WIRN 92.5 FM at Buhl, MN
+    - KNSR 88.9 FM at Collegeville, MN
+    - KCMF 89.7 FM at Fergus Falls, MN
+    - KNWF 91.5 FM at Fergus Falls, MN
+    - WLSN 89.7 FM at Grand Marais, MN
+    - WMLS 88.7 FM at Grand Marais, MN
+    - WGRH 88.5 FM at Hinckley, MN
+    - KITF 88.3 FM at International Falls, MN
+    - KXLC 91.1 FM at La Crescent, MN
+    - KCCD 90.3 FM at Moorhead, MN
+    - KRFI 88.1 FM at Redwood Falls, MN
+    - KLSE 90.7 FM at Rochester, MN
+    - KZSE 91.7 FM at Rochester, MN
+    - KRXW 103.5 FM at Roseau, MN
+    - KGAC 90.5 FM at St. Peter, MN
+    - KNGA 91.5 FM at St. Peter, MN
+    - KNTN 102.7 FM at Thief River Falls, MN
+    - KQMN 91.5 FM at Thief River Falls, MN
+    - WIRR 90.9 FM at Virginia–Hibbing, MN
+    - KRSW 89.3 FM at Worthington, MN
+    - KNSW 91.7 FM at Worthington–Marshall, MN
+    - KRSD 88.1 FM at Sioux Falls, SD
+    - KHCC 90.1 FM at Wichita, KS
+    - KHCD 89.5 FM at Salina, KS
+    - KHCT 90.9 FM at Great Bend, KS
+    - WKYU-FM 88.9 FM at Bowling Green, KY
+    - WKUE 90.9 FM at Elizabethtown, KY
+    - WDCL-FM 89.7 FM at Somerset, KY
+    - WUOL-FM 90.5 FM at Louisville, KY
+    - WMEH 90.9 FM at Bangor, ME
+    - WMED 89.7 FM at Calais, ME
+    - WMEP 90.5 FM at Camden, ME
+    - WMEF 106.5 FM at Fort Kent, ME
+    - WBQF 91.7 FM at Fryeburg, ME
+    - WMEA 90.1 FM at Portland, ME
+    - WMEM 106.1 FM at Presque Isle, ME
+    - WMEW 91.3 FM at Waterville, ME
+    - WUOM 91.7 FM at Ann Arbor, MI
+    - WFUM 91.1 FM at Flint, MI
+    - WVGR 104.1 FM at Grand Rapids, MI
+    - WRSX 91.3 FM at Port Huron, MI
+    - WMAH-FM 90.3 FM at Biloxi, MS
+    - WMAE-FM 89.5 FM at Booneville, MS
+    - WMAU-FM 88.9 FM at Bude, MS
+    - WMAO-FM 90.9 FM at Greenwood, MS
+    - WMPN-FM 91.3 FM at Jackson, MS
+    - WMAW-FM 88.1 FM at Meridian, MS
+    - WMAV-FM 90.3 FM at Oxford, MS
+    - KSMS-FM 90.5 FM at Branson, MO
+    - KSMU 91.1 FM at Springfield, MO
+    - KSMW 90.9 FM at West Plains, MO
+    - KBMC 102.1 FM at Bozeman, MT
+    - KYPH 88.5 FM at Helena, MT
+    - KYPR 90.7 FM at Miles City, MT
+    - KPRQ 88.1 FM at Sheridan, WY
+    - KAPC 91.3 FM at Butte, MT
+    - KUFN 91.9 FM at Hamilton, MT
+    - KUHM 91.7 FM at Helena, MT
+    - KUKL 89.9 FM at Kalispell, MT
+    - KUFL 90.5 FM at Libby, MT
+    - KPJH 89.5 FM at Polson, MT
+    - WEVF 90.3 FM at Colebrook, NH
+    - WEVH 91.3 FM at Hanover, NH
+    - WEVJ 99.5 FM at Jackson, NH
+    - WEVN 90.7 FM at Keene, NH
+    - WEVQ 91.9 FM at Littleton, NH
+    - WEVS 88.3 FM at Nashua, NH
+    - WNJY 89.3 FM at Netcong, NJ
+    - WNJP 88.5 FM at Sussex, NJ
+    - WNJO 90.3 FM at Toms River, NJ
+    - WNJT-FM 88.1 FM at Trenton, NJ
+    - WXLB 91.7 FM at Boonville, NY
+    - WSLU 89.5 FM at Canton, NY
+    - WSLZ 88.1 FM at Cape Vincent, NY
+    - WSLG 90.5 FM at Gouverneur, NY
+    - WXLE 105.9 FM at Indian Lake, NY
+    - WXLL 91.7 FM at Lake Placid, NY
+    - WXLD 89.7 FM at Lowville, NY
+    - WSLO 90.9 FM at Malone, NY
+    - WXLG 89.9 FM at North Creek, NY
+    - WXLU 88.1 FM at Peru, NY
+    - WSLL 90.5 FM at Saranac Lake, NY
+    - WXLS 88.3 FM at Tupper Lake, NY
+    - WSLJ 88.9 FM at Watertown, NY
+    - WXLQ 90.5 FM at Bristol, VT
+    - WEOS 89.5 FM at Geneva, NY
+    - WVBA 88.9 FM at Brattleboro, VT
+    - WVTI 106.9 FM at Brighton, VT
+    - WVPS 107.9 FM at Burlington, VT
+    - WVNK 91.1 FM at Manchester, VT
+    - WNCH 88.1 FM at Norwich, VT
+    - WVPA 88.5 FM at St. Johnsbury, VT
+    - WVPR 89.5 FM at Windsor, VT
+    - WBJD 91.5 FM at Atlantic Beach, NC
+    - WKNS 90.3 FM at Kinston, NC
+    - WTEB 89.3 FM at New Bern, NC
+    - WZNB 88.5 FM at New Bern, NC
+    - KPPD 91.7 FM at Devils Lake, ND
+    - KDPR 89.9 FM at Dickinson, ND
+    - KPRJ 91.5 FM at Jamestown, ND
+    - KMPR 88.9 FM at Minot, ND
+    - KPPR 89.5 FM at Williston, ND
+    - KPPW 88.7 FM at Williston, ND
+    - KOBK 88.9 FM at Baker City, OR
+    - KOAB-FM 91.3 FM at Bend, OR
+    - KOBN 90.1 FM at Burns, OR
+    - KETP 88.7 FM at Enterprise, OR
+    - KOGL 89.3 FM at Gleneden Beach, OR
+    - KOJD 89.7 FM at John Day, OR
+    - KTVR-FM 90.3 FM at La Grande, OR
+    - KOAP 88.7 FM at Lakeview, OR
+    - KOTD 89.7 FM at The Dalles, OR
+    - WLJK 89.1 FM at Aiken, SC
+    - WSCI 89.3 FM at Charleston, SC
+    - KPSD-FM 97.1 FM at Faith, SD
+    - KQSD-FM 91.9 FM at Lowry, SD
+    - KZSD-FM 102.5 FM at Martin, SD
+    - KDSD-FM 90.9 FM at Pierpont, SD
+    - KBHE-FM 89.3 FM at Rapid City, SD
+    - KTSD-FM 91.1 FM at Reliance, SD
+    - KYSD 91.9 FM at Spearfish, SD
+    - KUSD 89.7 FM at Vermillion, SD
+    - KJSD 90.3 FM at Watertown, SD
+    - KTPD 89.3 FM at Del Rio, TX
+    - KTXI 90.1 FM at Ingram, TX
+    - KVHL 91.7 FM at Llano, TX
+    - KSTX 89.1 FM at San Antonio, TX
+    - KPAC 88.3 FM at San Antonio, TX
+    - KTPR 89.9 FM at Stanton, TX
+    - WCHG 107.1 FM at Hot Springs, VA
+    - WVLS 89.7 FM at Monterey, VA
+    - WVMR 1370 AM at Frost, WV
+    - WVBY 91.7 FM at Beckley, WV
+    - WVBL 88.5 FM at Bluefield, WV
+    - WVPW 88.9 FM at Buckhannon, WV
+    - WVPB 88.5 FM at Charleston, WV
+    - WVWV 89.9 FM at Huntington, WV
+    - WVEP 88.9 FM at Martinsburg, WV
+    - WVKM 106.7 FM at Matewan, WV
+    - WVPM 90.9 FM at Morgantown, WV
+    - WVWS 89.3 FM at Webster Springs, WV
+    - WVNP 89.9 FM at Wheeling, WV
+    - WHAA 89.1 FM at Adams, WI
+    - WHID 88.1 FM at Green Bay, WI
+    - WHLA 90.3 FM at La Crosse, WI
+    - WHWC 88.3 FM at Menomonie, WI
+    - WHBM 90.3 FM at Park Falls, WI
+    - WHSF 89.9 FM at Rhinelander, WI
+    - WHDI 91.1 FM at Sister Bay, WI
+    - WHND 89.7 FM at Sister Bay, WI
+    - WHRM 90.9 FM at Wausau, WI
+    - KUWA 91.3 FM at Afton, WY
+    - KBUW 90.5 FM at Buffalo, WY
+    - KUWC 91.3 FM at Casper, WY
+    - KDUW 91.7 FM at Douglas, WY
+    - KUWE 89.7 FM at Evanston, WY
+    - KUWG 90.9 FM at Gillette, WY
+    - KUWJ 90.3 FM at Jackson, WY
+    - KUWK 88.7 FM at Kaycee, WY
+    - KUWV 90.7 FM at Lingle, WY
+    - KUWN 90.5 FM at Newcastle, WY
+    - KUWX 90.9 FM at Pinedale, WY
+    - KUWP 90.1 FM at Powell, WY
+    - KUWI 89.9 FM at Rawlins, WY
+    - KZUW 88.5 FM at Reliance, WY
+    - KUWZ 90.5 FM at Rock Springs, WY
+    - KAIW 88.9 FM at Saratoga, WY
+    - KUWD 91.5 FM at Sundance, WY
+    - KUWT 91.3 FM at Thermopolis, WY
+    - KEUW 89.9 FM at Torrington, WY
 
   Websites updated because the old address redirects: 22
     - 92j: https://wljs919.com → https://www.jsuchanticleer.com/wljs919/
@@ -766,14 +772,13 @@ build-data report
     - south-carolina-educational-television: extra ios app https://apps.apple.com/us/app/south-carolina-etv/id1056289468 (main: https://apps.apple.com/us/app/scetv/id6772544565)
     - south-carolina-educational-television: extra android app https://play.google.com/store/apps/details?id=com.skyblue.pra.scetv (main: https://play.google.com/store/apps/details?id=org.localstreaming.wrlk)
 
-  Map placement (station shown at a transmitter instead of its home city): 8
+  Map placement (station shown at a transmitter instead of its home city): 7
     - krbd: couldn't place Ketchikan, AK; shown at KRBD
     - central-florida-public-media: couldn't place Cedar Creek, FL; shown at WMFV
     - pbs-hawai-i: no home city found; shown at KHET
-    - high-plains-public-radio: couldn't place Amarillo, KS; shown at KJJP
-    - red-river-radio: couldn't place Overton, LA; shown at KTYK
+    - high-plains-public-radio: couldn't place Lamar, KS; shown at KCSE
+    - red-river-radio: couldn't place El Dorado, LA; shown at KBSA
     - mississippi-public-broadcasting: couldn't place Mississippi State, MS; shown at WMAB-TV1
-    - wnyc: couldn't place New York, NJ; shown at WNYC
     - jefferson-public-radio: couldn't place Bayside, OR; shown at KNHM
 
   Station ids:
@@ -874,7 +879,6 @@ build-data report
     CO  the-colorado-sound                           The Colorado Sound
     CT  connecticut-public-television                Connecticut Public Television
     CT  robin-hood-radio                             Robin Hood Radio
-    CT  wamc-northeast-public-radio-ct               WAMC Northeast Public Radio
     CT  wecs                                         WECS
     CT  wesu                                         WESU
     CT  wshu-public-radio                            WSHU Public Radio
@@ -882,8 +886,8 @@ build-data report
     DC  wamu                                         WAMU
     DC  weta                                         WETA
     DC  whut                                         WHUT
-    DE  super                                        Super
     DE  wdde                                         WDDE
+    DE  super                                        WMPH
     FL  central-florida-public-media                 Central Florida Public Media
     FL  south-florida-pbs                            South Florida PBS
     FL  wdna                                         WDNA
@@ -901,14 +905,14 @@ build-data report
     FL  wuft                                         WUFT
     FL  wusf                                         WUSF
     FL  wuwf                                         WUWF
-    GA  blaze                                        Blaze
-    GA  days-gpb-atlantanights-album                 Days: GPB AtlantaNights: Album
     GA  georgia-public-broadcasting                  Georgia Public Broadcasting
     GA  wabe                                         WABE
     GA  wclk                                         WCLK
+    GA  days-gpb-atlantanights-album                 WRAS
     GA  wrgc                                         WRGC
-    GA  wuga-and                                     WUGA and
+    GA  wuga-and                                     WUGA
     GA  wuwg                                         WUWG
+    GA  blaze                                        WVVS
     GU  kprg                                         KPRG
     GU  pbs-guam                                     PBS Guam
     HI  hawaii-public-radio                          Hawaii Public Radio
@@ -940,7 +944,6 @@ build-data report
     IL  wttw-and-wyin                                WTTW and WYIN
     IL  wtvp                                         WTVP
     IN  ball-state-pbs                               Ball State PBS
-    IN  blazer                                       Blazer
     IN  indiana-public-radio                         Indiana Public Radio
     IN  lakeshore-pbs                                Lakeshore PBS
     IN  michiana-pbs                                 Michiana PBS
@@ -954,6 +957,7 @@ build-data report
     IN  wnin                                         WNIN
     IN  wtiu                                         WTIU
     IN  wvpe                                         WVPE
+    IN  blazer                                       WVUB
     KS  high-plains-public-radio                     High Plains Public Radio
     KS  kansas-public-radio                          Kansas Public Radio
     KS  khcc                                         KHCC
@@ -965,18 +969,18 @@ build-data report
     KS  smoky-hills-pbs                              Smoky Hills PBS
     KY  kentucky-educational-television              KET
     KY  lexington-s-choice-for-npr                   Lexington's Choice for NPR
-    KY  npr-rocks                                    NPR Rocks @
     KY  wfpk                                         WFPK
     KY  wkmt                                         WKMT
     KY  wku-pbs                                      WKU PBS
     KY  wku-public-radio                             WKU Public Radio
     KY  wmky                                         WMKY
+    KY  npr-rocks                                    WUKY
     LA  kedm-public-radio                            KEDM Public Radio
     LA  louisiana-public-broadcasting                Louisiana Public Broadcasting
     LA  radio-acadie                                 Radio Acadie
     LA  red-river-radio                              Red River Radio
     LA  the-lion                                     The Lion
-    LA  wbrh-fmjazz-from-the-capital-city            WBRH FMJazz From the Capital City
+    LA  wbrh-fmjazz-from-the-capital-city            WBRH
     LA  wrkf                                         WRKF
     LA  wwno-new-orleans-public-radio                WWNO - New Orleans Public Radio
     LA  wyes                                         WYES
@@ -1007,9 +1011,7 @@ build-data report
     MI  detroit-pbs                                  Detroit PBS
     MI  kalamazoo-public-radio                       Kalamazoo Public Radio
     MI  michigan-public                              Michigan Public
-    MI  minnesota-public-radio                       Minnesota Public Radio
     MI  npr-wkar                                     NPR WKAR
-    MI  public-radio-mi                              Public Radio
     MI  waus                                         WAUS
     MI  wcmu-public-radio                            WCMU Public Radio
     MI  wcmv                                         WCMV
@@ -1020,11 +1022,12 @@ build-data report
     MI  whbp                                         WHBP
     MI  wkar                                         WKAR
     MI  wnmu                                         WNMU
+    MI  public-radio-mi                              WNMU-FM
     MN  jazz88                                       Jazz88
     MN  ksmq                                         KSMQ
     MN  lakeland-pbs                                 Lakeland PBS
     MN  minnesota-pbs                                Minnesota PBS
-    MN  minnesota-public-radio-mn                    Minnesota Public Radio
+    MN  minnesota-public-radio                       Minnesota Public Radio
     MN  north-shore-community-radio                  North Shore Community Radio
     MN  northern-community-radio                     Northern Community Radio
     MN  pbs-north                                    PBS North
@@ -1032,7 +1035,6 @@ build-data report
     MN  the-current                                  The Current
     MN  the-maverick                                 The Maverick
     MN  the-north                                    The North
-    MN  wscn                                         WSCN
     MN  yourclassical-mpr                            YourClassical MPR
     MO  kansas-city-pbs                              Kansas City PBS
     MO  kbia                                         KBIA
@@ -1054,7 +1056,7 @@ build-data report
     MS  the-junction                                 The Junction
     MS  wjsu                                         WJSU
     MS  wprl                                         WPRL
-    MS  wurc-rust-college-public-radio               WURC- , Rust College Public Radio
+    MS  wurc-rust-college-public-radio               WURC
     MT  kglt                                         KGLT
     MT  kgva                                         KGVA
     MT  montana-pbs                                  Montana PBS
@@ -1067,19 +1069,19 @@ build-data report
     NC  wbjd                                         WBJD
     NC  wdav                                         WDAV
     NC  wfae                                         WFAE
-    NC  wfdd-public-radio-for-the-piedmont           WFDD, Public Radio for the Piedmont
+    NC  wfdd-public-radio-for-the-piedmont           WFDD
     NC  whqr                                         WHQR
     NC  wncu                                         WNCU
     NC  wncw                                         WNCW
     NC  wsge                                         WSGE
     NC  wsnc                                         WSNC
-    NC  wunc-north-carolina-public-radio             WUNC, North Carolina Public Radio
+    NC  wunc-north-carolina-public-radio             WUNC
     NC  wzpe                                         WZPE
     ND  keya                                         KEYA
     ND  prairie-public-television                    Prairie Public Television
-    NE  community-radio                              Community Radio
+    NE  omaha-public-radio-kios                      KIOS
+    NE  community-radio                              KZUM
     NE  nebraska-public-media                        Nebraska Public Media
-    NE  omaha-public-radio-kios                      Omaha Public Radio, KIOS
     NH  new-hampshire-pbs                            New Hampshire PBS
     NH  nhpr                                         NHPR
     NJ  nj-pbs                                       NJ PBS
@@ -1089,7 +1091,6 @@ build-data report
     NJ  wnyc                                         WNYC
     NJ  wqxr                                         WQXR
     NJ  wwcj                                         WWCJ
-    NJ  xpn-nj                                       XPN
     NM  gallup-public-radio                          Gallup Public Radio
     NM  kanw                                         KANW
     NM  kcie                                         KCIE
@@ -1099,12 +1100,11 @@ build-data report
     NM  kunm                                         KUNM
     NM  new-mexico-pbs                               New Mexico PBS
     NV  klkr                                         KLKR
-    NV  kunr-public-radiokncc-public-radio           KUNR Public RadioKNCC Public Radio
+    NV  kunr-public-radiokncc-public-radio           KUNR Public Radio
     NV  pbs-reno                                     PBS Reno
     NV  vegas-pbs                                    Vegas PBS
     NY  btpm-npr                                     BTPM NPR
     NY  buffalo-toronto-public-media                 Buffalo Toronto Public Media
-    NY  exit                                         Exit
     NY  mountain-lake-pbs                            Mountain Lake PBS
     NY  ncpr                                         NCPR
     NY  radio-catskill                               Radio Catskill
@@ -1112,9 +1112,10 @@ build-data report
     NY  the-route                                    The Route
     NY  the-voice                                    The Voice
     NY  waer                                         WAER
-    NY  wamc-northeast-public-radio                  WAMC, Northeast Public Radio
+    NY  wamc-northeast-public-radio                  WAMC
     NY  wcny                                         WCNY
     NY  weos                                         WEOS
+    NY  exit                                         WEXT
     NY  wfuv                                         WFUV
     NY  wliw                                         WLIW
     NY  wmht                                         WMHT
@@ -1130,13 +1131,13 @@ build-data report
     NY  wxxy                                         WXXY
     OH  cincinnati-public-radio                      Cincinnati Public Radio
     OH  ideastream-public-media                      Ideastream Public Media
-    OH  jazzy                                        Jazzy
     OH  miami-valley-public-media                    Miami Valley Public Media
     OH  pbs-western-reserve                          PBS Western Reserve
     OH  think-tv                                     Think TV
     OH  wbgu                                         WBGU
     OH  wcbe                                         WCBE
     OH  wcet                                         WCET
+    OH  jazzy                                        WCSU
     OH  wdpr                                         WDPR
     OH  wgte                                         WGTE
     OH  wguc                                         WGUC
@@ -1150,7 +1151,7 @@ build-data report
     OK  kgou                                         KGOU
     OK  kosn                                         KOSN
     OK  oklahoma-educational-television-authority    Oklahoma Educational Television Authority
-    OK  public-radio                                 Public Radio
+    OK  public-radio                                 Public Radio Tulsa
     OR  coast-community-radio                        Coast Community Radio
     OR  jefferson-public-radio                       Jefferson Public Radio
     OR  klcc                                         KLCC
@@ -1198,7 +1199,7 @@ build-data report
     TX  basin-pbs                                    Basin PBS
     TX  fm90                                         FM90
     TX  houston-public-media                         Houston Public Media
-    TX  kacu-abilene-public-radio                    KACU , Abilene Public Radio
+    TX  kacu-abilene-public-radio                    KACU
     TX  kamu                                         KAMU
     TX  kedt                                         KEDT
     TX  keos                                         KEOS
@@ -1224,7 +1225,7 @@ build-data report
     TX  texas-tech-public-media                      Texas Tech Public Media
     UT  kpcw                                         KPCW
     UT  krcl                                         KRCL
-    UT  kuer-npr-utah                                KUER , NPR Utah
+    UT  kuer-npr-utah                                KUER
     UT  pbs-utah                                     PBS Utah
     UT  the-edge                                     The Edge
     UT  utah-public-radio                            Utah Public Radio

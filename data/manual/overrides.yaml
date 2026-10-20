@@ -24,3 +24,91 @@
   note: Wikipedia's branding is "91.9FM Kenai and Soldotna" (a frequency and places); use the call sign (en.wikipedia.org/wiki/KDLL)
   set:
     name: KDLL
+
+# Names that came out garbled from Wikipedia's on-air branding: use the call sign or the
+# name the station uses on its own website.
+- id: minnesota-public-radio
+  note: MPR is based in Saint Paul, MN (mpr.org); its Michigan station WGGL made it look Michigan-based
+  set:
+    city: Saint Paul
+    state: MN
+- id: days-gpb-atlantanights-album
+  note: branding field is a day/night schedule; use the call sign (en.wikipedia.org/wiki/WRAS)
+  set:
+    name: WRAS
+- id: wuga-and
+  note: garbled branding; use the call sign (en.wikipedia.org/wiki/WUGA)
+  set:
+    name: WUGA
+- id: npr-rocks
+  note: garbled branding; use the call sign (en.wikipedia.org/wiki/WUKY)
+  set:
+    name: WUKY
+- id: wurc-rust-college-public-radio
+  note: garbled branding; use the call sign (en.wikipedia.org/wiki/WURC)
+  set:
+    name: WURC
+- id: kacu-abilene-public-radio
+  note: garbled branding; use the call sign (en.wikipedia.org/wiki/KACU)
+  set:
+    name: KACU
+- id: kuer-npr-utah
+  note: garbled branding; use the call sign (en.wikipedia.org/wiki/KUER-FM)
+  set:
+    name: KUER
+- id: public-radio-mi
+  note: branding was "Public Radio 90"; use the call sign (wnmufm.org)
+  set:
+    name: WNMU-FM
+- id: public-radio
+  note: name the station uses (publicradiotulsa.org)
+  set:
+    name: Public Radio Tulsa
+- id: community-radio
+  note: too generic; use the call sign (kzum.org)
+  set:
+    name: KZUM
+- id: super
+  note: too generic; use the call sign (en.wikipedia.org/wiki/WMPH)
+  set:
+    name: WMPH
+- id: exit
+  note: too generic; use the call sign (wextradio.org)
+  set:
+    name: WEXT
+- id: blaze
+  note: too generic; use the call sign (en.wikipedia.org/wiki/WVVS-FM)
+  set:
+    name: WVVS
+- id: blazer
+  note: too generic; use the call sign (wvub.org)
+  set:
+    name: WVUB
+- id: jazzy
+  note: too generic; use the call sign (wcsufm.org)
+  set:
+    name: WCSU
+- id: omaha-public-radio-kios
+  note: use the call sign (kios.org)
+  set:
+    name: KIOS
+- id: wfdd-public-radio-for-the-piedmont
+  note: drop the slogan (wfdd.org)
+  set:
+    name: WFDD
+- id: wunc-north-carolina-public-radio
+  note: drop the slogan (wunc.org)
+  set:
+    name: WUNC
+- id: wamc-northeast-public-radio
+  note: drop the slogan (wamc.org)
+  set:
+    name: WAMC
+- id: wbrh-fmjazz-from-the-capital-city
+  note: garbled branding; use the call sign (en.wikipedia.org/wiki/WBRH)
+  set:
+    name: WBRH
+- id: kunr-public-radiokncc-public-radio
+  note: two brandings run together; KUNR is the main station (kunr.org)
+  set:
+    name: KUNR Public Radio

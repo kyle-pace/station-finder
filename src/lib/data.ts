@@ -35,6 +35,7 @@ export interface Facility {
   organizationId: string;
   source: string;
   retrievedAt: string;
+  approx?: boolean; // placed at its city of license (no transmitter location on Wikipedia)
 }
 export interface NationalApp { platform: Platform; kind: 'store' | 'help'; url: string; source: string; retrievedAt: string }
 export interface NationalBrand { id: string; name: string; description: string; apps: NationalApp[] }

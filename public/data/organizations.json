@@ -370,7 +370,7 @@
     "sources": {
       "name": {
         "source": "manual: overrides.yaml (Wikipedia's branding is \"91.9FM Kenai and Soldotna\" (a frequency and places); use the call sign (en.wikipedia.org/wiki/KDLL))",
-        "retrievedAt": "2026-10-19"
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -648,7 +648,9 @@
     "city": "Kodiak",
     "state": "AK",
     "apps": [],
-    "facilityIds": [],
+    "facilityIds": [
+      "wp-kodk"
+    ],
     "sources": {
       "name": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -1330,6 +1332,8 @@
     ],
     "facilityIds": [
       "fcc-61999",
+      "wp-wqpr",
+      "wp-wapr",
       "fcc-69168"
     ],
     "sources": {
@@ -1479,7 +1483,9 @@
     "website": "https://troy.edu/student-life-resources/campus-media/troy-public-radio",
     "apps": [],
     "facilityIds": [
-      "fcc-68187"
+      "wp-wrwa",
+      "fcc-68187",
+      "wp-wtjb"
     ],
     "sources": {
       "name": {
@@ -1911,7 +1917,7 @@
         "platform": "web",
         "url": "https://watch.azpbs.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -3101,12 +3107,15 @@
         "platform": "web",
         "url": "https://plus.kpbs.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
     "facilityIds": [
-      "fcc-6124"
+      "fcc-6124",
+      "wp-kram",
+      "wp-kqvo",
+      "wp-kpbs-fm"
     ],
     "sources": {
       "name": {
@@ -3549,7 +3558,7 @@
         "platform": "web",
         "url": "https://stream.kvie.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -4467,10 +4476,17 @@
     "facilityIds": [
       "fcc-70405",
       "fcc-8764",
+      "wp-kepc",
+      "wp-kpyr",
+      "wp-kpru",
       "fcc-53777",
       "fcc-84102",
+      "wp-kprn",
       "wp-kvoq",
       "fcc-83535",
+      "wp-kprh",
+      "wp-kcfp",
+      "wp-kpre",
       "wp-kvqi"
     ],
     "sources": {
@@ -4710,6 +4726,9 @@
     "website": "https://www.cpr.org/krcc/",
     "apps": [],
     "facilityIds": [
+      "wp-krcc",
+      "wp-kecc",
+      "wp-kccs",
       "fcc-176681"
     ],
     "sources": {
@@ -4735,11 +4754,11 @@
       }
     },
     "home": {
-      "lat": 38.99389,
-      "lng": -105.05694,
-      "city": "Woodland Park",
-      "source": "https://en.wikipedia.org/wiki/Woodland_Park,_Colorado",
-      "retrievedAt": "2026-10-19"
+      "lat": 38.85778,
+      "lng": -104.60583,
+      "city": "Colorado Springs",
+      "source": "https://en.wikipedia.org/wiki/Colorado_Springs,_Colorado",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -5030,7 +5049,7 @@
         "platform": "web",
         "url": "https://rmpbsplus.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -5226,48 +5245,6 @@
       },
       "website": {
         "source": "https://en.wikipedia.org/wiki/WHDD_(AM)",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 41.867,
-      "lng": -73.45,
-      "city": "Sharon",
-      "source": "https://en.wikipedia.org/wiki/Sharon,_Connecticut",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
-    "id": "wamc-northeast-public-radio-ct",
-    "name": "WAMC Northeast Public Radio",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Sharon",
-    "state": "CT",
-    "owner": "WAMC, Inc.",
-    "apps": [],
-    "facilityIds": [
-      "fcc-54785"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WQQQ",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WQQQ",
         "retrievedAt": "2026-10-18"
       }
     },
@@ -5579,7 +5556,7 @@
         "platform": "web",
         "url": "https://wetaplus.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -5666,61 +5643,6 @@
     }
   },
   {
-    "id": "super",
-    "name": "Super",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Wilmington",
-    "state": "DE",
-    "owner": "Brandywine School District Board of Education",
-    "website": "https://mphs.brandywineschools.org/learning/wmph-917-fm-radio",
-    "apps": [
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/simple-radio-live-am-fm-app/id891132290",
-        "source": "https://mphs.brandywineschools.org/learning/wmph-917-fm-radio/live-streaming",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      }
-    ],
-    "facilityIds": [
-      "wp-wmph"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WMPH",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WMPH",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "redirect from https://www.brandywineschools.org/wmph (station website)",
-        "retrievedAt": "2026-10-19"
-      }
-    },
-    "home": {
-      "lat": 39.74583,
-      "lng": -75.54667,
-      "city": "Wilmington",
-      "source": "https://en.wikipedia.org/wiki/Wilmington,_Delaware",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
     "id": "wdde",
     "name": "WDDE",
     "networks": [
@@ -5779,6 +5701,61 @@
       "lng": -75.52444,
       "city": "Dover",
       "source": "https://en.wikipedia.org/wiki/Dover,_Delaware",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
+    "id": "super",
+    "name": "WMPH",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Wilmington",
+    "state": "DE",
+    "owner": "Brandywine School District Board of Education",
+    "website": "https://mphs.brandywineschools.org/learning/wmph-917-fm-radio",
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/simple-radio-live-am-fm-app/id891132290",
+        "source": "https://mphs.brandywineschools.org/learning/wmph-917-fm-radio/live-streaming",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      }
+    ],
+    "facilityIds": [
+      "wp-wmph"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (too generic; use the call sign (en.wikipedia.org/wiki/WMPH))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WMPH",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "redirect from https://www.brandywineschools.org/wmph (station website)",
+        "retrievedAt": "2026-10-19"
+      }
+    },
+    "home": {
+      "lat": 39.74583,
+      "lng": -75.54667,
+      "city": "Wilmington",
+      "source": "https://en.wikipedia.org/wiki/Wilmington,_Delaware",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -6720,100 +6697,6 @@
     }
   },
   {
-    "id": "blaze",
-    "name": "Blaze",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Valdosta",
-    "state": "GA",
-    "owner": "Valdosta State University(Board of the University System of Ga / Valdosta State Un)",
-    "website": "https://www.valdosta.edu/vsu/stuorg/V91/",
-    "apps": [],
-    "facilityIds": [
-      "fcc-69649"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WVVS-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WVVS-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/WVVS-FM",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 30.84667,
-      "lng": -83.28306,
-      "city": "Valdosta",
-      "source": "https://en.wikipedia.org/wiki/Valdosta,_Georgia",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
-    "id": "days-gpb-atlantanights-album",
-    "name": "Days: GPB AtlantaNights: Album",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Atlanta",
-    "state": "GA",
-    "owner": "Georgia State University",
-    "website": "https://www.wrasfm.org/",
-    "apps": [],
-    "facilityIds": [
-      "fcc-23959"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WRAS_(FM)",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WRAS_(FM)",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/WRAS_(FM)",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 33.74889,
-      "lng": -84.39,
-      "city": "Atlanta",
-      "source": "https://en.wikipedia.org/wiki/Atlanta",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
     "id": "georgia-public-broadcasting",
     "name": "Georgia Public Broadcasting",
     "networks": [
@@ -7075,6 +6958,53 @@
     }
   },
   {
+    "id": "days-gpb-atlantanights-album",
+    "name": "WRAS",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Atlanta",
+    "state": "GA",
+    "owner": "Georgia State University",
+    "website": "https://www.wrasfm.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-23959"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (branding field is a day/night schedule; use the call sign (en.wikipedia.org/wiki/WRAS))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WRAS_(FM)",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WRAS_(FM)",
+        "retrievedAt": "2026-10-18"
+      }
+    },
+    "home": {
+      "lat": 33.74889,
+      "lng": -84.39,
+      "city": "Atlanta",
+      "source": "https://en.wikipedia.org/wiki/Atlanta",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
     "id": "wrgc",
     "name": "WRGC",
     "networks": [
@@ -7123,7 +7053,7 @@
   },
   {
     "id": "wuga-and",
-    "name": "WUGA and",
+    "name": "WUGA",
     "networks": [
       "NPR"
     ],
@@ -7140,8 +7070,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/WUGA_(FM)",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (garbled branding; use the call sign (en.wikipedia.org/wiki/WUGA))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -7207,6 +7137,53 @@
       "lng": -85.07667,
       "city": "Carrollton",
       "source": "https://en.wikipedia.org/wiki/Carrollton,_Georgia",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
+    "id": "blaze",
+    "name": "WVVS",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Valdosta",
+    "state": "GA",
+    "owner": "Valdosta State University(Board of the University System of Ga / Valdosta State Un)",
+    "website": "https://www.valdosta.edu/vsu/stuorg/V91/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-69649"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (too generic; use the call sign (en.wikipedia.org/wiki/WVVS-FM))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WVVS-FM",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WVVS-FM",
+        "retrievedAt": "2026-10-18"
+      }
+    },
+    "home": {
+      "lat": 30.84667,
+      "lng": -83.28306,
+      "city": "Valdosta",
+      "source": "https://en.wikipedia.org/wiki/Valdosta,_Georgia",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -7319,7 +7296,16 @@
     "website": "https://hawaiipublicradio.org",
     "apps": [],
     "facilityIds": [
-      "fcc-173928"
+      "wp-kiph",
+      "wp-kano",
+      "wp-khpr",
+      "wp-kipo",
+      "wp-khph",
+      "wp-kjhf",
+      "wp-kipl",
+      "fcc-173928",
+      "wp-kipm",
+      "wp-kkua"
     ],
     "sources": {
       "name": {
@@ -7344,11 +7330,11 @@
       }
     },
     "home": {
-      "lat": 19.2025,
-      "lng": -155.47722,
-      "city": "Pahala",
-      "source": "https://en.wikipedia.org/wiki/P%C4%81hala,_Hawaii",
-      "retrievedAt": "2026-10-19"
+      "lat": 20.77,
+      "lng": -155.99417,
+      "city": "Hana",
+      "source": "https://en.wikipedia.org/wiki/H%C4%81na,_Hawaii",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -7485,16 +7471,22 @@
     "facilityIds": [
       "fcc-29119",
       "fcc-29118",
+      "wp-knsb",
+      "wp-knsc",
       "fcc-69027",
       "fcc-69158",
+      "wp-knsy",
+      "wp-knsk",
       "fcc-66626",
       "fcc-63119",
       "fcc-81325",
       "fcc-69035",
       "fcc-69284",
       "fcc-90336",
+      "wp-knsz",
       "fcc-83086",
       "fcc-164102",
+      "wp-kicg",
       "fcc-164103"
     ],
     "sources": {
@@ -7742,7 +7734,15 @@
     "apps": [],
     "facilityIds": [
       "fcc-6325",
-      "fcc-91742"
+      "wp-kbsx",
+      "wp-kbsy",
+      "fcc-91742",
+      "wp-kbsm",
+      "wp-kbsq",
+      "wp-kbss",
+      "wp-kwrv",
+      "wp-kbsw",
+      "wp-kbsj"
     ],
     "sources": {
       "name": {
@@ -7987,7 +7987,10 @@
     "apps": [],
     "facilityIds": [
       "fcc-49550",
-      "fcc-49545"
+      "wp-wnie",
+      "wp-wniw",
+      "fcc-49545",
+      "wp-wniq"
     ],
     "sources": {
       "name": {
@@ -8444,7 +8447,8 @@
     "owner": "University of Illinois Urbana-Champaign(The Board of Trustees of the University of Illinois)",
     "apps": [],
     "facilityIds": [
-      "fcc-68941"
+      "fcc-68941",
+      "wp-will-fm"
     ],
     "sources": {
       "name": {
@@ -8599,12 +8603,12 @@
     ],
     "facilityIds": [
       "fcc-4297",
-      "fcc-70536",
-      "fcc-70537",
-      "fcc-71561",
       "wp-wsiu",
       "wp-wvsi",
-      "wp-wusi"
+      "wp-wusi",
+      "fcc-70536",
+      "fcc-70537",
+      "fcc-71561"
     ],
     "sources": {
       "name": {
@@ -8775,53 +8779,6 @@
       "lng": -85.375,
       "city": "Muncie",
       "source": "https://en.wikipedia.org/wiki/Muncie,_Indiana",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
-    "id": "blazer",
-    "name": "Blazer",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Vincennes",
-    "state": "IN",
-    "owner": "Vincennes University",
-    "website": "https://wvub.org",
-    "apps": [],
-    "facilityIds": [
-      "fcc-70241"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WVUB",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WVUB",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/WVUB",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 38.6775,
-      "lng": -87.50194,
-      "city": "Vincennes",
-      "source": "https://en.wikipedia.org/wiki/Vincennes,_Indiana",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -9515,6 +9472,53 @@
     }
   },
   {
+    "id": "blazer",
+    "name": "WVUB",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Vincennes",
+    "state": "IN",
+    "owner": "Vincennes University",
+    "website": "https://wvub.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-70241"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (too generic; use the call sign (wvub.org))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WVUB",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WVUB",
+        "retrievedAt": "2026-10-18"
+      }
+    },
+    "home": {
+      "lat": 38.6775,
+      "lng": -87.50194,
+      "city": "Vincennes",
+      "source": "https://en.wikipedia.org/wiki/Vincennes,_Indiana",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
     "id": "high-plains-public-radio",
     "name": "High Plains Public Radio",
     "networks": [
@@ -9529,7 +9533,16 @@
     "website": "https://www.hppr.org",
     "apps": [],
     "facilityIds": [
-      "fcc-33273"
+      "wp-kcse",
+      "wp-kznk",
+      "wp-kznz",
+      "wp-kanz",
+      "wp-kzan",
+      "wp-kzna",
+      "wp-kguy",
+      "fcc-33273",
+      "wp-ktdh",
+      "wp-ktot"
     ],
     "sources": {
       "name": {
@@ -9554,11 +9567,11 @@
       }
     },
     "home": {
-      "lat": 35.2925,
-      "lng": -101.84667,
-      "city": "Amarillo",
-      "source": "https://en.wikipedia.org/wiki/KJJP",
-      "retrievedAt": "2026-10-19"
+      "lat": 38.08722,
+      "lng": -102.62083,
+      "city": "Lamar",
+      "source": "https://en.wikipedia.org/wiki/Lamar,_Colorado (city of license; transmitter location not on Wikipedia)",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -9640,7 +9653,11 @@
     "owner": "Hutchinson Community College",
     "website": "https://radiokansas.com",
     "apps": [],
-    "facilityIds": [],
+    "facilityIds": [
+      "wp-khcc",
+      "wp-khcd",
+      "wp-khct"
+    ],
     "sources": {
       "name": {
         "source": "https://en.wikipedia.org/wiki/Radio_Kansas",
@@ -10048,7 +10065,7 @@
     "sources": {
       "name": {
         "source": "manual: overrides.yaml (name the station uses on its own site (ket.org title \"KET > Kentucky Educational Television\"))",
-        "retrievedAt": "2026-10-19"
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_PBS_member_stations",
@@ -10126,53 +10143,6 @@
     }
   },
   {
-    "id": "npr-rocks",
-    "name": "NPR Rocks @",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Lexington",
-    "state": "KY",
-    "owner": "University of Kentucky",
-    "website": "https://www.wuky.org",
-    "apps": [],
-    "facilityIds": [
-      "fcc-4303"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WUKY",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WUKY",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/WUKY",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 38.04639,
-      "lng": -84.49694,
-      "city": "Lexington",
-      "source": "https://en.wikipedia.org/wiki/Lexington,_Kentucky",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
     "id": "wfpk",
     "name": "WFPK",
     "networks": [
@@ -10188,7 +10158,8 @@
     "apps": [],
     "facilityIds": [
       "fcc-38621",
-      "fcc-4258"
+      "fcc-4258",
+      "wp-wuol-fm"
     ],
     "sources": {
       "name": {
@@ -10331,7 +10302,10 @@
     "website": "https://www.wkyufm.org",
     "apps": [],
     "facilityIds": [
-      "fcc-71864"
+      "wp-wkyu-fm",
+      "wp-wkue",
+      "fcc-71864",
+      "wp-wdcl-fm"
     ],
     "sources": {
       "name": {
@@ -10356,10 +10330,10 @@
       }
     },
     "home": {
-      "lat": 37.83556,
-      "lng": -87.58083,
-      "city": "Henderson",
-      "source": "https://en.wikipedia.org/wiki/Henderson,_Kentucky",
+      "lat": 36.98167,
+      "lng": -86.44444,
+      "city": "Bowling Green",
+      "source": "https://en.wikipedia.org/wiki/Bowling_Green,_Kentucky",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -10407,6 +10381,53 @@
       "lng": -83.4475,
       "city": "Morehead",
       "source": "https://en.wikipedia.org/wiki/Morehead,_Kentucky",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
+    "id": "npr-rocks",
+    "name": "WUKY",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Lexington",
+    "state": "KY",
+    "owner": "University of Kentucky",
+    "website": "https://www.wuky.org",
+    "apps": [],
+    "facilityIds": [
+      "fcc-4303"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (garbled branding; use the call sign (en.wikipedia.org/wiki/WUKY))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WUKY",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WUKY",
+        "retrievedAt": "2026-10-18"
+      }
+    },
+    "home": {
+      "lat": 38.04639,
+      "lng": -84.49694,
+      "city": "Lexington",
+      "source": "https://en.wikipedia.org/wiki/Lexington,_Kentucky",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -10586,6 +10607,10 @@
     "website": "https://www.redriverradio.org/",
     "apps": [],
     "facilityIds": [
+      "wp-kbsa",
+      "wp-klsa",
+      "wp-kdaq",
+      "wp-kldn",
       "fcc-29916"
     ],
     "sources": {
@@ -10611,11 +10636,11 @@
       }
     },
     "home": {
-      "lat": 32.152111,
-      "lng": -95.057722,
-      "city": "Overton",
-      "source": "https://en.wikipedia.org/wiki/KTYK",
-      "retrievedAt": "2026-10-19"
+      "lat": 33.23611,
+      "lng": -92.64167,
+      "city": "El Dorado",
+      "source": "https://en.wikipedia.org/wiki/El_Dorado,_Arkansas (city of license; transmitter location not on Wikipedia)",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -10667,7 +10692,7 @@
   },
   {
     "id": "wbrh-fmjazz-from-the-capital-city",
-    "name": "WBRH FMJazz From the Capital City",
+    "name": "WBRH",
     "networks": [
       "NPR"
     ],
@@ -10684,8 +10709,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/WBRH",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (garbled branding; use the call sign (en.wikipedia.org/wiki/WBRH))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -11367,7 +11392,7 @@
     "sources": {
       "name": {
         "source": "manual: overrides.yaml (Wikipedia's branding field is a slogan; use the call sign (en.wikipedia.org/wiki/WSDH))",
-        "retrievedAt": "2026-10-19"
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -11886,8 +11911,16 @@
       "fcc-39648",
       "fcc-39649",
       "fcc-39662",
+      "wp-wmeh",
       "fcc-4090",
-      "fcc-84096"
+      "wp-wmed",
+      "wp-wmep",
+      "wp-wmef",
+      "wp-wbqf",
+      "fcc-84096",
+      "wp-wmea",
+      "wp-wmem",
+      "wp-wmew"
     ],
     "sources": {
       "name": {
@@ -12251,119 +12284,15 @@
         "verified": false
       }
     ],
-    "facilityIds": [],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/Michigan_Public#WUOM",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/Michigan_Public#WUOM",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/Michigan_Public#WUOM",
-        "retrievedAt": "2026-10-18"
-      }
-    }
-  },
-  {
-    "id": "minnesota-public-radio",
-    "name": "Minnesota Public Radio",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Houghton",
-    "state": "MI",
-    "owner": "Minnesota Public Radio",
-    "website": "https://www.mpr.org/listen/stations/wggl",
-    "apps": [
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/app/apple-store/id400286612",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      },
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/app/apple-store/id1334353737",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false,
-        "extra": true,
-        "name": "Another app"
-      },
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/app/apple-store/id1564157090",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false,
-        "extra": true,
-        "name": "Another app"
-      },
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/app/apple-store/id1622081582",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false,
-        "extra": true,
-        "name": "Another app"
-      },
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=org.mpr.mprnews",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      },
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=org.americanpublicmedia.thecurrent",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false,
-        "extra": true,
-        "name": "Another app"
-      },
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=org.americanpublicmedia.classical",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false,
-        "extra": true,
-        "name": "Another app"
-      },
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=org.americanpublicmedia.urbanradio",
-        "source": "https://www.mpr.org/app",
-        "retrievedAt": "2026-10-19",
-        "verified": false,
-        "extra": true,
-        "name": "Another app"
-      }
-    ],
     "facilityIds": [
-      "fcc-42913"
+      "wp-wuom",
+      "wp-wfum",
+      "wp-wvgr",
+      "wp-wrsx"
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/WGGL-FM",
+        "source": "https://en.wikipedia.org/wiki/Michigan_Public#WUOM",
         "retrievedAt": "2026-10-18"
       },
       "city": {
@@ -12375,20 +12304,20 @@
         "retrievedAt": "2026-10-18"
       },
       "owner": {
-        "source": "https://en.wikipedia.org/wiki/WGGL-FM",
+        "source": "https://en.wikipedia.org/wiki/Michigan_Public#WUOM",
         "retrievedAt": "2026-10-18"
       },
       "website": {
-        "source": "https://en.wikipedia.org/wiki/WGGL-FM",
+        "source": "https://en.wikipedia.org/wiki/Michigan_Public#WUOM",
         "retrievedAt": "2026-10-18"
       }
     },
     "home": {
-      "lat": 47.1211,
-      "lng": -88.5694,
-      "city": "Houghton",
-      "source": "https://en.wikipedia.org/wiki/Houghton,_Michigan",
-      "retrievedAt": "2026-10-19"
+      "lat": 42.28139,
+      "lng": -83.74833,
+      "city": "Ann Arbor",
+      "source": "https://en.wikipedia.org/wiki/Ann_Arbor,_Michigan",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -12451,68 +12380,6 @@
       "lng": -84.48361,
       "city": "East Lansing",
       "source": "https://en.wikipedia.org/wiki/East_Lansing,_Michigan",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
-    "id": "public-radio-mi",
-    "name": "Public Radio",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Marquette",
-    "state": "MI",
-    "owner": "Northern Michigan University",
-    "website": "https://www.wnmufm.org",
-    "apps": [
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/public-radio-90/id1585412588",
-        "source": "https://www.wnmufm.org/mobile-apps",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      },
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wnmu",
-        "source": "https://www.wnmufm.org/mobile-apps",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      }
-    ],
-    "facilityIds": [
-      "fcc-49572"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WNMU-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WNMU-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/WNMU-FM",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 46.54639,
-      "lng": -87.40667,
-      "city": "Marquette",
-      "source": "https://en.wikipedia.org/wiki/Marquette,_Michigan",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -13030,6 +12897,68 @@
     }
   },
   {
+    "id": "public-radio-mi",
+    "name": "WNMU-FM",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Marquette",
+    "state": "MI",
+    "owner": "Northern Michigan University",
+    "website": "https://www.wnmufm.org",
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/public-radio-90/id1585412588",
+        "source": "https://www.wnmufm.org/mobile-apps",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.publicmediaapps.wnmu",
+        "source": "https://www.wnmufm.org/mobile-apps",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      }
+    ],
+    "facilityIds": [
+      "fcc-49572"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (branding was \"Public Radio 90\"; use the call sign (wnmufm.org))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WNMU-FM",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WNMU-FM",
+        "retrievedAt": "2026-10-18"
+      }
+    },
+    "home": {
+      "lat": 46.54639,
+      "lng": -87.40667,
+      "city": "Marquette",
+      "source": "https://en.wikipedia.org/wiki/Marquette,_Michigan",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
     "id": "jazz88",
     "name": "Jazz88",
     "networks": [
@@ -13218,7 +13147,7 @@
     }
   },
   {
-    "id": "minnesota-public-radio-mn",
+    "id": "minnesota-public-radio",
     "name": "Minnesota Public Radio",
     "networks": [
       "NPR"
@@ -13226,23 +13155,145 @@
     "mediaTypes": [
       "radio"
     ],
-    "city": null,
+    "city": "Saint Paul",
     "state": "MN",
-    "apps": [],
-    "facilityIds": [],
+    "owner": "Minnesota Public Radio",
+    "website": "https://www.mpr.org/listen/stations/wggl",
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/apple-store/id400286612",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/apple-store/id1334353737",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/apple-store/id1564157090",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      },
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/app/apple-store/id1622081582",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.mpr.mprnews",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.americanpublicmedia.thecurrent",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.americanpublicmedia.classical",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=org.americanpublicmedia.urbanradio",
+        "source": "https://www.mpr.org/app",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      }
+    ],
+    "facilityIds": [
+      "fcc-42913",
+      "wp-klcd",
+      "wp-klni",
+      "wp-kncm",
+      "wp-krsu",
+      "wp-knse",
+      "wp-kcrb-fm",
+      "wp-knbj",
+      "wp-kbpn",
+      "wp-kbpr",
+      "wp-wirn",
+      "wp-knsr",
+      "wp-kcmf",
+      "wp-knwf",
+      "wp-wlsn",
+      "wp-wmls",
+      "wp-wgrh",
+      "wp-kitf",
+      "wp-kxlc",
+      "wp-kccd",
+      "wp-krfi",
+      "wp-klse",
+      "wp-kzse",
+      "wp-krxw",
+      "wp-kgac",
+      "wp-knga",
+      "wp-kntn",
+      "wp-kqmn",
+      "wp-wirr",
+      "wp-krsw",
+      "wp-knsw",
+      "wp-krsd",
+      "fcc-42975",
+      "fcc-42949",
+      "fcc-3239"
+    ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/List_of_Minnesota_Public_Radio_affiliates",
+        "source": "https://en.wikipedia.org/wiki/WGGL-FM",
         "retrievedAt": "2026-10-18"
       },
       "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (MPR is based in Saint Paul, MN (mpr.org); its Michigan station WGGL made it look Michigan-based)",
+        "retrievedAt": "2026-10-20"
       },
       "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "source": "manual: overrides.yaml (MPR is based in Saint Paul, MN (mpr.org); its Michigan station WGGL made it look Michigan-based)",
+        "retrievedAt": "2026-10-20"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WGGL-FM",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WGGL-FM",
         "retrievedAt": "2026-10-18"
       }
+    },
+    "home": {
+      "lat": 44.94778,
+      "lng": -93.10389,
+      "city": "Saint Paul",
+      "source": "https://en.wikipedia.org/wiki/Saint_Paul,_Minnesota",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -13593,55 +13644,6 @@
       "lng": -92.10528,
       "city": "Duluth",
       "source": "https://en.wikipedia.org/wiki/Duluth,_Minnesota",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
-    "id": "wscn",
-    "name": "WSCN",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Cloquet",
-    "state": "MN",
-    "owner": "Minnesota Public Radio",
-    "website": "https://www.mprnews.org",
-    "apps": [],
-    "facilityIds": [
-      "fcc-42975",
-      "fcc-42949",
-      "fcc-3239"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WSCN",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WSCN",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/WSCN",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 46.72167,
-      "lng": -92.45944,
-      "city": "Cloquet",
-      "source": "https://en.wikipedia.org/wiki/Cloquet,_Minnesota",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -14288,7 +14290,11 @@
     "owner": "Missouri State University(Board of Governors of Missouri State University)",
     "website": "https://www.ksmu.org/",
     "apps": [],
-    "facilityIds": [],
+    "facilityIds": [
+      "wp-ksmu",
+      "wp-ksms-fm",
+      "wp-ksmw"
+    ],
     "sources": {
       "name": {
         "source": "https://en.wikipedia.org/wiki/KSMU",
@@ -14487,7 +14493,14 @@
       "fcc-43184",
       "fcc-43193",
       "fcc-43169",
-      "fcc-43168"
+      "fcc-43168",
+      "wp-wmah-fm",
+      "wp-wmae-fm",
+      "wp-wmau-fm",
+      "wp-wmao-fm",
+      "wp-wmpn-fm",
+      "wp-wmaw-fm",
+      "wp-wmav-fm"
     ],
     "sources": {
       "name": {
@@ -14662,7 +14675,7 @@
   },
   {
     "id": "wurc-rust-college-public-radio",
-    "name": "WURC- , Rust College Public Radio",
+    "name": "WURC",
     "networks": [
       "NPR"
     ],
@@ -14678,8 +14691,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/WURC",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (garbled branding; use the call sign (en.wikipedia.org/wiki/WURC))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -14860,7 +14873,13 @@
     "website": "https://www.mtpr.org",
     "apps": [],
     "facilityIds": [
+      "wp-kapc",
+      "wp-kufn",
+      "wp-kuhm",
+      "wp-kukl",
+      "wp-kufl",
       "fcc-69239",
+      "wp-kpjh",
       "fcc-24955"
     ],
     "sources": {
@@ -14886,11 +14905,11 @@
       }
     },
     "home": {
-      "lat": 46.874359,
-      "lng": -114.026136,
-      "city": "Missoula",
-      "source": "https://en.wikipedia.org/wiki/Missoula,_Montana",
-      "retrievedAt": "2026-10-19"
+      "lat": 45.90222,
+      "lng": -112.65667,
+      "city": "Butte",
+      "source": "https://en.wikipedia.org/wiki/Butte,_Montana",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -14924,7 +14943,11 @@
     ],
     "facilityIds": [
       "fcc-43571",
-      "fcc-189560"
+      "wp-kbmc",
+      "wp-kyph",
+      "fcc-189560",
+      "wp-kypr",
+      "wp-kprq"
     ],
     "sources": {
       "name": {
@@ -15275,7 +15298,12 @@
     "owner": "Craven Community College",
     "website": "https://publicradioeast.org",
     "apps": [],
-    "facilityIds": [],
+    "facilityIds": [
+      "wp-wbjd",
+      "wp-wkns",
+      "wp-wteb",
+      "wp-wznb"
+    ],
     "sources": {
       "name": {
         "source": "https://en.wikipedia.org/wiki/Public_Radio_East",
@@ -15411,7 +15439,7 @@
   },
   {
     "id": "wfdd-public-radio-for-the-piedmont",
-    "name": "WFDD, Public Radio for the Piedmont",
+    "name": "WFDD",
     "networks": [
       "NPR"
     ],
@@ -15428,8 +15456,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/WFDD",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (drop the slogan (wfdd.org))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -15717,7 +15745,7 @@
   },
   {
     "id": "wunc-north-carolina-public-radio",
-    "name": "WUNC, North Carolina Public Radio",
+    "name": "WUNC",
     "networks": [
       "NPR"
     ],
@@ -15738,8 +15766,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/WUNC_(FM)",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (drop the slogan (wunc.org))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -15889,9 +15917,15 @@
       "fcc-132606",
       "fcc-162016",
       "fcc-53317",
+      "wp-kppd",
+      "wp-kdpr",
       "fcc-49213",
       "fcc-69127",
-      "fcc-69406"
+      "fcc-69406",
+      "wp-kprj",
+      "wp-kmpr",
+      "wp-kppr",
+      "wp-kppw"
     ],
     "sources": {
       "name": {
@@ -15924,8 +15958,55 @@
     }
   },
   {
+    "id": "omaha-public-radio-kios",
+    "name": "KIOS",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Omaha",
+    "state": "NE",
+    "owner": "Omaha Public Schools(Douglas County School District 001)",
+    "website": "https://www.kios.org/",
+    "apps": [],
+    "facilityIds": [
+      "fcc-17416"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (use the call sign (kios.org))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/KIOS-FM",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/KIOS-FM",
+        "retrievedAt": "2026-10-18"
+      }
+    },
+    "home": {
+      "lat": 41.25861,
+      "lng": -95.9375,
+      "city": "Omaha",
+      "source": "https://en.wikipedia.org/wiki/Omaha,_Nebraska",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
     "id": "community-radio",
-    "name": "Community Radio",
+    "name": "KZUM",
     "networks": [
       "NPR"
     ],
@@ -15957,8 +16038,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/KZUM",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (too generic; use the call sign (kzum.org))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -16067,53 +16148,6 @@
     }
   },
   {
-    "id": "omaha-public-radio-kios",
-    "name": "Omaha Public Radio, KIOS",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Omaha",
-    "state": "NE",
-    "owner": "Omaha Public Schools(Douglas County School District 001)",
-    "website": "https://www.kios.org/",
-    "apps": [],
-    "facilityIds": [
-      "fcc-17416"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/KIOS-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/KIOS-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/KIOS-FM",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 41.25861,
-      "lng": -95.9375,
-      "city": "Omaha",
-      "source": "https://en.wikipedia.org/wiki/Omaha,_Nebraska",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
     "id": "new-hampshire-pbs",
     "name": "New Hampshire PBS",
     "networks": [
@@ -16187,9 +16221,15 @@
       }
     ],
     "facilityIds": [
+      "wp-wevf",
       "fcc-62166",
       "fcc-48438",
-      "fcc-24235"
+      "fcc-24235",
+      "wp-wevh",
+      "wp-wevj",
+      "wp-wevn",
+      "wp-wevq",
+      "wp-wevs"
     ],
     "sources": {
       "name": {
@@ -16214,11 +16254,11 @@
       }
     },
     "home": {
-      "lat": 43.20667,
-      "lng": -71.53806,
-      "city": "Concord",
-      "source": "https://en.wikipedia.org/wiki/Concord,_New_Hampshire",
-      "retrievedAt": "2026-10-19"
+      "lat": 44.89444,
+      "lng": -71.41389,
+      "city": "Colebrook",
+      "source": "https://en.wikipedia.org/wiki/Colebrook,_New_Hampshire",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -16460,6 +16500,10 @@
       }
     ],
     "facilityIds": [
+      "wp-wnjy",
+      "wp-wnjp",
+      "wp-wnjo",
+      "wp-wnjt-fm",
       "fcc-73357",
       "fcc-73355"
     ],
@@ -16486,11 +16530,11 @@
       }
     },
     "home": {
-      "lat": 40.7528806,
-      "lng": -74.1037528,
-      "city": "New York",
-      "source": "https://en.wikipedia.org/wiki/WNYC_(AM)",
-      "retrievedAt": "2026-10-18"
+      "lat": 40.899232,
+      "lng": -74.700823,
+      "city": "Netcong",
+      "source": "https://en.wikipedia.org/wiki/Netcong,_New_Jersey",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -16587,48 +16631,6 @@
       "lng": -74.76583,
       "city": "Trenton",
       "source": "https://en.wikipedia.org/wiki/Trenton,_New_Jersey",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
-    "id": "xpn-nj",
-    "name": "XPN",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Hackettstown",
-    "state": "NJ",
-    "owner": "University of Pennsylvania(The Trustees of the University of Pennsylvania)",
-    "apps": [],
-    "facilityIds": [
-      "fcc-9759"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WXPJ",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WXPJ",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 40.853704,
-      "lng": -74.824877,
-      "city": "Hackettstown",
-      "source": "https://en.wikipedia.org/wiki/Hackettstown,_New_Jersey",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -17083,7 +17085,7 @@
   },
   {
     "id": "kunr-public-radiokncc-public-radio",
-    "name": "KUNR Public RadioKNCC Public Radio",
+    "name": "KUNR Public Radio",
     "networks": [
       "NPR"
     ],
@@ -17117,8 +17119,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/KUNR",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (two brandings run together; KUNR is the main station (kunr.org))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -17343,7 +17345,7 @@
         "platform": "web",
         "url": "https://watch.btpm.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -17379,77 +17381,6 @@
       "lng": -78.87806,
       "city": "Buffalo",
       "source": "https://en.wikipedia.org/wiki/Buffalo,_New_York",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
-    "id": "exit",
-    "name": "Exit",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Amsterdam",
-    "state": "NY",
-    "owner": "WMHT Educational Telecommunications",
-    "website": "https://www.wextradio.org/",
-    "apps": [
-      {
-        "platform": "ios",
-        "url": "https://apps.apple.com/us/app/wext-radio/id1554864944",
-        "source": "https://www.wextradio.org/",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      },
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=com.jacobsmedia.WEXT",
-        "source": "https://www.wextradio.org/",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      },
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=com.jacobsmedia.wext1",
-        "source": "https://www.wextradio.org/",
-        "retrievedAt": "2026-10-19",
-        "verified": false,
-        "extra": true,
-        "name": "Another app"
-      }
-    ],
-    "facilityIds": [
-      "fcc-23457"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WEXT",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WEXT",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "redirect from https://exit977.org (station website)",
-        "retrievedAt": "2026-10-19"
-      }
-    },
-    "home": {
-      "lat": 42.95,
-      "lng": -74.183,
-      "city": "Amsterdam",
-      "source": "https://en.wikipedia.org/wiki/Amsterdam,_New_York",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -17515,7 +17446,21 @@
     "website": "https://northcountrypublicradio.org",
     "apps": [],
     "facilityIds": [
-      "wp-wrem"
+      "wp-wxlb",
+      "wp-wrem",
+      "wp-wslu",
+      "wp-wslz",
+      "wp-wslg",
+      "wp-wxle",
+      "wp-wxll",
+      "wp-wxld",
+      "wp-wslo",
+      "wp-wxlg",
+      "wp-wxlu",
+      "wp-wsll",
+      "wp-wxls",
+      "wp-wslj",
+      "wp-wxlq"
     ],
     "sources": {
       "name": {
@@ -17793,7 +17738,7 @@
   },
   {
     "id": "wamc-northeast-public-radio",
-    "name": "WAMC, Northeast Public Radio",
+    "name": "WAMC",
     "networks": [
       "NPR"
     ],
@@ -17832,12 +17777,13 @@
       "wp-wcel",
       "wp-wrun",
       "wp-wanz",
-      "fcc-70842"
+      "fcc-70842",
+      "fcc-54785"
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/WAMC",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (drop the slogan (wamc.org))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -17930,7 +17876,9 @@
     "owner": "Hobart and William Smith Colleges",
     "website": "https://www.weos.org/",
     "apps": [],
-    "facilityIds": [],
+    "facilityIds": [
+      "wp-weos"
+    ],
     "sources": {
       "name": {
         "source": "https://en.wikipedia.org/wiki/WEOS",
@@ -17958,6 +17906,77 @@
       "lng": -76.99306,
       "city": "Geneva",
       "source": "https://en.wikipedia.org/wiki/Geneva,_New_York",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
+    "id": "exit",
+    "name": "WEXT",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Amsterdam",
+    "state": "NY",
+    "owner": "WMHT Educational Telecommunications",
+    "website": "https://www.wextradio.org/",
+    "apps": [
+      {
+        "platform": "ios",
+        "url": "https://apps.apple.com/us/app/wext-radio/id1554864944",
+        "source": "https://www.wextradio.org/",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacobsmedia.WEXT",
+        "source": "https://www.wextradio.org/",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.jacobsmedia.wext1",
+        "source": "https://www.wextradio.org/",
+        "retrievedAt": "2026-10-19",
+        "verified": false,
+        "extra": true,
+        "name": "Another app"
+      }
+    ],
+    "facilityIds": [
+      "fcc-23457"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (too generic; use the call sign (wextradio.org))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WEXT",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "redirect from https://exit977.org (station website)",
+        "retrievedAt": "2026-10-19"
+      }
+    },
+    "home": {
+      "lat": 42.95,
+      "lng": -74.183,
+      "city": "Amsterdam",
+      "source": "https://en.wikipedia.org/wiki/Amsterdam,_New_York",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -18772,68 +18791,6 @@
     }
   },
   {
-    "id": "jazzy",
-    "name": "Jazzy",
-    "networks": [
-      "NPR"
-    ],
-    "mediaTypes": [
-      "radio"
-    ],
-    "city": "Wilberforce",
-    "state": "OH",
-    "owner": "Central State University",
-    "website": "https://www.wcsufm.org/",
-    "apps": [
-      {
-        "platform": "android",
-        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wcsu",
-        "source": "https://www.wcsufm.org/",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      },
-      {
-        "platform": "firetv",
-        "url": "https://www.amazon.com/dp/B0B4BL9HHN",
-        "source": "https://www.wcsufm.org/",
-        "retrievedAt": "2026-10-19",
-        "verified": false
-      }
-    ],
-    "facilityIds": [
-      "fcc-9958"
-    ],
-    "sources": {
-      "name": {
-        "source": "https://en.wikipedia.org/wiki/WCSU-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "city": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "state": {
-        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
-        "retrievedAt": "2026-10-18"
-      },
-      "owner": {
-        "source": "https://en.wikipedia.org/wiki/WCSU-FM",
-        "retrievedAt": "2026-10-18"
-      },
-      "website": {
-        "source": "https://en.wikipedia.org/wiki/WCSU-FM",
-        "retrievedAt": "2026-10-18"
-      }
-    },
-    "home": {
-      "lat": 39.71611,
-      "lng": -83.87583,
-      "city": "Wilberforce",
-      "source": "https://en.wikipedia.org/wiki/Wilberforce,_Ohio",
-      "retrievedAt": "2026-10-19"
-    }
-  },
-  {
     "id": "miami-valley-public-media",
     "name": "Miami Valley Public Media",
     "networks": [
@@ -19211,6 +19168,68 @@
       "lng": -84.5125,
       "city": "Cincinnati",
       "source": "https://en.wikipedia.org/wiki/Cincinnati",
+      "retrievedAt": "2026-10-19"
+    }
+  },
+  {
+    "id": "jazzy",
+    "name": "WCSU",
+    "networks": [
+      "NPR"
+    ],
+    "mediaTypes": [
+      "radio"
+    ],
+    "city": "Wilberforce",
+    "state": "OH",
+    "owner": "Central State University",
+    "website": "https://www.wcsufm.org/",
+    "apps": [
+      {
+        "platform": "android",
+        "url": "https://play.google.com/store/apps/details?id=com.skyblue.pra.wcsu",
+        "source": "https://www.wcsufm.org/",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      },
+      {
+        "platform": "firetv",
+        "url": "https://www.amazon.com/dp/B0B4BL9HHN",
+        "source": "https://www.wcsufm.org/",
+        "retrievedAt": "2026-10-19",
+        "verified": false
+      }
+    ],
+    "facilityIds": [
+      "fcc-9958"
+    ],
+    "sources": {
+      "name": {
+        "source": "manual: overrides.yaml (too generic; use the call sign (wcsufm.org))",
+        "retrievedAt": "2026-10-20"
+      },
+      "city": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "state": {
+        "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
+        "retrievedAt": "2026-10-18"
+      },
+      "owner": {
+        "source": "https://en.wikipedia.org/wiki/WCSU-FM",
+        "retrievedAt": "2026-10-18"
+      },
+      "website": {
+        "source": "https://en.wikipedia.org/wiki/WCSU-FM",
+        "retrievedAt": "2026-10-18"
+      }
+    },
+    "home": {
+      "lat": 39.71611,
+      "lng": -83.87583,
+      "city": "Wilberforce",
+      "source": "https://en.wikipedia.org/wiki/Wilberforce,_Ohio",
       "retrievedAt": "2026-10-19"
     }
   },
@@ -19985,7 +20004,7 @@
   },
   {
     "id": "public-radio",
-    "name": "Public Radio",
+    "name": "Public Radio Tulsa",
     "networks": [
       "NPR"
     ],
@@ -20003,8 +20022,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/KWGS",
-        "retrievedAt": "2026-10-18"
+        "source": "manual: overrides.yaml (name the station uses (publicradiotulsa.org))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -20111,15 +20130,27 @@
     ],
     "facilityIds": [
       "fcc-12486",
+      "wp-knca",
       "fcc-176094",
+      "wp-kldd",
       "fcc-31596",
       "fcc-60024",
+      "wp-knsq",
       "fcc-86670",
       "fcc-17412",
+      "wp-kjpr",
+      "wp-knyr",
+      "wp-ksmf",
       "fcc-50622",
+      "wp-ksrg",
+      "wp-ksba",
+      "wp-kzby",
       "fcc-54009",
       "fcc-61334",
+      "wp-klmf",
+      "wp-kskf",
       "fcc-33248",
+      "wp-ksrs",
       "fcc-33247",
       "fcc-62157"
     ],
@@ -20275,11 +20306,20 @@
       "fcc-50588",
       "fcc-50592",
       "fcc-81807",
+      "wp-kobk",
+      "wp-koab-fm",
+      "wp-kobn",
       "fcc-50587",
+      "wp-ketp",
       "fcc-841",
+      "wp-kogl",
       "fcc-90769",
+      "wp-kojd",
+      "wp-ktvr-fm",
+      "wp-koap",
       "fcc-50608",
       "fcc-50607",
+      "wp-kotd",
       "fcc-91082"
     ],
     "sources": {
@@ -20486,7 +20526,7 @@
         "platform": "web",
         "url": "https://watch.lehighvalleypublicmedia.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -20678,7 +20718,7 @@
         "platform": "web",
         "url": "https://watch.whyy.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -21012,7 +21052,7 @@
         "platform": "web",
         "url": "https://plus.wqed.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -21331,7 +21371,8 @@
     "apps": [],
     "facilityIds": [
       "wp-wxpn",
-      "wp-wxph"
+      "wp-wxph",
+      "fcc-9759"
     ],
     "sources": {
       "name": {
@@ -21627,7 +21668,7 @@
         "platform": "web",
         "url": "https://plus.scetv.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -21689,7 +21730,9 @@
     "website": "https://www.southcarolinapublicradio.org/",
     "apps": [],
     "facilityIds": [
+      "wp-wljk",
       "fcc-61006",
+      "wp-wsci",
       "fcc-60984",
       "fcc-60998",
       "fcc-60926",
@@ -21719,11 +21762,11 @@
       }
     },
     "home": {
-      "lat": 32.433,
-      "lng": -80.683,
-      "city": "Beaufort",
-      "source": "https://en.wikipedia.org/wiki/Beaufort,_South_Carolina",
-      "retrievedAt": "2026-10-19"
+      "lat": 33.50417,
+      "lng": -81.74,
+      "city": "Aiken",
+      "source": "https://en.wikipedia.org/wiki/Aiken,_South_Carolina",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -21815,7 +21858,16 @@
       "fcc-61062",
       "fcc-60728",
       "fcc-58359",
-      "fcc-60485"
+      "wp-kpsd-fm",
+      "wp-kqsd-fm",
+      "wp-kzsd-fm",
+      "wp-kdsd-fm",
+      "wp-kbhe-fm",
+      "wp-ktsd-fm",
+      "fcc-60485",
+      "wp-kysd",
+      "wp-kusd",
+      "wp-kjsd"
     ],
     "sources": {
       "name": {
@@ -21912,7 +21964,7 @@
         "platform": "web",
         "url": "https://nashvillepbs.app/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -22767,7 +22819,7 @@
   },
   {
     "id": "kacu-abilene-public-radio",
-    "name": "KACU , Abilene Public Radio",
+    "name": "KACU",
     "networks": [
       "NPR"
     ],
@@ -22784,8 +22836,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/KACU",
-        "retrievedAt": "2026-10-19"
+        "source": "manual: overrides.yaml (garbled branding; use the call sign (en.wikipedia.org/wiki/KACU))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -23344,7 +23396,13 @@
       }
     ],
     "facilityIds": [
-      "fcc-24564"
+      "wp-ktpd",
+      "fcc-24564",
+      "wp-ktxi",
+      "wp-kvhl",
+      "wp-kstx",
+      "wp-kpac",
+      "wp-ktpr"
     ],
     "sources": {
       "name": {
@@ -23365,11 +23423,11 @@
       }
     },
     "home": {
-      "lat": 29.50333,
-      "lng": -97.44778,
-      "city": "Gonzales",
-      "source": "https://en.wikipedia.org/wiki/Gonzales,_Texas",
-      "retrievedAt": "2026-10-19"
+      "lat": 29.37083,
+      "lng": -100.88,
+      "city": "Del Rio",
+      "source": "https://en.wikipedia.org/wiki/Del_Rio,_Texas",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -24062,7 +24120,7 @@
   },
   {
     "id": "kuer-npr-utah",
-    "name": "KUER , NPR Utah",
+    "name": "KUER",
     "networks": [
       "NPR"
     ],
@@ -24084,8 +24142,8 @@
     ],
     "sources": {
       "name": {
-        "source": "https://en.wikipedia.org/wiki/KUER-FM#Repeaters",
-        "retrievedAt": "2026-10-19"
+        "source": "manual: overrides.yaml (garbled branding; use the call sign (en.wikipedia.org/wiki/KUER-FM))",
+        "retrievedAt": "2026-10-20"
       },
       "city": {
         "source": "https://en.wikipedia.org/wiki/List_of_NPR_stations",
@@ -24283,7 +24341,11 @@
         "verified": false
       }
     ],
-    "facilityIds": [],
+    "facilityIds": [
+      "wp-wchg",
+      "wp-wvls",
+      "wp-wvmr"
+    ],
     "sources": {
       "name": {
         "source": "https://en.wikipedia.org/wiki/Allegheny_Mountain_Radio",
@@ -24685,7 +24747,7 @@
         "platform": "web",
         "url": "https://video.whro.org/",
         "source": "manual: station-app-pages.yaml",
-        "retrievedAt": "2026-10-19",
+        "retrievedAt": "2026-10-20",
         "verified": true
       }
     ],
@@ -25024,10 +25086,17 @@
       "fcc-189112",
       "fcc-78628",
       "fcc-9310",
+      "wp-wvba",
+      "wp-wvti",
+      "wp-wvps",
       "fcc-58598",
+      "wp-wvnk",
       "fcc-174578",
+      "wp-wnch",
       "fcc-63473",
-      "fcc-54687"
+      "wp-wvpa",
+      "fcc-54687",
+      "wp-wvpr"
     ],
     "sources": {
       "name": {
@@ -25608,10 +25677,23 @@
     ],
     "facilityIds": [
       "fcc-71023",
+      "wp-knwo",
       "fcc-71016",
       "fcc-49599",
+      "wp-ksws",
+      "wp-knwv",
+      "wp-knwr",
+      "wp-knwu",
+      "wp-khnw",
+      "wp-klws",
+      "wp-kmws",
+      "wp-kqws",
+      "wp-knwp",
       "fcc-71025",
-      "fcc-12068"
+      "wp-kfae-fm",
+      "fcc-12068",
+      "wp-kwws",
+      "wp-knwy"
     ],
     "sources": {
       "name": {
@@ -25960,19 +26042,28 @@
     "website": "https://www.wpr.org/",
     "apps": [],
     "facilityIds": [
+      "wp-whaa",
       "fcc-176548",
       "fcc-63138",
       "fcc-63089",
       "fcc-63091",
       "fcc-4282",
+      "wp-whid",
       "fcc-63060",
+      "wp-whla",
       "fcc-4327",
       "fcc-63030",
       "fcc-6139",
+      "wp-whwc",
       "fcc-4287",
+      "wp-whbm",
       "fcc-91616",
+      "wp-whsf",
+      "wp-whdi",
+      "wp-whnd",
       "fcc-89432",
       "fcc-184111",
+      "wp-whrm",
       "fcc-63031",
       "fcc-4289"
     ],
@@ -25999,11 +26090,11 @@
       }
     },
     "home": {
-      "lat": 43.07472,
-      "lng": -89.38417,
-      "city": "Madison",
-      "source": "https://en.wikipedia.org/wiki/Madison,_Wisconsin",
-      "retrievedAt": "2026-10-19"
+      "lat": 43.95722,
+      "lng": -89.8175,
+      "city": "Adams",
+      "source": "https://en.wikipedia.org/wiki/Adams,_Wisconsin",
+      "retrievedAt": "2026-10-20"
     }
   },
   {
@@ -26230,8 +26321,18 @@
       "fcc-71657",
       "fcc-71680",
       "fcc-71676",
+      "wp-wvby",
+      "wp-wvbl",
+      "wp-wvpw",
+      "wp-wvpb",
+      "wp-wvwv",
+      "wp-wvep",
+      "wp-wvkm",
+      "wp-wvpm",
       "fcc-70642",
-      "fcc-71659"
+      "fcc-71659",
+      "wp-wvws",
+      "wp-wvnp"
     ],
     "sources": {
       "name": {
@@ -26368,11 +26469,30 @@
     "website": "https://wyomingpublicmedia.org",
     "apps": [],
     "facilityIds": [
+      "wp-kuwa",
+      "wp-kbuw",
+      "wp-kuwc",
+      "wp-kduw",
+      "wp-kuwe",
       "fcc-174336",
+      "wp-kuwg",
+      "wp-kuwj",
+      "wp-kuwk",
       "fcc-91563",
       "fcc-69131",
       "fcc-91583",
-      "fcc-82438"
+      "wp-kuwv",
+      "wp-kuwn",
+      "wp-kuwx",
+      "wp-kuwp",
+      "wp-kuwi",
+      "wp-kzuw",
+      "wp-kuwz",
+      "wp-kaiw",
+      "fcc-82438",
+      "wp-kuwd",
+      "wp-kuwt",
+      "wp-keuw"
     ],
     "sources": {
       "name": {
@@ -26397,11 +26517,11 @@
       }
     },
     "home": {
-      "lat": 42.99917,
-      "lng": -108.91167,
-      "city": "Fort Washakie",
-      "source": "https://en.wikipedia.org/wiki/Fort_Washakie,_Wyoming",
-      "retrievedAt": "2026-10-19"
+      "lat": 42.72833,
+      "lng": -110.92917,
+      "city": "Afton",
+      "source": "https://en.wikipedia.org/wiki/Afton,_Wyoming",
+      "retrievedAt": "2026-10-20"
     }
   }
 ]

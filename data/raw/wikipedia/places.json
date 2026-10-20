@@ -441,7 +441,7 @@
    "from": "city of license"
   },
   "krcc": {
-   "city": "Woodland Park",
+   "city": "Colorado Springs",
    "state": "CO",
    "from": "main transmitter city"
   },
@@ -485,11 +485,6 @@
    "state": "CT",
    "from": "city of license"
   },
-  "wamc-northeast-public-radio-ct": {
-   "city": "Sharon",
-   "state": "CT",
-   "from": "city of license"
-  },
   "wecs": {
    "city": "Willimantic",
    "state": "CT",
@@ -525,13 +520,13 @@
    "state": "DC",
    "from": "city of license"
   },
-  "super": {
-   "city": "Wilmington",
+  "wdde": {
+   "city": "Dover",
    "state": "DE",
    "from": "city of license"
   },
-  "wdde": {
-   "city": "Dover",
+  "super": {
+   "city": "Wilmington",
    "state": "DE",
    "from": "city of license"
   },
@@ -620,16 +615,6 @@
    "state": "FL",
    "from": "city of license"
   },
-  "blaze": {
-   "city": "Valdosta",
-   "state": "GA",
-   "from": "city of license"
-  },
-  "days-gpb-atlantanights-album": {
-   "city": "Atlanta",
-   "state": "GA",
-   "from": "city of license"
-  },
   "georgia-public-broadcasting": {
    "city": "Atlanta",
    "state": "GA",
@@ -641,6 +626,11 @@
    "from": "city of license"
   },
   "wclk": {
+   "city": "Atlanta",
+   "state": "GA",
+   "from": "city of license"
+  },
+  "days-gpb-atlantanights-album": {
    "city": "Atlanta",
    "state": "GA",
    "from": "city of license"
@@ -660,6 +650,11 @@
    "state": "GA",
    "from": "city of license"
   },
+  "blaze": {
+   "city": "Valdosta",
+   "state": "GA",
+   "from": "city of license"
+  },
   "kprg": {
    "city": "Hagåtña",
    "state": "GU",
@@ -671,7 +666,7 @@
    "from": "city of license"
   },
   "hawaii-public-radio": {
-   "city": "Pahala",
+   "city": "Hana",
    "state": "HI",
    "from": "main transmitter city"
   },
@@ -810,11 +805,6 @@
    "state": "IN",
    "from": "city of license"
   },
-  "blazer": {
-   "city": "Vincennes",
-   "state": "IN",
-   "from": "city of license"
-  },
   "indiana-public-radio": {
    "city": "Muncie",
    "state": "IN",
@@ -880,8 +870,13 @@
    "state": "IN",
    "from": "city of license"
   },
+  "blazer": {
+   "city": "Vincennes",
+   "state": "IN",
+   "from": "city of license"
+  },
   "high-plains-public-radio": {
-   "city": "Amarillo",
+   "city": "Lamar",
    "state": "KS",
    "from": "main transmitter city"
   },
@@ -935,11 +930,6 @@
    "state": "KY",
    "from": "main transmitter city"
   },
-  "npr-rocks": {
-   "city": "Lexington",
-   "state": "KY",
-   "from": "city of license"
-  },
   "wfpk": {
    "city": "Louisville",
    "state": "KY",
@@ -956,12 +946,17 @@
    "from": "city of license"
   },
   "wku-public-radio": {
-   "city": "Henderson",
+   "city": "Bowling Green",
    "state": "KY",
    "from": "main transmitter city"
   },
   "wmky": {
    "city": "Morehead",
+   "state": "KY",
+   "from": "city of license"
+  },
+  "npr-rocks": {
+   "city": "Lexington",
    "state": "KY",
    "from": "city of license"
   },
@@ -981,7 +976,7 @@
    "from": "city of license"
   },
   "red-river-radio": {
-   "city": "Overton",
+   "city": "El Dorado",
    "state": "LA",
    "from": "main transmitter city"
   },
@@ -1140,18 +1135,13 @@
    "state": "MI",
    "from": "city of license"
   },
-  "minnesota-public-radio": {
-   "city": "Houghton",
+  "michigan-public": {
+   "city": "Ann Arbor",
    "state": "MI",
-   "from": "city of license"
+   "from": "main transmitter city"
   },
   "npr-wkar": {
    "city": "East Lansing",
-   "state": "MI",
-   "from": "city of license"
-  },
-  "public-radio-mi": {
-   "city": "Marquette",
    "state": "MI",
    "from": "city of license"
   },
@@ -1205,6 +1195,11 @@
    "state": "MI",
    "from": "city of license"
   },
+  "public-radio-mi": {
+   "city": "Marquette",
+   "state": "MI",
+   "from": "city of license"
+  },
   "jazz88": {
    "city": "Minneapolis",
    "state": "MN",
@@ -1222,6 +1217,11 @@
   },
   "minnesota-pbs": {
    "city": "Minneapolis",
+   "state": "MN",
+   "from": "city of license"
+  },
+  "minnesota-public-radio": {
+   "city": "Saint Paul",
    "state": "MN",
    "from": "city of license"
   },
@@ -1257,11 +1257,6 @@
   },
   "the-north": {
    "city": "Duluth",
-   "state": "MN",
-   "from": "city of license"
-  },
-  "wscn": {
-   "city": "Cloquet",
    "state": "MN",
    "from": "city of license"
   },
@@ -1391,7 +1386,7 @@
    "from": "main transmitter city"
   },
   "montana-public-radio": {
-   "city": "Missoula",
+   "city": "Butte",
    "state": "MT",
    "from": "main transmitter city"
   },
@@ -1485,6 +1480,11 @@
    "state": "ND",
    "from": "main transmitter city"
   },
+  "omaha-public-radio-kios": {
+   "city": "Omaha",
+   "state": "NE",
+   "from": "city of license"
+  },
   "community-radio": {
    "city": "Lincoln",
    "state": "NE",
@@ -1495,18 +1495,13 @@
    "state": "NE",
    "from": "main transmitter city"
   },
-  "omaha-public-radio-kios": {
-   "city": "Omaha",
-   "state": "NE",
-   "from": "city of license"
-  },
   "new-hampshire-pbs": {
    "city": "Keene",
    "state": "NH",
    "from": "main transmitter city"
   },
   "nhpr": {
-   "city": "Concord",
+   "city": "Colebrook",
    "state": "NH",
    "from": "main transmitter city"
   },
@@ -1531,7 +1526,7 @@
    "from": "city of license"
   },
   "wnyc": {
-   "city": "New York",
+   "city": "Netcong",
    "state": "NJ",
    "from": "main transmitter city"
   },
@@ -1544,11 +1539,6 @@
    "city": "Trenton",
    "state": "NJ",
    "from": "main transmitter city"
-  },
-  "xpn-nj": {
-   "city": "Hackettstown",
-   "state": "NJ",
-   "from": "city of license"
   },
   "gallup-public-radio": {
    "city": "Gallup",
@@ -1620,11 +1610,6 @@
    "state": "NY",
    "from": "city of license"
   },
-  "exit": {
-   "city": "Amsterdam",
-   "state": "NY",
-   "from": "city of license"
-  },
   "mountain-lake-pbs": {
    "city": "Plattsburgh",
    "state": "NY",
@@ -1672,6 +1657,11 @@
   },
   "weos": {
    "city": "Geneva",
+   "state": "NY",
+   "from": "city of license"
+  },
+  "exit": {
+   "city": "Amsterdam",
    "state": "NY",
    "from": "city of license"
   },
@@ -1750,11 +1740,6 @@
    "state": "OH",
    "from": "city of license"
   },
-  "jazzy": {
-   "city": "Wilberforce",
-   "state": "OH",
-   "from": "city of license"
-  },
   "miami-valley-public-media": {
    "city": "Yellow Springs",
    "state": "OH",
@@ -1782,6 +1767,11 @@
   },
   "wcet": {
    "city": "Cincinnati",
+   "state": "OH",
+   "from": "city of license"
+  },
+  "jazzy": {
+   "city": "Wilberforce",
    "state": "OH",
    "from": "city of license"
   },
@@ -1986,7 +1976,7 @@
    "from": "headquarters"
   },
   "south-carolina-public-radio": {
-   "city": "Beaufort",
+   "city": "Aiken",
    "state": "SC",
    "from": "main transmitter city"
   },
@@ -2146,7 +2136,7 @@
    "from": "city of license"
   },
   "ktpd": {
-   "city": "Gonzales",
+   "city": "Del Rio",
    "state": "TX",
    "from": "main transmitter city"
   },
@@ -2391,7 +2381,7 @@
    "from": "city of license"
   },
   "wisconsin-public-radio": {
-   "city": "Madison",
+   "city": "Adams",
    "state": "WI",
    "from": "main transmitter city"
   },
@@ -2426,7 +2416,7 @@
    "from": "main transmitter city"
   },
   "wyoming-public-radio": {
-   "city": "Fort Washakie",
+   "city": "Afton",
    "state": "WY",
    "from": "main transmitter city"
   }
@@ -2440,6 +2430,33 @@
     "lng": -99.75
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Adams|WI": {
+   "title": "Adams, Wisconsin",
+   "url": "https://en.wikipedia.org/wiki/Adams,_Wisconsin",
+   "coords": {
+    "lat": 43.95722,
+    "lng": -89.8175
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Afton|WY": {
+   "title": "Afton, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Afton,_Wyoming",
+   "coords": {
+    "lat": 42.72833,
+    "lng": -110.92917
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Aiken|SC": {
+   "title": "Aiken, South Carolina",
+   "url": "https://en.wikipedia.org/wiki/Aiken,_South_Carolina",
+   "coords": {
+    "lat": 33.50417,
+    "lng": -81.74
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Akron|OH": {
    "title": "Akron, Ohio",
@@ -2486,6 +2503,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Alexandria|LA": {
+   "title": "Alexandria, Louisiana",
+   "url": "https://en.wikipedia.org/wiki/Alexandria,_Louisiana",
+   "coords": {
+    "lat": 31.31139,
+    "lng": -92.44472
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Allendale|MI": {
    "title": "Allendale, Michigan",
    "url": "https://en.wikipedia.org/wiki/Allendale,_Michigan",
@@ -2521,9 +2547,6 @@
     "lng": -103.66667
    },
    "retrievedAt": "2026-10-19"
-  },
-  "Amarillo|KS": {
-   "error": "HTTP 404 for https://en.wikipedia.org/wiki/Amarillo,_Kansas"
   },
   "Amarillo|TX": {
    "title": "Amarillo, Texas",
@@ -2570,6 +2593,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Ann Arbor|MI": {
+   "title": "Ann Arbor, Michigan",
+   "url": "https://en.wikipedia.org/wiki/Ann_Arbor,_Michigan",
+   "coords": {
+    "lat": 42.28139,
+    "lng": -83.74833
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Annapolis|MD": {
    "title": "Annapolis, Maryland",
    "url": "https://en.wikipedia.org/wiki/Annapolis,_Maryland",
@@ -2578,6 +2610,15 @@
     "lng": -76.50111
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Appleton|MN": {
+   "title": "Appleton, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Appleton,_Minnesota",
+   "coords": {
+    "lat": 45.19972,
+    "lng": -96.0225
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Arcata|CA": {
    "title": "Arcata, California",
@@ -2596,6 +2637,15 @@
     "lng": -82.55194
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Ashland|OR": {
+   "title": "Ashland, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Ashland,_Oregon",
+   "coords": {
+    "lat": 42.19139,
+    "lng": -122.70083
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Aspen|CO": {
    "title": "Aspen, Colorado",
@@ -2660,6 +2710,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Austin|MN": {
+   "title": "Austin, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Austin,_Minnesota",
+   "coords": {
+    "lat": 43.67,
+    "lng": -92.98056
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Austin|TX": {
    "title": "Austin, Texas",
    "url": "https://en.wikipedia.org/wiki/Austin,_Texas",
@@ -2668,6 +2727,15 @@
     "lng": -97.74306
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Baker City|OR": {
+   "title": "Baker City, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Baker_City,_Oregon",
+   "coords": {
+    "lat": 44.775,
+    "lng": -117.83194
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Bakersfield|CA": {
    "title": "Bakersfield, California",
@@ -2686,6 +2754,15 @@
     "lng": -76.61528
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Bangor|ME": {
+   "title": "Bangor, Maine",
+   "url": "https://en.wikipedia.org/wiki/Bangor,_Maine",
+   "coords": {
+    "lat": 44.85833,
+    "lng": -68.76167
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Barrow|AK": {
    "title": "Utqiagvik, Alaska",
@@ -2717,15 +2794,6 @@
   "Bayside|OR": {
    "error": "HTTP 404 for https://en.wikipedia.org/wiki/Bayside,_Oregon"
   },
-  "Beaufort|SC": {
-   "title": "Beaufort, South Carolina",
-   "url": "https://en.wikipedia.org/wiki/Beaufort,_South_Carolina",
-   "coords": {
-    "lat": 32.433,
-    "lng": -80.683
-   },
-   "retrievedAt": "2026-10-19"
-  },
   "Beaumont|TX": {
    "title": "Beaumont, Texas",
    "url": "https://en.wikipedia.org/wiki/Beaumont,_Texas",
@@ -2734,6 +2802,15 @@
     "lng": -94.12667
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Beckley|WV": {
+   "title": "Beckley, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Beckley,_West_Virginia",
+   "coords": {
+    "lat": 37.77417,
+    "lng": -81.18111
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Belcourt|ND": {
    "title": "Belcourt, North Dakota",
@@ -2752,6 +2829,15 @@
     "lng": -94.88269
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Bend|OR": {
+   "title": "Bend, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Bend,_Oregon",
+   "coords": {
+    "lat": 44.05806,
+    "lng": -121.31528
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Berrien Springs|MI": {
    "title": "Berrien Springs, Michigan",
@@ -2780,6 +2866,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Bettendorf|IA": {
+   "title": "Bettendorf, Iowa",
+   "url": "https://en.wikipedia.org/wiki/Bettendorf,_Iowa",
+   "coords": {
+    "lat": 41.55556,
+    "lng": -90.49361
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Billings|MT": {
    "title": "Billings, Montana",
    "url": "https://en.wikipedia.org/wiki/Billings,_Montana",
@@ -2788,6 +2883,15 @@
     "lng": -108.50611
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Biloxi|MS": {
+   "title": "Biloxi, Mississippi",
+   "url": "https://en.wikipedia.org/wiki/Biloxi,_Mississippi",
+   "coords": {
+    "lat": 30.41194,
+    "lng": -88.92778
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Binghamton|NY": {
    "title": "Binghamton, New York",
@@ -2816,6 +2920,18 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Blue Mountain Lake|NY": {
+   "error": "no coordinates on page"
+  },
+  "Bluefield|WV": {
+   "title": "Bluefield, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Bluefield,_West_Virginia",
+   "coords": {
+    "lat": 37.26222,
+    "lng": -81.21861
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Boise|ID": {
    "title": "Boise, Idaho",
    "url": "https://en.wikipedia.org/wiki/Boise,_Idaho",
@@ -2824,6 +2940,33 @@
     "lng": -116.20167
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Booneville|MS": {
+   "title": "Booneville, Mississippi",
+   "url": "https://en.wikipedia.org/wiki/Booneville,_Mississippi",
+   "coords": {
+    "lat": 34.64444,
+    "lng": -88.57333
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Boonville|NY": {
+   "title": "Boonville, New York",
+   "url": "https://en.wikipedia.org/wiki/Boonville,_New_York",
+   "coords": {
+    "lat": 43.48444,
+    "lng": -75.33111
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Borrego Springs|CA": {
+   "title": "Borrego Springs, California",
+   "url": "https://en.wikipedia.org/wiki/Borrego_Springs,_California",
+   "coords": {
+    "lat": 33.24722,
+    "lng": -116.37194
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Boston|MA": {
    "title": "Boston",
@@ -2870,6 +3013,33 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Brainerd|MN": {
+   "title": "Brainerd, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Brainerd,_Minnesota",
+   "coords": {
+    "lat": 46.35806,
+    "lng": -94.20083
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Branson|MO": {
+   "title": "Branson, Missouri",
+   "url": "https://en.wikipedia.org/wiki/Branson,_Missouri",
+   "coords": {
+    "lat": 36.612287,
+    "lng": -93.291812
+   },
+   "retrievedAt": "2026-10-19"
+  },
+  "Brattleboro|VT": {
+   "title": "Brattleboro, Vermont",
+   "url": "https://en.wikipedia.org/wiki/Brattleboro,_Vermont",
+   "coords": {
+    "lat": 42.87083,
+    "lng": -72.61444
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Breckenridge|CO": {
    "title": "Breckenridge, Colorado",
    "url": "https://en.wikipedia.org/wiki/Breckenridge,_Colorado",
@@ -2878,6 +3048,33 @@
     "lng": -106.04
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Brewster|KS": {
+   "title": "Brewster, Kansas",
+   "url": "https://en.wikipedia.org/wiki/Brewster,_Kansas",
+   "coords": {
+    "lat": 39.36306,
+    "lng": -101.37667
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Brighton|VT": {
+   "title": "Brighton, Vermont",
+   "url": "https://en.wikipedia.org/wiki/Brighton,_Vermont",
+   "coords": {
+    "lat": 44.80889,
+    "lng": -71.87361
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Bristol|VT": {
+   "title": "Bristol, Vermont",
+   "url": "https://en.wikipedia.org/wiki/Bristol,_Vermont",
+   "coords": {
+    "lat": 44.14333,
+    "lng": -73.10722
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Bryan|TX": {
    "title": "Bryan, Texas",
@@ -2888,6 +3085,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Buckhannon|WV": {
+   "title": "Buckhannon, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Buckhannon,_West_Virginia",
+   "coords": {
+    "lat": 38.98917,
+    "lng": -80.22417
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Bude|MS": {
+   "title": "Bude, Mississippi",
+   "url": "https://en.wikipedia.org/wiki/Bude,_Mississippi",
+   "coords": {
+    "lat": 31.46333,
+    "lng": -90.84667
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Buffalo|NY": {
    "title": "Buffalo, New York",
    "url": "https://en.wikipedia.org/wiki/Buffalo,_New_York",
@@ -2897,6 +3112,90 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Buffalo|WY": {
+   "title": "Buffalo, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Buffalo,_Wyoming",
+   "coords": {
+    "lat": 44.33833,
+    "lng": -106.72778
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Buhl|MN": {
+   "title": "Buhl, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Buhl,_Minnesota",
+   "coords": {
+    "lat": 47.49361,
+    "lng": -92.77361
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Burley|ID": {
+   "title": "Burley, Idaho",
+   "url": "https://en.wikipedia.org/wiki/Burley,_Idaho",
+   "coords": {
+    "lat": 42.53722,
+    "lng": -113.79194
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Burlington|VT": {
+   "title": "Burlington, Vermont",
+   "url": "https://en.wikipedia.org/wiki/Burlington,_Vermont",
+   "coords": {
+    "lat": 44.47611,
+    "lng": -73.21306
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Burney|CA": {
+   "title": "Burney, California",
+   "url": "https://en.wikipedia.org/wiki/Burney,_California",
+   "coords": {
+    "lat": 40.88056,
+    "lng": -121.66667
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Burns|OR": {
+   "title": "Burns, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Burns,_Oregon",
+   "coords": {
+    "lat": 43.58833,
+    "lng": -119.06139
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Bushland|TX": {
+   "error": "no coordinates on page"
+  },
+  "Butte|MT": {
+   "title": "Butte, Montana",
+   "url": "https://en.wikipedia.org/wiki/Butte,_Montana",
+   "coords": {
+    "lat": 45.90222,
+    "lng": -112.65667
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Calais|ME": {
+   "title": "Calais, Maine",
+   "url": "https://en.wikipedia.org/wiki/Calais,_Maine",
+   "coords": {
+    "lat": 45.18861,
+    "lng": -67.27944
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Calexico|CA": {
+   "title": "Calexico, California",
+   "url": "https://en.wikipedia.org/wiki/Calexico,_California",
+   "coords": {
+    "lat": 32.67889,
+    "lng": -115.49889
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Cambridge|MD": {
    "title": "Cambridge, Maryland",
    "url": "https://en.wikipedia.org/wiki/Cambridge,_Maryland",
@@ -2905,6 +3204,15 @@
     "lng": -76.07694
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Camden|ME": {
+   "title": "Camden, Maine",
+   "url": "https://en.wikipedia.org/wiki/Camden,_Maine",
+   "coords": {
+    "lat": 44.24306,
+    "lng": -69.11
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Canton|NY": {
    "title": "Canton, New York",
@@ -2923,6 +3231,15 @@
     "lng": -89.55972
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Cape Vincent|NY": {
+   "title": "Cape Vincent, New York",
+   "url": "https://en.wikipedia.org/wiki/Cape_Vincent,_New_York",
+   "coords": {
+    "lat": 44.12778,
+    "lng": -76.33333
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Carbondale|CO": {
    "title": "Carbondale, Colorado",
@@ -2950,6 +3267,24 @@
     "lng": -85.07667
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Carroll|IA": {
+   "title": "Carroll, Iowa",
+   "url": "https://en.wikipedia.org/wiki/Carroll,_Iowa",
+   "coords": {
+    "lat": 42.07306,
+    "lng": -94.87472
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Casper|WY": {
+   "title": "Casper, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Casper,_Wyoming",
+   "coords": {
+    "lat": 42.84028,
+    "lng": -106.31806
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Cedar Creek|FL": {
    "error": "HTTP 404 for https://en.wikipedia.org/wiki/Cedar_Creek,_Florida"
@@ -2980,6 +3315,24 @@
     "lng": -79.03917
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Charleston|SC": {
+   "title": "Charleston, South Carolina",
+   "url": "https://en.wikipedia.org/wiki/Charleston,_South_Carolina",
+   "coords": {
+    "lat": 32.81389,
+    "lng": -79.93194
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Charleston|WV": {
+   "title": "Charleston, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Charleston,_West_Virginia",
+   "coords": {
+    "lat": 38.3498194,
+    "lng": -81.6326222
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Charlotte Amalie|VI": {
    "title": "Charlotte Amalie, U.S. Virgin Islands",
@@ -3016,6 +3369,15 @@
     "lng": -85.248386
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Chehalis|WA": {
+   "title": "Chehalis, Washington",
+   "url": "https://en.wikipedia.org/wiki/Chehalis,_Washington",
+   "coords": {
+    "lat": 46.66389,
+    "lng": -122.965
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Chesterton|IN": {
    "title": "Chesterton, Indiana",
@@ -3062,21 +3424,21 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Clarkston|WA": {
+   "title": "Clarkston, Washington",
+   "url": "https://en.wikipedia.org/wiki/Clarkston,_Washington",
+   "coords": {
+    "lat": 46.415,
+    "lng": -117.05
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Cleveland|OH": {
    "title": "Cleveland",
    "url": "https://en.wikipedia.org/wiki/Cleveland",
    "coords": {
     "lat": 41.4992,
     "lng": -81.6947
-   },
-   "retrievedAt": "2026-10-19"
-  },
-  "Cloquet|MN": {
-   "title": "Cloquet, Minnesota",
-   "url": "https://en.wikipedia.org/wiki/Cloquet,_Minnesota",
-   "coords": {
-    "lat": 46.72167,
-    "lng": -92.45944
    },
    "retrievedAt": "2026-10-19"
   },
@@ -3107,6 +3469,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Colebrook|NH": {
+   "title": "Colebrook, New Hampshire",
+   "url": "https://en.wikipedia.org/wiki/Colebrook,_New_Hampshire",
+   "coords": {
+    "lat": 44.89444,
+    "lng": -71.41389
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "College Station|TX": {
    "title": "College Station, Texas",
    "url": "https://en.wikipedia.org/wiki/College_Station,_Texas",
@@ -3134,6 +3505,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Colorado Springs|CO": {
+   "title": "Colorado Springs, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Colorado_Springs,_Colorado",
+   "coords": {
+    "lat": 38.85778,
+    "lng": -104.60583
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Columbia|MO": {
    "title": "Columbia, Missouri",
    "url": "https://en.wikipedia.org/wiki/Columbia,_Missouri",
@@ -3151,6 +3531,15 @@
     "lng": -81.03472
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Columbus|GA": {
+   "title": "Columbus, Georgia",
+   "url": "https://en.wikipedia.org/wiki/Columbus,_Georgia",
+   "coords": {
+    "lat": 32.49222,
+    "lng": -84.94028
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Columbus|OH": {
    "title": "Columbus, Ohio",
@@ -3170,14 +3559,14 @@
    },
    "retrievedAt": "2026-10-19"
   },
-  "Concord|NH": {
-   "title": "Concord, New Hampshire",
-   "url": "https://en.wikipedia.org/wiki/Concord,_New_Hampshire",
+  "Coos Bay|OR": {
+   "title": "Coos Bay, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Coos_Bay,_Oregon",
    "coords": {
-    "lat": 43.20667,
-    "lng": -71.53806
+    "lat": 43.3672,
+    "lng": -124.2133
    },
-   "retrievedAt": "2026-10-19"
+   "retrievedAt": "2026-10-20"
   },
   "Corpus Christi|TX": {
    "title": "Corpus Christi, Texas",
@@ -3206,6 +3595,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Cottonwood|ID": {
+   "title": "Cottonwood, Idaho",
+   "url": "https://en.wikipedia.org/wiki/Cottonwood,_Idaho",
+   "coords": {
+    "lat": 46.05111,
+    "lng": -116.34972
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Council Bluffs|IA": {
    "title": "Council Bluffs, Iowa",
    "url": "https://en.wikipedia.org/wiki/Council_Bluffs,_Iowa",
@@ -3233,6 +3631,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Craig|CO": {
+   "title": "Craig, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Craig,_Colorado",
+   "coords": {
+    "lat": 40.51694,
+    "lng": -107.55528
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Crested Butte|CO": {
    "title": "Crested Butte, Colorado",
    "url": "https://en.wikipedia.org/wiki/Crested_Butte,_Colorado",
@@ -3250,6 +3657,15 @@
     "lng": -78.70167
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Dalhart|TX": {
+   "title": "Dalhart, Texas",
+   "url": "https://en.wikipedia.org/wiki/Dalhart,_Texas",
+   "coords": {
+    "lat": 36.05778,
+    "lng": -102.51222
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Dallas|NC": {
    "title": "Dallas, North Carolina",
@@ -3296,6 +3712,33 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Decorah|IA": {
+   "title": "Decorah, Iowa",
+   "url": "https://en.wikipedia.org/wiki/Decorah,_Iowa",
+   "coords": {
+    "lat": 43.29722,
+    "lng": -91.76722
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Del Rio|TX": {
+   "title": "Del Rio, Texas",
+   "url": "https://en.wikipedia.org/wiki/Del_Rio,_Texas",
+   "coords": {
+    "lat": 29.37083,
+    "lng": -100.88
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Delta|CO": {
+   "title": "Delta, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Delta,_Colorado",
+   "coords": {
+    "lat": 38.74722,
+    "lng": -108.09583
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Denver|CO": {
    "title": "Denver",
    "url": "https://en.wikipedia.org/wiki/Denver",
@@ -3313,6 +3756,24 @@
     "lng": -83.04583
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Devils Lake|ND": {
+   "title": "Devils Lake, North Dakota",
+   "url": "https://en.wikipedia.org/wiki/Devils_Lake,_North_Dakota",
+   "coords": {
+    "lat": 48.1126,
+    "lng": -98.8748
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Dickinson|ND": {
+   "title": "Dickinson, North Dakota",
+   "url": "https://en.wikipedia.org/wiki/Dickinson,_North_Dakota",
+   "coords": {
+    "lat": 46.88361,
+    "lng": -102.78889
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Dillingham|AK": {
    "title": "Dillingham, Alaska",
@@ -3332,6 +3793,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Douglas|WY": {
+   "title": "Douglas, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Douglas,_Wyoming",
+   "coords": {
+    "lat": 42.75139,
+    "lng": -105.39111
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Dover|DE": {
    "title": "Dover, Delaware",
    "url": "https://en.wikipedia.org/wiki/Dover,_Delaware",
@@ -3340,6 +3810,15 @@
     "lng": -75.52444
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Dubuque|IA": {
+   "title": "Dubuque, Iowa",
+   "url": "https://en.wikipedia.org/wiki/Dubuque,_Iowa",
+   "coords": {
+    "lat": 42.49972,
+    "lng": -90.72361
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Dulce|NM": {
    "title": "Dulce, New Mexico",
@@ -3386,6 +3865,18 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "El Dorado|AR": {
+   "title": "El Dorado, Arkansas",
+   "url": "https://en.wikipedia.org/wiki/El_Dorado,_Arkansas",
+   "coords": {
+    "lat": 33.23611,
+    "lng": -92.64167
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "El Dorado|LA": {
+   "error": "HTTP 404 for https://en.wikipedia.org/wiki/El_Dorado,_Louisiana"
+  },
   "El Paso|TX": {
    "title": "El Paso, Texas",
    "url": "https://en.wikipedia.org/wiki/El_Paso,_Texas",
@@ -3413,6 +3904,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Elizabethtown|KY": {
+   "title": "Elizabethtown, Kentucky",
+   "url": "https://en.wikipedia.org/wiki/Elizabethtown,_Kentucky",
+   "coords": {
+    "lat": 37.7,
+    "lng": -85.867
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Elkhart|IN": {
    "title": "Elkhart, Indiana",
    "url": "https://en.wikipedia.org/wiki/Elkhart,_Indiana",
@@ -3422,6 +3922,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Elkhart|KS": {
+   "title": "Elkhart, Kansas",
+   "url": "https://en.wikipedia.org/wiki/Elkhart,_Kansas",
+   "coords": {
+    "lat": 37.00306,
+    "lng": -101.89444
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Ellensburg|WA": {
+   "title": "Ellensburg, Washington",
+   "url": "https://en.wikipedia.org/wiki/Ellensburg,_Washington",
+   "coords": {
+    "lat": 47.00028,
+    "lng": -120.54667
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Emory|VA": {
    "title": "Emory, Virginia",
    "url": "https://en.wikipedia.org/wiki/Emory,_Virginia",
@@ -3430,6 +3948,15 @@
     "lng": -81.82861
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Enterprise|OR": {
+   "title": "Enterprise, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Enterprise,_Oregon",
+   "coords": {
+    "lat": 45.42556,
+    "lng": -117.27889
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Erie|PA": {
    "title": "Erie, Pennsylvania",
@@ -3458,6 +3985,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Evanston|WY": {
+   "title": "Evanston, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Evanston,_Wyoming",
+   "coords": {
+    "lat": 41.2682806,
+    "lng": -110.9632361
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Evansville|IN": {
    "title": "Evansville, Indiana",
    "url": "https://en.wikipedia.org/wiki/Evansville,_Indiana",
@@ -3484,6 +4020,15 @@
     "lng": -73.267
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Faith|SD": {
+   "title": "Faith, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Faith,_South_Dakota",
+   "coords": {
+    "lat": 45.02583,
+    "lng": -102.03639
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Fargo|ND": {
    "title": "Fargo, North Dakota",
@@ -3512,6 +4057,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Fergus Falls|MN": {
+   "title": "Fergus Falls, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Fergus_Falls,_Minnesota",
+   "coords": {
+    "lat": 46.285017,
+    "lng": -96.07611
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Flagstaff|AZ": {
    "title": "Flagstaff, Arizona",
    "url": "https://en.wikipedia.org/wiki/Flagstaff,_Arizona",
@@ -3530,6 +4084,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Forks|WA": {
+   "title": "Forks, Washington",
+   "url": "https://en.wikipedia.org/wiki/Forks,_Washington",
+   "coords": {
+    "lat": 47.95028,
+    "lng": -124.38556
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Fort Belknap|MT": {
    "title": "Fort Belknap Agency, Montana",
    "url": "https://en.wikipedia.org/wiki/Fort_Belknap_Agency,_Montana",
@@ -3538,6 +4101,24 @@
     "lng": -108.68889
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Fort Dodge|IA": {
+   "title": "Fort Dodge, Iowa",
+   "url": "https://en.wikipedia.org/wiki/Fort_Dodge,_Iowa",
+   "coords": {
+    "lat": 42.5025,
+    "lng": -94.17083
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Fort Kent|ME": {
+   "title": "Fort Kent, Maine",
+   "url": "https://en.wikipedia.org/wiki/Fort_Kent,_Maine",
+   "coords": {
+    "lat": 47.24194,
+    "lng": -68.57222
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Fort Myers|FL": {
    "title": "Fort Myers, Florida",
@@ -3554,15 +4135,6 @@
    "coords": {
     "lat": 27.40417,
     "lng": -80.39111
-   },
-   "retrievedAt": "2026-10-19"
-  },
-  "Fort Washakie|WY": {
-   "title": "Fort Washakie, Wyoming",
-   "url": "https://en.wikipedia.org/wiki/Fort_Washakie,_Wyoming",
-   "coords": {
-    "lat": 42.99917,
-    "lng": -108.91167
    },
    "retrievedAt": "2026-10-19"
   },
@@ -3593,6 +4165,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Freeport|IL": {
+   "title": "Freeport, Illinois",
+   "url": "https://en.wikipedia.org/wiki/Freeport,_Illinois",
+   "coords": {
+    "lat": 42.2875,
+    "lng": -89.62778
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Fresno|CA": {
    "title": "Fresno, California",
    "url": "https://en.wikipedia.org/wiki/Fresno,_California",
@@ -3610,6 +4191,24 @@
     "lng": -78.92694
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Frost|WV": {
+   "title": "Frost, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Frost,_West_Virginia",
+   "coords": {
+    "lat": 38.27056,
+    "lng": -79.88056
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Fryeburg|ME": {
+   "title": "Fryeburg, Maine",
+   "url": "https://en.wikipedia.org/wiki/Fryeburg,_Maine",
+   "coords": {
+    "lat": 44.05556,
+    "lng": -70.97556
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Gainesville|FL": {
    "title": "Gainesville, Florida",
@@ -3638,6 +4237,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Garden City|KS": {
+   "title": "Garden City, Kansas",
+   "url": "https://en.wikipedia.org/wiki/Garden_City,_Kansas",
+   "coords": {
+    "lat": 37.97694,
+    "lng": -100.85278
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Gary|IN": {
    "title": "Gary, Indiana",
    "url": "https://en.wikipedia.org/wiki/Gary,_Indiana",
@@ -3656,14 +4264,41 @@
    },
    "retrievedAt": "2026-10-19"
   },
-  "Gonzales|TX": {
-   "title": "Gonzales, Texas",
-   "url": "https://en.wikipedia.org/wiki/Gonzales,_Texas",
+  "Gillette|WY": {
+   "title": "Gillette, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Gillette,_Wyoming",
    "coords": {
-    "lat": 29.50333,
-    "lng": -97.44778
+    "lat": 44.24667,
+    "lng": -105.49722
    },
-   "retrievedAt": "2026-10-19"
+   "retrievedAt": "2026-10-20"
+  },
+  "Gleneden Beach|OR": {
+   "title": "Gleneden Beach, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Gleneden_Beach,_Oregon",
+   "coords": {
+    "lat": 44.88111,
+    "lng": -124.03417
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Gouverneur|NY": {
+   "title": "Gouverneur, New York",
+   "url": "https://en.wikipedia.org/wiki/Gouverneur,_New_York",
+   "coords": {
+    "lat": 44.33444,
+    "lng": -75.46639
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Grand Junction|CO": {
+   "title": "Grand Junction, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Grand_Junction,_Colorado",
+   "coords": {
+    "lat": 39.08778,
+    "lng": -108.56806
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Grand Marais|MN": {
    "title": "Grand Marais, Minnesota",
@@ -3701,6 +4336,33 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Great Bend|KS": {
+   "title": "Great Bend, Kansas",
+   "url": "https://en.wikipedia.org/wiki/Great_Bend,_Kansas",
+   "coords": {
+    "lat": 38.36444,
+    "lng": -98.76472
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Green Bay|WI": {
+   "title": "Green Bay, Wisconsin",
+   "url": "https://en.wikipedia.org/wiki/Green_Bay,_Wisconsin",
+   "coords": {
+    "lat": 44.51333,
+    "lng": -88.01583
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Greenwood|MS": {
+   "title": "Greenwood, Mississippi",
+   "url": "https://en.wikipedia.org/wiki/Greenwood,_Mississippi",
+   "coords": {
+    "lat": 33.51861,
+    "lng": -90.20056
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Gresham|OR": {
    "title": "Gresham, Oregon",
    "url": "https://en.wikipedia.org/wiki/Gresham,_Oregon",
@@ -3719,14 +4381,14 @@
    },
    "retrievedAt": "2026-10-19"
   },
-  "Hackettstown|NJ": {
-   "title": "Hackettstown, New Jersey",
-   "url": "https://en.wikipedia.org/wiki/Hackettstown,_New_Jersey",
+  "Guymon|OK": {
+   "title": "Guymon, Oklahoma",
+   "url": "https://en.wikipedia.org/wiki/Guymon,_Oklahoma",
    "coords": {
-    "lat": 40.853704,
-    "lng": -74.824877
+    "lat": 36.6828041,
+    "lng": -101.4815493
    },
-   "retrievedAt": "2026-10-19"
+   "retrievedAt": "2026-10-20"
   },
   "Hagåtña|GU": {
    "title": "Hagåtña, Guam",
@@ -3746,6 +4408,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Hamilton|MT": {
+   "title": "Hamilton, Montana",
+   "url": "https://en.wikipedia.org/wiki/Hamilton,_Montana",
+   "coords": {
+    "lat": 46.24833,
+    "lng": -114.16111
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Hamilton|NY": {
    "title": "Hamilton, New York",
    "url": "https://en.wikipedia.org/wiki/Hamilton,_New_York",
@@ -3763,6 +4434,24 @@
     "lng": -90.475
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Hana|HI": {
+   "title": "Hāna, Hawaii",
+   "url": "https://en.wikipedia.org/wiki/H%C4%81na,_Hawaii",
+   "coords": {
+    "lat": 20.77,
+    "lng": -155.99417
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Hanover|NH": {
+   "title": "Hanover, New Hampshire",
+   "url": "https://en.wikipedia.org/wiki/Hanover,_New_Hampshire",
+   "coords": {
+    "lat": 43.71556,
+    "lng": -72.19111
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Harbor Springs|MI": {
    "title": "Harbor Springs, Michigan",
@@ -3818,14 +4507,44 @@
    },
    "retrievedAt": "2026-10-19"
   },
-  "Henderson|KY": {
-   "title": "Henderson, Kentucky",
-   "url": "https://en.wikipedia.org/wiki/Henderson,_Kentucky",
+  "Helena|MT": {
+   "title": "Helena, Montana",
+   "url": "https://en.wikipedia.org/wiki/Helena,_Montana",
    "coords": {
-    "lat": 37.83556,
-    "lng": -87.58083
+    "lat": 46.59639,
+    "lng": -112.02639
    },
-   "retrievedAt": "2026-10-19"
+   "retrievedAt": "2026-10-20"
+  },
+  "Highland|WI": {
+   "error": "no coordinates on page"
+  },
+  "Hill City|KS": {
+   "title": "Hill City, Kansas",
+   "url": "https://en.wikipedia.org/wiki/Hill_City,_Kansas",
+   "coords": {
+    "lat": 39.36722,
+    "lng": -99.84556
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Hilo|HI": {
+   "title": "Hilo, Hawaii",
+   "url": "https://en.wikipedia.org/wiki/Hilo,_Hawaii",
+   "coords": {
+    "lat": 19.70556,
+    "lng": -155.08583
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Hinckley|MN": {
+   "title": "Hinckley, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Hinckley,_Minnesota",
+   "coords": {
+    "lat": 46.01222,
+    "lng": -92.94222
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Holly Springs|MS": {
    "title": "Holly Springs, Mississippi",
@@ -3845,6 +4564,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Honolulu|HI": {
+   "title": "Honolulu",
+   "url": "https://en.wikipedia.org/wiki/Honolulu",
+   "coords": {
+    "lat": 21.3,
+    "lng": -157.85
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Hot Springs|VA": {
    "title": "Hot Springs, Virginia",
    "url": "https://en.wikipedia.org/wiki/Hot_Springs,_Virginia",
@@ -3860,15 +4588,6 @@
    "coords": {
     "lat": 35.91389,
     "lng": -110.64056
-   },
-   "retrievedAt": "2026-10-19"
-  },
-  "Houghton|MI": {
-   "title": "Houghton, Michigan",
-   "url": "https://en.wikipedia.org/wiki/Houghton,_Michigan",
-   "coords": {
-    "lat": 47.1211,
-    "lng": -88.5694
    },
    "retrievedAt": "2026-10-19"
   },
@@ -3917,6 +4636,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Indian Lake|NY": {
+   "title": "Indian Lake, New York",
+   "url": "https://en.wikipedia.org/wiki/Indian_Lake,_New_York",
+   "coords": {
+    "lat": 43.7825,
+    "lng": -74.27194
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Indianapolis|IN": {
    "title": "Indianapolis",
    "url": "https://en.wikipedia.org/wiki/Indianapolis",
@@ -3926,6 +4654,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Ingram|TX": {
+   "title": "Ingram, Texas",
+   "url": "https://en.wikipedia.org/wiki/Ingram,_Texas",
+   "coords": {
+    "lat": 30.077052,
+    "lng": -99.237509
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "International Falls|MN": {
+   "title": "International Falls, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/International_Falls,_Minnesota",
+   "coords": {
+    "lat": 48.59167,
+    "lng": -93.40528
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Ithaca|NY": {
    "title": "Ithaca, New York",
    "url": "https://en.wikipedia.org/wiki/Ithaca,_New_York",
@@ -3934,6 +4680,15 @@
     "lng": -76.5
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Jackpot|NV": {
+   "title": "Jackpot, Nevada",
+   "url": "https://en.wikipedia.org/wiki/Jackpot,_Nevada",
+   "coords": {
+    "lat": 41.97972,
+    "lng": -114.66444
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Jacksonville|AL": {
    "title": "Jacksonville, Alabama",
@@ -3962,6 +4717,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Jackson|NH": {
+   "title": "Jackson, New Hampshire",
+   "url": "https://en.wikipedia.org/wiki/Jackson,_New_Hampshire",
+   "coords": {
+    "lat": 44.15694,
+    "lng": -71.18
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Jackson|TN": {
    "title": "Jackson, Tennessee",
    "url": "https://en.wikipedia.org/wiki/Jackson,_Tennessee",
@@ -3970,6 +4734,24 @@
     "lng": -88.81389
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Jackson|WY": {
+   "title": "Jackson, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Jackson,_Wyoming",
+   "coords": {
+    "lat": 43.471936,
+    "lng": -110.775267
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Jamestown|ND": {
+   "title": "Jamestown, North Dakota",
+   "url": "https://en.wikipedia.org/wiki/Jamestown,_North_Dakota",
+   "coords": {
+    "lat": 46.9059,
+    "lng": -98.6936
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Jefferson City|MO": {
    "title": "Jefferson City, Missouri",
@@ -3988,6 +4770,15 @@
     "lng": -74.93222
    },
    "retrievedAt": "2026-10-19"
+  },
+  "John Day|OR": {
+   "title": "John Day, Oregon",
+   "url": "https://en.wikipedia.org/wiki/John_Day,_Oregon",
+   "coords": {
+    "lat": 44.41806,
+    "lng": -118.95639
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Johnson City|TN": {
    "title": "Johnson City, Tennessee",
@@ -4025,6 +4816,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Kailua|HI": {
+   "title": "Kailua, Hawaii",
+   "url": "https://en.wikipedia.org/wiki/Kailua,_Hawaii",
+   "coords": {
+    "lat": 21.3975,
+    "lng": -157.73944
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Kalamazoo|MI": {
    "title": "Kalamazoo, Michigan",
    "url": "https://en.wikipedia.org/wiki/Kalamazoo,_Michigan",
@@ -4033,6 +4833,15 @@
     "lng": -85.58583
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Kalispell|MT": {
+   "title": "Kalispell, Montana",
+   "url": "https://en.wikipedia.org/wiki/Kalispell,_Montana",
+   "coords": {
+    "lat": 48.23389,
+    "lng": -114.33889
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Kane|PA": {
    "title": "Kane, Pennsylvania",
@@ -4051,6 +4860,15 @@
     "lng": -94.57833
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Kaycee|WY": {
+   "title": "Kaycee, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Kaycee,_Wyoming",
+   "coords": {
+    "lat": 43.71,
+    "lng": -106.63722
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Keene|NH": {
    "title": "Keene, New Hampshire",
@@ -4091,6 +4909,24 @@
   "Ketchikan|AK": {
    "error": "no coordinates on page"
   },
+  "Kinston|NC": {
+   "title": "Kinston, North Carolina",
+   "url": "https://en.wikipedia.org/wiki/Kinston,_North_Carolina",
+   "coords": {
+    "lat": 35.27472,
+    "lng": -77.59361
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Klamath Falls|OR": {
+   "title": "Klamath Falls, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Klamath_Falls,_Oregon",
+   "coords": {
+    "lat": 42.24167,
+    "lng": -121.77333
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Knoxville|TN": {
    "title": "Knoxville, Tennessee",
    "url": "https://en.wikipedia.org/wiki/Knoxville,_Tennessee",
@@ -4118,6 +4954,60 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Kualapuu|HI": {
+   "title": "Kualapuʻu, Hawaii",
+   "url": "https://en.wikipedia.org/wiki/Kualapu%CA%BBu,_Hawaii",
+   "coords": {
+    "lat": 21.16389,
+    "lng": -157.05278
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "La Crescent|MN": {
+   "title": "La Crescent, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/La_Crescent,_Minnesota",
+   "coords": {
+    "lat": 43.83,
+    "lng": -91.30444
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "La Crosse|WI": {
+   "title": "La Crosse, Wisconsin",
+   "url": "https://en.wikipedia.org/wiki/La_Crosse,_Wisconsin",
+   "coords": {
+    "lat": 43.81333,
+    "lng": -91.23306
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "La Grande|OR": {
+   "title": "La Grande, Oregon",
+   "url": "https://en.wikipedia.org/wiki/La_Grande,_Oregon",
+   "coords": {
+    "lat": 45.32417,
+    "lng": -118.08667
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "La Junta|CO": {
+   "title": "La Junta, Colorado",
+   "url": "https://en.wikipedia.org/wiki/La_Junta,_Colorado",
+   "coords": {
+    "lat": 37.98139,
+    "lng": -103.5475
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "LaSalle|IL": {
+   "title": "La Salle, Illinois",
+   "url": "https://en.wikipedia.org/wiki/La_Salle,_Illinois",
+   "coords": {
+    "lat": 41.36389,
+    "lng": -89.10833
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Lafayette|LA": {
    "title": "Lafayette, Louisiana",
    "url": "https://en.wikipedia.org/wiki/Lafayette,_Louisiana",
@@ -4126,6 +5016,36 @@
     "lng": -92.01889
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Lake Placid|NY": {
+   "title": "Lake Placid, New York",
+   "url": "https://en.wikipedia.org/wiki/Lake_Placid,_New_York",
+   "coords": {
+    "lat": 44.28556,
+    "lng": -73.98528
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Lakeview|OR": {
+   "title": "Lakeview, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Lakeview,_Oregon",
+   "coords": {
+    "lat": 42.19167,
+    "lng": -120.35278
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Lamar|CO": {
+   "title": "Lamar, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Lamar,_Colorado",
+   "coords": {
+    "lat": 38.08722,
+    "lng": -102.62083
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Lamar|KS": {
+   "error": "HTTP 404 for https://en.wikipedia.org/wiki/Lamar,_Kansas"
   },
   "Lander|WY": {
    "title": "Lander, Wyoming",
@@ -4208,6 +5128,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Libby|MT": {
+   "title": "Libby, Montana",
+   "url": "https://en.wikipedia.org/wiki/Libby,_Montana",
+   "coords": {
+    "lat": 48.37972,
+    "lng": -115.55472
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Liberty|MO": {
    "title": "Liberty, Missouri",
    "url": "https://en.wikipedia.org/wiki/Liberty,_Missouri",
@@ -4216,6 +5145,15 @@
     "lng": -94.41889
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Lihue|HI": {
+   "title": "Līhuʻe, Hawaii",
+   "url": "https://en.wikipedia.org/wiki/L%C4%ABhu%CA%BBe,_Hawaii",
+   "coords": {
+    "lat": 21.97472,
+    "lng": -159.36556
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Lincoln|NE": {
    "title": "Lincoln, Nebraska",
@@ -4235,6 +5173,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Lingle|WY": {
+   "title": "Lingle, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Lingle,_Wyoming",
+   "coords": {
+    "lat": 42.13861,
+    "lng": -104.34611
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Little Rock|AR": {
    "title": "Little Rock, Arkansas",
    "url": "https://en.wikipedia.org/wiki/Little_Rock,_Arkansas",
@@ -4243,6 +5190,24 @@
     "lng": -92.2881
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Littleton|NH": {
+   "title": "Littleton, New Hampshire",
+   "url": "https://en.wikipedia.org/wiki/Littleton,_New_Hampshire",
+   "coords": {
+    "lat": 44.33222,
+    "lng": -71.80972
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Llano|TX": {
+   "title": "Llano, Texas",
+   "url": "https://en.wikipedia.org/wiki/Llano,_Texas",
+   "coords": {
+    "lat": 30.74778,
+    "lng": -98.67583
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Logan|UT": {
    "title": "Logan, Utah",
@@ -4307,6 +5272,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Lowry|SD": {
+   "title": "Lowry, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Lowry,_South_Dakota",
+   "coords": {
+    "lat": 45.31556,
+    "lng": -99.98111
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Lowville|NY": {
+   "title": "Lowville, New York",
+   "url": "https://en.wikipedia.org/wiki/Lowville,_New_York",
+   "coords": {
+    "lat": 43.78667,
+    "lng": -75.49222
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Lubbock|TX": {
    "title": "Lubbock, Texas",
    "url": "https://en.wikipedia.org/wiki/Lubbock,_Texas",
@@ -4315,6 +5298,15 @@
     "lng": -101.845
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Lufkin|TX": {
+   "title": "Lufkin, Texas",
+   "url": "https://en.wikipedia.org/wiki/Lufkin,_Texas",
+   "coords": {
+    "lat": 31.33833,
+    "lng": -94.72917
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Macomb|IL": {
    "title": "Macomb, Illinois",
@@ -4334,6 +5326,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Malone|NY": {
+   "title": "Malone, New York",
+   "url": "https://en.wikipedia.org/wiki/Malone,_New_York",
+   "coords": {
+    "lat": 44.85056,
+    "lng": -74.28889
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Manchester|VT": {
+   "title": "Manchester, Vermont",
+   "url": "https://en.wikipedia.org/wiki/Manchester,_Vermont",
+   "coords": {
+    "lat": 43.14222,
+    "lng": -73.08556
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Manitou Springs|CO": {
    "title": "Manitou Springs, Colorado",
    "url": "https://en.wikipedia.org/wiki/Manitou_Springs,_Colorado",
@@ -4352,6 +5362,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Manson|WA": {
+   "title": "Manson, Washington",
+   "url": "https://en.wikipedia.org/wiki/Manson,_Washington",
+   "coords": {
+    "lat": 47.87556,
+    "lng": -120.16167
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Marquette|MI": {
    "title": "Marquette, Michigan",
    "url": "https://en.wikipedia.org/wiki/Marquette,_Michigan",
@@ -4361,6 +5380,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Martinsburg|WV": {
+   "title": "Martinsburg, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Martinsburg,_West_Virginia",
+   "coords": {
+    "lat": 39.45361,
+    "lng": -77.99556
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Martin|SD": {
+   "title": "Martin, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Martin,_South_Dakota",
+   "coords": {
+    "lat": 43.1748806,
+    "lng": -101.732325
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Maryville|MO": {
    "title": "Maryville, Missouri",
    "url": "https://en.wikipedia.org/wiki/Maryville,_Missouri",
@@ -4369,6 +5406,33 @@
     "lng": -94.87111
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Matewan|WV": {
+   "title": "Matewan, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Matewan,_West_Virginia",
+   "coords": {
+    "lat": 37.62306,
+    "lng": -82.16639
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "McCall|ID": {
+   "title": "McCall, Idaho",
+   "url": "https://en.wikipedia.org/wiki/McCall,_Idaho",
+   "coords": {
+    "lat": 44.91083,
+    "lng": -116.12083
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "McCloud|CA": {
+   "title": "McCloud, California",
+   "url": "https://en.wikipedia.org/wiki/McCloud,_California",
+   "coords": {
+    "lat": 41.25472,
+    "lng": -122.13639
+   },
+   "retrievedAt": "2026-10-20"
   },
   "McGrath|AK": {
    "title": "McGrath, Alaska",
@@ -4405,6 +5469,24 @@
     "lng": -90.05194
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Menomonie|WI": {
+   "title": "Menomonie, Wisconsin",
+   "url": "https://en.wikipedia.org/wiki/Menomonie,_Wisconsin",
+   "coords": {
+    "lat": 44.87917,
+    "lng": -91.91806
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Meridian|MS": {
+   "title": "Meridian, Mississippi",
+   "url": "https://en.wikipedia.org/wiki/Meridian,_Mississippi",
+   "coords": {
+    "lat": 32.37472,
+    "lng": -88.70417
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Miami-Fort Lauderdale-West Palm Beach|FL": {
    "title": "Miami",
@@ -4451,6 +5533,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Miles City|MT": {
+   "title": "Miles City, Montana",
+   "url": "https://en.wikipedia.org/wiki/Miles_City,_Montana",
+   "coords": {
+    "lat": 46.40833,
+    "lng": -105.84
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Milledgeville|GA": {
    "title": "Milledgeville, Georgia",
    "url": "https://en.wikipedia.org/wiki/Milledgeville,_Georgia",
@@ -4478,17 +5569,17 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Minot|ND": {
+   "title": "Minot, North Dakota",
+   "url": "https://en.wikipedia.org/wiki/Minot,_North_Dakota",
+   "coords": {
+    "lat": 48.2376139,
+    "lng": -101.2790056
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Mississippi State|MS": {
    "error": "no coordinates on page"
-  },
-  "Missoula|MT": {
-   "title": "Missoula, Montana",
-   "url": "https://en.wikipedia.org/wiki/Missoula,_Montana",
-   "coords": {
-    "lat": 46.874359,
-    "lng": -114.026136
-   },
-   "retrievedAt": "2026-10-19"
   },
   "Mobile|AL": {
    "title": "Mobile, Alabama",
@@ -4517,6 +5608,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Monterey|VA": {
+   "title": "Monterey, Virginia",
+   "url": "https://en.wikipedia.org/wiki/Monterey,_Virginia",
+   "coords": {
+    "lat": 38.41194,
+    "lng": -79.58056
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Montgomery|AL": {
    "title": "Montgomery, Alabama",
    "url": "https://en.wikipedia.org/wiki/Montgomery,_Alabama",
@@ -4525,6 +5625,24 @@
     "lng": -86.3
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Montrose|CO": {
+   "title": "Montrose, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Montrose,_Colorado",
+   "coords": {
+    "lat": 38.47694,
+    "lng": -107.86556
+   },
+   "retrievedAt": "2026-10-19"
+  },
+  "Moorhead|MN": {
+   "title": "Moorhead, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Moorhead,_Minnesota",
+   "coords": {
+    "lat": 46.87389,
+    "lng": -96.76722
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Morehead|KY": {
    "title": "Morehead, Kentucky",
@@ -4535,6 +5653,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Morgantown|WV": {
+   "title": "Morgantown, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Morgantown,_West_Virginia",
+   "coords": {
+    "lat": 39.63361,
+    "lng": -79.95056
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Moses Lake|WA": {
+   "title": "Moses Lake, Washington",
+   "url": "https://en.wikipedia.org/wiki/Moses_Lake,_Washington",
+   "coords": {
+    "lat": 47.14472,
+    "lng": -119.27583
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Mount Pleasant|MI": {
    "title": "Mount Pleasant, Michigan",
    "url": "https://en.wikipedia.org/wiki/Mount_Pleasant,_Michigan",
@@ -4543,6 +5679,24 @@
     "lng": -84.7675
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Mount Shasta|CA": {
+   "title": "Mount Shasta, California",
+   "url": "https://en.wikipedia.org/wiki/Mount_Shasta,_California",
+   "coords": {
+    "lat": 41.31444,
+    "lng": -122.31139
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Mount Vernon|WA": {
+   "title": "Mount Vernon, Washington",
+   "url": "https://en.wikipedia.org/wiki/Mount_Vernon,_Washington",
+   "coords": {
+    "lat": 48.42028,
+    "lng": -122.31167
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Muncie|IN": {
    "title": "Muncie, Indiana",
@@ -4571,6 +5725,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Muscle Shoals|AL": {
+   "title": "Muscle Shoals, Alabama",
+   "url": "https://en.wikipedia.org/wiki/Muscle_Shoals,_Alabama",
+   "coords": {
+    "lat": 34.75833,
+    "lng": -87.63611
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Nantucket|MA": {
    "title": "Nantucket",
    "url": "https://en.wikipedia.org/wiki/Nantucket",
@@ -4580,6 +5743,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Nashua|NH": {
+   "title": "Nashua, New Hampshire",
+   "url": "https://en.wikipedia.org/wiki/Nashua,_New_Hampshire",
+   "coords": {
+    "lat": 42.7575,
+    "lng": -71.46444
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Nashville|TN": {
    "title": "Nashville, Tennessee",
    "url": "https://en.wikipedia.org/wiki/Nashville,_Tennessee",
@@ -4588,6 +5760,24 @@
     "lng": -86.77444
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Netcong|NJ": {
+   "title": "Netcong, New Jersey",
+   "url": "https://en.wikipedia.org/wiki/Netcong,_New_Jersey",
+   "coords": {
+    "lat": 40.899232,
+    "lng": -74.700823
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "New Bern|NC": {
+   "title": "New Bern, North Carolina",
+   "url": "https://en.wikipedia.org/wiki/New_Bern,_North_Carolina",
+   "coords": {
+    "lat": 35.09583,
+    "lng": -77.07222
+   },
+   "retrievedAt": "2026-10-20"
   },
   "New Brunswick|NJ": {
    "title": "New Brunswick, New Jersey",
@@ -4606,9 +5796,6 @@
     "lng": -90.0783
    },
    "retrievedAt": "2026-10-19"
-  },
-  "New York|NJ": {
-   "error": "HTTP 404 for https://en.wikipedia.org/wiki/New_York,_New_Jersey"
   },
   "New York|NY": {
    "title": "New York City",
@@ -4637,6 +5824,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Newcastle|WY": {
+   "title": "Newcastle, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Newcastle,_Wyoming",
+   "coords": {
+    "lat": 43.85722,
+    "lng": -104.20944
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Norfolk|VA": {
    "title": "Norfolk, Virginia",
    "url": "https://en.wikipedia.org/wiki/Norfolk,_Virginia",
@@ -4664,6 +5860,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "North Creek|NY": {
+   "title": "North Creek, New York",
+   "url": "https://en.wikipedia.org/wiki/North_Creek,_New_York",
+   "coords": {
+    "lat": 43.69778,
+    "lng": -73.98639
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Northfield|MN": {
    "title": "Northfield, Minnesota",
    "url": "https://en.wikipedia.org/wiki/Northfield,_Minnesota",
@@ -4681,6 +5886,15 @@
     "lng": -118.53583
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Norwich|VT": {
+   "title": "Norwich, Vermont",
+   "url": "https://en.wikipedia.org/wiki/Norwich,_Vermont",
+   "coords": {
+    "lat": 43.74667,
+    "lng": -72.31889
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Odessa|NY": {
    "title": "Odessa, New York",
@@ -4718,6 +5932,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Omak|WA": {
+   "title": "Omak, Washington",
+   "url": "https://en.wikipedia.org/wiki/Omak,_Washington",
+   "coords": {
+    "lat": 48.42222,
+    "lng": -119.50417
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Orangeburg|SC": {
    "title": "Orangeburg, South Carolina",
    "url": "https://en.wikipedia.org/wiki/Orangeburg,_South_Carolina",
@@ -4754,8 +5977,23 @@
    },
    "retrievedAt": "2026-10-19"
   },
-  "Overton|LA": {
-   "error": "HTTP 404 for https://en.wikipedia.org/wiki/Overton,_Louisiana"
+  "Ottumwa|IA": {
+   "title": "Ottumwa, Iowa",
+   "url": "https://en.wikipedia.org/wiki/Ottumwa,_Iowa",
+   "coords": {
+    "lat": 41.01944,
+    "lng": -92.41861
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Oxford|MS": {
+   "title": "Oxford, Mississippi",
+   "url": "https://en.wikipedia.org/wiki/Oxford,_Mississippi",
+   "coords": {
+    "lat": 34.37222,
+    "lng": -89.50806
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Oxford|OH": {
    "title": "Oxford, Ohio",
@@ -4781,15 +6019,6 @@
    "coords": {
     "lat": -14.27389,
     "lng": -170.70444
-   },
-   "retrievedAt": "2026-10-19"
-  },
-  "Pahala|HI": {
-   "title": "Pāhala, Hawaii",
-   "url": "https://en.wikipedia.org/wiki/P%C4%81hala,_Hawaii",
-   "coords": {
-    "lat": 19.2025,
-    "lng": -155.47722
    },
    "retrievedAt": "2026-10-19"
   },
@@ -4820,6 +6049,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Park Falls|WI": {
+   "title": "Park Falls, Wisconsin",
+   "url": "https://en.wikipedia.org/wiki/Park_Falls,_Wisconsin",
+   "coords": {
+    "lat": 45.93472,
+    "lng": -90.44861
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Pensacola|FL": {
    "title": "Pensacola, Florida",
    "url": "https://en.wikipedia.org/wiki/Pensacola,_Florida",
@@ -4837,6 +6075,24 @@
     "lng": -89.59056
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Perry|IA": {
+   "title": "Perry, Iowa",
+   "url": "https://en.wikipedia.org/wiki/Perry,_Iowa",
+   "coords": {
+    "lat": 41.84083,
+    "lng": -94.10972
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Peru|NY": {
+   "title": "Peru, New York",
+   "url": "https://en.wikipedia.org/wiki/Peru,_New_York",
+   "coords": {
+    "lat": 44.58583,
+    "lng": -73.52028
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Petersburg|AK": {
    "title": "Petersburg, Alaska",
@@ -4874,6 +6130,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Pierpont|SD": {
+   "title": "Pierpont, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Pierpont,_South_Dakota",
+   "coords": {
+    "lat": 45.49528,
+    "lng": -97.83222
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Pinedale|WY": {
+   "title": "Pinedale, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Pinedale,_Wyoming",
+   "coords": {
+    "lat": 42.86611,
+    "lng": -109.86472
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Pittsburgh|PA": {
    "title": "Pittsburgh",
    "url": "https://en.wikipedia.org/wiki/Pittsburgh",
@@ -4910,6 +6184,33 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Polson|MT": {
+   "title": "Polson, Montana",
+   "url": "https://en.wikipedia.org/wiki/Polson,_Montana",
+   "coords": {
+    "lat": 47.69,
+    "lng": -114.12639
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Port Angeles|WA": {
+   "title": "Port Angeles, Washington",
+   "url": "https://en.wikipedia.org/wiki/Port_Angeles,_Washington",
+   "coords": {
+    "lat": 48.12639,
+    "lng": -123.47778
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Port Huron|MI": {
+   "title": "Port Huron, Michigan",
+   "url": "https://en.wikipedia.org/wiki/Port_Huron,_Michigan",
+   "coords": {
+    "lat": 42.975,
+    "lng": -82.4244
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Portales|NM": {
    "title": "Portales, New Mexico",
    "url": "https://en.wikipedia.org/wiki/Portales,_New_Mexico",
@@ -4918,6 +6219,15 @@
     "lng": -103.35639
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Portland|ME": {
+   "title": "Portland, Maine",
+   "url": "https://en.wikipedia.org/wiki/Portland,_Maine",
+   "coords": {
+    "lat": 43.64722,
+    "lng": -70.17167
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Portland|OR": {
    "title": "Portland, Oregon",
@@ -4937,6 +6247,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Powell|WY": {
+   "title": "Powell, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Powell,_Wyoming",
+   "coords": {
+    "lat": 44.75889,
+    "lng": -108.75833
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Prairie View|TX": {
    "title": "Prairie View, Texas",
    "url": "https://en.wikipedia.org/wiki/Prairie_View,_Texas",
@@ -4945,6 +6264,15 @@
     "lng": -95.99167
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Presque Isle|ME": {
+   "title": "Presque Isle, Maine",
+   "url": "https://en.wikipedia.org/wiki/Presque_Isle,_Maine",
+   "coords": {
+    "lat": 46.67944,
+    "lng": -68.00222
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Price|UT": {
    "title": "Price, Utah",
@@ -4972,6 +6300,15 @@
     "lng": -71.42222
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Pueblo|CO": {
+   "title": "Pueblo, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Pueblo,_Colorado",
+   "coords": {
+    "lat": 38.25556,
+    "lng": -104.61389
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Pullman|WA": {
    "title": "Pullman, Washington",
@@ -5017,6 +6354,51 @@
     "lng": -108.50639
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Rapid City|SD": {
+   "title": "Rapid City, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Rapid_City,_South_Dakota",
+   "coords": {
+    "lat": 44.07139,
+    "lng": -103.22083
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Rawlins|WY": {
+   "title": "Rawlins, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Rawlins,_Wyoming",
+   "coords": {
+    "lat": 41.78556,
+    "lng": -107.24028
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Redwood Falls|MN": {
+   "title": "Redwood Falls, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Redwood_Falls,_Minnesota",
+   "coords": {
+    "lat": 44.54694,
+    "lng": -95.10306
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Reliance|SD": {
+   "title": "Reliance, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Reliance,_South_Dakota",
+   "coords": {
+    "lat": 43.87972,
+    "lng": -99.60167
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Reliance|WY": {
+   "title": "Reliance, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Reliance,_Wyoming",
+   "coords": {
+    "lat": 41.66389,
+    "lng": -109.21306
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Reno|NV": {
    "title": "Reno, Nevada",
@@ -5135,6 +6517,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Rock Springs|WY": {
+   "title": "Rock Springs, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Rock_Springs,_Wyoming",
+   "coords": {
+    "lat": 41.59083,
+    "lng": -109.2225
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Rohnert Park|CA": {
    "title": "Rohnert Park, California",
    "url": "https://en.wikipedia.org/wiki/Rohnert_Park,_California",
@@ -5152,6 +6543,27 @@
     "lng": -91.76083
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Roseau|MN": {
+   "title": "Roseau, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Roseau,_Minnesota",
+   "coords": {
+    "lat": 48.84667,
+    "lng": -95.76083
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Roseburg|OR": {
+   "title": "Roseburg, Oregon",
+   "url": "https://en.wikipedia.org/wiki/Roseburg,_Oregon",
+   "coords": {
+    "lat": 43.23972,
+    "lng": -123.3575
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Rutland|VT": {
+   "error": "no coordinates on page"
   },
   "Río Piedras|PR": {
    "title": "Río Piedras, Puerto Rico",
@@ -5171,6 +6583,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Saint Paul|MN": {
+   "title": "Saint Paul, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Saint_Paul,_Minnesota",
+   "coords": {
+    "lat": 44.94778,
+    "lng": -93.10389
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Saipan|MP": {
    "title": "Saipan, Northern Mariana Islands",
    "url": "https://en.wikipedia.org/wiki/Saipan,_Northern_Mariana_Islands",
@@ -5179,6 +6600,15 @@
     "lng": 145.75
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Salina|KS": {
+   "title": "Salina, Kansas",
+   "url": "https://en.wikipedia.org/wiki/Salina,_Kansas",
+   "coords": {
+    "lat": 38.84028,
+    "lng": -97.61139
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Salt Lake City|UT": {
    "title": "Salt Lake City",
@@ -5288,6 +6718,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Saranac Lake|NY": {
+   "title": "Saranac Lake, New York",
+   "url": "https://en.wikipedia.org/wiki/Saranac_Lake,_New_York",
+   "coords": {
+    "lat": 44.32611,
+    "lng": -74.13083
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Sarasota|FL": {
    "title": "Sarasota, Florida",
    "url": "https://en.wikipedia.org/wiki/Sarasota,_Florida",
@@ -5296,6 +6735,15 @@
     "lng": -82.54278
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Saratoga|WY": {
+   "title": "Saratoga, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Saratoga,_Wyoming",
+   "coords": {
+    "lat": 41.45167,
+    "lng": -106.81083
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Scranton|PA": {
    "title": "Scranton, Pennsylvania",
@@ -5315,6 +6763,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Selma|AL": {
+   "title": "Selma, Alabama",
+   "url": "https://en.wikipedia.org/wiki/Selma,_Alabama",
+   "coords": {
+    "lat": 32.4164,
+    "lng": -87.0247
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Sharon|CT": {
    "title": "Sharon, Connecticut",
    "url": "https://en.wikipedia.org/wiki/Sharon,_Connecticut",
@@ -5323,6 +6780,15 @@
     "lng": -73.45
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Shasta Lake City|CA": {
+   "title": "Shasta Lake, California",
+   "url": "https://en.wikipedia.org/wiki/Shasta_Lake,_California",
+   "coords": {
+    "lat": 40.681194,
+    "lng": -122.366611
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Sheboygan|WI": {
    "title": "Sheboygan, Wisconsin",
@@ -5342,6 +6808,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Sheridan|WY": {
+   "title": "Sheridan, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Sheridan,_Wyoming",
+   "coords": {
+    "lat": 44.79667,
+    "lng": -106.95889
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Shreveport|LA": {
+   "title": "Shreveport, Louisiana",
+   "url": "https://en.wikipedia.org/wiki/Shreveport,_Louisiana",
+   "coords": {
+    "lat": 32.46389,
+    "lng": -93.79444
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Sioux City|IA": {
    "title": "Sioux City, Iowa",
    "url": "https://en.wikipedia.org/wiki/Sioux_City,_Iowa",
@@ -5351,6 +6835,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Sioux Falls|SD": {
+   "title": "Sioux Falls, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Sioux_Falls,_South_Dakota",
+   "coords": {
+    "lat": 43.53639,
+    "lng": -96.73167
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Sister Bay|WI": {
+   "title": "Sister Bay, Wisconsin",
+   "url": "https://en.wikipedia.org/wiki/Sister_Bay,_Wisconsin",
+   "coords": {
+    "lat": 45.18722,
+    "lng": -87.12389
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Sitka|AK": {
    "title": "Sitka, Alaska",
    "url": "https://en.wikipedia.org/wiki/Sitka,_Alaska",
@@ -5359,6 +6861,15 @@
     "lng": -135.33472
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Somerset|KY": {
+   "title": "Somerset, Kentucky",
+   "url": "https://en.wikipedia.org/wiki/Somerset,_Kentucky",
+   "coords": {
+    "lat": 37.08444,
+    "lng": -84.60806
+   },
+   "retrievedAt": "2026-10-20"
   },
   "South Bend|IN": {
    "title": "South Bend, Indiana",
@@ -5371,6 +6882,24 @@
   },
   "Southwest VA|VA": {
    "error": "HTTP 404 for https://en.wikipedia.org/wiki/Southwest_VA,_Virginia"
+  },
+  "Spearfish|SD": {
+   "title": "Spearfish, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Spearfish,_South_Dakota",
+   "coords": {
+    "lat": 44.491431,
+    "lng": -103.816297
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Spearman|TX": {
+   "title": "Spearman, Texas",
+   "url": "https://en.wikipedia.org/wiki/Spearman,_Texas",
+   "coords": {
+    "lat": 36.19806,
+    "lng": -101.19444
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Spindale|NC": {
    "title": "Spindale, North Carolina",
@@ -5417,6 +6946,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "St. Johnsbury|VT": {
+   "title": "St. Johnsbury, Vermont",
+   "url": "https://en.wikipedia.org/wiki/St._Johnsbury,_Vermont",
+   "coords": {
+    "lat": 44.48667,
+    "lng": -72.01111
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "St. Louis|MO": {
    "title": "St. Louis",
    "url": "https://en.wikipedia.org/wiki/St._Louis",
@@ -5434,6 +6972,33 @@
     "lng": -170.266614
    },
    "retrievedAt": "2026-10-19"
+  },
+  "St. Peter|MN": {
+   "title": "St. Peter, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/St._Peter,_Minnesota",
+   "coords": {
+    "lat": 44.3294972,
+    "lng": -93.9658361
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Stanton|TX": {
+   "title": "Stanton, Texas",
+   "url": "https://en.wikipedia.org/wiki/Stanton,_Texas",
+   "coords": {
+    "lat": 32.13083,
+    "lng": -101.79194
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Starkville|CO": {
+   "title": "Starkville, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Starkville,_Colorado",
+   "coords": {
+    "lat": 37.11694,
+    "lng": -104.52333
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Starkville|MS": {
    "title": "Starkville, Mississippi",
@@ -5462,6 +7027,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Sterling|IL": {
+   "title": "Sterling, Illinois",
+   "url": "https://en.wikipedia.org/wiki/Sterling,_Illinois",
+   "coords": {
+    "lat": 41.79222,
+    "lng": -89.72667
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Stillwater|OK": {
    "title": "Stillwater, Oklahoma",
    "url": "https://en.wikipedia.org/wiki/Stillwater,_Oklahoma",
@@ -5470,6 +7044,33 @@
     "lng": -97.059
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Sun Valley|ID": {
+   "title": "Sun Valley, Idaho",
+   "url": "https://en.wikipedia.org/wiki/Sun_Valley,_Idaho",
+   "coords": {
+    "lat": 43.655,
+    "lng": -114.40917
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Sundance|WY": {
+   "title": "Sundance, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Sundance,_Wyoming",
+   "coords": {
+    "lat": 44.40639,
+    "lng": -104.37583
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Sussex|NJ": {
+   "title": "Sussex, New Jersey",
+   "url": "https://en.wikipedia.org/wiki/Sussex,_New_Jersey",
+   "coords": {
+    "lat": 41.208771,
+    "lng": -74.608241
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Syracuse|NY": {
    "title": "Syracuse, New York",
@@ -5543,6 +7144,33 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "The Dalles|OR": {
+   "title": "The Dalles, Oregon",
+   "url": "https://en.wikipedia.org/wiki/The_Dalles,_Oregon",
+   "coords": {
+    "lat": 45.60167,
+    "lng": -121.18472
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Thermopolis|WY": {
+   "title": "Thermopolis, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Thermopolis,_Wyoming",
+   "coords": {
+    "lat": 43.64778,
+    "lng": -108.21389
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Thief River Falls|MN": {
+   "title": "Thief River Falls, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Thief_River_Falls,_Minnesota",
+   "coords": {
+    "lat": 48.11917,
+    "lng": -96.18111
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Timnath|CO": {
    "title": "Timnath, Colorado",
    "url": "https://en.wikipedia.org/wiki/Timnath,_Colorado",
@@ -5561,6 +7189,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Toms River|NJ": {
+   "title": "Toms River, New Jersey",
+   "url": "https://en.wikipedia.org/wiki/Toms_River,_New_Jersey",
+   "coords": {
+    "lat": 39.994264,
+    "lng": -74.166154
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Topeka|KS": {
    "title": "Topeka, Kansas",
    "url": "https://en.wikipedia.org/wiki/Topeka,_Kansas",
@@ -5569,6 +7206,15 @@
     "lng": -95.69556
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Torrington|WY": {
+   "title": "Torrington, Wyoming",
+   "url": "https://en.wikipedia.org/wiki/Torrington,_Wyoming",
+   "coords": {
+    "lat": 42.06806,
+    "lng": -104.14917
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Towson|MD": {
    "title": "Towson, Maryland",
@@ -5606,6 +7252,24 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Tupper Lake|NY": {
+   "title": "Tupper Lake, New York",
+   "url": "https://en.wikipedia.org/wiki/Tupper_Lake,_New_York",
+   "coords": {
+    "lat": 44.23333,
+    "lng": -74.46583
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Twin Falls|ID": {
+   "title": "Twin Falls, Idaho",
+   "url": "https://en.wikipedia.org/wiki/Twin_Falls,_Idaho",
+   "coords": {
+    "lat": 42.564,
+    "lng": -114.46
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Twin Lake|MI": {
    "title": "Twin Lake, Michigan",
    "url": "https://en.wikipedia.org/wiki/Twin_Lake,_Michigan",
@@ -5641,6 +7305,15 @@
     "lng": -88.19722
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Vail|CO": {
+   "title": "Vail, Colorado",
+   "url": "https://en.wikipedia.org/wiki/Vail,_Colorado",
+   "coords": {
+    "lat": 39.63833,
+    "lng": -106.36111
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Valdez|AK": {
    "title": "Valdez, Alaska",
@@ -5678,6 +7351,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Virginia|MN": {
+   "title": "Virginia, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Virginia,_Minnesota",
+   "coords": {
+    "lat": 47.51722,
+    "lng": -92.54139
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Waco|TX": {
    "title": "Waco, Texas",
    "url": "https://en.wikipedia.org/wiki/Waco,_Texas",
@@ -5686,6 +7368,33 @@
     "lng": -97.1472
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Waikapu|HI": {
+   "title": "Waikapū, Hawaii",
+   "url": "https://en.wikipedia.org/wiki/Waikap%C5%AB,_Hawaii",
+   "coords": {
+    "lat": 20.85278,
+    "lng": -156.51
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Wailuku|HI": {
+   "title": "Wailuku, Hawaii",
+   "url": "https://en.wikipedia.org/wiki/Wailuku,_Hawaii",
+   "coords": {
+    "lat": 20.89194,
+    "lng": -156.50222
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Walla Walla|WA": {
+   "title": "Walla Walla, Washington",
+   "url": "https://en.wikipedia.org/wiki/Walla_Walla,_Washington",
+   "coords": {
+    "lat": 46.07917,
+    "lng": -118.31361
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Warm Springs|OR": {
    "title": "Warm Springs, Oregon",
@@ -5732,6 +7441,42 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Watertown|SD": {
+   "title": "Watertown, South Dakota",
+   "url": "https://en.wikipedia.org/wiki/Watertown,_South_Dakota",
+   "coords": {
+    "lat": 44.90333,
+    "lng": -97.12056
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Waterville|ME": {
+   "title": "Waterville, Maine",
+   "url": "https://en.wikipedia.org/wiki/Waterville,_Maine",
+   "coords": {
+    "lat": 44.5575,
+    "lng": -69.64306
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Wausau|WI": {
+   "title": "Wausau, Wisconsin",
+   "url": "https://en.wikipedia.org/wiki/Wausau,_Wisconsin",
+   "coords": {
+    "lat": 44.95,
+    "lng": -89.633
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Webster Springs|WV": {
+   "title": "Webster Springs, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Webster_Springs,_West_Virginia",
+   "coords": {
+    "lat": 38.47611,
+    "lng": -80.41
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "West Lafayette|IN": {
    "title": "West Lafayette, Indiana",
    "url": "https://en.wikipedia.org/wiki/West_Lafayette,_Indiana",
@@ -5740,6 +7485,24 @@
     "lng": -86.92361
    },
    "retrievedAt": "2026-10-19"
+  },
+  "West Plains|MO": {
+   "title": "West Plains, Missouri",
+   "url": "https://en.wikipedia.org/wiki/West_Plains,_Missouri",
+   "coords": {
+    "lat": 36.73722,
+    "lng": -91.865
+   },
+   "retrievedAt": "2026-10-20"
+  },
+  "Wheeling|WV": {
+   "title": "Wheeling, West Virginia",
+   "url": "https://en.wikipedia.org/wiki/Wheeling,_West_Virginia",
+   "coords": {
+    "lat": 40.07028,
+    "lng": -80.69861
+   },
+   "retrievedAt": "2026-10-20"
   },
   "White River|AZ": {
    "title": "Whiteriver, Arizona",
@@ -5777,6 +7540,15 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Williston|ND": {
+   "title": "Williston, North Dakota",
+   "url": "https://en.wikipedia.org/wiki/Williston,_North_Dakota",
+   "coords": {
+    "lat": 48.18139,
+    "lng": -103.62806
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Wilmington|DE": {
    "title": "Wilmington, Delaware",
    "url": "https://en.wikipedia.org/wiki/Wilmington,_Delaware",
@@ -5795,21 +7567,21 @@
    },
    "retrievedAt": "2026-10-19"
   },
+  "Windsor|VT": {
+   "title": "Windsor, Vermont",
+   "url": "https://en.wikipedia.org/wiki/Windsor,_Vermont",
+   "coords": {
+    "lat": 43.49361,
+    "lng": -72.42194
+   },
+   "retrievedAt": "2026-10-20"
+  },
   "Winston-Salem|NC": {
    "title": "Winston-Salem, North Carolina",
    "url": "https://en.wikipedia.org/wiki/Winston-Salem,_North_Carolina",
    "coords": {
     "lat": 36.10278,
     "lng": -80.26083
-   },
-   "retrievedAt": "2026-10-19"
-  },
-  "Woodland Park|CO": {
-   "title": "Woodland Park, Colorado",
-   "url": "https://en.wikipedia.org/wiki/Woodland_Park,_Colorado",
-   "coords": {
-    "lat": 38.99389,
-    "lng": -105.05694
    },
    "retrievedAt": "2026-10-19"
   },
@@ -5830,6 +7602,15 @@
     "lng": -71.7989
    },
    "retrievedAt": "2026-10-19"
+  },
+  "Worthington|MN": {
+   "title": "Worthington, Minnesota",
+   "url": "https://en.wikipedia.org/wiki/Worthington,_Minnesota",
+   "coords": {
+    "lat": 43.6279667,
+    "lng": -95.5993222
+   },
+   "retrievedAt": "2026-10-20"
   },
   "Worton|MD": {
    "title": "Worton, Maryland",
