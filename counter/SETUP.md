@@ -17,6 +17,22 @@ until the Sheet's web app URL is pasted into `src/lib/site.ts`.
 6. Check: open the site, search a ZIP, click an app link. Within a minute the Sheet gets a
    `counts` tab with rows like `2026-10-20 · search · zip · 4+ · 981 · phone · 1`.
 
+## Weekly email (optional, about 3 minutes)
+
+Every Monday at 8am you get an email summing up the last 7 days: page views, searches,
+no-station searches and clicks (with the change from the week before), plus the top
+stations, platforms and no-station areas. It goes to whoever owns the script. Numbers
+under 10 show as "fewer than 10", so it's safe to forward.
+
+1. In the Apps Script editor, click **+** next to Files → **Script**, name it
+   `weekly-email`, and paste the whole of `counter/weekly-email.gs`. Save.
+2. In the function menu at the top, pick `sendWeeklyEmail` and click **Run**. Google asks
+   for one new permission (send email as you); approve it. You should get a test email.
+3. Pick `installWeeklyEmail` and click **Run**. That's it; it now runs every Monday.
+
+To stop it, run `removeWeeklyEmail`. No redeploy is needed: the email doesn't touch the
+web app URL.
+
 ## What's stored
 
 One row per day per combination of allowed fields, with a count. Never individual events,
