@@ -22,12 +22,13 @@ const LOGOS: Partial<Record<Platform, { w: number; h: number; badge?: boolean }>
 };
 
 // fallback = the network's national app standing in for a platform the station has no app on.
-interface Props { platform: Platform; href: string; detail?: string; label?: string; fallback?: boolean }
-const { platform, href, detail, label, fallback = false } = Astro.props;
+// site = the station's own website standing in for a web app (the station's, not a network's).
+interface Props { platform: Platform; href: string; detail?: string; label?: string; fallback?: boolean; site?: boolean }
+const { platform, href, detail, label, fallback = false, site = false } = Astro.props;
 const info = PLATFORM_INFO[platform];
 const logo = LOGOS[platform];
 ---
-<a class="app-link" href={href} data-platform={platform} data-fallback={fallback ? "" : undefined} rel="noopener">
+<a class="app-link" href={href} data-platform={platform} data-fallback={fallback ? "" : undefined} data-site={site ? "" : undefined} rel="noopener">
   {logo
     ? <span class:list={['logo-tile', logo.badge && 'badge']}><img src={url(`/platforms/${platform}.png`)} alt="" width={logo.w} height={logo.h} loading="lazy" decoding="async" /></span>
     : <Icon name={info.icon} />}

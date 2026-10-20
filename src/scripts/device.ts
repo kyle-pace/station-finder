@@ -4,15 +4,7 @@
 // - Station pages: highlights the app link for this device ("For your iPhone") and
 //   moves its group to the top. This marks the visitor's platform, never a station.
 
-export type Device = 'ios' | 'android' | 'desktop';
-
-export function detectDevice(): Device {
-  const ua = navigator.userAgent;
-  // iPadOS reports itself as a Mac; touch support gives it away.
-  if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return 'ios';
-  if (/Android/.test(ua)) return 'android';
-  return 'desktop';
-}
+import { detectDevice, type Device } from './device-detect';
 
 const TAGS: Record<Device, string> = { ios: 'For your iPhone or iPad', android: 'For your Android device', desktop: 'For your computer' };
 const PLATFORM_FOR: Record<Device, string> = { ios: 'ios', android: 'android', desktop: 'web' };
@@ -31,11 +23,14 @@ function smartCta(link: HTMLAnchorElement, device: Device): void {
   const label = cta.querySelector('[data-cta-label]')!;
   cta.querySelector<HTMLElement>('[data-cta-icon="mobile"]')!.hidden = device === 'desktop';
   cta.querySelector<HTMLElement>('[data-cta-icon="desktop"]')!.hidden = device !== 'desktop';
-  if (device === 'desktop') label.textContent = isFallback ? `${cta.dataset.fallbackVerb} with the ${cta.dataset.fallback} app` : `${cta.dataset.verb} ${name} in your browser`;
+  const isSite = link.hasAttribute('data-site');
+  if (device === 'desktop') label.textContent = isSite ? `Visit ${name}'s website` : isFallback ? `${cta.dataset.fallbackVerb} with the ${cta.dataset.fallback} app` : `${cta.dataset.verb} ${name} in your browser`;
   else label.textContent = isFallback ? `Get the ${cta.dataset.fallback} app` : `Get ${name} on ${DEVICE_WORDS[device]}`;
   cta.href = link.href;
   if (link.rel) cta.rel = link.rel;
   cta.hidden = false;
+  // The big button already goes to the station's website: don't repeat it beside it.
+  if (isSite) document.querySelectorAll<HTMLElement>('[data-website-btn]').forEach((b) => { b.hidden = true; });
 }
 
 function apply(): void {

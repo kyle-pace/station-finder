@@ -18,24 +18,27 @@ const { org } = Astro.props as { org: Organization };
 // Station first: the station's own app for each platform. Where it has none, link the
 // national app of its network (the PBS app for PBS stations) for that platform, labeled
 // clearly as the network's app so it's never mistaken for the station's own. Stations with
-// both TV and radio get both networks' apps (PBS to watch, NPR to listen).
+// both TV and radio get both networks' apps (PBS to watch, NPR to listen). On the web, the
+// station's own site is the destination: its web app if it has one, otherwise its website,
+// never pbs.org or npr.org.
 const fallbackBrands = national.filter((b) => org.networks.map((n) => n.toLowerCase()).includes(b.id));
 const fallbackBrand = fallbackBrands[0];
-interface Item { platform: Platform; href: string; label?: string; detail?: string; fallback: boolean }
+interface Item { platform: Platform; href: string; label?: string; detail?: string; fallback: boolean; site?: boolean }
 const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
   const own = org.apps.find((a) => a.platform === platform && !a.extra);
   if (own) {
     const detail = own.kind === 'instructions' ? `${org.name} app · how to get it` : platform === 'web' ? host(own.url) : undefined;
     return [{ platform, href: own.url, detail, fallback: false }];
   }
+  if (platform === 'web') return org.website ? [{ platform, href: org.website, label: 'Station website', detail: host(org.website), fallback: false, site: true }] : [];
   return fallbackBrands.flatMap((brand): Item[] => {
     const fb = brand.apps.find((a) => a.platform === platform);
     if (!fb) return [];
-    const where = platform === 'web' ? host(fb.url) : fb.kind === 'help' ? 'how to get it' : PLATFORM_INFO[platform].detail;
+    const where = fb.kind === 'help' ? 'how to get it' : PLATFORM_INFO[platform].detail;
     return [{ platform, href: fb.url, detail: `${brand.name} app · ${where}`, fallback: true }];
   });
 });
-const hasOwnApps = items.some((i) => !i.fallback);
+const hasOwnApps = items.some((i) => !i.fallback && !i.site);
 
 // Extra apps (a station's other apps, e.g. KET Legislative Coverage), grouped by name.
 const extraApps = [...org.apps.filter((a) => a.extra).reduce((m, a) => {
@@ -67,6 +70,8 @@ const sourceKinds = [
   org.apps.length || org.livestreamUrl ? 'station website' : '',
   Object.values(org.sources).some((s) => s.source.startsWith('manual')) ? 'manual correction' : '',
 ].filter(Boolean);
+// The station's short link for sharing (see src/pages/go/[id].astro).
+const goUrl = new URL(url(`/go/${org.id}/`), Astro.site).href;
 const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, and website.`;
 ---
 
@@ -84,7 +89,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
         {/* Filled in by the device script with the best link for this visitor's device. */}
         <a class="btn btn-primary btn-lg" data-smart-cta data-name={org.name} data-fallback={fallbackBrand?.name ?? ''} data-verb={verb} data-fallback-verb={fbVerb} data-has-own={String(hasOwnApps || !!org.livestreamUrl)} href="#apps" hidden><span data-cta-icon="mobile"><Icon name="phone" /></span><span data-cta-icon="desktop" hidden><Icon name="web" /></span><span data-cta-label></span></a>
         {org.livestreamUrl && <a class="btn btn-secondary btn-lg" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>{verb} live</span></a>}
-        {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener"><Icon name="web" /><span>Website</span></a>}
+        {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener" data-website-btn><Icon name="web" /><span>Website</span></a>}
       </div>
     </div>
   </section>
@@ -115,7 +120,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
                 )}
               </div>
               <div class="app-grid">
-                {g.items.map((i) => <AppLink platform={i.platform} href={i.href} detail={i.detail} fallback={i.fallback} />)}
+                {g.items.map((i) => <AppLink platform={i.platform} href={i.href} label={i.label} detail={i.detail} fallback={i.fallback} site={i.site} />)}
               </div>
             </div>
           ))}
@@ -139,6 +144,17 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
       </div>
 
       <aside class="stack gap-16">
+        <div class="outline-box share-box">
+          <Icon name="external" />
+          <div class="stack gap-8">
+            <p class="body-strong">Share {org.name}</p>
+            <p class="caption muted">One link for every device: it opens the right app store on a phone and the station's site on a computer.</p>
+            <div class="share-row">
+              <input class="share-url" type="text" readonly value={goUrl} aria-label={`Link to share ${org.name}`} />
+              <button class="btn btn-secondary share-copy" type="button" data-copy={goUrl}>Copy</button>
+            </div>
+          </div>
+        </div>
         <div class="outline-box">
           <Icon name="correction" />
           <div class="stack gap-4">
@@ -154,6 +170,21 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
   </div>
 </Base>
 
+<script>
+  // "Copy" for the share link. Falls back to selecting the text if the clipboard is blocked.
+  for (const b of document.querySelectorAll<HTMLButtonElement>('[data-copy]')) {
+    b.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(b.dataset.copy!);
+        b.textContent = 'Copied';
+        setTimeout(() => { b.textContent = 'Copy'; }, 2000);
+      } catch {
+        b.parentElement?.querySelector<HTMLInputElement>('input')?.select();
+      }
+    });
+  }
+</script>
+
 <style>
   .nowrap { white-space: nowrap; }
   .station-hero { padding-block: var(--space-32) var(--space-32); background: linear-gradient(135deg, var(--hero-a), var(--bg) 60%, var(--hero-b)); border-bottom: 1px solid var(--border); }
@@ -165,6 +196,9 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
   .extra-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
   .extra-app { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-8) var(--space-16); padding: var(--space-12) var(--space-4); border-bottom: 1px solid var(--border); }
   .extra-app .row-wrap { gap: var(--space-16); }
+  .share-row { display: flex; gap: var(--space-8); }
+  .share-url { flex: 1; min-width: 0; font: inherit; font-size: 14px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--space-8); }
+  .share-copy { padding: var(--space-8) var(--space-12); }
   .back { text-decoration: none; }
   .back:hover { text-decoration: underline; }
 </style>
