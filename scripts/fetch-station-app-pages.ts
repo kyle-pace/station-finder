@@ -76,7 +76,8 @@ function storeKey(url: string): string {
     url.match(/[?&]id=([\w.]+)/)?.[1] ??
     url.match(/roku\.com\/details\/([0-9a-f]+)/)?.[1] ??
     url.match(/\/(B0[A-Z0-9]{8})/)?.[1] ??
-    url.match(/[?&]appId=(\d+)/)?.[1] ??
+    url.match(/[?&]appId=(\w+)/)?.[1] ??            // LG (digits) and Samsung's older app.do form
+    url.match(/samsung\.com\/.*\/app\/(G\d+)/)?.[1] ??
     url
   );
 }

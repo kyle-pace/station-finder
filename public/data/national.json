@@ -48,17 +48,17 @@
       },
       {
         "platform": "samsung",
-        "kind": "help",
-        "url": "https://help.pbs.org/support/solutions/articles/12000059656-is-the-pbs-app-available-on-my-samsung-smart-tv-",
-        "source": "https://www.pbs.org/pbs-app/",
-        "retrievedAt": "2026-10-18"
+        "kind": "store",
+        "url": "https://www.samsung.com/us/appstore/app/G19045012525/",
+        "source": "https://www.wyomingpbs.org/app/samsungtv (app ID G19045012525; its old app.do link now 404s)",
+        "retrievedAt": "2026-10-20"
       },
       {
         "platform": "lg",
-        "kind": "help",
-        "url": "https://help.pbs.org/support/solutions/articles/12000108270-how-to-install-the-pbs-app-on-lg-tv-",
-        "source": "https://www.pbs.org/pbs-app/",
-        "retrievedAt": "2026-10-18"
+        "kind": "store",
+        "url": "https://us.lgappstv.com/main/tvapp/detail?appId=1286002",
+        "source": "https://www.kvie.org/2026/pbs-kvie-available-to-stream-on-lg/station/ (LG store link, appId 1286002)",
+        "retrievedAt": "2026-10-20"
       },
       {
         "platform": "web",
