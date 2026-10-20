@@ -9,7 +9,7 @@ export const SITE_NAME = 'Find My Station';
 export const REPO = 'https://github.com/kyle-pace/station-finder';
 
 // The anonymous counter's web app URL (see counter/SETUP.md). Empty = counting is off.
-export const COUNTER_URL = '';
+export const COUNTER_URL = 'https://script.google.com/macros/s/AKfycby9rqKTrUDpa_FnbRkpJf2ZR45hx_tRtyZuS5-qNTKhfra0_CK0F6AdOh0vXQya-VTN/exec';
 
 // "Suggest a correction" opens a prefilled public GitHub issue for now (Phase 4 replaces
 // this with a simple form). Station id and name are prefilled so we know what it's about.

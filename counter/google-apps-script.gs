@@ -51,7 +51,7 @@ function doPost(e) {
 }
 
 function doGet() {
-  return ContentService.createTextOutput('Station App Finder counter is running.');
+  return ContentService.createTextOutput('Find My Station counter is running.');
 }
 
 function increment_(row) {
