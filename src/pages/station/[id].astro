@@ -10,6 +10,7 @@ import {
   type Organization, type Platform,
 } from '../../lib/data';
 import { url, correctionUrl } from '../../lib/site';
+import { playId, appleId } from '../manifests/[id].webmanifest';
 
 export function getStaticPaths() {
   return organizations.map((org) => ({ params: { id: org.id }, props: { org } }));
@@ -74,14 +75,14 @@ const sourceKinds = [
 // The station's short link for sharing (see src/pages/go/[id].astro).
 const goUrl = new URL(url(`/go/${org.id}/`), Astro.site).href;
 // QR code for people on a computer: scan with a phone to get the station's app. It encodes
-// the share link, so each phone lands in its own store. Only for stations with their own
+// the share link, which opens a page where the phone offers the station's app. Only for stations with their own
 // phone app; drawn at build time (black on white so it scans in dark mode too).
 const hasPhoneApp = org.apps.some((a) => (a.platform === 'ios' || a.platform === 'android') && !a.extra && a.kind !== 'instructions');
 const qrSvg = hasPhoneApp ? await QRCode.toString(goUrl, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#000000', light: '#ffffff' } }) : null;
 const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, and website.`;
 ---
 
-<Base title={org.name} description={description}>
+<Base title={org.name} description={description} appleAppId={appleId(org)} manifest={playId(org) ? url(`/manifests/${org.id}.webmanifest`) : undefined}>
   <section class="station-hero">
     <div class="wrap stack gap-24">
       <a class="label back" href={url(`/state/${org.state.toLowerCase()}/`)}>← Stations in {stateName}</a>
@@ -106,6 +107,13 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
     </div>
   </section>
 
+  {playId(org) && (
+    <div class="app-bar" data-app-bar hidden>
+      <p><span class="body-strong">{org.name}</span> has an app for your phone.</p>
+      <button class="btn btn-primary" type="button" data-app-install>Get the app</button>
+      <button class="app-bar-close" type="button" data-app-close aria-label="Not now">×</button>
+    </div>
+  )}
   <div class="wrap band">
     <div class="two-col">
       <div class="stack gap-32">
@@ -160,7 +168,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
           <Icon name="external" />
           <div class="stack gap-8">
             <p class="body-strong">Share {org.name}</p>
-            <p class="caption muted">One link for every device: it opens the right app store on a phone and the station's site on a computer.</p>
+            <p class="caption muted">One link for every device: on a phone it opens a page that offers the station's app; on a computer, the station's site.</p>
             <div class="share-row">
               <input class="share-url" type="text" readonly value={goUrl} aria-label={`Link to share ${org.name}`} />
               <button class="btn btn-secondary share-copy" type="button" data-copy={goUrl}>Copy</button>
@@ -183,6 +191,26 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
 </Base>
 
 <script>
+  // Android: when Chrome says this station's app can be offered (its manifest names the
+  // Play Store app), show a small "Get the app" bar that opens Chrome's install prompt.
+  // iPhone and iPad use Apple's own banner from the apple-itunes-app tag instead.
+  type InstallPrompt = Event & { prompt: () => Promise<void> };
+  const bar = document.querySelector<HTMLElement>('[data-app-bar]');
+  if (bar) {
+    let deferred: InstallPrompt | null = null;
+    addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferred = e as InstallPrompt;
+      bar.hidden = false;
+    });
+    bar.querySelector('[data-app-install]')!.addEventListener('click', async () => {
+      bar.hidden = true;
+      await deferred?.prompt();
+      deferred = null;
+    });
+    bar.querySelector('[data-app-close]')!.addEventListener('click', () => { bar.hidden = true; });
+  }
+
   // "Copy" for the share link. Falls back to selecting the text if the clipboard is blocked.
   for (const b of document.querySelectorAll<HTMLButtonElement>('[data-copy]')) {
     b.addEventListener('click', async () => {
@@ -213,6 +241,11 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
   .hero-qr p { margin: 0; }
   .qr-img { flex: none; width: 112px; height: 112px; background: #fff; border-radius: var(--radius-sm); padding: 4px; }
   .qr-img :global(svg) { width: 100%; height: 100%; display: block; }
+  .app-bar { position: sticky; top: 64px; z-index: 15; display: flex; align-items: center; gap: var(--space-12); padding: var(--space-8) var(--space-16); background: var(--surface-raised); border-bottom: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+  .app-bar[hidden] { display: none; }
+  .app-bar p { margin: 0; flex: 1; font-size: 15px; }
+  .app-bar .btn { padding: var(--space-8) var(--space-16); }
+  .app-bar-close { border: 0; background: none; color: var(--text-muted); font-size: 22px; width: 36px; height: 36px; cursor: pointer; }
   .share-row { display: flex; gap: var(--space-8); }
   .share-url { flex: 1; min-width: 0; font: inherit; font-size: 14px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--space-8); }
   .share-copy { padding: var(--space-8) var(--space-12); }

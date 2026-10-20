@@ -93,12 +93,16 @@ scripts/build-data               →  public/data/organizations.json, facilities
   for each device, each linking to that company's own help page (links checked
   2026-10-18). Re-check them now and then; companies move help pages.
 - **Share links** (`/go/<station>/`, `src/pages/go/[id].astro`): one link per station for
-  marketing. On iPhone/Android it opens the station's app store listing (with a moment to
-  choose the browser instead); on a computer it opens the station's web app or website.
+  marketing. It never jumps straight to an app store: on a phone it opens the station's web
+  app (or its page here), where Apple's and Google's "Get the app" banners offer the
+  station's app; on a computer it opens the station's web app or website.
   Each station page shows its link with a Copy button.
   On a computer, stations with their own phone app also show a QR code of the same link
   (drawn at build time with the `qrcode` package) to scan and get the app. Show-level links wait until station
   web portals have stable show URLs.
+- **"Get the app" banners** on station pages: Apple's Smart App Banner (`apple-itunes-app`
+  tag) for the station's iPhone app, and a per-station manifest (`/manifests/<id>.webmanifest`)
+  naming its Play Store app, so Chrome on Android can offer it (shown as a small bar).
 - **On the web, stations go to their own site**: a station's web app if it has one,
   otherwise its website. The PBS and NPR apps are only phone and TV fallbacks.
 - Every value records where it came from (`source`) and when (`retrievedAt`).

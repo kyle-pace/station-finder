@@ -1,14 +1,14 @@
 ---
 // One short link per station for marketing: /go/<station>/ (newsletters, social posts,
-// QR codes, ads). It sends each visitor to the best place for the device they're on:
-//   - iPhone/iPad or Android: the station's app store listing, with a moment to choose
-//     "watch in your browser instead" when the station has a web app or website
-//   - computer or anything else: the station's web app, else its website
-//   - no app for that device: the web app or website, else this site's station page
-// Never a dead end, never the national PBS or NPR site. Same for every station. Nothing is
-// recorded: the choice happens in the browser.
+// QR codes, ads). It never jumps straight to an app store; it opens a page where the
+// phone's own "Get the app" banner can offer the station's app:
+//   - phone or tablet: the station's web app if it has one (station web apps carry
+//     Apple's and Google's app banners), otherwise its page on this site (which does too)
+//   - computer: the station's web app, else its website, else its page here
+// Never the national PBS or NPR site. Same for every station. Nothing is recorded: the
+// choice happens in the browser.
 //
-// Show-level links (/go/<station>/?show=<id>) wait until station portals have stable show
+// Show-level links (/go/<station>/?show=<id>) wait until station web apps have stable show
 // URLs (planned as watch.<station>/show/:id).
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
@@ -26,7 +26,7 @@ const stationPage = url(`/station/${org.id}/`);
 const webApp = own('web');
 const browser = webApp ?? org.website ?? stationPage;
 const browserLabel = webApp ? `${verbFor(org.mediaTypes)} in your browser` : org.website ? `Visit ${org.name}'s website` : `See every way to watch and listen`;
-const targets = { ios: own('ios') ?? null, android: own('android') ?? null, browser, browserIsStationPage: browser === stationPage };
+const targets = { phone: webApp ?? stationPage, computer: browser };
 ---
 
 <Base title={org.name} description={`Get ${org.name} on your phone, tablet, TV, or computer.`} noindex>
@@ -35,43 +35,23 @@ const targets = { ios: own('ios') ?? null, android: own('android') ?? null, brow
     <h1 data-go-title>Choose where to go</h1>
     <p class="muted" data-go-sub>Pick the option for the device you're on.</p>
     <div class="stack gap-12 go-options">
-      {targets.ios && <a class="btn btn-primary btn-lg" href={targets.ios} rel="noopener" data-go-store="ios"><Icon name="phone" /><span>Get {org.name} on the App Store</span></a>}
-      {targets.android && <a class="btn btn-primary btn-lg" href={targets.android} rel="noopener" data-go-store="android"><Icon name="phone" /><span>Get {org.name} on Google Play</span></a>}
-      <a class="btn btn-secondary btn-lg" href={browser} rel="noopener" data-go-browser><Icon name="web" /><span>{browserLabel}</span>{!targets.browserIsStationPage && <span class="small muted go-host">{host(browser)}</span>}</a>
+      <a class="btn btn-secondary btn-lg" href={browser} rel="noopener" data-go-browser><Icon name="web" /><span>{browserLabel}</span>{browser !== stationPage && <span class="small muted go-host">{host(browser)}</span>}</a>
     </div>
     <p class="small"><a href={stationPage}>See every way to get {org.name} →</a></p>
   </div>
 </Base>
 
 <script>
-  // Decide where this device should go, then go. On a phone with a browser alternative,
-  // wait a moment so "watch in your browser instead" can be tapped; any tap cancels.
+  // Phones and tablets go to a page with the "Get the app" banner; computers to the
+  // station's site. Without JavaScript, the links on the page do the same job.
   import { detectDevice } from '../../scripts/device-detect';
 
   const root = document.querySelector<HTMLElement>('[data-go]');
   if (root) {
-    const t = JSON.parse(root.dataset.go!) as { ios: string | null; android: string | null; browser: string; browserIsStationPage: boolean };
-    const name = root.dataset.name!;
-    const device = detectDevice();
-    const store = device === 'ios' ? t.ios : device === 'android' ? t.android : null;
-    const title = root.querySelector('[data-go-title]')!;
-    const sub = root.querySelector('[data-go-sub]')!;
-    // Show only the option for this device, plus the browser one.
-    root.querySelectorAll<HTMLElement>('[data-go-store]').forEach((a) => { a.hidden = a.dataset.goStore !== device; });
-    if (store) {
-      title.textContent = `Taking you to ${device === 'ios' ? 'the App Store' : 'Google Play'}…`;
-      sub.textContent = `to get the ${name} app. Rather watch or listen in your browser? Tap below.`;
-      let cancelled = false;
-      root.addEventListener('pointerdown', () => { cancelled = true; }, { once: true });
-      setTimeout(() => { if (!cancelled) location.replace(store); }, 2000);
-    } else if (!t.browserIsStationPage || device === 'desktop') {
-      title.textContent = `Taking you to ${name}…`;
-      sub.textContent = '';
-      location.replace(t.browser);
-    } else {
-      title.textContent = `Get ${name}`;
-      sub.textContent = 'Here are your options.';
-    }
+    const t = JSON.parse(root.dataset.go!) as { phone: string; computer: string };
+    root.querySelector('[data-go-title]')!.textContent = `Taking you to ${root.dataset.name}…`;
+    root.querySelector('[data-go-sub]')!.textContent = '';
+    location.replace(detectDevice() === 'desktop' ? t.computer : t.phone);
   }
 </script>
 

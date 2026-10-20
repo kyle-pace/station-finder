@@ -8,12 +8,16 @@ interface Props {
   title?: string;
   description?: string;
   noindex?: boolean; // keep a page out of search results (e.g. /go/ redirect pages)
+  appleAppId?: string; // station's iPhone app: Safari shows Apple's "Get the app" banner
+  manifest?: string; // station's manifest naming its Android app (Chrome's "Get the app")
 }
 
 const {
   title,
   description = 'Find your local public media station and every way to watch and listen.',
   noindex = false,
+  appleAppId,
+  manifest,
 } = Astro.props;
 const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
 const here = Astro.url.pathname;
@@ -27,6 +31,8 @@ const here = Astro.url.pathname;
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
+    {appleAppId && <meta name="apple-itunes-app" content={`app-id=${appleAppId}`} />}
+    {manifest && <link rel="manifest" href={manifest} />}
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e1118" media="(prefers-color-scheme: dark)" />
