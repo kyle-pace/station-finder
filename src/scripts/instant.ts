@@ -5,8 +5,12 @@
 // "Use my location": the pin button in the box, and the first option when the box is
 // empty. Only offered when the browser supports it. The coordinates are rounded (~1 km)
 // and only go into this site's own search URL; they're never sent anywhere else.
+//
+// Picking a station here counts as one search, the same anonymous count the results page
+// makes (src/scripts/count-search.ts). "See all results" leaves the count to that page.
 
-import { search, loadIndex, metaLine, formatMiles, stationUrl, type Result } from '../lib/search-core';
+import { search, loadIndex, metaLine, formatMiles, stationUrl, type Result, type Search } from '../lib/search-core';
+import { countSearch } from './count-search';
 
 const MAX = 6;
 const canLocate = 'geolocation' in navigator;
@@ -18,6 +22,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
   let active = -1;
   let seq = 0;
   let timer: number | undefined;
+  let last: { q: string; r: Search } | undefined; // what the dropdown is showing
 
   const options = () => [...list.querySelectorAll<HTMLLIElement>('li[role="option"]')];
   const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); active = -1; };
@@ -101,6 +106,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
   async function update() {
     const q = input.value.trim();
     const mine = ++seq;
+    last = undefined;
     if (q.length < 2) {
       if (canLocate && document.activeElement === input) { list.replaceChildren(locateOption()); active = -1; open(); }
       else close();
@@ -113,6 +119,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
     }
     const r = await search(q);
     if (mine !== seq) return; // a newer keystroke already won
+    last = { q, r };
     const items: HTMLLIElement[] = [];
     if (r.kind === 'zip-unknown') items.push(note(`We couldn't find ZIP code ${r.zip}`));
     else {
@@ -137,8 +144,11 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
 
   input.addEventListener('focus', () => { loadIndex(); }, { once: true }); // warm the index
   input.addEventListener('focus', () => { if (input.value.trim().length < 2) update(); });
+  const picked = (a: Element) => { if (last && !a.classList.contains('s-all')) countSearch(last.q, last.r); };
   list.addEventListener('click', (e) => {
-    if ((e.target as Element).closest('[data-locate]')) { e.preventDefault(); locate(); }
+    if ((e.target as Element).closest('[data-locate]')) { e.preventDefault(); locate(); return; }
+    const a = (e.target as Element).closest('a');
+    if (a) picked(a);
   });
   input.addEventListener('input', () => { clearTimeout(timer); timer = window.setTimeout(update, 120); });
   input.addEventListener('keydown', (e) => {
@@ -149,7 +159,7 @@ for (const form of document.querySelectorAll<HTMLFormElement>('[data-search-form
     else if (e.key === 'Enter' && active >= 0) {
       e.preventDefault();
       const a = options()[active].querySelector('a')!;
-      if (a.dataset.locate !== undefined) locate(); else location.href = a.href;
+      if (a.dataset.locate !== undefined) locate(); else { picked(a); location.href = a.href; }
     }
   });
   input.addEventListener('blur', () => setTimeout(close, 150)); // let a click on a result land first

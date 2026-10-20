@@ -1,9 +1,8 @@
 // Results page: reads ?q= (or ?near=lat,lng from "Use my location") and renders station
 // cards from the <template> in search.astro. Search rules live in src/lib/search-core.ts.
 
-import { search, metaLine, formatMiles, stationUrl, looksLikeCallSign, type Result } from '../lib/search-core';
-import { count } from './count';
-import { STATE_NAMES } from '../lib/states';
+import { search, metaLine, formatMiles, stationUrl, type Result } from '../lib/search-core';
+import { countSearch } from './count-search';
 
 const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!;
 
@@ -62,19 +61,7 @@ async function run(): Promise<void> {
 
   const r = await search(q, near);
 
-  // Anonymous count (SPEC section 8): input type, result bucket, and only a ZIP's first 3
-  // digits or a state code. Never the search text. "Use my location" searches aren't counted.
-  if (r.kind !== 'near') {
-    const n = r.kind === 'zip-unknown' ? 0 : r.results.length;
-    const results = n === 0 ? 'none' : n <= 3 ? '1-3' : '4+';
-    const stateCode = Object.entries(STATE_NAMES).find(([code, name]) => code === q.toUpperCase() || name.toLowerCase() === q.toLowerCase())?.[0];
-    const fields = r.kind === 'zip' || r.kind === 'zip-unknown' ? { input_type: 'zip', area: r.zip.slice(0, 3) }
-      : looksLikeCallSign(q) ? { input_type: 'callsign', area: '' }
-      : stateCode ? { input_type: 'state', area: stateCode }
-      : { input_type: 'name', area: '' };
-    count('search', { ...fields, results });
-    if (n === 0) count('no_results', fields);
-  }
+  countSearch(q, r); // anonymous count (SPEC section 8)
   if (r.kind === 'zip-unknown') {
     list.replaceChildren();
     heading.textContent = `We couldn't find ZIP code ${r.zip}`;
