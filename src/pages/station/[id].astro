@@ -20,18 +20,19 @@ const { org } = Astro.props as { org: Organization };
 // national app of its network (the PBS app for PBS stations) for that platform, labeled
 // clearly as the network's app so it's never mistaken for the station's own. Stations with
 // both TV and radio get both networks' apps (PBS to watch, NPR to listen). On the web, the
-// station's own site is the destination: its web app if it has one, otherwise its website,
-// never pbs.org or npr.org.
+// station's own site is the destination: its web app if it has one (a "Web" card), otherwise
+// its website (the hero button, primary on a computer). Never pbs.org or npr.org.
 const fallbackBrands = national.filter((b) => org.networks.map((n) => n.toLowerCase()).includes(b.id));
 const fallbackBrand = fallbackBrands[0];
-interface Item { platform: Platform; href: string; label?: string; detail?: string; fallback: boolean; site?: boolean }
+interface Item { platform: Platform; href: string; label?: string; detail?: string; fallback: boolean }
 const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
   const own = org.apps.find((a) => a.platform === platform && !a.extra);
   if (own) {
     const detail = own.kind === 'instructions' ? `${org.name} app · how to get it` : platform === 'web' ? host(own.url) : undefined;
     return [{ platform, href: own.url, detail, fallback: false }];
   }
-  if (platform === 'web') return org.website ? [{ platform, href: org.website, label: 'Station website', detail: host(org.website), fallback: false, site: true }] : [];
+  // The website itself lives in the hero (one button, never a duplicate card).
+  if (platform === 'web') return [];
   return fallbackBrands.flatMap((brand): Item[] => {
     const fb = brand.apps.find((a) => a.platform === platform);
     if (!fb) return [];
@@ -39,7 +40,7 @@ const items: Item[] = PLATFORM_ORDER.flatMap((platform): Item[] => {
     return [{ platform, href: fb.url, detail: `${brand.name} app · ${where}`, fallback: true }];
   });
 });
-const hasOwnApps = items.some((i) => !i.fallback && !i.site);
+const hasOwnApps = items.some((i) => !i.fallback);
 
 // Extra apps (a station's other apps, e.g. KET Legislative Coverage), grouped by name.
 const extraApps = [...org.apps.filter((a) => a.extra).reduce((m, a) => {
@@ -112,7 +113,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
         {/* Filled in by the device script with the best link for this visitor's device. */}
         <a class="btn btn-primary btn-lg" data-smart-cta data-name={org.name} data-fallback={fallbackBrand?.name ?? ''} data-verb={verb} data-fallback-verb={fbVerb} data-has-own={String(hasOwnApps || !!org.livestreamUrl)} href="#apps" hidden><span data-cta-icon="mobile"><Icon name="phone" /></span><span data-cta-icon="desktop" hidden><Icon name="web" /></span><span data-cta-label></span></a>
         {org.livestreamUrl && <a class="btn btn-secondary btn-lg" href={org.livestreamUrl} rel="noopener"><Icon name="live" /><span>{verb} live</span></a>}
-        {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener" data-website-btn><Icon name="web" /><span>Website</span></a>}
+        {org.website && <a class="btn btn-secondary btn-lg" href={org.website} rel="noopener" data-website-btn data-name={org.name}><Icon name="web" /><span>Website</span></a>}
       </div>
     </div>
   </section>
@@ -143,7 +144,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
                 )}
               </div>
               <div class="app-grid">
-                {g.items.map((i) => <AppLink platform={i.platform} href={i.href} label={i.label} detail={i.detail} fallback={i.fallback} site={i.site} />)}
+                {g.items.map((i) => <AppLink platform={i.platform} href={i.href} label={i.label} detail={i.detail} fallback={i.fallback} />)}
               </div>
             </div>
           ))}

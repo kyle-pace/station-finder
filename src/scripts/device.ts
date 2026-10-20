@@ -23,14 +23,11 @@ function smartCta(link: HTMLAnchorElement, device: Device): void {
   const label = cta.querySelector('[data-cta-label]')!;
   cta.querySelector<HTMLElement>('[data-cta-icon="mobile"]')!.hidden = device === 'desktop';
   cta.querySelector<HTMLElement>('[data-cta-icon="desktop"]')!.hidden = device !== 'desktop';
-  const isSite = link.hasAttribute('data-site');
-  if (device === 'desktop') label.textContent = isSite ? `Visit ${name}'s website` : isFallback ? `${cta.dataset.fallbackVerb} with the ${cta.dataset.fallback} app` : `${cta.dataset.verb} ${name} in your browser`;
+  if (device === 'desktop') label.textContent = isFallback ? `${cta.dataset.fallbackVerb} with the ${cta.dataset.fallback} app` : `${cta.dataset.verb} ${name} in your browser`;
   else label.textContent = isFallback ? `Get the ${cta.dataset.fallback} app` : `Get ${name} on ${DEVICE_WORDS[device]}`;
   cta.href = link.href;
   if (link.rel) cta.rel = link.rel;
   cta.hidden = false;
-  // The big button already goes to the station's website: don't repeat it beside it.
-  if (isSite) document.querySelectorAll<HTMLElement>('[data-website-btn]').forEach((b) => { b.hidden = true; });
 }
 
 function apply(): void {
@@ -38,6 +35,14 @@ function apply(): void {
 
   // On a computer, show the "scan to get the app" QR code (it's for moving to a phone).
   if (device === 'desktop') document.querySelectorAll<HTMLElement>('[data-qr]').forEach((q) => { q.hidden = false; });
+
+  // On a computer with no web app to offer, the station's website is the main action:
+  // make the hero's Website button the primary one (no duplicate button or card).
+  const site = document.querySelector<HTMLAnchorElement>('[data-website-btn]');
+  if (device === 'desktop' && site && !document.querySelector('.app-link[data-platform="web"]')) {
+    site.classList.replace('btn-secondary', 'btn-primary');
+    site.querySelector('span')!.textContent = `Visit ${site.dataset.name}'s website`;
+  }
 
   // Station page app links.
   const match = document.querySelector<HTMLElement>(`.app-link[data-platform="${PLATFORM_FOR[device]}"]`);
