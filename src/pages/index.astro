@@ -120,36 +120,16 @@ const examplePool = organizations.flatMap((o) => {
 
 
 <style>
-  /* The teal brand panel. Text on it is light; the search box and cards keep their own
-     colors. Map dots switch to lighter shades so they read on teal. */
+  /* Soft color glows behind the hero, in both light and dark mode. */
   .hero {
     position: relative; overflow: hidden; isolation: isolate;
     background:
-      radial-gradient(900px 420px at 90% -10%, color-mix(in srgb, var(--warm) 22%, transparent), transparent 60%),
-      var(--brand-panel);
-    --tv: #c3cbff; --radio: #ffb59c;
+      radial-gradient(1200px 500px at 85% -10%, color-mix(in srgb, var(--warm) 14%, transparent), transparent 60%),
+      radial-gradient(900px 500px at 0% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%),
+      linear-gradient(135deg, var(--hero-a) 0%, var(--bg) 55%, var(--hero-b) 100%);
+    border-bottom: 1px solid var(--border);
   }
-  /* Dark mode keeps the original soft-glow hero instead of a flat teal block. */
-  @media (prefers-color-scheme: dark) {
-    .hero {
-      background:
-        radial-gradient(1200px 500px at 85% -10%, color-mix(in srgb, var(--warm) 14%, transparent), transparent 60%),
-        radial-gradient(900px 500px at 0% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%),
-        linear-gradient(135deg, var(--hero-a) 0%, var(--bg) 55%, var(--hero-b) 100%);
-      border-bottom: 1px solid var(--border);
-      --tv: #8fb0ff; --radio: #ff8a5c;
-    }
-    .hero :global(.land) { fill: color-mix(in srgb, var(--tv) 7%, transparent); stroke: color-mix(in srgb, var(--tv) 18%, transparent); }
-  }
-  .hero h1, .hero .display { color: #ffffff; }
-  .hero .lede { color: #d6e8e6; }
-  .hero .eyebrow { color: #ffd2c2; }
-  .hero :global(.examples) { color: #d6e8e6; }
-  .hero :global(.btn-primary) { background: var(--warm); color: #0e1a1b; }
-  .hero :global(.btn-primary:hover) { background: #ff9478; }
-  .hero :global(.land) { fill: rgb(255 255 255 / 0.07); stroke: rgb(255 255 255 / 0.22); }
-  .hero .hero-visual figcaption .caption { color: #d6e8e6; }
-  .hero .hero-visual figcaption .label { color: #ffd2c2; }
+  .hero :global(.land) { fill: color-mix(in srgb, var(--tv) 7%, transparent); stroke: color-mix(in srgb, var(--tv) 18%, transparent); }
   .hero-inner { display: grid; gap: var(--space-40, 40px); align-items: center; padding-block: var(--space-48) var(--space-48); }
   @media (min-width: 701px) { .hero-inner { padding-block: 72px 80px; } }
   .hero-visual { margin: 0; display: flex; flex-direction: column; gap: var(--space-8); min-width: 0; }
