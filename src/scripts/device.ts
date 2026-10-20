@@ -36,6 +36,9 @@ function smartCta(link: HTMLAnchorElement, device: Device): void {
 function apply(): void {
   const device = detectDevice();
 
+  // On a computer, show the "scan to get the app" QR code (it's for moving to a phone).
+  if (device === 'desktop') document.querySelectorAll<HTMLElement>('[data-qr]').forEach((q) => { q.hidden = false; });
+
   // Station page app links.
   const match = document.querySelector<HTMLElement>(`.app-link[data-platform="${PLATFORM_FOR[device]}"]`);
   if (match) {

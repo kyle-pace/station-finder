@@ -1,6 +1,7 @@
 ---
 // One page per station, generated at build time from public/data/organizations.json.
 // Layout is identical for every station; nothing here depends on who built its apps.
+import QRCode from 'qrcode';
 import Base from '../../layouts/Base.astro';
 import AppLink from '../../components/AppLink.astro';
 import Icon from '../../components/Icon.astro';
@@ -72,6 +73,11 @@ const sourceKinds = [
 ].filter(Boolean);
 // The station's short link for sharing (see src/pages/go/[id].astro).
 const goUrl = new URL(url(`/go/${org.id}/`), Astro.site).href;
+// QR code for people on a computer: scan with a phone to get the station's app. It encodes
+// the share link, so each phone lands in its own store. Only for stations with their own
+// phone app; drawn at build time (black on white so it scans in dark mode too).
+const hasPhoneApp = org.apps.some((a) => (a.platform === 'ios' || a.platform === 'android') && !a.extra && a.kind !== 'instructions');
+const qrSvg = hasPhoneApp ? await QRCode.toString(goUrl, { type: 'svg', margin: 1, errorCorrectionLevel: 'M', color: { dark: '#000000', light: '#ffffff' } }) : null;
 const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, and website.`;
 ---
 
@@ -84,6 +90,12 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
           <h1 class="display">{org.name}</h1>
           <p class="muted">{metaLine(org)}{calls.length > 0 && <> · On air as {calls.slice(0, 3).map((c, i) => <>{i > 0 && ', '}<span class="nowrap">{c}</span></>)}{calls.length > 3 && <> and {calls.length - 3} more</>}</>}</p>
         </div>
+        {qrSvg && (
+          <div class="hero-qr" data-qr hidden>
+            <div class="qr-img" role="img" aria-label={`QR code that opens the ${org.name} app in your phone's app store`} set:html={qrSvg} />
+            <p class="small"><span class="body-strong">On your phone?</span><br />Scan to get the {org.name} app.</p>
+          </div>
+        )}
       </div>
       <div class="row-wrap hero-actions">
         {/* Filled in by the device script with the best link for this visitor's device. */}
@@ -196,6 +208,11 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
   .extra-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
   .extra-app { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-8) var(--space-16); padding: var(--space-12) var(--space-4); border-bottom: 1px solid var(--border); }
   .extra-app .row-wrap { gap: var(--space-16); }
+  .hero-qr { margin-left: auto; display: flex; align-items: center; gap: var(--space-16); padding: var(--space-12); border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface-raised); box-shadow: var(--shadow-sm); max-width: 300px; }
+  .hero-qr[hidden] { display: none; }
+  .hero-qr p { margin: 0; }
+  .qr-img { flex: none; width: 112px; height: 112px; background: #fff; border-radius: var(--radius-sm); padding: 4px; }
+  .qr-img :global(svg) { width: 100%; height: 100%; display: block; }
   .share-row { display: flex; gap: var(--space-8); }
   .share-url { flex: 1; min-width: 0; font: inherit; font-size: 14px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--space-8); }
   .share-copy { padding: var(--space-8) var(--space-12); }

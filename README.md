@@ -95,7 +95,9 @@ scripts/build-data               →  public/data/organizations.json, facilities
 - **Share links** (`/go/<station>/`, `src/pages/go/[id].astro`): one link per station for
   marketing. On iPhone/Android it opens the station's app store listing (with a moment to
   choose the browser instead); on a computer it opens the station's web app or website.
-  Each station page shows its link with a Copy button. Show-level links wait until station
+  Each station page shows its link with a Copy button.
+  On a computer, stations with their own phone app also show a QR code of the same link
+  (drawn at build time with the `qrcode` package) to scan and get the app. Show-level links wait until station
   web portals have stable show URLs.
 - **On the web, stations go to their own site**: a station's web app if it has one,
   otherwise its website. The PBS and NPR apps are only phone and TV fallbacks.
