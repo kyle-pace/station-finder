@@ -9,6 +9,7 @@ interface Props {
   description?: string;
   noindex?: boolean; // keep a page out of search results (e.g. /go/ redirect pages)
   appleAppId?: string; // station's iPhone app: Safari shows Apple's "Get the app" banner
+  ogImage?: string; // share-card image path (defaults to the site's card)
 }
 
 const {
@@ -16,7 +17,11 @@ const {
   description = 'Find your local public media station and every way to watch and listen.',
   noindex = false,
   appleAppId,
+  ogImage = '/og/site.png',
 } = Astro.props;
+// Absolute URLs for share previews (social, Slack, iMessage need full URLs).
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const imageUrl = new URL(url(ogImage), Astro.site).href;
 const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
 const here = Astro.url.pathname;
 ---
@@ -30,6 +35,15 @@ const here = Astro.url.pathname;
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
     {appleAppId && <meta name="apple-itunes-app" content={`app-id=${appleAppId}`} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={title ?? SITE_NAME} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e1118" media="(prefers-color-scheme: dark)" />

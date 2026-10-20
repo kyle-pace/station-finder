@@ -29,7 +29,7 @@ const browserLabel = webApp ? `${verbFor(org.mediaTypes)} in your browser` : org
 const targets = { phone: webApp ?? stationPage, computer: browser };
 ---
 
-<Base title={org.name} description={`Get ${org.name} on your phone, tablet, TV, or computer.`} noindex>
+<Base title={org.name} description={`Get ${org.name} on your phone, tablet, TV, or computer.`} noindex ogImage={`/og/${org.id}.png`}>
   <div class="wrap narrow band go" data-go={JSON.stringify(targets)} data-name={org.name}>
     <p class="eyebrow">{org.name}</p>
     <h1 data-go-title>Choose where to go</h1>

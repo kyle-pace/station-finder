@@ -85,7 +85,7 @@ const qrSvg = hasPhoneApp ? await QRCode.toString(goUrl, { type: 'svg', margin: 
 const description = `Every way to watch and listen to ${org.name}: apps for phone, tablet, and TV, and website.`;
 ---
 
-<Base title={org.name} description={description} appleAppId={appleAppId}>
+<Base title={org.name} description={description} appleAppId={appleAppId} ogImage={`/og/${org.id}.png`}>
   {(phoneApps.ios || phoneApps.android) && (
     <div class="app-banner" slot="banner" data-app-banner data-ios={phoneApps.ios} data-android={phoneApps.android} hidden>
       <span class="app-banner-icon" aria-hidden="true"><Icon name="phone" /></span>

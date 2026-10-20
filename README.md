@@ -103,6 +103,9 @@ scripts/build-data               →  public/data/organizations.json, facilities
 - **"Get the app" banner** on station pages: on a phone, a slim bar at the top links the
   station's own app for that device (App Store or Google Play). iPhone Safari shows Apple's
   Smart App Banner instead (from the `apple-itunes-app` tag), so the two never stack.
+- **Share previews**: every page has Open Graph tags, and each station gets its own
+  1200×630 card (`/og/<station>.png`, `src/lib/og.ts`), drawn at build time with satori and
+  resvg in Figtree. Same template for every station; no station or network logos.
 - **On the web, stations go to their own site**: a station's web app if it has one,
   otherwise its website. The PBS and NPR apps are only phone and TV fallbacks.
 - Every value records where it came from (`source`) and when (`retrievedAt`).
