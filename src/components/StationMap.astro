@@ -766,13 +766,13 @@ const FILTERS = [
   .legend > span { display: inline-flex; align-items: center; gap: 6px; }
 
   /* Legend and list swatches: the same shapes as the markers. */
-  .key, :global(.key) { display: inline-block; width: 10px; height: 10px; flex: none; border-radius: 3px; background: var(--accent); }
-  .key.radio, :global(.key.radio) { border-radius: 50%; background: var(--warm); }
-  .key.both, :global(.key.both) { background: linear-gradient(90deg, var(--accent) 50%, var(--warm) 50%); }
+  .key, :global(.key) { display: inline-block; width: 10px; height: 10px; flex: none; border-radius: 3px; background: var(--tv); }
+  .key.radio, :global(.key.radio) { border-radius: 50%; background: var(--radio); }
+  .key.both, :global(.key.both) { background: linear-gradient(90deg, var(--tv) 50%, var(--radio) 50%); }
   .key.group {
     width: 18px; height: 18px; border-radius: 50%; display: inline-grid; place-items: center;
     background: var(--surface-raised); color: var(--text); font-size: 10px; font-weight: 700; line-height: 1;
-    border: 2px solid var(--accent); border-bottom-color: var(--warm); border-left-color: var(--warm);
+    border: 2px solid var(--tv); border-bottom-color: var(--radio); border-left-color: var(--radio);
   }
 
   .map-layout { display: grid; gap: var(--space-16); }
@@ -795,11 +795,11 @@ const FILTERS = [
   /* Markers are drawn at unit size and scaled so they stay the same size on screen. */
   .dot .m { transform: scale(var(--dot-r, 4)); }
   .dot .hit { fill: transparent; }
-  .dot .shape { fill: var(--accent); stroke: var(--bg); stroke-width: 1.25px; vector-effect: non-scaling-stroke; }
-  .dot.radio .shape { fill: var(--warm); }
+  .dot .shape { fill: var(--tv); stroke: var(--bg); stroke-width: 1.25px; vector-effect: non-scaling-stroke; }
+  .dot.radio .shape { fill: var(--radio); }
   .dot.both .shape { fill: url(#map-split); }
-  .stop-tv { stop-color: var(--accent); }
-  .stop-radio { stop-color: var(--warm); }
+  .stop-tv { stop-color: var(--tv); }
+  .stop-radio { stop-color: var(--radio); }
   .dot { cursor: pointer; }
   .dot:hover .m, .dot:focus-visible .m, .dot.hl .m { transform: scale(calc(var(--dot-r, 4) * 1.55)); }
   .dot.hl .shape, .dot:focus-visible .shape { stroke: var(--text); stroke-width: 2px; }
@@ -809,8 +809,8 @@ const FILTERS = [
   :global(.cluster) { cursor: pointer; }
   :global(.cluster) :global(.c-bg) { fill: var(--surface-raised); stroke: var(--bg); stroke-width: 1px; vector-effect: non-scaling-stroke; }
   :global(.cluster) :global(.c-tv), :global(.cluster) :global(.c-radio) { fill: none; }
-  :global(.cluster) :global(.c-tv) { stroke: var(--accent); }
-  :global(.cluster) :global(.c-radio) { stroke: var(--warm); }
+  :global(.cluster) :global(.c-tv) { stroke: var(--tv); }
+  :global(.cluster) :global(.c-radio) { stroke: var(--radio); }
   :global(.cluster) :global(text) { fill: var(--text); font-weight: 700; text-anchor: middle; pointer-events: none; font-variant-numeric: tabular-nums; }
   :global(.cluster:hover) :global(.c-bg), :global(.cluster.hl) :global(.c-bg), :global(.cluster:focus-visible) :global(.c-bg) { fill: var(--accent-subtle); }
   :global(.cluster:focus-visible) { outline: none; }

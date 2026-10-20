@@ -126,21 +126,21 @@ const stations = live
 <style>
   .dot-map { width: 100%; height: auto; display: block; }
   .land { fill: color-mix(in srgb, var(--accent) 7%, transparent); stroke: color-mix(in srgb, var(--accent) 18%, transparent); stroke-width: 1.2; }
-  circle { fill: var(--accent); opacity: 0.55; }
-  circle.radio { fill: var(--warm); }
+  circle { fill: var(--tv); opacity: 0.55; }
+  circle.radio { fill: var(--radio); }
 
   /* Live map: ripples and the station tag. TV is blue, radio orange. */
   .live-map { position: relative; }
   .live-map :global(.ripple circle) {
-    fill: none; stroke: var(--accent); stroke-width: 2; opacity: 0;
+    fill: none; stroke: var(--tv); stroke-width: 2; opacity: 0;
     transform-box: fill-box; transform-origin: center;
     animation: ripple 3s cubic-bezier(0.2, 0.6, 0.3, 1) forwards;
   }
-  .live-map :global(.ripple.k1 circle) { stroke: var(--warm); }
+  .live-map :global(.ripple.k1 circle) { stroke: var(--radio); }
   .live-map :global(.ripple.named circle) { stroke-width: 2.5; animation-duration: 3.6s; }
-  .live-map :global(.ripple .core) { fill: var(--accent); stroke: var(--bg); stroke-width: 1.5; opacity: 1; animation: core 5.6s ease-out forwards; }
-  .live-map :global(.ripple.k1 .core) { fill: var(--warm); }
-  .live-map :global(.ripple.k2 .core) { fill: var(--warm); stroke: var(--accent); stroke-width: 2.5; }
+  .live-map :global(.ripple .core) { fill: var(--tv); stroke: var(--bg); stroke-width: 1.5; opacity: 1; animation: core 5.6s ease-out forwards; }
+  .live-map :global(.ripple.k1 .core) { fill: var(--radio); }
+  .live-map :global(.ripple.k2 .core) { fill: var(--radio); stroke: var(--tv); stroke-width: 2.5; }
   @keyframes ripple { 0% { transform: scale(0.15); opacity: 0.85; } 100% { transform: scale(1); opacity: 0; } }
   @keyframes core { 0%, 85% { opacity: 1; } 100% { opacity: 0; } }
 
@@ -155,11 +155,12 @@ const stations = live
   .on-air-tag.show { opacity: 1; }
   .on-air-tag:hover .name { text-decoration: underline; }
   .on-air-tag .kind {
-    flex: none; padding: 2px 8px; border-radius: var(--radius-full); font-size: 12px; font-weight: 700;
-    color: var(--bg); background: var(--accent);
+    flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: var(--radius-full);
+    font-size: 12px; font-weight: 700; color: var(--text); background: var(--surface); border: 1px solid var(--border);
   }
-  .on-air-tag[data-k='1'] .kind { background: var(--warm-ink); }
-  .on-air-tag[data-k='2'] .kind { background: linear-gradient(90deg, var(--accent) 50%, var(--warm-ink) 50%); }
+  .on-air-tag .kind::before { content: ''; width: 8px; height: 8px; border-radius: 2px; background: var(--tv); }
+  .on-air-tag[data-k='1'] .kind::before { border-radius: 50%; background: var(--radio); }
+  .on-air-tag[data-k='2'] .kind::before { background: linear-gradient(90deg, var(--tv) 50%, var(--radio) 50%); }
   .on-air-tag .who { display: flex; flex-direction: column; min-width: 0; }
   .on-air-tag .name { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .on-air-tag .place { color: var(--text-muted); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

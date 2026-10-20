@@ -1,25 +1,29 @@
-/* Design tokens. Typeface: Figtree (self-hosted via @fontsource-variable/figtree, imported
-   in Base.astro), so there are no requests to font services. Warm colors are for brand
-   illustration only, never to set one station apart from another. */
+/* Design tokens: "Find My Station", direction D (Play Pin). Typeface: Plus Jakarta Sans
+   (self-hosted via @fontsource/plus-jakarta-sans, imported in Base.astro), so there are no
+   requests to font services. Brand colors (teal, coral) are never used to set one station
+   apart from another. The map has its own colors (--tv, --radio), separate from the brand. */
 :root {
   --bg: #ffffff;
-  --surface: #f4f6fa;
+  --surface: #f4f8f7;
   --surface-raised: #ffffff;
-  --text: #121826;
-  --text-muted: #525a6b;
-  --border: #dde2ea;
-  --accent: #1a4fd8;
-  --accent-strong: #133fb3;
-  --accent-subtle: #eaf0ff;
+  --text: #0e1a1b;
+  --text-muted: #4e5f60;
+  --border: #d9e6e4;
+  --accent: #0f5e63;
+  --accent-strong: #0a4549;
+  --accent-subtle: #e3f1ef;
   --on-accent: #ffffff;
-  --warm: #f26b3a;   /* brand only */
-  --warm-ink: #c2410c; /* orange for text and small labels (4.5:1 on light backgrounds) */
-  --sun: #f7b733;    /* brand only */
-  --hero-a: #eef3ff;
-  --hero-b: #fff4ec;
-  --shadow-sm: 0 1px 2px rgb(18 24 38 / 0.06), 0 1px 1px rgb(18 24 38 / 0.04);
-  --shadow-md: 0 6px 20px rgb(18 24 38 / 0.08), 0 2px 6px rgb(18 24 38 / 0.05);
-  --shadow-lg: 0 16px 40px rgb(18 24 38 / 0.14);
+  --warm: #ff7a59;     /* coral: brand accent, buttons on teal */
+  --warm-ink: #b4401e; /* coral for text and small labels (4.5:1 on light backgrounds) */
+  --sun: #ff7a59;
+  --tv: #3e4bc9;       /* map: TV stations */
+  --radio: #c2410c;    /* map: radio stations */
+  --hero-a: #e3f1ef;
+  --hero-b: #fff1ec;
+  --brand-panel: #0f5e63; /* the homepage hero */
+  --shadow-sm: 0 1px 2px rgb(14 26 27 / 0.06), 0 1px 1px rgb(14 26 27 / 0.04);
+  --shadow-md: 0 6px 20px rgb(14 26 27 / 0.08), 0 2px 6px rgb(14 26 27 / 0.05);
+  --shadow-lg: 0 16px 40px rgb(14 26 27 / 0.14);
 
   --space-4: 4px; --space-8: 8px; --space-12: 12px; --space-16: 16px;
   --space-24: 24px; --space-32: 32px; --space-48: 48px; --space-64: 64px;
@@ -31,21 +35,24 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0e1118;
-    --surface: #161a23;
-    --surface-raised: #1c212c;
-    --text: #edf0f6;
-    --text-muted: #a9b1c2;
-    --border: #2b3240;
-    --accent: #8fb0ff;
-    --accent-strong: #b3c9ff;
-    --accent-subtle: #1b2640;
-    --on-accent: #0b1430;
-    --warm: #ff8a5c;
-    --warm-ink: #ff8a5c;
-    --sun: #ffc75a;
-    --hero-a: #121a2d;
-    --hero-b: #1d1714;
+    --bg: #0b1516;
+    --surface: #122223;
+    --surface-raised: #172a2c;
+    --text: #e6f0ef;
+    --text-muted: #9db3b1;
+    --border: #24393b;
+    --accent: #3fb8b0;
+    --accent-strong: #6fd3cc;
+    --accent-subtle: #12302f;
+    --on-accent: #062022;
+    --warm: #ff8f73;
+    --warm-ink: #ff8f73;
+    --sun: #ff8f73;
+    --tv: #8e9bff;
+    --radio: #ff8f5c;
+    --hero-a: #0f2a2b;
+    --hero-b: #241713;
+    --brand-panel: #0f3436;
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
     --shadow-md: 0 6px 20px rgb(0 0 0 / 0.35);
     --shadow-lg: 0 16px 40px rgb(0 0 0 / 0.5);
@@ -58,7 +65,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 400 17px/26px "Figtree Variable", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 400 17px/26px "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }

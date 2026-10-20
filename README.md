@@ -1,4 +1,4 @@
-# Station App Finder
+# Find My Station
 
 A public, neutral directory that helps anyone in the US find their local public media
 station (PBS, NPR, and independent) and every way to watch and listen: the station's own

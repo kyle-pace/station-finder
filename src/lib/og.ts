@@ -6,16 +6,16 @@ import { join } from 'node:path';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 
-const fontDir = join(process.cwd(), 'node_modules', '@fontsource', 'figtree', 'files');
+const fontDir = join(process.cwd(), 'node_modules', '@fontsource', 'plus-jakarta-sans', 'files');
 const fonts = [
-  { name: 'Figtree', data: readFileSync(join(fontDir, 'figtree-latin-400-normal.woff')), weight: 400 as const, style: 'normal' as const },
-  { name: 'Figtree', data: readFileSync(join(fontDir, 'figtree-latin-700-normal.woff')), weight: 700 as const, style: 'normal' as const },
-  { name: 'Figtree', data: readFileSync(join(fontDir, 'figtree-latin-800-normal.woff')), weight: 800 as const, style: 'normal' as const },
+  { name: 'Jakarta', data: readFileSync(join(fontDir, 'plus-jakarta-sans-latin-400-normal.woff')), weight: 400 as const, style: 'normal' as const },
+  { name: 'Jakarta', data: readFileSync(join(fontDir, 'plus-jakarta-sans-latin-700-normal.woff')), weight: 700 as const, style: 'normal' as const },
+  { name: 'Jakarta', data: readFileSync(join(fontDir, 'plus-jakarta-sans-latin-800-normal.woff')), weight: 800 as const, style: 'normal' as const },
 ];
 
-// The site's broadcast-wave mark, as an image.
+// The site's play-pin mark, as an image.
 const logo = `data:image/svg+xml;base64,${Buffer.from(
-  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="9" cy="23" r="4.5" fill="#ff8a5c"/><path d="M9 12.5A10.5 10.5 0 0 1 19.5 23" fill="none" stroke="#8fb0ff" stroke-width="3.4" stroke-linecap="round"/><path d="M9 4.5A18.5 18.5 0 0 1 27.5 23" fill="none" stroke="#8fb0ff" stroke-opacity=".55" stroke-width="3.4" stroke-linecap="round"/></svg>',
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><path d="M20 37s-13-11-13-21a13 13 0 0 1 26 0c0 10-13 21-13 21z" fill="#ffffff"/><path d="M16.5 10.5v11l9-5.5z" fill="#0f5e63"/></svg>',
 ).toString('base64')}`;
 
 type Node = { type: string; props: { style?: Record<string, unknown>; children?: unknown; src?: string; width?: number; height?: number } };
@@ -25,17 +25,17 @@ export async function shareImage({ kicker, title, line }: { kicker: string; titl
   const size = title.length > 40 ? 64 : title.length > 22 ? 80 : 104;
   const tree = el('div', {
     width: 1200, height: 630, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '64px 72px',
-    backgroundColor: '#0e1118', backgroundImage: 'linear-gradient(135deg, #16203a 0%, #0e1118 55%, #2a1a14 100%)',
-    color: '#eef1f7', fontFamily: 'Figtree',
+    backgroundColor: '#0f5e63', backgroundImage: 'radial-gradient(circle at 92% 0%, #3a6e64 0%, #0f5e63 45%)',
+    color: '#ffffff', fontFamily: 'Jakarta',
   }, [
     el('div', { display: 'flex', alignItems: 'center', gap: 16, fontSize: 30, fontWeight: 700 }, [
       el('img', {}, undefined, { src: logo, width: 48, height: 48 }),
-      el('div', {}, 'Station App Finder'),
+      el('div', {}, 'Find My Station'),
     ]),
     el('div', { display: 'flex', flexDirection: 'column', gap: 18, width: 1056 }, [
-      el('div', { display: 'flex', fontSize: 30, color: '#ff8a5c', fontWeight: 700 }, kicker),
+      el('div', { display: 'flex', fontSize: 30, color: '#ffd2c2', fontWeight: 700 }, kicker),
       el('div', { display: 'flex', width: 1056, fontSize: size, fontWeight: 800, lineHeight: 1.05, letterSpacing: -2 }, title),
-      el('div', { display: 'flex', fontSize: 36, color: '#b8c0d0' }, line),
+      el('div', { display: 'flex', fontSize: 36, color: '#d6e8e6' }, line),
     ]),
     el('div', { display: 'flex', height: 40 }), // balances the brand row so the text sits mid-card
   ]);

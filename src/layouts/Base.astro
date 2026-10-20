@@ -1,5 +1,9 @@
 ---
-import '@fontsource-variable/figtree';
+import '@fontsource/plus-jakarta-sans/400.css';
+import '@fontsource/plus-jakarta-sans/500.css';
+import '@fontsource/plus-jakarta-sans/600.css';
+import '@fontsource/plus-jakarta-sans/700.css';
+import '@fontsource/plus-jakarta-sans/800.css';
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import { url, SITE_NAME, correctionUrl } from '../lib/site';
@@ -46,7 +50,7 @@ const here = Astro.url.pathname;
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0e1118" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#0b1516" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
   </head>
   <body>
@@ -56,7 +60,7 @@ const here = Astro.url.pathname;
       <div class="wrap header-inner">
         <a class="wordmark" href={url('/')} aria-label={`${SITE_NAME} home`}>
           <Logo />
-          <span>Station App Finder</span>
+          <span>{SITE_NAME}</span>
         </a>
         <nav aria-label="Site">
           <a class="label" href={url('/state/')} aria-current={here.includes('/state/') ? 'page' : undefined}><span class="wide">Browse by state</span><span class="narrow-only">States</span></a>
@@ -70,7 +74,7 @@ const here = Astro.url.pathname;
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <div class="stack gap-12 footer-brand">
-          <a class="wordmark" href={url('/')}><Logo size={24} /><span>Station App Finder</span></a>
+          <a class="wordmark" href={url('/')}><Logo size={24} /><span>{SITE_NAME}</span></a>
           <p class="caption muted">
             An independent prototype. Not affiliated with or endorsed by PBS or NPR. No cookies, no tracking.
           </p>

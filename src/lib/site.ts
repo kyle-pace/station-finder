@@ -5,7 +5,7 @@
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const url = (path: string) => `${BASE}${path.startsWith('/') ? path : `/${path}`}`;
 
-export const SITE_NAME = 'Station App Finder';
+export const SITE_NAME = 'Find My Station';
 export const REPO = 'https://github.com/kyle-pace/station-finder';
 
 // The anonymous counter's web app URL (see counter/SETUP.md). Empty = counting is off.
