@@ -74,6 +74,7 @@ const sourceKinds = [
 ].filter(Boolean);
 // The station's short link for sharing (see src/pages/go/[id].astro).
 const goUrl = new URL(url(`/go/${org.id}/`), Astro.site).href;
+const postText = `${verbFor(org.mediaTypes) === 'Listen' ? 'Listen to' : 'Watch'} ${org.name} on your phone, TV, and computer. Get the app: ${goUrl}`;
 // QR code for people on a computer: scan with a phone to get the station's app. It encodes
 // the share link, which opens a page where the phone offers the station's app. Only for stations with their own
 // phone app; drawn at build time (black on white so it scans in dark mode too).
@@ -177,6 +178,18 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
               <input class="share-url" type="text" readonly value={goUrl} aria-label={`Link to share ${org.name}`} />
               <button class="btn btn-secondary share-copy" type="button" data-copy={goUrl}>Copy</button>
             </div>
+            <details class="share-kit">
+              <summary class="label">For station marketing</summary>
+              <div class="stack gap-8">
+                <p class="caption muted">QR code of the link, for on-air promos, print, and signage:</p>
+                <p class="small"><a href={url(`/qr/${org.id}.png`)} download={`${org.id}-qr.png`}>Download PNG</a> · <a href={url(`/qr/${org.id}.svg`)} download={`${org.id}-qr.svg`}>SVG</a></p>
+                <p class="caption muted">A ready-to-post line:</p>
+                <div class="share-row">
+                  <textarea class="share-url share-post" readonly rows="3" aria-label="Suggested post">{postText}</textarea>
+                  <button class="btn btn-secondary share-copy" type="button" data-copy={postText}>Copy</button>
+                </div>
+              </div>
+            </details>
           </div>
         </div>
         <div class="outline-box">
@@ -221,7 +234,7 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
         b.textContent = 'Copied';
         setTimeout(() => { b.textContent = 'Copy'; }, 2000);
       } catch {
-        b.parentElement?.querySelector<HTMLInputElement>('input')?.select();
+        b.parentElement?.querySelector<HTMLInputElement | HTMLTextAreaElement>('input, textarea')?.select();
       }
     });
   }
@@ -253,6 +266,9 @@ const description = `Every way to watch and listen to ${org.name}: apps for phon
   .app-banner-close { flex: none; border: 0; background: none; color: var(--text-muted); font-size: 22px; width: 36px; height: 36px; cursor: pointer; }
   .share-row { display: flex; gap: var(--space-8); }
   .share-url { flex: 1; min-width: 0; font: inherit; font-size: 14px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: var(--space-8); }
+  .share-kit summary { cursor: pointer; }
+  .share-kit[open] summary { margin-bottom: var(--space-8); }
+  .share-post { resize: none; font-family: inherit; line-height: 1.4; }
   .share-copy { padding: var(--space-8) var(--space-12); }
   .back { text-decoration: none; }
   .back:hover { text-decoration: underline; }

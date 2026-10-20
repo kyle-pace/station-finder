@@ -98,7 +98,9 @@ scripts/build-data               →  public/data/organizations.json, facilities
   station's app; on a computer it opens the station's web app or website.
   Each station page shows its link with a Copy button.
   On a computer, stations with their own phone app also show a QR code of the same link
-  (drawn at build time with the `qrcode` package) to scan and get the app. Show-level links wait until station
+  (drawn at build time with the `qrcode` package) to scan and get the app.
+  "For station marketing" (in the share box) has the QR code as PNG/SVG downloads
+  (`/qr/<station>.png|svg`) and a ready-to-post line. Show-level links wait until station
   web portals have stable show URLs.
 - **"Get the app" banner** on station pages: on a phone, a slim bar at the top links the
   station's own app for that device (App Store or Google Play). iPhone Safari shows Apple's
