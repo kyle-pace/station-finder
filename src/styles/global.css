@@ -33,26 +33,28 @@
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
   color-scheme: light dark;
 }
+/* Dark mode: the original deep-navy look (neutral surfaces, soft color glows, periwinkle
+   and orange map dots), with the brand teal brightened to read on dark. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0b1516;
-    --surface: #122223;
-    --surface-raised: #172a2c;
-    --text: #e6f0ef;
-    --text-muted: #9db3b1;
-    --border: #24393b;
-    --accent: #3fb8b0;
-    --accent-strong: #6fd3cc;
-    --accent-subtle: #12302f;
-    --on-accent: #062022;
-    --warm: #ff8f73;
-    --warm-ink: #ff8f73;
-    --sun: #ff8f73;
-    --tv: #8e9bff;
-    --radio: #ff8f5c;
-    --hero-a: #0f2a2b;
-    --hero-b: #241713;
-    --brand-panel: #0f3436;
+    --bg: #0e1118;
+    --surface: #161a23;
+    --surface-raised: #1c212c;
+    --text: #edf0f6;
+    --text-muted: #a9b1c2;
+    --border: #2b3240;
+    --accent: #5cc8bf;
+    --accent-strong: #8fe0d8;
+    --accent-subtle: #14272b;
+    --on-accent: #05201e;
+    --warm: #ff8a5c;
+    --warm-ink: #ff8a5c;
+    --sun: #ffc75a;
+    --tv: #8fb0ff;
+    --radio: #ff8a5c;
+    --hero-a: #10212a;
+    --hero-b: #1d1714;
+    --brand-panel: #0e1118;
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
     --shadow-md: 0 6px 20px rgb(0 0 0 / 0.35);
     --shadow-lg: 0 16px 40px rgb(0 0 0 / 0.5);

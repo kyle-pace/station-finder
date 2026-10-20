@@ -129,6 +129,18 @@ const examplePool = organizations.flatMap((o) => {
       var(--brand-panel);
     --tv: #c3cbff; --radio: #ffb59c;
   }
+  /* Dark mode keeps the original soft-glow hero instead of a flat teal block. */
+  @media (prefers-color-scheme: dark) {
+    .hero {
+      background:
+        radial-gradient(1200px 500px at 85% -10%, color-mix(in srgb, var(--warm) 14%, transparent), transparent 60%),
+        radial-gradient(900px 500px at 0% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%),
+        linear-gradient(135deg, var(--hero-a) 0%, var(--bg) 55%, var(--hero-b) 100%);
+      border-bottom: 1px solid var(--border);
+      --tv: #8fb0ff; --radio: #ff8a5c;
+    }
+    .hero :global(.land) { fill: color-mix(in srgb, var(--tv) 7%, transparent); stroke: color-mix(in srgb, var(--tv) 18%, transparent); }
+  }
   .hero h1, .hero .display { color: #ffffff; }
   .hero .lede { color: #d6e8e6; }
   .hero .eyebrow { color: #ffd2c2; }
